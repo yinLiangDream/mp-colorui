@@ -74,6 +74,10 @@ if (process.env.TARO_BUILD_TYPE === 'ui') {
 
 以上配置可以根据需要自行修改。
 
+#### package.json 依赖处理
+
+package.json 中 `dependencies` 中只放必要的依赖，并且建议尽量精简，原有 Taro 相关的依赖可以放到 `devDependencies` 中，这样安装 UI 库的时候不需要再重复安装
+
 ## 打包命令
 
 在完成以上项目结构改造后，你就可以获得一个 Taro 的多端 UI 库的项目了
