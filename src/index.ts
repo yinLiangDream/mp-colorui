@@ -1,1 +1,3 @@
-export { default as Timer } from './components/timer/timer'
+import Timer from './components/timer/timer'
+
+export default Timer
