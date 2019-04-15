@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Taro 第三方 UI 库示范用例",
   "main": "dist/index.js",
+  "main:h5": "dist/h5/index.js",
   "types": "./@types/index.d.ts",
   "files": [
     "dist",
