@@ -1,5 +1,11 @@
 import { ComponentClass } from 'react';
-import { normalSizeType, iconType, bgColorType } from 'src/components/utils/types';
+import {
+  normalSizeType,
+  iconType,
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType
+} from 'src/components/utils/types';
 
 export interface TimerProps {
   onClick?(index?: number): void;
@@ -9,16 +15,16 @@ export interface TimerProps {
   readonly text?: string;
   readonly type?: 'normal' | 'array';
   readonly tag?: iconType;
-  readonly tagColor?: bgColorType;
+  readonly tagColor?: bgColorType | bgColorMoreType | lightBgColorType;
   readonly icon?: iconType;
-  readonly bgColor?: bgColorType;
+  readonly bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   readonly headerArray?: {
     readonly text?: string;
     readonly tag?: iconType;
     readonly icon?: iconType;
     readonly url?: string;
-    readonly bgColor?: bgColorType;
-    readonly tagColor?: bgColorType;
+    readonly bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
+    readonly tagColor?: bgColorType | bgColorMoreType | lightBgColorType;
   }[];
 }
 

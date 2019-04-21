@@ -2,7 +2,13 @@ import Taro, { Component } from '@tarojs/taro';
 import { View, Text } from '@tarojs/components';
 import utils from '../utils/index';
 
-import { iconType, bgColorType, normalSizeType } from '../utils/types';
+import {
+  iconType,
+  bgColorType,
+  normalSizeType,
+  bgColorMoreType,
+  lightBgColorType
+} from '../utils/types';
 
 interface IProps {
   onClick?(index?: number): void;
@@ -12,16 +18,16 @@ interface IProps {
   readonly text?: string;
   readonly type?: 'normal' | 'array';
   readonly tag?: iconType;
-  readonly tagColor?: bgColorType;
+  readonly tagColor?: bgColorType | bgColorMoreType | lightBgColorType;
   readonly icon?: iconType;
-  readonly bgColor?: bgColorType;
+  readonly bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   readonly headerArray?: {
     readonly text?: string;
     readonly tag?: iconType;
     readonly icon?: iconType;
     readonly url?: string;
-    readonly bgColor?: bgColorType;
-    readonly tagColor?: bgColorType;
+    readonly bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
+    readonly tagColor?: bgColorType | bgColorMoreType | lightBgColorType;
   }[];
 }
 
@@ -60,9 +66,13 @@ export default class Avatar extends Component<IProps, IState> {
         } ${
           utils.model.BG_COLOR_LIST[this.props.bgColor || 'black']
         } cu-avatar`}
-        style={{
-          backgroundImage: `url(${this.props.url})`
-        }}
+        style={
+          this.props.url
+            ? {
+                backgroundImage: `${this.props.url}`
+              }
+            : ''
+        }
       >
         <Text className={`icon-${this.props.icon}`}>{this.props.text}</Text>
         {this.props.tag ? (
@@ -86,7 +96,7 @@ export default class Avatar extends Component<IProps, IState> {
             className={`${this.props.shape} ${
               utils.model.SIZE[this.props.size || 'normal']
             } ${utils.model.BG_COLOR_LIST[item.bgColor || 'black']} cu-avatar`}
-            style={{ backgroundImage: `url(${item.url})` }}
+            style={item.url ? { backgroundImage: `url(${item.url})` } : ''}
           >
             <Text className={`icon-${item.icon}`}>{item.text}</Text>
             {item.tag ? (
