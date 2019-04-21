@@ -21,6 +21,7 @@ interface IProps {
   readonly tagColor?: bgColorType | bgColorMoreType | lightBgColorType;
   readonly icon?: iconType;
   readonly bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
+  readonly shadow?: boolean;
   readonly headerArray?: {
     readonly text?: string;
     readonly tag?: iconType;
@@ -33,7 +34,7 @@ interface IProps {
 
 interface IState {}
 
-export default class Avatar extends Component<IProps, IState> {
+export default class ClAvatar extends Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
   }
@@ -45,11 +46,12 @@ export default class Avatar extends Component<IProps, IState> {
     size: 'normal',
     shape: 'radius',
     url: '',
-    bgColor: 'black',
+    bgColor: 'blue',
     type: 'normal',
     text: '',
-    tagColor: 'black',
-    headerArray: []
+    tagColor: 'blue',
+    headerArray: [],
+    shadow: true
   } as IProps;
   componentWillMount() {}
   click(index = undefined) {
@@ -65,7 +67,7 @@ export default class Avatar extends Component<IProps, IState> {
           utils.model.SIZE[this.props.size || 'normal']
         } ${
           utils.model.BG_COLOR_LIST[this.props.bgColor || 'black']
-        } cu-avatar`}
+        } ${this.props.shadow ? 'shadow' : ''} cu-avatar`}
         style={
           this.props.url
             ? {
@@ -95,7 +97,7 @@ export default class Avatar extends Component<IProps, IState> {
             onClick={this.click.bind(this, index)}
             className={`${this.props.shape} ${
               utils.model.SIZE[this.props.size || 'normal']
-            } ${utils.model.BG_COLOR_LIST[item.bgColor || 'black']} cu-avatar`}
+            } ${utils.model.BG_COLOR_LIST[item.bgColor || 'black']} ${this.props.shadow ? 'shadow' : ''} cu-avatar`}
             style={item.url ? { backgroundImage: `url(${item.url})` } : ''}
           >
             <Text className={`icon-${item.icon}`}>{item.text}</Text>
