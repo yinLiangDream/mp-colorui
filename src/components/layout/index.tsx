@@ -25,9 +25,9 @@ type distance = 'xsmall' | 'small' | 'normal' | 'large' | 'xlarge';
 
 type baseSelectionType = {
   float?: 'left' | 'right';
-  padding: distance;
+  padding?: distance;
   paddingDirection?: direction;
-  margin: distance;
+  margin?: distance;
   marginDirection?: direction;
 };
 interface IProps {
@@ -44,7 +44,6 @@ interface IProps {
  * 基础比例
  * basis-xs, basis-df, basis-lg, basis-xl
  */
-
 
 interface IState {}
 
@@ -131,14 +130,18 @@ export default class ClLayout extends Component<IProps, IState> {
         this.props.baseSelection && this.props.baseSelection.paddingDirection;
       const size = this.props.baseSelection && this.props.baseSelection.padding;
 
-      return `${'padding' + dealDirection(paddingDirection) + dealSize(size)}`;
+      return `${(size ? 'padding' : '') +
+        dealDirection(paddingDirection) +
+        dealSize(size)}`;
     };
     const marginClassName = () => {
       const marginDirection =
         this.props.baseSelection && this.props.baseSelection.marginDirection;
       const size = this.props.baseSelection && this.props.baseSelection.margin;
 
-      return `${'margin' + dealDirection(marginDirection) + dealSize(size)}`;
+      return `${(size ? 'margin' : '') +
+        dealDirection(marginDirection) +
+        dealSize(size)}`;
     };
     const normalComponent = (
       <View
