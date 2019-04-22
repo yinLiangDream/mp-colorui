@@ -65,9 +65,9 @@ export default class ClAvatar extends Component<IProps, IState> {
         onClick={this.click.bind(this, null)}
         className={`${this.props.shape} ${
           utils.model.SIZE[this.props.size || 'normal']
-        } ${
-          utils.model.BG_COLOR_LIST[this.props.bgColor || 'black']
-        } ${this.props.shadow ? 'shadow' : ''} cu-avatar`}
+        } ${utils.model.BG_COLOR_LIST[this.props.bgColor || 'black']} ${
+          this.props.shadow ? 'shadow' : ''
+        } cu-avatar`}
         style={
           this.props.url
             ? {
@@ -97,7 +97,9 @@ export default class ClAvatar extends Component<IProps, IState> {
             onClick={this.click.bind(this, index)}
             className={`${this.props.shape} ${
               utils.model.SIZE[this.props.size || 'normal']
-            } ${utils.model.BG_COLOR_LIST[item.bgColor || 'black']} ${this.props.shadow ? 'shadow' : ''} cu-avatar`}
+            } ${utils.model.BG_COLOR_LIST[item.bgColor || 'black']} ${
+              this.props.shadow ? 'shadow' : ''
+            } cu-avatar`}
             style={item.url ? { backgroundImage: `url(${item.url})` } : ''}
           >
             <Text className={`icon-${item.icon}`}>{item.text}</Text>
@@ -111,12 +113,15 @@ export default class ClAvatar extends Component<IProps, IState> {
           </View>
         );
       });
-    return (
+    const avatarArrayComponent = (
       <View
-        className={`${this.props.type === 'array' ? 'cu-avatar-group' : ''}`}
+        className={'cu-avatar-group'}
       >
-        {this.props.type === 'array' ? avatarArray : avatar}
+        {avatarArray}
       </View>
+    );
+    return (
+      this.props.type === 'array' ? avatarArrayComponent : avatar
     );
   }
 }
