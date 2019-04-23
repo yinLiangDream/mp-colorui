@@ -35,8 +35,6 @@ interface IProps {
   onGetPhoneNumber?(e: any): void;
   onError?(e: any): void;
   onOpenSetting?(e: any): void;
-  onShare?(e: any): void;
-  onLaunchApp?(e: any): void;
 }
 
 interface IState {}
@@ -76,12 +74,6 @@ export default class ClButton extends Component<IProps, IState> {
   onError(e: any) {
     this.props.onError && this.props.onError(e);
   }
-  onShare(e: any) {
-    this.props.onShare && this.props.onShare(e);
-  }
-  onLaunchApp(e: any) {
-    this.props.onLaunchApp && this.props.onLaunchApp(e);
-  }
   render() {
     const shapeClassName = this.props.shape || 'radius';
     const sizeClassName = this.props.size || 'normal';
@@ -89,7 +81,7 @@ export default class ClButton extends Component<IProps, IState> {
     const disabledClassName = this.props.disabled;
     const iconClassName = this.props.icon || '';
     const loadingClassName = this.props.loading
-      ? 'icon-loading2 iconfont-spin'
+      ? 'icon-loading iconfont-spin'
       : '';
     const longClassName = this.props.long;
     const plainClassName = this.props.plain;
@@ -111,8 +103,6 @@ export default class ClButton extends Component<IProps, IState> {
         onContact={this.onContact}
         onGetPhoneNumber={this.onGetPhoneNumber}
         onError={this.onError}
-        onShare={this.onShare}
-        onLaunchApp={this.onLaunchApp}
       >
         <Text className={loadingClassName} />
         <Text>{this.props.text}</Text>
