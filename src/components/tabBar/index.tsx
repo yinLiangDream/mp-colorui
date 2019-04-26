@@ -5,7 +5,7 @@ import {
   lightBgColorType,
   iconType
 } from '../utils/types';
-import { View, Button } from '@tarojs/components';
+import { View } from '@tarojs/components';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
 import { isNumber } from 'util';
 
@@ -21,7 +21,7 @@ interface IProps {
     title?: string;
     action?: boolean;
   }[];
-  onClick?(index: number): void;
+  onClick?:(index: number) => void;
 }
 
 interface IState {
@@ -32,15 +32,15 @@ export default class ClTabBar extends Component<IProps, IState> {
   static options = {
     addGlobalClass: true
   };
-  static defaultProps = {
+  static defaultProps: IProps = {
     bgColor: 'white',
     activeColor: 'blue',
     active: 0,
     tabs: []
-  } as IProps;
-  state = {
+  };
+  state: IState = {
     activeIndex: 0
-  } as IState;
+  };
   click(index: number) {
     this.setState({
       activeIndex: index
