@@ -41,8 +41,8 @@ export default class ClTitleBar extends Component<IProps, IState> {
 
   render() {
     const textColorClassName = this.props.textColor ? `text-${this.props.textColor}` : ``;
-    const borderColorClassName = this.props.borderColor ? BG_COLOR_LIST[this.props.borderColor] : '';
-    const barColorClassName = this.props.barColor ? BG_COLOR_LIST[this.props.barColor] : ``;
+    const borderColorClassName = this.props.borderColor ? BG_COLOR_LIST[this.props.borderColor] : 'bg-green';
+    const barColorClassName = this.props.barColor ? BG_COLOR_LIST[this.props.barColor] : `bg-white`;
     const iconClassName = this.props.icon ? `icon-${this.props.icon}` : ``;
     const iconColorClassName = this.props.iconColor ? `text-${this.props.iconColor}` : ``;
     const borderComponent = <View className='action border-title'>
