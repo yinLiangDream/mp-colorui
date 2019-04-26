@@ -1,9 +1,5 @@
 import Taro, { Component } from '@tarojs/taro';
-import {
-  bgColorType,
-  bgColorMoreType,
-  lightBgColorType
-} from '../utils/types';
+import {bgColorType, bgColorMoreType, lightBgColorType} from '../utils/types';
 import { BG_COLOR_LIST } from '../utils/model';
 import { View, Image, Text } from '@tarojs/components';
 
@@ -61,6 +57,10 @@ export default class ClLoading extends Component<IProps, IState> {
         loadProgress: 0
       });
     }
+  }
+
+  componentDidMount() {
+    if (this.props.show) this.loadProgress();
   }
   render() {
     const bgColorClassName = () =>
