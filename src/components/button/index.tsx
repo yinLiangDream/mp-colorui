@@ -22,10 +22,8 @@ interface IProps {
   text: string;
   openType?:
     | 'contact'
-    | 'share'
     | 'getUserInfo'
     | 'getPhoneNumber'
-    | 'launchApp'
     | 'openSetting'
     | 'feedback'
     | 'getRealnameAuthInfo';
