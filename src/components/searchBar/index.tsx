@@ -74,20 +74,20 @@ export default class ClSearchBar extends Component<IProps, IState> {
     const textColorClassName = this.props.rightTextColor ? TEXT_COLOR_LIST[this.props.rightTextColor] : '';
     const leftIconComponent = this.props.leftIcons ? this.props.leftIcons.map((item, index) => (
       <View key={index} className={`cu-awatar round icon-${item}`}
-            onClick={this.onIconClick.bind(this, index)}
+        onClick={this.onIconClick.bind(this, index)}
       />)) : '';
     const searchComponent =
       <View className={`search-form ${this.props.shape}`}>
-        <Text className='icon-search'/>
+        <Text className='icon-search' />
         <Input placeholder={this.props.placeholder} confirmType='search' type='text' onFocus={this.onFocus}
-               onBlur={this.onBlur} focus={this.state.showSearch} adjustPosition value={value}
-               onConfirm={this.onSearch.bind(this)}
+          onBlur={this.onBlur} focus={this.state.showSearch} adjustPosition value={value}
+          onConfirm={this.onSearch.bind(this)}
         />
       </View>;
     const buttonComponent =
       <View className='action' onClick={ClSearchBar.onPreventProp.bind(this)}>
         <Button className={`cu-btn shadow-blur ${this.props.shape} ${buttonColorClassName} ${textColorClassName}`}
-                onClick={this.onSearch.bind(this)}
+          onClick={this.onSearch.bind(this)}
         >搜索</Button>
       </View>;
     const textComponent =
@@ -96,7 +96,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
       </View>;
     return (
       <View className={`cu-bar search ${bgColorClassName}`}
-            style={this.props.fix ? {position: 'fixed', top: '0', width: '100vw', zIndex: '10'} : ''}
+        style={this.props.fix ? {position: 'fixed', top: '0', width: '100vw', zIndex: '10'} : ''}
       >
         {leftIconComponent}
         {searchComponent}
