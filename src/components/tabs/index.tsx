@@ -33,6 +33,7 @@ export default class ClTabs extends Component<IProps, IState> {
   state: IState = {
     activeTab: 0
   };
+
   componentDidMount(): void {
     this.setState({
       activeTab: this.props.active || 0
@@ -55,7 +56,10 @@ export default class ClTabs extends Component<IProps, IState> {
           this.props.tabs.map((item, index) => <View key={index}
             className={`cu-item ${this.state.activeTab === index ? `${activeColor} cur` : ''}`}
             onClick={this.onClick.bind(this, index)}
-          ><Text className={`icon-${item.icon}`}></Text> {item.text}</View>)
+          >
+            <Text className={`icon-${item.icon}`} />
+            <Text className='margin-left-xs'>{item.text}</Text>
+          </View>)
         }
       </ScrollView>;
     const verbComponent =
@@ -65,7 +69,10 @@ export default class ClTabs extends Component<IProps, IState> {
             this.props.tabs.map((item, index) => <View key={index}
               className={`cu-item flex-sub ${this.state.activeTab === index ? `${activeColor} cur` : ''}`}
               onClick={this.onClick.bind(this, index)}
-            ><Text className={`icon-${item.icon}`}></Text> {item.text}</View>)
+            >
+              <Text className={`icon-${item.icon}`} />
+              <Text className='margin-left-xs'>{item.text}</Text>
+            </View>)
           }
         </View>
       </ScrollView>;
@@ -75,7 +82,10 @@ export default class ClTabs extends Component<IProps, IState> {
           this.props.tabs.map((item, index) => <View key={index}
             className={`cu-item ${this.state.activeTab === index ? `${activeColor} cur` : ''}`}
             onClick={this.onClick.bind(this, index)}
-          ><Text className={`icon-${item.icon}`}></Text> {item.text}</View>)
+          >
+            <Text className={`icon-${item.icon}`} />
+            <Text className='margin-left-xs'>{item.text}</Text>
+          </View>)
         }
       </ScrollView>;
     return this.props.type === "default" ? defaultComponent : this.props.type === "verb" ? verbComponent : this.props.type === "center" ? centerComponent : ''

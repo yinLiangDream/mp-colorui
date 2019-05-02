@@ -39,9 +39,7 @@ export default class ClLoading extends Component<IProps, IState> {
       loadProgress: this.state.loadProgress + 0.5
     });
     if (this.state.loadProgress < 100) {
-      timer = requestAnimationFrame(() => {
-        this.loadProgress();
-      });
+      timer = requestAnimationFrame(this.loadProgress.bind(this));
     } else {
       this.setState({
         loadProgress: 100
@@ -78,6 +76,7 @@ export default class ClLoading extends Component<IProps, IState> {
         } ${this.props.noMore || this.props.loadingError ? 'over' : 'loading'}`}
       />
     );
+    const long = 100 - this.state.loadProgress;
     const barComponent = (
       <View
         className={`load-progress ${this.props.show ? 'show' : 'hide'}`}
@@ -86,13 +85,9 @@ export default class ClLoading extends Component<IProps, IState> {
         <View
           className={`load-progress-bar ${bgColorClassName()}`}
           style={{
-            transform: `translate3d(-${100 -
-              this.state.loadProgress}%, 0px, 0px)`
+            transform: `translate3d(-${long}%, 0px, 0px)`
           }}
         />
-        <Text style={{ visibility: 'hidden', fontSize: '0' }}>
-          {this.state.loadProgress}
-        </Text>
         <View className={`load-progress-spinner text-${this.props.bgColor}`} />
       </View>
     );
