@@ -3,7 +3,7 @@ import { Text } from '@tarojs/components';
 import { iconType, bgColorType, extendSizeType } from '../utils/types';
 import { isNumber } from 'util';
 
-interface IProps {
+export interface IProps {
   size?: extendSizeType | number;
   color?: bgColorType;
   iconName?: iconType;

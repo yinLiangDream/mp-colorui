@@ -8,7 +8,7 @@ import {
 } from '../utils/types';
 import { BG_COLOR_LIST, SIZE } from '../utils/model';
 
-interface IProps {
+export interface IProps {
   shape?: 'round' | 'radius';
   size?: 'small' | 'normal' | 'large';
   bgColor?: bgColorType | lightBgColorType | bgColorMoreType;
@@ -81,7 +81,6 @@ export default class ClButton extends Component<IProps, IState> {
     const loadingClassName = this.props.loading
       ? 'icon-loading iconfont-spin'
       : '';
-    const longClassName = this.props.long;
     const plainClassName = this.props.plain;
     const plainSizeName = this.props.plainSize === 'default' ? 'line' : 'lines';
     const shadowSizeName = this.props.shadow ? 'shadow' : '';
@@ -109,6 +108,6 @@ export default class ClButton extends Component<IProps, IState> {
     const longButton = (
       <View className='flex flex-direction'>{normalButton}</View>
     );
-    return longClassName ? longButton : normalButton;
+    return this.props.long ? longButton : normalButton;
   }
 }

@@ -1,0 +1,458 @@
+/* ==================
+        初始化
+ ==================== */
+
+page {
+  background-color: #f1f1f1;
+  font-size: 28rpx;
+  color: #333;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  /* Color 可以自定义相关配色 */
+  --red: #e54d42;
+  --orange: #f37b1d;
+  --yellow: #fbbd08;
+  --olive: #8dc63f;
+  --green: #39b54a;
+  --cyan: #1cbbb4;
+  --blue: #0081ff;
+  --purple: #6739b6;
+  --mauve: #9c26b0;
+  --pink: #e03997;
+  --brown: #a5673f;
+  --grey: #8799a3;
+  --gray: #aaa;
+  --black: #333;
+  --white: #fff;
+  --gradualRed: linear-gradient(45deg, #f43f3b, #ec008c);
+  --gradualOrange: linear-gradient(45deg, #ff9700, #ed1c24);
+  --gradualGreen: linear-gradient(45deg, #39b54a, #8dc63f);
+  --gradualPurple: linear-gradient(45deg, #9000ff, #5e00ff);
+  --gradualPink: linear-gradient(45deg, #ec008c, #6739b6);
+  --gradualBlue: linear-gradient(45deg, #0081ff, #1cbbb4);
+}
+
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+  box-sizing: border-box;
+}
+
+.round {
+  border-radius: 5000rpx;
+}
+
+.radius {
+  border-radius: 6rpx;
+}
+
+/* ==================
+          图片
+ ==================== */
+
+image {
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+image.loading::before {
+  content: '';
+  background-color: #f5f5f5;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+image.loading::after {
+  content: '\e7f1';
+  font-family: 'cuIcon';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  font-size: 32rpx;
+  margin: auto;
+  color: #ccc;
+  -webkit-animation: icon-spin 2s infinite linear;
+  animation: icon-spin 2s infinite linear;
+  display: block;
+}
+
+.response {
+  width: 100%;
+}
+
+/* ==================
+         开关
+ ==================== */
+
+switch,
+checkbox,
+radio {
+  position: relative;
+}
+
+switch::after,
+switch::before {
+  font-family: 'cuIcon';
+  content: '\e645';
+  position: absolute;
+  color: #fff !important;
+  top: 0%;
+  left: 0rpx;
+  font-size: 26rpx;
+  line-height: 26px;
+  width: 26px;
+  text-align: center;
+  pointer-events: none;
+  transform: scale(0, 0);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
+switch::before {
+  content: '\e646';
+  right: 0;
+  transform: scale(1, 1);
+  left: auto;
+}
+
+switch[checked]::after,
+switch.checked::after {
+  transform: scale(1, 1);
+}
+
+switch[checked]::before,
+switch.checked::before {
+  transform: scale(0, 0);
+}
+
+radio::before,
+checkbox::before {
+  font-family: 'cuIcon';
+  content: '\e645';
+  position: absolute;
+  color: #fff !important;
+  top: 50%;
+  margin-top: -8px;
+  right: 5px;
+  font-size: 32rpx;
+  line-height: 16px;
+  pointer-events: none;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
+switch[checked]::before {
+  transform: scale(0, 0);
+}
+
+switch .wx-switch-input {
+  border: none;
+  padding: 0 24px;
+  width: 48px;
+  height: 26px;
+  margin: 0;
+  border-radius: 100rpx;
+}
+
+switch .wx-switch-input:not([class*='bg-']) {
+  background: var(--grey) !important;
+}
+
+switch .wx-switch-input::after {
+  margin: auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 100rpx;
+  left: 0rpx;
+  top: 0rpx;
+  bottom: 0rpx;
+  position: absolute;
+  transform: scale(0.9, 0.9);
+  transition: all 0.1s ease-in-out 0s;
+}
+
+switch .wx-switch-input.wx-switch-input-checked::after {
+  margin: auto;
+  left: 22px;
+  box-shadow: none;
+  transform: scale(0.9, 0.9);
+}
+
+radio-group {
+  display: inline-block;
+}
+
+radio .wx-radio-input,
+checkbox .wx-checkbox-input {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+
+checkbox.round .wx-checkbox-input {
+  border-radius: 100rpx;
+}
+
+switch.radius .wx-switch-input::after,
+switch.radius .wx-switch-input,
+switch.radius .wx-switch-input::before {
+  border-radius: 10rpx;
+}
+
+switch .wx-switch-input::before,
+radio.radio::before,
+checkbox .wx-checkbox-input::before,
+radio .wx-radio-input::before {
+  display: none;
+}
+
+radio.radio[checked]::after {
+  content: '';
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  z-index: 999;
+  top: 0rpx;
+  left: 0rpx;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 200rpx;
+  border: 8px solid #fff !important;
+}
+
+.switch-sex::after {
+  content: '\e71c';
+}
+
+.switch-sex::before {
+  content: '\e71a';
+}
+
+.switch-sex .wx-switch-input {
+  background: var(--red) !important;
+  border-color: var(--red) !important;
+}
+
+.switch-sex[checked] .wx-switch-input {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+}
+
+switch.red[checked] .wx-switch-input,
+checkbox.red[checked] .wx-checkbox-input,
+radio.red[checked] .wx-radio-input {
+  border-color: var(--red) !important;
+}
+
+switch.orange[checked] .wx-switch-input,
+checkbox.orange[checked] .wx-checkbox-input,
+radio.orange[checked] .wx-radio-input {
+  border-color: var(--orange) !important;
+}
+
+switch.yellow[checked] .wx-switch-input,
+checkbox.yellow[checked] .wx-checkbox-input,
+radio.yellow[checked] .wx-radio-input {
+  border-color: var(--yellow) !important;
+}
+
+switch.olive[checked] .wx-switch-input,
+checkbox.olive[checked] .wx-checkbox-input,
+radio.olive[checked] .wx-radio-input {
+  border-color: var(--olive) !important;
+}
+
+switch.green[checked] .wx-switch-input,
+checkbox.green[checked] .wx-checkbox-input,
+checkbox[checked] .wx-checkbox-input,
+radio.green[checked] .wx-radio-input {
+  border-color: var(--green) !important;
+}
+
+switch.cyan[checked] .wx-switch-input,
+checkbox.cyan[checked] .wx-checkbox-input,
+radio.cyan[checked] .wx-radio-input {
+  border-color: var(--cyan) !important;
+}
+
+switch.blue[checked] .wx-switch-input,
+checkbox.blue[checked] .wx-checkbox-input,
+radio.blue[checked] .wx-radio-input {
+  border-color: var(--blue) !important;
+}
+
+switch.purple[checked] .wx-switch-input,
+checkbox.purple[checked] .wx-checkbox-input,
+radio.purple[checked] .wx-radio-input {
+  border-color: var(--purple) !important;
+}
+
+switch.mauve[checked] .wx-switch-input,
+checkbox.mauve[checked] .wx-checkbox-input,
+radio.mauve[checked] .wx-radio-input {
+  border-color: var(--mauve) !important;
+}
+
+switch.pink[checked] .wx-switch-input,
+checkbox.pink[checked] .wx-checkbox-input,
+radio.pink[checked] .wx-radio-input {
+  border-color: var(--pink) !important;
+}
+
+switch.brown[checked] .wx-switch-input,
+checkbox.brown[checked] .wx-checkbox-input,
+radio.brown[checked] .wx-radio-input {
+  border-color: var(--brown) !important;
+}
+
+switch.grey[checked] .wx-switch-input,
+checkbox.grey[checked] .wx-checkbox-input,
+radio.grey[checked] .wx-radio-input {
+  border-color: var(--grey) !important;
+}
+
+switch.gray[checked] .wx-switch-input,
+checkbox.gray[checked] .wx-checkbox-input,
+radio.gray[checked] .wx-radio-input {
+  border-color: var(--grey) !important;
+}
+
+switch.black[checked] .wx-switch-input,
+checkbox.black[checked] .wx-checkbox-input,
+radio.black[checked] .wx-radio-input {
+  border-color: var(--black) !important;
+}
+
+switch.white[checked] .wx-switch-input,
+checkbox.white[checked] .wx-checkbox-input,
+radio.white[checked] .wx-radio-input {
+  border-color: #fff !important;
+}
+
+switch.red[checked] .wx-switch-input.wx-switch-input-checked,
+checkbox.red[checked] .wx-checkbox-input,
+radio.red[checked] .wx-radio-input {
+  background-color: var(--red) !important;
+  color: #fff !important;
+}
+
+switch.orange[checked] .wx-switch-input,
+checkbox.orange[checked] .wx-checkbox-input,
+radio.orange[checked] .wx-radio-input {
+  background-color: var(--orange) !important;
+  color: #fff !important;
+}
+
+switch.yellow[checked] .wx-switch-input,
+checkbox.yellow[checked] .wx-checkbox-input,
+radio.yellow[checked] .wx-radio-input {
+  background-color: var(--yellow) !important;
+  color: var(--black) !important;
+}
+
+switch.olive[checked] .wx-switch-input,
+checkbox.olive[checked] .wx-checkbox-input,
+radio.olive[checked] .wx-radio-input {
+  background-color: var(--olive) !important;
+  color: #fff !important;
+}
+
+switch.green[checked] .wx-switch-input,
+switch[checked] .wx-switch-input,
+checkbox.green[checked] .wx-checkbox-input,
+checkbox[checked] .wx-checkbox-input,
+radio.green[checked] .wx-radio-input,
+radio[checked] .wx-radio-input {
+  background-color: var(--green) !important;
+  color: #fff !important;
+}
+
+switch.cyan[checked] .wx-switch-input,
+checkbox.cyan[checked] .wx-checkbox-input,
+radio.cyan[checked] .wx-radio-input {
+  background-color: var(--cyan) !important;
+  color: #fff !important;
+}
+
+switch.blue[checked] .wx-switch-input,
+checkbox.blue[checked] .wx-checkbox-input,
+radio.blue[checked] .wx-radio-input {
+  background-color: var(--blue) !important;
+  color: #fff !important;
+}
+
+switch.purple[checked] .wx-switch-input,
+checkbox.purple[checked] .wx-checkbox-input,
+radio.purple[checked] .wx-radio-input {
+  background-color: var(--purple) !important;
+  color: #fff !important;
+}
+
+switch.mauve[checked] .wx-switch-input,
+checkbox.mauve[checked] .wx-checkbox-input,
+radio.mauve[checked] .wx-radio-input {
+  background-color: var(--mauve) !important;
+  color: #fff !important;
+}
+
+switch.pink[checked] .wx-switch-input,
+checkbox.pink[checked] .wx-checkbox-input,
+radio.pink[checked] .wx-radio-input {
+  background-color: var(--pink) !important;
+  color: #fff !important;
+}
+
+switch.brown[checked] .wx-switch-input,
+checkbox.brown[checked] .wx-checkbox-input,
+radio.brown[checked] .wx-radio-input {
+  background-color: var(--brown) !important;
+  color: #fff !important;
+}
+
+switch.grey[checked] .wx-switch-input,
+checkbox.grey[checked] .wx-checkbox-input,
+radio.grey[checked] .wx-radio-input {
+  background-color: var(--grey) !important;
+  color: #fff !important;
+}
+
+switch.gray[checked] .wx-switch-input,
+checkbox.gray[checked] .wx-checkbox-input,
+radio.gray[checked] .wx-radio-input {
+  background-color: #f0f0f0 !important;
+  color: #666 !important;
+}
+
+switch.black[checked] .wx-switch-input,
+checkbox.black[checked] .wx-checkbox-input,
+radio.black[checked] .wx-radio-input {
+  background-color: var(--black) !important;
+  color: #fff !important;
+}
+
+switch.white[checked] .wx-switch-input,
+checkbox.white[checked] .wx-checkbox-input,
+radio.white[checked] .wx-radio-input {
+  background-color: #fff !important;
+  color: #666 !important;
+}

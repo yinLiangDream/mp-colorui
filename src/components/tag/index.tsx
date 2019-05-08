@@ -1,18 +1,21 @@
 import Taro, { Component } from '@tarojs/taro';
-import { bgColorType, lightBgColorType, bgColorMoreType } from '../utils/types';
+import { bgColorType, iconType } from '../utils/types';
 import { BG_COLOR_LIST } from '../utils/model';
 import { View } from '@tarojs/components';
 
-interface IProps {
+export interface IProps {
   shape?: 'normal' | 'round' | 'radius';
   size?: 'small' | 'normal';
-  color?: bgColorType | lightBgColorType | bgColorMoreType;
-  plain?: boolean;
-  plainColor?: bgColorType;
-  type?: 'capsule' | 'normal';
+  canTouch?: boolean;
+  onClick?: (index: number) => void;
   badge?: boolean;
-  renderLeft?: any;
-  renderRight?: any;
+  tags: {
+    color?: bgColorType;
+    plain?: boolean;
+    icon?: iconType;
+    text?: string;
+    disabled?: boolean;
+  }[];
 }
 
 interface IState {}
@@ -24,44 +27,66 @@ export default class ClTag extends Component<IProps, IState> {
   static defaultProps = {
     shape: 'normal',
     size: 'normal',
-    color: 'blue',
-    plain: false,
-    plainColor: 'blue',
-    type: 'normal',
-    badge: false
+    canTouch: false,
+    tags: []
   } as IProps;
+  onClick(index: number) {
+    this.props.onClick && this.props.onClick(index);
+  }
   render() {
     const shapeClassName = this.props.shape
       ? this.props.shape === 'normal'
         ? ''
         : this.props.shape
       : '';
-    const colorClassName = () => {
-      return BG_COLOR_LIST[this.props.color || 'blue'];
+    const colorClassName = (color: bgColorType | undefined) => {
+      return BG_COLOR_LIST[color || 'blue'];
     };
-    const plainClassName = () => {
-      return `line-${this.props.plainColor}`;
+    const plainClassName = (color: bgColorType | undefined) => {
+      return `line-${color}`;
     };
     const sizeClassName = () => {
       if (this.props.size === 'normal') return '';
       else return 'sm';
     };
-    const badgeClassName = this.props.badge ? 'badge' : '';
-    const normalComponent = (
-      <View
-        className={`cu-tag ${shapeClassName} ${this.props.plain ? plainClassName() : colorClassName()} ${sizeClassName()} ${badgeClassName}`}
-      >
-        {this.props.children}
-      </View>
-    );
-    const capsuleComponent = (
-      <View
-        className={`cu-capsule ${shapeClassName}  ${sizeClassName()}`}
-      >
-        <View className={`cu-tag ${colorClassName()}`}>{this.props.renderLeft}</View>
-        <View className={`cu-tag ${plainClassName()}`}>{this.props.renderRight}</View>
-      </View>
-    );
-    return this.props.type === 'capsule' ? capsuleComponent : normalComponent
+    const badgeClassName = (badge: boolean | undefined) =>
+      badge ? 'badge' : '';
+    let normalComponent;
+    let capsuleComponent;
+    if (this.props.tags.length > 0) {
+      const tag = this.props.tags[0];
+      normalComponent = (
+        <View
+          className={`cu-tag ${shapeClassName} ${
+            tag.plain ? plainClassName(tag.color) : colorClassName(tag.color)
+          } ${sizeClassName()} ${badgeClassName(this.props.badge)}`}
+          style={{ overflow: 'hidden' }}
+        >
+          {tag.text}
+        </View>
+      );
+      this.props.tags.length > 1 &&
+        (capsuleComponent = (
+          <View
+            className={`cu-capsule ${shapeClassName}  ${sizeClassName()}`}
+            style={{ overflow: 'hidden' }}
+          >
+            {this.props.tags.map((tag, index) => (
+              <View
+                key={tag.text}
+                className={`cu-tag ${
+                  tag.plain
+                    ? plainClassName(tag.color)
+                    : colorClassName(tag.color)
+                }`}
+                onClick={this.onClick.bind(this, index)}
+              >
+                {tag.text}
+              </View>
+            ))}
+          </View>
+        ));
+    }
+    return this.props.tags.length > 1 ? capsuleComponent : normalComponent;
   }
 }
