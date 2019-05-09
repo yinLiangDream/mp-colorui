@@ -85,11 +85,15 @@ export default class Index extends Component {
         <ClAvatar
           shape='round'
           size='large'
-          icon='round'
-          tag='male'
-          tagColor='blue'
-          bgColor='cyan'
           onClick={this.click}
+          headerArray={[
+            {
+              icon: 'round',
+              tag: 'male',
+              tagColor: 'blue',
+              bgColor: 'cyan'
+            }
+          ]}
         />
         <ClButton
           text='怀念'
