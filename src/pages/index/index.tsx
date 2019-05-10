@@ -1,24 +1,24 @@
+import { Switch, View } from '@tarojs/components';
 import Taro, { Component, Config } from '@tarojs/taro';
-import { View, Switch } from '@tarojs/components';
-import './index.scss';
-import '../../components/style/index.scss';
-
 import ClAvatar from '../../components/avatar/index';
 import ClButton from '../../components/button/index';
-import ClText from '../../components/text/index';
 import ClIcon from '../../components/icon/index';
-import ClLayout from '../../components/layout/index';
-import ClTag from '../../components/tag/index';
-import ClProgress from '../../components/progress/index';
-import ClLoading from '../../components/loading/index';
-import ClTabBar from '../../components/tabBar/index';
-import ClShopBar from '../../components/shopBar';
-import ClTitleBar from '../../components/titleBar';
-import ClNavBar from '../../components/navBar';
-import ClSearchBar from '../../components/searchBar';
-import ClTabs from '../../components/tabs';
-import ClStep from '../../components/steps';
 import ClInput from '../../components/input/index';
+import ClLayout from '../../components/layout/index';
+import ClLoading from '../../components/loading/index';
+import ClNavBar from '../../components/navBar';
+import ClProgress from '../../components/progress/index';
+import ClSearchBar from '../../components/searchBar';
+import ClSelect from '../../components/select/index';
+import ClShopBar from '../../components/shopBar';
+import ClStep from '../../components/steps';
+import '../../components/style/index.scss';
+import ClTabBar from '../../components/tabBar/index';
+import ClTabs from '../../components/tabs';
+import ClTag from '../../components/tag/index';
+import ClText from '../../components/text/index';
+import ClTitleBar from '../../components/titleBar';
+import './index.scss';
 
 export default class Index extends Component {
   /**
@@ -76,6 +76,22 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClSelect
+          mode='region'
+          title='选择器'
+          // disabled
+          region={{
+            value: ['广东省', '广州市', '海珠区']
+          }}
+          date={
+            {
+              // rangeKey: 'value',
+              // value: '11:59',
+              // start: '12:12'
+              // fields:'month'
+            }
+          }
+        />
         <ClInput
           title='姓名'
           type='password'
