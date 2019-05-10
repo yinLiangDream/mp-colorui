@@ -4,7 +4,7 @@
 
 page {
   background-color: #f1f1f1;
-  font-size: 28rpx;
+  font-size: 28px;
   color: #333;
   font-family: Helvetica Neue, Helvetica, sans-serif;
   /* Color 可以自定义相关配色 */
@@ -44,11 +44,11 @@ image {
 }
 
 .round {
-  border-radius: 5000rpx;
+  border-radius: 5000px;
 }
 
 .radius {
-  border-radius: 6rpx;
+  border-radius: 6px;
 }
 
 /* ==================
@@ -78,13 +78,13 @@ image.loading::after {
   position: absolute;
   top: 0;
   left: 0;
-  width: 32rpx;
-  height: 32rpx;
-  line-height: 32rpx;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
   right: 0;
   bottom: 0;
   z-index: -1;
-  font-size: 32rpx;
+  font-size: 32px;
   margin: auto;
   color: #ccc;
   -webkit-animation: icon-spin 2s infinite linear;
@@ -113,10 +113,10 @@ switch::before {
   position: absolute;
   color: #fff !important;
   top: 0%;
-  left: 0rpx;
-  font-size: 26rpx;
-  line-height: 26px;
-  width: 26px;
+  left: 0px;
+  font-size: 26px;
+  line-height: 52px;
+  width: 52px;
   text-align: center;
   pointer-events: none;
   transform: scale(0, 0);
@@ -150,7 +150,7 @@ checkbox::before {
   top: 50%;
   margin-top: -8px;
   right: 5px;
-  font-size: 32rpx;
+  font-size: 32px;
   line-height: 16px;
   pointer-events: none;
   transform: scale(1, 1);
@@ -165,10 +165,10 @@ switch[checked]::before {
 switch .wx-switch-input {
   border: none;
   padding: 0 24px;
-  width: 48px;
-  height: 26px;
+  width: 96px;
+  height: 52px;
   margin: 0;
-  border-radius: 100rpx;
+  border-radius: 100px;
 }
 
 switch .wx-switch-input:not([class*='bg-']) {
@@ -177,12 +177,12 @@ switch .wx-switch-input:not([class*='bg-']) {
 
 switch .wx-switch-input::after {
   margin: auto;
-  width: 26px;
-  height: 26px;
-  border-radius: 100rpx;
-  left: 0rpx;
-  top: 0rpx;
-  bottom: 0rpx;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
   position: absolute;
   transform: scale(0.9, 0.9);
   transition: all 0.1s ease-in-out 0s;
@@ -190,7 +190,7 @@ switch .wx-switch-input::after {
 
 switch .wx-switch-input.wx-switch-input-checked::after {
   margin: auto;
-  left: 22px;
+  left: 44px;
   box-shadow: none;
   transform: scale(0.9, 0.9);
 }
@@ -207,13 +207,13 @@ checkbox .wx-checkbox-input {
 }
 
 checkbox.round .wx-checkbox-input {
-  border-radius: 100rpx;
+  border-radius: 100px;
 }
 
 switch.radius .wx-switch-input::after,
 switch.radius .wx-switch-input,
 switch.radius .wx-switch-input::before {
-  border-radius: 10rpx;
+  border-radius: 10px;
 }
 
 switch .wx-switch-input::before,
@@ -231,12 +231,12 @@ radio.radio[checked]::after {
   width: 8px;
   height: 8px;
   z-index: 999;
-  top: 0rpx;
-  left: 0rpx;
+  top: 0px;
+  left: 0px;
   right: 0;
   bottom: 0;
   margin: auto;
-  border-radius: 200rpx;
+  border-radius: 200px;
   border: 8px solid #fff !important;
 }
 
