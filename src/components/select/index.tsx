@@ -26,7 +26,6 @@ interface IProps {
   onCancel?: TOnCancel;
   onColumnChange?: TOnColumnChange;
 }
-console.log(Taro);
 
 function ClSelect(props: IProps) {
   const selector = {

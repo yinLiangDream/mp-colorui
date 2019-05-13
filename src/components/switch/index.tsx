@@ -11,7 +11,6 @@ interface IProps {
   checked?: boolean;
 }
 
-console.log(Taro);
 export default function ClSwitch(props: IProps) {
   const title = props.title;
   const color = props.color || 'green';

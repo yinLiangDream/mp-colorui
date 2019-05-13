@@ -20,6 +20,7 @@ import ClText from '../../components/text/index';
 import ClTitleBar from '../../components/titleBar';
 import './index.scss';
 import ClSwitch from '../../components/switch/index';
+import ClRadio from '../../components/radio/index';
 
 export default class Index extends Component {
   /**
@@ -77,7 +78,23 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
-      <ClSwitch color='red' type='form' title='switch' />
+        <ClRadio
+          type='form'
+          title='radio'
+          checkedValue='1111'
+          color='brown'
+          list={[
+            {
+              key: 'qqq',
+              value: '1111'
+            },
+            {
+              key: 'ddd',
+              value: '2222'
+            }
+          ]}
+        />
+        <ClSwitch color='red' type='form' title='switch' />
         <ClSelect
           mode='region'
           title='选择器'

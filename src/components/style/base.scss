@@ -148,10 +148,10 @@ checkbox::before {
   position: absolute;
   color: #fff !important;
   top: 50%;
-  margin-top: -8px;
-  right: 5px;
+  margin-top: -16px;
+  right: 10px;
   font-size: 32px;
-  line-height: 16px;
+  line-height: 32px;
   pointer-events: none;
   transform: scale(1, 1);
   transition: all 0.3s ease-in-out 0s;
@@ -202,8 +202,8 @@ radio-group {
 radio .wx-radio-input,
 checkbox .wx-checkbox-input {
   margin: 0;
-  width: 24px;
-  height: 24px;
+  width: 48px;
+  height: 48px;
 }
 
 checkbox.round .wx-checkbox-input {
@@ -228,8 +228,8 @@ radio.radio[checked]::after {
   background-color: transparent;
   display: block;
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   z-index: 999;
   top: 0px;
   left: 0px;
