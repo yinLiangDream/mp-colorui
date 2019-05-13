@@ -12,12 +12,12 @@ import {
 
 interface IProps {
   type?: TType;
-  radioDirection?: TRadioDirection;
+  direction?: TRadioDirection;
   shape?: TShape;
   title?: TTitle;
   color?: TColor;
   checkedValue?: string;
-  list?: TList;
+  radioGroup?: TList;
   onChange?: TOnChange;
 }
 
@@ -26,21 +26,19 @@ export default function ClRadio(props: IProps) {
   const shapeClassName = props.shape === 'radio' ? 'radio' : 'normal';
   const title = props.title ? props.title : '';
   const colorClassName = props.color ? props.color : 'green';
-  const directionClassName =
-    props.radioDirection === 'horizontal' ? 'flex' : '';
-  const list = props.list ? props.list : [];
+  const directionClassName = props.direction === 'horizontal' ? 'flex' : '';
+  const list = props.radioGroup ? props.radioGroup : [];
 
   const changeRadio = e => {
     props.onChange && props.onChange(e.detail.value);
   };
   const radioComponent = list.map((item, index) => (
-    <View className='padding-xs'>
+    <View className='padding-xs' key={item.value}>
       <Text className='padding-right-sm'>{item.key}</Text>
       <Radio
         className={`${colorClassName} ${shapeClassName}`}
         checked={item.value === props.checkedValue}
         value={item.value || ''}
-        key={item.value}
       />
     </View>
   ));

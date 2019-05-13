@@ -21,6 +21,7 @@ import ClTitleBar from '../../components/titleBar';
 import './index.scss';
 import ClSwitch from '../../components/switch/index';
 import ClRadio from '../../components/radio/index';
+import ClCheckbox from '../../components/checkbox/index';
 
 export default class Index extends Component {
   /**
@@ -78,12 +79,28 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClCheckbox
+          type='form'
+          title='checkbox'
+          color='olive'
+          checkboxGroup={[
+            {
+              key: '666',
+              value: '666',
+              checked: true
+            },
+            {
+              key: '777',
+              value: '777'
+            }
+          ]}
+        />
         <ClRadio
           type='form'
           title='radio'
           checkedValue='1111'
           color='brown'
-          list={[
+          radioGroup={[
             {
               key: 'qqq',
               value: '1111'

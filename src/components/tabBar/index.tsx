@@ -21,7 +21,7 @@ interface IProps {
     title?: string;
     action?: boolean;
   }[];
-  onClick?:(index: number) => void;
+  onClick?: (index: number) => void;
 }
 
 interface IState {
@@ -88,7 +88,7 @@ export default class ClTabBar extends Component<IProps, IState> {
         className={`cu-bar tabbar ${colorClassName}`}
         style={
           this.props.fix
-            ? { position: 'fixed', width: '100vw', bottom: '0' }
+            ? { position: 'fixed', width: '100vw', bottom: '0', zIndex: 10 }
             : ''
         }
       >
