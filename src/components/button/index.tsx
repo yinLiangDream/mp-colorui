@@ -86,7 +86,7 @@ export default class ClButton extends Component<IProps, IState> {
     const shadowSizeName = this.props.shadow ? 'shadow' : '';
     const buttonClassName = `cu-btn ${shapeClassName} ${SIZE[sizeClassName]} ${
       BG_COLOR_LIST[colorClassName]
-    } ${iconClassName} ${
+    } icon-${iconClassName} ${
       plainClassName ? plainSizeName + '-' + BG_COLOR_LIST[colorClassName] : ''
     } ${shadowSizeName}`;
     const normalButton = (

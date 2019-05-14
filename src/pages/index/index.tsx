@@ -23,6 +23,7 @@ import ClSwitch from '../../components/switch/index';
 import ClRadio from '../../components/radio/index';
 import ClCheckbox from '../../components/checkbox/index';
 import ClUploader from '../../components/uploader';
+import ClMenuList from '../../components/menuList/index';
 
 export default class Index extends Component {
   /**
@@ -80,7 +81,22 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
-        <ClUploader />
+        <ClMenuList
+          list={[
+            {
+              icon: {
+                iconName: 'add'
+              },
+              title: '112',
+              arrow: true
+            },
+            {
+              imgUrl: 'http://www.ysdm.net/common/CleintCaptcha?14',
+              title: '222'
+            }
+          ]}
+        />
+        <ClUploader chooseImgObj={{}} />
         <ClCheckbox
           type='form'
           title='checkbox'
@@ -154,6 +170,7 @@ export default class Index extends Component {
           size='large'
           shape='round'
           bgColor='gradualOrange'
+          icon='all'
           openType='getUserInfo'
           onGetUserInfo={this.clickButton}
           onClick={this.clickButton}
