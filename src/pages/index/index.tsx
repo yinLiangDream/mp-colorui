@@ -22,6 +22,7 @@ import './index.scss';
 import ClSwitch from '../../components/switch/index';
 import ClRadio from '../../components/radio/index';
 import ClCheckbox from '../../components/checkbox/index';
+import ClUploader from '../../components/uploader';
 
 export default class Index extends Component {
   /**
@@ -79,6 +80,7 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClUploader />
         <ClCheckbox
           type='form'
           title='checkbox'
