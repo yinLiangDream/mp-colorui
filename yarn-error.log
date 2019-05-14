@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js add src/components/uploader --silent --no-progress
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js add src/components/timeline --silent --no-progress
 
 PATH: 
-  /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/ly/WebProject/WeChatMiniProgram/taro-ui-sample/node_modules/.bin:/var/folders/4c/8tfsy4kj2k5f2lmd6p3lq9r40000gn/T/yarn--1557718459112-0.2173390114462661:/Users/ly/WebProject/WeChatMiniProgram/taro-ui-sample/node_modules/.bin:/Users/ly/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/aria2/bin
+  /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/ly/WebProject/WeChatMiniProgram/taro-ui-sample/node_modules/.bin:/var/folders/4c/8tfsy4kj2k5f2lmd6p3lq9r40000gn/T/yarn--1557738009845-0.7112101952324872:/Users/ly/WebProject/WeChatMiniProgram/taro-ui-sample/node_modules/.bin:/Users/ly/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/aria2/bin
 
 Yarn version: 
   1.15.2
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/src%2fcomponents/uploader: Request "https://registry.yarnpkg.com/src%2fcomponents/uploader" returned a 405
+  Error: https://registry.yarnpkg.com/src%2fcomponents/timeline: Request "https://registry.yarnpkg.com/src%2fcomponents/timeline" returned a 405
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:66067:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:129541:22)
       at Request.emit (events.js:189:13)

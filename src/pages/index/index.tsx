@@ -24,6 +24,7 @@ import ClRadio from '../../components/radio/index';
 import ClCheckbox from '../../components/checkbox/index';
 import ClUploader from '../../components/uploader';
 import ClMenuList from '../../components/menuList/index';
+import ClTimeline from '../../components/timeline';
 
 export default class Index extends Component {
   /**
@@ -81,6 +82,19 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClTimeline
+          times={[
+            {
+              content: 111
+            },
+            {
+              content: 222
+            },
+            {
+              content: 333
+            }
+          ]}
+        />
         <ClMenuList
           list={[
             {
