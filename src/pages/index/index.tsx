@@ -26,6 +26,7 @@ import ClUploader from '../../components/uploader';
 import ClMenuList from '../../components/menuList/index';
 import ClTimeline from '../../components/timeline';
 import ClSwiper from '../../components/swiper/index';
+import ClModal from '../../components/modal/index';
 
 export default class Index extends Component {
   /**
@@ -83,6 +84,46 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClModal
+          show
+          actions={[
+            {text: '支付宝'}
+          ]}
+          title='微信'
+          titleBgColor='gradualGreen'
+          closeWithShadow
+          close
+          renderTitle={<View>123</View>}
+          renderAction={
+            <ClButton
+              text='怀念'
+              size='large'
+              shape='round'
+              bgColor='gradualOrange'
+              icon='all'
+              openType='getUserInfo'
+              onGetUserInfo={this.clickButton}
+              onClick={this.clickButton}
+            />
+          }
+        >
+          <ClSwiper
+            list={[
+              {
+                url: 'https://yys.v.netease.com/Shiranui_final.mp4',
+                type: 'video',
+                controls: true,
+                poster:
+                  'https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/active/activeBack.jpg'
+              },
+              {
+                url:
+                  'https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/active/activeBack.jpg',
+                type: 'image'
+              }
+            ]}
+          />
+        </ClModal>
         <ClSwiper
           type='card'
           list={[
