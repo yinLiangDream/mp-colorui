@@ -25,6 +25,7 @@ import ClCheckbox from '../../components/checkbox/index';
 import ClUploader from '../../components/uploader';
 import ClMenuList from '../../components/menuList/index';
 import ClTimeline from '../../components/timeline';
+import ClSwiper from '../../components/swiper/index';
 
 export default class Index extends Component {
   /**
@@ -82,6 +83,23 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClSwiper
+          type='card'
+          list={[
+            {
+              url: 'https://yys.v.netease.com/Shiranui_final.mp4',
+              type: 'video',
+              controls: true,
+              poster:
+                'https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/active/activeBack.jpg'
+            },
+            {
+              url:
+                'https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/active/activeBack.jpg',
+              type: 'image'
+            }
+          ]}
+        />
         <ClTimeline
           times={[
             {
