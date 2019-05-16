@@ -27,6 +27,7 @@ import ClMenuList from '../../components/menuList/index';
 import ClTimeline from '../../components/timeline';
 import ClSwiper from '../../components/swiper/index';
 import ClModal from '../../components/modal/index';
+import ClDrawer from '../../components/drawer/index';
 
 export default class Index extends Component {
   /**
@@ -84,13 +85,14 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClDrawer show direction='left'>
+          <View>123123</View>
+        </ClDrawer>
         <ClModal
           show
-          actions={[
-            {text: '支付宝'}
-          ]}
+          actions={[{ text: '支付宝' }]}
           title='微信'
-          titleBgColor='gradualGreen'
+          titleBgColor='light-grey'
           closeWithShadow
           close
           renderTitle={<View>123</View>}
