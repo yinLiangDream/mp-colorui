@@ -1,15 +1,8 @@
 import { Switch, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import { TColor, TOnChange, TShape, TTitle, TType } from './types';
+import { IProps } from './types';
 
-interface IProps {
-  type?: TType;
-  title?: TTitle;
-  shape?: TShape;
-  color?: TColor;
-  onChange?: TOnChange;
-  checked?: boolean;
-}
+
 
 export default function ClSwitch(props: IProps) {
   const title = props.title;

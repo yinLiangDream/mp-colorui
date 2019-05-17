@@ -1,21 +1,10 @@
-import Taro, {Component} from '@tarojs/taro'
-import {View, Text} from "@tarojs/components";
+import { Text, View } from "@tarojs/components";
+import Taro, { Component } from '@tarojs/taro';
+import { BG_COLOR_LIST } from "../utils/model";
+import { IProps } from './types';
 
-import {bgColorMoreType, bgColorType, iconType, lightBgColorType} from "../utils/types";
-import {BG_COLOR_LIST} from "../utils/model";
 
-interface IProps {
-  barColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  textColor?: bgColorType;
-  type?: 'border-title' | 'sub-title' | 'icon';
-  subTitle?: string;
-  subTitleColor?: bgColorType;
-  borderColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  borderLong?: number;
-  icon?: iconType;
-  iconColor?: bgColorType;
-  text?: string
-}
+
 
 interface IState {
 

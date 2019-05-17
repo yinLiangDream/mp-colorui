@@ -1,12 +1,8 @@
-import Taro, { useState } from '@tarojs/taro';
-import { TDirection, TChildren } from './types';
 import { View } from '@tarojs/components';
+import Taro, { useState } from '@tarojs/taro';
+import { IProps } from './types';
 
-interface IProps {
-  show?: boolean;
-  direction?: TDirection;
-  children?: TChildren;
-}
+
 
 export default function ClDrawer(props: IProps) {
   const [showDrawer, setShowDrawer] = useState(() => !!props.show);

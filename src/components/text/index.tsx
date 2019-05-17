@@ -1,22 +1,9 @@
+import { Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { SIZE, TEXT_COLOR_LIST, BG_COLOR_LIST } from '../utils/model';
-import {
-  extendSizeType,
-  bgColorType,
-  bgColorMoreType,
-  lightBgColorType
-} from '../utils/types';
-import { View, Text } from '@tarojs/components';
+import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from '../utils/model';
+import { IProps } from './types';
 
-interface IProps {
-  size?: extendSizeType;
-  textColor?: bgColorType;
-  bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  cut?: boolean;
-  align?: 'left' | 'center' | 'right';
-  special?: 'firstUpper' | 'upper' | 'lower';
-  text?: string;
-}
+
 
 interface IState {}
 

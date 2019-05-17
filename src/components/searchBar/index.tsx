@@ -1,20 +1,7 @@
-import Taro, {Component} from '@tarojs/taro';
-import {View, Text, Input, Button} from '@tarojs/components'
-import {bgColorMoreType, bgColorType, iconType, lightBgColorType} from "../utils/types";
-import {BG_COLOR_LIST, TEXT_COLOR_LIST} from "../utils/model";
-
-interface IProps {
-  shape?: 'radius' | 'round';
-  placeholder?: string;
-  fix?: boolean;
-  searchType?: 'button' | 'text' | 'none' | 'list';
-  leftIcons?: iconType[];
-  bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  rightButtonColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  rightTextColor?: bgColorType;
-  onIconClick?: (index: number) => void;
-  onSearch?: (value: string) => void;
-}
+import { Button, Input, Text, View } from '@tarojs/components';
+import Taro, { Component } from '@tarojs/taro';
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
+import { IProps } from './types';
 
 interface IState {
   showSearch?: boolean;

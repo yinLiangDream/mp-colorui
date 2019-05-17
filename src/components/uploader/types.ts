@@ -7,4 +7,10 @@ export type TChooseImgObj = {
   complete?: () => void;
 };
 
-export type TBeforeDel = (index: number) => boolean
+export type TBeforeDel = (index: number) => boolean;
+
+export interface IProps {
+  chooseImgObj: TChooseImgObj;
+  imgList?: string[];
+  beforeDel?: TBeforeDel;
+}

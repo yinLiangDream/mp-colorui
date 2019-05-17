@@ -1,23 +1,8 @@
+import { Checkbox, CheckboxGroup, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import {
-  TType,
-  TShape,
-  TColor,
-  TDirection,
-  TCheckboxGroup,
-  TOnChange
-} from './types';
-import { Checkbox, View, Text, CheckboxGroup } from '@tarojs/components';
+import { IProps } from './types';
 
-interface IProps {
-  title?: string;
-  type?: TType;
-  shape?: TShape;
-  color?: TColor;
-  direction?: TDirection;
-  checkboxGroup?: TCheckboxGroup;
-  onChange?: TOnChange;
-}
+
 
 export default function ClCheckbox(props: IProps) {
   const colorClassName = props.color || 'green';

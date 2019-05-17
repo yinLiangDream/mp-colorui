@@ -11,8 +11,8 @@ export type TShow = boolean;
 export type TTitleBgColor = bgColorMoreType | bgColorType | lightBgColorType;
 export type TActionColor = bgColorMoreType | bgColorType | lightBgColorType;
 export type TActions = {
-  text?: string
-}[]
+  text?: string;
+}[];
 
 export type TModalType = 'normal' | 'image' | 'radio' | 'checkbox';
 
@@ -40,3 +40,18 @@ export type image = {
 export type radio = {};
 
 export type checkbox = {};
+
+export interface IProps {
+  show?: boolean;
+  title?: TTitle;
+  close?: TClose;
+  custom?: boolean;
+  closeWithShadow?: boolean;
+  children?: TChildren;
+  titleBgColor?: TTitleBgColor;
+  actionColor?: TActionColor;
+  actions?: TActions;
+  renderAction?: TRenderAction;
+  renderTitle?: TRenderTitle;
+  onClick?: (index: number) => void;
+}

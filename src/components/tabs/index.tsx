@@ -1,24 +1,9 @@
+import { ScrollView, Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { View, ScrollView, Text } from '@tarojs/components';
-import {
-  bgColorMoreType,
-  bgColorType,
-  iconType,
-  lightBgColorType
-} from '../utils/types';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
+import { IProps } from './types';
 
-interface IProps {
-  type?: 'center' | 'verb' | 'default';
-  bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  activeColor?: bgColorType;
-  active?: number;
-  tabs: {
-    text?: string;
-    icon?: iconType;
-  }[];
-  onClick?: (index: number) => void;
-}
+
 
 interface IState {
   activeTab: number;

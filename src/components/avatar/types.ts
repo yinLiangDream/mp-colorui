@@ -19,3 +19,12 @@ export type THeaderArray = {
 };
 
 export type TOnClick = (index?: number) => void;
+
+export interface IProps {
+  onClick?: TOnClick;
+  shape?: TShape;
+  size?: TSize;
+  bgColor?: TBgColor;
+  shadow?: boolean;
+  headerArray?: THeaderArray[];
+}

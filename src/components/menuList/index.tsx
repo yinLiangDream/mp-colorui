@@ -1,22 +1,17 @@
-import { Text, View, Image } from '@tarojs/components';
+import { Image, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import ClIcon from '../icon/index';
 import { TEXT_COLOR_LIST } from '../utils/model';
-import { TCard, TShortLine, TTist, TOnClick } from './types';
+import { IProps } from './types';
 
-interface IProps {
-  shortBorder?: TShortLine;
-  card?: TCard;
-  list?: TTist;
-  onClick?: TOnClick;
-}
+
 
 export default function ClMenuList(props: IProps) {
   const shortLineClassName = props.shortBorder ? 'sm-border' : '';
   const arrowClassName = (arrow: boolean) => (arrow ? 'arrow' : '');
   const cardClassName = props.card ? 'card-menu' : '';
   const list = props.list || [];
-  
+
   const click = (index: number) => {
     props.onClick && props.onClick(index);
   }

@@ -1,4 +1,4 @@
-import { IProps as iconProps } from '../icon';
+import { IProps as iconProps } from '../icon/types';
 import { bgColorType } from '../utils/types';
 
 export type TIcon = iconProps;
@@ -15,3 +15,10 @@ export type TTist = {
   title?: TTitle;
   imgUrl?: string;
 }[];
+
+export interface IProps {
+  shortBorder?: TShortLine;
+  card?: TCard;
+  list?: TTist;
+  onClick?: TOnClick;
+}

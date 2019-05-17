@@ -1,19 +1,9 @@
-import Taro, {Component} from '@tarojs/taro'
-import {View, Text} from '@tarojs/components'
-import {bgColorType, iconType} from "../utils/types";
-import {TEXT_COLOR_LIST} from "../utils/model";
+import { Text, View } from '@tarojs/components';
+import Taro, { Component } from '@tarojs/taro';
+import { TEXT_COLOR_LIST } from "../utils/model";
+import { IProps } from './types';
 
-interface IProps {
-  type?: 'arrow' | 'line';
-  activeColor?: bgColorType;
-  step?: number;
-  stepIconType?: 'custom' | 'number' | 'space';
-  stepTitlePosition?: 'top' | 'bottom';
-  steps: {
-    title?: string;
-    icon?: iconType;
-  }[]
-}
+
 
 interface IState {
 }

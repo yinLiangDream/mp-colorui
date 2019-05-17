@@ -1,25 +1,9 @@
-import Taro, {Component} from '@tarojs/taro'
-import {View} from '@tarojs/components'
-import {bgColorMoreType, bgColorType, iconType, lightBgColorType} from "../utils/types";
-import {BG_COLOR_LIST} from "../utils/model";
+import { View } from '@tarojs/components';
+import Taro, { Component } from '@tarojs/taro';
+import { BG_COLOR_LIST } from "../utils/model";
+import { IProps } from './types';
 
-interface IProps {
-  bgColor?: bgColorType | lightBgColorType | bgColorMoreType;
-  fix?: boolean;
-  border?: boolean;
-  tabs?: {
-    badge?: number | boolean;
-    icon?: iconType;
-    img?: string;
-    title?: string;
-  }[];
-  buttons?: {
-    text?: string;
-    bgColor?: bgColorType | bgColorMoreType | lightBgColorType
-  }[];
-  onClickTab?: (index: number) => void;
-  onClickButton?: (index: number) => void;
-}
+
 
 interface IState {
 }

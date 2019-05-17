@@ -1,20 +1,8 @@
-import { View, Swiper, SwiperItem, Image, Video } from '@tarojs/components';
+import { Image, Swiper, SwiperItem, Video, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
-import { TDot, TList, TOnClick, TType } from './types';
+import { IProps, TList } from './types';
 
-interface IProps {
-  type?: TType;
-  dot?: TDot;
-  duration?: number;
-  list?: TList[];
-  onClick?: TOnClick;
-  indicatorDots?: boolean;
-  indicatorColor?: string;
-  indicatorActiveColor?: string;
-  interval?: number;
-  circular?: boolean;
-  onChange?: (index: number) => void;
-}
+
 
 export default function ClSwiper(props: IProps) {
   const swiperTypeClassName = type =>

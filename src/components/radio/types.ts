@@ -11,3 +11,14 @@ export type TList = {
 export type TRadioDirection = 'vertical' | 'horizontal';
 
 export type TOnChange = (value: any) => void;
+
+export interface IProps {
+  type?: TType;
+  direction?: TRadioDirection;
+  shape?: TShape;
+  title?: TTitle;
+  color?: TColor;
+  checkedValue?: string;
+  radioGroup?: TList;
+  onChange?: TOnChange;
+}

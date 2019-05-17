@@ -1,31 +1,9 @@
 import { Text, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../utils/model';
-import {
-  TTitleBgColor,
-  TActionColor,
-  TActions,
-  TChildren,
-  TClose,
-  TRenderAction,
-  TRenderTitle,
-  TTitle
-} from './types';
+import { IProps } from './types';
 
-interface IProps {
-  show?: boolean;
-  title?: TTitle;
-  close?: TClose;
-  custom?: boolean;
-  closeWithShadow?: boolean;
-  children?: TChildren;
-  titleBgColor?: TTitleBgColor;
-  actionColor?: TActionColor;
-  actions?: TActions;
-  renderAction?: TRenderAction;
-  renderTitle?: TRenderTitle;
-  onClick?: (index: number) => void;
-}
+
 
 export default function ClModal(props: IProps) {
   const [showModal, setShowModal] = useState(() => !!props.show);

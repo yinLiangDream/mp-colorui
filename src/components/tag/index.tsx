@@ -1,22 +1,10 @@
-import Taro, { Component } from '@tarojs/taro';
-import { bgColorType, iconType } from '../utils/types';
-import { BG_COLOR_LIST } from '../utils/model';
 import { View } from '@tarojs/components';
+import Taro, { Component } from '@tarojs/taro';
+import { BG_COLOR_LIST } from '../utils/model';
+import { bgColorType } from '../utils/types';
+import { IProps } from './types';
 
-export interface IProps {
-  shape?: 'normal' | 'round' | 'radius';
-  size?: 'small' | 'normal';
-  canTouch?: boolean;
-  onClick?: (index: number) => void;
-  badge?: boolean;
-  tags: {
-    color?: bgColorType;
-    plain?: boolean;
-    icon?: iconType;
-    text?: string;
-    disabled?: boolean;
-  }[];
-}
+
 
 interface IState {}
 

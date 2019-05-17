@@ -1,13 +1,9 @@
-import Taro, { Component } from '@tarojs/taro';
 import { Text } from '@tarojs/components';
-import { iconType, bgColorType, extendSizeType } from '../utils/types';
+import Taro, { Component } from '@tarojs/taro';
 import { isNumber } from 'util';
+import { IProps } from './types';
 
-export interface IProps {
-  size?: extendSizeType | number;
-  color?: bgColorType;
-  iconName?: iconType;
-}
+
 
 interface IState {}
 

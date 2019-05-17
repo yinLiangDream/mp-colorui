@@ -1,18 +1,10 @@
+import { Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import { View, Text } from '@tarojs/components';
 import utils from '../utils/index';
-
-import { TOnClick, TShape, TSize, TBgColor, THeaderArray } from './types';
 import { BG_COLOR_LIST } from '../utils/model';
+import { IProps, THeaderArray } from './types';
 
-interface IProps {
-  onClick?: TOnClick;
-  shape?: TShape;
-  size?: TSize;
-  bgColor?: TBgColor;
-  shadow?: boolean;
-  headerArray?: THeaderArray[];
-}
+
 
 function ClAvatar(props: IProps) {
   const onClick = (index = undefined) => {

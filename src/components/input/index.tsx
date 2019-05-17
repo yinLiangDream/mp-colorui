@@ -1,43 +1,8 @@
+import { Image, Input, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import {
-  TValue,
-  TPlaceholder,
-  TType,
-  TTitle,
-  TMaxLength,
-  TDisabled,
-  TAdjustPosition,
-  TIcon,
-  TButton,
-  TImage,
-  TOnChange,
-  TOnBlur,
-  TOnFocus,
-  TOnIconClick,
-  TOnImageClick
-} from './types';
-import { Input, View, Image } from '@tarojs/components';
-import ClIcon from '../icon/index';
 import ClButton from '../button';
-
-interface IProps {
-  value?: TValue;
-  placeholder?: TPlaceholder;
-  type?: TType;
-  title?: TTitle;
-  maxLength?: TMaxLength;
-  disabled?: TDisabled;
-  adjustPosition?: TAdjustPosition;
-  icon?: TIcon;
-  onIconClick?: TOnIconClick;
-  button?: TButton;
-  image?: TImage;
-  onImageClick?: TOnImageClick;
-  onChange?: TOnChange;
-  onBlur?: TOnBlur;
-  onFocus?: TOnFocus;
-  customRight?: Element;
-}
+import ClIcon from '../icon/index';
+import { IProps } from './types';
 
 let normalType;
 

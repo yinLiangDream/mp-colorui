@@ -1,7 +1,7 @@
 {
-	"name": "taro-ui-sample",
-	"version": "1.0.0",
-	"description": "Taro 第三方 UI 库示范用例",
+	"name": "taro-colorui",
+	"version": "0.0.1-beta",
+	"description": "Taro-ColorUI",
 	"main": "dist/index.js",
 	"main:h5": "dist/h5/index.js",
 	"types": "./@types/index.d.ts",

@@ -1,25 +1,8 @@
 import { Radio, RadioGroup, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import {
-  TColor,
-  TList,
-  TOnChange,
-  TShape,
-  TTitle,
-  TType,
-  TRadioDirection
-} from './types';
+import { IProps } from './types';
 
-interface IProps {
-  type?: TType;
-  direction?: TRadioDirection;
-  shape?: TShape;
-  title?: TTitle;
-  color?: TColor;
-  checkedValue?: string;
-  radioGroup?: TList;
-  onChange?: TOnChange;
-}
+
 
 export default function ClRadio(props: IProps) {
   const type = props.type === 'form' ? 'form' : 'normal';

@@ -1,31 +1,9 @@
 import { Picker, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
-import {
-  TDate,
-  TMode,
-  TMultiSelector,
-  TOnCancel,
-  TOnChange,
-  TOnColumnChange,
-  TRegion,
-  TSelector,
-  TTime
-} from './types';
 import { getNowDate } from '../utils';
+import { IProps } from './types';
 
-interface IProps {
-  title?: string;
-  disabled?: boolean;
-  mode?: TMode;
-  selector?: TSelector;
-  multiSelector?: TMultiSelector;
-  time?: TTime;
-  date?: TDate;
-  region?: TRegion;
-  onChange?: TOnChange;
-  onCancel?: TOnCancel;
-  onColumnChange?: TOnColumnChange;
-}
+
 
 function ClSelect(props: IProps) {
   const selector = {

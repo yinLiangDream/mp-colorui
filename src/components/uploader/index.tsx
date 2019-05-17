@@ -1,12 +1,8 @@
+import { Text, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
-import { View, Text } from '@tarojs/components';
-import { TChooseImgObj, TBeforeDel } from './types';
+import { IProps } from './types';
 
-interface IProps {
-  chooseImgObj: TChooseImgObj;
-  imgList?: string[];
-  beforeDel?: TBeforeDel;
-}
+
 
 export default function ClUploader(props: IProps) {
   const chooseImgObj = props.chooseImgObj || {};

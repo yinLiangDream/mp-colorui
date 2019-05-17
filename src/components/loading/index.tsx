@@ -1,17 +1,9 @@
+import { Image, Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import {bgColorType, bgColorMoreType, lightBgColorType} from '../utils/types';
 import { BG_COLOR_LIST } from '../utils/model';
-import { View, Image, Text } from '@tarojs/components';
+import { IProps } from './types';
 
-interface IProps {
-  type?: 'modal' | 'bar' | 'line';
-  bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  modalText?: string;
-  modelImg?: string;
-  show?: boolean;
-  loadingError?: boolean;
-  noMore?: boolean;
-}
+
 
 interface IState {
   loadProgress: number;

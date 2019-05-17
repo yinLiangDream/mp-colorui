@@ -6,9 +6,19 @@ export type TColor = bgColorType;
 export type TDirection = 'vertical' | 'horizontal';
 
 export type TCheckboxGroup = {
-  checked?: boolean
-  key?: string
-  value?: string
+  checked?: boolean;
+  key?: string;
+  value?: string;
 }[];
 
 export type TOnChange = (value: string[]) => void;
+
+export interface IProps {
+  title?: string;
+  type?: TType;
+  shape?: TShape;
+  color?: TColor;
+  direction?: TDirection;
+  checkboxGroup?: TCheckboxGroup;
+  onChange?: TOnChange;
+}

@@ -12,3 +12,17 @@ export type TList = {
   title?: string;
   poster?: string;
 };
+
+export interface IProps {
+  type?: TType;
+  dot?: TDot;
+  duration?: number;
+  list?: TList[];
+  onClick?: TOnClick;
+  indicatorDots?: boolean;
+  indicatorColor?: string;
+  indicatorActiveColor?: string;
+  interval?: number;
+  circular?: boolean;
+  onChange?: (index: number) => void;
+}

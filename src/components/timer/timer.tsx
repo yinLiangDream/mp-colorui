@@ -18,6 +18,9 @@ interface IState {
 }
 
 export default class Timer extends Component<IProps, IState> {
+  static options = {
+    addGlobalClass: true
+  }
 
   tick (diffTime: number) {
     if (diffTime < 1000) {

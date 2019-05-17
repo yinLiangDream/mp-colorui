@@ -1,39 +1,8 @@
+import { Button, Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { View, Text, Button } from '@tarojs/components';
-import {
-  bgColorType,
-  iconType,
-  lightBgColorType,
-  bgColorMoreType
-} from '../utils/types';
+import { IProps } from '../../../@types/button';
 import { BG_COLOR_LIST, SIZE } from '../utils/model';
 
-export interface IProps {
-  shape?: 'round' | 'radius';
-  size?: 'small' | 'normal' | 'large';
-  bgColor?: bgColorType | lightBgColorType | bgColorMoreType;
-  plain?: boolean;
-  plainSize?: 'default' | 'bold';
-  shadow?: boolean;
-  disabled?: boolean;
-  loading?: boolean;
-  icon?: iconType;
-  long?: boolean;
-  text: string;
-  openType?:
-    | 'contact'
-    | 'getUserInfo'
-    | 'getPhoneNumber'
-    | 'openSetting'
-    | 'feedback'
-    | 'getRealnameAuthInfo';
-  onClick?(e: any): void;
-  onGetUserInfo?(e: any): void;
-  onContact?(e: any): void;
-  onGetPhoneNumber?(e: any): void;
-  onError?(e: any): void;
-  onOpenSetting?(e: any): void;
-}
 
 interface IState {}
 
@@ -46,7 +15,6 @@ export default class ClButton extends Component<IProps, IState> {
     size: 'normal',
     bgColor: 'blue',
     disabled: false,
-    icon: undefined,
     loading: false,
     long: false,
     plain: false,
@@ -77,7 +45,6 @@ export default class ClButton extends Component<IProps, IState> {
     const sizeClassName = this.props.size || 'normal';
     const colorClassName = this.props.bgColor || 'blue';
     const disabledClassName = this.props.disabled;
-    const iconClassName = this.props.icon || '';
     const loadingClassName = this.props.loading
       ? 'icon-loading iconfont-spin'
       : '';
@@ -86,7 +53,7 @@ export default class ClButton extends Component<IProps, IState> {
     const shadowSizeName = this.props.shadow ? 'shadow' : '';
     const buttonClassName = `cu-btn ${shapeClassName} ${SIZE[sizeClassName]} ${
       BG_COLOR_LIST[colorClassName]
-    } icon-${iconClassName} ${
+    } ${
       plainClassName ? plainSizeName + '-' + BG_COLOR_LIST[colorClassName] : ''
     } ${shadowSizeName}`;
     const normalButton = (
@@ -102,7 +69,7 @@ export default class ClButton extends Component<IProps, IState> {
         onError={this.onError}
       >
         <Text className={loadingClassName} />
-        <Text>{this.props.text}</Text>
+        <Text>{this.props.children}</Text>
       </Button>
     );
     const longButton = (

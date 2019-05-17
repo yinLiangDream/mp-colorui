@@ -1,28 +1,10 @@
-import Taro, { Component } from '@tarojs/taro';
-import {
-  bgColorType,
-  bgColorMoreType,
-  lightBgColorType,
-  iconType
-} from '../utils/types';
 import { View } from '@tarojs/components';
-import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
+import Taro, { Component } from '@tarojs/taro';
 import { isNumber } from 'util';
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
+import { IProps } from './types';
 
-interface IProps {
-  bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
-  activeColor?: bgColorType;
-  active?: number;
-  fix?: boolean;
-  tabs: {
-    badge?: number | boolean;
-    icon?: iconType;
-    img?: string;
-    title?: string;
-    action?: boolean;
-  }[];
-  onClick?: (index: number) => void;
-}
+
 
 interface IState {
   activeIndex: number;

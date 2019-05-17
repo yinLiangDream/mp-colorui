@@ -27,3 +27,17 @@ export type TRegion = {
   value?: string[];
   customItem?: string;
 };
+
+export interface IProps {
+  title?: string;
+  disabled?: boolean;
+  mode?: TMode;
+  selector?: TSelector;
+  multiSelector?: TMultiSelector;
+  time?: TTime;
+  date?: TDate;
+  region?: TRegion;
+  onChange?: TOnChange;
+  onCancel?: TOnCancel;
+  onColumnChange?: TOnColumnChange;
+}
