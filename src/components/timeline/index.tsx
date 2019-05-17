@@ -8,7 +8,7 @@ import { IProps } from './types';
 export default function ClTimeline(props: IProps) {
   const times = props.times || [];
   const iconColorClassName = color => (color ? TEXT_COLOR_LIST[color] : '');
-  const iconClassName = icon => (icon ? `icon-${icon}` : '');
+  const iconClassName = icon => (icon ? `cuIcon-${icon}` : '');
   const bgColorClassName = color => (color ? BG_COLOR_LIST[color] : '');
   const items = times.map((item, index) => (
     <View

@@ -47,7 +47,7 @@ export default function ClModal(props: IProps) {
             <View className='content'>{title}</View>
             {props.close ? (
               <View className='action' onClick={hideModal}>
-                <Text className='icon-close text-black' />
+                <Text className='cuIcon-close text-black' />
               </View>
             ) : (
               ''

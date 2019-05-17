@@ -46,7 +46,7 @@ export default class ClButton extends Component<IProps, IState> {
     const colorClassName = this.props.bgColor || 'blue';
     const disabledClassName = this.props.disabled;
     const loadingClassName = this.props.loading
-      ? 'icon-loading iconfont-spin'
+      ? 'cuIcon-loading iconfont-spin'
       : '';
     const plainClassName = this.props.plain;
     const plainSizeName = this.props.plainSize === 'default' ? 'line' : 'lines';

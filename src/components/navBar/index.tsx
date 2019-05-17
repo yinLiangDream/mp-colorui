@@ -32,7 +32,7 @@ export default class ClNavBar extends Component<IProps, IState> {
     const bgColorClassName = this.props.bgColor ? BG_COLOR_LIST[this.props.bgColor] : 'bg-white';
     const leftComponent = this.props.leftIcon && this.props.leftIcon.map((item, index) =>
       <Block key={index}>
-        <Text className={`${item.icon ? 'icon-' + item.icon : ''} ${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}
+        <Text className={`${item.icon ? 'cuIcon-' + item.icon : ''} ${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}
               onClick={this.onClickLeftIcon.bind(this, index)}
         />
         <Text className={`${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}
@@ -42,7 +42,7 @@ export default class ClNavBar extends Component<IProps, IState> {
     );
     const rightComponent = this.props.rightIcon && this.props.rightIcon.map((item, index) =>
       <Block key={index}>
-        <Text className={`${item.icon ? 'icon-' + item.icon : ''} ${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}
+        <Text className={`${item.icon ? 'cuIcon-' + item.icon : ''} ${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}
               onClick={this.onClickRightIcon.bind(this, index)}
         />
       </Block>

@@ -60,12 +60,12 @@ export default class ClSearchBar extends Component<IProps, IState> {
     const buttonColorClassName = this.props.rightButtonColor ? BG_COLOR_LIST[this.props.rightButtonColor] : '';
     const textColorClassName = this.props.rightTextColor ? TEXT_COLOR_LIST[this.props.rightTextColor] : '';
     const leftIconComponent = this.props.leftIcons ? this.props.leftIcons.map((item, index) => (
-      <View key={index} className={`cu-awatar round icon-${item}`}
+      <View key={index} className={`cu-awatar round cuIcon-${item}`}
         onClick={this.onIconClick.bind(this, index)}
       />)) : '';
     const searchComponent =
       <View className={`search-form ${this.props.shape}`}>
-        <Text className='icon-search' />
+        <Text className='cuIcon-search' />
         <Input placeholder={this.props.placeholder} confirmType='search' type='text' onFocus={this.onFocus}
           onBlur={this.onBlur} focus={this.state.showSearch} adjustPosition value={value}
           onConfirm={this.onSearch.bind(this)}

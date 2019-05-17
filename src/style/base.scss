@@ -3,32 +3,67 @@
  ==================== */
 
 page {
-  background-color: #f1f1f1;
-  font-size: 28px;
-  color: #333;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
-  /* Color 可以自定义相关配色 */
-  --red: #e54d42;
-  --orange: #f37b1d;
-  --yellow: #fbbd08;
-  --olive: #8dc63f;
-  --green: #39b54a;
-  --cyan: #1cbbb4;
-  --blue: #0081ff;
-  --purple: #6739b6;
-  --mauve: #9c26b0;
-  --pink: #e03997;
-  --brown: #a5673f;
-  --grey: #8799a3;
-  --gray: #aaa;
-  --black: #333;
-  --white: #fff;
-  --gradualRed: linear-gradient(45deg, #f43f3b, #ec008c);
-  --gradualOrange: linear-gradient(45deg, #ff9700, #ed1c24);
-  --gradualGreen: linear-gradient(45deg, #39b54a, #8dc63f);
-  --gradualPurple: linear-gradient(45deg, #9000ff, #5e00ff);
-  --gradualPink: linear-gradient(45deg, #ec008c, #6739b6);
-  --gradualBlue: linear-gradient(45deg, #0081ff, #1cbbb4);
+	/* Color 可以自定义相关配色 */
+	/* var属性兼容性 --> https://www.caniuse.com/#feat=css-variables */
+	/* 标准色 */
+	--red: #e54d42;
+	--orange: #f37b1d;
+	--yellow: #fbbd08;
+	--olive: #8dc63f;
+	--green: #39b54a;
+	--cyan: #1cbbb4;
+	--blue: #0081ff;
+	--purple: #6739b6;
+	--mauve: #9c26b0;
+	--pink: #e03997;
+	--brown: #a5673f;
+	--grey: #8799a3;
+	--black: #333333;
+	--darkGray: #666666;
+	--gray: #aaaaaa;
+	--ghostWhite: #f1f1f1;
+	--white: #ffffff;
+	/* 浅色 */
+	--redLight: #fadbd9;
+	--orangeLight: #fde6d2;
+	--yellowLight: #fef2ce;
+	--oliveLight: #e8f4d9;
+	--greenLight: #d7f0db;
+	--cyanLight: #d2f1f0;
+	--blueLight: #cce6ff;
+	--purpleLight: #e1d7f0;
+	--mauveLight: #ebd4ef;
+	--pinkLight: #f9d7ea;
+	--brownLight: #ede1d9;
+	--greyLight: #e7ebed;
+	/* 渐变色 */
+	--gradualRed: linear-gradient(45deg, #f43f3b, #ec008c);
+	--gradualOrange: linear-gradient(45deg, #ff9700, #ed1c24);
+	--gradualGreen: linear-gradient(45deg, #39b54a, #8dc63f);
+	--gradualPurple: linear-gradient(45deg, #9000ff, #5e00ff);
+	--gradualPink: linear-gradient(45deg, #ec008c, #6739b6);
+	--gradualBlue: linear-gradient(45deg, #0081ff, #1cbbb4);
+	/* 阴影透明色 */
+	--ShadowSize: 6rpx 6rpx 8rpx;
+	--redShadow: rgba(204, 69, 59, 0.2);
+	--orangeShadow: rgba(217, 109, 26, 0.2);
+	--yellowShadow: rgba(224, 170, 7, 0.2);
+	--oliveShadow: rgba(124, 173, 55, 0.2);
+	--greenShadow: rgba(48, 156, 63, 0.2);
+	--cyanShadow: rgba(28, 187, 180, 0.2);
+	--blueShadow: rgba(0, 102, 204, 0.2);
+	--purpleShadow: rgba(88, 48, 156, 0.2);
+	--mauveShadow: rgba(133, 33, 150, 0.2);
+	--pinkShadow: rgba(199, 50, 134, 0.2);
+	--brownShadow: rgba(140, 88, 53, 0.2);
+	--greyShadow: rgba(114, 130, 138, 0.2);
+	--grayShadow: rgba(114, 130, 138, 0.2);
+	--blackShadow: rgba(26, 26, 26, 0.2);
+
+	background-color: var(--ghostWhite);
+	font-size: 28rpx;
+	color: var(--black);
+	font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 
 view,
@@ -87,8 +122,8 @@ image.loading::after {
   font-size: 32px;
   margin: auto;
   color: #ccc;
-  -webkit-animation: icon-spin 2s infinite linear;
-  animation: icon-spin 2s infinite linear;
+  -webkit-animation: cuIcon-spin 2s infinite linear;
+  animation: cuIcon-spin 2s infinite linear;
   display: block;
 }
 
@@ -115,13 +150,16 @@ switch::before {
   top: 0%;
   left: 0px;
   font-size: 26px;
-  line-height: 52px;
-  width: 52px;
+  line-height: 26px;
+  width: 50%;
   text-align: center;
   pointer-events: none;
   transform: scale(0, 0);
   transition: all 0.3s ease-in-out 0s;
   z-index: 9;
+  bottom: 0;
+	height: 26px;
+	margin: auto;
 }
 
 switch::before {
@@ -141,12 +179,16 @@ switch.checked::before {
   transform: scale(0, 0);
 }
 
+switch[checked]::before {
+	transform: scale(0, 0);
+}
+
 radio::before,
 checkbox::before {
   font-family: 'cuIcon';
   content: '\e645';
   position: absolute;
-  color: #fff !important;
+	color: var(--white) !important;
   top: 50%;
   margin-top: -16px;
   right: 10px;
@@ -237,7 +279,7 @@ radio.radio[checked]::after {
   bottom: 0;
   margin: auto;
   border-radius: 200px;
-  border: 8px solid #fff !important;
+  border: 16px solid var(--white) !important;
 }
 
 .switch-sex::after {
@@ -346,21 +388,21 @@ radio.black[checked] .wx-radio-input {
 switch.white[checked] .wx-switch-input,
 checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
-  border-color: #fff !important;
+  border-color: var(--white) !important;
 }
 
 switch.red[checked] .wx-switch-input.wx-switch-input-checked,
 checkbox.red[checked] .wx-checkbox-input,
 radio.red[checked] .wx-radio-input {
   background-color: var(--red) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.orange[checked] .wx-switch-input,
 checkbox.orange[checked] .wx-checkbox-input,
 radio.orange[checked] .wx-radio-input {
   background-color: var(--orange) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.yellow[checked] .wx-switch-input,
@@ -374,7 +416,7 @@ switch.olive[checked] .wx-switch-input,
 checkbox.olive[checked] .wx-checkbox-input,
 radio.olive[checked] .wx-radio-input {
   background-color: var(--olive) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.green[checked] .wx-switch-input,
@@ -384,75 +426,75 @@ checkbox[checked] .wx-checkbox-input,
 radio.green[checked] .wx-radio-input,
 radio[checked] .wx-radio-input {
   background-color: var(--green) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.cyan[checked] .wx-switch-input,
 checkbox.cyan[checked] .wx-checkbox-input,
 radio.cyan[checked] .wx-radio-input {
   background-color: var(--cyan) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.blue[checked] .wx-switch-input,
 checkbox.blue[checked] .wx-checkbox-input,
 radio.blue[checked] .wx-radio-input {
   background-color: var(--blue) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.purple[checked] .wx-switch-input,
 checkbox.purple[checked] .wx-checkbox-input,
 radio.purple[checked] .wx-radio-input {
   background-color: var(--purple) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.mauve[checked] .wx-switch-input,
 checkbox.mauve[checked] .wx-checkbox-input,
 radio.mauve[checked] .wx-radio-input {
   background-color: var(--mauve) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.pink[checked] .wx-switch-input,
 checkbox.pink[checked] .wx-checkbox-input,
 radio.pink[checked] .wx-radio-input {
   background-color: var(--pink) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.brown[checked] .wx-switch-input,
 checkbox.brown[checked] .wx-checkbox-input,
 radio.brown[checked] .wx-radio-input {
   background-color: var(--brown) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.grey[checked] .wx-switch-input,
 checkbox.grey[checked] .wx-checkbox-input,
 radio.grey[checked] .wx-radio-input {
   background-color: var(--grey) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.gray[checked] .wx-switch-input,
 checkbox.gray[checked] .wx-checkbox-input,
 radio.gray[checked] .wx-radio-input {
   background-color: #f0f0f0 !important;
-  color: #666 !important;
+  color: var(--black) !important;
 }
 
 switch.black[checked] .wx-switch-input,
 checkbox.black[checked] .wx-checkbox-input,
 radio.black[checked] .wx-radio-input {
   background-color: var(--black) !important;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 switch.white[checked] .wx-switch-input,
 checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
-  background-color: #fff !important;
-  color: #666 !important;
+  background-color: var(--white) !important;
+  color: var(--black) !important;
 }

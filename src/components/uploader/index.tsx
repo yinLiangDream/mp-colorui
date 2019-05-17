@@ -64,7 +64,7 @@ export default function ClUploader(props: IProps) {
           e.stopPropagation();
         }}
       >
-        <Text className='icon-close' />
+        <Text className='cuIcon-close' />
       </View>
     </View>
   ));
@@ -74,7 +74,7 @@ export default function ClUploader(props: IProps) {
       <View className='grid col-4 grid-square flex-sub'>
         {imgComponet}
         <View className='padding-xs solids' onClick={ChooseImage}>
-          <Text className='icon-cameraadd' />
+          <Text className='cuIcon-cameraadd' />
         </View>
       </View>
     </View>

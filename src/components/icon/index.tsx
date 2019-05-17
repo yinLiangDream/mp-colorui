@@ -30,7 +30,7 @@ export default class ClIcon extends Component<IProps, IState> {
     const sizeClassName = this.props.size || 'normal';
     const bgColorClassName = this.props.color ? `text-${this.props.color}` : '';
     const iconClassName = this.props.iconName
-      ? `icon-${this.props.iconName}`
+      ? `cuIcon-${this.props.iconName}`
       : '';
     return (
       <Text

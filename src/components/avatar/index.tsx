@@ -22,10 +22,10 @@ function ClAvatar(props: IProps) {
         } cu-avatar`}
         style={item.url ? { backgroundImage: `url(${item.url})` } : ''}
       >
-        <Text className={`icon-${item.icon}`}>{item.text}</Text>
+        <Text className={`cuIcon-${item.icon}`}>{item.text}</Text>
         {item.tag ? (
           <View
-            className={`cu-tag badge icon-${item.tag} ${
+            className={`cu-tag badge cuIcon-${item.tag} ${
               item.tagColor ? BG_COLOR_LIST[item.tagColor] : ''
             }`}
           />

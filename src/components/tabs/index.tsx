@@ -54,7 +54,7 @@ export default class ClTabs extends Component<IProps, IState> {
             }`}
             onClick={this.onClickTab.bind(this, index)}
           >
-            <Text className={`icon-${item.icon}`} />
+            <Text className={`cuIcon-${item.icon}`} />
             <Text className='margin-left-xs'>{item.text}</Text>
           </View>
         ))}
@@ -71,7 +71,7 @@ export default class ClTabs extends Component<IProps, IState> {
               }`}
               onClick={this.onClickTab.bind(this, index)}
             >
-              <Text className={`icon-${item.icon}`} />
+              <Text className={`cuIcon-${item.icon}`} />
               <Text className='margin-left-xs'>{item.text}</Text>
             </View>
           ))}
@@ -88,7 +88,7 @@ export default class ClTabs extends Component<IProps, IState> {
             }`}
             onClick={this.onClickTab.bind(this, index)}
           >
-            <Text className={`icon-${item.icon}`} />
+            <Text className={`cuIcon-${item.icon}`} />
             <Text className='margin-left-xs'>{item.text}</Text>
           </View>
         ))}

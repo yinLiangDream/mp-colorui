@@ -1,4 +1,4 @@
-import { Switch, View } from '@tarojs/components';
+import { Switch, View, Text } from '@tarojs/components';
 import Taro, { Component, Config } from '@tarojs/taro';
 import ClAvatar from '../../components/avatar/index';
 import ClButton from '../../components/button/index';
@@ -17,7 +17,7 @@ import ClSearchBar from '../../components/searchBar';
 import ClSelect from '../../components/select/index';
 import ClShopBar from '../../components/shopBar';
 import ClStep from '../../components/steps';
-import '../../components/style/index.scss';
+import '../../style/index.scss';
 import ClSwiper from '../../components/swiper/index';
 import ClSwitch from '../../components/switch/index';
 import ClTabBar from '../../components/tabBar/index';
@@ -27,7 +27,6 @@ import ClText from '../../components/text/index';
 import ClTimeline from '../../components/timeline';
 import ClTitleBar from '../../components/titleBar';
 import ClUploader from '../../components/uploader';
-import './index.scss';
 
 export default class Index extends Component {
   /**
@@ -98,15 +97,13 @@ export default class Index extends Component {
           renderTitle={<View>123</View>}
           renderAction={
             <ClButton
-              text='怀念'
               size='large'
               shape='round'
               bgColor='gradualOrange'
-              icon='all'
               openType='getUserInfo'
               onGetUserInfo={this.clickButton}
               onClick={this.clickButton}
-            />
+            ><Text>怀念</Text></ClButton>
           }
         >
           <ClSwiper

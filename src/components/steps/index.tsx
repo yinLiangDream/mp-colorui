@@ -30,7 +30,7 @@ export default class ClStep extends Component<IProps, IState> {
       <View className={`cu-item ${(this.props.step || 0) > index ? activeColorClassName : ''}`} key={index}>
         {this.props.stepTitlePosition === 'top' ? item.title : ''}
         {<Text
-          className={`${this.props.stepIconType === 'number' ? 'num' : ''} ${this.props.stepIconType === 'custom' ? 'icon-' + item.icon : ''}`}
+          className={`${this.props.stepIconType === 'number' ? 'num' : ''} ${this.props.stepIconType === 'custom' ? 'cuIcon-' + item.icon : ''}`}
         >{index + 1}</Text>}
         {this.props.stepTitlePosition === 'bottom' ? item.title : ''}
       </View>);

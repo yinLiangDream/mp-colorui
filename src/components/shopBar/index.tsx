@@ -31,7 +31,7 @@ export default class ClShopBar extends Component<IProps, IState> {
     const bgColorClassName = BG_COLOR_LIST[this.props.bgColor || 'white'];
     const tabsComponent = this.props.tabs && this.props.tabs.map((item, index) =>
       <View key={index} className='action' onClick={this.onClickTab.bind(this, index)}>
-        <View className={`${item.icon ? 'icon-' + item.icon : ''}`}>
+        <View className={`${item.icon ? 'cuIcon-' + item.icon : ''}`}>
           {item.badge !== false ? <View className='cu-tag badge'>{item.badge === true ? '' : item.badge}</View> : ''}
         </View>
         <View>{item.title}</View>
