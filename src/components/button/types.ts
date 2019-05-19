@@ -1,4 +1,4 @@
-import { bgColorType, lightBgColorType, bgColorMoreType } from "../utils/types";
+import { bgColorType, lightBgColorType, bgColorMoreType, iconType } from '../utils/types';
 
 export interface IProps {
   shape?: 'round' | 'radius';
@@ -10,6 +10,7 @@ export interface IProps {
   disabled?: boolean;
   loading?: boolean;
   long?: boolean;
+  icon?: iconType;
   openType?:
     | 'contact'
     | 'getUserInfo'

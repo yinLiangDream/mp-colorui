@@ -103,6 +103,7 @@ export default class Index extends Component {
               openType='getUserInfo'
               onGetUserInfo={this.clickButton}
               onClick={this.clickButton}
+              icon='round'
             ><Text>怀念</Text></ClButton>
           }
         >
@@ -238,15 +239,13 @@ export default class Index extends Component {
           ]}
         />
         <ClButton
-          text='怀念'
           size='large'
           shape='round'
           bgColor='gradualOrange'
-          icon='all'
           openType='getUserInfo'
           onGetUserInfo={this.clickButton}
           onClick={this.clickButton}
-        />
+        >怀念</ClButton>
         <ClText text='KKK' align='center' size='xxlarge' />
         <ClIcon iconName='activity' size={88} color='cyan' />
         <ClLayout

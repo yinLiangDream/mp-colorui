@@ -472,7 +472,7 @@ button.icon.lg {
   background-color: #dd514c;
 }
 
-.cu-tag:empty:not([class*='icon']) {
+.cu-tag:empty:not([class*='cuIcon-']) {
   padding: 0px;
   width: 16px;
   height: 16px;
@@ -480,7 +480,7 @@ button.icon.lg {
   right: -4px;
 }
 
-.cu-tag[class*='icon'] {
+.cu-tag[class*='cuIcon-'] {
   width: 32px;
   height: 32px;
   top: -4px;
@@ -639,7 +639,7 @@ button.icon.lg {
   line-height: 2.4em;
 }
 
-.cu-load.load-modal [class*='icon'] {
+.cu-load.load-modal [class*='cuIcon-'] {
   font-size: 60px;
 }
 
@@ -919,7 +919,7 @@ button.icon.lg {
   align-items: center;
 }
 
-.cu-list.menu > .cu-item .content > text[class*='icon'] {
+.cu-list.menu > .cu-item .content > text[class*='cuIcon-'] {
   display: inline-block;
   margin-right: 10px;
   width: 1.6em;
@@ -994,7 +994,7 @@ button.icon.lg {
   line-height: 40px;
 }
 
-.cu-list.grid > .cu-item [class*='icon'] {
+.cu-list.grid > .cu-item [class*='cuIcon-'] {
   position: relative;
   display: block;
   margin-top: 20px;
@@ -1128,7 +1128,7 @@ button.icon.lg {
   margin-left: 20px;
 }
 
-.cu-bar .action:first-child > text[class*='icon'] {
+.cu-bar .action:first-child > text[class*='cuIcon-'] {
   margin-left: -0.3em;
   margin-right: 0.3em;
 }
@@ -1137,12 +1137,12 @@ button.icon.lg {
   margin-right: 30px;
 }
 
-.cu-bar .action > text[class*='icon'],
-.cu-bar .action > view[class*='icon'] {
+.cu-bar .action > text[class*='cuIcon-'],
+.cu-bar .action > view[class*='cuIcon-'] {
   font-size: 36px;
 }
 
-.cu-bar .action > text[class*='icon'] + text[class*='icon'] {
+.cu-bar .action > text[class*='cuIcon-'] + text[class*='cuIcon-'] {
   margin-left: 0.5em;
 }
 
@@ -1210,11 +1210,11 @@ button.icon.lg {
   font-size: 26px;
 }
 
-.cu-bar .search-form [class*='icon'] {
+.cu-bar .search-form [class*='cuIcon-'] {
   margin: 0 0.5em 0 0.8em;
 }
 
-.cu-bar .search-form [class*='icon']::before {
+.cu-bar .search-form [class*='cuIcon-']::before {
   top: 0px;
 }
 
@@ -1275,7 +1275,7 @@ button.icon.lg {
   padding-top: 50px;
 }
 
-.cu-bar.tabbar .action.add-action [class*='icon'] {
+.cu-bar.tabbar .action.add-action [class*='cuIcon-'] {
   position: absolute;
   width: 70px;
   z-index: 2;
@@ -1330,7 +1330,7 @@ button.icon.lg {
   border: 0;
 }
 
-.cu-bar.tabbar .action [class*='icon'] {
+.cu-bar.tabbar .action [class*='cuIcon-'] {
   width: 100px;
   position: relative;
   display: block;
@@ -1404,7 +1404,7 @@ button.icon.lg {
   margin-left: 20px;
 }
 
-.cu-bar.input .action [class*='icon'] {
+.cu-bar.input .action [class*='cuIcon-'] {
   font-size: 48px;
 }
 
@@ -1413,7 +1413,7 @@ button.icon.lg {
   margin-left: 0px;
 }
 
-.cu-bar.input .action:first-child [class*='icon'] {
+.cu-bar.input .action:first-child [class*='cuIcon-'] {
   margin-left: 0px;
 }
 
@@ -1570,7 +1570,7 @@ button.icon.lg {
   content: '\e763';
 }
 
-.cu-timeline > .cu-item[class*='icon']::before {
+.cu-timeline > .cu-item[class*='cuIcon-']::before {
   background-color: var(--white);
   width: 50px;
   height: 50px;
@@ -1894,7 +1894,7 @@ button.icon.lg {
   padding-right: 20px;
 }
 
-.cu-form-group > text[class*='icon'] {
+.cu-form-group > text[class*='cuIcon-'] {
   font-size: 36px;
   padding: 0;
   box-sizing: border-box;
@@ -2219,7 +2219,7 @@ scroll-view.cu-steps .cu-item {
   color: var(--grey);
 }
 
-.cu-steps .cu-item [class*='icon'],
+.cu-steps .cu-item [class*='cuIcon-'],
 .cu-steps .cu-item .num {
   display: block;
   font-size: 40px;
@@ -2454,7 +2454,7 @@ scroll-view.cu-steps .cu-item {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.grid.grid-square > view > text[class*='icon'] {
+.grid.grid-square > view > text[class*='cuIcon-'] {
   font-size: 52px;
   position: absolute;
   color: var(--grey);

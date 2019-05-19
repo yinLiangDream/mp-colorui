@@ -1,6 +1,6 @@
 import { Button, Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { IProps } from '../../../@types/button';
+import { IProps } from './types';
 import { BG_COLOR_LIST, SIZE } from '../utils/model';
 
 
@@ -69,7 +69,7 @@ export default class ClButton extends Component<IProps, IState> {
         onError={this.onError}
       >
         <Text className={loadingClassName} />
-        <Text>{this.props.children}</Text>
+        {this.props.children}
       </Button>
     );
     const longButton = (
