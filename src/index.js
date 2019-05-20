@@ -30,6 +30,7 @@ export { default as ClTimeline } from './components/timeline';
 export { default as ClSwiper } from './components/swiper';
 export { default as ClModal } from './components/modal';
 export { default as ClDrawer } from './components/drawer';
+export { default as ClCard } from './components/card'
 export { default as Timer } from './components/timer/timer';
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

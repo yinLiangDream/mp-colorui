@@ -15,7 +15,7 @@ export default class ClTabs extends Component<IProps, IState> {
   };
   static defaultProps = {
     type: 'default',
-    bgColor: 'white',
+    bgColor: '',
     activeColor: 'black',
     active: 0,
     tabs: []

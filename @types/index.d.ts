@@ -25,5 +25,6 @@ export { default as ClText } from './text';
 export { default as ClTimeline } from './timeline';
 export { default as ClTitleBar } from './titleBar';
 export { default as ClUploader } from './uploader';
+export { default as ClCard } from './card';
 
 export { default as Timer} from './timer'

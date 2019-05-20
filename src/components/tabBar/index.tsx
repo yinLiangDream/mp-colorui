@@ -51,7 +51,7 @@ export default class ClTabBar extends Component<IProps, IState> {
       >
         <View
           className={`${
-            item.img ? 'cu-image' : item.icon ? 'cuIcon-' + item.icon : ''
+            item.img ? 'cuIcon-cu-image' : item.icon ? 'cuIcon-' + item.icon : ''
           }`}
         >
           {item.badge !== false ? (
