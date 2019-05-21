@@ -4,17 +4,14 @@ import utils from '../utils/index';
 import { BG_COLOR_LIST } from '../utils/model';
 import { IProps, THeaderArray } from './types';
 
-
-
 function ClAvatar(props: IProps) {
-  const onClick = (index = undefined) => {
-    props.onClick && props.onClick(index);
+  const onClick = () => {
+    props.onClick && props.onClick();
   };
   const avatarArray = props.headerArray ? (
     props.headerArray.map((item: THeaderArray, index: number) => (
       <View
         key={index + Math.random()}
-        onClick={onClick.bind(this, index)}
         className={`${props.shape} ${
           utils.model.SIZE[props.size || 'normal']
         } ${BG_COLOR_LIST[item.bgColor || 'black']} ${
@@ -38,12 +35,25 @@ function ClAvatar(props: IProps) {
     <View />
   );
   const avatarArrayComponent = (
-    <View className='cu-avatar-group'>{avatarArray}</View>
+    <View
+      className='cu-avatar-group'
+      onClick={() => {
+        onClick();
+      }}
+    >
+      {avatarArray}
+    </View>
   );
   return props.headerArray && props.headerArray.length > 1 ? (
     avatarArrayComponent
   ) : (
-    <View>{avatarArray}</View>
+    <View
+      onClick={() => {
+        onClick();
+      }}
+    >
+      {avatarArray}
+    </View>
   );
 }
 

@@ -3,8 +3,6 @@ import Taro, { Component } from '@tarojs/taro';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
 import { IProps } from './types';
 
-
-
 interface IState {
   activeTab: number;
 }
@@ -54,8 +52,12 @@ export default class ClTabs extends Component<IProps, IState> {
             }`}
             onClick={this.onClickTab.bind(this, index)}
           >
-            <Text className={`cuIcon-${item.icon}`} />
-            <Text className='margin-left-xs'>{item.text}</Text>
+            {item.icon ? (
+              <Text className={`cuIcon-${item.icon} margin-right-xs`} />
+            ) : (
+              ''
+            )}
+            <Text>{item.text}</Text>
           </View>
         ))}
       </ScrollView>
@@ -71,8 +73,12 @@ export default class ClTabs extends Component<IProps, IState> {
               }`}
               onClick={this.onClickTab.bind(this, index)}
             >
-              <Text className={`cuIcon-${item.icon}`} />
-              <Text className='margin-left-xs'>{item.text}</Text>
+              {item.icon ? (
+                <Text className={`cuIcon-${item.icon} margin-right-xs`} />
+              ) : (
+                ''
+              )}
+              <Text>{item.text}</Text>
             </View>
           ))}
         </View>
@@ -88,18 +94,22 @@ export default class ClTabs extends Component<IProps, IState> {
             }`}
             onClick={this.onClickTab.bind(this, index)}
           >
-            <Text className={`cuIcon-${item.icon}`} />
-            <Text className='margin-left-xs'>{item.text}</Text>
+            {item.icon ? (
+              <Text className={`cuIcon-${item.icon} margin-right-xs`} />
+            ) : (
+              ''
+            )}
+            <Text>{item.text}</Text>
           </View>
         ))}
       </ScrollView>
     );
-    return this.props.type === 'default' ? (
-      defaultComponent
-    ) : this.props.type === 'verb' ? (
-      verbComponent
-    ) : this.props.type === 'center' ? (
-      centerComponent
-    ) : '';
+    return this.props.type === 'default'
+      ? defaultComponent
+      : this.props.type === 'verb'
+      ? verbComponent
+      : this.props.type === 'center'
+      ? centerComponent
+      : '';
   }
 }

@@ -1,7 +1,7 @@
 {
-	"name": "taro-colorui",
+	"name": "mp-colorui",
 	"version": "0.0.1-beta",
-	"description": "Taro-ColorUI",
+	"description": "MP-ColorUI",
 	"main": "dist/index.js",
 	"main:h5": "dist/h5/index.js",
 	"types": "./@types/index.d.ts",

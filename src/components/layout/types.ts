@@ -27,6 +27,17 @@ type baseSelectionType = {
   marginDirection?: direction;
 };
 export interface IProps {
+  /**
+   * 布局类型，可选类型 flex, grid, normal
+   *
+   * 默认值：`normal`
+   *
+   * flex: 浮动布局
+   *
+   * grid: 栅格布局
+   *
+   * normal: 正常布局
+   */
   type?: 'flex' | 'grid' | 'normal';
   flexSelection?: flexSelectionType;
   gridSelection?: gridSelectionType;
