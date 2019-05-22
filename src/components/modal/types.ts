@@ -42,16 +42,67 @@ export type radio = {};
 export type checkbox = {};
 
 export interface IProps {
+  /**
+   * 是否显示
+   *
+   * 默认值 `false`
+   *
+   * 可选类型 `true`, `false`
+   */
   show?: boolean;
+  /**
+   * 标题
+   */
   title?: TTitle;
+  /**
+   * 是否显示关闭按钮
+   *
+   * 默认值 `true`
+   *
+   * 可选类型 `true`, `false`
+   */
   close?: TClose;
+  /**
+   * 是否自定义整个 modal
+   *
+   * 默认值 `false`
+   *
+   * 可选类型 `true`, `false`
+   */
   custom?: boolean;
+  /**
+   * 点击阴影关闭
+   *
+   * 默认值 `false`
+   *
+   * 可选类型 `true`, `false`
+   */
   closeWithShadow?: boolean;
   children?: TChildren;
+  /**
+   * 标题栏背景色，可选类型请查看 默认背景色 可选类型
+   */
   titleBgColor?: TTitleBgColor;
+  /**
+   * 操作栏颜色，可选类型请查看 默认背景色 可选类型
+   */
   actionColor?: TActionColor;
+  /**
+   * 操作栏操作组
+   *
+   * 可设置以下参数 text
+   */
   actions?: TActions;
+  /**
+   * 自定义操作栏
+   */
   renderAction?: TRenderAction;
+  /**
+   * 自定义标题栏
+   */
   renderTitle?: TRenderTitle;
+  /**
+   * 操作栏点击事件
+   */
   onClick?: (index: number) => void;
 }
