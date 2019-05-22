@@ -43,5 +43,8 @@ export interface IProps {
      */
     icon?: iconType;
   }[];
+  /**
+   * 点击事件
+   */
   onClick?: (index: number) => void;
 }
