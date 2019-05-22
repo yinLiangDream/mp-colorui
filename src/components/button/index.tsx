@@ -69,6 +69,7 @@ export default class ClButton extends Component<IProps, IState> {
         onError={this.onError}
       >
         <Text className={loadingClassName} />
+        <Text>{this.props.text}</Text>
         {this.props.children}
       </Button>
     );

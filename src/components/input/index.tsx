@@ -55,7 +55,7 @@ function ClInput(props: IProps) {
     type,
     maxLength,
     disabled,
-    customRight
+    renderCustomRight
   } = props;
   return (
     <View className='cu-form-group'>
@@ -75,7 +75,7 @@ function ClInput(props: IProps) {
       {iconComponent}
       {buttonComponent}
       {imageComponent}
-      {customRight ? customRight : ''}
+      {renderCustomRight}
     </View>
   );
 }
@@ -86,6 +86,7 @@ ClInput.options = {
 ClInput.defaultProps = {
   value: '',
   placeholder: '',
-  type: 'text'
+  type: 'text',
+  adjustPosition: true
 } as IProps;
 export default ClInput;

@@ -83,6 +83,10 @@ export interface IProps {
    */
   icon?: iconType;
   /**
+   * 按钮内置文字
+   */
+  text?: string;
+  /**
    * 开放能力
    *
    * 可选类型 `contact`, `getUserInfo`, `getPhoneNumber`, `openSetting`, `feedback`, `getRealnameAuthInfo`
