@@ -11,7 +11,7 @@ export default function ClCheckbox(props: IProps) {
   const directionClassName = props.direction === 'horizontal' ? 'flex' : '';
   const list = props.checkboxGroup ? props.checkboxGroup : [];
   const title = props.title;
-  const checkboxComponent = list.map((item, index) => (
+  const checkboxComponent = list.map((item) => (
     <View className='padding-xs' key={item.value}>
       <Text className='padding-right-sm'>{item.key}</Text>
       <Checkbox
