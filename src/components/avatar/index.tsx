@@ -64,11 +64,7 @@ ClAvatar.options = {
 ClAvatar.defaultProps = {
   size: 'normal',
   shape: 'radius',
-  url: '',
-  bgColor: 'blue',
   type: 'normal',
-  text: '',
-  tagColor: 'blue',
   headerArray: [],
   shadow: true
 } as IProps;
