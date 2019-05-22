@@ -44,7 +44,7 @@ export interface IProps {
      */
     icon?: iconType;
     /**
-     * 图标颜色，选类型请查看 默认基本色 可选类型
+     * 图标颜色，可选类型请查看 默认基本色 可选类型
      */
     color?: bgColorType;
   }[];
