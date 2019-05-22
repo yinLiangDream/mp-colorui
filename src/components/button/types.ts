@@ -27,7 +27,7 @@ export interface IProps {
    */
   size?: 'small' | 'normal' | 'large';
   /**
-   * 按钮背景色设置，可选类型请查看 默认色 可选类型
+   * 按钮背景色设置，可选类型请查看 默认背景色 可选类型
    */
   bgColor?: bgColorType | lightBgColorType | bgColorMoreType;
   /**
