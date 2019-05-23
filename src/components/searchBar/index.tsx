@@ -1,7 +1,7 @@
 import { Button, Input, Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
-import { IProps } from './types';
+import { IProps } from '../../../@types/searchBar';
 
 interface IState {
   showSearch?: boolean;

@@ -1,7 +1,7 @@
 import { View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
 import { SIZE } from '../utils/model';
-import { IProps } from './types';
+import { IProps } from '../../../@types/layout';
 
 
 /**

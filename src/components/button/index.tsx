@@ -1,6 +1,6 @@
 import { Button, Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { IProps } from './types';
+import { IProps } from '../../../@types/button';
 import { BG_COLOR_LIST, SIZE } from '../utils/model';
 
 

@@ -1,7 +1,7 @@
 import { Picker, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
 import { getNowDate } from '../utils';
-import { IProps } from './types';
+import { IProps } from '../../../@types/select';
 
 
 

@@ -1,6 +1,6 @@
 import { Checkbox, CheckboxGroup, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import { IProps } from './types';
+import { IProps } from '../../../@types/checkbox';
 
 
 

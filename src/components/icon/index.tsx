@@ -1,7 +1,7 @@
 import { Text } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
 import { isNumber } from 'util';
-import { IProps } from './types';
+import { IProps } from '../../../@types/icon';
 
 
 

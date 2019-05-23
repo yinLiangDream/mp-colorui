@@ -1,4 +1,4 @@
-# MP-COLORUI 是基于 Taro框架 和 ColorUI CSS 库 的组件库
+# MP-COLORUI 是基于 Taro框架的组件库
 
 ## 使用方式
 

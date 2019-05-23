@@ -1,8 +1,4 @@
-import { ReactNode } from 'react';
-
 export type TDirection = 'left' | 'right' | 'bottom';
-
-export type TChildren = ReactNode;
 
 export interface IProps {
   /**
@@ -21,5 +17,4 @@ export interface IProps {
    * 可选类型 `left`, `right`, `bottom`
    */
   direction?: TDirection;
-  children?: TChildren;
 }

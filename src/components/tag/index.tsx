@@ -2,7 +2,7 @@ import { View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../utils/model';
 import { bgColorType } from '../utils/types';
-import { IProps } from './types';
+import { IProps } from '../../../@types/tag';
 
 
 

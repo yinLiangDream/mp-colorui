@@ -1,6 +1,6 @@
 import { Image, Swiper, SwiperItem, Video, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
-import { IProps, TList } from './types';
+import { IProps, TList } from '../../../@types/swiper';
 
 
 

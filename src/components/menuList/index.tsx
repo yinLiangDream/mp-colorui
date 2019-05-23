@@ -2,7 +2,7 @@ import { Image, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import ClIcon from '../icon/index';
 import { TEXT_COLOR_LIST } from '../utils/model';
-import { IProps } from './types';
+import { IProps } from '../../../@types/menuList';
 
 
 

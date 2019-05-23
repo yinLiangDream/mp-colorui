@@ -1,5 +1,107 @@
 import { ComponentClass } from 'react';
-import { IProps } from '../src/components/input/types';
+
+import { IProps as IButton } from './button';
+import { IProps as IIcon } from './icon';
+
+export type TValue = string;
+export type TPlaceholder = string;
+export type TType = 'text' | 'number' | 'password' | 'idcard' | 'digit';
+export type TTitle = string;
+export type TMaxLength = number;
+export type TDisabled = boolean;
+export type TAdjustPosition = boolean;
+export type TIcon = IIcon;
+export type TButton = IButton;
+export type TClear = boolean;
+export type TFocus = boolean;
+export type TImage = string;
+
+export type TOnChange = (str: string) => void;
+export type TOnFocus = (str: string) => void;
+export type TOnBlur = (str: string) => void;
+export type TOnIconClick = (e: any) => void;
+export type TOnImageClick = (e: any) => void;
+
+export interface IProps {
+  /**
+   * 输入框默认值
+   */
+  value?: TValue;
+  /**
+   * 输入框占位符
+   */
+  placeholder?: TPlaceholder;
+  /**
+   * 输入框类型
+   *
+   * 默认值 `text`
+   *
+   * 可选类型 `text`, `number`, `password`, `idcard`, `digit`
+   */
+  type?: TType;
+  /**
+   * 输入框标题
+   */
+  title?: TTitle;
+  /**
+   * 最大输入长度
+   *
+   * 默认值 -1
+   */
+  maxLength?: TMaxLength;
+  /**
+   * 禁止输入
+   *
+   * 默认值 `false`
+   *
+   * 可选类型 `true`, `false`
+   */
+  disabled?: TDisabled;
+  /**
+   * 键盘弹起时，是否自动上推页面
+   *
+   * 默认值 `true`
+   *
+   * 可选类型 `true`, `false`
+   */
+  adjustPosition?: TAdjustPosition;
+  /**
+   * 输入框后置icon，可选类型请查看 Icon 组件
+   */
+  icon?: TIcon;
+  /**
+   * 输入框后置icon的点击事件
+   */
+  onIconClick?: TOnIconClick;
+  /**
+   * 输入框后置按钮，可选类型请查看 Button 组件
+   */
+  button?: TButton;
+  /**
+   * 输入框后置图片 url
+   */
+  image?: TImage;
+  /**
+   * 输入框后置图片点击事件
+   */
+  onImageClick?: TOnImageClick;
+  /**
+   * 输入框内容改变时触发
+   */
+  onChange?: TOnChange;
+  /**
+   * 失去焦点时触发
+   */
+  onBlur?: TOnBlur;
+  /**
+   * 获得焦点时触发
+   */
+  onFocus?: TOnFocus;
+  /**
+   * 自定义按钮右边的内容，请传入自定义内容
+   */
+  renderCustomRight?: Element;
+}
 
 export interface InputProps extends IProps {}
 declare const Input: ComponentClass<InputProps>;

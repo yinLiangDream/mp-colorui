@@ -1,6 +1,6 @@
 import { Text, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
-import { IProps } from './types';
+import { IProps } from '../../../@types/uploader';
 
 
 

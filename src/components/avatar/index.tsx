@@ -2,7 +2,7 @@ import { Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import utils from '../utils/index';
 import { BG_COLOR_LIST } from '../utils/model';
-import { IProps, THeaderArray } from './types';
+import { IProps, THeaderArray } from '../../../@types/avatar';
 
 function ClAvatar(props: IProps) {
   const onClick = () => {

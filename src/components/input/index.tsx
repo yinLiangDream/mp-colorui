@@ -2,7 +2,7 @@ import { Image, Input, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import ClButton from '../button';
 import ClIcon from '../icon/index';
-import { IProps } from './types';
+import { IProps } from '../../../@types/input';
 
 let normalType;
 

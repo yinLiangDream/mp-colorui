@@ -1,7 +1,7 @@
 import { Text, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../utils/model';
-import { IProps } from './types';
+import { IProps } from '../../../@types/modal';
 
 
 
