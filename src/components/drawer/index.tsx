@@ -1,19 +1,15 @@
 import { View } from '@tarojs/components';
-import Taro, { useState } from '@tarojs/taro';
+import Taro from '@tarojs/taro';
 import { IProps } from '../../../@types/drawer';
 
-
-
 export default function ClDrawer(props: IProps) {
-  const [showDrawer, setShowDrawer] = useState(() => !!props.show);
-
   const hideModal = () => {
-    setShowDrawer(false);
+    props.onClickShadow && props.onClickShadow();
   };
   const leftComponent = (
     <View
       className={`cu-modal drawer-modal justify-start ${
-        showDrawer ? 'show' : ''
+        props.show ? 'show' : ''
       }`}
       onClick={e => {
         hideModal();
@@ -34,7 +30,7 @@ export default function ClDrawer(props: IProps) {
   const rightComponent = (
     <View
       className={`cu-modal drawer-modal justify-end ${
-        showDrawer ? 'show' : ''
+        props.show ? 'show' : ''
       }`}
       onClick={e => {
         hideModal();
@@ -54,13 +50,21 @@ export default function ClDrawer(props: IProps) {
   );
   const bottomComponent = (
     <View
-      className={`cu-modal bottom-modal ${showDrawer ? 'show' : ''}`}
+      className={`cu-modal bottom-modal ${props.show ? 'show' : ''}`}
       onClick={e => {
         hideModal();
         e.stopPropagation();
       }}
     >
-      <View className='cu-dialog'>{this.props.children}</View>
+      <View
+        className='cu-dialog'
+        style={{ maxHeight: '70vh' }}
+        onClick={e => {
+          e.stopPropagation();
+        }}
+      >
+        {this.props.children}
+      </View>
     </View>
   );
   return props.direction === 'left'

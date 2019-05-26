@@ -19,6 +19,10 @@ export interface IProps {
    * 可选类型 `left`, `right`, `bottom`
    */
   direction?: TDirection;
+  /**
+   * 点击
+   */
+  onClickShadow?: () => {}
 }
 
 export interface DrawerProps extends IProps {}

@@ -60,6 +60,10 @@ export interface IProps {
    * 搜索事件，参数 value 为输入的数值
    */
   onSearch?: (value: string) => void;
+  /**
+   * 键盘输入事件， 参数 value 为输入的数值
+   */
+  onInput?: (value: string) => void;
 }
 
 export interface SearchBarProps extends IProps {}

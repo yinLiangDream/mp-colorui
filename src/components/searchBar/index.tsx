@@ -1,6 +1,6 @@
 import { Button, Input, Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/searchBar';
 
 interface IState {
@@ -17,12 +17,12 @@ export default class ClSearchBar extends Component<IProps, IState> {
 
   static defaultProps: IProps = {
     shape: 'radius',
-    fix: true,
-    searchType: "button",
+    fix: false,
+    searchType: 'button',
     leftIcons: [],
-    bgColor: "white",
-    rightButtonColor: "white",
-    rightTextColor: "black",
+    bgColor: undefined,
+    rightButtonColor: 'white',
+    rightTextColor: 'black',
     placeholder: '请搜索'
   };
   state: IState = {
@@ -40,56 +40,100 @@ export default class ClSearchBar extends Component<IProps, IState> {
 
   onFocus() {
     this.setState({
-      showSearch: true,
-    })
+      showSearch: true
+    });
   }
 
   onBlur(e) {
     value = e.detail.value;
     this.setState({
       showSearch: false
-    })
+    });
+  }
+
+  onInput(e) {
+    this.props.onInput && this.props.onInput(e.detail.value);
   }
 
   static onPreventProp(e) {
-    e.stopPropagation()
+    e.stopPropagation();
   }
 
   render(): any {
-    const bgColorClassName = this.props.bgColor ? BG_COLOR_LIST[this.props.bgColor] : '';
-    const buttonColorClassName = this.props.rightButtonColor ? BG_COLOR_LIST[this.props.rightButtonColor] : '';
-    const textColorClassName = this.props.rightTextColor ? TEXT_COLOR_LIST[this.props.rightTextColor] : '';
-    const leftIconComponent = this.props.leftIcons ? this.props.leftIcons.map((item, index) => (
-      <View key={index} className={`cu-awatar round cuIcon-${item}`}
-        onClick={this.onIconClick.bind(this, index)}
-      />)) : '';
-    const searchComponent =
+    const bgColorClassName = this.props.bgColor
+      ? BG_COLOR_LIST[this.props.bgColor]
+      : '';
+    const buttonColorClassName = this.props.rightButtonColor
+      ? BG_COLOR_LIST[this.props.rightButtonColor]
+      : '';
+    const textColorClassName = this.props.rightTextColor
+      ? TEXT_COLOR_LIST[this.props.rightTextColor]
+      : '';
+    const leftIconComponent = this.props.leftIcons
+      ? this.props.leftIcons.map((item, index) => (
+          <View
+            key={index}
+            className={`cu-awatar round cuIcon-${item}`}
+            onClick={this.onIconClick.bind(this, index)}
+          />
+        ))
+      : '';
+    const searchComponent = (
       <View className={`search-form ${this.props.shape}`}>
         <Text className='cuIcon-search' />
-        <Input placeholder={this.props.placeholder} confirmType='search' type='text' onFocus={this.onFocus}
-          onBlur={this.onBlur} focus={this.state.showSearch} adjustPosition value={value}
+        <Input
+          placeholder={this.props.placeholder}
+          confirmType='search'
+          type='text'
+          onFocus={this.onFocus}
+          onBlur={this.onBlur}
+          focus={this.state.showSearch}
+          adjustPosition
+          value={value}
           onConfirm={this.onSearch.bind(this)}
+          onInput={this.onInput.bind(this)}
         />
-      </View>;
-    const buttonComponent =
+      </View>
+    );
+    const buttonComponent = (
       <View className='action' onClick={ClSearchBar.onPreventProp.bind(this)}>
-        <Button className={`cu-btn shadow-blur ${this.props.shape} ${buttonColorClassName} ${textColorClassName}`}
+        <Button
+          className={`cu-btn shadow-blur ${
+            this.props.shape
+          } ${buttonColorClassName} ${textColorClassName}`}
           onClick={this.onSearch.bind(this)}
-        >搜索</Button>
-      </View>;
-    const textComponent =
+        >
+          搜索
+        </Button>
+      </View>
+    );
+    const textComponent = (
       <View className='action' onClick={ClSearchBar.onPreventProp.bind(this)}>
-        <Text className={`${textColorClassName}`} onClick={this.onSearch.bind(this)}>搜索</Text>
-      </View>;
+        <Text
+          className={`${textColorClassName}`}
+          onClick={this.onSearch.bind(this)}
+        >
+          搜索
+        </Text>
+      </View>
+    );
     return (
-      <View className={`cu-bar search ${bgColorClassName}`}
-        style={this.props.fix ? {position: 'fixed', top: '0', width: '100vw', zIndex: '10'} : ''}
+      <View
+        className={`cu-bar search ${bgColorClassName}`}
+        style={
+          this.props.fix
+            ? { position: 'fixed', top: '0', width: '100vw', zIndex: '10' }
+            : ''
+        }
       >
         {leftIconComponent}
         {searchComponent}
-        {this.props.searchType === 'text' ? textComponent : this.props.searchType === 'none' ? '' : buttonComponent}
+        {this.props.searchType === 'text'
+          ? textComponent
+          : this.props.searchType === 'none'
+          ? ''
+          : buttonComponent}
       </View>
-    )
+    );
   }
-
 }
