@@ -57,7 +57,7 @@ export default class ClLoading extends Component<IProps, IState> {
       this.props.bgColor ? BG_COLOR_LIST[this.props.bgColor] : 'bg-blue';
     const modalComponent = (
       <View className='cu-load load-modal'>
-        <Image src={this.props.modelImg || ''} mode='aspectFit' />
+        <Image src={this.props.modalImg || ''} mode='aspectFit' />
         <Text className='text-gray'>{this.props.modalText}</Text>
       </View>
     );

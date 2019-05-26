@@ -22,7 +22,7 @@ export interface IProps {
   /**
    * type 为 modal 时显示的图片
    */
-  modelImg?: string;
+  modalImg?: string;
   /**
    * 是否显示
    *
