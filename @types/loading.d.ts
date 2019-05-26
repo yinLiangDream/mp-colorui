@@ -10,7 +10,7 @@ export interface IProps {
    *
    * 可选类型 `modal`, `bar`, `line`
    */
-  type?: 'modal' | 'bar' | 'line';
+  type?: 'modal' | 'bar' | 'line' | 'image';
   /**
    * 背景色，可选类型请查看 默认背景色 可选类型
    */
@@ -20,9 +20,9 @@ export interface IProps {
    */
   modalText?: string;
   /**
-   * type 为 modal 时显示的图片
+   * type 为 modal 或 image 时显示的图片
    */
-  modalImg?: string;
+  imgUrl?: string;
   /**
    * 是否显示
    *

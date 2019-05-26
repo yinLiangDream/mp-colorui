@@ -3,8 +3,6 @@ import Taro, { Component } from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/loading';
 
-
-
 interface IState {
   loadProgress: number;
 }
@@ -57,8 +55,13 @@ export default class ClLoading extends Component<IProps, IState> {
       this.props.bgColor ? BG_COLOR_LIST[this.props.bgColor] : 'bg-blue';
     const modalComponent = (
       <View className='cu-load load-modal'>
-        <Image src={this.props.modalImg || ''} mode='aspectFit' />
+        <Image src={this.props.imgUrl || ''} mode='aspectFit' />
         <Text className='text-gray'>{this.props.modalText}</Text>
+      </View>
+    );
+    const imageComponent = (
+      <View className='cu-load load-image'>
+        <Image src={this.props.imgUrl || ''} mode='aspectFit' />
       </View>
     );
     const lineComponent = (
@@ -90,6 +93,8 @@ export default class ClLoading extends Component<IProps, IState> {
         lineComponent
       ) : this.props.type === 'modal' ? (
         modalComponent
+      ) : this.props.type === 'image' ? (
+        imageComponent
       ) : (
         barComponent
       )
