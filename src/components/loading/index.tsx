@@ -26,10 +26,10 @@ export default class ClLoading extends Component<IProps, IState> {
   } as IState;
   loadProgress() {
     this.setState({
-      loadProgress: this.state.loadProgress + 0.5
+      loadProgress: this.state.loadProgress + 3
     });
     if (this.state.loadProgress < 100) {
-      timer = requestAnimationFrame(this.loadProgress.bind(this));
+      timer = setTimeout(this.loadProgress.bind(this), 100);
     } else {
       this.setState({
         loadProgress: 100
@@ -40,7 +40,7 @@ export default class ClLoading extends Component<IProps, IState> {
     console.log(nextProps.show);
     if (nextProps.show) this.loadProgress();
     else {
-      cancelAnimationFrame(timer);
+      clearTimeout(timer);
       this.setState({
         loadProgress: 0
       });
@@ -86,7 +86,9 @@ export default class ClLoading extends Component<IProps, IState> {
         <View className={`load-progress-spinner text-${this.props.bgColor}`} />
       </View>
     );
-    return this.props.show ? (
+    const show = this.props.show;
+    console.log('ClLoading', show)
+    return show ? (
       this.props.type === 'bar' ? (
         barComponent
       ) : this.props.type === 'line' ? (
