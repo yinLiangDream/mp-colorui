@@ -107,6 +107,14 @@ export interface IProps {
    * 操作栏点击事件
    */
   onClick?: (index: number) => void;
+  /**
+   * 点击 阴影 关闭事件
+   */
+  onCancel?: () => void;
+  /**
+   * 点击 关闭 关闭事件
+   */
+  onClose?: () => void;
 }
 
 export interface ModalProps extends IProps {}

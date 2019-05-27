@@ -1,71 +1,95 @@
 import { Text, View } from '@tarojs/components';
-import Taro, { useState } from '@tarojs/taro';
+import Taro, { Component } from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/modal';
 
-
-
-export default function ClModal(props: IProps) {
-  const [showModal, setShowModal] = useState(() => !!props.show);
-
-  const titleBgColorClassName = props.titleBgColor
-    ? BG_COLOR_LIST[props.titleBgColor]
-    : '';
-  const actionColor = props.actionColor ? BG_COLOR_LIST[props.actionColor] : '';
-
-  const hideModal = () => {
-    setShowModal(false);
+export default class ClModal extends Component<IProps, {}> {
+  static options = {
+    addGlobalClass: true
   };
-  const title = props.title;
-  const actions = props.actions || [];
-  const onClick = (index: number) => {
-    props.onClick && props.onClick(index);
+  state = {
+    showModal: this.props.show
   };
-  const actionsComponent = actions.map((item, index) => (
-    <View
-      className={`${index > 0 ? 'solid-left' : ''} action margin-0 flex-sub`}
-      key={item.text}
-      onClick={() => {
-        onClick(index);
-      }}
-    >
-      <Text>{item.text}</Text>
-    </View>
-  ));
-  return (
-    <View
-      className={`cu-modal ${showModal ? 'show' : ''}`}
-      onClick={() => {
-        props.closeWithShadow && hideModal();
-      }}
-    >
-      <View className='cu-dialog'>
-        {props.custom ? (
-          this.props.renderTitle
-        ) : (
-          <View className={`cu-bar justify-end ${titleBgColorClassName}`}>
-            <View className='content'>{title}</View>
-            {props.close ? (
-              <View className='action' onClick={hideModal}>
-                <Text className='cuIcon-close text-black' />
-              </View>
-            ) : (
-              ''
-            )}
-          </View>
-        )}
+  componentWillReceiveProps(nextProps: IProps) {
+    const show = nextProps.show;
+    if (show !== this.state.showModal) {
+      this.setState({
+        showModal: show
+      });
+    }
+  }
+  render() {
+    const titleBgColorClassName = this.props.titleBgColor
+      ? BG_COLOR_LIST[this.props.titleBgColor]
+      : '';
+    const actionColor = this.props.actionColor
+      ? BG_COLOR_LIST[this.props.actionColor]
+      : '';
 
-        <View className='padding-xl'>{this.props.children}</View>
-        {props.custom ? (
-          this.props.renderAction
-        ) : (
-          <View className={`cu-bar ${actionColor}`}>{actionsComponent}</View>
-        )}
+    const title = this.props.title;
+    const actions = this.props.actions || [];
+    const onClick = (index: number) => {
+      this.props.onClick && this.props.onClick(index);
+    };
+    const actionsComponent = actions.map((item, index) => (
+      <View
+        className={`${index > 0 ? 'solid-left' : ''} action margin-0 flex-sub`}
+        key={item.text}
+        onClick={() => {
+          onClick(index);
+        }}
+      >
+        <Text>{item.text}</Text>
       </View>
-    </View>
-  );
-}
+    ));
+    return (
+      <View
+        className={`cu-modal ${this.state.showModal ? 'show' : ''}`}
+        onClick={() => {
+          this.props.closeWithShadow &&
+            this.setState({
+              showModal: false
+            });
+          this.props.onCancel && this.props.onCancel();
+        }}
+      >
+        <View
+          className='cu-dialog'
+          onClick={e => {
+            e.stopPropagation();
+          }}
+        >
+          {this.props.custom ? (
+            this.props.renderTitle
+          ) : (
+            <View className={`cu-bar justify-end ${titleBgColorClassName}`}>
+              <View className='content'>{title}</View>
+              {this.props.close ? (
+                <View
+                  className='action'
+                  onClick={() => {
+                    this.setState({
+                      showModal: false
+                    });
+                    this.props.onClose && this.props.onClose();
+                  }}
+                >
+                  <Text className='cuIcon-close text-black' />
+                </View>
+              ) : (
+                ''
+              )}
+            </View>
+          )}
 
-ClModal.options = {
-  addGlobalClass: true
-};
+          <View className='padding-xl'>{this.props.children}</View>
+          {this.props.custom ? (
+            this.props.renderAction
+          ) : (
+            <View className={`cu-bar ${actionColor}`}>{actionsComponent}</View>
+          )}
+        </View>
+      </View>
+    );
+  }
+}

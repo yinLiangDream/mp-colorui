@@ -73,6 +73,9 @@ export default class Index extends Component {
 
   clickButton(e) {
     console.log(e);
+    this.setState({
+      show: true
+    })
   }
 
   change(e) {
@@ -84,11 +87,11 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
-        <ClDrawer show direction='left'>
+        <ClDrawer direction='left' show={this.state.show} >
           <View>123123</View>
         </ClDrawer>
         <ClModal
-          show
+          show={this.state.show}
           actions={[{ text: '支付宝' }]}
           title='微信'
           titleBgColor='light-grey'
@@ -101,7 +104,6 @@ export default class Index extends Component {
               shape='round'
               bgColor='gradualOrange'
               openType='getUserInfo'
-              onGetUserInfo={this.clickButton}
               onClick={this.clickButton}
               icon='round'
             ><Text>怀念</Text></ClButton>
@@ -243,8 +245,7 @@ export default class Index extends Component {
           shape='round'
           bgColor='gradualOrange'
           openType='getUserInfo'
-          onGetUserInfo={this.clickButton}
-          onClick={this.clickButton}
+          onClick={this.clickButton.bind(this)}
         >怀念</ClButton>
         <ClText text='KKK' align='center' size='xxlarge' />
         <ClIcon iconName='activity' size={88} color='cyan' />

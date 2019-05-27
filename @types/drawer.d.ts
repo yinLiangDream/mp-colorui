@@ -19,10 +19,17 @@ export interface IProps {
    * 可选类型 `left`, `right`, `bottom`
    */
   direction?: TDirection;
+  children?: any;
   /**
-   * 点击
+   * 点击阴影关闭
+   *
+   * 默认值 `true`
    */
-  onClickShadow?: () => {}
+  closeWithShadow?: boolean;
+  /**
+   * 点击阴影取消事件
+   */
+  onCancel?: () => void;
 }
 
 export interface DrawerProps extends IProps {}
