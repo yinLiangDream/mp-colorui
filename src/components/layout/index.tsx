@@ -81,6 +81,7 @@ export default class ClLayout extends Component<IProps, IState> {
         }
         case 'vertical': {
           dr = '-tb';
+          break;
         }
         default: {
           dr = direction ? `-${direction}` : '';

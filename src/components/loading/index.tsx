@@ -87,7 +87,6 @@ export default class ClLoading extends Component<IProps, IState> {
       </View>
     );
     const show = this.props.show;
-    console.log('ClLoading', show)
     return show ? (
       this.props.type === 'bar' ? (
         barComponent
