@@ -3,8 +3,6 @@ import Taro, { Component } from '@tarojs/taro';
 import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/text';
 
-
-
 interface IState {}
 
 const SPECIAL_CLASS = {
@@ -46,8 +44,10 @@ export default class ClText extends Component<IProps, IState> {
       <View
         className={`${sizeClassName} ${textColorClassName} ${bgColorClassName} ${cutClassName} ${alignClassName}`}
       >
-        <Text className={specialClassName}>{this.props.text}</Text>
-        {this.props.children}
+        <Text className={specialClassName}>
+          {this.props.text}
+          {this.props.children}
+        </Text>
       </View>
     );
   }

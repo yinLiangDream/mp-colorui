@@ -1,5 +1,4 @@
-import { ComponentClass , ReactNode } from 'react';
-
+import { ComponentClass, ReactNode } from 'react';
 
 import { bgColorMoreType, bgColorType, lightBgColorType } from './baseType';
 
@@ -14,6 +13,7 @@ export type TTitleBgColor = bgColorMoreType | bgColorType | lightBgColorType;
 export type TActionColor = bgColorMoreType | bgColorType | lightBgColorType;
 export type TActions = {
   text?: string;
+  color?: bgColorType
 }[];
 
 export type TModalType = 'normal' | 'image' | 'radio' | 'checkbox';
@@ -89,6 +89,12 @@ export interface IProps {
    * 操作栏颜色，可选类型请查看 默认背景色 可选类型
    */
   actionColor?: TActionColor;
+  /**
+   * padding 距离，默认没有 padding
+   *
+   * 可选参数 `xsmall`, `small`, `normal`, `large`, `xlarge`
+   */
+  padding?: 'xsmall' | 'small' | 'normal' | 'large' | 'xlarge';
   /**
    * 操作栏操作组
    *

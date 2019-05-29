@@ -1,6 +1,6 @@
 import { Text, View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { BG_COLOR_LIST } from '../utils/model';
+import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/modal';
 
 export default class ClModal extends Component<IProps, {}> {
@@ -39,9 +39,15 @@ export default class ClModal extends Component<IProps, {}> {
           onClick(index);
         }}
       >
-        <Text>{item.text}</Text>
+        <Text className={`${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}>
+          {item.text}
+        </Text>
       </View>
     ));
+    const dealSize = (size: any) => {
+      if (!size || size === 'normal') return '';
+      else return `-${SIZE[size]}`;
+    };
     return (
       <View
         className={`cu-modal ${this.state.showModal ? 'show' : ''}`}
@@ -82,7 +88,9 @@ export default class ClModal extends Component<IProps, {}> {
             </View>
           )}
 
-          <View className='padding-xl'>{this.props.children}</View>
+          <View className={`padding${dealSize(this.props.padding)}`}>
+            {this.props.children}
+          </View>
           {this.props.custom ? (
             this.props.renderAction
           ) : (
