@@ -248,7 +248,7 @@ export default class Index extends Component {
           onClick={this.clickButton.bind(this)}
         >怀念</ClButton>
         <ClText text='KKK' align='center' size='xxlarge' />
-        <ClIcon iconName='activity' size={88} color='cyan' />
+        <ClIcon iconName='activity' size='large' color='cyan' />
         <ClLayout
           type='normal'
           baseSelection={{ paddingDirection: 'left', padding: 'small' }}

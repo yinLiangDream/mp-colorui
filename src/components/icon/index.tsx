@@ -1,21 +1,19 @@
 import { Text } from '@tarojs/components';
-import Taro, { Component } from '@tarojs/taro';
+import Taro, { Component, pxTransform } from '@tarojs/taro';
 import { isNumber } from 'util';
 import { IProps } from '../../../@types/icon';
-
-
 
 interface IState {}
 
 const pxMap = {
-  xsmall: '20rpx',
-  small: '24rpx',
-  normal: '28rpx',
-  large: '32rpx',
-  xlarge: '36rpx',
-  xxlarge: '44rpx',
-  slarge: '80rpx',
-  xslarge: '120rpx'
+  xsmall: 40,
+  small: 48,
+  normal: 56,
+  large: 64,
+  xlarge: 72,
+  xxlarge: 88,
+  slarge: 160,
+  xslarge: 240
 };
 export default class ClIcon extends Component<IProps, IState> {
   static options = {
@@ -35,7 +33,13 @@ export default class ClIcon extends Component<IProps, IState> {
     return (
       <Text
         className={`${bgColorClassName} ${iconClassName}`}
-        style={{ fontSize: `${isNumber(sizeClassName) ? sizeClassName + 'rpx' : pxMap[sizeClassName]}` }}
+        style={{
+          fontSize: `${
+            isNumber(sizeClassName)
+              ? pxTransform(sizeClassName)
+              : pxTransform(pxMap[sizeClassName])
+          }`
+        }}
       />
     );
   }
