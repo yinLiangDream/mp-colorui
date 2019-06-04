@@ -31,7 +31,7 @@ export { default as ClText } from './components/text';
 export { default as ClTimeline } from './components/timeline';
 // export { default as Timer } from './components/timer/timer';
 export { default as ClTitleBar } from './components/titleBar';
-export { default as ClUploader } from './components/uploader';
+export { default as ClImagePicker } from './components/imagePicker';
 
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

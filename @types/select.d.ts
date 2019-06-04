@@ -34,7 +34,7 @@ export type TMultiSelector = {
    *
    * 默认值 0
    */
-  value?: string[];
+  value?: number[];
 };
 export type TTime = {
   /**

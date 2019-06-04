@@ -56,7 +56,7 @@ export interface IProps {
   beforeDel?: TBeforeDel;
 }
 
-export interface UploaderProps extends IProps {}
-declare const Uploader: ComponentClass<UploaderProps>;
+declare const ImagePicker: ComponentClass<IProps>;
 
-export default Uploader;
+export default ImagePicker;
+

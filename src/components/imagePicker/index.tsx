@@ -1,10 +1,10 @@
 import { Text, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
-import { IProps } from '../../../@types/uploader';
+import { IProps } from '../../../@types/imagePicker';
 
 
 
-export default function ClUploader(props: IProps) {
+export default function ClImagePicker(props: IProps) {
   const chooseImgObj = props.chooseImgObj || {};
   const [imgList, setImgList] = useState(() => {
     const tempImg = props.imgList || [];
@@ -81,6 +81,6 @@ export default function ClUploader(props: IProps) {
   );
 }
 
-ClUploader.options = {
+ClImagePicker.options = {
   addGlobalClass: true
 };

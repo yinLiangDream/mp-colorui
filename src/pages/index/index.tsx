@@ -26,7 +26,7 @@ import ClTag from '../../components/tag/index';
 import ClText from '../../components/text/index';
 import ClTimeline from '../../components/timeline';
 import ClTitleBar from '../../components/titleBar';
-import ClUploader from '../../components/uploader';
+import ClImagePicker from '../../components/imagePicker';
 
 export default class Index extends Component {
   /**
@@ -45,15 +45,15 @@ export default class Index extends Component {
     step: 0
   };
 
-  componentWillMount() {}
+  componentWillMount() { }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
-  componentWillUnmount() {}
+  componentWillUnmount() { }
 
-  componentDidShow() {}
+  componentDidShow() { }
 
-  componentDidHide() {}
+  componentDidHide() { }
 
   tickHandler(time) {
     console.log(time);
@@ -171,7 +171,8 @@ export default class Index extends Component {
             }
           ]}
         />
-        <ClUploader chooseImgObj={{}} />
+        <ClImagePicker
+          chooseImgObj={{}} />
         <ClCheckbox
           type='form'
           title='checkbox'
