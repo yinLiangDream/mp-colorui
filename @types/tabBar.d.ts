@@ -9,11 +9,11 @@ import {
 
 export interface IProps {
   /**
-   * 背景色，可选类型请查看 默认背景色 可选类型
+   * 背景色，可选类型请查看 默认色
    */
   bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**
-   * 激活的颜色，可选类型请查看 默认基本色 可选类型
+   * 激活的颜色，可选类型请查看 默认色-标准色
    */
   activeColor?: bgColorType;
   /**
@@ -39,7 +39,7 @@ export interface IProps {
      */
     badge?: number | boolean;
     /**
-     * 图标，可选类型请查看 icon 可选类型
+     * 图标，可选类型请查看 Icon-iconName
      */
     icon?: iconType;
     /**

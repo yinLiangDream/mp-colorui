@@ -17,11 +17,11 @@ export interface IProps {
    */
   size?: extendSizeType;
   /**
-   * 文字颜色，可选类型请查看 默认基本色 可选类型
+   * 文字颜色，可选类型请查看 默认色-标准色
    */
   textColor?: bgColorType;
   /**
-   * 文字背景色，可选类型请查看 默认背景色 可选类型
+   * 文字背景色，可选类型请查看 默认色
    */
   bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**

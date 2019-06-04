@@ -42,7 +42,7 @@ export interface IProps {
    */
   tags: {
     /**
-     * 标签颜色，可选类型请查看 默认基本色 可选类型
+     * 标签颜色，可选类型请查看 默认色-标准色
      */
     color?: bgColorType;
     /**
@@ -52,7 +52,7 @@ export interface IProps {
      */
     plain?: boolean;
     /**
-     * 图标，可选类型请查看 icon 可选类型
+     * 图标，可选类型请查看 Icon-iconName
      */
     icon?: iconType;
     /**

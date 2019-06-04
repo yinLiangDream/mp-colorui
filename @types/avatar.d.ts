@@ -13,15 +13,15 @@ export type TSize = normalSizeType;
 export type TBgColor = bgColorType | bgColorMoreType | lightBgColorType;
 export type THeaderArray = {
   /**
-   * 头像内置文字，建议 1 个字符，最多不可超过 2 个
+   * 头像内置文字(只显示第一个字)
    */
   text?: string;
   /**
-   * 头像右上角小标签，可选类型请查看 icon 可选类型
+   * 头像右上角小标签，可选类型请查看 Icon-iconName
    */
   tag?: iconType;
   /**
-   * 头像内图标，可选类型请查看 icon 可选类型
+   * 头像内图标，可选类型请查看 Icon-iconName
    */
   icon?: iconType;
   /**
@@ -29,11 +29,11 @@ export type THeaderArray = {
    */
   url?: string;
   /**
-   * 提供头像组件背景色设置，可选类型请查看 默认背景色 可选类型
+   * 提供头像组件背景色设置，可选类型请查看 默认色
    */
   bgColor?: TBgColor;
   /**
-   * 提供头像组件右上角小标签背景色设置，可选类型请查看 默认背景色 可选类型
+   * 提供头像组件右上角小标签背景色设置，可选类型请查看 默认色
    */
   tagColor?: TBgColor;
 };
@@ -60,7 +60,7 @@ export interface IProps {
    *
    * 默认值 `normal`
    *
-   * 可选值 `small`, `normal`, `large`, `xlarge`
+   * 可选值 `small`, ``normal, `large`, `xlarge`
    */
   size?: TSize;
   /**

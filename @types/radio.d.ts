@@ -46,11 +46,11 @@ export interface IProps {
    */
   shape?: TShape;
   /**
-   *  type 为 form 下的标题
+   *  type 为 form 时的标题
    */
   title?: TTitle;
   /**
-   * 选中颜色，可选类型请查看 默认基本色 可选类型
+   * 选中颜色，可选类型请查看 默认色-标准色
    */
   color?: TColor;
   /**

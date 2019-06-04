@@ -11,7 +11,7 @@ export default class ClTitleBar extends Component<IProps, IState> {
   };
 
   static defaultProps: IProps = {
-    barColor: 'white',
+    bgColor: 'white',
     textColor: 'green',
     type: 'border-title',
     borderLong: 20,
@@ -30,8 +30,8 @@ export default class ClTitleBar extends Component<IProps, IState> {
     const borderColorClassName = this.props.borderColor
       ? BG_COLOR_LIST[this.props.borderColor]
       : 'bg-green';
-    const barColorClassName = this.props.barColor
-      ? BG_COLOR_LIST[this.props.barColor]
+    const bgColorClassName = this.props.bgColor
+      ? BG_COLOR_LIST[this.props.bgColor]
       : `bg-white`;
     const iconClassName = this.props.icon ? `cuIcon-${this.props.icon}` : ``;
     const iconColorClassName = this.props.iconColor
@@ -71,7 +71,7 @@ export default class ClTitleBar extends Component<IProps, IState> {
       </View>
     );
     return (
-      <View className={`${barColorClassName} cu-bar`}>
+      <View className={`${bgColorClassName} cu-bar`}>
         {this.props.type === 'border-title' ? borderComponent : ''}
         {this.props.type === 'sub-title' ? subComponent : ''}
         {this.props.type === 'icon' ? iconComponent : ''}

@@ -30,7 +30,9 @@ export interface IProps {
    */
   shape?: TShape;
   /**
-   * 选中颜色，可选类型请查看 默认基本色 可选类型
+   * 选中颜色，可选类型请查看 默认色-标准色
+   *
+   * 默认 `green`
    */
   color?: TColor;
   /**

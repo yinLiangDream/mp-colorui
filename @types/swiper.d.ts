@@ -4,14 +4,45 @@ export type TType = 'screen' | 'card';
 export type TDot = 'square' | 'round';
 export type TOnClick = (index: number) => void;
 export type TList = {
+  /**
+   * 类型
+   *
+   * 默认值 `image`
+   *
+   * 可选参数 `image`, `video`
+   */
   type?: 'image' | 'video';
+  /**
+   * 图片、视频的地址
+   */
   url?: string;
+  /**
+   * 是否自动播放（video 有效）
+   */
   autoplay?: boolean;
+  /**
+   * 循环播放（video 有效）
+   */
   loop?: boolean;
+  /**
+   * 是否静音播放（video 有效）
+   */
   muted?: boolean;
+  /**
+   * 是否显示视频底部控制栏的播放按钮（video 有效）
+   */
   showPlayBtn?: boolean;
+  /**
+   * 是否显示默认播放控件（播放/暂停按钮、播放进度、时间）（video 有效）
+   */
   controls?: boolean;
+  /**
+   * 视频的标题，全屏时在顶部展示（video 有效）
+   */
   title?: string;
+  /**
+   * 视频封面的图片网络资源地址或云文件ID（video 有效）
+   */
   poster?: string;
 };
 

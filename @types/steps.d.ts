@@ -4,7 +4,7 @@ import { bgColorType, iconType } from './baseType';
 
 export interface IProps {
   /**
-   * 步骤条的类型
+   * 步骤条形状
    *
    * 默认值 `line`
    *
@@ -12,7 +12,9 @@ export interface IProps {
    */
   type?: 'arrow' | 'line';
   /**
-   * 激活的颜色，可选类型请查看 默认基本色 可选类型
+   * 激活的颜色，可选类型请查看 默认色-标准色
+   *
+   * 默认 `blue`
    */
   activeColor?: bgColorType;
   /**
@@ -46,7 +48,7 @@ export interface IProps {
      */
     title?: string;
     /**
-     * 每一步的图标，可选类型请查看 icon 可选类型
+     * 每一步的图标，可选类型请查看 Icon-iconName
      */
     icon?: iconType;
   }[];

@@ -11,11 +11,11 @@ export interface IProps {
    */
   size?: extendSizeType | number;
   /**
-   * 图标颜色，可选类型请查看 默认基本色 可选类型
+   * 图标颜色，可选类型请查看 默认色-标准色
    */
   color?: bgColorType;
   /**
-   * 图标类型，可选类型请查看 icon 可选类型
+   * 图标类型，可选类型请查看 Icon-iconName
    */
   iconName?: iconType;
 }

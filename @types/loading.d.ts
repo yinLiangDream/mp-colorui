@@ -12,7 +12,9 @@ export interface IProps {
    */
   type?: 'modal' | 'bar' | 'line' | 'image';
   /**
-   * 背景色，可选类型请查看 默认背景色 可选类型
+   * 背景色，可选类型请查看 默认色
+   *
+   * 默认 `blue`
    */
   bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**

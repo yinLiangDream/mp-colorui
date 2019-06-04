@@ -50,7 +50,7 @@ export interface IProps {
    */
   shape?: TShape;
   /**
-   * 复选框选中色设置，可选类型请查看 默认基本色 可选类型
+   * 复选框选中色设置，可选类型请查看 默认色-标准色
    *
    * 默认值 `green`
    */

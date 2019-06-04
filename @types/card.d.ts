@@ -15,7 +15,7 @@ export interface IProps {
    */
   type?: TTtype;
   /**
-   * 卡片背景色设置，可选类型请查看 默认背景色 可选类型
+   * 卡片背景色设置，可选类型请查看 默认色
    */
   bgColor?: bgColorMoreType | bgColorType | lightBgColorType;
 }

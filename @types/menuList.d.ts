@@ -16,7 +16,7 @@ export type TTist = {
    */
   icon?: TIcon;
   /**
-   * 标题颜色，可选类型请查看 默认基本色 可选类型
+   * 标题颜色，可选类型请查看 默认色-标准色
    */
   titleColor?: TTitleColor;
   /**

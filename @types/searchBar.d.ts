@@ -37,19 +37,19 @@ export interface IProps {
    */
   searchType?: 'button' | 'text' | 'none' | 'list';
   /**
-   * 左边的图标组，可选类型请查看 icon 可选类型
+   * 左边的图标组，可选类型请查看 Icon-iconName
    */
   leftIcons?: iconType[];
   /**
-   * 背景色，可选类型请查看 默认背景色 可选类型
+   * 背景色，可选类型请查看 默认色
    */
   bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**
-   * 右侧按钮颜色，可选类型请查看 默认背景色 可选类型
+   * 右侧按钮颜色，可选类型请查看 默认色
    */
   rightButtonColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**
-   * type 为 text 时，右侧文字颜色，可选类型请查看 默认基本色 可选类型
+   * type 为 text 时，右侧文字颜色，可选类型请查看 默认色-标准色
    */
   rightTextColor?: bgColorType;
   /**
@@ -57,11 +57,11 @@ export interface IProps {
    */
   onIconClick?: (index: number) => void;
   /**
-   * 搜索事件，参数 value 为输入的数值
+   * 搜索事件，参数 value 为输入的内容
    */
   onSearch?: (value: string) => void;
   /**
-   * 键盘输入事件， 参数 value 为输入的数值
+   * 键盘输入事件， 参数 value 为输入的内容
    */
   onInput?: (value: string) => void;
 }

@@ -9,7 +9,7 @@ import {
 
 export interface IProps {
   /**
-   * 背景色，可选类型请查看 默认背景色 可选类型
+   * 背景色，可选类型请查看 默认色
    */
   bgColor?: bgColorType | lightBgColorType | bgColorMoreType;
   /**
@@ -35,11 +35,11 @@ export interface IProps {
    */
   tabs?: {
     /**
-     * 右上角提示圆点
+     * 角标
      */
     badge?: number | boolean;
     /**
-     * 图标，可选类型请查看 icon 可选类型
+     * 图标，可选类型请查看 Icon-iconName
      */
     icon?: iconType;
     /**
@@ -62,7 +62,7 @@ export interface IProps {
      */
     text?: string;
     /**
-     * 按钮颜色，可选类型请查看 默认背景色 可选类型
+     * 按钮颜色，可选类型请查看 默认色
      */
     bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   }[];

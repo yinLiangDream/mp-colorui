@@ -9,11 +9,11 @@ import {
 
 export interface IProps {
   /**
-   * 标题栏背景色，可选类型请查看 默认背景色 可选类型
+   * 标题栏背景色，可选类型请查看 默认色
    */
-  barColor?: bgColorType | bgColorMoreType | lightBgColorType;
+  bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**
-   * 文字颜色，可选类型请查看 默认基本色 可选类型
+   * 文字颜色，可选类型请查看 默认色-标准色
    */
   textColor?: bgColorType;
   /**
@@ -29,11 +29,11 @@ export interface IProps {
    */
   subTitle?: string;
   /**
-   * 子标题颜色，可选类型请查看 默认基本色 可选类型
+   * 子标题颜色，可选类型请查看 默认色-标准色
    */
   subTitleColor?: bgColorType;
   /**
-   * 仅 type 为 border-title 时设置，子边线，可选类型请查看 默认背景色 可选类型
+   * 仅 type 为 border-title 时设置，子边线，可选类型请查看 默认色
    */
   borderColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**
@@ -43,11 +43,11 @@ export interface IProps {
    */
   borderLong?: number;
   /**
-   * 仅 type 为 icon 时设置，图标，可选类型请查看 icon 可选类型
+   * 仅 type 为 icon 时设置，图标，可选类型请查看 Icon-iconName
    */
   icon?: iconType;
   /**
-   * 图标颜色，可选类型请查看 默认基本色 可选类型
+   * 图标颜色，可选类型请查看 默认色-标准色
    */
   iconColor?: bgColorType;
   /**

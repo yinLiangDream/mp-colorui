@@ -19,7 +19,9 @@ function ClAvatar(props: IProps) {
         } cu-avatar`}
         style={item.url ? { backgroundImage: `url(${item.url})` } : ''}
       >
-        <Text className={`cuIcon-${item.icon}`}>{item.text}</Text>
+        <Text className={`cuIcon-${item.icon}`}>
+          {item.text ? item.text.slice(0, 1) : ''}
+        </Text>
         {item.tag ? (
           <View
             className={`cu-tag badge cuIcon-${item.tag} ${

@@ -12,7 +12,9 @@ export interface IProps {
    */
   shape?: 'normal' | 'radius' | 'round';
   /**
-   * 进度条背景色，可选类型请查看 默认背景色 可选类型
+   * 进度条背景色，可选类型请查看 默认色
+   *
+   * 默认值 `blue`
    */
   bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**

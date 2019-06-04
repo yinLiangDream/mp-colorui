@@ -29,11 +29,13 @@ export interface IProps {
    */
   size?: 'small' | 'normal' | 'large';
   /**
-   * 按钮背景色设置，可选类型请查看 默认背景色 可选类型
+   * 按钮背景色设置，可选类型请查看 默认色
+   *
+   * 默认值 `blue`
    */
   bgColor?: bgColorType | lightBgColorType | bgColorMoreType;
   /**
-   * 简单边框设置
+   * 镂空设置
    *
    * 默认值 `false`
    *
@@ -41,7 +43,7 @@ export interface IProps {
    */
   plain?: boolean;
   /**
-   * 边框粗细设置
+   * 镂空边框粗细设置
    *
    * 默认值 `default`
    *
@@ -81,7 +83,7 @@ export interface IProps {
    */
   long?: boolean;
   /**
-   * 按钮图标，可选类型请查看 icon 可选类型
+   * 按钮图标，可选类型请查看 Icon-iconName
    */
   icon?: iconType;
   /**

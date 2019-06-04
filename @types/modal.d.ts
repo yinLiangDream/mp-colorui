@@ -12,7 +12,13 @@ export type TShow = boolean;
 export type TTitleBgColor = bgColorMoreType | bgColorType | lightBgColorType;
 export type TActionColor = bgColorMoreType | bgColorType | lightBgColorType;
 export type TActions = {
+  /**
+   * action 文字
+   */
   text?: string;
+  /**
+   * action 颜色，具体查看 默认色-标准色
+   */
   color?: bgColorType
 }[];
 
@@ -82,11 +88,11 @@ export interface IProps {
   closeWithShadow?: boolean;
   children?: TChildren;
   /**
-   * 标题栏背景色，可选类型请查看 默认背景色 可选类型
+   * 标题栏背景色，可选类型请查看 默认色
    */
   titleBgColor?: TTitleBgColor;
   /**
-   * 操作栏颜色，可选类型请查看 默认背景色 可选类型
+   * 操作栏颜色，可选类型请查看 默认色
    */
   actionColor?: TActionColor;
   /**
