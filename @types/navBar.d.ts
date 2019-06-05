@@ -29,7 +29,7 @@ export interface IProps {
     /**
      * 左侧文字
      */
-    leftText?: string;
+    text?: string;
   }[];
   /**
    * 中间标题

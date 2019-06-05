@@ -37,7 +37,7 @@ export default class ClNavBar extends Component<IProps, IState> {
         />
         <Text className={`${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}
               onClick={this.onClickLeftIcon.bind(this, index)}
-        >{item.leftText}</Text>
+        >{item.text}</Text>
       </Block>
     );
     const rightComponent = this.props.rightIcon && this.props.rightIcon.map((item, index) =>
