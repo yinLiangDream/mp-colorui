@@ -1,6 +1,6 @@
 import { Text } from '@tarojs/components';
 import Taro, { Component, pxTransform } from '@tarojs/taro';
-import { isNumber } from 'util';
+import {isNumber} from '../utils'
 import { IProps } from '../../../@types/icon';
 
 interface IState {}

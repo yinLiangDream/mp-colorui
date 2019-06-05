@@ -1,6 +1,6 @@
 import { View } from '@tarojs/components';
 import Taro, { Component } from '@tarojs/taro';
-import { isNumber } from 'util';
+import { isNumber } from '../utils';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/tabBar';
 

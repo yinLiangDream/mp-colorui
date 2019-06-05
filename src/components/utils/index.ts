@@ -26,3 +26,7 @@ export default {
   model,
   getNowDate
 };
+
+export const isNumber = (obj: any) => {
+  return typeof obj === 'number' && !isNaN(obj)
+}

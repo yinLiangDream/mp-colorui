@@ -4,56 +4,59 @@
  */
 
 /* css 滤镜 控制黑白底色gif的 */
-.gif-black {
-  mix-blend-mode: screen;
-}
-.gif-white {
-  mix-blend-mode: multiply;
+.gif {
+  &-black {
+    mix-blend-mode: screen;
+  }
+  &-white {
+    mix-blend-mode: multiply;
+  }
 }
 
 /* Animation css */
-[class*='animation-'] {
+[class*="animation-"] {
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
 
-.animation-fade {
-  animation-name: fade;
-  animation-duration: 0.8s;
-  animation-timing-function: linear;
-}
+.animation {
+  &-fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+  }
+  &-scale-up {
+    animation-name: scale-up;
+  }
 
-.animation-scale-up {
-  animation-name: scale-up;
-}
+  &-scale-down {
+    animation-name: scale-down;
+  }
 
-.animation-scale-down {
-  animation-name: scale-down;
-}
+  &-slide-top {
+    animation-name: slide-top;
+  }
 
-.animation-slide-top {
-  animation-name: slide-top;
-}
+  &-slide-bottom {
+    animation-name: slide-bottom;
+  }
 
-.animation-slide-bottom {
-  animation-name: slide-bottom;
-}
+  &-slide-left {
+    animation-name: slide-left;
+  }
 
-.animation-slide-left {
-  animation-name: slide-left;
-}
+  &-slide-right {
+    animation-name: slide-right;
+  }
 
-.animation-slide-right {
-  animation-name: slide-right;
-}
+  &-shake {
+    animation-name: shake;
+  }
 
-.animation-shake {
-  animation-name: shake;
-}
-
-.animation-reverse {
-  animation-direction: reverse;
+  &-reverse {
+    animation-direction: reverse;
+  }
 }
 
 @keyframes fade {
