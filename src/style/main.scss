@@ -1677,134 +1677,130 @@ button.icon.lg {
 .cu-card {
   display: block;
   overflow: hidden;
-}
-
-.cu-card > .cu-item {
-  display: block;
-  background-color: var(--white);
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 30px;
-}
-
-.cu-card > .cu-item.shadow-blur {
-  overflow: initial;
-}
-
-.cu-card.no-card > .cu-item {
-  margin: 0px;
-  border-radius: 0px;
-}
-
-.cu-card .grid.grid-square {
-  margin-bottom: -20px;
-}
-
-.cu-card.case .image {
-  position: relative;
-}
-
-.cu-card.case .image image {
-  width: 100%;
-}
-
-.cu-card.case .image .cu-tag {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.cu-card.case .image .cu-bar {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  padding: 0px 30px;
-}
-
-.cu-card.case.no-card .image {
-  margin: 30px 30px 0;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.cu-card.dynamic {
-  display: block;
-}
-
-.cu-card.dynamic > .cu-item {
-  display: block;
-  background-color: var(--white);
-  overflow: hidden;
-}
-
-.cu-card.dynamic > .cu-item > .text-content {
-  padding: 0 30px 0;
-  max-height: 6.4em;
-  overflow: hidden;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.cu-card.dynamic > .cu-item .square-img {
-  width: 100%;
-  height: 200px;
-  border-radius: 6px;
-}
-
-.cu-card.dynamic > .cu-item .only-img {
-  width: 100%;
-  height: 320px;
-  border-radius: 6px;
-}
-
-/* card.dynamic>.cu-item .comment {
-  padding: 20px;
-  background-color: #f1f1f1;
-  margin: 0 30px 30px;
-  border-radius: 6px;
-} */
-
-.cu-card.article {
-  display: block;
-}
-
-.cu-card.article > .cu-item {
-  padding-bottom: 30px;
-}
-
-.cu-card.article > .cu-item .title {
-  font-size: 30px;
-  font-weight: 900;
-  color: var(--black);
-  line-height: 100px;
-  padding: 0 30px;
-}
-
-.cu-card.article > .cu-item .content {
-  display: flex;
-  padding: 0 30px;
-}
-
-.cu-card.article > .cu-item .content > image {
-  width: 240px;
-  height: 6.4em;
-  margin-right: 20px;
-  border-radius: 6px;
-}
-
-.cu-card.article > .cu-item .content .desc {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.cu-card.article > .cu-item .content .text-content {
-  font-size: 28px;
-  color: #888;
-  height: 4.8em;
-  overflow: hidden;
+  > {
+    .cu-item {
+      display: block;
+      background-color: $white;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 30px;
+      &.shadow-blur {
+        overflow: initial;
+      }
+    }
+  }
+  &.no-card {
+    > .cu-item {
+      margin: 0px;
+      border-radius: 0px;
+    }
+  }
+  .grid {
+    &.grid-square {
+      margin-bottom: -20px;
+    }
+  }
+  &.case {
+    .image {
+      position: relative;
+      image {
+        width: 100%;
+      }
+      .cu-tag {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .cu-bar {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        padding: 0px 30px;
+      }
+    }
+    &.no-card {
+      .image {
+        margin: 30px 30px 0;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+    }
+  }
+  &.dynamic {
+    display: block;
+    > {
+      .cu-item {
+        display: block;
+        background-color: $white;
+        overflow: hidden;
+        > {
+          .text-content {
+            padding: 0 30px 0;
+            max-height: 6.4em;
+            overflow: hidden;
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+        }
+        .square-img {
+          width: 100%;
+          height: 200px;
+          border-radius: 6px;
+        }
+        .only-img {
+          width: 100%;
+          height: 320px;
+          border-radius: 6px;
+        }
+        .comment {
+          padding: 20px;
+          background-color: #f1f1f1;
+          margin: 0 30px 30px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+  &.article {
+    display: block;
+    > {
+      .cu-item {
+        padding-bottom: 30px;
+        .title {
+          font-size: 30px;
+          font-weight: 900;
+          color: $black;
+          line-height: 100px;
+          padding: 0 30px;
+        }
+        .content {
+          display: flex;
+          padding: 0 30px;
+          > {
+            image {
+              width: 240px;
+              height: 6.4em;
+              margin-right: 20px;
+              border-radius: 6px;
+            }
+          }
+          .desc {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .text-content {
+            font-size: 28px;
+            color: #888;
+            height: 4.8em;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ==================
