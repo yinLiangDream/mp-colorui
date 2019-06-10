@@ -1,7 +1,7 @@
 /*
   ColorUi
 */
-@import "./vars";
+@import './vars';
 /* ==================
           头像
  ==================== */
@@ -85,7 +85,7 @@
 .dashed-left {
   position: relative;
   &::after {
-    content: " ";
+    content: ' ';
     width: 200%;
     height: 200%;
     position: absolute;
@@ -191,7 +191,7 @@
     &:before,
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       top: 20px;
       bottom: 30px;
       left: 20px;
@@ -209,7 +209,7 @@
   &-blur {
     position: relative;
     &::before {
-      content: "";
+      content: '';
       display: block;
       background: inherit;
       filter: blur(10px);
@@ -255,13 +255,13 @@ button.icon.lg {
   &::after {
     display: none;
   }
-  &:not([class*="bg-"]) {
+  &:not([class*='bg-']) {
     background-color: #f0f0f0;
   }
-  &[class*="line"] {
+  &[class*='line'] {
     background-color: transparent;
     &::after {
-      content: " ";
+      content: ' ';
       display: block;
       width: 200%;
       height: 200%;
@@ -278,18 +278,18 @@ button.icon.lg {
     }
   }
   &.round {
-    &[class*="line"] {
+    &[class*='line'] {
       &::after {
         border-radius: 1000px;
       }
     }
   }
-  &[class*="lines"] {
+  &[class*='lines'] {
     &::after {
       border: 6px solid currentColor;
     }
   }
-  &[class*="bg-"] {
+  &[class*='bg-'] {
     &::after {
       display: none;
     }
@@ -350,12 +350,12 @@ button.icon.lg {
   height: 48px;
   font-family: Helvetica Neue, Helvetica, sans-serif;
   white-space: nowrap;
-  &:not([class*="bg"]):not([class*="line"]) {
+  &:not([class*='bg']):not([class*='line']) {
     background-color: #f1f1f1;
   }
-  &[class*="line-"] {
+  &[class*='line-'] {
     &::after {
-      content: " ";
+      content: ' ';
       width: 200%;
       height: 200%;
       position: absolute;
@@ -371,14 +371,14 @@ button.icon.lg {
     }
   }
   &.radius {
-    &[class*="line"] {
+    &[class*='line'] {
       &::after {
         border-radius: 12px;
       }
     }
   }
   &.round {
-    &[class*="line"] {
+    &[class*='line'] {
       &::after {
         border-radius: 1000px;
       }
@@ -401,12 +401,12 @@ button.icon.lg {
     padding: 0px 10px;
     height: 28px;
     color: $white;
-    &:not([class*="bg-"]) {
+    &:not([class*='bg-']) {
       background-color: #dd514c;
     }
   }
   &:empty {
-    &:not([class*="cuIcon-"]) {
+    &:not([class*='cuIcon-']) {
       padding: 0px;
       width: 16px;
       height: 16px;
@@ -414,7 +414,7 @@ button.icon.lg {
       right: -4px;
     }
   }
-  &[class*="cuIcon-"] {
+  &[class*='cuIcon-'] {
     width: 32px;
     height: 32px;
     top: -4px;
@@ -434,7 +434,7 @@ button.icon.lg {
   }
   .cu-tag {
     margin: 0;
-    &[class*="line-"] {
+    &[class*='line-'] {
       &:last-child {
         &::after {
           border-left: 0px solid transparent;
@@ -454,7 +454,7 @@ button.icon.lg {
         border-bottom-left-radius: 6px;
       }
       &:last-child::after,
-      &[class*="line-"] {
+      &[class*='line-'] {
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;
       }
@@ -560,33 +560,33 @@ button.icon.lg {
   line-height: 3em;
   text-align: center;
   &::before {
-    font-family: "cuIcon";
+    font-family: 'cuIcon';
     display: inline-block;
     margin-right: 6px;
   }
   &.loading {
     &::before {
-      content: "\e67a";
+      content: '\e67a';
       animation: cuIcon-spin 2s infinite linear;
     }
     &::after {
-      content: "加载中...";
+      content: '加载中...';
     }
   }
   &.over {
     &::before {
-      content: "\e64a";
+      content: '\e64a';
     }
     &::after {
-      content: "没有更多了";
+      content: '没有更多了';
     }
   }
   &.erro {
     &::before {
-      content: "\e658";
+      content: '\e658';
     }
     &::after {
-      content: "加载失败";
+      content: '加载失败';
     }
   }
   &.load-icon {
@@ -619,7 +619,7 @@ button.icon.lg {
     font-size: 28px;
     z-index: 9999;
     line-height: 2.4em;
-    [class*="cuIcon-"] {
+    [class*='cuIcon-'] {
       font-size: 60px;
     }
     image {
@@ -627,7 +627,7 @@ button.icon.lg {
       height: 70px;
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       background-color: var(--white);
       border-radius: 50%;
@@ -683,7 +683,7 @@ button.icon.lg {
     z-index: 2000;
     display: block;
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: 24px;
       height: 24px;
@@ -782,7 +782,7 @@ button.icon.lg {
           height: 200%;
           border-bottom: 1px solid #ddd;
           border-radius: inherit;
-          content: " ";
+          content: ' ';
           transform: scale(0.5);
           transform-origin: 0 0;
           pointer-events: none;
@@ -796,7 +796,7 @@ button.icon.lg {
         &.arrow {
           padding-right: 90px;
           &:before {
-            content: "\e6a3";
+            content: '\e6a3';
             position: absolute;
             top: 0;
             right: 30px;
@@ -839,7 +839,7 @@ button.icon.lg {
               }
             }
             text {
-              &[class*="cuIcon-"] {
+              &[class*='cuIcon-'] {
                 display: inline-block;
                 margin-right: 10px;
                 width: 1.6em;
@@ -966,7 +966,7 @@ button.icon.lg {
           border-right: 1px solid rgba(0, 0, 0, 0.1);
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: inherit;
-          content: " ";
+          content: ' ';
           transform: scale(0.5);
           transform-origin: 0 0;
           pointer-events: none;
@@ -978,7 +978,7 @@ button.icon.lg {
           font-size: 26px;
           line-height: 40px;
         }
-        [class*="cuIcon-"] {
+        [class*='cuIcon-'] {
           position: relative;
           display: block;
           margin-top: 20px;
@@ -1038,7 +1038,7 @@ button.icon.lg {
       position: relative;
       top: -10px;
       text {
-        &[class*="bg-"] {
+        &[class*='bg-'] {
           &:last-child {
             position: absolute;
             bottom: -0.5rem;
@@ -1055,7 +1055,7 @@ button.icon.lg {
       text {
         position: relative;
         z-index: 1;
-        &[class*="bg-"] {
+        &[class*='bg-'] {
           &:last-child {
             position: absolute;
             display: inline-block;
@@ -1068,7 +1068,7 @@ button.icon.lg {
             z-index: 0;
           }
         }
-        &[class*="text-"] {
+        &[class*='text-'] {
           :last-child {
             position: absolute;
             display: inline-block;
@@ -1088,7 +1088,7 @@ button.icon.lg {
       font-size: 30px;
       > {
         text {
-          &[class*="cuIcon-"] {
+          &[class*='cuIcon-'] {
             margin-left: -0.3em;
             margin-right: 0.3em;
           }
@@ -1105,11 +1105,11 @@ button.icon.lg {
       }
     }
     > {
-      text[class*="cuIcon-"],
-      view[class*="cuIcon-"] {
+      text[class*='cuIcon-'],
+      view[class*='cuIcon-'] {
         font-size: 36px;
       }
-      text[class*="cuIcon-"] + text[class*="cuIcon-"] {
+      text[class*='cuIcon-'] + text[class*='cuIcon-'] {
         margin-left: 0.5em;
       }
     }
@@ -1153,7 +1153,6 @@ button.icon.lg {
       font-size: 32px;
       line-height: 30px;
     }
-    
   }
   &.btn-group {
     justify-content: space-around;
@@ -1184,7 +1183,7 @@ button.icon.lg {
       line-height: 64px;
       font-size: 26px;
     }
-    [class*="cuIcon-"] {
+    [class*='cuIcon-'] {
       margin: 0 0.5em 0 0.8em;
       &::before {
         top: 0px;
@@ -1221,7 +1220,7 @@ button.icon.lg {
         position: relative;
         z-index: 2;
         padding-top: 50px;
-        [class*="cuIcon-"] {
+        [class*='cuIcon-'] {
           position: absolute;
           width: 70px;
           z-index: 2;
@@ -1235,7 +1234,7 @@ button.icon.lg {
           margin: auto;
           padding: 0;
           &::after {
-            content: "";
+            content: '';
             position: absolute;
             width: 100px;
             height: 100px;
@@ -1249,7 +1248,7 @@ button.icon.lg {
             z-index: 0;
           }
           &::before {
-            content: "";
+            content: '';
             position: absolute;
             width: 100px;
             height: 30px;
@@ -1289,7 +1288,7 @@ button.icon.lg {
         &::after {
           border: 0;
         }
-        [class*="cuIcon-"] {
+        [class*='cuIcon-'] {
           width: 100px;
           position: relative;
           display: block;
@@ -1318,7 +1317,7 @@ button.icon.lg {
     &.border {
       .action {
         &::before {
-          content: " ";
+          content: ' ';
           width: 200%;
           height: 200%;
           position: absolute;
@@ -1355,11 +1354,11 @@ button.icon.lg {
     }
     .action {
       margin-left: 20px;
-      [class*="cuIcon-"] {
+      [class*='cuIcon-'] {
         font-size: 48px;
       }
       &:first-child {
-        [class*="cuIcon-"] {
+        [class*='cuIcon-'] {
           margin-left: 0px;
         }
       }
@@ -1402,7 +1401,7 @@ button.icon.lg {
       border-radius: 1000px;
       height: 30px;
       &::after {
-        content: " ";
+        content: ' ';
         width: 200%;
         height: 200%;
         position: absolute;
@@ -1417,7 +1416,7 @@ button.icon.lg {
         opacity: 0.5;
       }
       &::before {
-        content: " ";
+        content: ' ';
         width: 1px;
         height: 110%;
         position: absolute;
@@ -1449,24 +1448,21 @@ button.icon.lg {
 
 .nav {
   white-space: nowrap;
+  .cu-item {
+    height: 90px;
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 10px;
+    padding: 0 20px;
+    &.cur {
+      border-bottom: 4px solid;
+    }
+  }
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
-
-.nav .cu-item {
-  height: 90px;
-  display: inline-block;
-  line-height: 90px;
-  margin: 0 10px;
-  padding: 0 20px;
-}
-
-.nav .cu-item.cur {
-  border-bottom: 4px solid;
-}
-
 /* ==================
          时间轴
  ==================== */
@@ -1492,12 +1488,12 @@ button.icon.lg {
   z-index: 0;
 }
 
-.cu-timeline > .cu-item:not([class*="text-"]) {
+.cu-timeline > .cu-item:not([class*='text-']) {
   color: #ccc;
 }
 
 .cu-timeline > .cu-item::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 1px;
@@ -1509,7 +1505,7 @@ button.icon.lg {
 }
 
 .cu-timeline > .cu-item::before {
-  font-family: "cuIcon";
+  font-family: 'cuIcon';
   display: block;
   position: absolute;
   top: 36px;
@@ -1523,11 +1519,11 @@ button.icon.lg {
   left: 36px;
 }
 
-.cu-timeline > .cu-item:not([class*="cuIcon-"])::before {
-  content: "\e763";
+.cu-timeline > .cu-item:not([class*='cuIcon-'])::before {
+  content: '\e763';
 }
 
-.cu-timeline > .cu-item[class*="cuIcon-"]::before {
+.cu-timeline > .cu-item[class*='cuIcon-']::before {
   background-color: var(--white);
   width: 50px;
   height: 50px;
@@ -1544,7 +1540,7 @@ button.icon.lg {
   line-height: 1.6;
 }
 
-.cu-timeline > .cu-item > .content:not([class*="bg-"]) {
+.cu-timeline > .cu-item > .content:not([class*='bg-']) {
   background-color: #f1f1f1;
   color: #666;
 }
@@ -1597,7 +1593,7 @@ button.icon.lg {
   text-align: left;
 }
 
-.cu-chat .cu-item > .main .content:not([class*="bg-"]) {
+.cu-chat .cu-item > .main .content:not([class*='bg-']) {
   background-color: var(--white);
   color: #666;
 }
@@ -1618,7 +1614,7 @@ button.icon.lg {
 }
 
 .cu-chat .cu-item > .main .content::after {
-  content: "";
+  content: '';
   top: 27px;
   transform: rotate(45deg);
   position: absolute;
@@ -1638,7 +1634,7 @@ button.icon.lg {
 }
 
 .cu-chat .cu-item > .main .content::before {
-  content: "";
+  content: '';
   top: 30px;
   transform: rotate(45deg);
   position: absolute;
@@ -1654,7 +1650,7 @@ button.icon.lg {
   opacity: 0.3;
 }
 
-.cu-chat .cu-item > .main .content:not([class*="bg-"])::before {
+.cu-chat .cu-item > .main .content:not([class*='bg-'])::before {
   background-color: var(--black);
   opacity: 0.1;
 }
@@ -1851,7 +1847,7 @@ button.icon.lg {
   padding-right: 20px;
 }
 
-.cu-form-group > text[class*="cuIcon-"] {
+.cu-form-group > text[class*='cuIcon-'] {
   font-size: 36px;
   padding: 0;
   box-sizing: border-box;
@@ -1916,7 +1912,7 @@ button.icon.lg {
 .cu-form-group picker::after {
   font-family: cuIcon;
   display: block;
-  content: "\e6a3";
+  content: '\e6a3';
   position: absolute;
   font-size: 34px;
   color: var(--grey);
@@ -1958,7 +1954,7 @@ button.icon.lg {
 }
 
 .cu-modal::before {
-  content: "\200B";
+  content: '\200B';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -2056,7 +2052,7 @@ swiper.round-dot .wx-swiper-dot {
 }
 
 swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
@@ -2172,11 +2168,11 @@ scroll-view.cu-steps .cu-item {
   min-width: 100px;
 }
 
-.cu-steps .cu-item:not([class*="text-"]) {
+.cu-steps .cu-item:not([class*='text-']) {
   color: var(--grey);
 }
 
-.cu-steps .cu-item [class*="cuIcon-"],
+.cu-steps .cu-item [class*='cuIcon-'],
 .cu-steps .cu-item .num {
   display: block;
   font-size: 40px;
@@ -2187,7 +2183,7 @@ scroll-view.cu-steps .cu-item {
 .cu-steps .cu-item::after,
 .cu-steps.steps-arrow .cu-item::before,
 .cu-steps.steps-arrow .cu-item::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   height: 0rem;
@@ -2200,8 +2196,8 @@ scroll-view.cu-steps .cu-item {
 
 .cu-steps.steps-arrow .cu-item::before,
 .cu-steps.steps-arrow .cu-item::after {
-  content: "\e6a3";
-  font-family: "cuIcon";
+  content: '\e6a3';
+  font-family: 'cuIcon';
   height: 30px;
   border-bottom-width: 0px;
   line-height: 30px;
@@ -2223,7 +2219,7 @@ scroll-view.cu-steps .cu-item {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.cu-steps .cu-item[class*="text-"]::after {
+.cu-steps .cu-item[class*='text-']::after {
   width: calc(100% - 80px);
   color: currentColor;
 }
@@ -2245,7 +2241,7 @@ scroll-view.cu-steps .cu-item {
   overflow: hidden;
 }
 
-.cu-steps .cu-item[class*="text-"] .num {
+.cu-steps .cu-item[class*='text-'] .num {
   background-color: currentColor;
 }
 
@@ -2262,7 +2258,7 @@ scroll-view.cu-steps .cu-item {
   transform: translateY(0px);
 }
 
-.cu-steps .cu-item[class*="text-"] .num::before {
+.cu-steps .cu-item[class*='text-'] .num::before {
   transform: translateY(-40px);
   color: var(--white);
 }
@@ -2273,15 +2269,15 @@ scroll-view.cu-steps .cu-item {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.cu-steps .cu-item[class*="text-"] .num::after {
-  content: "\e645";
-  font-family: "cuIcon";
+.cu-steps .cu-item[class*='text-'] .num::after {
+  content: '\e645';
+  font-family: 'cuIcon';
   color: var(--white);
   transform: translateY(0px);
 }
 
-.cu-steps .cu-item[class*="text-"] .num.err::after {
-  content: "\e646";
+.cu-steps .cu-item[class*='text-'] .num.err::after {
+  content: '\e646';
 }
 
 /* ==================
@@ -2411,7 +2407,7 @@ scroll-view.cu-steps .cu-item {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.grid.grid-square > view > text[class*="cuIcon-"] {
+.grid.grid-square > view > text[class*='cuIcon-'] {
   font-size: 52px;
   position: absolute;
   color: var(--grey);
@@ -2810,7 +2806,7 @@ scroll-view.cu-steps .cu-item {
 
 .cf::after,
 .cf::before {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
@@ -3090,119 +3086,119 @@ scroll-view.cu-steps .cu-item {
   color: var(--white);
 }
 
-.shadow[class*="-red"] {
+.shadow[class*='-red'] {
   box-shadow: var(--ShadowSize) var(--redShadow);
 }
 
-.shadow[class*="-orange"] {
+.shadow[class*='-orange'] {
   box-shadow: var(--ShadowSize) var(--orangeShadow);
 }
 
-.shadow[class*="-yellow"] {
+.shadow[class*='-yellow'] {
   box-shadow: var(--ShadowSize) var(--yellowShadow);
 }
 
-.shadow[class*="-olive"] {
+.shadow[class*='-olive'] {
   box-shadow: var(--ShadowSize) var(--oliveShadow);
 }
 
-.shadow[class*="-green"] {
+.shadow[class*='-green'] {
   box-shadow: var(--ShadowSize) var(--greenShadow);
 }
 
-.shadow[class*="-cyan"] {
+.shadow[class*='-cyan'] {
   box-shadow: var(--ShadowSize) var(--cyanShadow);
 }
 
-.shadow[class*="-blue"] {
+.shadow[class*='-blue'] {
   box-shadow: var(--ShadowSize) var(--blueShadow);
 }
 
-.shadow[class*="-purple"] {
+.shadow[class*='-purple'] {
   box-shadow: var(--ShadowSize) var(--purpleShadow);
 }
 
-.shadow[class*="-mauve"] {
+.shadow[class*='-mauve'] {
   box-shadow: var(--ShadowSize) var(--mauveShadow);
 }
 
-.shadow[class*="-pink"] {
+.shadow[class*='-pink'] {
   box-shadow: var(--ShadowSize) var(--pinkShadow);
 }
 
-.cu-btn.shadow[class*="-brown"] {
+.cu-btn.shadow[class*='-brown'] {
   box-shadow: var(--ShadowSize) var(--brownShadow);
 }
 
-.cu-btn.shadow[class*="-grey"] {
+.cu-btn.shadow[class*='-grey'] {
   box-shadow: var(--ShadowSize) var(--greyShadow);
 }
 
-.cu-btn.shadow[class*="-gray"] {
+.cu-btn.shadow[class*='-gray'] {
   box-shadow: var(--ShadowSize) var(--grayShadow);
 }
 
-.cu-btn.shadow[class*="-black"] {
+.cu-btn.shadow[class*='-black'] {
   box-shadow: var(--ShadowSize) var(--blackShadow);
 }
 
-.shadow[class*="-white"] {
+.shadow[class*='-white'] {
   box-shadow: var(--ShadowSize) var(--blackShadow);
 }
 
-.text-shadow[class*="-red"] {
+.text-shadow[class*='-red'] {
   text-shadow: var(--ShadowSize) var(--redShadow);
 }
 
-.text-shadow[class*="-orange"] {
+.text-shadow[class*='-orange'] {
   text-shadow: var(--ShadowSize) var(--orangeShadow);
 }
 
-.text-shadow[class*="-yellow"] {
+.text-shadow[class*='-yellow'] {
   text-shadow: var(--ShadowSize) var(--yellowShadow);
 }
 
-.text-shadow[class*="-olive"] {
+.text-shadow[class*='-olive'] {
   text-shadow: var(--ShadowSize) var(--oliveShadow);
 }
 
-.text-shadow[class*="-green"] {
+.text-shadow[class*='-green'] {
   text-shadow: var(--ShadowSize) var(--greenShadow);
 }
 
-.text-shadow[class*="-cyan"] {
+.text-shadow[class*='-cyan'] {
   text-shadow: var(--ShadowSize) var(--cyanShadow);
 }
 
-.text-shadow[class*="-blue"] {
+.text-shadow[class*='-blue'] {
   text-shadow: var(--ShadowSize) var(--blueShadow);
 }
 
-.text-shadow[class*="-purple"] {
+.text-shadow[class*='-purple'] {
   text-shadow: var(--ShadowSize) var(--purpleShadow);
 }
 
-.text-shadow[class*="-mauve"] {
+.text-shadow[class*='-mauve'] {
   text-shadow: var(--ShadowSize) var(--mauveShadow);
 }
 
-.text-shadow[class*="-pink"] {
+.text-shadow[class*='-pink'] {
   text-shadow: var(--ShadowSize) var(--pinkShadow);
 }
 
-.text-shadow[class*="-brown"] {
+.text-shadow[class*='-brown'] {
   text-shadow: var(--ShadowSize) var(--brownShadow);
 }
 
-.text-shadow[class*="-grey"] {
+.text-shadow[class*='-grey'] {
   text-shadow: var(--ShadowSize) var(--greyShadow);
 }
 
-.text-shadow[class*="-gray"] {
+.text-shadow[class*='-gray'] {
   text-shadow: var(--ShadowSize) var(--grayShadow);
 }
 
-.text-shadow[class*="-black"] {
+.text-shadow[class*='-black'] {
   text-shadow: var(--ShadowSize) var(--blackShadow);
 }
 
@@ -3218,7 +3214,7 @@ scroll-view.cu-steps .cu-item {
 }
 
 .bg-mask::after {
-  content: "";
+  content: '';
   border-radius: inherit;
   width: 100%;
   height: 100%;
@@ -3302,7 +3298,7 @@ scroll-view.cu-steps .cu-item {
 }
 
 .text-price::before {
-  content: "¥";
+  content: '¥';
   font-size: 80%;
   margin-right: 4px;
 }
