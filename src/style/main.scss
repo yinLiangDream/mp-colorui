@@ -1808,115 +1808,112 @@ button.icon.lg {
  ==================== */
 
 .cu-form-group {
-  background-color: var(--white);
+  background-color: $white;
   padding: 1px 30px;
   display: flex;
   align-items: center;
   min-height: 100px;
   justify-content: space-between;
-}
-
-.cu-form-group + .cu-form-group {
-  border-top: 1px solid #eee;
-}
-
-.cu-form-group .title {
-  text-align: justify;
-  padding-right: 30px;
-  font-size: 30px;
-  position: relative;
-  height: 60px;
-  line-height: 60px;
-}
-
-.cu-form-group input {
-  flex: 1;
-  font-size: 30px;
-  color: #555;
-  padding-right: 20px;
-}
-
-.cu-form-group > text[class*='cuIcon-'] {
-  font-size: 36px;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.cu-form-group.top .title {
-  height: 1em;
-  line-height: 1;
-  align-self: flex-start;
-  margin-top: 16px;
-}
-
-.cu-form-group textarea {
-  margin: 32px 0 30px;
-  height: 4.6em;
-  width: 100%;
-  line-height: 1.2em;
-  flex: 1;
-  font-size: 28px;
-  padding: 0;
-  box-sizing: content-box;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.cu-form-group textarea .placeholder {
-  color: transparent;
-}
-
-.cu-form-group textarea::after {
-  content: attr(data-placeholder);
-  color: gray;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  transition: 0.2s;
-  opacity: 1;
-}
-
-.cu-form-group textarea.value::after {
-  opacity: 0;
-}
-
-.cu-form-group picker {
-  flex: 1;
-  padding-right: 40px;
-  overflow: hidden;
-  position: relative;
-}
-
-.cu-form-group picker .picker {
-  line-height: 100px;
-  font-size: 28px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  text-align: right;
-}
-
-.cu-form-group picker::after {
-  font-family: cuIcon;
-  display: block;
-  content: '\e6a3';
-  position: absolute;
-  font-size: 34px;
-  color: var(--grey);
-  line-height: 100px;
-  width: 60px;
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  right: -20px;
-  margin: auto;
-}
-
-.cu-form-group textarea[disabled],
-.cu-form-group textarea[disabled] .placeholder {
-  color: transparent;
+  + {
+    .cu-form-group {
+      border-top: 1px solid #eee;
+    }
+  }
+  .title {
+    text-align: justify;
+    padding-right: 30px;
+    font-size: 30px;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+  }
+  input {
+    flex: 1;
+    font-size: 30px;
+    color: #555;
+    padding-right: 20px;
+  }
+  > {
+    text {
+      &[class*='cuIcon-'] {
+        font-size: 36px;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+  &.top {
+    .title {
+      height: 1em;
+      line-height: 1;
+      align-self: flex-start;
+      margin-top: 16px;
+    }
+  }
+  textarea {
+    margin: 32px 0 30px;
+    height: 4.6em;
+    width: 100%;
+    line-height: 1.2em;
+    flex: 1;
+    font-size: 28px;
+    padding: 0;
+    box-sizing: content-box;
+    display: inline-block;
+    vertical-align: top;
+    .placeholder {
+      color: transparent;
+    }
+    &::after {
+      content: attr(data-placeholder);
+      color: gray;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      transition: 0.2s;
+      opacity: 1;
+    }
+    &.value {
+      &::after {
+        opacity: 0;
+      }
+    }
+    &[disabled],
+    &[disabled] .placeholder {
+      color: transparent;
+    }
+  }
+  picker {
+    flex: 1;
+    padding-right: 40px;
+    overflow: hidden;
+    position: relative;
+    .picker {
+      line-height: 100px;
+      font-size: 28px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      text-align: right;
+    }
+    &::after {
+      font-family: cuIcon;
+      display: block;
+      content: '\e6a3';
+      position: absolute;
+      font-size: 34px;
+      color: $grey;
+      line-height: 100px;
+      width: 60px;
+      text-align: center;
+      top: 0;
+      bottom: 0;
+      right: -20px;
+      margin: auto;
+    }
+  }
 }
 
 /* ==================
