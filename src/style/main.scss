@@ -1937,23 +1937,60 @@ button.icon.lg {
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease-in-out 0s;
   pointer-events: none;
-}
-
-.cu-modal::before {
-  content: '\200B';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.cu-modal.show {
-  opacity: 1;
-  transition-duration: 0.3s;
-  -ms-transform: scale(1);
-  transform: scale(1);
-  overflow-x: hidden;
-  overflow-y: auto;
-  pointer-events: auto;
+  &::before {
+    content: '\200B';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  &.show {
+    opacity: 1;
+    transition-duration: 0.3s;
+    -ms-transform: scale(1);
+    transform: scale(1);
+    overflow-x: hidden;
+    overflow-y: auto;
+    pointer-events: auto;
+  }
+  &.bottom-modal {
+    margin-bottom: -1000px;
+    &::before {
+      vertical-align: bottom;
+    }
+    .cu-dialog {
+      width: 100%;
+      border-radius: 0;
+    }
+    &.show {
+      margin-bottom: 0;
+    }
+  }
+  &.drawer-modal {
+    transform: scale(1);
+    display: flex;
+    .cu-dialog {
+      height: 100%;
+      min-width: 200px;
+      border-radius: 0;
+      margin: initial;
+      transition-duration: 0.3s;
+    }
+    &.justify-start {
+      .cu-dialog {
+        transform: translateX(-100%);
+      }
+    }
+    &.justify-end {
+      .cu-dialog {
+        transform: translateX(100%);
+      }
+    }
+    &.show {
+      .cu-dialog {
+        transform: translateX(0%);
+      }
+    }
+  }
 }
 
 .cu-dialog {
@@ -1967,48 +2004,6 @@ button.icon.lg {
   background-color: #f8f8f8;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.cu-modal.bottom-modal::before {
-  vertical-align: bottom;
-}
-
-.cu-modal.bottom-modal .cu-dialog {
-  width: 100%;
-  border-radius: 0;
-}
-
-.cu-modal.bottom-modal {
-  margin-bottom: -1000px;
-}
-
-.cu-modal.bottom-modal.show {
-  margin-bottom: 0;
-}
-
-.cu-modal.drawer-modal {
-  transform: scale(1);
-  display: flex;
-}
-
-.cu-modal.drawer-modal .cu-dialog {
-  height: 100%;
-  min-width: 200px;
-  border-radius: 0;
-  margin: initial;
-  transition-duration: 0.3s;
-}
-
-.cu-modal.drawer-modal.justify-start .cu-dialog {
-  transform: translateX(-100%);
-}
-
-.cu-modal.drawer-modal.justify-end .cu-dialog {
-  transform: translateX(100%);
-}
-
-.cu-modal.drawer-modal.show .cu-dialog {
-  transform: translateX(0%);
 }
 
 /* ==================
