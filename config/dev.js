@@ -2,8 +2,9 @@ module.exports = {
   env: {
     NODE_ENV: '"development"'
   },
-  defineConstants: {
-  },
+  defineConstants: {},
   weapp: {},
-  h5: {}
-}
+  h5: {
+    esnextModules: ['mp-colorui']
+  }
+};

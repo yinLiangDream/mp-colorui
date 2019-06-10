@@ -4,8 +4,6 @@ import ClIcon from '../icon/index';
 import { TEXT_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/menuList';
 
-
-
 export default function ClMenuList(props: IProps) {
   const shortLineClassName = props.shortBorder ? 'sm-border' : '';
   const arrowClassName = (arrow: boolean) => (arrow ? 'arrow' : '');
@@ -14,7 +12,7 @@ export default function ClMenuList(props: IProps) {
 
   const click = (index: number) => {
     props.onClick && props.onClick(index);
-  }
+  };
   const itemComponent = list.map((item, index) => (
     <View
       key={item.title}
@@ -36,7 +34,7 @@ export default function ClMenuList(props: IProps) {
   ));
   return (
     <View
-      className={`cu-list menu ${shortLineClassName} ${arrowClassName} ${cardClassName}`}
+      className={`cu-list menu ${shortLineClassName} ${cardClassName}`}
     >
       {itemComponent}
     </View>

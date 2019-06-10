@@ -17,7 +17,7 @@ export default function ClTimeline(props: IProps) {
         item.icon
       )}`}
     >
-      <View className={`${bgColorClassName} content`}>{item.content}</View>
+      <View className={`${bgColorClassName(item.bgColor)} content`}>{item.content}</View>
     </View>
   ));
   return <View className='cu-timeline'>{items}</View>;
