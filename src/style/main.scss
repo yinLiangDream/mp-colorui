@@ -3102,170 +3102,157 @@ scroll-view {
           文本
  ==================== */
 
-.text-xs {
-  font-size: 20px;
-}
-
-.text-sm {
-  font-size: 24px;
-}
-
-.text-df {
-  font-size: 28px;
-}
-
-.text-lg {
-  font-size: 32px;
-}
-
-.text-xl {
-  font-size: 36px;
-}
-
-.text-xxl {
-  font-size: 44px;
-}
-
-.text-sl {
-  font-size: 80px;
-}
-
-.text-xsl {
-  font-size: 120px;
-}
-
-.text-Abc {
-  text-transform: Capitalize;
-}
-
-.text-ABC {
-  text-transform: Uppercase;
-}
-
-.text-abc {
-  text-transform: Lowercase;
-}
-
-.text-price::before {
-  content: '¥';
-  font-size: 80%;
-  margin-right: 4px;
-}
-
-.text-cut {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-content {
-  line-height: 1.6;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
+.text {
+  &-xs {
+    font-size: 20px;
+  }
+  &-sm {
+    font-size: 24px;
+  }
+  &-df {
+    font-size: 28px;
+  }
+  &-lg {
+    font-size: 32px;
+  }
+  &-xl {
+    font-size: 36px;
+  }
+  &-xxl {
+    font-size: 44px;
+  }
+  &-sl {
+    font-size: 80px;
+  }
+  &-xsl {
+    font-size: 120px;
+  }
+  &-Abc {
+    text-transform: Capitalize;
+  }
+  &-ABC {
+    text-transform: Uppercase;
+  }
+  &-abc {
+    text-transform: Lowercase;
+  }
+  &-price {
+    &::before {
+      content: '¥';
+      font-size: 80%;
+      margin-right: 4px;
+    }
+  }
+  &-cut {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-content {
+    line-height: 1.6;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
 }
 
 .text-red,
 .line-red,
 .lines-red {
-  color: var(--red);
+  color: $red;
 }
 
 .text-orange,
 .line-orange,
 .lines-orange {
-  color: var(--orange);
+  color: $orange;
 }
 
 .text-yellow,
 .line-yellow,
 .lines-yellow {
-  color: var(--yellow);
+  color: $yellow;
 }
 
 .text-olive,
 .line-olive,
 .lines-olive {
-  color: var(--olive);
+  color: $olive;
 }
 
 .text-green,
 .line-green,
 .lines-green {
-  color: var(--green);
+  color: $green;
 }
 
 .text-cyan,
 .line-cyan,
 .lines-cyan {
-  color: var(--cyan);
+  color: $cyan;
 }
 
 .text-blue,
 .line-blue,
 .lines-blue {
-  color: var(--blue);
+  color: $blue;
 }
 
 .text-purple,
 .line-purple,
 .lines-purple {
-  color: var(--purple);
+  color: $purple;
 }
 
 .text-mauve,
 .line-mauve,
 .lines-mauve {
-  color: var(--mauve);
+  color: $mauve;
 }
 
 .text-pink,
 .line-pink,
 .lines-pink {
-  color: var(--pink);
+  color: $pink;
 }
 
 .text-brown,
 .line-brown,
 .lines-brown {
-  color: var(--brown);
+  color: $brown;
 }
 
 .text-grey,
 .line-grey,
 .lines-grey {
-  color: var(--grey);
+  color: $grey;
 }
 
 .text-gray,
 .line-gray,
 .lines-gray {
-  color: var(--grey);
+  color: $gray;
 }
 
 .text-black,
 .line-black,
 .lines-black {
-  color: var(--black);
+  color: $black;
 }
 
 .text-white,
 .line-white,
 .lines-white {
-  color: var(--white);
+  color: $white;
 }
 
 .text-shadow {
