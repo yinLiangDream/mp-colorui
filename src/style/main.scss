@@ -1233,32 +1233,32 @@ button.icon.lg {
           right: 0;
           margin: auto;
           padding: 0;
-          &::after {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            top: -50px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.08);
-            border-radius: 50px;
-            background-color: inherit;
-            z-index: 0;
-          }
-          &::before {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 30px;
-            bottom: 30px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            background-color: inherit;
-            z-index: 1;
-          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          top: -50px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.08);
+          border-radius: 50px;
+          background-color: inherit;
+          z-index: 0;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100px;
+          height: 30px;
+          bottom: 30px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          background-color: inherit;
+          z-index: 1;
         }
       }
       .cuIcon-cu-image {
@@ -1268,6 +1268,15 @@ button.icon.lg {
           height: 50px;
           display: inline-block;
         }
+      }
+      [class*='cuIcon-'] {
+        width: 100px;
+        position: relative;
+        display: block;
+        height: auto;
+        margin: 0 auto 10px;
+        text-align: center;
+        font-size: 40px;
       }
     }
     &.shop {
@@ -1287,15 +1296,6 @@ button.icon.lg {
       &.action {
         &::after {
           border: 0;
-        }
-        [class*='cuIcon-'] {
-          width: 100px;
-          position: relative;
-          display: block;
-          height: auto;
-          margin: 0 auto 10px;
-          text-align: center;
-          font-size: 40px;
         }
       }
     }
@@ -3032,7 +3032,7 @@ scroll-view {
   &[class*='-pink'] {
     box-shadow: $ShadowSize $pinkShadow;
   }
-  $[class*='-white'] {
+  &[class*='-white'] {
     box-shadow: $ShadowSize $blackShadow;
   }
 }

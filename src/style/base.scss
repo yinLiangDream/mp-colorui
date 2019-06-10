@@ -165,10 +165,6 @@ switch {
   }
 }
 
-radio-group {
-  display: inline-block;
-}
-
 radio::before,
 checkbox::before {
   font-family: "cuIcon";
