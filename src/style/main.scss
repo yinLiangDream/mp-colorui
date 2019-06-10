@@ -2010,46 +2010,48 @@ button.icon.lg {
          轮播
  ==================== */
 
-swiper.square-dot .wx-swiper-dot {
-  background-color: var(--white);
-  opacity: 0.4;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active {
-  opacity: 1;
-  width: 30px;
-}
-
-swiper.round-dot .wx-swiper-dot {
-  width: 10px;
-  height: 10px;
-  top: -4px;
-  transition: all 0.3s ease-in-out 0s;
-  position: relative;
-}
-
-swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 0px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: var(--white);
-  border-radius: 20px;
-}
-
-swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
-  width: 18px;
-  height: 18px;
-  top: 0px;
+swiper {
+  &.square-dot {
+    .wx-swiper-dot {
+      background-color: $white;
+      opacity: 0.4;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out 0s;
+      &.wx-swiper-dot-active {
+        opacity: 1;
+        width: 30px;
+      }
+    }
+  }
+  &.round-dot {
+    .wx-swiper-dot {
+      width: 10px;
+      height: 10px;
+      top: -4px;
+      transition: all 0.3s ease-in-out 0s;
+      position: relative;
+      &.wx-swiper-dot-active {
+        width: 18px;
+        height: 18px;
+        top: 0px;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: 0px;
+          left: 0px;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          background-color: $white;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
 }
 
 .screen-swiper {
@@ -2069,29 +2071,28 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 
 .card-swiper {
   height: 420px;
-}
-
-.card-swiper swiper-item {
-  width: 610px !important;
-  left: 70px;
-  box-sizing: border-box;
-  padding: 40px 0px 70px;
-  overflow: initial;
-}
-
-.card-swiper swiper-item .swiper-item {
-  width: 100%;
-  display: block;
-  height: 100%;
-  border-radius: 10px;
-  transform: scale(0.9);
-  transition: all 0.2s ease-in 0s;
-  overflow: hidden;
-}
-
-.card-swiper swiper-item.cur .swiper-item {
-  transform: none;
-  transition: all 0.2s ease-in 0s;
+  swiper-item {
+    width: 610px !important;
+    left: 70px;
+    box-sizing: border-box;
+    padding: 40px 0px 70px;
+    overflow: initial;
+    .swiper-item {
+      width: 100%;
+      display: block;
+      height: 100%;
+      border-radius: 10px;
+      transform: scale(0.9);
+      transition: all 0.2s ease-in 0s;
+      overflow: hidden;
+    }
+    &.cur {
+      .swiper-item {
+        transform: none;
+        transition: all 0.2s ease-in 0s;
+      }
+    }
+  }
 }
 
 .tower-swiper {
@@ -2099,29 +2100,26 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   position: relative;
   max-width: 750px;
   overflow: hidden;
-}
-
-.tower-swiper .tower-item {
-  position: absolute;
-  width: 300px;
-  height: 380px;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin: auto;
-  transition: all 0.2s ease-in 0s;
-  opacity: 1;
-}
-
-.tower-swiper .tower-item.none {
-  opacity: 0;
-}
-
-.tower-swiper .tower-item .swiper-item {
-  width: 100%;
-  height: 100%;
-  border-radius: 6px;
-  overflow: hidden;
+  .tower-item {
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    transition: all 0.2s ease-in 0s;
+    opacity: 1;
+    &.none {
+      opacity: 0;
+    }
+    .swiper-item {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+  }
 }
 
 /* ==================
