@@ -1469,84 +1469,84 @@ button.icon.lg {
 
 .cu-timeline {
   display: block;
-  background-color: var(--white);
-}
-
-.cu-timeline .cu-time {
-  width: 120px;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 26px;
-  color: #888;
-  display: block;
-}
-
-.cu-timeline > .cu-item {
-  padding: 30px 30px 30px 120px;
-  position: relative;
-  display: block;
-  z-index: 0;
-}
-
-.cu-timeline > .cu-item:not([class*='text-']) {
-  color: #ccc;
-}
-
-.cu-timeline > .cu-item::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 1px;
-  background-color: #ddd;
-  left: 60px;
-  height: 100%;
-  top: 0;
-  z-index: 8;
-}
-
-.cu-timeline > .cu-item::before {
-  font-family: 'cuIcon';
-  display: block;
-  position: absolute;
-  top: 36px;
-  z-index: 9;
-  background-color: var(--white);
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border: none;
-  line-height: 50px;
-  left: 36px;
-}
-
-.cu-timeline > .cu-item:not([class*='cuIcon-'])::before {
-  content: '\e763';
-}
-
-.cu-timeline > .cu-item[class*='cuIcon-']::before {
-  background-color: var(--white);
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border: none;
-  line-height: 50px;
-  left: 36px;
-}
-
-.cu-timeline > .cu-item > .content {
-  padding: 30px;
-  border-radius: 6px;
-  display: block;
-  line-height: 1.6;
-}
-
-.cu-timeline > .cu-item > .content:not([class*='bg-']) {
-  background-color: #f1f1f1;
-  color: #666;
-}
-
-.cu-timeline > .cu-item > .content + .content {
-  margin-top: 20px;
+  background-color: $white;
+  .cu-time {
+    width: 120px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+    color: #888;
+    display: block;
+  }
+  > {
+    .cu-item {
+      padding: 30px 30px 30px 120px;
+      position: relative;
+      display: block;
+      z-index: 0;
+      &:not([class*='text-']) {
+        color: #ccc;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        background-color: #ddd;
+        left: 60px;
+        height: 100%;
+        top: 0;
+        z-index: 8;
+      }
+      &::before {
+        font-family: 'cuIcon';
+        display: block;
+        position: absolute;
+        top: 36px;
+        z-index: 9;
+        background-color: $white;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border: none;
+        line-height: 50px;
+        left: 36px;
+      }
+      &:not([class*='cuIcon-']) {
+        &::before {
+          content: '\e763';
+        }
+      }
+      &[class*='cuIcon-'] {
+        &::before {
+          background-color: var(--white);
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          border: none;
+          line-height: 50px;
+          left: 36px;
+        }
+      }
+      > {
+        .content {
+          padding: 30px;
+          border-radius: 6px;
+          display: block;
+          line-height: 1.6;
+          &:not([class*='bg-']) {
+            background-color: #f1f1f1;
+            color: #666;
+          }
+          + {
+            .content {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ==================
