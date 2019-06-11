@@ -2,7 +2,6 @@ import Taro from '@tarojs/taro';
 import './app.scss';
 import './style/index.scss';
 
-
 export { default as ClAvatar } from './components/avatar';
 export { default as ClButton } from './components/button';
 export { default as ClCard } from './components/card';
@@ -32,6 +31,7 @@ export { default as ClTimeline } from './components/timeline';
 // export { default as Timer } from './components/timer/timer';
 export { default as ClTitleBar } from './components/titleBar';
 export { default as ClImagePicker } from './components/imagePicker';
-
+export { default as ClFlex } from './components/flex';
+export { default as ClGrid } from './components/grid';
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

@@ -26,5 +26,5 @@ export { default as ClTitleBar } from './titleBar';
 export { default as ClImagePicker } from './imagePicker';
 export { default as ClCard } from './card';
 export { default as ClScreenDrawer } from './screenDrawer';
-
-export { default as Timer} from './timer'
+export { default as ClFlex } from './flex';
+export { default as ClGrid } from './grid';
