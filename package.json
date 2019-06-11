@@ -1,6 +1,6 @@
 {
   "name": "mp-colorui",
-  "version": "0.0.3-beta.1",
+  "version": "0.0.4",
   "description": "MP-ColorUI",
   "main": "dist/index.js",
   "main:h5": "dist/h5/index.js",
@@ -22,7 +22,9 @@
     "dev:rn": "npm run build:rn -- --watch",
     "lint": "eslint ./src --fix",
     "test": "jest --coverage",
-    "build": "TARO_BUILD_TYPE=ui taro build --ui"
+    "build": "TARO_BUILD_TYPE=ui taro build --ui",
+    "publish:beta": "npm publish --tag=beta",
+    "publish": "npm publish"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": [
