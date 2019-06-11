@@ -21,7 +21,8 @@
     "dev:h5": "npm run build:h5 -- --watch",
     "dev:rn": "npm run build:rn -- --watch",
     "lint": "eslint ./src --fix",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "build": "TARO_BUILD_TYPE=ui taro build --ui"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": [
