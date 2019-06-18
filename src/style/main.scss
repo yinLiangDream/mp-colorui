@@ -1069,7 +1069,7 @@ button.icon.lg {
           }
         }
         &[class*='text-'] {
-          :last-child {
+          &:last-child {
             position: absolute;
             display: inline-block;
             bottom: -0.7rem;
@@ -1519,7 +1519,7 @@ button.icon.lg {
       }
       &[class*='cuIcon-'] {
         &::before {
-          background-color: var(--white);
+          background-color: $white;
           width: 50px;
           height: 50px;
           text-align: center;
@@ -1680,7 +1680,6 @@ button.icon.lg {
   > {
     .cu-item {
       display: block;
-      background-color: $white;
       overflow: hidden;
       border-radius: 10px;
       margin: 30px;

@@ -11,7 +11,7 @@ function ClAvatar(props: IProps) {
   const avatarArray = props.headerArray ? (
     props.headerArray.map((item: THeaderArray, index: number) => (
       <View
-        key={index + Math.random()}
+        key={index}
         className={`${props.shape} ${
           utils.model.SIZE[props.size || 'normal']
         } ${BG_COLOR_LIST[item.bgColor || 'black']} ${
