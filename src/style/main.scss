@@ -2127,6 +2127,41 @@ swiper {
 
 .cu-steps {
   display: flex;
+  .cu-item::before,
+  .cu-item::after,
+  &.steps-arrow .cu-item::before,
+  &.steps-arrow .cu-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0rem;
+    width: calc(100% - 80px);
+    border-bottom: 1px solid #ccc;
+    left: calc(0rem - (100% - 80px) / 2);
+    top: 40px;
+    z-index: 0;
+  }
+  &.steps-arrow .cu-item::before,
+  &.steps-arrow .cu-item::after {
+    content: '\e6a3';
+    font-family: 'cuIcon';
+    height: 30px;
+    border-bottom-width: 0px;
+    line-height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+  }
+  &.steps-bottom {
+    .cu-item {
+      &::before,
+      &::after {
+        bottom: 40px;
+        top: initial;
+      }
+    }
+  }
   .cu-item {
     flex: 1;
     text-align: center;
@@ -2135,7 +2170,11 @@ swiper {
     &:not([class*='text-']) {
       color: $grey;
     }
-    [class*='cuIcon-'],
+    [class*='cuIcon-'] {
+      display: block;
+      font-size: 40px;
+      line-height: 80px;
+    }
     .num {
       display: block;
       font-size: 40px;
@@ -2196,46 +2235,9 @@ swiper {
         }
       }
     }
-    &:first-child {
-      ::before,
-      ::after {
-        display: none;
-      }
-    }
-  }
-  .cu-item::before,
-  .cu-item::after,
-  &.steps-arrow .cu-item::before,
-  &.steps-arrow .cu-item::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 0rem;
-    width: calc(100% - 80px);
-    border-bottom: 1px solid #ccc;
-    left: calc(0rem - (100% - 80px) / 2);
-    top: 40px;
-    z-index: 0;
-  }
-  &.steps-arrow .cu-item::before,
-  &.steps-arrow .cu-item::after {
-    content: '\e6a3';
-    font-family: 'cuIcon';
-    height: 30px;
-    border-bottom-width: 0px;
-    line-height: 30px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    color: #ccc;
-  }
-  &.steps-bottom {
-    .cu-item {
-      &::before,
-      &::after {
-        bottom: 40px;
-        top: initial;
-      }
+    &:first-child::before,
+    &:first-child::after {
+        display: none !important;
     }
   }
 }

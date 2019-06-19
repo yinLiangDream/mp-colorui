@@ -26,16 +26,18 @@ export default class ClStep extends Component<IProps, IState> {
   render(): any {
     const stepTypeClassName = this.props.type === 'arrow' ? 'steps-arrow' : '';
     const activeColorClassName = this.props.activeColor ? TEXT_COLOR_LIST[this.props.activeColor] : '';
+    const step = this.props.step || 0
     const tabsComponents = this.props.steps.map((item, index) =>
-      <View className={`cu-item ${(this.props.step || 0) > index ? activeColorClassName : ''}`} key={index}>
+      <View className={`cu-item ${step > index ? activeColorClassName : ''}`} key={index}>
         {this.props.stepTitlePosition === 'top' ? item.title : ''}
         {<Text
           className={`${this.props.stepIconType === 'number' ? 'num' : ''} ${this.props.stepIconType === 'custom' ? 'cuIcon-' + item.icon : ''}`}
-        >{index + 1}</Text>}
+          data-index={index + 1}
+        />}
         {this.props.stepTitlePosition === 'bottom' ? item.title : ''}
       </View>);
     return (
-      <View className={`cu-steps ${stepTypeClassName}`}>
+      <View className={`cu-steps ${stepTypeClassName}  ${this.props.stepTitlePosition === 'top' ? 'steps-bottom' : ''}`}>
         {tabsComponents}
       </View>
     )
