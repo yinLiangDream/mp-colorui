@@ -37,7 +37,6 @@ export default class ClLoading extends Component<IProps, IState> {
     }
   }
   componentWillReceiveProps(nextProps: IProps) {
-    console.log(nextProps.show);
     if (nextProps.show) this.loadProgress();
     else {
       clearTimeout(timer);

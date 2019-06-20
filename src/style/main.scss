@@ -609,7 +609,7 @@ button.icon.lg {
     margin: auto;
     width: 260px;
     height: 260px;
-    background-color: var(--white);
+    background-color: $white;
     border-radius: 10px;
     box-shadow: 0 0 0px 2000px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -629,7 +629,7 @@ button.icon.lg {
     &::after {
       content: '';
       position: absolute;
-      background-color: var(--white);
+      background-color: $white;
       border-radius: 50%;
       width: 200px;
       height: 200px;
@@ -637,7 +637,7 @@ button.icon.lg {
       border-top: 6px solid rgba(0, 0, 0, 0.05);
       border-right: 6px solid rgba(0, 0, 0, 0.05);
       border-bottom: 6px solid rgba(0, 0, 0, 0.05);
-      border-left: 6px solid var(--orange);
+      border-left: 6px solid $orange;
       animation: cuIcon-spin 1s infinite linear;
       z-index: -1;
     }
@@ -805,7 +805,7 @@ button.icon.lg {
             margin: auto;
             width: 30px;
             height: 30px;
-            color: var(--grey);
+            color: $grey;
             text-align: center;
             font-size: 34px;
             font-family: cuIcon;
