@@ -36,7 +36,7 @@ export default function ClCheckbox(props: IProps) {
       className={`${type === 'form' ? 'block' : ''}`}
       onChange={change}
     >
-      {type === 'form' ? formComponent : checkboxComponent}
+      {type === 'form' ? formComponent : <View className={directionClassName}>{checkboxComponent}</View>}
     </CheckboxGroup>
   );
 }
