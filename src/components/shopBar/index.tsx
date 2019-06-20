@@ -38,7 +38,11 @@ export default class ClShopBar extends Component<IProps, IState> {
       </View>);
     const buttonsComponent = this.props.buttons && this.props.buttons.map((item, index) =>
       <View key={index} className={`${BG_COLOR_LIST[item.bgColor || 'red']} submit`} onClick={this.onClickButton.bind(this, index)}>{item.text}</View>);
-    return (<View className={`cu-bar ${bgColorClassName} tabbar shop ${this.props.border ? 'border' : ''}`}>
+    return (<View className={`cu-bar ${bgColorClassName} tabbar shop ${this.props.border ? 'border' : ''}`} style={
+      this.props.fix
+        ? { position: 'fixed', bottom: '0', width: '100vw', zIndex: '10' }
+        : ''
+    }>
       {tabsComponent}
       {buttonsComponent}
     </View>)
