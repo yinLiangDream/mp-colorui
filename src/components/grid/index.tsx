@@ -19,5 +19,5 @@ ClGrid.options = {
 
 ClGrid.defaultProps = {
   col: 3,
-  mode: 'square'
+  mode: 'normal'
 };

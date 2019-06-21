@@ -10,9 +10,9 @@ export interface IProps {
   /**
    * 类型，目前仅为一种选项
    *
-   * 默认值 `square`
+   * 默认值 `normal`
    *
-   * 可选类型 `square`
+   * 可选类型 `square`, `normal`
    */
   mode?: 'square';
   children?: any;
