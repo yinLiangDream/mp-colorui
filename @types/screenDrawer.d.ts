@@ -11,6 +11,8 @@ export interface IProps {
    * 点击返回小箭头触发
    */
   onHide?: () => void;
+  renderPage: any;
+  renderDrawer: any;
 }
 
 declare const ScreenDrawer: ComponentClass<IProps>;
