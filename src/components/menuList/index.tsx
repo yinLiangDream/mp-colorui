@@ -19,10 +19,10 @@ export default function ClMenuList(props: IProps) {
       className={`cu-item ${arrowClassName(!!item.arrow)}`}
       onClick={() => click(index)}
     >
-      <View className='content'>
-        {item.icon && item.icon.iconName ? <ClIcon {...item.icon} /> : ''}
+      <View className='content flex align-center'>
+        {item.icon && item.icon.iconName ? <View className='margin-right-xs flex align-center'><ClIcon {...item.icon} /></View> : ''}
         {item.imgUrl ? (
-          <Image src={item.imgUrl} className='png' mode='aspectFit' />
+          <Image src={item.imgUrl} className='png margin-right-xs' mode='aspectFit' />
         ) : (
           ''
         )}
