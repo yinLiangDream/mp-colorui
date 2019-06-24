@@ -1,7 +1,7 @@
 {
 	"miniprogramRoot": "dist/",
-	"projectname": "taro-ui-sample",
-	"description": "Taro 第三方 UI 库示范用例",
+	"projectname": "mp-colorui",
+	"description": "MP-ColorUI 组件库",
 	"appid": "touristappid",
 	"setting": {
 		"urlCheck": true,
