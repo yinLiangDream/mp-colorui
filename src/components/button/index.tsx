@@ -52,9 +52,9 @@ export default class ClButton extends Component<IProps, IState> {
     const plainSizeName = this.props.plainSize === 'default' ? 'line' : 'lines';
     const shadowSizeName = this.props.shadow ? 'shadow' : '';
     const buttonClassName = `cu-btn ${shapeClassName} ${SIZE[sizeClassName]} ${
-      BG_COLOR_LIST[colorClassName]
+      plainClassName ? '' : BG_COLOR_LIST[colorClassName]
     } ${
-      plainClassName ? plainSizeName + '-' + BG_COLOR_LIST[colorClassName] : ''
+      plainClassName ? plainSizeName + '-' + colorClassName : ''
     } ${shadowSizeName}`;
     const normalButton = (
       <Button

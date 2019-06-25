@@ -36,11 +36,11 @@ export default function ClImagePicker(props: IProps) {
     });
   };
 
-  const delImg = (index: number, e: any) => {
+  const delImg = async (index: number, e: any) => {
     e.stopPropagation();
     let flag = true;
     if (props.beforeDel) {
-      flag = props.beforeDel(index);
+      flag = await props.beforeDel(index);
     }
     if (flag) {
       imgList.splice(index, 1);

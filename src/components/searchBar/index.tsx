@@ -73,7 +73,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
       ? this.props.leftIcons.map((item, index) => (
           <View
             key={index}
-            className={`cu-awatar round cuIcon-${item}`}
+            className={`cu-avatar round cuIcon-${item}`}
             onClick={this.onIconClick.bind(this, index)}
           />
         ))

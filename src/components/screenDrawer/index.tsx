@@ -8,6 +8,9 @@ export default function ClScreenDrawer(props: IProps) {
   };
   return (
     <View>
+      <ScrollView scrollY className={`DrawerPage ${props.show ? 'show' : ''}`}>
+        {props.renderPage}
+      </ScrollView>
       <View
         className={`DrawerClose ${props.show ? 'show' : ''}`}
         onClick={hideModal}
@@ -18,9 +21,10 @@ export default function ClScreenDrawer(props: IProps) {
         scrollY
         className={`DrawerWindow ${props.show ? 'show' : ''}`}
       >
-        {this.props.children}
+        {props.renderDrawer}
       </ScrollView>
     </View>
+
   );
 }
 

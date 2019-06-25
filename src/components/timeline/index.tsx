@@ -12,7 +12,7 @@ export default function ClTimeline(props: IProps) {
   const bgColorClassName = color => (color ? BG_COLOR_LIST[color] : '');
   const items = times.map((item, index) => (
     <View
-      key={index + Math.random()}
+      key={index}
       className={`cu-item ${iconColorClassName(item.iconColor)} ${iconClassName(
         item.icon
       )}`}

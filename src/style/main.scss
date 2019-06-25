@@ -609,7 +609,7 @@ button.icon.lg {
     margin: auto;
     width: 260px;
     height: 260px;
-    background-color: var(--white);
+    background-color: $white;
     border-radius: 10px;
     box-shadow: 0 0 0px 2000px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -629,7 +629,7 @@ button.icon.lg {
     &::after {
       content: '';
       position: absolute;
-      background-color: var(--white);
+      background-color: $white;
       border-radius: 50%;
       width: 200px;
       height: 200px;
@@ -637,7 +637,7 @@ button.icon.lg {
       border-top: 6px solid rgba(0, 0, 0, 0.05);
       border-right: 6px solid rgba(0, 0, 0, 0.05);
       border-bottom: 6px solid rgba(0, 0, 0, 0.05);
-      border-left: 6px solid var(--orange);
+      border-left: 6px solid $orange;
       animation: cuIcon-spin 1s infinite linear;
       z-index: -1;
     }
@@ -805,7 +805,7 @@ button.icon.lg {
             margin: auto;
             width: 30px;
             height: 30px;
-            color: var(--grey);
+            color: $grey;
             text-align: center;
             font-size: 34px;
             font-family: cuIcon;
@@ -1069,7 +1069,7 @@ button.icon.lg {
           }
         }
         &[class*='text-'] {
-          :last-child {
+          &:last-child {
             position: absolute;
             display: inline-block;
             bottom: -0.7rem;
@@ -1519,7 +1519,7 @@ button.icon.lg {
       }
       &[class*='cuIcon-'] {
         &::before {
-          background-color: var(--white);
+          background-color: $white;
           width: 50px;
           height: 50px;
           text-align: center;
@@ -1680,7 +1680,6 @@ button.icon.lg {
   > {
     .cu-item {
       display: block;
-      background-color: $white;
       overflow: hidden;
       border-radius: 10px;
       margin: 30px;
@@ -2128,6 +2127,41 @@ swiper {
 
 .cu-steps {
   display: flex;
+  .cu-item::before,
+  .cu-item::after,
+  &.steps-arrow .cu-item::before,
+  &.steps-arrow .cu-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0rem;
+    width: calc(100% - 80px);
+    border-bottom: 1px solid #ccc;
+    left: calc(0rem - (100% - 80px) / 2);
+    top: 40px;
+    z-index: 0;
+  }
+  &.steps-arrow .cu-item::before,
+  &.steps-arrow .cu-item::after {
+    content: '\e6a3';
+    font-family: 'cuIcon';
+    height: 30px;
+    border-bottom-width: 0px;
+    line-height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+  }
+  &.steps-bottom {
+    .cu-item {
+      &::before,
+      &::after {
+        bottom: 40px;
+        top: initial;
+      }
+    }
+  }
   .cu-item {
     flex: 1;
     text-align: center;
@@ -2136,7 +2170,11 @@ swiper {
     &:not([class*='text-']) {
       color: $grey;
     }
-    [class*='cuIcon-'],
+    [class*='cuIcon-'] {
+      display: block;
+      font-size: 40px;
+      line-height: 80px;
+    }
     .num {
       display: block;
       font-size: 40px;
@@ -2197,46 +2235,9 @@ swiper {
         }
       }
     }
-    &:first-child {
-      ::before,
-      ::after {
-        display: none;
-      }
-    }
-  }
-  .cu-item::before,
-  .cu-item::after,
-  &.steps-arrow .cu-item::before,
-  &.steps-arrow .cu-item::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 0rem;
-    width: calc(100% - 80px);
-    border-bottom: 1px solid #ccc;
-    left: calc(0rem - (100% - 80px) / 2);
-    top: 40px;
-    z-index: 0;
-  }
-  &.steps-arrow .cu-item::before,
-  &.steps-arrow .cu-item::after {
-    content: '\e6a3';
-    font-family: 'cuIcon';
-    height: 30px;
-    border-bottom-width: 0px;
-    line-height: 30px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    color: #ccc;
-  }
-  &.steps-bottom {
-    .cu-item {
-      &::before,
-      &::after {
-        bottom: 40px;
-        top: initial;
-      }
+    &:first-child::before,
+    &:first-child::after {
+        display: none !important;
     }
   }
 }

@@ -2,8 +2,6 @@ import { Image, Swiper, SwiperItem, Video, View } from '@tarojs/components';
 import Taro, { useState } from '@tarojs/taro';
 import { IProps, TList } from '../../../@types/swiper';
 
-
-
 export default function ClSwiper(props: IProps) {
   const swiperTypeClassName = type =>
     type ? `${type}-swiper` : 'screen-swiper';
@@ -67,7 +65,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item, index) => (
         <SwiperItem
-          key={index + Math.random()}
+          key={index}
           onClick={() => {
             onClick(index);
           }}
@@ -93,7 +91,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item, index) => (
         <SwiperItem
-          key={index + Math.random()}
+          key={index}
           className={`${cur === index ? 'cur' : ''}`}
           onClick={() => {
             onClick(index);

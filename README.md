@@ -5,11 +5,13 @@
 > 安装：`npm i mp-colorui`
 > 具体文档请查看：[MP-ColorUI 文档](https://yinliangdream.github.io/mp-colorui-doc/#/)
 
-
-
 ## *注意*
 
 > *由于该组件库还未开发完成，后期 API 可能会变动，请慎用在商业环境！*
+
+## 小程序演示
+
+![MP ColorUI](https://md-1255362963.cos.ap-chengdu.myqcloud.com/coloruiqrcode.png)
 
 ## 使用案例
 

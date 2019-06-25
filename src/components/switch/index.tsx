@@ -10,13 +10,14 @@ export default function ClSwitch(props: IProps) {
   const shapeClassName = props.shape !== 'radius' ? '' : 'radius';
   const type = props.type === 'form' ? 'form' : 'normal';
   const checked = !!props.checked;
-
+  const hasChecked = checked ? 'checked' : ''
   const onChange = e => {
     props.onChange && props.onChange(e.detail.value);
   };
   const switchComponent = (
     <Switch
-      className={`${color} ${checked ? 'checked' : ''} ${shapeClassName} sm`}
+      className={`${color} ${hasChecked} ${shapeClassName} sm`}
+      checked={checked}
       onChange={onChange}
     />
   );

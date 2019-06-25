@@ -83,10 +83,6 @@ export interface IProps {
    */
   long?: boolean;
   /**
-   * 按钮图标，可选类型请查看 Icon-iconName
-   */
-  icon?: iconType;
-  /**
    * 按钮内置文字
    */
   text?: string;

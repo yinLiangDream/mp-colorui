@@ -104,7 +104,7 @@ export interface IProps {
   /**
    * 操作栏操作组
    *
-   * 可设置以下参数 text
+   * 可设置以下参数 `text`, `color`
    */
   actions?: TActions;
   /**

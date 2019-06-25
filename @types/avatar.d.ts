@@ -60,7 +60,7 @@ export interface IProps {
    *
    * 默认值 `normal`
    *
-   * 可选值 `small`, ``normal, `large`, `xlarge`
+   * 可选值 `small`, `normal`, `large`, `xlarge`
    */
   size?: TSize;
   /**
