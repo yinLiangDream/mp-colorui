@@ -1,5 +1,5 @@
 import { Text, View } from '@tarojs/components';
-import Taro, { Component } from '@tarojs/taro';
+import Taro, {Component, pxTransform} from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/titleBar';
 
@@ -44,7 +44,7 @@ export default class ClTitleBar extends Component<IProps, IState> {
         </Text>
         <Text
           className={`${borderColorClassName}`}
-          style={{ width: `${this.props.borderLong}rpx` }}
+          style={{ width: `${pxTransform(this.props.borderLong || 20)}` }}
         />
       </View>
     );

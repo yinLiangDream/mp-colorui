@@ -1,6 +1,8 @@
 import Taro, { Component, Config } from '@tarojs/taro';
 import Index from './pages/index';
 
+import './style/index.scss'
+
 class App extends Component {
   /**
    * 指定config的类型声明为: Taro.Config

@@ -57,7 +57,7 @@
   .cu-avatar {
     &.sm {
       margin-left: -20px;
-      border: 1px solid #f1f1f1;
+      border: 2px solid #f1f1f1;
     }
   }
 }
@@ -101,26 +101,26 @@
 
 .solid {
   &::after {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
   }
   &-top {
     &::after {
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 2px solid rgba(0, 0, 0, 0.1);
     }
   }
   &-right {
     &::after {
-      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-right: 2px solid rgba(0, 0, 0, 0.1);
     }
   }
   &-bottom {
     &::after {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     }
   }
   &-left {
     &::after {
-      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: 2px solid rgba(0, 0, 0, 0.1);
     }
   }
   &s {
@@ -268,7 +268,7 @@ button.icon.lg {
       position: absolute;
       top: 0;
       left: 0;
-      border: 1px solid currentColor;
+      border: 2px solid currentColor;
       transform: scale(0.5);
       transform-origin: 0 0;
       box-sizing: border-box;
@@ -361,7 +361,7 @@ button.icon.lg {
       position: absolute;
       top: 0;
       left: 0;
-      border: 1px solid currentColor;
+      border: 2px solid currentColor;
       transform: scale(0.5);
       transform-origin: 0 0;
       box-sizing: border-box;
@@ -489,7 +489,9 @@ button.icon.lg {
   align-items: center;
   width: 100%;
   + view,
-  + text {
+  + div,
+  + text,
+  + span{
     line-height: 1;
   }
   &.xs {
@@ -498,7 +500,7 @@ button.icon.lg {
   &.sm {
     height: 20px;
   }
-  view {
+  view, div {
     width: 0;
     height: 100%;
     align-items: center;
@@ -509,7 +511,7 @@ button.icon.lg {
     color: $white;
     transition: width 0.6s ease;
   }
-  text {
+  text, span {
     align-items: center;
     display: flex;
     font-size: 20px;
@@ -520,7 +522,7 @@ button.icon.lg {
     padding-right: 60px;
   }
   &.striped {
-    view {
+    view, div {
       background-image: linear-gradient(
         45deg,
         rgba(255, 255, 255, 0.15) 25%,
@@ -535,7 +537,7 @@ button.icon.lg {
     }
   }
   &.active {
-    view {
+    view, div {
       animation: progress-stripes 2s linear infinite;
     }
   }
@@ -622,7 +624,7 @@ button.icon.lg {
     [class*='cuIcon-'] {
       font-size: 60px;
     }
-    image {
+    image, img {
       width: 70px;
       height: 70px;
     }
@@ -746,7 +748,7 @@ button.icon.lg {
         width: 260px;
         height: 100%;
         transform: translateX(100%);
-        view {
+        view, div {
           display: flex;
           flex: 1;
           justify-content: center;
@@ -780,7 +782,7 @@ button.icon.lg {
           box-sizing: border-box;
           width: 200%;
           height: 200%;
-          border-bottom: 1px solid #ddd;
+          border-bottom: 2px solid #ddd;
           border-radius: inherit;
           content: ' ';
           transform: scale(0.5);
@@ -832,13 +834,13 @@ button.icon.lg {
           line-height: 1.6em;
           flex: 1;
           > {
-            view {
+            view, div {
               &:first-child {
                 display: flex;
                 align-items: center;
               }
             }
-            text {
+            text, span {
               &[class*='cuIcon-'] {
                 display: inline-block;
                 margin-right: 10px;
@@ -846,7 +848,7 @@ button.icon.lg {
                 text-align: center;
               }
             }
-            image {
+            image, img {
               display: inline-block;
               margin-right: 10px;
               width: 1.6em;
@@ -906,7 +908,8 @@ button.icon.lg {
           &.flex-sub {
             width: calc(100% - 96px - 60px - 20px);
           }
-          > view:first-child {
+          > view:first-child,
+            div:first-child{
             font-size: 30px;
             display: flex;
             align-items: center;
@@ -924,7 +927,8 @@ button.icon.lg {
         .action {
           width: 100px;
           text-align: center;
-          view + view {
+          view + view,
+          div + div {
             margin-top: 10px;
           }
         }
@@ -963,8 +967,8 @@ button.icon.lg {
           box-sizing: border-box;
           width: 200%;
           height: 200%;
-          border-right: 1px solid rgba(0, 0, 0, 0.1);
-          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          border-right: 2px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 2px solid rgba(0, 0, 0, 0.1);
           border-radius: inherit;
           content: ' ';
           transform: scale(0.5);
@@ -1037,7 +1041,7 @@ button.icon.lg {
     &.border-title {
       position: relative;
       top: -10px;
-      text {
+      text, span {
         &[class*='bg-'] {
           &:last-child {
             position: absolute;
@@ -1052,7 +1056,7 @@ button.icon.lg {
     &.sub-title {
       position: relative;
       top: -0.2rem;
-      text {
+      text, span {
         position: relative;
         z-index: 1;
         &[class*='bg-'] {
@@ -1087,7 +1091,7 @@ button.icon.lg {
       margin-left: 30px;
       font-size: 30px;
       > {
-        text {
+        text, span {
           &[class*='cuIcon-'] {
             margin-left: -0.3em;
             margin-right: 0.3em;
@@ -1098,7 +1102,7 @@ button.icon.lg {
     &:last-child {
       margin-right: 30px;
     }
-    text {
+    text, span {
       &.text-cut {
         text-align: left;
         width: 100%;
@@ -1106,17 +1110,24 @@ button.icon.lg {
     }
     > {
       text[class*='cuIcon-'],
-      view[class*='cuIcon-'] {
+      span[class*='cuIcon-'],
+      view[class*='cuIcon-'],
+      div[class*='cuIcon-']{
         font-size: 36px;
       }
       text[class*='cuIcon-'] + text[class*='cuIcon-'] {
+        margin-left: 0.5em;
+      }
+      span[class*='cuIcon-'] + span[class*='cuIcon-'] {
         margin-left: 0.5em;
       }
     }
   }
   .justify-center {
     .action.border-title text:last-child,
-    .action.sub-title text:last-child {
+    .action.border-title span:last-child,
+    .action.sub-title text:last-child,
+    .action.sub-title span:last-child{
       left: 0;
       right: 0;
       margin: auto;
@@ -1325,7 +1336,7 @@ button.icon.lg {
           left: 0;
           transform: scale(0.5);
           transform-origin: 0 0;
-          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          border-right: 2px solid rgba(0, 0, 0, 0.1);
           z-index: 3;
         }
         &:last-child {
@@ -1412,7 +1423,7 @@ button.icon.lg {
         transform-origin: 0 0;
         pointer-events: none;
         box-sizing: border-box;
-        border: 1px solid $white;
+        border: 2px solid $white;
         opacity: 0.5;
       }
       &::before {
@@ -1431,7 +1442,7 @@ button.icon.lg {
         opacity: 0.6;
         background-color: $white;
       }
-      text {
+      text, span {
         display: block;
         flex: 1;
         margin: auto !important;
@@ -1815,7 +1826,7 @@ button.icon.lg {
   justify-content: space-between;
   + {
     .cu-form-group {
-      border-top: 1px solid #eee;
+      border-top: 2px solid #eee;
     }
   }
   .title {
@@ -1833,7 +1844,7 @@ button.icon.lg {
     padding-right: 20px;
   }
   > {
-    text {
+    text, span {
       &[class*='cuIcon-'] {
         font-size: 36px;
         padding: 0;
@@ -2136,7 +2147,7 @@ swiper {
     position: absolute;
     height: 0rem;
     width: calc(100% - 80px);
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
     left: calc(0rem - (100% - 80px) / 2);
     top: 40px;
     z-index: 0;
@@ -2185,7 +2196,7 @@ swiper {
       line-height: 40px;
       margin: 20px auto;
       font-size: 24px;
-      border: 1px solid currentColor;
+      border: 2px solid currentColor;
       position: relative;
       overflow: hidden;
       &::before,
@@ -2207,7 +2218,7 @@ swiper {
       }
     }
     &::after {
-      border-bottom: 1px solid currentColor;
+      border-bottom: 2px solid currentColor;
       width: 0px;
       transition: all 0.3s ease-in-out 0s;
     }
@@ -2361,14 +2372,14 @@ scroll-view {
       background-color: rgba(0, 0, 0, 0.5);
     }
     > {
-      view {
+      view, div {
         margin-right: 20px;
         margin-bottom: 20px;
         border-radius: 6px;
         position: relative;
         overflow: hidden;
         > {
-          text {
+          text, span {
             &[class*='cuIcon-'] {
               font-size: 52px;
               position: absolute;
@@ -2391,13 +2402,13 @@ scroll-view {
   &.col {
     &-1 {
       > {
-        view {
+        view, div {
           width: 100%;
         }
       }
       &.grid-square {
         > {
-          view {
+          view, div {
             padding-bottom: 100%;
             height: 0;
             margin-right: 0;
@@ -2407,13 +2418,13 @@ scroll-view {
     }
     &-2 {
       > {
-        view {
+        view, div {
           width: 50%;
         }
       }
       &.grid-square {
         > {
-          view {
+          view, div {
             padding-bottom: calc((100% - 20px) / 2);
             height: 0;
             width: calc((100% - 20px) / 2);
@@ -2426,13 +2437,13 @@ scroll-view {
     }
     &-3 {
       > {
-        view {
+        view, div {
           width: 33.33%;
         }
       }
       &.grid-square {
         > {
-          view {
+          view, div {
             padding-bottom: calc((100% - 40px) / 3);
             height: 0;
             width: calc((100% - 40px) / 3);
@@ -2445,13 +2456,13 @@ scroll-view {
     }
     &-4 {
       > {
-        view {
+        view, div {
           width: 25%;
         }
       }
       &.grid-square {
         > {
-          view {
+          view, div {
             padding-bottom: calc((100% - 60px) / 4);
             height: 0;
             width: calc((100% - 60px) / 4);
@@ -2464,13 +2475,13 @@ scroll-view {
     }
     &-5 {
       > {
-        view {
+        view, div {
           width: 20%;
         }
       }
       &.grid-square {
         > {
-          view {
+          view, div {
             padding-bottom: calc((100% - 80px) / 5);
             height: 0;
             width: calc((100% - 80px) / 5);
@@ -2981,6 +2992,7 @@ scroll-view {
       top: 0;
     }
     view,
+    div,
     cover-view {
       z-index: 5;
       position: relative;
