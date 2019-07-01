@@ -3,7 +3,7 @@
  ==================== */
 @import "./vars";
 
-page {
+page, body {
   /* Color 可以自定义相关配色 */
   /* var属性兼容性 --> https://www.caniuse.com/#feat=css-variables */
   /* 标准色 */
@@ -21,7 +21,9 @@ input,
 textarea,
 label,
 navigator,
-image {
+image,
+div,
+img {
   box-sizing: border-box;
 }
 
@@ -41,7 +43,7 @@ image {
           图片
  ==================== */
 
-image {
+image, img {
   max-width: 100%;
   display: inline-block;
   position: relative;
@@ -214,8 +216,8 @@ radio.radio[checked]::after {
   width: 16px;
   height: 16px;
   z-index: 999;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   margin: auto;

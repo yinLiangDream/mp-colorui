@@ -1,35 +1,43 @@
 import { Image, Text, View } from '@tarojs/components';
-import Taro, { Component } from '@tarojs/taro';
+import Taro, {Component} from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/loading';
 
 interface IState {
   loadProgress: number;
+  timer: any;
 }
 
-let timer;
 export default class ClLoading extends Component<IProps, IState> {
   static options = {
     addGlobalClass: true
   };
-  static defaultProps = {
+  static defaultProps: IProps = {
     type: 'bar',
     bgColor: 'blue',
     modalText: '加载中...',
     loadingError: false,
     noMore: false,
     show: false
-  } as IProps;
+  };
 
-  state = {
-    loadProgress: 0
-  } as IState;
+  state: IState = {
+    loadProgress: 0,
+    timer: null
+  };
   loadProgress() {
-    this.setState({
-      loadProgress: this.state.loadProgress + 3
-    });
     if (this.state.loadProgress < 100) {
-      timer = setTimeout(this.loadProgress.bind(this), 100);
+      this.state.timer = setInterval(() => {
+        this.setState({
+          loadProgress: this.state.loadProgress + 5
+        }, () => {
+          if (this.state.loadProgress > 100) {
+            this.setState({
+              loadProgress: 100
+            });
+          }
+        })
+      }, 100);
     } else {
       this.setState({
         loadProgress: 100
@@ -39,7 +47,8 @@ export default class ClLoading extends Component<IProps, IState> {
   componentWillReceiveProps(nextProps: IProps) {
     if (nextProps.show) this.loadProgress();
     else {
-      clearTimeout(timer);
+      clearTimeout(this.state.timer);
+      this.state.timer = null
       this.setState({
         loadProgress: 0
       });
