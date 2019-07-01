@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="tabs">
-      <change afterPath="$PROJECT_DIR$/src/components/radio/h5.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/h5.scss" afterDir="false" />
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/radio/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/titleBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/titleBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,6 +19,15 @@
     <splitter split-orientation="horizontal" split-proportion="0.4421456">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="48">
+                  <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app.tsx">
               <provider selected="true" editor-type-id="text-editor">
@@ -56,7 +53,7 @@
             <entry file="file://$PROJECT_DIR$/src/style/h5.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="311">
-                  <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+                  <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -70,13 +67,13 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/radio/index.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1056">
-                  <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+                <state relative-caret-position="438">
+                  <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
                   <folding>
-                    <element signature="e#0#67#0" expanded="true" />
+                    <element signature="e#0#65#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -86,11 +83,20 @@
       </split-first>
       <split-second>
         <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/radio/h5.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+                <state relative-caret-position="480">
+                  <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -183,16 +189,16 @@
         <option value="$PROJECT_DIR$/src/style/h5.scss.css" />
         <option value="$PROJECT_DIR$/src/style/index.scss" />
         <option value="$PROJECT_DIR$/src/style/main.scss" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/loading/index.tsx" />
         <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
         <option value="$PROJECT_DIR$/src/app.tsx" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/radio/h5.js" />
         <option value="$PROJECT_DIR$/src/style/base.scss" />
         <option value="$PROJECT_DIR$/src/style/h5.scss" />
         <option value="$PROJECT_DIR$/src/components/radio/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/radio/h5.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.tsx" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -375,7 +381,7 @@
       <workItem from="1557370668097" duration="270000" />
       <workItem from="1561366785340" duration="3801000" />
       <workItem from="1561691369674" duration="4618000" />
-      <workItem from="1561708927397" duration="15551000" />
+      <workItem from="1561708927397" duration="16998000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -433,11 +439,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556805838267</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修复 H5 适配的部分问题">
+      <created>1561946595113</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561946595113</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修复 H5 Radio 样式问题">
+      <created>1561947774106</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561947774106</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72066000" />
+    <option name="totallyTimeSpent" value="73513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -478,7 +498,9 @@
     <MESSAGE value="buttonGroup" />
     <MESSAGE value="tabs" />
     <MESSAGE value="steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="steps" />
+    <MESSAGE value="修复 H5 适配的部分问题" />
+    <MESSAGE value="修复 H5 Radio 样式问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复 H5 Radio 样式问题" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.eslintrc">
@@ -655,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -671,16 +686,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index/index.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.scss">
       <provider selected="true" editor-type-id="text-editor" />
@@ -718,7 +723,7 @@
     <entry file="file://$PROJECT_DIR$/src/style/h5.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -729,23 +734,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/radio/index.tsx">
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/radio/h5.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+        <state relative-caret-position="480">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/radio/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
