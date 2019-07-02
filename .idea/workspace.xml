@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -33,8 +32,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/style/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="328" column="35" lean-forward="true" selection-start-line="328" selection-start-column="35" selection-end-line="328" selection-end-column="35" />
+            <state relative-caret-position="220">
+              <caret line="840" column="25" selection-start-line="840" selection-start-column="25" selection-end-line="840" selection-end-column="25" />
+              <folding>
+                <element signature="e#16918#16983#0" />
+                <element signature="e#17041#17143#0" />
+                <element signature="e#17162#17370#0" />
+                <element signature="e#17397#17549#0" />
+                <element signature="e#39382#39655#0" />
+                <element signature="e#39670#40229#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/menuList/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/swiper/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-258">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#76#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,29 +84,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="749">
               <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -131,14 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>left: 0;</find>
-      <find>steps</find>
-      <find>rpx</find>
-      <find>this.props.borderLong</find>
-      <find>1px</find>
-      <find>2px solid</find>
-      <find>1px solid</find>
-      <find>-col</find>
       <find>col-</find>
       <find>grid</find>
       <find>grid-</find>
@@ -159,8 +159,16 @@
       <find>.wx-checkbox-input</find>
       <find>RadioGroup</find>
       <find>radio.rad</find>
-      <find>cu-btn</find>
       <find>#DEDEDE</find>
+      <find>.cu-timeline</find>
+      <find>swiper-item</find>
+      <find>359px</find>
+      <find>swiper-slide</find>
+      <find>cu-btn</find>
+      <find>div:first-child</find>
+      <find>vertical-align</find>
+      <find>not</find>
+      <find>:not</find>
     </findStrings>
     <replaceStrings>
       <replace>px</replace>
@@ -222,8 +230,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -260,6 +269,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="button" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mp-colorui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mp-colorui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="menuList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mp-colorui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mp-colorui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mp-colorui" type="b2602c69:ProjectViewProjectNode" />
@@ -395,7 +418,7 @@
       <workItem from="1561366785340" duration="3801000" />
       <workItem from="1561691369674" duration="4618000" />
       <workItem from="1561708927397" duration="16998000" />
-      <workItem from="1562057659513" duration="1494000" />
+      <workItem from="1562057659513" duration="4986000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -467,11 +490,32 @@
       <option name="project" value="LOCAL" />
       <updated>1561947774106</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修复 H5 button 无动效问题">
+      <created>1562060107799</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562060107799</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修复 H5 timeline 线条过细问题">
+      <created>1562060893260</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562060893260</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修复 H5 swiper 未铺满问题">
+      <created>1562062241771</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562062241771</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76001000" />
+    <option name="totallyTimeSpent" value="79493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -514,7 +558,10 @@
     <MESSAGE value="steps" />
     <MESSAGE value="修复 H5 适配的部分问题" />
     <MESSAGE value="修复 H5 Radio 样式问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复 H5 Radio 样式问题" />
+    <MESSAGE value="修复 H5 button 无动效问题" />
+    <MESSAGE value="修复 H5 timeline 线条过细问题" />
+    <MESSAGE value="修复 H5 swiper 未铺满问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复 H5 swiper 未铺满问题" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.eslintrc">
@@ -781,10 +828,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/swiper/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/menuList/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="328" column="35" lean-forward="true" selection-start-line="328" selection-start-column="35" selection-end-line="328" selection-end-column="35" />
+        <state relative-caret-position="220">
+          <caret line="840" column="25" selection-start-line="840" selection-start-column="25" selection-end-line="840" selection-end-column="25" />
+          <folding>
+            <element signature="e#16918#16983#0" />
+            <element signature="e#17041#17143#0" />
+            <element signature="e#17162#17370#0" />
+            <element signature="e#17397#17549#0" />
+            <element signature="e#39382#39655#0" />
+            <element signature="e#39670#40229#0" />
+          </folding>
         </state>
       </provider>
     </entry>

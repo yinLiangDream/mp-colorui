@@ -834,10 +834,14 @@ button.icon.lg {
         }
         .content {
           font-size: 30px;
-          line-height: 1.6em;
+          line-height: 1.6rem;
           flex: 1;
+          .taro-img {
+            width: auto;
+            height: auto;
+          }
           > {
-            view, div {
+            view, div:not([class*="taro-img"]) {
               &:first-child {
                 display: flex;
                 align-items: center;
@@ -847,15 +851,16 @@ button.icon.lg {
               &[class*='cuIcon-'] {
                 display: inline-block;
                 margin-right: 10px;
-                width: 1.6em;
+                width: 1.6rem;
                 text-align: center;
               }
             }
-            image, img {
+            image,
+            div > img {
               display: inline-block;
               margin-right: 10px;
-              width: 1.6em;
-              height: 1.6em;
+              width: 1.6rem;
+              height: 1.6rem;
               vertical-align: middle;
             }
           }
@@ -907,12 +912,12 @@ button.icon.lg {
           position: absolute;
           left: 146px;
           width: calc(100% - 96px - 60px - 120px - 20px);
-          line-height: 1.6em;
+          line-height: 1.6rem;
           &.flex-sub {
             width: calc(100% - 96px - 60px - 20px);
           }
           > view:first-child,
-            div:first-child{
+            div:first-child {
             font-size: 30px;
             display: flex;
             align-items: center;
