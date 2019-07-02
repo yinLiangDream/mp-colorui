@@ -23,8 +23,8 @@
     "lint": "eslint ./src --fix",
     "test": "jest --coverage",
     "build": "TARO_BUILD_TYPE=ui taro build --ui",
-    "publish:beta": "npm publish --tag=beta",
-    "publish": "npm publish"
+    "publish:beta": "npm run build & npm publish --tag=beta",
+    "publish": "npm run build & npm publish"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": [

@@ -325,6 +325,9 @@ button.icon.lg {
   &.button-hover {
     transform: translate(1px, 1px);
   }
+  &:active {
+    transform: translate(1px, 1px);
+  }
   &.block {
     display: flex;
   }
