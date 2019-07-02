@@ -2072,14 +2072,20 @@ swiper {
 }
 
 .screen-swiper image,
+.screen-swiper img,
 .screen-swiper video,
 .swiper-item image,
+.swiper-item img,
 .swiper-item video {
   width: 100%;
   display: block;
   height: 100%;
   margin: 0;
   pointer-events: none;
+};
+
+.swiper-wrapper .taro-img {
+  width: 100%;
 }
 
 .card-swiper {
