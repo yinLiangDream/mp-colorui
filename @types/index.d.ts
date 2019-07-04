@@ -28,3 +28,4 @@ export { default as ClCard } from './card';
 export { default as ClScreenDrawer } from './screenDrawer';
 export { default as ClFlex } from './flex';
 export { default as ClGrid } from './grid';
+export { default as ClAnimation } from './animation';

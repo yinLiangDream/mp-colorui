@@ -1,5 +1,6 @@
 import { View } from '@tarojs/components';
 import Taro, { Component, Config } from '@tarojs/taro';
+import ClAnimation from "../../components/animation";
 
 export default class Index extends Component {
   /**
@@ -31,6 +32,9 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <ClAnimation type={"fade"} delay={1}>
+          <View>123</View>
+        </ClAnimation>
       </View>
     );
   }

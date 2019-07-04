@@ -9,9 +9,21 @@ import {
 
 export type TTimes = {
   /**
+   * 节点
+   */
+  node: String;
+  /**
+   * 时间
+   */
+  time: String;
+  /**
+   * 标题
+   */
+  title: String;
+  /**
    * 包含的内容
    */
-  content?: any;
+  content?: String[];
   /**
    * 背景色，可选类型请查看 默认色
    */

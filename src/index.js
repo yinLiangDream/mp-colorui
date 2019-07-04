@@ -33,5 +33,6 @@ export { default as ClTitleBar } from './components/titleBar';
 export { default as ClImagePicker } from './components/imagePicker';
 export { default as ClFlex } from './components/flex';
 export { default as ClGrid } from './components/grid';
+export { default as ClAnimation } from './components/animation';
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });
