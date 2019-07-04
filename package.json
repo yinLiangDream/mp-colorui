@@ -24,7 +24,7 @@
     "test": "jest --coverage",
     "build": "TARO_BUILD_TYPE=ui taro build --ui",
     "publish:beta": "npm run build & npm publish --tag=beta",
-    "publish": "npm run build & npm publish"
+    "publish:production": "npm run build & npm publish"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": [
