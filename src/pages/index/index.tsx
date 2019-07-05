@@ -1,6 +1,6 @@
 import { View } from '@tarojs/components';
 import Taro, { Component, Config } from '@tarojs/taro';
-import ClAnimation from "../../components/animation";
+import ClRadio from "../../components/radio";
 
 export default class Index extends Component {
   /**
@@ -32,9 +32,15 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
-        <ClAnimation type={"fade"} delay={1}>
-          <View>123</View>
-        </ClAnimation>
+        <ClRadio type={"list"} title={'666'} checkedValue={'222'} radioGroup={[
+          {
+            key: '123',
+            value: '222'
+          }, {
+            key: 'aaa',
+            value: 'bbbb'
+          }
+        ]}/>
       </View>
     );
   }

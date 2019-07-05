@@ -18,7 +18,7 @@ export default function ClMenuList(props: IProps) {
       key={item.title}
       className={`cu-item ${arrowClassName(!!item.arrow)} ${item.disabled ? 'disabled' : ''}`}
       onClick={() => {
-        item.disabled && click(index)
+        !item.disabled && click(index)
       }}
     >
       <View className='content flex align-center'>
