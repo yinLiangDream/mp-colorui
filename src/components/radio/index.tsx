@@ -1,16 +1,16 @@
-import {Radio, RadioGroup, Text, View} from '@tarojs/components';
+import {Block, Radio, RadioGroup, Text, View} from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import H5Radio from './h5';
+import ListRadio from './components/ListRadio'
 import {IProps} from '../../../@types/radio';
 
-
 export default function ClRadio(props: IProps) {
-  const type = props.type === 'form' ? 'form' : 'normal';
-  const shapeClassName = props.shape === 'radio' ? 'radio' : 'normal';
-  const title = props.title ? props.title : '';
-  const colorClassName = props.color ? props.color : 'green';
+  const type = props.type || 'normal';
+  const shapeClassName = () => props.shape || 'normal';
+  const title = props.title || '';
+  const colorClassName = () => props.color || 'green';
   const directionClassName = props.direction === 'horizontal' ? 'flex' : '';
-  const list = props.radioGroup ? props.radioGroup : [];
+  const list = props.radioGroup || [];
 
   const changeRadio = e => {
     props.onChange && props.onChange(e.detail.value);
@@ -19,23 +19,26 @@ export default function ClRadio(props: IProps) {
     <View className='padding-xs' key={item.value}>
       <Text className='padding-right-sm'>{item.key}</Text>
       <Radio
-        className={`${colorClassName} ${shapeClassName}`}
+        className={`${colorClassName()} ${shapeClassName()}`}
         checked={item.value === props.checkedValue}
         value={item.value || ''}
       />
     </View>
-  ));
-  const formRadioComponent = (
+  ))
+  const formRadioComponent =
     <View className='cu-form-group'>
       <View className='title'>{title}</View>
       <View className={directionClassName}>{radioComponent}</View>
-    </View>
-  );
+    </View>;
 
-  const mpRadio =
+  const renderListComponent = () => <ListRadio onChange={(value) => {
+    changeRadio({detail: {value}})
+  }} list={list} checkedValue={props.checkedValue}/>
+
+  const formOrNormalComponent =
     <RadioGroup
       onChange={changeRadio}
-      className={`${props.type === 'form' ? 'block' : ''}`}
+      className={`${type === 'form' ? 'block' : ''}`}
     >
       {type === 'form' ? (
         formRadioComponent
@@ -43,12 +46,25 @@ export default function ClRadio(props: IProps) {
         <View className={directionClassName}>{radioComponent}</View>
       )}
     </RadioGroup>;
-  const RadioComponent = Taro.getEnv() === Taro.ENV_TYPE.WEB ? <H5Radio {...props} /> : mpRadio;
+
+  const weappComponent = type === 'list' ? renderListComponent() : formOrNormalComponent;
+
+  const RadioComponent = Taro.getEnv() === Taro.ENV_TYPE.WEB ?
+    <H5Radio {...props} /> : weappComponent;
 
   return (
     RadioComponent
   );
 }
+
+ClRadio.defaultProps = {
+  type: 'normal',
+  shape: 'normal',
+  title: '',
+  colorClassName: 'green',
+  directionClassName: '',
+  radioGroup: []
+} as IProps;
 
 ClRadio.options = {
   addGlobalClass: true

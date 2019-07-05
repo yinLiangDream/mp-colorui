@@ -2,7 +2,7 @@ import { Image, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import ClIcon from '../icon/index';
 import { TEXT_COLOR_LIST } from '../utils/model';
-import { IProps } from '../../../@types/menuList';
+import {IProps} from '../../../@types/menuList';
 
 export default function ClMenuList(props: IProps) {
   const shortLineClassName = props.shortBorder ? 'sm-border' : '';
@@ -16,8 +16,10 @@ export default function ClMenuList(props: IProps) {
   const itemComponent = list.map((item, index) => (
     <View
       key={item.title}
-      className={`cu-item ${arrowClassName(!!item.arrow)}`}
-      onClick={() => click(index)}
+      className={`cu-item ${arrowClassName(!!item.arrow)} ${item.disabled ? 'disabled' : ''}`}
+      onClick={() => {
+        item.disabled && click(index)
+      }}
     >
       <View className='content flex align-center'>
         {item.icon && item.icon.iconName ? <View className='margin-right-xs flex align-center'><ClIcon {...item.icon} /></View> : ''}
@@ -40,6 +42,12 @@ export default function ClMenuList(props: IProps) {
     </View>
   );
 }
+
+ClMenuList.defaultProps = {
+  shortBorder: false,
+  card: false,
+  list: []
+} as IProps;
 
 ClMenuList.options = {
   addGlobalClass: true

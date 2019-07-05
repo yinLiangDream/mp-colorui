@@ -817,6 +817,31 @@ button.icon.lg {
             line-height: 30px;
           }
         }
+
+        &.checked {
+          padding-right: 90px;
+
+          &:before {
+            content: '\e645';
+            position: absolute;
+            top: 0;
+            right: 30px;
+            bottom: 0;
+            display: block;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            color: $grey;
+            text-align: center;
+            font-size: 34px;
+            font-family: cuIcon;
+            line-height: 30px;
+          }
+        }
+
+        &:not([class*='disabled']):active {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
         button {
           &.content {
             padding: 0;

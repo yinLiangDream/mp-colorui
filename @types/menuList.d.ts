@@ -12,6 +12,10 @@ export type TTitleColor = bgColorType;
 export type TOnClick = (index: number) => void;
 export type TTist = {
   /**
+   * 是否禁止点击
+   */
+  disabled: Boolean;
+  /**
    * 列表图标，可选类型请查看 Icon 组件
    */
   icon?: TIcon;

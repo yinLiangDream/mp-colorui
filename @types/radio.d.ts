@@ -2,7 +2,7 @@ import { ComponentClass } from 'react';
 
 import { bgColorType } from './baseType';
 
-export type TType = 'normal' | 'form';
+export type TType = 'normal' | 'form' | 'list';
 export type TShape = 'normal' | 'radio';
 export type TTitle = string;
 export type TColor = bgColorType;
