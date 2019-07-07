@@ -9,6 +9,10 @@ import {
 
 export interface IProps {
   /**
+   * 自定义右侧渲染内容
+   */
+  renderRight?: any;
+  /**
    * 标题栏背景色，可选类型请查看 默认色
    */
   bgColor?: bgColorType | bgColorMoreType | lightBgColorType;

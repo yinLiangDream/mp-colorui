@@ -38,36 +38,51 @@ export default class ClTitleBar extends Component<IProps, IState> {
       ? `text-${this.props.iconColor}`
       : ``;
     const borderComponent = (
-      <View className='action border-title'>
-        <Text className={`${textColorClassName} text-bold text-xl`}>
-          {this.props.title}
-        </Text>
-        <Text
-          className={`${borderColorClassName}`}
-          style={{ width: `${pxTransform(this.props.borderLong || 20)}` }}
-        />
+      <View className='action border-title justify-between'>
+        <View>
+          <Text className={`${textColorClassName} text-bold text-xl`}>
+            {this.props.title}
+          </Text>
+          <Text
+            className={`${borderColorClassName}`}
+            style={{width: `${pxTransform(this.props.borderLong || 20)}`}}
+          />
+        </View>
+        <View>
+          {this.props.renderRight}
+        </View>
       </View>
     );
     const subComponent = (
-      <View className='action sub-title'>
-        <Text className={`text-xl text-bold ${textColorClassName}`}>
-          {this.props.title}
-        </Text>
-        {this.props.subTitle ? (
-          <Text className={`text-${this.props.subTitleColor}`}>
-            {this.props.subTitle}
+      <View className='action sub-title justify-between'>
+        <View>
+          <Text className={`text-xl text-bold ${textColorClassName}`}>
+            {this.props.title}
           </Text>
-        ) : (
-          <Text className={`${borderColorClassName}`}>{}</Text>
-        )}
+          {this.props.subTitle ? (
+            <Text className={`text-${this.props.subTitleColor}`}>
+              {this.props.subTitle}
+            </Text>
+          ) : (
+            <Text className={`${borderColorClassName}`}>{}</Text>
+          )}
+        </View>
+        <View>
+          {this.props.renderRight}
+        </View>
       </View>
     );
     const iconComponent = (
-      <View className='action'>
-        <Text className={`${iconClassName} ${iconColorClassName}`} />
-        <Text className={`text-xl text-bold ${textColorClassName}`}>
-          {this.props.title}
-        </Text>
+      <View className='action justify-between'>
+        <View>
+          <Text className={`${iconClassName} ${iconColorClassName}`}/>
+          <Text className={`text-xl text-bold ${textColorClassName}`}>
+            {this.props.title}
+          </Text>
+        </View>
+        <View>
+          {this.props.renderRight}
+        </View>
       </View>
     );
     return (

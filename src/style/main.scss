@@ -1135,6 +1135,11 @@ button.icon.lg {
     &:last-child {
       margin-right: 30px;
     }
+
+    &.justify-between {
+      width: 100%;
+      justify-content: space-between;
+    }
     text, span {
       &.text-cut {
         text-align: left;
@@ -2934,7 +2939,8 @@ scroll-view {
   &-pink {
     background-color: $pink;
     color: $white;
-    .light {
+
+    &.light {
       color: $pink;
       background-color: $pinkLight;
     }
