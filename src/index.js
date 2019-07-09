@@ -34,5 +34,7 @@ export { default as ClImagePicker } from './components/imagePicker';
 export { default as ClFlex } from './components/flex';
 export { default as ClGrid } from './components/grid';
 export { default as ClAnimation } from './components/animation';
+export { default as ClVerticalTab } from './components/verticalTab'
+export { default as ClVerticalTabCell } from './components/verticalTab/verticalTabCell'
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

@@ -1,0 +1,41 @@
+@import "../../style/vars";
+
+.VerticalNav {
+  &.nav {
+    width: 200px;
+    white-space: initial;
+
+    .cu-item {
+      width: 100%;
+      text-align: center;
+      background-color: $white;
+      margin: 0;
+      border: none;
+      height: 100px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &.cur {
+        background-color: #f1f1f1;
+        color: $blue;
+
+        &::after {
+          content: "";
+          width: 8px;
+          height: 30px;
+          border-radius: 10px 0 0 10px;
+          position: absolute;
+          background-color: $blue;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+        }
+
+      }
+    }
+  }
+}

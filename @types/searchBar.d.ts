@@ -33,9 +33,9 @@ export interface IProps {
    *
    * 默认值 `button`
    *
-   * 可选参数 `button`, `text`, `none`, `list`
+   * 可选参数 `button`, `text`, `none`
    */
-  searchType?: 'button' | 'text' | 'none' | 'list';
+  searchType?: 'button' | 'text' | 'none';
   /**
    * 左边的图标组，可选类型请查看 Icon-iconName
    */

@@ -29,3 +29,5 @@ export { default as ClScreenDrawer } from './screenDrawer';
 export { default as ClFlex } from './flex';
 export { default as ClGrid } from './grid';
 export { default as ClAnimation } from './animation';
+export {default as ClVerticalTab} from './verticalTab';
+export {default as CLVerticalTabCell} from './verticalTabCell';
