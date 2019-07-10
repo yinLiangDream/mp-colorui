@@ -1,8 +1,9 @@
-# MP-COLORUI 是基于 Taro框架的组件库
+# MP-COLORUI 是基于 Taro 框架的组件库
 
 ## 使用方式
 
-> 安装：`npm i mp-colorui`
+> 安装：`npm i mp-colorui`， `yarn add mp-colorui`
+
 > 具体文档请查看：[MP-ColorUI 文档](https://yinliangdream.github.io/mp-colorui-doc/#/)
 
 ## *注意*

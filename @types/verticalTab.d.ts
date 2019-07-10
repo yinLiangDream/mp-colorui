@@ -16,6 +16,10 @@ export interface IProps {
    * 当前激活的标签页 Id
    */
   current?: string;
+  /**
+   * 点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部
+   */
+  backTop?: boolean;
   children?: any;
 }
 

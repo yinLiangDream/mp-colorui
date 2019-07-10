@@ -5,6 +5,8 @@ export interface IProps {
   reverse?: boolean;
   children?: any;
   delay?: number;
+  onAnimationStart?: (e: any) => void;
+  onAnimationEnd?: (e: any) => void;
 }
 
 declare const ClAnimation: ComponentClass<IProps>;

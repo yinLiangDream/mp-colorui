@@ -28,7 +28,6 @@ export { default as ClTabs } from './components/tabs';
 export { default as ClTag } from './components/tag';
 export { default as ClText } from './components/text';
 export { default as ClTimeline } from './components/timeline';
-// export { default as Timer } from './components/timer/timer';
 export { default as ClTitleBar } from './components/titleBar';
 export { default as ClImagePicker } from './components/imagePicker';
 export { default as ClFlex } from './components/flex';

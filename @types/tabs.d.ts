@@ -39,16 +39,25 @@ export interface IProps {
     /**
      * 标题
      */
-    text?: string;
+    text: string;
     /**
      * 图标，可选类型请查看 Icon-iconName
      */
     icon?: iconType;
+    /**
+     * 标签唯一标识符
+     */
+    id: string;
   }[];
   /**
    * 点击事件
    */
   onClick?: (index: number) => void;
+  /**
+   * 是否可以拖动内容移动 tab
+   */
+  touchMove?: boolean;
+  children?: any;
 }
 
 export interface TabsProps extends IProps {}

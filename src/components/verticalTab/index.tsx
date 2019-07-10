@@ -77,11 +77,11 @@ export default function ClVerticalTab(props: IProps) {
   return (
     <View className='flex'>
       <ScrollView scrollY scrollWithAnimation className='VerticalNav nav' style={{height: pxTransform(props.height)}}
-                  scrollTop={(verticalNavTop - 1) * 50}>
+                  scrollTop={(verticalNavTop - 1) * 50} enableBackToTop={props.backTop}>
         {tabsComponent}
       </ScrollView>
       <ScrollView scrollY scrollWithAnimation style={{height: pxTransform(props.height)}} scrollIntoView={scrollId}
-                  onScroll={onScroll} scrollTop={scrollContent}>
+                  onScroll={onScroll} scrollTop={scrollContent} enableBackToTop={props.backTop}>
         {this.props.children}
       </ScrollView>
     </View>
@@ -96,5 +96,6 @@ ClVerticalTab.options = {
 ClVerticalTab.defaultProps = {
   tabs: [{name: '', id: ''}],
   height: 0,
-  current: ''
+  current: '',
+  backTop: false
 } as IProps

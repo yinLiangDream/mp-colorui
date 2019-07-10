@@ -6,7 +6,12 @@ export default function ClAnimation(props: IProps) {
   const type = props.type;
   const reverse = props.reverse ? 'animation-reverse' : '';
   return (
-    <View className={`animation-${type} ${reverse}`} style={{animationDelay: `${props.delay}s`}}>
+    <View className={`animation-${type} ${reverse}`} style={{animationDelay: `${props.delay}s`}}
+          onAnimationStart={e => {
+            props.onAnimationStart && props.onAnimationStart(e)
+          }} onAnimationEnd={e => {
+      props.onAnimationEnd && props.onAnimationEnd(e)
+    }}>
       {this.props.children}
     </View>
   )

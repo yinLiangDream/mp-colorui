@@ -1,6 +1,6 @@
 {
   "name": "mp-colorui",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "MP ColorUI 是一款基于 Taro 框架并且联合 Color-UI CSS 库开发的多端 UI 组件库（目前仅支持小程序端）",
   "main": "dist/index.js",
   "main:h5": "dist/h5/index.js",

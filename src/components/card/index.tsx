@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro';
-import { IProps } from '../../../@types/card.d';
 import { View } from '@tarojs/components';
+import {IProps} from '../../../@types/card.d';
 import { BG_COLOR_LIST } from '../utils/model';
 
 export default function ClCard(props: IProps) {

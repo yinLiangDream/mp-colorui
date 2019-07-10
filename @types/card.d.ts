@@ -20,6 +20,7 @@ export interface IProps {
    * 默认 `white`
    */
   bgColor?: bgColorMoreType | bgColorType | lightBgColorType;
+  children?: any;
 }
 
 declare const Card: ComponentClass<IProps>;
