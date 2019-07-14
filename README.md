@@ -1,5 +1,11 @@
 # MP-COLORUI 是基于 Taro 框架的组件库
 
+## 特色
+
+ - 全部采用 TypeScript 编写，类型声明一目了然
+ - 丰富的配色方案，极具色彩表现力
+ - 丰富的组件库，应有尽有，不够提 [issue](https://github.com/yinLiangDream/mp-colorui/issues) 再加
+
 ## 使用方式
 
 > 安装：`npm i mp-colorui`， `yarn add mp-colorui`

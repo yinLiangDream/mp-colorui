@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="API&#10;新增 menuList list 属性下 disabled 属性&#10;BUG&#10;menuList 点击失效问题">
-      <change afterPath="$PROJECT_DIR$/src/components/tabs/index.scss" afterDir="false" />
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="COMPONENT&#10;- 新增 Accordion 手风琴组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/animation.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/animation.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/card.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/card.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/@types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tabs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabs.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/verticalTab.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/verticalTab.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/animation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animation/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/tabs/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabs/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/verticalTab/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/verticalTab/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/animation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="48" column="52" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="52" />
+            <state relative-caret-position="1056">
+              <caret line="44" column="23" selection-start-line="37" selection-start-column="10" selection-end-line="52" selection-end-column="24" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -44,21 +38,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.tsx">
+        <entry file="file://$PROJECT_DIR$/src/components/accordion/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/verticalTab/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-772">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="30" />
+            <state relative-caret-position="-540">
+              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
               <folding>
-                <element signature="e#0#56#0" expanded="true" />
+                <element signature="e#0#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+            <state relative-caret-position="-9">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -76,12 +61,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <first_editor relative-caret-position="168">
+                <caret line="6" column="81" lean-forward="true" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -91,12 +76,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/tabs/index.tsx">
+        <entry file="file://$PROJECT_DIR$/@types/accordion.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="206" column="32" lean-forward="true" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
+            <state relative-caret-position="72">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/menuList/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="47" />
               <folding>
-                <element signature="e#0#66#0" expanded="true" />
+                <element signature="e#0#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,26 +99,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/@types/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="792">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="668" column="8" selection-start-line="668" selection-start-column="8" selection-end-line="668" selection-end-column="8" />
+            <state relative-caret-position="168">
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/style/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17880">
+              <caret line="767" column="21" selection-start-line="767" selection-start-column="21" selection-end-line="767" selection-end-column="21" />
+              <folding>
+                <element signature="e#12974#13455#0" />
+                <element signature="e#13819#14175#0" />
+                <element signature="e#14196#14244#0" />
+                <element signature="e#14259#14307#0" />
+                <element signature="e#14324#14785#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/@types/tabs.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+            <state relative-caret-position="576">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -152,16 +153,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>359px</find>
-      <find>swiper-slide</find>
-      <find>cu-btn</find>
-      <find>div:first-child</find>
-      <find>vertical-align</find>
-      <find>not</find>
       <find>:not</find>
       <find>-check</find>
       <find>arrow</find>
-      <find>cu-list</find>
       <find>:hover</find>
       <find>hover</find>
       <find>:ac</find>
@@ -182,6 +176,13 @@
       <find>consol</find>
       <find>onClickTab</find>
       <find>scrollLeftContent</find>
+      <find>activeIndex</find>
+      <find>justify</find>
+      <find>.justify</find>
+      <find>cu-list</find>
+      <find>extends</find>
+      <find>fff</find>
+      <find>0.15s</find>
     </findStrings>
     <replaceStrings>
       <replace>2px solid</replace>
@@ -202,11 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project.config.json" />
-        <option value="$PROJECT_DIR$/src/style/vars.scss" />
-        <option value="$PROJECT_DIR$/.temp/components/titleBar/index.js" />
-        <option value="$PROJECT_DIR$/src/style/h5.scss.css" />
-        <option value="$PROJECT_DIR$/src/style/index.scss" />
         <option value="$PROJECT_DIR$/src/components/loading/index.tsx" />
         <option value="$PROJECT_DIR$/src/pages/index/index.scss" />
         <option value="$PROJECT_DIR$/src/components/radio/h5.js" />
@@ -246,13 +242,18 @@
         <option value="$PROJECT_DIR$/@types/verticalTab.d.ts" />
         <option value="$PROJECT_DIR$/src/components/verticalTab/index.tsx" />
         <option value="$PROJECT_DIR$/src/app.tsx" />
-        <option value="$PROJECT_DIR$/@types/index.d.ts" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/@types/tabs.d.ts" />
-        <option value="$PROJECT_DIR$/src/pages/index/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/tabs/index.tsx" />
+        <option value="$PROJECT_DIR$/src/components/tabBar/index.tsx" />
+        <option value="$PROJECT_DIR$/src/style/animation.scss" />
+        <option value="$PROJECT_DIR$/@types/according.d.ts" />
+        <option value="$PROJECT_DIR$/@types/index.d.ts" />
+        <option value="$PROJECT_DIR$/src/pages/index/index.tsx" />
+        <option value="$PROJECT_DIR$/@types/accordion.d.ts" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/accordion/index.tsx" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -262,16 +263,18 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="210" />
+    <option name="y" value="131" />
+    <option name="width" value="1260" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,7 +298,7 @@
               <item name="mp-colorui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="tabs" type="462c0819:PsiDirectoryNode" />
+              <item name="accordion" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mp-colorui" type="b2602c69:ProjectViewProjectNode" />
@@ -325,11 +328,16 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mp-colorui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mp-colorui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +359,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -365,7 +373,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:weapp">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -408,8 +416,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.publish" />
       </list>
@@ -445,6 +453,10 @@
       <workItem from="1562221971603" duration="19470000" />
       <workItem from="1562567213796" duration="59000" />
       <workItem from="1562567279543" duration="18407000" />
+      <workItem from="1562901311609" duration="2375000" />
+      <workItem from="1562913665123" duration="6585000" />
+      <workItem from="1562925209710" duration="6605000" />
+      <workItem from="1563096992730" duration="1317000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -558,11 +570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562513202906</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="API&#10;- Animation 组件&#10;- - 新增 onAnimationStart、onAnimationEnd 事件&#10;- Tabs 组件&#10;- - 新增 tabs 属性下的 id 属性&#10;- - 新增 touchMove 可滑动属性&#10;- VerticalTab 组件&#10;- - 新增 backTop 属性&#10;BUG&#10;- Card 组件&#10;- - 修复插入 children 内容时的异常提醒（不影响使用）">
+      <created>1562778078575</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562778078575</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142600000" />
+    <option name="totallyTimeSpent" value="160264000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,7 +602,7 @@
       <window_info id="npm" order="3" sideWeight="0.27617604" side_tool="true" weight="0.15129596" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.327551" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29591838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -591,9 +610,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3010204" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -620,49 +639,11 @@
     <MESSAGE value="API&#10;新增 checkbox 组件 type 属性下的 list 属性" />
     <MESSAGE value="API&#10;新增 menuList list 属性下 disabled 属性&#10;BUG&#10;menuList 点击失效问题" />
     <MESSAGE value="API&#10;新增 titleBar renderRight 属性&#10;BUG&#10;解决 浅色 light-pink 失效问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="API&#10;新增 titleBar renderRight 属性&#10;BUG&#10;解决 浅色 light-pink 失效问题" />
+    <MESSAGE value="API&#10;- Animation 组件&#10;- - 新增 onAnimationStart、onAnimationEnd 事件&#10;- Tabs 组件&#10;- - 新增 tabs 属性下的 id 属性&#10;- - 新增 touchMove 可滑动属性&#10;- VerticalTab 组件&#10;- - 新增 backTop 属性&#10;BUG&#10;- Card 组件&#10;- - 修复插入 children 内容时的异常提醒（不影响使用）" />
+    <option name="LAST_COMMIT_MESSAGE" value="API&#10;- Animation 组件&#10;- - 新增 onAnimationStart、onAnimationEnd 事件&#10;- Tabs 组件&#10;- - 新增 tabs 属性下的 id 属性&#10;- - 新增 touchMove 可滑动属性&#10;- VerticalTab 组件&#10;- - 新增 backTop 属性&#10;BUG&#10;- Card 组件&#10;- - 修复插入 children 内容时的异常提醒（不影响使用）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/style/h5.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/animation/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/csstype/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/avatar/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/@types/avatar.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/radio/components.js" />
     <entry file="file://$PROJECT_DIR$/@types/timeline.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -725,13 +706,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/components/types/Switch.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/components/types/Switch.d.ts" />
     <entry file="file://$PROJECT_DIR$/@types/button.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-743">
@@ -745,36 +720,6 @@
           <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26520">
-          <caret line="1140" column="26" selection-start-line="1140" selection-start-column="26" selection-end-line="1140" selection-end-column="26" />
-          <folding>
-            <element signature="e#13819#14175#0" />
-            <element signature="e#14196#14244#0" />
-            <element signature="e#14259#14307#0" />
-            <element signature="e#14324#14785#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/button/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/menuList/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -813,11 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/animation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1042" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/verticalTab/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -825,20 +765,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/components/types/common.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="97" column="2" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/taro/types/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8569" column="26" lean-forward="true" selection-start-line="8569" selection-start-column="26" selection-end-line="8569" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/components/types/common.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@tarojs/taro/types/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/@types/verticalTabCell.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -846,16 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/weapp/components/animation/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="113" selection-start-line="8" selection-start-column="97" selection-end-line="8" selection-end-column="113" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/weapp/components/animation/index.tsx" />
     <entry file="file://$PROJECT_DIR$/@types/animation.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -883,16 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/card/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/@types/card.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -909,13 +818,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/@types/tabCell.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/@types/tabCell.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/components/verticalTab/verticalTabCell/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -940,16 +843,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/tabs/tabCell/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/tabs/tabCell/index.tsx" />
     <entry file="file://$PROJECT_DIR$/src/app.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -957,16 +851,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="668" column="8" selection-start-line="668" selection-start-column="8" selection-end-line="668" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/verticalTab/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-772">
+        <state relative-caret-position="960">
           <caret line="44" column="30" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="30" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
@@ -974,46 +861,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/@types/index.d.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/tabBar/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/@types/tabs.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="52" />
+        <state relative-caret-position="1440">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
@@ -1022,18 +873,148 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/tabs/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="206" column="32" lean-forward="true" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
+        <state relative-caret-position="3096">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/animation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="56" column="11" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts" />
+    <entry file="file://$PROJECT_DIR$/src/components/shopBar/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="44" column="23" selection-start-line="37" selection-start-column="10" selection-end-line="52" selection-end-column="24" />
           <folding>
-            <element signature="e#0#66#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/@types/accordion.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/menuList/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/@types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17880">
+          <caret line="767" column="21" selection-start-line="767" selection-start-column="21" selection-end-line="767" selection-end-column="21" />
+          <folding>
+            <element signature="e#12974#13455#0" />
+            <element signature="e#13819#14175#0" />
+            <element signature="e#14196#14244#0" />
+            <element signature="e#14259#14307#0" />
+            <element signature="e#14324#14785#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/@types/tabs.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/checkbox/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/card/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/button/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/navBar/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/accordion/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="168">
+            <caret line="6" column="81" lean-forward="true" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

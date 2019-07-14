@@ -31,3 +31,4 @@ export {default as ClGrid} from './grid';
 export {default as ClAnimation} from './animation';
 export {default as ClVerticalTab} from './verticalTab';
 export {default as ClVerticalTabCell} from './verticalTabCell';
+export {default as ClAccordion} from './accordion'

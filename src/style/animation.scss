@@ -57,6 +57,24 @@
   &-reverse {
     animation-direction: reverse;
   }
+
+  &-rotate {
+    &-90 {
+      animation-name: rotate-90;
+    }
+
+    &-180 {
+      animation-name: rotate-180;
+    }
+
+    &-270 {
+      animation-name: rotate-270;
+    }
+
+    &-360 {
+      animation-name: rotate-360;
+    }
+  }
 }
 
 @keyframes fade {
@@ -181,5 +199,45 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes rotate-90 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate-180 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-270 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
