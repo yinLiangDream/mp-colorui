@@ -36,5 +36,6 @@ export { default as ClAnimation } from './components/animation'
 export { default as ClVerticalTab } from './components/verticalTab'
 export { default as ClVerticalTabCell } from './components/verticalTab/verticalTabCell'
 export { default as ClAccordion } from './components/accordion'
+export { default as ClFloatButton } from './components/floatButton'
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} })

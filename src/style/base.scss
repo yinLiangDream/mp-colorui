@@ -98,8 +98,8 @@ switch::before {
   content: "\e645";
   position: absolute;
   color: #fff !important;
-  top: 0%;
-  left: 0px;
+  top: 0;
+  left: 0;
   font-size: 26px;
   line-height: 26px;
   width: 50%;
@@ -148,9 +148,9 @@ switch {
       width: 52px;
       height: 52px;
       border-radius: 100px;
-      left: 0px;
-      top: 0px;
-      bottom: 0px;
+      left: 0;
+      top: 0;
+      bottom: 0;
       position: absolute;
       transform: scale(0.9, 0.9);
       transition: all 0.1s ease-in-out 0s;
