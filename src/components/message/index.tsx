@@ -51,7 +51,6 @@ export default function ClMessage(props: IProps) {
   };
   useEffect(async () => {
     if (!showMessage) {
-      console.log('showMessage', showMessage);
       props.show = false;
       const height = await caculateHeight();
       tempHeight = height;
@@ -71,6 +70,7 @@ export default function ClMessage(props: IProps) {
           clearTimeout(timer);
           timer = null;
           setTempMessage('');
+          props.message = '';
         }, durationTime * 1000);
       }
       setContentHeight(tempHeight);
