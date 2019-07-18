@@ -6,7 +6,7 @@ export default function ClAnimation(props: IProps) {
   const type = props.type;
   const reverse = props.reverse ? 'animation-reverse' : '';
   return (
-    <View className={`animation-${type} ${reverse}`} style={{animationDelay: `${props.delay}s`}}
+    <View className={`animation-${type} ${reverse}`} style={{animationDelay: `${props.delay}s`, animationDuration: `${props.duration}s`}}
           onAnimationStart={e => {
             props.onAnimationStart && props.onAnimationStart(e)
           }} onAnimationEnd={e => {
@@ -24,5 +24,6 @@ ClAnimation.options = {
 ClAnimation.defaultProps = {
   type: 'fade',
   reverse: false,
-  delay: 0
+  delay: 0,
+  duration: 0.5
 } as IProps;

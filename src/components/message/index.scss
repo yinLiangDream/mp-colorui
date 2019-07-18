@@ -1,0 +1,12 @@
+.cu-cl-message {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  &__conetent {
+    width: 100%;
+  }
+}

@@ -5,6 +5,7 @@ export interface IProps {
   reverse?: boolean;
   children?: any;
   delay?: number;
+  duration?: number;
   onAnimationStart?: (e: any) => void;
   onAnimationEnd?: (e: any) => void;
 }
