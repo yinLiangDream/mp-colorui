@@ -51,13 +51,14 @@ export default function ClMessage(props: IProps) {
   };
   useEffect(async () => {
     if (!showMessage) {
-      props.show = false;
       const height = await caculateHeight();
       tempHeight = height;
       setContentHeight(tempHeight);
       setShowMessage(false);
     } else {
       tempHeight = 0;
+      setTempType(type)
+      setTempMessage(message || '')
       if (duration !== 0) {
         if (timer) {
           clickClose();
@@ -69,7 +70,6 @@ export default function ClMessage(props: IProps) {
           clickClose();
           clearTimeout(timer);
           timer = null;
-          setTempMessage('');
           props.message = '';
         }, durationTime * 1000);
       }
@@ -78,10 +78,11 @@ export default function ClMessage(props: IProps) {
     }
   }, [showMessage]);
   useEffect(() => {
-    setShowMessage(!!show);
+    show && setShowMessage(!!show);
+    props.show = false
   }, [show]);
   useEffect(() => {
-    if (tempMessage !== message && tempMessage) {
+    if (show) {
       clearTimeout(timer);
       timer = null;
       clickClose();
@@ -91,11 +92,7 @@ export default function ClMessage(props: IProps) {
         setTempType(type)
       }, 300);
     }
-    if (!tempMessage) {
-      setTempMessage(message || '');
-      setTempType(type)
-    }
-  }, [message]);
+  }, [message, show]);
   return (
     <View
       className='cu-cl-message'

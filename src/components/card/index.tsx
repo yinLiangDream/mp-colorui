@@ -8,7 +8,7 @@ export default function ClCard(props: IProps) {
   const colorClassName = props.bgColor ? BG_COLOR_LIST[props.bgColor] : 'bg-white';
   return (
     <View className={`cu-card case ${typeClassName}`}>
-      <View className={`cu-item shadow padding ${colorClassName}`}>
+      <View className={`cu-item ${props.shadow ? 'shadow' : ''} padding ${colorClassName}`}>
         {this.props.children}
       </View>
     </View>
@@ -18,3 +18,9 @@ export default function ClCard(props: IProps) {
 ClCard.options = {
   addGlobalClass: true
 };
+
+ClCard.defaultProps = {
+  type: 'card',
+  bgColor: 'white',
+  shadow: true
+} as IProps;

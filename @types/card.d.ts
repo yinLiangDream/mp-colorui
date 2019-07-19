@@ -20,6 +20,12 @@ export interface IProps {
    * 默认 `white`
    */
   bgColor?: bgColorMoreType | bgColorType | lightBgColorType;
+  /**
+   * 卡片阴影
+   *
+   * 默认 `true`
+   */
+  shadow?: boolean;
   children?: any;
 }
 

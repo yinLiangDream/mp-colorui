@@ -16,7 +16,7 @@ export default function Index() {
   return (
     <ClLayout>
       <ClMessage message={text} show={show} type={type} duration={duration} bgColor={bgColor} />
-      <ClTitleBar title='类型' textColor='black' type='icon' subTitle='type' subTitleColor='shadow' />
+      <ClTitleBar title='类型' textColor='black' type='icon' subTitle='type'/>
       <ClCard>
         <ClFlex justify='between'>
           <ClButton shape='round' bgColor={'light-grey'} onClick={() => {
