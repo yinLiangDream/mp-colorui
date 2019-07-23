@@ -11,15 +11,15 @@ export type TTimes = {
   /**
    * 节点
    */
-  node: String;
+  node?: String;
   /**
    * 时间
    */
-  time: String;
+  time?: String;
   /**
    * 标题
    */
-  title: String;
+  title?: String;
   /**
    * 包含的内容
    */

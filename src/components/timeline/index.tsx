@@ -11,10 +11,14 @@ export default function ClTimeline(props: IProps) {
   const iconColorClassName = color => (color ? TEXT_COLOR_LIST[color] : '');
   const iconClassName = icon => (icon ? `cuIcon-${icon}` : '');
   const bgColorClassName = color => (color ? BG_COLOR_LIST[color] : '');
-  const items = times.map((item, index) => (
-    <Block key={index}>
-      {
-        item.node ? item.node : <View
+  const renderNode = (item, index) => {
+    return (
+      <View className='cu-time'>{item.node}</View>
+    )
+  }
+  const renderNormal = (item, index) => {
+    return (
+      <View
           className={`cu-item ${iconColorClassName(item.iconColor)} ${iconClassName(
             item.icon
           )}`}
@@ -31,8 +35,10 @@ export default function ClTimeline(props: IProps) {
             }
           </View>
         </View>
-      }
-    </Block>
+    )
+  }
+  const items = times.map((item, index) => (
+    item.node ? renderNode(item, index) : renderNormal(item, index)
   ));
   return <View className='cu-timeline'>{items}</View>;
 }

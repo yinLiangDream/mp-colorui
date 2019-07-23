@@ -33,3 +33,4 @@ export {default as ClVerticalTab} from './verticalTab';
 export {default as ClVerticalTabCell} from './verticalTabCell';
 export {default as ClAccordion} from './accordion';
 export {default as ClFloatButton} from './floatButton';
+export {default as ClDivider} from './divider';
