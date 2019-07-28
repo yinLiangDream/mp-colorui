@@ -1,4 +1,5 @@
 import * as model from './model';
+import rule from './rules';
 
 const fullDate = (num: number) => {
   if (num < 10) return '0' + num;
@@ -29,10 +30,6 @@ export const getNowTIme = () => {
   const min = date.getMinutes();
   return `${hour}:${min}`;
 };
-export default {
-  model,
-  getNowDate
-};
 
 /**
  * 判断是否为 number
@@ -60,4 +57,10 @@ export const debounce = (func, wait) => {
       func.apply(context, args)
     }, wait)
   };
+};
+
+export default {
+  model,
+  getNowDate,
+  rule
 };

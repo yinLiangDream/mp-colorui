@@ -13,16 +13,17 @@ export default function ClTimeline(props: IProps) {
   const bgColorClassName = color => (color ? BG_COLOR_LIST[color] : '');
   const renderNode = (item, index) => {
     return (
-      <View className='cu-time'>{item.node}</View>
+      <View className='cu-time' key={index}>{item.node}</View>
     )
   }
   const renderNormal = (item, index) => {
     return (
       <View
-          className={`cu-item ${iconColorClassName(item.iconColor)} ${iconClassName(
+        className={`cu-item ${iconColorClassName(item.iconColor)} ${iconClassName(
             item.icon
           )}`}
-        >
+        key={index}
+      >
           <View className={`${bgColorClassName(item.bgColor)} content`}>
             <ClFlex justify='between' align='end'>
               <View style={{fontSize: pxTransform(36)}}>{item.title}</View>

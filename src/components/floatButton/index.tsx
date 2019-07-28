@@ -1,4 +1,4 @@
-import Taro, { pxTransform, useState } from '@tarojs/taro';
+import Taro, { useState } from '@tarojs/taro';
 import { View } from '@tarojs/components';
 import utils from '../utils/index';
 import { IProps } from '../../../@types/floatButton';

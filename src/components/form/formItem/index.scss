@@ -1,0 +1,27 @@
+@import "../../../style/vars";
+.cu-formItem {
+  box-sizing: border-box;
+  border-bottom: 2px solid #eee;
+  position: relative;
+  &-err {
+    box-sizing: border-box;
+    border-bottom: 2px solid $red;
+    position: relative;
+    &-tip {
+      position: absolute;
+      left: 30px;
+      bottom: 0;
+      color: $red;
+      font-size: 20px;
+    }
+  }
+  &-required {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $red;
+  }
+}

@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  projectName: 'taro-ui-sample',
+  projectName: 'mp-colorui',
   date: '2018-10-30',
   designWidth: 750,
   deviceRatio: {

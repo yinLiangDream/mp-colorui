@@ -34,4 +34,6 @@ export interface IProps {
   onClose?: () => void;
 }
 
-export const Message: ComponentClass<IProps>;
+declare const Message: ComponentClass<IProps>
+
+export default Message;
