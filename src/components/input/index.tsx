@@ -7,7 +7,9 @@ import { IProps } from '../../../@types/input';
 let normalType;
 
 function ClInput(props: IProps) {
+  let tempInput = '';
   const onChange = (event: any) => {
+    tempInput = event.detail.value;
     props.onChange && props.onChange(event.detail.value);
   };
   const onBlur = (event: any) => {
@@ -47,7 +49,7 @@ function ClInput(props: IProps) {
   ) : (
     ''
   );
-  const {
+  let {
     title,
     placeholder,
     value,
@@ -57,6 +59,7 @@ function ClInput(props: IProps) {
     disabled,
     renderCustomRight
   } = props;
+  value = tempInput || value
   return (
     <View className='cu-form-group'>
       <View className='title'>{title}</View>
@@ -84,7 +87,7 @@ ClInput.options = {
   addGlobalClass: true
 };
 ClInput.defaultProps = {
-  value: '',
+  value: undefined,
   placeholder: '',
   type: 'text',
   adjustPosition: true
