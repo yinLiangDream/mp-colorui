@@ -41,9 +41,7 @@
   },
   "author": "liangyin",
   "license": "MIT",
-  "dependencies": {
-    "async-validator": "^1.11.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
