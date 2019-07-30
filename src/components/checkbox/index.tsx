@@ -1,7 +1,7 @@
 import { Checkbox, CheckboxGroup, Text, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { IProps } from '../../../@types/checkbox';
-
+import ClCheckbox_h5 from './h5'
 
 
 export default function ClCheckbox(props: IProps) {
@@ -30,14 +30,19 @@ export default function ClCheckbox(props: IProps) {
   const change = e => {
     props.onChange && props.onChange(e.detail.value)
   };
-
+  const env = Taro.getEnv()
+  const web = Taro.ENV_TYPE.WEB;
+  const component = env === web ? <ClCheckbox_h5 {...props} /> :
+  <CheckboxGroup
+  className={`${type === 'form' ? 'block' : ''}`}
+  onChange={change}
+>
+  {type === 'form' ? formComponent : <View className={directionClassName}>{checkboxComponent}</View>}
+</CheckboxGroup>
   return (
-    <CheckboxGroup
-      className={`${type === 'form' ? 'block' : ''}`}
-      onChange={change}
-    >
-      {type === 'form' ? formComponent : <View className={directionClassName}>{checkboxComponent}</View>}
-    </CheckboxGroup>
+    <View>
+      {component}
+    </View>
   );
 }
 
