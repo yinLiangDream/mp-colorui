@@ -1,6 +1,7 @@
 import { Switch, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { IProps } from '../../../@types/switch';
+import ClSwitch_h5 from "./h5";
 
 
 
@@ -27,7 +28,9 @@ export default function ClSwitch(props: IProps) {
       {switchComponent}
     </View>
   );
-  return type === 'form' ? formSwitchComponent : switchComponent;
+  const weappComponent = type === 'form' ? formSwitchComponent : switchComponent;
+  const app = Taro.getEnv() === Taro.ENV_TYPE.WEB ? <ClSwitch_h5 {...this.props} /> : weappComponent;
+  return app;
 }
 
 ClSwitch.options = {
