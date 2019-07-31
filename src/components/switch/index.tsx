@@ -1,9 +1,7 @@
 import { Switch, View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { IProps } from '../../../@types/switch';
-import ClSwitch_h5 from "./h5";
-
-
+import ClSwitch_h5 from './h5';
 
 export default function ClSwitch(props: IProps) {
   const title = props.title;
@@ -11,7 +9,7 @@ export default function ClSwitch(props: IProps) {
   const shapeClassName = props.shape !== 'radius' ? '' : 'radius';
   const type = props.type === 'form' ? 'form' : 'normal';
   const checked = !!props.checked;
-  const hasChecked = checked ? 'checked' : ''
+  const hasChecked = checked ? 'checked' : '';
   const onChange = e => {
     props.onChange && props.onChange(e.detail.value);
   };
@@ -28,9 +26,13 @@ export default function ClSwitch(props: IProps) {
       {switchComponent}
     </View>
   );
-  const weappComponent = type === 'form' ? formSwitchComponent : switchComponent;
-  const app = Taro.getEnv() === Taro.ENV_TYPE.WEB ? <ClSwitch_h5 {...this.props} /> : weappComponent;
-  return app;
+  return Taro.getEnv() === Taro.ENV_TYPE.WEB ? (
+    <ClSwitch_h5 {...this.props} />
+  ) : type === 'form' ? (
+    formSwitchComponent
+  ) : (
+    switchComponent
+  );
 }
 
 ClSwitch.options = {
