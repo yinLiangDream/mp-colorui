@@ -1,6 +1,6 @@
 {
   "name": "mp-colorui",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "MP ColorUI 是一款基于 Taro 框架并且联合 Color-UI CSS 库开发的多端 UI 组件库（目前仅支持小程序端）",
   "keywords": [
     "taro",
@@ -41,16 +41,7 @@
   },
   "author": "liangyin",
   "license": "MIT",
-  "dependencies": {
-    "@tarojs/components-rn": "^1.3.10",
-    "@tarojs/taro-rn": "^1.3.10",
-    "@tarojs/taro-router-rn": "^1.3.10",
-    "@tarojs/taro-redux-rn": "^1.3.10",
-    "react": "16.3.1",
-    "react-native": "0.55.4",
-    "redux": "^4.0.0",
-    "tslib": "^1.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",

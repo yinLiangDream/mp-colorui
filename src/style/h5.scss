@@ -22,24 +22,6 @@ input.weui-check {
   box-sizing: content-box;
 }
 
-.h5-radio.normal {
-  .h5-radio-input::before {
-    font-family: 'cuIcon';
-    content: '\e645';
-    position: absolute;
-    color: $white !important;
-    top: 50%;
-    margin-top: -16px;
-    right: 6px;
-    font-size: 32px;
-    line-height: 32px;
-    pointer-events: none;
-    transform: scale(1, 1);
-    transition: all 0.3s ease-in-out 0s;
-    z-index: 9;
-  }
-}
-
 .h5-checkbox-input {
   display: inline-block;
   min-height: 0;
@@ -102,12 +84,10 @@ input.weui-check {
       border: 16px solid $white !important;
     }
   }
-
   &[hidden],
   &-group[hidden] {
     display: none;
   }
-
   .h5-radio {
     &-wrapper {
       display: inline-flex;
@@ -135,6 +115,98 @@ input.weui-check {
       &.h5-radio-input-disabled:before {
         color: #adadad;
       }
+    }
+  }
+  &.normal {
+    .h5-radio-input::before {
+      font-family: 'cuIcon';
+      content: '\e645';
+      position: absolute;
+      color: $white !important;
+      top: 50%;
+      margin-top: -16px;
+      right: 6px;
+      font-size: 32px;
+      line-height: 32px;
+      pointer-events: none;
+      transform: scale(1, 1);
+      transition: all 0.3s ease-in-out 0s;
+      z-index: 9;
+    }
+  }
+}
+
+.h5-switch {
+  display: inline-block;
+  &::before,
+  &::after {
+    font-family: "cuIcon";
+    content: "\e645";
+    position: absolute;
+    color: #fff !important;
+    top: 0;
+    left: 0;
+    font-size: 26px;
+    line-height: 26px;
+    width: 50%;
+    text-align: center;
+    pointer-events: none;
+    transform: scale(0, 0);
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 9;
+    bottom: 0;
+    height: 26px;
+    margin: auto;
+  }
+  &::before {
+    content: "\e646";
+    right: 0;
+    transform: scale(1, 1);
+    left: auto;
+  }
+  .h5-switch-input {
+    border: none;
+    padding: 0 24px;
+    width: 96px;
+    height: 52px;
+    margin: 0;
+    border-radius: 100px;
+    position: relative;
+    &.radius,
+    &.radius::after {
+      border-radius: 6px;
+    }
+    &::after {
+      content: '';
+      margin: auto;
+      width: 52px;
+      height: 52px;
+      border-radius: 100px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      box-shadow: 0 0 10px $grey;
+      transform: scale(0.9, 0.9);
+      transition: all 0.2s ease-in-out 0s;
+      background-color: $white;
+    }
+    &:not([class*="bg-"]) {
+      background: $grey !important;
+    }
+  }
+  &.checked {
+    .h5-switch-input::after {
+      margin: auto;
+      left: 44px;
+      box-shadow: none;
+      transform: scale(0.9, 0.9);
+    }
+    &::after {
+      transform: scale(1, 1);
+    }
+    &::before {
+      transform: scale(0, 0);
     }
   }
 }
