@@ -77,7 +77,7 @@ export default function ClFloatButton(props: IProps) {
   ));
   const directionClass = direction === 'vertical' ? '' : 'flex';
   const clickButton = () => {
-    setShow(!show);
+    open && setShow(!show);
     open && setRotate(rotate ? 0 : 45);
   };
   return (
