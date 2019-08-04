@@ -1,6 +1,7 @@
 import Taro, {pxTransform, useState} from '@tarojs/taro'
 import {ScrollView, View} from "@tarojs/components";
 import {IProps} from '../../../@types/verticalTab'
+import { screenPercent } from '../utils'
 
 import './index.scss'
 
@@ -11,14 +12,18 @@ export default function ClVerticalTab(props: IProps) {
   const tabs: {
     name: string;
     id: string;
-    top: number;
-    bottom: number;
+    top?: number;
+    bottom?: number;
   }[] = props.tabs || [];
   const [current, setCurrent] = useState(currentId);
   const [verticalNavTop, setVerticalNavTop] = useState(tabs.findIndex(item => item.name === props.tabs[0].name));
   const [scrollId, setScrollId] = useState(currentId);
   const [scrollContent, setScrollContent] = useState(0);
+  const [clickTab, setClickTab] = useState(false);
+  const isH5 = Taro.getEnv() === Taro.ENV_TYPE.WEB
   const onScroll = (e) => {
+    // if (Taro.getEnv() === Taro.ENV_TYPE.WEB) return
+    if (clickTab) return
     let tabHeight = 0;
     for (let i = 0; i < tabs.length; i++) {
       const query = Taro.createSelectorQuery()
@@ -32,9 +37,10 @@ export default function ClVerticalTab(props: IProps) {
       }).exec();
     }
     let scrollTop = e.detail.scrollTop + 20;
+    isH5 && setScrollContent(e.detail.scrollTop)
     if (!scrollTab) {
       for (let i = 0; i < tabs.length; i++) {
-        if (scrollTop > tabs[i].top && scrollTop < tabs[i].bottom) {
+        if (scrollTop > (tabs[i].top || 0) && scrollTop < (tabs[i].bottom || 0)) {
           setVerticalNavTop(i);
           setCurrent(tabs[i].id);
           return false
@@ -50,6 +56,10 @@ export default function ClVerticalTab(props: IProps) {
       setCurrent(item.id);
       setVerticalNavTop(tabs.findIndex(tab => tab.name === item.name));
       setScrollId(item.id);
+      setClickTab(true);
+      setTimeout(() => {
+        setClickTab(false);
+      }, 500)
     }}
     >{item.name}</View>
   ));
@@ -77,7 +87,7 @@ export default function ClVerticalTab(props: IProps) {
   return (
     <View className='flex'>
       <ScrollView scrollY scrollWithAnimation className='VerticalNav nav' style={{height: pxTransform(props.height)}}
-                  scrollTop={(verticalNavTop - 1) * 50} enableBackToTop={props.backTop}>
+                  scrollTop={(verticalNavTop - 1) * screenPercent * 100} enableBackToTop={props.backTop}>
         {tabsComponent}
       </ScrollView>
       <ScrollView scrollY scrollWithAnimation style={{height: pxTransform(props.height)}} scrollIntoView={scrollId}
