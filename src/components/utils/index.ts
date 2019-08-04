@@ -1,3 +1,4 @@
+import Taro from '@tarojs/taro'
 import * as model from './model';
 import rule from './rules';
 
@@ -58,6 +59,11 @@ export const debounce = (func, wait) => {
     }, wait)
   };
 };
+
+/**
+ * 按照 750 作为设计时的百分比
+ */
+export const screenPercent = Taro.getSystemInfoSync().screenWidth / 750;
 
 export default {
   model,

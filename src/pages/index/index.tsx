@@ -1,19 +1,22 @@
 import Taro, {useRef, useState} from '@tarojs/taro';
-import ClLayout from '../../components/layout';
-import ClSwitch from "../../components/switch";
+import ClVerticalTab from '../../components/verticalTab';
+import { View } from '@tarojs/components';
+import ClVerticalTabCell from '../../components/verticalTab/verticalTabCell';
 
 
 export default class Index extends Taro.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
+    const tabs = [...Array(50)].map((key, index) => ({name: 'tab-' + index, id: 'id-' + index}))
     return (
-      <ClLayout>
-        <ClSwitch type='form' title='123' color='blue' onChange={(e) => {
-          console.log(e)
-        }} />
-      </ClLayout>
+      <ClVerticalTab tabs={tabs} height={1000}>
+        <View>
+          {tabs.map((item) => (
+            <View id={item.id} key={item.name}>
+              <ClVerticalTabCell>{item.name}</ClVerticalTabCell>
+            </View>
+          ))}
+        </View>
+      </ClVerticalTab>
     )
   }
 }
