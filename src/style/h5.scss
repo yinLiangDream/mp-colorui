@@ -409,3 +409,35 @@ radio.checked .h5-radio-input {
   background-color: $white !important;
   color: $black !important;
 }
+
+
+// swiper
+.card-swiper {
+  height: 420px;
+  .swiper-slide {
+    // width: 610px !important;
+    // width: 90% !important;
+    width: 750px !important;
+    box-sizing: border-box;
+    padding: 40px 0 70px;
+    left: 70px;
+    overflow: initial;
+    .swiper-item {
+      width: 100%;
+      display: block;
+      height: 100%;
+      border-radius: 10px;
+      transform: scale(0.9);
+      transition: all 0.3s ease-in 0.1s;
+      overflow: hidden;
+    }
+    &.cur {
+      width: 610px !important;
+      transition: all 0.2s ease;
+      .swiper-item {
+        transform: none;
+        transition: all 0.3s ease-in 0.1s;
+      }
+    }
+  }
+}
