@@ -5,6 +5,6 @@ module.exports = {
   defineConstants: {},
   weapp: {},
   h5: {
-    esnextModules: ['mp-colorui']
+    esnextModules: []
   }
 };

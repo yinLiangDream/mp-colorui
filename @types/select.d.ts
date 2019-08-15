@@ -71,12 +71,11 @@ export type TDate = {
 export type TRegion = {
   /**
    * 选中的值
+   * key: 地址 code
+   * value: 地址名称
+   * 详情请在官方文档中查看 areaData
    */
-  value?: string[];
-  /**
-   * 可为每一列的顶部添加一个自定义的项
-   */
-  customItem?: string;
+  value?: { key: number; value: string }[];
 };
 
 export interface IProps {

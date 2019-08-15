@@ -46,8 +46,8 @@ export const isNumber = (obj: any) => {
  * @param wait 延迟时间
  * @returns func
  */
-export const debounce = (func, wait) => {
-  let timeout;
+export const debounce = (func: Function, wait: number) => {
+  let timeout: any;
   return function() {
     let context = this;
     let args = arguments;
@@ -56,6 +56,28 @@ export const debounce = (func, wait) => {
 
     timeout = setTimeout(() => {
       func.apply(context, args)
+      clearTimeout(timeout)
+    }, wait)
+  };
+};
+
+/**
+ * 函数节流
+ * @param func 要执行的函数
+ * @param wait 延迟时间
+ * @returns func
+ */
+export const throttling = (func: Function, wait: number) => {
+  let timeout: any;
+  return function() {
+    let context = this;
+    let args = arguments;
+
+    if (timeout) return;
+
+    timeout = setTimeout(() => {
+      func.apply(context, args)
+      clearTimeout(timeout);
     }, wait)
   };
 };

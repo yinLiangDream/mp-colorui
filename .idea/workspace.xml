@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/@types/form.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/@types/formItem.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/context.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/formItem/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/rules.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pullScroll/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/message.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/message.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/floatButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/floatButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/timeline/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/progress/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/progress/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +21,9 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
         <option value="Sass File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -126,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:weapp" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.publish" />
       </list>
@@ -171,6 +159,8 @@
       <workItem from="1563259661612" duration="616000" />
       <workItem from="1563264285496" duration="595000" />
       <workItem from="1563982608658" duration="39223000" />
+      <workItem from="1565245187426" duration="3542000" />
+      <workItem from="1565271248086" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -318,7 +308,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
