@@ -26,7 +26,8 @@ export default function ClAccordion(props: IProps) {
     <View className={`cu-list menu ${card ? 'card-menu' : ''}`} style={{
       overflow: "hidden",
       height: pxTransform((50 + height) * 2),
-      transition: `all ${animation ? `${props.speed}s` : 0} linear`
+      transition: `all ${animation ? `${props.speed}s` : 0} linear`,
+      color: 'black'
     }}>
       <View className={`cu-item`} onClick={() => {
         onClick && onClick(!show);
