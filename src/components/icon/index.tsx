@@ -25,14 +25,16 @@ export default class ClIcon extends Component<IProps, IState> {
     iconName: undefined
   } as IProps;
   render() {
+    const iconName = this.props.iconName || ''
+    let iconNameClass = `cuIcon-${this.props.iconName}`
+    if (this.props.other) {
+      iconNameClass = iconName
+    }
     const sizeClassName = this.props.size || 'normal';
     const bgColorClassName = this.props.color ? `text-${this.props.color}` : '';
-    const iconClassName = this.props.iconName
-      ? `cuIcon-${this.props.iconName}`
-      : '';
     return (
       <Text
-        className={`${bgColorClassName} ${iconClassName}`}
+        className={`${bgColorClassName} ${iconNameClass}`}
         style={{
           fontSize: `${
             isNumber(sizeClassName)

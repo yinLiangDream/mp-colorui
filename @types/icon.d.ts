@@ -15,9 +15,13 @@ export interface IProps {
    */
   color?: bgColorType;
   /**
-   * 图标类型，可选类型请查看 Icon-iconName
+   * 图标名字，可选类型请查看 Icon-iconName
    */
-  iconName?: iconType;
+  iconName?: iconType | string;
+  /**
+   * 是否为第三方图标
+   */
+  other?: boolean;
 }
 
 export interface IconProps extends IProps {}

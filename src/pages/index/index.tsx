@@ -8,6 +8,7 @@ import ClTitleBar from '../../components/titleBar';
 import ClFlex from '../../components/flex';
 import ClButton from '../../components/button';
 import ClTip from '../../components/tip';
+import ClIcon from '../../components/icon'
 
 export default class Index extends Taro.Component {
   render() {
@@ -34,6 +35,7 @@ export default class Index extends Taro.Component {
     return (
       <ClLayout>
       <ClTitleBar title='方向' type='icon' />
+        <ClIcon iconName='iconfont icon-RectangleCopy' other/>
       <ClLayout padding='normal' paddingDirection='around'>
         <ClFlex justify='between'>
           <ClTip message='我是上方提示' direction='top'>
