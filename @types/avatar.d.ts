@@ -9,7 +9,7 @@ import {
 } from './baseType';
 
 export type TShape = 'radius' | 'round';
-export type TSize = normalSizeType;
+export type TSize = normalSizeType | number;
 export type TBgColor = bgColorType | bgColorMoreType | lightBgColorType;
 export type THeaderArray = {
   /**
@@ -56,7 +56,7 @@ export interface IProps {
    */
   shape?: TShape;
   /**
-   * 提供头像组件大小设置
+   * 提供头像组件大小设置，有默认大小，亦可自定义大小
    *
    * 默认值 `normal`
    *

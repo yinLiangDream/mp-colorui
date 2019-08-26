@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/style/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/avatar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/avatar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/avatar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icon/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/model.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +60,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
@@ -114,10 +118,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.publish" />
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.publish" />
       </list>
     </recent_temporary>
@@ -165,7 +169,7 @@
       <workItem from="1566294454563" duration="318000" />
       <workItem from="1566441486081" duration="144000" />
       <workItem from="1566526353014" duration="2665000" />
-      <workItem from="1566747726787" duration="3590000" />
+      <workItem from="1566747726787" duration="7940000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -314,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566811721585</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="BUG&#10;修复无法自定义主题颜色问题">
+      <created>1566811804429</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1566811804429</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -381,7 +392,8 @@
     <MESSAGE value="COMPONENT&#10;- 新增 FloatButton 浮动按钮组件" />
     <MESSAGE value="FEATURE&#10;ICON 组件支持第三方组件库" />
     <MESSAGE value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
+    <MESSAGE value="BUG&#10;修复无法自定义主题颜色问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复无法自定义主题颜色问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

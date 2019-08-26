@@ -83,3 +83,13 @@ export const SOLID_LIST = {
   'bold-bottom': `${solids}-bottom`
 };
 
+export const pxMap = {
+  xsmall: 40,
+  small: 48,
+  normal: 56,
+  large: 64,
+  xlarge: 72,
+  xxlarge: 88,
+  slarge: 160,
+  xslarge: 240
+}
