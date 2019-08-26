@@ -2354,8 +2354,21 @@ scroll-view {
   &-treble {
     flex: 3;
   }
-  &-direction {
+
+  &-direction-column {
     flex-direction: column;
+  }
+
+  &-direction-row {
+    flex-direction: row;
+  }
+
+  &-direction-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &-direction-row-reverse {
+    flex-direction: row-reverse;
   }
   &-wrap {
     flex-wrap: wrap;

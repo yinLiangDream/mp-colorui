@@ -11,9 +11,10 @@ export default function ClFlex(props: IProps) {
   const warpClassName = props.wrap ? 'flex-wrap' : '';
   const justifyClassName = props.justify ? `justify-${props.justify}` : '';
   const alignClassName = props.align ? `align-${props.align}` : '';
+  const directionClassName = props.direction ? `flex-direction-${props.direction}` : ''
   const flexComponent = (
     <View
-      className={`flex ${warpClassName} ${justifyClassName} ${alignClassName}`}
+      className={`flex ${warpClassName} ${justifyClassName} ${alignClassName} ${directionClassName}`}
     >
       {this.props.children}
     </View>
@@ -28,5 +29,6 @@ ClFlex.options = {
 ClFlex.defaultProps = {
   justify: 'start',
   align: 'start',
+  direction: 'row',
   wrap: false
-};
+} as IProps;

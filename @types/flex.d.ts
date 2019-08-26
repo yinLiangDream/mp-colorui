@@ -1,4 +1,4 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
 
 export interface IProps {
   /**
@@ -25,9 +25,17 @@ export interface IProps {
    * 可选类型 `true`, `false`
    */
   wrap?: boolean;
+  /**
+   * 水平还是垂直布局
+   *
+   * 默认值 `row`
+   *
+   * 可选类型 `row` | `column` | `row-reverse` | `column-reverse`
+   */
+  direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
   children?: any;
 }
 
-declare const Flex: ComponentClass<IProps>;
+declare const Flex: ComponentClass<IProps>
 
-export default Flex;
+export default Flex
