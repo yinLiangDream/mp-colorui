@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +166,7 @@
       <workItem from="1566294454563" duration="318000" />
       <workItem from="1566441486081" duration="144000" />
       <workItem from="1566526353014" duration="2665000" />
-      <workItem from="1566747726787" duration="11009000" />
+      <workItem from="1566747726787" duration="11826000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -337,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566826507750</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题">
+      <created>1566836568752</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1566836568752</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -407,7 +413,8 @@
     <MESSAGE value="BUG&#10;修复无法自定义主题颜色问题" />
     <MESSAGE value="FEATURE&#10;组件 Avatar 可自定义大小" />
     <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
+    <MESSAGE value="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
