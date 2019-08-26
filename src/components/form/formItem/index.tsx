@@ -24,12 +24,17 @@ export default class ClFormItem extends Taro.Component<IProps> {
     // const rulesData = rules || {}
     const rulesData = context.inject('rules') || {}
     const value = modelData[prop || ''] || ''
-    const ruleFunc = rulesData[prop || ''] || function () {}
+    const ruleFunc = rulesData[prop || ''] || function () {
+      return true
+    }
     let message = ''
     const callback = (str: string = '') => {
       message = str
     };
-    const flag = ruleFunc(defaultRules, value, callback);
+    let flag = ruleFunc(defaultRules, value, callback)
+    useEffect(() => {
+      flag = true
+    }, [])
     useEffect(() => {
       setErr(!flag)
     }, [flag])

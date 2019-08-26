@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/flex.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/flex.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/flex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/flex/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,7 +167,7 @@
       <workItem from="1566294454563" duration="318000" />
       <workItem from="1566441486081" duration="144000" />
       <workItem from="1566526353014" duration="2665000" />
-      <workItem from="1566747726787" duration="8705000" />
+      <workItem from="1566747726787" duration="11009000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -331,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566825540444</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向">
+      <created>1566826507750</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1566826507750</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -400,7 +406,8 @@
     <MESSAGE value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
     <MESSAGE value="BUG&#10;修复无法自定义主题颜色问题" />
     <MESSAGE value="FEATURE&#10;组件 Avatar 可自定义大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE&#10;组件 Avatar 可自定义大小" />
+    <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

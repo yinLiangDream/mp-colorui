@@ -2355,6 +2355,9 @@ scroll-view {
     flex: 3;
   }
 
+  &-direction {
+    flex-direction: column;
+  }
   &-direction-column {
     flex-direction: column;
   }
