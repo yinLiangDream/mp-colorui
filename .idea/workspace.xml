@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="FEATURE&#10;ICON 组件支持第三方组件库">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/menuList.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/menuList.d.ts" afterDir="false" />
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/style/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/vars.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +165,7 @@
       <workItem from="1566294454563" duration="318000" />
       <workItem from="1566441486081" duration="144000" />
       <workItem from="1566526353014" duration="2665000" />
-      <workItem from="1566747726787" duration="3504000" />
+      <workItem from="1566747726787" duration="3590000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -308,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566529479046</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题">
+      <created>1566811721585</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1566811721585</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -374,7 +380,8 @@
     <MESSAGE value="API&#10;- Animation 组件&#10;- - 新增 onAnimationStart、onAnimationEnd 事件&#10;- Tabs 组件&#10;- - 新增 tabs 属性下的 id 属性&#10;- - 新增 touchMove 可滑动属性&#10;- VerticalTab 组件&#10;- - 新增 backTop 属性&#10;BUG&#10;- Card 组件&#10;- - 修复插入 children 内容时的异常提醒（不影响使用）" />
     <MESSAGE value="COMPONENT&#10;- 新增 FloatButton 浮动按钮组件" />
     <MESSAGE value="FEATURE&#10;ICON 组件支持第三方组件库" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE&#10;ICON 组件支持第三方组件库" />
+    <MESSAGE value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
