@@ -68,42 +68,10 @@ export default class Index extends Taro.Component {
     const { model } = this.state;
     return (
       <ClLayout>
-        <ClTitleBar title='实时校验&&失焦校验' textColor='black' type='icon' />
         <ClCard>
-          <ClForm ref={this.refFunc} model={model} rules={rules}>
-            <ClFormItem prop='name' required>
-              <ClInput
-                title='姓名（失焦）'
-                titleWidth={200}
-                value={model.name}
-                onBlur={value => {
-                  this.setState({
-                    model: {
-                      ...this.state.model,
-                      name: value
-                    }
-                  });
-                }}
-              />
-            </ClFormItem>
-            <ClFormItem prop='phone' required>
-              <ClInput
-                pattern='material'
-                title='手机号码（实时）'
-                value={model.phone}
-                onChange={value => {
-                  this.setState({
-                    model: {
-                      ...this.state.model,
-                      phone: value
-                    }
-                  });
-                }}
-              />
-            </ClFormItem>
-          </ClForm>
+          <ClInput title='标准形式' placeholder='请输入姓名' />
+          <ClInput title='material 形式' placeholder='请输入年龄' type='number' pattern='material' />
         </ClCard>
-        <ClButton text='校验' shape='round' openType='getPhoneNumber' long disabled onClick={this.handleSubmit.bind(this)} />
       </ClLayout>
     );
   }

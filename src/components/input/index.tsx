@@ -74,7 +74,7 @@ function ClInput(props: IProps) {
     <View className='title' style={{width: titleWidth}}>{title}</View>
   )
   return (
-    <View className={`cu-form-group ${focus ? 'focus' : 'blur'}`}>
+    <View className={`cu-form-group ${focus ? 'focus' : 'blur'}`} style={{position: 'relative'}}>
       {title && props.pattern === 'normal' ? normalTitle : ''}
       {title && props.pattern === 'material' ? renderMaterialTitle : ''}
       <Input
