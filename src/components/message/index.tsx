@@ -34,7 +34,7 @@ export default function ClMessage(props: IProps) {
           {
             size: true
           },
-          data => {
+          (data: any) => {
             resolve(data.height);
           }
         )
@@ -42,7 +42,7 @@ export default function ClMessage(props: IProps) {
     });
   };
   const clickClose = async () => {
-    const height = await caculateHeight();
+    const height: any = await caculateHeight();
     clearTimeout(timer);
     timer = null;
     setContentHeight(height);
@@ -51,7 +51,7 @@ export default function ClMessage(props: IProps) {
   };
   useEffect(async () => {
     if (!showMessage) {
-      const height = await caculateHeight();
+      const height: any = await caculateHeight();
       tempHeight = height;
       setContentHeight(tempHeight);
       setShowMessage(false);
@@ -102,7 +102,7 @@ export default function ClMessage(props: IProps) {
       }}
     >
       <View className='cu-cl-message__conetent' id='content'>
-        <ClCard bgColor={mapColor[tempType] || 'light-grey'}>
+        <ClCard bgColor={mapColor[tempType] || 'light-grey'} shadow={false}>
           <ClFlex justify='between' align='center'>
             <ClText text={tempMessage} />
             <View

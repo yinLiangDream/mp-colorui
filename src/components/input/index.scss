@@ -1,0 +1,15 @@
+.cu-form-group {
+    &.focus {
+      background-color: rgba(0, 0, 0, 0.1)
+    }
+    .materialFocus {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 16px;
+      transition: all 0.2s ease;
+    }
+    .materialBlur {
+      position: relative;
+    }
+}

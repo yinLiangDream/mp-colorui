@@ -16,25 +16,28 @@ export default class ClFormItem extends Taro.Component<IProps> {
   render() {
     const [tip, setTip] = useState('')
     const [err, setErr] = useState(false)
+    const [firstInit, setFirstInit] = useState(true)
+    const [flag, setFlag] = useState(true)
+    const [message, setMessage] = useState('')
     const { prop, required } = this.props
-    // const { model, rules } = useContext(FormContext)
-    // console.log(model, rules, FormContext)
-    // const modelData = model || {}
     const modelData = context.inject('model') || {};
-    // const rulesData = rules || {}
     const rulesData = context.inject('rules') || {}
     const value = modelData[prop || ''] || ''
     const ruleFunc = rulesData[prop || ''] || function () {
       return true
     }
-    let message = ''
+    // let message = ''
     const callback = (str: string = '') => {
-      message = str
+      setMessage(str)
+      // message = str
     };
-    let flag = ruleFunc(defaultRules, value, callback)
+    // let flag = true;
     useEffect(() => {
-      flag = true
+      if (firstInit) setFirstInit(false)
     }, [])
+    useEffect(() => {
+      setFlag(firstInit ? true : ruleFunc(defaultRules, value, callback))
+    }, [modelData])
     useEffect(() => {
       setErr(!flag)
     }, [flag])
