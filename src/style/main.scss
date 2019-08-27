@@ -327,19 +327,24 @@ button.icon.lg {
       opacity: 0.6;
     }
   }
-  &.button-hover {
+  &.button-hover:not([class*="disabled"]) {
     transform: translate(1px, 1px);
   }
-  &:active {
+  &:active:not([class*="disabled"]) {
     transform: translate(1px, 1px);
   }
   &.block {
     display: flex;
   }
-  &[disabled] {
+  &[disabled],
+  &.disabled {
     opacity: 0.6;
     color: $white;
   }
+}
+button[disabled] {
+  opacity: 0.6;
+  color: $white;
 }
 
 /* ==================

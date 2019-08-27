@@ -73,7 +73,6 @@ function ClInput(props: IProps) {
   const normalTitle = (
     <View className='title' style={{width: titleWidth}}>{title}</View>
   )
-  console.log(focus)
   return (
     <View className={`cu-form-group ${focus ? 'focus' : 'blur'}`}>
       {title && props.pattern === 'normal' ? normalTitle : ''}
