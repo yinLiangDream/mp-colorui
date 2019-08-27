@@ -70,7 +70,7 @@ export default class Index extends Taro.Component {
       <ClLayout>
         <ClCard>
           <ClInput title='标准形式' placeholder='请输入姓名' />
-          <ClInput title='material 形式' placeholder='请输入年龄' type='number' pattern='material' />
+          <ClInput title='material 形式' placeholder='请输入年龄' type='idcard' pattern='material' />
         </ClCard>
       </ClLayout>
     );

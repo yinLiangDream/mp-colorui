@@ -7,11 +7,11 @@ import { IProps } from '../../../@types/input';
 import './index.scss'
 
 function ClInput(props: IProps) {
-  let tempInput = '';
   const [focus, setFocus] = useState(false)
   const [normalType, setNormalType] = useState()
+  const [tempInput, setTempInput] = useState('')
   const onChange = (event: any) => {
-    tempInput = event.detail.value;
+    setTempInput(event.detail.value)
     props.onChange && props.onChange(event.detail.value);
   };
   const onBlur = (event: any) => {
