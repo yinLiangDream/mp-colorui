@@ -22,7 +22,6 @@ export default class Index extends Taro.Component {
     this.ref = node;
   };
   handleSubmit() {
-    
   }
   state = {
     model: {
@@ -75,6 +74,7 @@ export default class Index extends Taro.Component {
             <ClFormItem prop='name' required>
               <ClInput
                 title='姓名（失焦）'
+                titleWidth={200}
                 value={model.name}
                 onBlur={value => {
                   this.setState({
@@ -88,6 +88,7 @@ export default class Index extends Taro.Component {
             </ClFormItem>
             <ClFormItem prop='phone' required>
               <ClInput
+                pattern='material'
                 title='手机号码（实时）'
                 value={model.phone}
                 onChange={value => {

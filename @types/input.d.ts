@@ -24,6 +24,24 @@ export type TOnImageClick = (e: any) => void;
 
 export interface IProps {
   /**
+   * 标题宽度
+   *
+   * 默认 `none`
+   */
+  titleWidth?: number | 'auto'
+  /**
+   * 对齐方式
+   *
+   * 默认值 `none`
+   */
+  align?: 'left' | 'right' | 'center' | 'none'
+  /**
+   * 表现形式
+   *
+   * 默认值 `normal`
+   */
+  pattern?: 'normal' | 'material'
+  /**
    * 输入框默认值
    */
   value?: TValue;
@@ -103,7 +121,7 @@ export interface IProps {
   renderCustomRight?: Element;
 }
 
-export interface InputProps extends IProps {}
+export interface InputProps extends IProps { }
 declare const Input: ComponentClass<InputProps>;
 
 export default Input;
