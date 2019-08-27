@@ -19,10 +19,10 @@ export default class ClCheckbox_h5 extends Component<IProps, IState> {
     title: ''
   };
   state: IState = {
-    list: this.props.checkboxGroup
+    list: this.props.checkboxGroup || []
   };
   change() {
-    const checkboxGroup = this.props.checkboxGroup || [];
+    const checkboxGroup = this.state.list || [];
     const arr = checkboxGroup
       .filter(item => item.checked)
       .map(item => item.value || '');
@@ -35,8 +35,8 @@ export default class ClCheckbox_h5 extends Component<IProps, IState> {
         className={`h5-checkbox-input ${classname} ${check ? 'checked' : ''}`}
         onClick={() => {
           setCheck(!check);
-          const checkList = this.props.checkboxGroup || [];
-          const checkItem = checkList.find(item => item.value === value);
+          const list: any[] = this.state.list
+          const checkItem = list.find(item => item.value === value);
           if (checkItem) checkItem.checked = !check;
           this.change();
         }}

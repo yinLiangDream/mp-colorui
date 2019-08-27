@@ -7,12 +7,30 @@ import { IProps } from '../../../@types/input';
 import './index.scss'
 
 function ClInput(props: IProps) {
-  let tempInput = '';
   const [focus, setFocus] = useState(false)
   const [normalType, setNormalType] = useState()
+  const [tempInput, setTempInput] = useState('')
+  const [initValue, setInitValue] = useState(props.value)
+
   const onChange = (event: any) => {
-    tempInput = event.detail.value;
-    props.onChange && props.onChange(event.detail.value);
+    let input = event.detail.value
+    setInitValue(input)
+    if (props.type === 'number' && Taro.ENV_TYPE.WEB === Taro.getEnv()) {
+      if (!isNaN(event.data-0)) {
+        input = tempInput + parseInt(event.data)
+      } else {
+        input = tempInput
+      }
+    } else if (props.type === 'number') {
+      input = parseInt(event.detail.value) || ''
+      // console.log(input)
+    }
+    console.log(input)
+    setTempInput(input)
+    setTimeout(() => {
+      setInitValue(input)
+    })
+    props.onChange && props.onChange(input);
   };
   const onBlur = (event: any) => {
     setFocus(false)
@@ -65,7 +83,8 @@ function ClInput(props: IProps) {
     disabled,
     renderCustomRight
   } = props;
-  value = tempInput || value
+  // value = tempInput || value || ''
+  // console.log(tempInput, value)
   const titleWidth = props.titleWidth === 'auto' ? 'auto' : pxTransform(props.titleWidth || 200)
   const renderMaterialTitle = (
     <View className={`${focus ? 'materialFocus' : 'materialBlur'}`} style={{width: titleWidth}}>{title}</View>
@@ -79,7 +98,7 @@ function ClInput(props: IProps) {
       {title && props.pattern === 'material' ? renderMaterialTitle : ''}
       <Input
         placeholder={placeholder}
-        value={value}
+        value={initValue}
         onInput={onChange}
         onBlur={onBlur}
         onFocus={onFocus}
@@ -88,7 +107,7 @@ function ClInput(props: IProps) {
         password={type === 'password'}
         maxLength={maxLength || -1}
         disabled={disabled}
-        style={{ textAlign: props.pattern }}
+        style={{ textAlign: props.align }}
       />
       {iconComponent}
       {buttonComponent}
