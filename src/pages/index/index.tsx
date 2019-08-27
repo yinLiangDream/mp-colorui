@@ -103,7 +103,7 @@ export default class Index extends Taro.Component {
             </ClFormItem>
           </ClForm>
         </ClCard>
-        <ClButton text='校验' shape='round' long disabled onClick={this.handleSubmit.bind(this)} />
+        <ClButton text='校验' shape='round' openType='getPhoneNumber' long disabled onClick={this.handleSubmit.bind(this)} />
       </ClLayout>
     );
   }

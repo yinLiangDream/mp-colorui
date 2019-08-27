@@ -61,7 +61,7 @@ export default class ClButton extends Component<IProps, IState> {
         className={`${buttonClassName} ${disabledClassName ? 'disabled' : ''}`}
         // disabled={disabledClassName}
         onClick={this.onClick.bind(this)}
-        openType={this.props.openType}
+        openType={this.props.disabled ? undefined : this.props.openType}
         onOpenSetting={this.onOpenSetting}
         onGetUserInfo={this.onGetUserInfo}
         onContact={this.onContact}
