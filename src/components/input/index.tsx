@@ -88,7 +88,7 @@ function ClInput(props: IProps) {
         password={type === 'password'}
         maxLength={maxLength || -1}
         disabled={disabled}
-        style={{ textAlign: props.pattern }}
+        style={{ textAlign: props.align }}
       />
       {iconComponent}
       {buttonComponent}
