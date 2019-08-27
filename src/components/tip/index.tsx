@@ -77,6 +77,7 @@ export default function ClTip(props: IProps) {
                 res.width / 2}px) rotate(45deg) translateY(30%)`;
             }
           } else if (props.direction === 'bottom') {
+            console.log(res, messageData)
             if (res.top > bottomDistance && bottomDistance < messageData.height)
               props.direction = 'bottom';
             customDirection = [{ direction: 'left', long: 0 }];
