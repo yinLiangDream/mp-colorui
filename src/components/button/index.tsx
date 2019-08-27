@@ -23,22 +23,22 @@ export default class ClButton extends Component<IProps, IState> {
     openType: undefined
   } as IProps;
   onClick(e: any) {
-    this.props.onClick && this.props.onClick(e);
+    !this.props.disabled && this.props.onClick && this.props.onClick(e);
   }
   onOpenSetting(e: any) {
-    this.props.onOpenSetting && this.props.onOpenSetting(e);
+    !this.props.disabled &&this.props.onOpenSetting && this.props.onOpenSetting(e);
   }
   onGetUserInfo(e: any) {
-    this.props.onGetUserInfo && this.props.onGetUserInfo(e);
+    !this.props.disabled &&this.props.onGetUserInfo && this.props.onGetUserInfo(e);
   }
   onContact(e: any) {
-    this.props.onContact && this.props.onContact(e);
+    !this.props.disabled &&this.props.onContact && this.props.onContact(e);
   }
   onGetPhoneNumber(e: any) {
-    this.props.onGetPhoneNumber && this.props.onGetPhoneNumber(e);
+    !this.props.disabled &&this.props.onGetPhoneNumber && this.props.onGetPhoneNumber(e);
   }
   onError(e: any) {
-    this.props.onError && this.props.onError(e);
+    !this.props.disabled &&this.props.onError && this.props.onError(e);
   }
   render() {
     const shapeClassName = this.props.shape || 'radius';
@@ -58,8 +58,8 @@ export default class ClButton extends Component<IProps, IState> {
     } ${shadowSizeName}`;
     const normalButton = (
       <Button
-        className={buttonClassName}
-        disabled={disabledClassName}
+        className={`${buttonClassName} ${disabledClassName ? 'disabled' : ''}`}
+        // disabled={disabledClassName}
         onClick={this.onClick.bind(this)}
         openType={this.props.openType}
         onOpenSetting={this.onOpenSetting}
