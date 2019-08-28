@@ -1,7 +1,7 @@
 import { ComponentClass } from 'react';
 
 export interface IProps {
-  type: 'fade' | 'scale-up' | 'scale-down' | 'slide-top' | 'slide-bottom' | 'slide-left' | 'slide-right' | 'shake';
+  type: 'fade' | 'scale-up' | 'scale-down' | 'slide-top' | 'slide-bottom' | 'slide-left' | 'slide-right' | 'shake' | 'none';
   reverse?: boolean;
   children?: any;
   delay?: number;
