@@ -15,20 +15,46 @@ import ClInput from '../../components/input'
 import ClCheckbox from '../../components/checkbox';
 import ClVerticalTabCell from '../../components/verticalTab/verticalTabCell';
 import ClVerticalTab from '../../components/verticalTab';
+import ClImagePicker from '../../components/imagePicker';
 
 export default class Index extends Taro.Component {
+  state = {
+    imgList: []
+  }
+  success(list = []) {
+    this.setState({
+      imgList: list
+    })
+  }
   render() {
-    const tabs = [...Array(50)].map((key, index) => ({name: 'tab-' + index, id: 'id-' + index}))
+    // const tabs = [...Array(50)].map((key, index) => ({name: 'tab-' + index, id: 'id-' + index}))
     return (
-      <ClVerticalTab tabs={tabs} height={1000}>
       <View>
-        {tabs.map((item) => (
-          <View id={item.id} key={item.name}>
-            <ClVerticalTabCell>{item.name}</ClVerticalTabCell>
-          </View>
-        ))}
+        <ClImagePicker
+          chooseImgObj={{
+            success: this.success.bind(this)
+          }}
+          imgList={this.state.imgList} />
+        <ClButton shape='round' onClick={() => {
+          console.log(this.state)
+          this.setState({
+            imgList: this.state.imgList.map((item: any) => {
+              item.status = 'loading'
+              return item
+            })
+          })
+          this.state.imgList.forEach((item: any, index: number) => {
+            item.status = 'loading'
+            setTimeout(() => {
+              item.status = 'success'
+              if (index === 1) item.status = 'fail'
+              this.setState({
+                imgList: this.state.imgList
+              })
+            }, (index + 1) * 1000)
+          })
+        }}>开始上传</ClButton>
       </View>
-    </ClVerticalTab>
     );
   }
 }
