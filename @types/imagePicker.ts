@@ -26,16 +26,21 @@ export type TChooseImgObj = {
   /**
    * 选择成功回调函数
    */
-  success?: () => void;
+  success?: (list?: imgList) => void;
   /**
    * 选择失败回调函数
    */
-  fail?: () => void;
+  fail?: (list?: imgList) => void;
   /**
    * 接口调用结束的回调函数（调用成功、失败都会执行）
    */
-  complete?: () => void;
+  complete?: (list?: imgList) => void;
 };
+
+export type imgList = {
+  url: string,
+  status: 'success' | 'fail' | 'loading' | 'none'
+}[]
 
 export type TBeforeDel = (index: number) => boolean;
 
@@ -49,7 +54,7 @@ export interface IProps {
   /**
    * 图片列表
    */
-  imgList?: string[];
+  imgList?: imgList;
   /**
    * 删除之前确认函数
    */
