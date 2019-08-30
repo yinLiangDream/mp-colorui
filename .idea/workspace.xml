@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/tip/h5/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tip/h5/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tip/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tip/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +25,7 @@
         <option value="TypeScript File" />
         <option value="Sass File" />
         <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -49,7 +53,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.introduce.parameter.add.jsdoc" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -172,6 +176,7 @@
       <workItem from="1566747726787" duration="11826000" />
       <workItem from="1567065118785" duration="41000" />
       <workItem from="1567065172994" duration="13213000" />
+      <workItem from="1567149645778" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -355,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567072959866</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题">
+      <created>1567133684946</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1567133684946</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -402,7 +414,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="shopBar 组件完成" />
     <MESSAGE value="loading 组件 bug 修复" />
     <MESSAGE value="titleBar 组件完成" />
     <MESSAGE value="navBar 组件完成" />
@@ -427,7 +438,8 @@
     <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
     <MESSAGE value="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题" />
     <MESSAGE value="更新版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新版本" />
+    <MESSAGE value="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
