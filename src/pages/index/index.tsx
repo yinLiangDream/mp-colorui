@@ -13,112 +13,48 @@ import ClForm from '../../components/form'
 import ClFormItem from '../../components/form/formItem'
 import ClInput from '../../components/input'
 import ClCheckbox from '../../components/checkbox';
+import ClVerticalTabCell from '../../components/verticalTab/verticalTabCell';
+import ClVerticalTab from '../../components/verticalTab';
+import ClImagePicker from '../../components/imagePicker';
 
 export default class Index extends Taro.Component {
-  static config = {
-    navigationBarTitleText: 'Form 表单'
-  };
-  ref = null;
-  refFunc = node => {
-    this.ref = node;
-  };
-  handleSubmit() {
-  }
   state = {
-    model: {
-      name: '我是名字',
-      phone: '188',
-      hobby: []
-    },
-    message: '',
-    showMessage: false,
-    messageType: 'info'
-  };
+    imgList: []
+  }
+  success(list = []) {
+    this.setState({
+      imgList: list
+    })
+  }
   render() {
-    const rules = {
-      name(rule, value, callback) {
-        if (!rule.required(value)) {
-          callback('姓名不能为空');
-          return false;
-        }
-        if (value.length > 5) {
-          callback('姓名长度不能超过 5');
-          return false;
-        }
-        return true;
-      },
-      phone(rule, value, callback) {
-        if (!rule.required(value)) {
-          callback('手机号码不能为空');
-          return false;
-        }
-        if (!rule.phone(value)) {
-          callback('手机号码不正确');
-          return false;
-        }
-        return true;
-      },
-      hobby(rule, value, callback) {
-        if (value.length < 2) {
-          callback('至少选择 2 项')
-          return false
-        }
-        return true
-      }
-    };
-    const { model } = this.state;
+    // const tabs = [...Array(50)].map((key, index) => ({name: 'tab-' + index, id: 'id-' + index}))
     return (
-      <ClLayout>
-        <ClTitleBar title='方向' type='icon' />
-        <ClLayout padding='normal' paddingDirection='around'>
-          <ClFlex justify='between'>
-            <ClTip message='我是上方提示' direction='top'>
-              <ClButton text='上方' shape='round' />
-            </ClTip>
-            <ClTip message='我是右方提示' direction='right'>
-              <ClButton text='右方' shape='round' />
-            </ClTip>
-            <ClTip message='我是左方提示' direction='left'>
-              <ClButton text='左方' shape='round' />
-            </ClTip>
-            <ClTip message='我是下方提示' direction='bottom'>
-              <ClButton text='下方' shape='round' />
-            </ClTip>
-          </ClFlex>
-        </ClLayout>
-        <ClForm rules={rules} model={model}>
-          <ClFormItem prop='hobby'>
-            <ClCheckbox type='form' shape='round' title='选择爱好' checkboxGroup={[
-              {
-                key: '下棋',
-                value: 'xiaqi'
-              },
-              {
-                key: '画画',
-                value: 'huahua'
-              },
-              {
-                key: '唱歌',
-                value: 'singsong'
-              }
-            ]}
-              onChange={value => {
-                console.log(value)
-                this.setState({
-                  model: {
-                    ...model,
-                    hobby: value
-                  }
-                })
-              }}
-            />
-          </ClFormItem>
-        </ClForm>
-        <ClCard>
-          <ClInput title='标准形式' placeholder='请输入姓名' />
-          <ClInput title='material 形式' placeholder='请输入年龄' type='number' pattern='material' />
-        </ClCard>
-      </ClLayout>
+      <View>
+        <ClImagePicker
+          chooseImgObj={{
+            success: this.success.bind(this)
+          }}
+          imgList={this.state.imgList} />
+        <ClButton shape='round' onClick={() => {
+          console.log(this.state)
+          this.setState({
+            imgList: this.state.imgList.map((item: any) => {
+              item.status = 'loading'
+              return item
+            })
+          })
+          this.state.imgList.forEach((item: any, index: number) => {
+            item.status = 'loading'
+            setTimeout(() => {
+              item.status = 'success'
+              if (index === 1) item.status = 'fail'
+              this.setState({
+                imgList: this.state.imgList
+              })
+            }, (index + 1) * 1000)
+          })
+        }}>开始上传</ClButton>
+      </View>
     );
   }
 }
