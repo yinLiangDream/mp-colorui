@@ -53,20 +53,20 @@ export default function ClImagePicker(props: IProps) {
     }
   };
 
-  const errComponentTip = (
-    <View className='cu-tag' style={{backgroundColor: 'rgba(355, 355, 355, 0.8)'}}>
+  const renderErrComponentTip = (show: boolean) => (
+    <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${show ? '' : 'none'}` }}>
       <ClIcon iconName='warnfill' size='xsmall' color='red' />
     </View>
   )
 
-  const successComponentTip = (
-    <View className='cu-tag' style={{backgroundColor: 'rgba(355, 355, 355, 0.8)'}}>
+  const renderSuccessComponentTip = (show: boolean) => (
+    <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${show ? '' : 'none'}` }}>
       <ClIcon iconName='roundcheckfill' size='xsmall' color='olive' />
     </View>
   )
 
-  const loadingComponentTip = (
-    <View className='cu-tag' style={{backgroundColor: 'rgba(355, 355, 355, 0.8)'}}>
+  const renderLoadingComponentTip = (show: boolean) => (
+    <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${show ? '' : 'none'}` }}>
       <View className='imagePicker-rotate-360'>
         <ClIcon iconName='loading' size='xsmall' color='blue' />
       </View>
@@ -94,9 +94,9 @@ export default function ClImagePicker(props: IProps) {
         >
           <ClIcon iconName='close' color='black' size='xsmall' />
         </View> : ''}
-      {item.status === 'success' ? successComponentTip : ''}
-      {item.status === 'fail' ? errComponentTip : ''}
-      {item.status === 'loading' ? loadingComponentTip : ''}
+      {renderSuccessComponentTip(item.status === 'success')}
+      {renderErrComponentTip(item.status === 'fail')}
+      {renderLoadingComponentTip(item.status === 'loading')}
     </View>
   ));
 

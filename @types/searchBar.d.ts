@@ -64,6 +64,26 @@ export interface IProps {
    * 键盘输入事件， 参数 value 为输入的内容
    */
   onInput?: (value: string) => void;
+  /**
+   * 是否显示搜索结果
+   */
+  showResult?: boolean;
+  /**
+   * 是否显示搜索结果加载页面
+   */
+  showLoading?: boolean;
+  /**
+   * 搜索结果列表
+   */
+  result?: {
+    title?: string;
+    desc?: string;
+  }[];
+  /**
+   * 点击搜索结果事件
+   * @param {number} index
+   */
+  onTouchResult?: (index: number) => void
 }
 
 export interface SearchBarProps extends IProps {}

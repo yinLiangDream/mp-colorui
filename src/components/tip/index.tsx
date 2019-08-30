@@ -6,6 +6,7 @@ import { screenPercent } from '../utils';
 import './index.scss';
 import { BG_COLOR_LIST } from '../utils/model';
 import ClText from '../text';
+import ClTip_H5 from './h5'
 
 export default function ClTip(props: IProps) {
   const [showTip, setShowTip] = useState(props.show);
@@ -17,6 +18,7 @@ export default function ClTip(props: IProps) {
     transform: '',
     arrowTransform: ''
   });
+  const isH5 = Taro.getEnv() === Taro.ENV_TYPE.WEB
   const resver2Zero = (params: { direction: any; long: number }[]) => {
     distance.top = 'auto';
     distance.left = 'auto';
@@ -28,6 +30,7 @@ export default function ClTip(props: IProps) {
     return distance;
   };
   useEffect(async () => {
+    if (Taro.ENV_TYPE.WEB === Taro.getEnv()) return
     const query = Taro.createSelectorQuery().in(this.$scope);
     const res: any = await new Promise(resolve => {
       query
@@ -148,70 +151,74 @@ export default function ClTip(props: IProps) {
       )
       .exec();
   }, [props.width, props.direction, showTip]);
-  return (
+  const clTip = (<View
+    id='content'
+    onClick={() => {
+      if (props.mode === 'click') {
+        const show = !showTip;
+        setShowTip(show);
+        props.onChange && props.onChange(show);
+      }
+    }}
+    onTouchStart={() => {
+      if (props.mode === 'touch') {
+        const show = !showTip;
+        setShowTip(show);
+        props.onChange && props.onChange(show);
+      }
+    }}
+    onTouchEnd={() => {
+      if (props.mode === 'touch') {
+        const show = !showTip;
+        setShowTip(show);
+        props.onChange && props.onChange(show);
+      }
+    }}
+    className={`cl-tip ${showTip ? 'cl-tip__showZindex' : ''}`}
+    style={{ position: 'relative', display: 'inline-block' }}
+  >
     <View
-      id="content"
-      onClick={() => {
-        if (props.mode === 'click') {
-          const show = !showTip;
-          setShowTip(show);
-          props.onChange && props.onChange(show);
-        }
+      id="message"
+      className={`cl-tip__content  shadow ${showTip ? 'show' : 'hide'}`}
+      style={{
+        width: `${showTip ? props.width : 0}px`,
+        left: distance.left,
+        right: distance.right,
+        top: distance.top,
+        bottom: distance.bottom,
+        transform: distance.transform
       }}
-      onTouchStart={() => {
-        if (props.mode === 'touch') {
-          const show = !showTip;
-          setShowTip(show);
-          props.onChange && props.onChange(show);
-        }
-      }}
-      onTouchEnd={() => {
-        if (props.mode === 'touch') {
-          const show = !showTip;
-          setShowTip(show);
-          props.onChange && props.onChange(show);
-        }
-      }}
-      className={`cl-tip ${showTip ? 'cl-tip__showZindex' : ''}`}
-      style={{ position: 'relative', display: 'inline-block' }}
     >
       <View
-        id="message"
-        className={`cl-tip__content  shadow ${showTip ? 'show' : 'hide'}`}
+        className={`cl-tip__arrow ${props.direction} ${
+          BG_COLOR_LIST[props.bgColor || 'white']
+        } ${showTip ? 'showArrow' : 'hideArrow'}`}
         style={{
-          width: `${showTip ? props.width : 0}px`,
           left: distance.left,
           right: distance.right,
           top: distance.top,
           bottom: distance.bottom,
-          transform: distance.transform
+          transform: distance.arrowTransform
         }}
-      >
-        <View
-          className={`cl-tip__arrow ${props.direction} ${
-            BG_COLOR_LIST[props.bgColor || 'white']
-            } ${showTip ? 'showArrow' : 'hideArrow'}`}
-          style={{
-            left: distance.left,
-            right: distance.right,
-            top: distance.top,
-            bottom: distance.bottom,
-            transform: distance.arrowTransform
-          }}
-        />
-        <View className={`cl-tip__message ${
-          BG_COLOR_LIST[props.bgColor || 'white']
-          }`}>
-          <View style={{ width: `${props.width}px`, padding: '10px' }}>
-            <ClText text={props.message} />
-            <View onClick={(e: any) => {
-              e.stopPropagation();
-            }}>{this.props.renderMessage}</View>
-          </View>
+      />
+      <View className={`cl-tip__message ${
+        BG_COLOR_LIST[props.bgColor || 'white']
+      }`}>
+        <View style={{ width: `${props.width}px`, padding: '10px' }}>
+          <ClText text={props.message} />
+          <View onClick={(e: any) => {
+            e.stopPropagation();
+          }}>{this.props.renderMessage}</View>
         </View>
       </View>
-      {this.props.children}
     </View>
+    {this.props.children}
+  </View>)
+  return (
+    <View>
+      {isH5 ? <ClTip_H5 {...props} /> : clTip}
+    </View>
+
   );
 }
 
