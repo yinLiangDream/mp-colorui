@@ -2,7 +2,6 @@ import { Button, Input, ScrollView, Text, View } from '@tarojs/components'
 import Taro, { Component, pxTransform } from '@tarojs/taro'
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model'
 import { IProps } from '../../../@types/searchBar'
-import ClMenuList from '../menuList'
 import ClCard from '../card'
 import ClSearchResult from './searchReault'
 
@@ -10,8 +9,6 @@ interface IState {
   showSearch?: boolean;
   value?: string;
 }
-
-let value = ''
 
 export default class ClSearchBar extends Component<IProps, IState> {
   static options = {
@@ -33,7 +30,8 @@ export default class ClSearchBar extends Component<IProps, IState> {
     onTouchResult: () => {}
   }
   state: IState = {
-    showSearch: false
+    showSearch: false,
+    value: ''
   }
 
   onIconClick (index: number) {
@@ -42,7 +40,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
 
   onSearch (e) {
     e.stopPropagation()
-    this.props.onSearch && this.props.onSearch(value || '')
+    this.props.onSearch && this.props.onSearch(this.state.value || '')
   }
 
   onFocus () {
@@ -52,9 +50,9 @@ export default class ClSearchBar extends Component<IProps, IState> {
   }
 
   onBlur (e) {
-    value = e.detail.value
     this.setState({
-      showSearch: false
+      showSearch: false,
+      value: e.detail.value
     })
   }
 
@@ -96,7 +94,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
           onBlur={this.onBlur}
           focus={this.state.showSearch}
           adjustPosition
-          value={value}
+          value={this.state.value}
           onConfirm={this.onSearch.bind(this)}
           onInput={this.onInput.bind(this)}
         />

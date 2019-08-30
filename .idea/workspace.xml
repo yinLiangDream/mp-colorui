@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/tip/h5/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/tip/h5/index.tsx" afterDir="false" />
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tip/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tip/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,9 +119,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.publish" />
         <item itemvalue="npm.publish" />
       </list>
@@ -176,7 +173,7 @@
       <workItem from="1566747726787" duration="11826000" />
       <workItem from="1567065118785" duration="41000" />
       <workItem from="1567065172994" duration="13213000" />
-      <workItem from="1567149645778" duration="155000" />
+      <workItem from="1567149645778" duration="3434000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
