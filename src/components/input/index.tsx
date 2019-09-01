@@ -1,5 +1,5 @@
 import { Image, Input, View } from '@tarojs/components';
-import Taro, { useState, pxTransform } from '@tarojs/taro';
+import Taro, { useState, pxTransform, useEffect } from '@tarojs/taro';
 import ClButton from '../button';
 import ClIcon from '../icon/index';
 import { IProps } from '../../../@types/input';
@@ -83,8 +83,9 @@ function ClInput(props: IProps) {
     disabled,
     renderCustomRight
   } = props;
-  // value = tempInput || value || ''
-  // console.log(tempInput, value)
+  useEffect(() => {
+    setInitValue(value)
+  }, [props.value])
   const titleWidth = props.titleWidth === 'auto' ? 'auto' : pxTransform(props.titleWidth || 200)
   const renderMaterialTitle = (
     <View className={`${focus ? 'materialFocus' : 'materialBlur'}`} style={{width: titleWidth}}>{title}</View>
