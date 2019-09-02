@@ -1,35 +1,54 @@
 import { Image, Input, View } from '@tarojs/components';
-import Taro, { useState, pxTransform } from '@tarojs/taro';
+import Taro, { useState, pxTransform, useEffect } from '@tarojs/taro';
 import ClButton from '../button';
 import ClIcon from '../icon/index';
 import { IProps } from '../../../@types/input';
 
 import './index.scss'
+import { screenPercent } from '../../components/utils/index';
 
 function ClInput(props: IProps) {
   const [focus, setFocus] = useState(false)
   const [normalType, setNormalType] = useState()
   const [tempInput, setTempInput] = useState('')
   const [initValue, setInitValue] = useState(props.value)
+  const [inputId, setInputId] = useState(`cl-input-${+new Date()}`)
+  const [materialWidth, setMaterialWidth] = useState('0px')
+  const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv()
 
   const onChange = (event: any) => {
     let input = event.detail.value
     setInitValue(input)
-    if (props.type === 'number' && Taro.ENV_TYPE.WEB === Taro.getEnv()) {
-      if (!isNaN(event.data-0)) {
-        input = tempInput + parseInt(event.data)
+    if (props.type === 'number') {
+      if (Taro.ENV_TYPE.WEB === Taro.getEnv()) {
+        if (!isNaN(event.data - 0)) {
+          if (event.data === null) {
+            input = tempInput.slice(0, tempInput.length - 1)
+          } else {
+            input = tempInput + parseInt(`${event.data - 0}`)
+          }
+        } else {
+          input = tempInput
+        }
+        setTempInput(input)
+        setTimeout(() => {
+          setInitValue(input)
+        })
       } else {
-        input = tempInput
+        input = !isNaN(event.detail.value - 0) ? event.detail.value : null
+        if (input !== null) {
+          setTempInput(input)
+          setInitValue(input)
+        }
+        else {
+          setTimeout(() => {
+            setInitValue(tempInput)
+          })
+        }
       }
-    } else if (props.type === 'number') {
-      input = parseInt(event.detail.value) || ''
-      // console.log(input)
-    }
-    console.log(input)
-    setTempInput(input)
-    setTimeout(() => {
+    } else {
       setInitValue(input)
-    })
+    }
     props.onChange && props.onChange(input);
   };
   const onBlur = (event: any) => {
@@ -83,19 +102,37 @@ function ClInput(props: IProps) {
     disabled,
     renderCustomRight
   } = props;
-  // value = tempInput || value || ''
-  // console.log(tempInput, value)
-  const titleWidth = props.titleWidth === 'auto' ? 'auto' : pxTransform(props.titleWidth || 200)
+  let titleWidth = props.titleWidth === 'auto' ? 'auto' : pxTransform(props.titleWidth || 200)
+  useEffect(() => {
+    setInitValue(value)
+  }, [props.value])
+  useEffect(() => {
+    if (isH5) {
+      const content: any = document.querySelector(`#${inputId}`)
+      const width = content.clientWidth
+      setMaterialWidth(pxTransform(width / screenPercent))
+    } else {
+      const query = Taro.createSelectorQuery().in(this.$scope)
+      query.select('#cl-input').fields({
+        size: true
+      }, (res: any) => {
+        setMaterialWidth(pxTransform(res.width / screenPercent))
+      }).exec()
+    }
+  }, [props.title])
   const renderMaterialTitle = (
-    <View className={`${focus ? 'materialFocus' : 'materialBlur'}`} style={{width: titleWidth}}>{title}</View>
+    <View className={`${(focus || initValue) ? 'materialFocus' : 'materialBlur'}`} style={{ width: titleWidth }} id="cl-input">{title}</View>
+  )
+  const renderMaterialTitle_H5 = (
+    <View className={`${(focus || initValue) ? 'materialFocus' : 'materialBlur'}`} style={{ width: titleWidth }} id={inputId}>{title}</View>
   )
   const normalTitle = (
-    <View className='title' style={{width: titleWidth}}>{title}</View>
+    <View className='title' style={{ width: titleWidth }}>{title}</View>
   )
   return (
-    <View className={`cu-form-group ${focus ? 'focus' : 'blur'}`} style={{position: 'relative'}}>
+    <View className={`cu-form-group ${focus ? 'focus' : 'blur'}`} style={{ position: 'relative' }}>
       {title && props.pattern === 'normal' ? normalTitle : ''}
-      {title && props.pattern === 'material' ? renderMaterialTitle : ''}
+      {title && props.pattern === 'material' ? isH5 ? renderMaterialTitle_H5 : renderMaterialTitle : ''}
       <Input
         placeholder={placeholder}
         value={initValue}
@@ -107,7 +144,7 @@ function ClInput(props: IProps) {
         password={type === 'password'}
         maxLength={maxLength || -1}
         disabled={disabled}
-        style={{ textAlign: props.align }}
+        style={{ textAlign: props.align, paddingLeft: `${props.pattern === 'material' && !(focus || initValue) ? materialWidth : 0}` }}
       />
       {iconComponent}
       {buttonComponent}

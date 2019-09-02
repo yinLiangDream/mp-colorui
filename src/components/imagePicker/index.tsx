@@ -53,26 +53,6 @@ export default function ClImagePicker(props: IProps) {
     }
   };
 
-  const renderErrComponentTip = (show: boolean) => (
-    <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${show ? '' : 'none'}` }}>
-      <ClIcon iconName='warnfill' size='xsmall' color='red' />
-    </View>
-  )
-
-  const renderSuccessComponentTip = (show: boolean) => (
-    <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${show ? '' : 'none'}` }}>
-      <ClIcon iconName='roundcheckfill' size='xsmall' color='olive' />
-    </View>
-  )
-
-  const renderLoadingComponentTip = (show: boolean) => (
-    <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${show ? '' : 'none'}` }}>
-      <View className='imagePicker-rotate-360'>
-        <ClIcon iconName='loading' size='xsmall' color='blue' />
-      </View>
-    </View>
-  )
-
   const imgComponet = imgList.map((item, index) => (
     <View
       className='padding-xs bg-img bg-gray'
@@ -82,7 +62,7 @@ export default function ClImagePicker(props: IProps) {
         viewImage(item.url);
       }}
     >
-      <Image src={item.url} mode='widthFix' style={{width: '100%', position: 'absolute', left: '0', top: '0', right: '0', bottom: '0'}} />
+      <Image src={item.url} mode='widthFix' style={{ width: '100%', position: 'absolute', left: '0', top: '0', right: '0', bottom: '0' }} />
       {item.status === 'none' ?
         <View
           className='cu-tag bg-red'
@@ -90,13 +70,27 @@ export default function ClImagePicker(props: IProps) {
             delImg(index, e);
             e.stopPropagation();
           }}
-          style={{backgroundColor: 'rgba(355, 355, 355, 0.8)'}}
+          style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)' }}
         >
           <ClIcon iconName='close' color='black' size='xsmall' />
         </View> : ''}
-      {renderSuccessComponentTip(item.status === 'success')}
-      {renderErrComponentTip(item.status === 'fail')}
-      {renderLoadingComponentTip(item.status === 'loading')}
+      {
+        <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${item.status === 'fail' ? '' : 'none'}` }}>
+          <ClIcon iconName='warnfill' size='xsmall' color='red' />
+        </View>
+      }
+      {
+        <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${item.status === 'success' ? '' : 'none'}` }}>
+          <ClIcon iconName='roundcheckfill' size='xsmall' color='olive' />
+        </View>
+      }
+      {
+        <View className='cu-tag' style={{ backgroundColor: 'rgba(355, 355, 355, 0.8)', display: `${item.status === 'loading' ? '' : 'none'}` }}>
+          <View className='imagePicker-rotate-360'>
+            <ClIcon iconName='loading' size='xsmall' color='blue' />
+          </View>
+        </View>
+      }
     </View>
   ));
 

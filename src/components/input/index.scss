@@ -4,13 +4,20 @@
     }
     .materialFocus {
       position: absolute;
-      top: 10px;
+      top: 5px;
       left: 20px;
       font-size: 16px;
-      transition: all 0.2s ease;
+      transition-property: top,font-size;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
     }
     .materialBlur {
-      position: relative;
-      padding-right: 30px;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      transition-property: top,font-size;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
     }
 }
