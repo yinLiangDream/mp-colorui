@@ -1,5 +1,10 @@
 # MP-COLORUI 是基于 Taro 框架的组件库
 
+![GitHub stars](https://img.shields.io/github/stars/yinliangdream/mp-colorui?style=social) ![GitHub forks](https://img.shields.io/github/forks/yinliangdream/mp-colorui?style=social)
+
+![npm](https://img.shields.io/npm/dw/mp-colorui) ![NPM](https://img.shields.io/npm/l/mp-colorui) ![npm type definitions](https://img.shields.io/npm/types/mp-colorui) ![GitHub package.json version](https://img.shields.io/github/package-json/v/yinliangdream/mp-colorui)
+
+
 ## 特色
 
  - 全部采用 TypeScript 编写，类型声明一目了然
@@ -8,8 +13,9 @@
 
 ## 使用方式
 
-> 安装：`npm i mp-colorui`， `yarn add mp-colorui`
 > 具体文档请查看：[MP-ColorUI 文档](https://yinliangdream.github.io/mp-colorui-doc/#/)
+>
+> 安装：`npm i mp-colorui`， `yarn add mp-colorui`
 
 ## *注意*
 
