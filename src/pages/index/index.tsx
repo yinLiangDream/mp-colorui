@@ -62,6 +62,8 @@ export default class Index extends Taro.Component {
           }
         ]} />
         <ClInput value={this.state.value} title='aaaaa' pattern='material' />
+        <ClInput title='material 形式' placeholder='请输入年龄' type='number' pattern='material' />
+
         <ClLayout padding='normal' paddingDirection='around'>
           <ClFlex justify='between'>
             <ClTip message='我是上方提示' direction='top'>
