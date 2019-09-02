@@ -88,7 +88,7 @@ function ClInput(props: IProps) {
   }, [props.value])
   const titleWidth = props.titleWidth === 'auto' ? 'auto' : pxTransform(props.titleWidth || 200)
   const renderMaterialTitle = (
-    <View className={`${focus ? 'materialFocus' : 'materialBlur'}`} style={{width: titleWidth}}>{title}</View>
+    <View className={`${(focus || initValue !== '') ? 'materialFocus' : 'materialBlur'}`} style={{width: titleWidth}}>{title}</View>
   )
   const normalTitle = (
     <View className='title' style={{width: titleWidth}}>{title}</View>

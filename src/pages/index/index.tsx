@@ -18,6 +18,7 @@ import ClVerticalTab from '../../components/verticalTab'
 import ClImagePicker from '../../components/imagePicker'
 import ClSearchBar from '../../components/searchBar'
 import { provinceArr, getAreaData } from '../../components/utils/area'
+import ClMenuList from '../../components/menuList';
 
 let timer: any = undefined
 export default class Index extends Taro.Component {
@@ -31,23 +32,36 @@ export default class Index extends Taro.Component {
       }).district.join('|')
     })),
     filterResult: [],
-    showLoading: false
+    showLoading: false,
+    value: '123'
   }
 
-  success (list = []) {
+  success(list = []) {
     this.setState({
       imgList: list
     })
   }
 
-  onSearch (value) {
+  onSearch(value) {
     console.log(value)
+    this.setState({
+      value: '222'
+    })
   }
 
-  render () {
-    const {filterResult, result, showLoading} = this.state
+  render() {
+    const { filterResult, result, showLoading } = this.state
     return (
       <View>
+        <ClMenuList shortBorder list={[
+          {
+            title: '123'
+          },
+          {
+            title: '234'
+          }
+        ]} />
+        <ClInput value={this.state.value} title='aaaaa' pattern='material' />
         <ClLayout padding='normal' paddingDirection='around'>
           <ClFlex justify='between'>
             <ClTip message='我是上方提示' direction='top'>
