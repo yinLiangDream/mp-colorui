@@ -27,62 +27,65 @@ export default class ClSearchBar extends Component<IProps, IState> {
     showLoading: false,
     showResult: false,
     result: [],
-    onTouchResult: () => {}
+    onTouchResult: () => { }
   }
   state: IState = {
     showSearch: false,
     value: ''
   }
 
-  onIconClick (index: number) {
+  onIconClick(index: number) {
     this.props.onIconClick && this.props.onIconClick(index)
   }
 
-  onSearch (e) {
+  onSearch(e) {
     e.stopPropagation()
     this.props.onSearch && this.props.onSearch(this.state.value || '')
   }
 
-  onFocus () {
+  onFocus() {
     this.setState({
       showSearch: true
     })
   }
 
-  onBlur (e) {
+  onBlur(e) {
     this.setState({
       showSearch: false,
       value: e.detail.value
     })
   }
 
-  onInput (e) {
+  onInput(e) {
+    this.setState({
+      value: e.detail.value
+    })
     this.props.onInput && this.props.onInput(e.detail.value)
   }
 
-  static onPreventProp (e) {
+  static onPreventProp(e) {
     e.stopPropagation()
   }
 
-  render (): any {
+  render(): any {
     const bgColorClassName = this.props.bgColor
-                             ? BG_COLOR_LIST[this.props.bgColor]
-                             : ''
+      ? BG_COLOR_LIST[this.props.bgColor]
+      : ''
     const buttonColorClassName = this.props.rightButtonColor
-                                 ? BG_COLOR_LIST[this.props.rightButtonColor]
-                                 : ''
+      ? BG_COLOR_LIST[this.props.rightButtonColor]
+      : ''
     const textColorClassName = this.props.rightTextColor
-                               ? TEXT_COLOR_LIST[this.props.rightTextColor]
-                               : ''
+      ? TEXT_COLOR_LIST[this.props.rightTextColor]
+      : ''
     const leftIconComponent = this.props.leftIcons
-                              ? this.props.leftIcons.map((item, index) => (
+      ? this.props.leftIcons.map((item, index) => (
         <View
           key={index}
           className={`cu-avatar round cuIcon-${item}`}
           onClick={this.onIconClick.bind(this, index)}
         />
       ))
-                              : ''
+      : ''
     const searchComponent = (
       <View className={`search-form ${this.props.shape}`}>
         <Text className='cuIcon-search' />
@@ -105,7 +108,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
         <Button
           className={`cu-btn shadow-blur ${
             this.props.shape
-          } ${buttonColorClassName} ${textColorClassName}`}
+            } ${buttonColorClassName} ${textColorClassName}`}
           onClick={this.onSearch.bind(this)}
         >
           搜索
@@ -125,37 +128,37 @@ export default class ClSearchBar extends Component<IProps, IState> {
     return (
       <View style={
         this.props.fix
-        ? { position: 'fixed', top: '0', width: '100vw', zIndex: 10 }
-        : ''
+          ? { position: 'fixed', top: '0', width: '100vw', zIndex: 10 }
+          : ''
       }
       >
         <View
-          className={`cu-bar search ${bgColorClassName}`}
+          className={`cu-bar ${bgColorClassName}`}
           style={{ position: 'relative' }}
         >
           {leftIconComponent}
           {searchComponent}
           {this.props.searchType === 'text'
-           ? textComponent
-           : this.props.searchType === 'none'
-             ? ''
-             : buttonComponent}
+            ? textComponent
+            : this.props.searchType === 'none'
+              ? ''
+              : buttonComponent}
           {
             this.props.showResult ?
-            <View
-              style={{ position: 'absolute', width: '100%', zIndex: 11, top: pxTransform(100) }}
-            >
-              {(this.props.result && this.props.result.length) || this.props.showLoading ?
-               <ClCard shadow={false} bgColor={this.props.bgColor}>
-                 <ScrollView scrollY style={{ maxHeight: '300px' }}>
-                   <ClSearchResult
-                     result={this.props.result}
-                     showLoading={this.props.showLoading}
-                     onTouchResult={this.props.onTouchResult}
-                   />
-                 </ScrollView>
-               </ClCard> : ''}
-            </View> : ''
+              <View
+                style={{ position: 'absolute', width: '100%', zIndex: 11, top: pxTransform(100) }}
+              >
+                {(this.props.result && this.props.result.length) || this.props.showLoading ?
+                  <ClCard shadow={false} bgColor={this.props.bgColor}>
+                    <ScrollView scrollY style={{ maxHeight: '300px' }}>
+                      <ClSearchResult
+                        result={this.props.result}
+                        showLoading={this.props.showLoading}
+                        onTouchResult={this.props.onTouchResult}
+                      />
+                    </ScrollView>
+                  </ClCard> : ''}
+              </View> : ''
           }
         </View>
       </View>
