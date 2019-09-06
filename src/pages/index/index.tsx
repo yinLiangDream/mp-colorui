@@ -19,6 +19,8 @@ import ClImagePicker from '../../components/imagePicker'
 import ClSearchBar from '../../components/searchBar'
 import { provinceArr, getAreaData } from '../../components/utils/area'
 import ClMenuList from '../../components/menuList';
+import ClSwiperAction from '../../components/swiperAction/index';
+
 
 let timer: any = undefined
 export default class Index extends Taro.Component {
@@ -53,6 +55,18 @@ export default class Index extends Taro.Component {
     const { filterResult, result, showLoading } = this.state
     return (
       <View>
+        <ClSwiperAction
+          direction='right'
+          autoClose
+          options={[{
+            text: '啊啊啊',
+            bgColor: 'gradualRed'
+          }, {
+            text: '炫丽的色彩',
+            bgColor: 'gradualBlue'
+          }]}>
+          <ClCard type='full'>123</ClCard>
+        </ClSwiperAction>
         <ClMenuList shortBorder list={[
           {
             title: '123'
