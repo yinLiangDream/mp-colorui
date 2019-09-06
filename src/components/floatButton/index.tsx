@@ -1,6 +1,6 @@
-import Taro, { useState } from '@tarojs/taro';
+import Taro, { useState, useEffect } from '@tarojs/taro';
 import { View } from '@tarojs/components';
-import utils from '../utils/index';
+import utils, { generateId } from '../utils/index';
 import { IProps } from '../../../@types/floatButton';
 import ClIcon from '../icon';
 
@@ -16,6 +16,7 @@ export default function ClFloatButton(props: IProps) {
   const [show, setShow] = useState(false);
   const [rotate, setRotate] = useState(0);
   const [animation, setAnimation] = useState({});
+  const [actionListState, setActionListState] = useState(props.actionList)
   const {
     move,
     open,
@@ -31,11 +32,18 @@ export default function ClFloatButton(props: IProps) {
     onActionClick,
     closeWithShadow
   } = props;
+  useEffect(() => {
+    const list = props.actionList || []
+    setActionListState(list.map((item: any) => {
+      item.cu_float_button_id = generateId()
+      return item
+    }))
+  }, [props.actionList])
   const dealSize = utils.model.SIZE[size || 'normal'];
   const dealBgColor = utils.model.BG_COLOR_LIST[bgColor || 'blue'];
   const dealShadow = shadow ? 'shadow' : '';
   const dealIconColor = iconColor || '';
-  let dealActionList = actionList || [];
+  let dealActionList = actionListState || [];
   const len = dealActionList.length;
   const type = () => {
     if (direction === 'vertical') {
@@ -44,8 +52,8 @@ export default function ClFloatButton(props: IProps) {
       return show ? 'slide-right' : 'slide-left';
     }
   };
-  const actionListComponent = dealActionList.map((item, index) => (
-    <View key={index} style={{position: show ? 'relative' : 'absolute'}}>
+  const actionListComponent = dealActionList.map((item: any, index) => (
+    <View key={item.cu_float_button_id} style={{ position: show ? 'relative' : 'absolute' }}>
       <ClAnimation
         type={type()}
         delay={show ? (len - index - 1) / 10 : 0}
@@ -60,7 +68,7 @@ export default function ClFloatButton(props: IProps) {
               item.bgColor
                 ? utils.model.BG_COLOR_LIST[item.bgColor]
                 : dealBgColor
-            } ${dealShadow}`}
+              } ${dealShadow}`}
             onClick={e => {
               e.stopPropagation();
               clickButton();
@@ -83,7 +91,7 @@ export default function ClFloatButton(props: IProps) {
   return (
     <View
       className={`${show ? 'float_button__mask' : ''}`}
-      onClick={e => {
+      onClick={() => {
         closeWithShadow && clickButton();
       }}
     >
@@ -153,9 +161,9 @@ ClFloatButton.defaultProps = {
   bgColor: 'blue',
   iconColor: undefined,
   direction: 'vertical',
-  onClick: () => {},
+  onClick: () => { },
   shadow: true,
-  onActionClick: index => {},
+  onActionClick: (index: number) => { },
   actionList: [],
   size: 'normal',
   shape: 'round',

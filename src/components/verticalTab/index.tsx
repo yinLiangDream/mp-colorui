@@ -1,7 +1,7 @@
-import Taro, { pxTransform, useState } from '@tarojs/taro'
+import Taro, { pxTransform, useState, useEffect } from '@tarojs/taro'
 import { ScrollView, View } from "@tarojs/components";
 import { IProps } from '../../../@types/verticalTab'
-import { screenPercent } from '../utils'
+import { screenPercent, generateId } from '../utils'
 
 import './index.scss'
 
@@ -9,18 +9,26 @@ let scrollTimer: any = undefined;
 export default function ClVerticalTab(props: IProps) {
   let scrollTab = false;
   let id = '';
+  const [tabsState, setTabsState] = useState(props.tabs || [])
   const currentId = props.current ? props.current : props.tabs[0].id;
+  const [current, setCurrent] = useState(currentId);
+  const [verticalNavTop, setVerticalNavTop] = useState(tabsState.findIndex(item => item.name === props.tabs[0].name));
+  const [scrollId, setScrollId] = useState(currentId);
+  const [scrollContent, setScrollContent] = useState(0);
+  const [clickTab, setClickTab] = useState(false);
+  useEffect(() => {
+    const list = props.tabs || []
+    setTabsState(list.map((item: any) => {
+      item.cu_vertical_tab_id = generateId()
+      return item
+    }))
+  }, [props.tabs])
   const tabs: {
     name: string;
     id: string;
     top?: number;
     bottom?: number;
-  }[] = props.tabs || [];
-  const [current, setCurrent] = useState(currentId);
-  const [verticalNavTop, setVerticalNavTop] = useState(tabs.findIndex(item => item.name === props.tabs[0].name));
-  const [scrollId, setScrollId] = useState(currentId);
-  const [scrollContent, setScrollContent] = useState(0);
-  const [clickTab, setClickTab] = useState(false);
+  }[] = tabsState || [];
   // const [scrollTimer, setScrollTimer] = useState(0);
   const isH5 = Taro.getEnv() === Taro.ENV_TYPE.WEB
   const onScroll = (e) => {
@@ -58,8 +66,8 @@ export default function ClVerticalTab(props: IProps) {
       clearTimeout(scrollTimer)
     }, 300)
   }
-  const tabsComponent = tabs.map((item, index) => (
-    <View key={index} className={`cu-item ${current === item.id ? 'cur' : ''}`} onClick={() => {
+  const tabsComponent = tabs.map((item: any) => (
+    <View key={item.cu_vertical_tab_id} className={`cu-item ${current === item.id ? 'cur' : ''}`} onClick={() => {
       id = item.id;
       scrollTab = true;
       changeTop(id);
@@ -73,7 +81,7 @@ export default function ClVerticalTab(props: IProps) {
     }}
     >{item.name}</View>
   ));
-  const changeTop = async (id) => {
+  const changeTop = async (id: any) => {
     const query = Taro.createSelectorQuery()
     const view = query.select('#' + id);
     const topView = query.select('#' + tabs[0].id);
