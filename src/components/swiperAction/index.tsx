@@ -72,7 +72,15 @@ export default function ClSwiperAction(props: IProps) {
   }, [translateX])
   useEffect(() => {
     setShow(!!props.show)
-  }, [props.show])
+    if (props.show) {
+      if (props.direction === 'left') {
+        setTranslateX(actionWidth)
+      }
+      else {
+        setTranslateX(-actionWidth)
+      }
+    }
+  }, [props.show, actionWidth])
   return (
     <View
       className='cl-swiper-action'
