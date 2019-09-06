@@ -1,0 +1,16 @@
+.cl-swiper-action {
+  position: relative;
+  overflow: hidden;
+  &__action {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    z-index: -1;
+    &__item {
+      &:active {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
