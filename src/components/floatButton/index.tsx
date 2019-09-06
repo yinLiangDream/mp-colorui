@@ -1,4 +1,4 @@
-import Taro, { useState, useEffect } from '@tarojs/taro';
+import Taro, { useState, useEffect, pxTransform } from '@tarojs/taro';
 import { View } from '@tarojs/components';
 import utils, { generateId } from '../utils/index';
 import { IProps } from '../../../@types/floatButton';
@@ -33,7 +33,7 @@ export default function ClFloatButton(props: IProps) {
     closeWithShadow
   } = props;
   useEffect(() => {
-    const list = props.actionList || []
+    const list = actionList || []
     setActionListState(list.map((item: any) => {
       item.cu_float_button_id = generateId()
       return item
@@ -97,6 +97,12 @@ export default function ClFloatButton(props: IProps) {
     >
       <View
         className='float_button__fixed'
+        style={{
+          top: props.position.top && props.position.top !== 'auto' ? pxTransform(props.position.top) : 'auto',
+          right: props.position.right && props.position.right !== 'auto' ? pxTransform(props.position.right) : 'auto',
+          bottom: props.position.bottom && props.position.bottom !== 'auto' ? pxTransform(props.position.bottom) : 'auto',
+          left: props.position.left && props.position.left !== 'auto' ? pxTransform(props.position.left) : 'auto',
+        }}
         animation={animation}
         onTouchStart={e => {
           if (!move) return;
@@ -163,9 +169,15 @@ ClFloatButton.defaultProps = {
   direction: 'vertical',
   onClick: () => { },
   shadow: true,
-  onActionClick: (index: number) => { },
+  onActionClick: () => { },
   actionList: [],
   size: 'normal',
   shape: 'round',
-  closeWithShadow: false
+  closeWithShadow: false,
+  position: {
+    top: 'auto',
+    right: 50,
+    bottom: 200,
+    left: 'auto'
+  }
 } as IProps;

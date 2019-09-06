@@ -1,7 +1,18 @@
-import {ComponentClass} from "react";
-import {bgColorMoreType, bgColorType, iconType, lightBgColorType, normalSizeType} from "./baseType";
+import { ComponentClass } from "react";
+import { bgColorMoreType, bgColorType, iconType, lightBgColorType, normalSizeType } from "./baseType";
 
 export interface IProps {
+  /**
+   * 初始化时 Button 的位置
+   *
+   * 默认 top: `auto`, right: `50`, bottom: `200`, left: `auto`
+   */
+  position?: {
+    top?: number | 'auto';
+    right?: number | 'auto';
+    bottom?: number | 'auto';
+    left?: number | 'auto';
+  }
   /**
    * 点击阴影关闭
    *
