@@ -46,5 +46,6 @@ export { default as ClDivider } from './components/divider';
 export { default as ClForm } from './components/form';
 export { default as ClFormItem } from './components/form/formItem';
 export { default as ClTip } from './components/tip';
+export { default as ClSwiperAction } from './components/swiperAction'
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

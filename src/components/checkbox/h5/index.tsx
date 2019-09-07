@@ -28,15 +28,15 @@ export default class ClCheckbox_h5 extends Component<IProps, IState> {
       .map(item => item.value || '');
     this.props.onChange && this.props.onChange(arr);
   }
-  renderCheckbox(classname, value, checked) {
+  renderCheckbox(classname = '', value = '', checked = false) {
     const [check, setCheck] = useState(checked);
     return (
       <View
         className={`h5-checkbox-input ${classname} ${check ? 'checked' : ''}`}
         onClick={() => {
           setCheck(!check);
-          const list: any[] = this.state.list
-          const checkItem = list.find(item => item.value === value);
+          const { list } = this.state
+          const checkItem = list && list.find(item => item.value === value);
           if (checkItem) checkItem.checked = !check;
           this.change();
         }}
@@ -49,9 +49,9 @@ export default class ClCheckbox_h5 extends Component<IProps, IState> {
     const shapeClassName = this.props.shape === 'round' ? 'round' : '';
     const directionClassName =
       this.props.direction === 'horizontal' ? 'flex' : '';
-    const list = this.props.checkboxGroup ? this.props.checkboxGroup : [];
+    const listCheckboxGroup = this.props.checkboxGroup ? this.props.checkboxGroup : [];
     const title = this.props.title;
-    const checkboxComponent = list.map(item => (
+    const checkboxComponent = listCheckboxGroup.map(item => (
       <View className='padding-xs' key={item.value}>
         <Text
           className='padding-right-sm'

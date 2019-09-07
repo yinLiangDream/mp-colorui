@@ -1,10 +1,18 @@
 import { Text, View } from '@tarojs/components'
-import Taro, { pxTransform } from '@tarojs/taro'
-import { isNumber } from '../utils'
+import Taro, { pxTransform, useEffect, useState } from '@tarojs/taro'
+import { isNumber, generateId } from '../utils'
 import { BG_COLOR_LIST } from '../utils/model'
 import { IProps, THeaderArray } from '../../../@types/avatar'
 
-function ClAvatar (props: IProps) {
+function ClAvatar(props: IProps) {
+  const [headList, setHeadList] = useState(props.headerArray)
+  useEffect(() => {
+    const list = props.headerArray || []
+    setHeadList(list.map((item: any) => {
+      item.cu_avatar_id = generateId()
+      return item
+    }))
+  }, [props.headerArray])
   const onClick = () => {
     props.onClick && props.onClick()
   }
@@ -17,13 +25,13 @@ function ClAvatar (props: IProps) {
   const width = isNumber(props.size) ? pxTransform(props.size) : pxTransform(customSize[props.size || 'normal'])
   const height = isNumber(props.size) ? pxTransform(props.size) : pxTransform(customSize[props.size || 'normal'])
   const em = isNumber(props.size) ? props.size / 48 : customSize[props.size || 'normal'] / 48
-  const avatarArray = props.headerArray ? (
-    props.headerArray.map((item: THeaderArray, index: number) => (
+  const avatarArray = headList ? (
+    headList.map(((item: any) => (
       <View
-        key={index}
+        key={item.cu_avatar_id}
         className={`${props.shape}  ${BG_COLOR_LIST[item.bgColor || 'black']} ${
           props.shadow ? 'shadow' : ''
-        } cu-avatar`}
+          } cu-avatar`}
         style={item.url ? {
           backgroundImage: `url(${item.url})`,
           width,
@@ -38,16 +46,16 @@ function ClAvatar (props: IProps) {
           <View
             className={`cu-tag badge cuIcon-${item.tag} ${
               item.tagColor ? BG_COLOR_LIST[item.tagColor] : ''
-            }`}
+              }`}
           />
         ) : (
-           ''
-         )}
+            ''
+          )}
       </View>
     ))
-  ) : (
-                        <View/>
-                      )
+    ) : (
+      <View />
+    )
   const avatarArrayComponent = (
     <View
       className='cu-avatar-group'
@@ -61,14 +69,14 @@ function ClAvatar (props: IProps) {
   return props.headerArray && props.headerArray.length > 1 ? (
     avatarArrayComponent
   ) : (
-           <View
-             onClick={() => {
-               onClick()
-             }}
-           >
-             {avatarArray}
-           </View>
-         )
+      <View
+        onClick={() => {
+          onClick()
+        }}
+      >
+        {avatarArray}
+      </View>
+    )
 }
 
 ClAvatar.options = {

@@ -1,8 +1,17 @@
 import { Image, Swiper, SwiperItem, Video, View } from '@tarojs/components';
-import Taro, { useState } from '@tarojs/taro';
+import Taro, { useState, useEffect } from '@tarojs/taro';
 import { IProps, TList } from '../../../@types/swiper';
+import { generateId } from '../utils';
 
 export default function ClSwiper(props: IProps) {
+  const [listState, setListState] = useState(props.list || [])
+  useEffect(() => {
+    const list = props.list || []
+    setListState(list.map((item: any) => {
+      item.cu_swiper_id = generateId()
+      return item
+    }))
+  }, [props.list])
   const swiperTypeClassName = type =>
     type ? `${type}-swiper` : 'screen-swiper';
   const dotClassName = type =>
@@ -20,7 +29,7 @@ export default function ClSwiper(props: IProps) {
   const controls = controls => !!controls;
   const title = title => title;
   const poster = poster => poster;
-  const list = props.list || [];
+  const list = listState || [];
 
   const [cur, setCur] = useState(0);
   const onChange = e => {
@@ -63,9 +72,9 @@ export default function ClSwiper(props: IProps) {
       duration={duration}
       onChange={onChange}
     >
-      {list.map((item, index) => (
+      {list.map((item: any, index: number) => (
         <SwiperItem
-          key={index}
+          key={item.cu_swiper_id}
           onClick={() => {
             onClick(index);
           }}
@@ -89,9 +98,9 @@ export default function ClSwiper(props: IProps) {
       duration={duration}
       onChange={onChange}
     >
-      {list.map((item, index) => (
+      {list.map((item: any, index: number) => (
         <SwiperItem
-          key={index}
+          key={item.cu_swiper_id}
           className={`${cur === index ? 'cur' : ''}`}
           onClick={() => {
             onClick(index);

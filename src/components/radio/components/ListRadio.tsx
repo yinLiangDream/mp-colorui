@@ -1,6 +1,7 @@
-import Taro, {useState} from '@tarojs/taro'
-import {Text, View} from '@tarojs/components'
-import {TList} from '../../../../@types/radio';
+import Taro, { useState, useEffect } from '@tarojs/taro'
+import { Text, View } from '@tarojs/components'
+import { TList } from '../../../../@types/radio';
+import { generateId } from '../../../components/utils';
 
 interface IProps {
   list: TList;
@@ -9,12 +10,20 @@ interface IProps {
 }
 
 export default function ListRadio(props: IProps) {
-  const list = props.list || [];
+  const [listState, setListState] = useState(props.list || [])
+  useEffect(() => {
+    const list = props.list || []
+    setListState(list.map((item: any) => {
+      item.cu_radio_list_id = generateId()
+      return item
+    }))
+  }, [props.list])
+  const list = listState || [];
   const checkedValue = props.checkedValue;
   const [checked, setChecked] = useState(checkedValue);
-  const listComponent = list.map((item, index) => (
+  const listComponent = list.map((item: any) => (
     <View
-      key={index}
+      key={item.cu_radio_list_id}
       className={`cu-item ${checked === item.value ? 'checked' : ''}`}
       onClick={() => {
         setChecked(item.value || '');
