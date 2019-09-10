@@ -26,6 +26,12 @@ export interface IProps {
    * 默认 `true`
    */
   shadow?: boolean;
+  /**
+   * 激活当前 Card
+   *
+   * 默认 `false`
+   */
+  active?: boolean;
   children?: any;
 }
 

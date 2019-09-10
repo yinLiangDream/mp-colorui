@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题">
+      <change afterPath="$PROJECT_DIR$/src/components/actionSheet/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/drawer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/drawer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/swiperAction.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiperAction.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
@@ -64,8 +68,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
@@ -123,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:h5" />
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.publish" />
         <item itemvalue="npm.publish" />
       </list>
@@ -179,6 +185,10 @@
       <workItem from="1567065172994" duration="13213000" />
       <workItem from="1567149645778" duration="3591000" />
       <workItem from="1567320687144" duration="23000" />
+      <workItem from="1568098594037" duration="1087000" />
+      <workItem from="1568100187136" duration="44000" />
+      <workItem from="1568100235660" duration="710000" />
+      <workItem from="1568100957840" duration="768000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
