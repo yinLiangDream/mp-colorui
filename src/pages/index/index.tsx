@@ -1,32 +1,32 @@
-import Taro from '@tarojs/taro'
-import { View } from '@tarojs/components'
-import ClLayout from '../../components/layout'
-import ClAccordion from '../../components/accordion'
-import ClCard from '../../components/card'
-import ClText from '../../components/text'
-import ClTitleBar from '../../components/titleBar'
-import ClFlex from '../../components/flex'
-import ClButton from '../../components/button'
-import ClTip from '../../components/tip'
-import ClIcon from '../../components/icon'
-import ClForm from '../../components/form'
-import ClFormItem from '../../components/form/formItem'
-import ClInput from '../../components/input'
-import ClCheckbox from '../../components/checkbox'
-import ClVerticalTabCell from '../../components/verticalTab/verticalTabCell'
-import ClVerticalTab from '../../components/verticalTab'
-import ClImagePicker from '../../components/imagePicker'
-import ClSearchBar from '../../components/searchBar'
-import { provinceArr, getAreaData } from '../../components/utils/area'
+import Taro from '@tarojs/taro';
+import { View } from '@tarojs/components';
+import ClLayout from '../../components/layout';
+import ClAccordion from '../../components/accordion';
+import ClCard from '../../components/card';
+import ClText from '../../components/text';
+import ClTitleBar from '../../components/titleBar';
+import ClFlex from '../../components/flex';
+import ClButton from '../../components/button';
+import ClTip from '../../components/tip';
+import ClIcon from '../../components/icon';
+import ClForm from '../../components/form';
+import ClFormItem from '../../components/form/formItem';
+import ClInput from '../../components/input';
+import ClCheckbox from '../../components/checkbox';
+import ClVerticalTabCell from '../../components/verticalTab/verticalTabCell';
+import ClVerticalTab from '../../components/verticalTab';
+import ClImagePicker from '../../components/imagePicker';
+import ClSearchBar from '../../components/searchBar';
+import { provinceArr, getAreaData } from '../../components/utils/area';
 import ClMenuList from '../../components/menuList';
 import ClSwiperAction from '../../components/swiperAction/index';
+import ClActionSheet from '../../components/actionSheet/index';
 
-
-let timer: any = undefined
+let timer: any = undefined;
 export default class Index extends Taro.Component {
   state = {
     imgList: [],
-    result: provinceArr.map((item) => ({
+    result: provinceArr.map(item => ({
       title: `${item[1]}(${item[0]})`,
       desc: getAreaData({
         key: item[0],
@@ -35,99 +35,115 @@ export default class Index extends Taro.Component {
     })),
     filterResult: [],
     showLoading: false,
-    value: '123'
-  }
+    value: '123',
+    show: false
+  };
 
   success(list = []) {
     this.setState({
       imgList: list
-    })
+    });
   }
 
   onSearch(value) {
-    console.log(value)
     this.setState({
       value: '222'
-    })
+    });
   }
 
   render() {
-    const { filterResult, result, showLoading } = this.state
+    const { filterResult, result, showLoading, show } = this.state;
+    const list = [
+      {
+        text: '啊啊啊'
+      },
+      {
+        text: '炫丽的色彩'
+      },
+      {
+        text: '点我领礼包'
+      }
+    ];
     return (
       <View>
-        <ClSwiperAction
-          direction='right'
-          autoClose
-          options={[{
-            text: '啊啊啊',
-            bgColor: 'gradualRed'
-          }, {
-            text: '炫丽的色彩',
-            bgColor: 'gradualBlue'
-          }]}>
-          <ClCard type='full'>123</ClCard>
+        <ClActionSheet
+          options={list}
+          isOpened={show}
+          tip="123"
+          showCancel
+          onCancel={() => {
+            this.setState({
+              show: false
+            });
+          }}
+        />
+        <ClSwiperAction direction="right" autoClose options={list}>
+          <ClCard type="full">123</ClCard>
         </ClSwiperAction>
-        <ClMenuList shortBorder list={[
-          {
-            title: '123'
-          },
-          {
-            title: '234'
-          }
-        ]} />
-        <ClInput value={this.state.value} title='aaaaa' pattern='material' />
-        <ClInput title='material 形式' placeholder='请输入年龄' type='number' pattern='material' />
+        <ClMenuList
+          shortBorder
+          list={[
+            {
+              title: '123'
+            },
+            {
+              title: '234'
+            }
+          ]}
+        />
+        <ClInput value={this.state.value} title="aaaaa" pattern="material" />
+        <ClInput title="material 形式" placeholder="请输入年龄" type="number" pattern="material" />
 
-        <ClLayout padding='normal' paddingDirection='around'>
-          <ClFlex justify='between'>
-            <ClTip message='我是上方提示' direction='top'>
-              <ClButton text='上方' shape='round' />
+        <ClLayout padding="normal" paddingDirection="around">
+          <ClFlex justify="between">
+            <ClTip message="我是上方提示" direction="top">
+              <ClButton text="上方" shape="round" />
             </ClTip>
-            <ClTip message='我是右方提示' direction='right'>
-              <ClButton text='右方' shape='round' />
+            <ClTip message="我是右方提示" direction="right">
+              <ClButton text="右方" shape="round" />
             </ClTip>
-            <ClTip message='我是左方提示' direction='left'>
-              <ClButton text='左方' shape='round' />
+            <ClTip message="我是左方提示" direction="left">
+              <ClButton text="左方" shape="round" />
             </ClTip>
-            <ClTip message='我是下方提示' direction='bottom'>
-              <ClButton text='下方' shape='round' />
+            <ClTip message="我是下方提示" direction="bottom">
+              <ClButton text="下方" shape="round" />
             </ClTip>
           </ClFlex>
         </ClLayout>
         <ClSearchBar
-          shape='radius'
-          bgColor='gradualBlue'
+          shape="radius"
+          bgColor="gradualBlue"
           showLoading={showLoading}
           onSearch={value => {
-            this.onSearch(value)
+            this.onSearch(value);
           }}
-          onTouchResult={(index) => {
+          onTouchResult={index => {
             Taro.showToast({
               title: `您点击了${filterResult[index].title}省`,
               icon: 'none'
-            })
+            });
           }}
           onInput={value => {
             this.setState({
               showLoading: true
-            })
-            if (timer) clearTimeout(timer)
+            });
+            if (timer) clearTimeout(timer);
             if (value === '') {
-              clearTimeout(timer)
+              clearTimeout(timer);
               setTimeout(() => {
                 this.setState({
                   showLoading: false,
                   filterResult: []
-                })
-              })
-              return
+                });
+              });
+              return;
             }
             timer = setTimeout(() => {
               this.setState({
                 showLoading: false,
                 filterResult: result.filter(item => item.title.includes(value) || item.desc.includes(value))
-              })
-            }, 1000)
+              });
+            }, 1000);
           }}
           showResult
           result={filterResult}
@@ -138,31 +154,34 @@ export default class Index extends Taro.Component {
           }}
           imgList={this.state.imgList}
         />
-        <ClLayout padding='normal' paddingDirection='around'>
+        <ClLayout padding="normal" paddingDirection="around">
           <ClButton
-            shape='round'
+            shape="round"
             long
             onClick={() => {
               this.setState({
                 imgList: this.state.imgList.map((item: any) => {
-                  item.status = 'loading'
-                  return item
-                })
-              })
+                  item.status = 'loading';
+                  return item;
+                }),
+                show: true
+              });
               this.state.imgList.forEach((item: any, index: number) => {
-                item.status = 'loading'
+                item.status = 'loading';
                 setTimeout(() => {
-                  item.status = 'success'
-                  if (index === 1) item.status = 'fail'
+                  item.status = 'success';
+                  if (index === 1) item.status = 'fail';
                   this.setState({
                     imgList: this.state.imgList
-                  })
-                }, (index + 1) * 1000)
-              })
+                  });
+                }, (index + 1) * 1000);
+              });
             }}
-          >开始上传</ClButton>
+          >
+            开始上传
+          </ClButton>
         </ClLayout>
       </View>
-    )
+    );
   }
 }

@@ -32,7 +32,7 @@ export interface IProps {
   onCancel?: () => void;
 }
 
-export interface DrawerProps extends IProps {}
+export interface DrawerProps extends IProps { }
 declare const Drawer: ComponentClass<DrawerProps>;
 
 export default Drawer;

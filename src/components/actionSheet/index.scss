@@ -1,0 +1,12 @@
+.cu_action_sheet {
+  &_line {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    overflow: hidden;
+  }
+  &_card {
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 0 30px;
+  }
+}

@@ -29,7 +29,7 @@ export interface IProps {
      *
      * 默认 `white`
      */
-    bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
+    bgColor?: bgColorType | bgColorMoreType | lightBgColorType | string;
     /**
      * 文字内容
      */

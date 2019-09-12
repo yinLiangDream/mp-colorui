@@ -1,0 +1,6 @@
+.cu_card_active {
+  transition: all 0.2s ease-in-out 0s;
+  &:active {
+    background-color: #b6b6b6;
+  }
+}

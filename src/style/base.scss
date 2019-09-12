@@ -1,9 +1,10 @@
 /* ==================
         初始化
  ==================== */
-@import "./vars";
+@import './vars';
 
-page, body {
+page,
+body {
   /* Color 可以自定义相关配色 */
   /* var属性兼容性 --> https://www.caniuse.com/#feat=css-variables */
   /* 标准色 */
@@ -43,7 +44,8 @@ img {
           图片
  ==================== */
 
-image, img {
+image,
+img {
   max-width: 100%;
   display: inline-block;
   position: relative;
@@ -51,7 +53,7 @@ image, img {
 
   &.loading {
     &::before {
-      content: "";
+      content: '';
       background-color: #f5f5f5;
       display: block;
       position: absolute;
@@ -61,8 +63,8 @@ image, img {
     }
 
     &::after {
-      content: "\e7f1";
-      font-family: "cuIcon";
+      content: '\e7f1';
+      font-family: 'cuIcon';
       position: absolute;
       top: 0;
       left: 0;
@@ -94,8 +96,8 @@ radio {
 
 switch::after,
 switch::before {
-  font-family: "cuIcon";
-  content: "\e645";
+  font-family: 'cuIcon';
+  content: '\e645';
   position: absolute;
   color: #fff !important;
   top: 0;
@@ -114,7 +116,7 @@ switch::before {
 }
 
 switch::before {
-  content: "\e646";
+  content: '\e646';
   right: 0;
   transform: scale(1, 1);
   left: auto;
@@ -139,7 +141,7 @@ switch {
     margin: 0;
     border-radius: 100px;
 
-    &:not([class*="bg-"]) {
+    &:not([class*='bg-']) {
       background: $grey !important;
     }
 
@@ -169,8 +171,8 @@ switch {
 
 radio::before,
 checkbox::before {
-  font-family: "cuIcon";
-  content: "\e645";
+  font-family: 'cuIcon';
+  content: '\e645';
   position: absolute;
   color: $white !important;
   top: 50%;
@@ -209,7 +211,7 @@ radio .wx-radio-input::before {
 }
 
 radio.radio[checked]::after {
-  content: "";
+  content: '';
   background-color: transparent;
   display: block;
   position: absolute;
@@ -227,11 +229,11 @@ radio.radio[checked]::after {
 
 .switch-sex {
   &::after {
-    content: "\e71c";
+    content: '\e71c';
   }
 
   &::before {
-    content: "\e71a";
+    content: '\e71a';
   }
 
   .wx-switch-input {
