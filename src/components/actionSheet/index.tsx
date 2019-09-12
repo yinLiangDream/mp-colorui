@@ -46,7 +46,8 @@ export default function ClActionSheet(props: IProps) {
   const cancelComponent = (
     <View>
       <View
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation()
           onCancel && onCancel();
         }}
         style={{
@@ -80,21 +81,21 @@ export default function ClActionSheet(props: IProps) {
       },
       index: number
     ) => (
-      <View
-        onClick={click.call(this, index)}
-        className={classnames([
-          {
-            cu_action_sheet_line: index !== actionsArr.length - 1
-          },
-          BG_COLOR_LIST[item.bgColor]
-        ])}
-        key={item.cu_action_sheet_id}
-      >
-        <ClCard bgColor={item.bgColor} type="full" active>
-          <ClText align="center" text={item.text} />
-        </ClCard>
-      </View>
-    )
+        <View
+          onClick={click.bind(this, index)}
+          className={classnames([
+            {
+              cu_action_sheet_line: index !== actionsArr.length - 1
+            },
+            BG_COLOR_LIST[item.bgColor]
+          ])}
+          key={item.cu_action_sheet_id}
+        >
+          <ClCard bgColor={item.bgColor} type="full" active>
+            <ClText align="center" text={item.text} />
+          </ClCard>
+        </View>
+      )
   );
   return (
     <View
@@ -147,6 +148,6 @@ ClActionSheet.defaultProps = {
   showCancel: false,
   cancelBgColor: 'white',
   cancelFontColor: undefined,
-  onClick: () => {},
-  onCancel: () => {}
+  onClick: () => { },
+  onCancel: () => { }
 } as IProps;

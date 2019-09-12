@@ -36,9 +36,7 @@ export { default as ClFlex } from './components/flex';
 export { default as ClGrid } from './components/grid';
 export { default as ClAnimation } from './components/animation';
 export { default as ClVerticalTab } from './components/verticalTab';
-export {
-  default as ClVerticalTabCell
-} from './components/verticalTab/verticalTabCell';
+export { default as ClVerticalTabCell } from './components/verticalTab/verticalTabCell';
 export { default as ClAccordion } from './components/accordion';
 export { default as ClFloatButton } from './components/floatButton';
 export { default as ClMessage } from './components/message';
@@ -46,6 +44,7 @@ export { default as ClDivider } from './components/divider';
 export { default as ClForm } from './components/form';
 export { default as ClFormItem } from './components/form/formItem';
 export { default as ClTip } from './components/tip';
-export { default as ClSwiperAction } from './components/swiperAction'
+export { default as ClSwiperAction } from './components/swiperAction';
+export { default as ClActionSheet } from './components/actionSheet';
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });
