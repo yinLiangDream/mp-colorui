@@ -46,5 +46,6 @@ export { default as ClFormItem } from './components/form/formItem';
 export { default as ClTip } from './components/tip';
 export { default as ClSwiperAction } from './components/swiperAction';
 export { default as ClActionSheet } from './components/actionSheet';
+export { default as ClCurtain } from './components/curtain'
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

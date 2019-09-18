@@ -1,5 +1,5 @@
 import Taro from '@tarojs/taro';
-import { View } from '@tarojs/components';
+import { View, Image } from '@tarojs/components';
 import ClLayout from '../../components/layout';
 import ClAccordion from '../../components/accordion';
 import ClCard from '../../components/card';
@@ -21,167 +21,12 @@ import { provinceArr, getAreaData } from '../../components/utils/area';
 import ClMenuList from '../../components/menuList';
 import ClSwiperAction from '../../components/swiperAction/index';
 import ClActionSheet from '../../components/actionSheet/index';
+import ClCurtain from '../../components/curtain/index';
 
-let timer: any = undefined;
-export default class Index extends Taro.Component {
-  state = {
-    imgList: [],
-    result: provinceArr.map(item => ({
-      title: `${item[1]}(${item[0]})`,
-      desc: getAreaData({
-        key: item[0],
-        value: item[1]
-      }).district.join('|')
-    })),
-    filterResult: [],
-    showLoading: false,
-    value: '123',
-    show: false
-  };
-
-  success(list = []) {
-    this.setState({
-      imgList: list
-    });
-  }
-
-  onSearch(value) {
-    this.setState({
-      value: '222'
-    });
-  }
-
-  render() {
-    const { filterResult, result, showLoading, show } = this.state;
-    const list = [
-      {
-        text: '啊啊啊'
-      },
-      {
-        text: '炫丽的色彩'
-      },
-      {
-        text: '点我领礼包'
-      }
-    ];
-    return (
-      <View>
-        <ClActionSheet
-          options={list}
-          isOpened={show}
-          tip="123"
-          showCancel
-          onCancel={() => {
-            this.setState({
-              show: false
-            });
-          }}
-        />
-        <ClSwiperAction direction="right" autoClose options={list}>
-          <ClCard type="full">123</ClCard>
-        </ClSwiperAction>
-        <ClMenuList
-          shortBorder
-          list={[
-            {
-              title: '123'
-            },
-            {
-              title: '234'
-            }
-          ]}
-        />
-        <ClInput value={this.state.value} title="aaaaa" pattern="material" />
-        <ClInput title="material 形式" placeholder="请输入年龄" type="number" pattern="material" />
-
-        <ClLayout padding="normal" paddingDirection="around">
-          <ClFlex justify="between">
-            <ClTip message="我是上方提示" direction="top">
-              <ClButton text="上方" shape="round" />
-            </ClTip>
-            <ClTip message="我是右方提示" direction="right">
-              <ClButton text="右方" shape="round" />
-            </ClTip>
-            <ClTip message="我是左方提示" direction="left">
-              <ClButton text="左方" shape="round" />
-            </ClTip>
-            <ClTip message="我是下方提示" direction="bottom">
-              <ClButton text="下方" shape="round" />
-            </ClTip>
-          </ClFlex>
-        </ClLayout>
-        <ClSearchBar
-          shape="radius"
-          bgColor="gradualBlue"
-          showLoading={showLoading}
-          onSearch={value => {
-            this.onSearch(value);
-          }}
-          onTouchResult={index => {
-            Taro.showToast({
-              title: `您点击了${filterResult[index].title}省`,
-              icon: 'none'
-            });
-          }}
-          onInput={value => {
-            this.setState({
-              showLoading: true
-            });
-            if (timer) clearTimeout(timer);
-            if (value === '') {
-              clearTimeout(timer);
-              setTimeout(() => {
-                this.setState({
-                  showLoading: false,
-                  filterResult: []
-                });
-              });
-              return;
-            }
-            timer = setTimeout(() => {
-              this.setState({
-                showLoading: false,
-                filterResult: result.filter(item => item.title.includes(value) || item.desc.includes(value))
-              });
-            }, 1000);
-          }}
-          showResult
-          result={filterResult}
-        />
-        <ClImagePicker
-          chooseImgObj={{
-            success: this.success.bind(this)
-          }}
-          imgList={this.state.imgList}
-        />
-        <ClLayout padding="normal" paddingDirection="around">
-          <ClButton
-            shape="round"
-            long
-            onClick={() => {
-              this.setState({
-                imgList: this.state.imgList.map((item: any) => {
-                  item.status = 'loading';
-                  return item;
-                }),
-                show: true
-              });
-              this.state.imgList.forEach((item: any, index: number) => {
-                item.status = 'loading';
-                setTimeout(() => {
-                  item.status = 'success';
-                  if (index === 1) item.status = 'fail';
-                  this.setState({
-                    imgList: this.state.imgList
-                  });
-                }, (index + 1) * 1000);
-              });
-            }}
-          >
-            开始上传
-          </ClButton>
-        </ClLayout>
-      </View>
-    );
-  }
+export default function Index() {
+  return (
+    <ClCurtain show closeBtnPosition='bottom-right' closeWithShadow>
+      <Image src='https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/v2/330.png' mode='aspectFit' />
+    </ClCurtain>
+  )
 }
