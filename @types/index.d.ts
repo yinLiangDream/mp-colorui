@@ -39,5 +39,6 @@ export { default as ClFormItem } from './formItem';
 export { default as ClTip } from './tip';
 export { default as ClSwiperAction } from './swiperAction';
 export { default as ClActionSheet } from './actionSheet';
+export { default as ClCurtain } from './curtain';
 
 export { default as ClUtils } from './utils';

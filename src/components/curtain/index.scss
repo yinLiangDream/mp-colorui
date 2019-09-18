@@ -1,0 +1,46 @@
+
+.cu-load.load-image {
+  .cu-curtain {
+    &__content {
+      position: relative;
+      max-width: 90vw;
+      image,
+      img {
+        width: 640px;
+      }
+      .top {
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        &-left {
+          top: -100px;
+          left: 0;
+          position: absolute;
+        }
+        &-right {
+          top: -100px;
+          right: 0;
+          position: absolute;
+        }
+      }
+      .bottom {
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        &-left {
+          bottom: -100px;
+          left: 0;
+          position: absolute;
+        }
+        &-right {
+          bottom: -100px;
+          right: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
