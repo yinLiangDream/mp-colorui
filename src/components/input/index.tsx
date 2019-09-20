@@ -107,17 +107,19 @@ function ClInput(props: IProps) {
     setInitValue(value)
   }, [props.value])
   useEffect(() => {
-    if (isH5) {
-      const content: any = document.querySelector(`#${inputId}`)
-      const width = content.clientWidth
-      setMaterialWidth(pxTransform(width / screenPercent))
-    } else {
-      const query = Taro.createSelectorQuery().in(this.$scope)
-      query.select('#cl-input').fields({
-        size: true
-      }, (res: any) => {
-        setMaterialWidth(pxTransform(res.width / screenPercent))
-      }).exec()
+    if (props.pattern === 'material') {
+      if (isH5) {
+        const content: any = document.querySelector(`#${inputId}`)
+        const width = content.clientWidth
+        setMaterialWidth(pxTransform(width / screenPercent))
+      } else {
+        const query = Taro.createSelectorQuery().in(this.$scope)
+        query.select('#cl-input').fields({
+          size: true
+        }, (res: any) => {
+          setMaterialWidth(pxTransform(res.width / screenPercent))
+        }).exec()
+      }
     }
   }, [props.title])
   const renderMaterialTitle = (
