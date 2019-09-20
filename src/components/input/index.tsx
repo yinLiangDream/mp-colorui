@@ -1,5 +1,5 @@
 import { Image, Input, View } from '@tarojs/components';
-import Taro, { useState, pxTransform, useEffect } from '@tarojs/taro';
+import Taro, { useState, pxTransform, useEffect, useMemo } from '@tarojs/taro'
 import ClButton from '../button';
 import ClIcon from '../icon/index';
 import { IProps } from '../../../@types/input';
@@ -14,6 +14,12 @@ function ClInput(props: IProps) {
   const [initValue, setInitValue] = useState(props.value)
   const [inputId, setInputId] = useState(`cl-input-${+new Date()}`)
   const [materialWidth, setMaterialWidth] = useState('0px')
+  const [defaultValue, setDefaultValue] = useState(props.defaultValue)
+  useMemo(() => {
+    if (props.defaultValue !== '' && defaultValue === '') {
+      setDefaultValue(defaultValue)
+    }
+  }, [props.defaultValue])
   const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv()
 
   const onChange = (event: any) => {
@@ -103,7 +109,7 @@ function ClInput(props: IProps) {
     renderCustomRight
   } = props;
   let titleWidth = props.titleWidth === 'auto' ? 'auto' : pxTransform(props.titleWidth || 200)
-  useEffect(() => {
+  useMemo(() => {
     setInitValue(value)
   }, [props.value])
   useEffect(() => {
@@ -137,7 +143,7 @@ function ClInput(props: IProps) {
       {title && props.pattern === 'material' ? isH5 ? renderMaterialTitle_H5 : renderMaterialTitle : ''}
       <Input
         placeholder={placeholder}
-        value={initValue}
+        value={defaultValue || initValue}
         onInput={onChange}
         onBlur={onBlur}
         onFocus={onFocus}
@@ -166,6 +172,7 @@ ClInput.defaultProps = {
   value: undefined,
   placeholder: '',
   type: 'text',
-  adjustPosition: true
+  adjustPosition: true,
+  defaultValue: ''
 } as IProps;
 export default ClInput;

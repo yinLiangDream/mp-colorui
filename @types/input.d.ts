@@ -1,7 +1,7 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
 
-import { IProps as IButton } from './button';
-import { IProps as IIcon } from './icon';
+import { IProps as IButton } from './button'
+import { IProps as IIcon } from './icon'
 
 export type TValue = string;
 export type TPlaceholder = string;
@@ -12,8 +12,6 @@ export type TDisabled = boolean;
 export type TAdjustPosition = boolean;
 export type TIcon = IIcon;
 export type TButton = IButton;
-export type TClear = boolean;
-export type TFocus = boolean;
 export type TImage = string;
 
 export type TOnChange = (str: string) => void;
@@ -28,23 +26,28 @@ export interface IProps {
    *
    * 默认 `none`
    */
-  titleWidth?: number | 'auto'
+  titleWidth?: number | 'auto';
   /**
    * 对齐方式
    *
    * 默认值 `none`
    */
-  align?: 'left' | 'right' | 'center' | 'none'
+  align?: 'left' | 'right' | 'center' | 'none';
   /**
    * 表现形式
    *
    * 默认值 `normal`
    */
-  pattern?: 'normal' | 'material'
+  pattern?: 'normal' | 'material';
   /**
-   * 输入框默认值
+   * 输入框默认值，不同于 defaultValue，
+   * 该值在每次渲染的时候都会进行初始化，所以要避免在 onChange 事件里修改该值
    */
   value?: TValue;
+  /**
+   * 输入框初始值，不同于 value，该值只会初始化一次
+   */
+  defaultValue?: TValue;
   /**
    * 输入框占位符
    */
@@ -121,7 +124,8 @@ export interface IProps {
   renderCustomRight?: Element;
 }
 
-export interface InputProps extends IProps { }
-declare const Input: ComponentClass<InputProps>;
+export interface InputProps extends IProps {}
 
-export default Input;
+declare const Input: ComponentClass<InputProps>
+
+export default Input
