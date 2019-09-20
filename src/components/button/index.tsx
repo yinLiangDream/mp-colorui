@@ -76,6 +76,6 @@ export default class ClButton extends Component<IProps, IState> {
     const longButton = (
       <View className='flex flex-direction'>{normalButton}</View>
     );
-    return this.props.long ? longButton : normalButton;
+    return this.props.long ? longButton : <View style={{ display: 'inline-block' }}>{normalButton}</View>
   }
 }
