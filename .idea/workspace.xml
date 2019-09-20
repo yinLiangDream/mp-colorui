@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,7 +182,7 @@
       <workItem from="1568100187136" duration="44000" />
       <workItem from="1568100235660" duration="710000" />
       <workItem from="1568100957840" duration="768000" />
-      <workItem from="1568901909636" duration="6776000" />
+      <workItem from="1568901909636" duration="8294000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -387,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568963605647</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="BUG&#10;修复 Button 在 flex 布局下会拉伸问题">
+      <created>1568964810110</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1568964810114</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -434,7 +441,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="navBar 组件完成" />
     <MESSAGE value="searBar 组件完成，list 部分还未完成" />
     <MESSAGE value="buttonGroup" />
     <MESSAGE value="tabs" />
@@ -459,7 +465,8 @@
     <MESSAGE value="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题" />
     <MESSAGE value="BUG&#10;fix #12" />
     <MESSAGE value="Input 组件新增 defaultValue 属性" />
-    <option name="LAST_COMMIT_MESSAGE" value="Input 组件新增 defaultValue 属性" />
+    <MESSAGE value="BUG&#10;修复 Button 在 flex 布局下会拉伸问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复 Button 在 flex 布局下会拉伸问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro';
+import Taro, { useState } from '@tarojs/taro'
 import { View, Image } from '@tarojs/components';
 import ClLayout from '../../components/layout';
 import ClAccordion from '../../components/accordion';
@@ -24,9 +24,21 @@ import ClActionSheet from '../../components/actionSheet/index';
 import ClCurtain from '../../components/curtain/index';
 
 export default function Index() {
+  const [value, setValue] = useState('234')
   return (
-    <ClCurtain show closeBtnPosition='bottom-right' closeWithShadow>
-      <Image src='https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/v2/330.png' mode='aspectFit' />
-    </ClCurtain>
+    <ClFlex align='center' justify='between'>
+      <ClButton
+        onClick={() => {
+        }}
+      >上</ClButton>
+      <ClButton
+        onClick={() => {
+        }}
+      >上左</ClButton>
+      <ClButton
+        onClick={() => {
+        }}
+      >上右</ClButton>
+    </ClFlex>
   )
 }
