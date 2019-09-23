@@ -20,22 +20,26 @@ export default class ClButton extends Component<IProps, IState> {
     plain: false,
     plainSize: 'default',
     shadow: true,
-    openType: undefined
+    openType: undefined,
   } as IProps;
   onClick(e: any) {
     !this.props.disabled && this.props.onClick && this.props.onClick(e);
   }
   onOpenSetting(e: any) {
-    !this.props.disabled &&this.props.onOpenSetting && this.props.onOpenSetting(e);
+    !this.props.disabled && this.props.onOpenSetting && this.props.onOpenSetting(e)
   }
   onGetUserInfo(e: any) {
-    !this.props.disabled &&this.props.onGetUserInfo && this.props.onGetUserInfo(e);
+    !this.props.disabled && this.props.onGetUserInfo && this.props.onGetUserInfo(e)
   }
   onContact(e: any) {
-    !this.props.disabled &&this.props.onContact && this.props.onContact(e);
+    !this.props.disabled && this.props.onContact && this.props.onContact(e)
   }
   onGetPhoneNumber(e: any) {
-    !this.props.disabled &&this.props.onGetPhoneNumber && this.props.onGetPhoneNumber(e);
+    !this.props.disabled && this.props.onGetPhoneNumber && this.props.onGetPhoneNumber(e)
+  }
+
+  onGetRealnameAuthInfo (e: any) {
+    !this.props.disabled && this.props.onGetRealnameAuthInfo && this.props.onGetRealnameAuthInfo(e)
   }
   onError(e: any) {
     !this.props.disabled &&this.props.onError && this.props.onError(e);
@@ -66,7 +70,16 @@ export default class ClButton extends Component<IProps, IState> {
         onGetUserInfo={this.onGetUserInfo}
         onContact={this.onContact}
         onGetPhoneNumber={this.onGetPhoneNumber}
+        onGetRealnameAuthInfo={this.onGetRealnameAuthInfo}
         onError={this.onError}
+        appParameter={this.props.appParameter}
+        showMessageCard={this.props.showMessageCard}
+        sessionFrom={this.props.sessionFrom}
+        sendMessageTitle={this.props.sendMessageTitle}
+        sendMessagePath={this.props.sendMessagePath}
+        sendMessageImg={this.props.sendMessageImg}
+        scope={this.props.scope}
+        lang={this.props.lang}
       >
         <Text className={loadingClassName} />
         <Text>{this.props.text}</Text>
