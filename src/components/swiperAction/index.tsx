@@ -1,4 +1,4 @@
-import Taro, { useState, useEffect, pxTransform } from '@tarojs/taro';
+import Taro, { useState, useEffect, pxTransform, useMemo } from '@tarojs/taro'
 import { View } from '@tarojs/components';
 import { IProps } from '../../../@types/swiperAction';
 
@@ -18,6 +18,7 @@ export default function ClSwiperAction(props: IProps) {
   const [showAnimation, setShowAnimation] = useState(0)
   const [beforeMove, setBeforeMove] = useState(0)
   const [show, setShow] = useState(false)
+  const [init, setInit] = useState(false)
   useEffect(() => {
     const list = props.options || []
     const newOprions = list.map((item: any) => {
@@ -35,13 +36,22 @@ export default function ClSwiperAction(props: IProps) {
     }
     else {
       const query = Taro.createSelectorQuery().in(this.$scope)
-      const view = query.select('#contentId')
-      view.fields({
-        size: true
-      }, (res: any) => {
-        const width: number = res.width
-        setActionWidth(width)
-      }).exec()
+      setTimeout(() => {
+        const view = query.select('#contentId')
+        try {
+          view.boundingClientRect().exec((rect: any) => {
+            const res = rect[0]
+            const width: number = res.width
+            console.log(res)
+            setActionWidth(width)
+            setInit(true)
+          })
+        } catch (e) {
+          throw e
+        }
+      }, 100)
+
+
     }
   }, [props.options])
   const actionsComponent = initOptions.map((item: any, index: number) => (
@@ -131,36 +141,37 @@ export default function ClSwiperAction(props: IProps) {
       <View
         style={{
           transform: `translateX(${pxTransform(translateX / screenPercent)})`,
-          transition: `all ${showAnimation}s ease-in`
+          transition: `all ${showAnimation}s ease-in`,
+          position: 'relative'
         }}
       >
         {this.props.children}
-      </View>
-      {
-        isH5 ?
+        {
+          isH5 ?
           <View
             className='cl-swiper-action__action'
             id={contentId}
             style={{
               right: `${props.direction === 'right' ? 0 : 'auto'}`,
               left: `${props.direction === 'left' ? 0 : 'auto'}`,
-              zIndex: show ? 1 : -1
+              zIndex: init ? 1 : -1
             }}
           >
             {actionsComponent}
           </View>
-          :
+               :
           <View
             className='cl-swiper-action__action'
             id='contentId'
             style={{
-              right: `${props.direction === 'right' ? 0 : 'auto'}`,
-              left: `${props.direction === 'left' ? 0 : 'auto'}`,
-              zIndex: show ? 1 : -1
+              right: `${props.direction === 'right' ? pxTransform(-actionWidth / screenPercent) : 'auto'}`,
+              left: `${props.direction === 'left' ? pxTransform(-actionWidth / screenPercent) : 'auto'}`,
+              zIndex: init ? 1 : -1
             }}>
             {actionsComponent}
           </View>
-      }
+        }
+      </View>
     </View>
   )
 }

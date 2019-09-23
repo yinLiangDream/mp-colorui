@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/button.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/button.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiperAction/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiperAction/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/swiperAction/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiperAction/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
     </list>
@@ -81,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:weapp">
+  <component name="RunManager" selected="npm.dev:alipay">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -134,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:alipay" />
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.publish" />
@@ -195,7 +194,7 @@
       <workItem from="1568100235660" duration="710000" />
       <workItem from="1568100957840" duration="768000" />
       <workItem from="1568901909636" duration="8294000" />
-      <workItem from="1569221652567" duration="522000" />
+      <workItem from="1569221652567" duration="3959000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -407,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568964810114</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="BUG&#10;修复 Button 缺失的属性，并添加诸多属性">
+      <created>1569222260831</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1569222260831</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -454,7 +460,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="searBar 组件完成，list 部分还未完成" />
     <MESSAGE value="buttonGroup" />
     <MESSAGE value="tabs" />
     <MESSAGE value="steps" />
@@ -479,7 +484,8 @@
     <MESSAGE value="BUG&#10;fix #12" />
     <MESSAGE value="Input 组件新增 defaultValue 属性" />
     <MESSAGE value="BUG&#10;修复 Button 在 flex 布局下会拉伸问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复 Button 在 flex 布局下会拉伸问题" />
+    <MESSAGE value="BUG&#10;修复 Button 缺失的属性，并添加诸多属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;修复 Button 缺失的属性，并添加诸多属性" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
