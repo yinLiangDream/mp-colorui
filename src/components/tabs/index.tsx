@@ -45,20 +45,15 @@ export default class ClTabs extends Component<IProps, IState> {
     const view0 = query.select(`#${id0}`);
     let left = 0;
     const promise = new Promise(resolve => {
-      view0.fields({
-        rect: true
-      }, (data: any) => {
-        // console.log(data);
+      view0.boundingClientRect().exec(res => {
+        const data = res[0]
         left = data.left;
-      }).exec();
-      view.fields({
-        rect: true,
-        size: true
-      }, (res: any) => {
-        // console.log(res)
-        left = Math.abs(left - res.left);
+      })
+      view.boundingClientRect().exec(res => {
+        const data = res[1]
+        left = Math.abs(left - data.left)
         resolve(left);
-      }).exec();
+      })
     });
     promise.then(() => {
       this.setState({

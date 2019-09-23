@@ -120,11 +120,11 @@ function ClInput(props: IProps) {
         setMaterialWidth(pxTransform(width / screenPercent))
       } else {
         const query = Taro.createSelectorQuery().in(this.$scope)
-        query.select('#cl-input').fields({
-          size: true
-        }, (res: any) => {
-          setMaterialWidth(pxTransform(res.width / screenPercent))
-        }).exec()
+        const view = query.select('#cl-input')
+        view.boundingClientRect().exec(res => {
+          const data = res[0]
+          setMaterialWidth(pxTransform(data.width / screenPercent))
+        })
       }
     }
   }, [props.title])

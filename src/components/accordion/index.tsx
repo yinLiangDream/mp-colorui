@@ -12,12 +12,11 @@ export default function ClAccordion(props: IProps) {
   useEffect(() => {
     if (show) {
       const query = Taro.createSelectorQuery().in(this.$scope);
-      query.select(`#${id}`).fields({
-        size: true,
-        rect: true
-      }, (res) => {
-        setHeight(res.height)
-      }).exec()
+      const view = query.select(`#${id}`)
+      view.boundingClientRect().exec(res => {
+        const data = res[0]
+        setHeight(data.height)
+      })
     } else {
       setHeight(0)
     }

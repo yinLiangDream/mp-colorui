@@ -37,13 +37,12 @@ export default function ClVerticalTab(props: IProps) {
     for (let i = 0; i < tabs.length; i++) {
       const query = Taro.createSelectorQuery()
       const view = query.select('#' + tabs[i].id);
-      view.fields({
-        size: true
-      }, (data: any) => {
+      view.boundingClientRect().exec(res => {
+        const data = res[0]
         tabs[i].top = tabHeight;
         tabHeight = tabHeight + data.height;
         tabs[i].bottom = tabHeight;
-      }).exec();
+      })
     }
     let scrollTop = e.detail.scrollTop + 20;
     isH5 && setScrollContent(e.detail.scrollTop)
@@ -87,26 +86,21 @@ export default function ClVerticalTab(props: IProps) {
     const topView = query.select('#' + tabs[0].id);
     let top = 0;
     top = await new Promise(resolve => {
-      topView.fields({
-        rect: true
-      }, (data: any) => {
-        console.log('1', data)
+      topView.boundingClientRect().exec(res => {
+        const data = res[0]
         resolve(data.top)
-        // top = data.top;
-      }).exec()
+      })
     })
     await new Promise(resolve => {
-      view.fields({
-        rect: true
-      }, (data: any) => {
+      view.boundingClientRect().exec(res => {
+        const data = res[1]
         setTimeout(() => {
-          console.log('2', data)
           const endTop = Math.abs(top - data.top);
           setScrollContent(endTop);
           scrollTab = false;
           resolve()
         }, 300)
-      }).exec();
+      })
     })
   };
   const weappComponent = (

@@ -29,16 +29,10 @@ export default function ClMessage(props: IProps) {
     const view = Taro.createSelectorQuery().in(this.$scope);
     const query = view.select('#content');
     return await new Promise(resolve => {
-      query
-        .fields(
-          {
-            size: true
-          },
-          (data: any) => {
-            resolve(data.height);
-          }
-        )
-        .exec();
+      query.boundingClientRect().exec(res => {
+        const data = res[0]
+        resolve(data.height)
+      })
     });
   };
   const clickClose = async () => {

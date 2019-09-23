@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/accordion/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/message/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/swiperAction/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiperAction/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tabs/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabs/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tip/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tip/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/verticalTab/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/verticalTab/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:h5">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -132,10 +138,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.dev:alipay" />
-        <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.publish" />
       </list>
     </recent_temporary>
@@ -193,7 +199,7 @@
       <workItem from="1568100235660" duration="710000" />
       <workItem from="1568100957840" duration="768000" />
       <workItem from="1568901909636" duration="8294000" />
-      <workItem from="1569221652567" duration="4103000" />
+      <workItem from="1569221652567" duration="8679000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -419,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569227720439</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="BUG&#10;SwiperAction H5适配问题">
+      <created>1569227863052</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1569227863052</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -466,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="tabs" />
     <MESSAGE value="steps" />
     <MESSAGE value="修复 H5 适配的部分问题" />
     <MESSAGE value="修复 H5 Radio 样式问题" />
@@ -491,7 +503,8 @@
     <MESSAGE value="BUG&#10;修复 Button 在 flex 布局下会拉伸问题" />
     <MESSAGE value="BUG&#10;修复 Button 缺失的属性，并添加诸多属性" />
     <MESSAGE value="BUG&#10;SwiperAction 支付宝小程序适配" />
-    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;SwiperAction 支付宝小程序适配" />
+    <MESSAGE value="BUG&#10;SwiperAction H5适配问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;SwiperAction H5适配问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

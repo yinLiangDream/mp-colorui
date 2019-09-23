@@ -42,7 +42,6 @@ export default function ClSwiperAction(props: IProps) {
           view.boundingClientRect().exec((rect: any) => {
             const res = rect[0]
             const width: number = res.width
-            console.log(res)
             setActionWidth(width)
             setInit(true)
           })
@@ -141,7 +140,7 @@ export default function ClSwiperAction(props: IProps) {
       <View
         style={{
           transform: `translateX(${pxTransform(translateX / screenPercent)})`,
-          transition: `all ${showAnimation}s ease-in`,
+          transition: `all 0.3s ease-in`,
           position: 'relative'
         }}
       >
