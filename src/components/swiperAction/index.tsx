@@ -152,8 +152,8 @@ export default function ClSwiperAction(props: IProps) {
             className='cl-swiper-action__action'
             id={contentId}
             style={{
-              right: `${props.direction === 'right' ? 0 : 'auto'}`,
-              left: `${props.direction === 'left' ? 0 : 'auto'}`,
+              right: `${props.direction === 'right' ? pxTransform(-actionWidth / screenPercent) : 'auto'}`,
+              left: `${props.direction === 'left' ? pxTransform(-actionWidth / screenPercent) : 'auto'}`,
               zIndex: init ? 1 : -1
             }}
           >
