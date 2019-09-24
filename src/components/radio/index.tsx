@@ -1,8 +1,9 @@
-import {Block, Radio, RadioGroup, Text, View} from '@tarojs/components';
+import { Radio, RadioGroup, Text, View } from '@tarojs/components'
 import Taro from '@tarojs/taro';
 import H5Radio from './h5';
 import ListRadio from './components/ListRadio'
 import {IProps} from '../../../@types/radio';
+import { isWeApp } from '../utils'
 
 export default function ClRadio(props: IProps) {
   const type = props.type || 'normal';
@@ -49,8 +50,8 @@ export default function ClRadio(props: IProps) {
 
   const weappComponent = type === 'list' ? renderListComponent() : formOrNormalComponent;
 
-  const RadioComponent = Taro.getEnv() === Taro.ENV_TYPE.WEB ?
-    <H5Radio {...props} /> : weappComponent;
+  const RadioComponent = !isWeApp ?
+                         <H5Radio {...props} /> : weappComponent;
 
   return (
     RadioComponent

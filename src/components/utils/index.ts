@@ -121,6 +121,11 @@ export const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv()
 export const isAliPay = Taro.ENV_TYPE.ALIPAY === Taro.getEnv()
 
 /**
+ * 是否是 微信 环境
+ * @type {boolean}
+ */
+export const isWeApp = Taro.ENV_TYPE.WEAPP === Taro.getEnv()
+/**
  * 获取 Rect
  * @returns {number}
  */
