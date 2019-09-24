@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkbox/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/h5/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/actionSheet/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/actionSheet/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,10 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.dev:alipay" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:weapp" />
+        <item itemvalue="npm.dev:h5" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.publish" />
       </list>
     </recent_temporary>
@@ -194,7 +193,7 @@
       <workItem from="1568100235660" duration="710000" />
       <workItem from="1568100957840" duration="768000" />
       <workItem from="1568901909636" duration="8294000" />
-      <workItem from="1569221652567" duration="20787000" />
+      <workItem from="1569221652567" duration="22348000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -448,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569307371934</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="BUG&#10;支付宝小程序 Radio 适配">
+      <created>1569312627824</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1569312627824</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -495,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="修复 H5 button 无动效问题" />
     <MESSAGE value="修复 H5 timeline 线条过细问题" />
     <MESSAGE value="修复 H5 swiper 未铺满问题" />
     <MESSAGE value="API&#10;新增 checkbox 组件 type 属性下的 list 属性" />
@@ -520,7 +525,8 @@
     <MESSAGE value="获取节点功能兼容支付宝小程序" />
     <MESSAGE value="BUG&#10;修复 VerticalTab 支付宝小程序端的 bug" />
     <MESSAGE value="BUG&#10;支付宝小程序 CheckBox 适配" />
-    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;支付宝小程序 CheckBox 适配" />
+    <MESSAGE value="BUG&#10;支付宝小程序 Radio 适配" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;支付宝小程序 Radio 适配" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

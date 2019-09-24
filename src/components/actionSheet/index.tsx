@@ -92,7 +92,7 @@ export default function ClActionSheet(props: IProps) {
           key={item.cu_action_sheet_id}
         >
           <ClCard bgColor={item.bgColor} type="full" active>
-            <ClText align="center" text={item.text} />
+            {item.text}
           </ClCard>
         </View>
       )
