@@ -4,6 +4,7 @@ import {BG_COLOR_LIST, TEXT_COLOR_LIST} from '../utils/model';
 import {IProps} from '../../../@types/tabs';
 
 import './index.scss'
+import { getRectNumber, isAliPay, screenPercent } from '../utils'
 
 interface IState {
   activeTab: number;
@@ -44,14 +45,21 @@ export default class ClTabs extends Component<IProps, IState> {
     const view = query.select(`#${id}`);
     const view0 = query.select(`#${id0}`);
     let left = 0;
-    const promise = new Promise(resolve => {
-      view0.boundingClientRect().exec(res => {
-        const data = res[0]
-        left = data.left;
+    const promise = new Promise(async (resolve) => {
+      await new Promise(resolve1 => {
+        view0.boundingClientRect().exec(res => {
+          const data = res[0]
+          left = data.left
+          resolve1()
+        })
       })
       view.boundingClientRect().exec(res => {
-        const data = res[1]
-        left = Math.abs(left - data.left)
+        const data = res[getRectNumber()]
+        if (isAliPay) {
+          left = data.width * index
+        } else {
+          left = Math.abs(left - data.left)
+        }
         resolve(left);
       })
     });
@@ -164,7 +172,7 @@ export default class ClTabs extends Component<IProps, IState> {
       ? TEXT_COLOR_LIST[this.props.activeColor]
       : '';
     // 空组件镇压邪魔
-    const centerComponent = <View/>;
+    const centerComponent = <View/>
     const renderComponent = () => {
       const {type, tabs} = this.props;
       const {activeTab, scrollLeft} = this.state;
@@ -180,7 +188,7 @@ export default class ClTabs extends Component<IProps, IState> {
         <ScrollView scrollY>
           <View className='scrollx' style={{
             width: "auto",
-            transform: `translateX(-${pxTransform(contentScrollLeft * 2)})`,
+            transform: `translateX(-${pxTransform(contentScrollLeft / screenPercent)})`,
             transitionDuration: `${duration}s`
           }}
                 onTouchStart={(e) => {
@@ -197,7 +205,6 @@ export default class ClTabs extends Component<IProps, IState> {
                     contentScrollLeft: contentScrollLeft - distance
                   });
                   scrollLeftContent = e.touches[0].pageX;
-                  // console.log(e)
                 }}
                 onTouchEnd={(e) => {
                   if (!this.props.touchMove) return;

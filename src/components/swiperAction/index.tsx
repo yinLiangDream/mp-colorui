@@ -36,21 +36,21 @@ export default function ClSwiperAction(props: IProps) {
     }
     else {
       const query = Taro.createSelectorQuery().in(this.$scope)
-      setTimeout(() => {
-        const view = query.select('#contentId')
-        try {
-          view.boundingClientRect().exec((rect: any) => {
-            const res = rect[0]
-            const width: number = res.width
-            setActionWidth(width)
-            setInit(true)
-          })
-        } catch (e) {
-          throw e
-        }
-      }, 100)
-
-
+      this.componentDidMount = () => {
+        setTimeout(() => {
+          const view = query.select('#contentId')
+          try {
+            view.boundingClientRect().exec((rect: any) => {
+              const res = rect[0]
+              const width: number = res.width
+              setActionWidth(width)
+              setInit(true)
+            })
+          } catch (e) {
+            throw e
+          }
+        }, 500)
+      }
     }
   }, [props.options])
   const actionsComponent = initOptions.map((item: any, index: number) => (

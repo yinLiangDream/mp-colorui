@@ -22,23 +22,21 @@ import ClMenuList from '../../components/menuList';
 import ClSwiperAction from '../../components/swiperAction/index';
 import ClActionSheet from '../../components/actionSheet/index';
 import ClCurtain from '../../components/curtain/index';
+import ClTabs from '../../components/tabs'
 
 export default function Index() {
-  const [value, setValue] = useState('234')
+  const tabs = [...Array(50)].map((key, index) => ({ name: 'tab-' + index, id: 'id-' + index }))
   return (
-    <ClFlex align='center' justify='between'>
-      <ClButton
-        onClick={() => {
-        }}
-      >上</ClButton>
-      <ClButton
-        onClick={() => {
-        }}
-      >上左</ClButton>
-      <ClButton
-        onClick={() => {
-        }}
-      >上右</ClButton>
-    </ClFlex>
+    <View>
+      <ClVerticalTab tabs={tabs} height={1000}>
+        <View>
+          {tabs.map((item) => (
+            <View id={item.id} key={item.name}>
+              <ClVerticalTabCell>{item.name}</ClVerticalTabCell>
+            </View>
+          ))}
+        </View>
+      </ClVerticalTab>
+    </View>
   )
 }

@@ -108,7 +108,26 @@ export const generateId = (hashLength: number = 24): string => {
   return `id-${hs.join('')}`;
 }
 
+/**
+ * 是否是 H5 环境
+ * @type {boolean}
+ */
 export const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv()
+
+/**
+ * 是否是 支付宝 环境
+ * @type {boolean}
+ */
+export const isAliPay = Taro.ENV_TYPE.ALIPAY === Taro.getEnv()
+
+/**
+ * 获取 Rect
+ * @returns {number}
+ */
+export const getRectNumber = () => {
+  if (isAliPay) return 0
+  return 1
+}
 
 export default {
   model,
