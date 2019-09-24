@@ -2215,6 +2215,7 @@ swiper {
  ==================== */
 
 .cu-steps {
+  counter-reset: index 0;
   display: flex;
   .cu-item::before,
   .cu-item::after,
@@ -2265,9 +2266,10 @@ swiper {
       line-height: 80px;
     }
     .num {
+      counter-increment: index 1;
       display: block;
-      font-size: 40px;
-      line-height: 80px;
+      //font-size: 40px;
+      //line-height: 80px;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -2279,7 +2281,7 @@ swiper {
       overflow: hidden;
       &::before,
       &::after {
-        content: attr(data-index);
+        content: counter(index);
         position: absolute;
         left: 0;
         right: 0;
