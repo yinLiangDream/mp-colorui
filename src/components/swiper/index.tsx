@@ -1,7 +1,7 @@
 import { Image, Swiper, SwiperItem, Video, View } from '@tarojs/components';
-import Taro, { useState, useEffect } from '@tarojs/taro';
+import Taro, { useState, useEffect, pxTransform } from '@tarojs/taro'
 import { IProps, TList } from '../../../@types/swiper';
-import { generateId } from '../utils';
+import { generateId, isAliPay, isWeApp, screenPercent } from '../utils'
 
 export default function ClSwiper(props: IProps) {
   const [listState, setListState] = useState(props.list || [])
@@ -22,13 +22,13 @@ export default function ClSwiper(props: IProps) {
   const indicatorColor = props.indicatorColor || '#000';
   const indicatorActiveColor = props.indicatorActiveColor || '#FFF';
   const circular = !!props.circular;
-  const autoplay = autoplay => !!autoplay;
-  const loop = loop => !!loop;
-  const muted = muted => !!muted;
-  const showPlayBtn = showPlayBtn => !!showPlayBtn;
-  const controls = controls => !!controls;
-  const title = title => title;
-  const poster = poster => poster;
+  const autoplay = autoplayData => !!autoplayData
+  const loop = loopData => !!loopData
+  const muted = mutedData => !!mutedData
+  const showPlayBtn = showPlayBtnData => !!showPlayBtnData
+  const controls = controlsData => !!controlsData
+  const title = titleData => titleData
+  const poster = posterData => posterData
   const list = listState || [];
 
   const [cur, setCur] = useState(0);
@@ -97,6 +97,8 @@ export default function ClSwiper(props: IProps) {
       interval={interval}
       duration={duration}
       onChange={onChange}
+      nextMargin={pxTransform(isAliPay ? 70 * screenPercent : 70)}
+      previousMargin={pxTransform(isAliPay ? 70 * screenPercent : 70)}
     >
       {list.map((item: any, index: number) => (
         <SwiperItem

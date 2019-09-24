@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
     </list>
@@ -193,7 +194,7 @@
       <workItem from="1568100235660" duration="710000" />
       <workItem from="1568100957840" duration="768000" />
       <workItem from="1568901909636" duration="8294000" />
-      <workItem from="1569221652567" duration="24440000" />
+      <workItem from="1569221652567" duration="28187000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -461,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569314465959</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="BUG&#10;支付宝小程序 Steps 适配">
+      <created>1569317081927</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1569317081927</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -508,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="修复 H5 swiper 未铺满问题" />
     <MESSAGE value="API&#10;新增 checkbox 组件 type 属性下的 list 属性" />
     <MESSAGE value="API&#10;新增 menuList list 属性下 disabled 属性&#10;BUG&#10;menuList 点击失效问题" />
     <MESSAGE value="API&#10;新增 titleBar renderRight 属性&#10;BUG&#10;解决 浅色 light-pink 失效问题" />
@@ -533,7 +540,8 @@
     <MESSAGE value="BUG&#10;支付宝小程序 CheckBox 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 Radio 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 ActionSheet 适配" />
-    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;支付宝小程序 ActionSheet 适配" />
+    <MESSAGE value="BUG&#10;支付宝小程序 Steps 适配" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG&#10;支付宝小程序 Steps 适配" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

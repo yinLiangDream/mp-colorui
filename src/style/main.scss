@@ -2158,10 +2158,10 @@ swiper {
 }
 
 .card-swiper {
-  height: 420px;
+  height: 420px !important;
   swiper-item {
     width: 610px !important;
-    left: 70px;
+    //left: 70px;
     box-sizing: border-box;
     padding: 40px 0px 70px;
     overflow: initial;
