@@ -2,6 +2,11 @@ const path = require('path');
 
 const config = {
   projectName: 'mp-colorui',
+  alias:{
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/': path.resolve(__dirname, '..', 'src/'),
+    '@types': path.resolve(__dirname, '..', '@types')
+  },
   date: '2018-10-30',
   designWidth: 750,
   deviceRatio: {
