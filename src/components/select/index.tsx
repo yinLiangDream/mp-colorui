@@ -1,5 +1,5 @@
 import { Picker, View } from '@tarojs/components';
-import Taro, { useState } from '@tarojs/taro';
+import Taro, { useState, useMemo } from '@tarojs/taro';
 import { getNowDate } from '../utils/index';
 import { IProps } from '../../../@types/select';
 import { getAreaData } from "../utils/area";
@@ -60,6 +60,10 @@ function ClSelect(props: IProps) {
     const value: string = getSelectorValue(index);
     setSelected(value);
   };
+  useMemo(() => {
+    props.mode === 'selector' && setSelected(getSelectorValue(selector.value))
+    props.mode === 'multiSelector' && setMutiSelected(getMutiSelectorValue(mutiSelector.value))
+  }, [props.selector])
   // 多选
   const getMutiSelectorValue = mutiIndex => {
     const value: any[] = [];
