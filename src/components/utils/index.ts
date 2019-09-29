@@ -134,6 +134,16 @@ export const getRectNumber = () => {
   return 1
 }
 
+
+/**
+ * 是否为本地链接
+ * @param {string} url
+ * @returns {boolean}
+ */
+export const idLocalUrl = (url: string) => {
+  return url.indexOf('.') === 0 || url.indexOf('/') === 0
+}
+
 export default {
   model,
   getNowDate,
