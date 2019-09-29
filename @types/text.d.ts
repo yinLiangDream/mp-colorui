@@ -68,6 +68,12 @@ export interface IProps {
    * 文字
    */
   text?: string;
+  /**
+   * 字体粗细
+   *
+   * 默认值 `normal`
+   */
+  fontWeight?: 'normal' | 'bold' | 'bolder' | 'lighter' | number;
   children?: any;
 }
 

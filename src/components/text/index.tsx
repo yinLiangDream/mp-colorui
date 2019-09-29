@@ -1,5 +1,5 @@
-import { View } from '@tarojs/components';
-import Taro, { Component, pxTransform } from '@tarojs/taro';
+import { View, Text } from '@tarojs/components';
+import Taro, { pxTransform } from '@tarojs/taro';
 import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from '../utils/model';
 import { IProps } from '../../../@types/text';
 
@@ -22,7 +22,7 @@ const FONT_SPACING = {
   small: 5,
   normal: 10,
   large: 20
-}
+};
 
 export default function ClText(props: IProps) {
   const lineSpacing = props.lineSpacing || 'none';
@@ -41,27 +41,28 @@ export default function ClText(props: IProps) {
   return (
     <View
       className={`${sizeClassName} ${textColorClassName} ${bgColorClassName} ${cutClassName} ${alignClassName}`}
+      style={{
+        lineHeight:
+          lineSpacing === 'none'
+            ? 'normal'
+            : pxTransform(
+                isNumber(lineSpacing) ? lineSpacing : LINE_SPACING[lineSpacing]
+              ),
+        letterSpacing:
+          fontSpacing === 'none'
+            ? 'normal'
+            : pxTransform(
+                isNumber(fontSpacing) ? fontSpacing : FONT_SPACING[fontSpacing]
+              ),
+        fontWeight: props.fontWeight
+      }}
     >
-      <View
+      <Text
         className={`${specialClassName} ${cutClassName ? '' : 'cl-text__wrap'}`}
-        style={{
-          lineHeight:
-            lineSpacing === 'none'
-              ? 'normal'
-              : pxTransform(
-                  isNumber(lineSpacing) ? lineSpacing : LINE_SPACING[lineSpacing]
-                ),
-          letterSpacing:
-            fontSpacing === 'none'
-              ? 'normal'
-              : pxTransform(
-                  isNumber(fontSpacing) ? fontSpacing : FONT_SPACING[fontSpacing]
-                )
-        }}
       >
         {props.text}
         {this.props.children}
-      </View>
+      </Text>
     </View>
   );
 }
@@ -79,5 +80,6 @@ ClText.defaultProps = {
   special: undefined,
   text: '',
   lineSpecing: 'none',
-  fontSpecing: 'none'
+  fontSpecing: 'none',
+  fontWeight: 'normal'
 } as IProps;
