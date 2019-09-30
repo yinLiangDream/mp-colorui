@@ -6,15 +6,15 @@ export interface IProps {
    *
    * 默认值 `3`
    */
-  col: number;
+  col: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
   /**
-   * 类型，目前仅为一种选项
+   * 类型
    *
    * 默认值 `normal`
    *
    * 可选类型 `square`, `normal`
    */
-  mode?: 'square';
+  mode?: 'normal' | 'square';
   children?: any;
 }
 

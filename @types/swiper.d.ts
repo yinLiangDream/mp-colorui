@@ -56,6 +56,12 @@ export interface IProps {
    */
   type?: TType;
   /**
+   * 是否自动轮播
+   *
+   * 默认值 `false`
+   */
+  autoplay?: boolean;
+  /**
    * 每个点的形状
    *
    * 默认值 `square`

@@ -17,6 +17,18 @@ export interface IProps {
    */
   size?: extendSizeType;
   /**
+   * 行间距
+   *
+   * 默认值 `none`
+   */
+  lineSpacing?: 'none' | 'small' | 'normal' | 'large' | number;
+  /**
+   * 字间距
+   *
+   * 默认值 `none`
+   */
+  fontSpacing?: 'none' | 'small' | 'normal' | 'large' | number;
+  /**
    * 文字颜色，可选类型请查看 默认色-标准色
    */
   textColor?: bgColorType;
@@ -56,6 +68,12 @@ export interface IProps {
    * 文字
    */
   text?: string;
+  /**
+   * 字体粗细
+   *
+   * 默认值 `normal`
+   */
+  fontWeight?: 'normal' | 'bold' | 'bolder' | 'lighter' | number;
   children?: any;
 }
 

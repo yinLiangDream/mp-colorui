@@ -20,7 +20,18 @@
     "typeRoots": [
       "node_modules/@types",
       "global.d.ts"
-    ]
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@/components": [
+        "src/components"
+      ],
+      "@types": [
+        "@types"
+      ]
+    }
   },
   "compileOnSave": false
 }

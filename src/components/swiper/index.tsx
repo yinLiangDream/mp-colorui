@@ -1,17 +1,19 @@
 import { Image, Swiper, SwiperItem, Video, View } from '@tarojs/components';
-import Taro, { useState, useEffect, pxTransform } from '@tarojs/taro'
+import Taro, { useState, useEffect, pxTransform } from '@tarojs/taro';
 import { IProps, TList } from '../../../@types/swiper';
-import { generateId, isAliPay, isWeApp, screenPercent } from '../utils'
+import { generateId, isAliPay, screenPercent } from '../utils';
 
 export default function ClSwiper(props: IProps) {
-  const [listState, setListState] = useState(props.list || [])
+  const [listState, setListState] = useState(props.list || []);
   useEffect(() => {
-    const list = props.list || []
-    setListState(list.map((item: any) => {
-      item.cu_swiper_id = generateId()
-      return item
-    }))
-  }, [props.list])
+    const list = props.list || [];
+    setListState(
+      list.map((item: any) => {
+        item.cu_swiper_id = generateId();
+        return item;
+      })
+    );
+  }, [props.list]);
   const swiperTypeClassName = type =>
     type ? `${type}-swiper` : 'screen-swiper';
   const dotClassName = type =>
@@ -22,14 +24,15 @@ export default function ClSwiper(props: IProps) {
   const indicatorColor = props.indicatorColor || '#000';
   const indicatorActiveColor = props.indicatorActiveColor || '#FFF';
   const circular = !!props.circular;
-  const autoplay = autoplayData => !!autoplayData
-  const loop = loopData => !!loopData
-  const muted = mutedData => !!mutedData
-  const showPlayBtn = showPlayBtnData => !!showPlayBtnData
-  const controls = controlsData => !!controlsData
-  const title = titleData => titleData
-  const poster = posterData => posterData
+  const autoplay = autoplayData => !!autoplayData;
+  const loop = loopData => !!loopData;
+  const muted = mutedData => !!mutedData;
+  const showPlayBtn = showPlayBtnData => !!showPlayBtnData;
+  const controls = controlsData => !!controlsData;
+  const title = titleData => titleData;
+  const poster = posterData => posterData;
   const list = listState || [];
+  const autoplaySwiper = props.autoplay;
 
   const [cur, setCur] = useState(0);
   const onChange = e => {
@@ -71,6 +74,7 @@ export default function ClSwiper(props: IProps) {
       interval={interval}
       duration={duration}
       onChange={onChange}
+      autoplay={autoplaySwiper}
     >
       {list.map((item: any, index: number) => (
         <SwiperItem
@@ -97,6 +101,7 @@ export default function ClSwiper(props: IProps) {
       interval={interval}
       duration={duration}
       onChange={onChange}
+      autoplay={autoplaySwiper}
       nextMargin={pxTransform(isAliPay ? 70 * screenPercent : 70)}
       previousMargin={pxTransform(isAliPay ? 70 * screenPercent : 70)}
     >
@@ -127,3 +132,18 @@ export default function ClSwiper(props: IProps) {
 ClSwiper.options = {
   addGlobalClass: true
 };
+
+ClSwiper.defaultProps = {
+  autoplay: false,
+  type: 'screen',
+  list: [],
+  dot: 'square',
+  duration: 500,
+  onClick: () => {},
+  indicatorDots: false,
+  indicatorColor: '#000',
+  indicatorActiveColor: '#FFF',
+  interval: 5000,
+  circular: false,
+  onChange: () => {}
+} as IProps

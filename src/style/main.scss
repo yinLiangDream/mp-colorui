@@ -2585,6 +2585,86 @@ scroll-view {
         }
       }
     }
+    &-6 {
+      > {
+        view, div {
+          width: 16.66%;
+        }
+      }
+      &.grid-square {
+        > {
+          view, div {
+            padding-bottom: calc((100% - 100px) / 5);
+            height: 0;
+            width: calc((100% - 100px) / 5);
+          }
+        }
+      }
+    }
+    &-7 {
+      > {
+        view, div {
+          width: 14.28%;
+        }
+      }
+      &.grid-square {
+        > {
+          view, div {
+            padding-bottom: calc((100% - 120px) / 5);
+            height: 0;
+            width: calc((100% - 120px) / 5);
+          }
+        }
+      }
+    }
+    &-8 {
+      > {
+        view, div {
+          width: 12.5%;
+        }
+      }
+      &.grid-square {
+        > {
+          view, div {
+            padding-bottom: calc((100% - 140px) / 5);
+            height: 0;
+            width: calc((100% - 140px) / 5);
+          }
+        }
+      }
+    }
+    &-9 {
+      > {
+        view, div {
+          width: 11.11%;
+        }
+      }
+      &.grid-square {
+        > {
+          view, div {
+            padding-bottom: calc((100% - 160px) / 5);
+            height: 0;
+            width: calc((100% - 160px) / 5);
+          }
+        }
+      }
+    }
+    &-10 {
+      > {
+        view, div {
+          width: 10%;
+        }
+      }
+      &.grid-square {
+        > {
+          view, div {
+            padding-bottom: calc((100% - 180px) / 5);
+            height: 0;
+            width: calc((100% - 180px) / 5);
+          }
+        }
+      }
+    }
   }
 }
 
