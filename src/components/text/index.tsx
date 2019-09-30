@@ -79,7 +79,7 @@ ClText.defaultProps = {
   align: 'left',
   special: undefined,
   text: '',
-  lineSpecing: 'none',
-  fontSpecing: 'none',
+  lineSpacing: 'none',
+  fontSpacing: 'none',
   fontWeight: 'normal'
 } as IProps;
