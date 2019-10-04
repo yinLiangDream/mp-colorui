@@ -20,12 +20,6 @@ export interface IProps {
    */
   size?: 'small' | 'normal';
   /**
-   * 是否可以点击
-   *
-   * 默认值 `false`
-   */
-  canTouch?: boolean;
-  /**
    * 点击事件
    */
   onClick?: (index: number) => void;

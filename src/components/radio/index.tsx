@@ -50,11 +50,12 @@ export default function ClRadio(props: IProps) {
 
   const weappComponent = type === 'list' ? renderListComponent() : formOrNormalComponent;
 
-  const RadioComponent = !isWeApp ?
-                         <H5Radio {...props} /> : weappComponent;
+  const RadioComponent = !isWeApp ? <H5Radio {...props} /> : weappComponent;
 
   return (
-    RadioComponent
+    <View>
+      {RadioComponent}
+    </View>
   );
 }
 
