@@ -60,10 +60,6 @@ function ClSelect(props: IProps) {
     const value: string = getSelectorValue(index);
     setSelected(value);
   };
-  useMemo(() => {
-    props.mode === 'selector' && setSelected(getSelectorValue(selector.value))
-    props.mode === 'multiSelector' && setMutiSelected(getMutiSelectorValue(mutiSelector.value))
-  }, [props.selector])
   // 多选
   const getMutiSelectorValue = mutiIndex => {
     const value: any[] = [];
@@ -173,7 +169,10 @@ function ClSelect(props: IProps) {
     }
     setTempSelect(tempSelect)
   }
-
+  useMemo(() => {
+    props.mode === 'selector' && setSelected(getSelectorValue(selector.value))
+    props.mode === 'multiSelector' && setMutiSelected(getMutiSelectorValue(mutiSelector.value))
+  }, [props.selector])
   // 单选组件
   const selectorComponent = (
     <Picker
