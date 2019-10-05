@@ -23,20 +23,20 @@ import ClSwiperAction from '../../components/swiperAction/index';
 import ClActionSheet from '../../components/actionSheet/index';
 import ClCurtain from '../../components/curtain/index';
 import ClTabs from '../../components/tabs'
+import ClRadio from '../../components/radio';
 
 export default function Index() {
-  const tabs = [...Array(50)].map((key, index) => ({ name: 'tab-' + index, id: 'id-' + index }))
+  const radioGroup = [{
+    key: '男生',
+    value: 'male'
+  }, {
+    key: '女生',
+    value: 'female'
+  }]
+  const [checkedValue, setCheckedValue] = useState('male')
   return (
     <View>
-      <ClVerticalTab tabs={tabs} height={1000}>
-        <View>
-          {tabs.map((item) => (
-            <View id={item.id} key={item.name}>
-              <ClVerticalTabCell>{item.name}</ClVerticalTabCell>
-            </View>
-          ))}
-        </View>
-      </ClVerticalTab>
+      <ClRadio type='normal' title='normal' radioGroup={radioGroup} checkedValue={checkedValue} />
     </View>
   )
 }

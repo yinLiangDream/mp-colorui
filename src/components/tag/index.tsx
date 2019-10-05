@@ -15,7 +15,6 @@ export default class ClTag extends Component<IProps, IState> {
   static defaultProps = {
     shape: 'normal',
     size: 'normal',
-    canTouch: false,
     tags: []
   } as IProps;
   onClick(index: number) {

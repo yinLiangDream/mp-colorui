@@ -3,6 +3,7 @@ import {View} from '@tarojs/components';
 
 import {IProps} from '../../../@types/accordion'
 import ClIcon from "../icon";
+import { screenPercent } from '../utils';
 
 export default function ClAccordion(props: IProps) {
   const {open, title, animation, onClick, card} = props;
@@ -24,7 +25,7 @@ export default function ClAccordion(props: IProps) {
   return (
     <View className={`cu-list menu ${card ? 'card-menu' : ''}`} style={{
       overflow: "hidden",
-      height: pxTransform((50 + height) * 2),
+      height: pxTransform(98 + height / screenPercent),
       transition: `all ${animation ? `${props.speed}s` : 0} linear`,
       color: 'black'
     }}>
