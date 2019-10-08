@@ -1,13 +1,13 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
 
 import {
   bgColorType,
   lightBgColorType,
   bgColorMoreType,
-  iconType
-} from './baseType';
+  iconType, BaseComponent
+} from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 背景色，可选类型请查看 默认色
    */
@@ -77,6 +77,7 @@ export interface IProps {
 }
 
 export interface ShopBarProps extends IProps {}
-declare const ShopBar: ComponentClass<ShopBarProps>;
 
-export default ShopBar;
+declare const ShopBar: ComponentClass<ShopBarProps>
+
+export default ShopBar

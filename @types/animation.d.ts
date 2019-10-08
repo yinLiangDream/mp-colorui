@@ -1,6 +1,7 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
+import { BaseComponent } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   type: 'fade' | 'scale-up' | 'scale-down' | 'slide-top' | 'slide-bottom' | 'slide-left' | 'slide-right' | 'shake' | 'none';
   reverse?: boolean;
   children?: any;
@@ -10,6 +11,6 @@ export interface IProps {
   onAnimationEnd?: (e: any) => void;
 }
 
-declare const ClAnimation: ComponentClass<IProps>;
+declare const ClAnimation: ComponentClass<IProps>
 
-export default ClAnimation;
+export default ClAnimation

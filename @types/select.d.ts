@@ -1,4 +1,5 @@
 import { ComponentClass } from 'react';
+import { BaseComponent } from './baseType'
 
 export type TMode = 'selector' | 'multiSelector' | 'time' | 'date' | 'region';
 export type TOnChange = (e: any) => void;
@@ -78,7 +79,7 @@ export type TRegion = {
   value?: { key: number; value: string }[];
 };
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 标题
    */

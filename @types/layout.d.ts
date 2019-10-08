@@ -1,4 +1,5 @@
 import { ComponentClass } from 'react';
+import { BaseComponent } from './baseType'
 
 type direction =
   | 'around'
@@ -10,7 +11,7 @@ type direction =
   | 'bottom';
 type distance = 'xsmall' | 'small' | 'normal' | 'large' | 'xlarge';
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 浮动方向， 默认不浮动
    *

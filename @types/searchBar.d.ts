@@ -4,10 +4,10 @@ import {
   iconType,
   bgColorType,
   bgColorMoreType,
-  lightBgColorType
-} from './baseType';
+  lightBgColorType, BaseComponent
+} from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 搜索栏的形状
    *

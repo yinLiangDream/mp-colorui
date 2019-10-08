@@ -1,12 +1,13 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
 
 import {
   normalSizeType,
   iconType,
   bgColorType,
   bgColorMoreType,
-  lightBgColorType
-} from './baseType';
+  lightBgColorType,
+  BaseComponent
+} from './baseType'
 
 export type TShape = 'radius' | 'round';
 export type TSize = normalSizeType | number;
@@ -40,7 +41,7 @@ export type THeaderArray = {
 
 export type TOnClick = () => void;
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 提供头像组件点击事件
    */
@@ -78,6 +79,6 @@ export interface IProps {
   headerArray?: THeaderArray[];
 }
 
-declare const ClAvatar: ComponentClass<IProps>;
+declare const ClAvatar: ComponentClass<IProps>
 
-export default ClAvatar;
+export default ClAvatar

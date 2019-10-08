@@ -4,10 +4,10 @@ import {
   bgColorType,
   bgColorMoreType,
   lightBgColorType,
-  iconType
-} from './baseType';
+  iconType, BaseComponent
+} from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * tabs类型选择
    *

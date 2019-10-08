@@ -1,6 +1,6 @@
 import { ComponentClass, ReactNode } from 'react';
 
-import { bgColorMoreType, bgColorType, lightBgColorType } from './baseType';
+import { BaseComponent, bgColorMoreType, bgColorType, lightBgColorType } from './baseType'
 
 export type TTitle = string;
 export type TClose = boolean;
@@ -49,7 +49,7 @@ export type radio = {};
 
 export type checkbox = {};
 
-export interface IProps {
+export interface IProps extends BaseComponent{
   /**
    * 是否显示
    *

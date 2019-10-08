@@ -4,10 +4,10 @@ import {
   extendSizeType,
   bgColorType,
   bgColorMoreType,
-  lightBgColorType
-} from './baseType';
+  lightBgColorType, BaseComponent
+} from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 文字大小
    *

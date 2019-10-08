@@ -1,7 +1,7 @@
 import { ComponentClass } from 'react';
-import { bgColorType, bgColorMoreType, lightBgColorType } from './baseType';
+import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 类型，custom 下可自定义背景色
    *

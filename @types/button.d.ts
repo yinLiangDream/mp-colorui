@@ -1,14 +1,14 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
 
 import {
   bgColorType,
   lightBgColorType,
   bgColorMoreType,
-  iconType
-} from './baseType';
+  BaseComponent
+} from './baseType'
 import { CommonEventFunction } from '@tarojs/components/types/common'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 按钮形状设置
    *
@@ -244,6 +244,6 @@ export interface IProps {
   lang?: string;
 }
 
-declare const Button: ComponentClass<IProps>;
+declare const Button: ComponentClass<IProps>
 
-export default Button;
+export default Button

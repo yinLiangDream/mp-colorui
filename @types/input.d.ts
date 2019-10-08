@@ -2,6 +2,7 @@ import { ComponentClass } from 'react'
 
 import { IProps as IButton } from './button'
 import { IProps as IIcon } from './icon'
+import { BaseComponent } from './baseType'
 
 export type TValue = string;
 export type TPlaceholder = string;
@@ -20,7 +21,7 @@ export type TOnBlur = (str: string) => void;
 export type TOnIconClick = (e: any) => void;
 export type TOnImageClick = (e: any) => void;
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 自动聚焦
    *

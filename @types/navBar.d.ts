@@ -4,10 +4,10 @@ import {
   bgColorType,
   bgColorMoreType,
   lightBgColorType,
-  iconType
-} from './baseType';
+  iconType, BaseComponent
+} from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 背景色，可选类型请查看 默认色
    */

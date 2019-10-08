@@ -1,4 +1,5 @@
 import { ComponentClass } from 'react';
+import { BaseComponent } from './baseType'
 
 export type TChooseImgObj = {
   /**
@@ -44,7 +45,7 @@ export type imgList = {
 
 export type TBeforeDel = (index: number) => boolean;
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 选择图片对象
    *

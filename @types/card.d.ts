@@ -1,11 +1,11 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
 
-import { bgColorMoreType, bgColorType, lightBgColorType } from './baseType';
+import { bgColorMoreType, bgColorType, lightBgColorType, BaseComponent } from './baseType'
 
 export type TTtype = 'card' | 'full';
 export type TTitle = string;
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 卡片组件类型选择
    *
@@ -35,6 +35,6 @@ export interface IProps {
   children?: any;
 }
 
-declare const Card: ComponentClass<IProps>;
+declare const Card: ComponentClass<IProps>
 
-export default Card;
+export default Card

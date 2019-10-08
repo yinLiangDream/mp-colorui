@@ -1,10 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="component&#10;add @types className 和 style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/update/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/update/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/accordion.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/accordion.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/actionSheet.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/actionSheet.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/animation.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/animation.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/avatar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/avatar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/baseType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/baseType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/button.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/button.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/card.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/card.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/checkbox.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/checkbox.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/curtain.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/curtain.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/divider.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/divider.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/drawer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/drawer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/flex.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/flex.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/floatButton.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/floatButton.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/form.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/form.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/formItem.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/formItem.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/grid.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/grid.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/icon.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/icon.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/imagePicker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/imagePicker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/input.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/input.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/layout.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/layout.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/loading.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/loading.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/menuList.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/menuList.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/message.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/message.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/modal.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/modal.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/navBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/navBar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/progress.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/progress.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/radio.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/radio.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/screenDrawer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/screenDrawer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/searchBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/searchBar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/select.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/select.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/shopBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/shopBar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/steps.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/steps.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/swiper.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiper.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/swiperAction.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiperAction.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/switch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/switch.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/tabBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabBar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/tabs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/tag.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tag.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/text.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/text.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/timeline.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/timeline.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/timer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/timer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/tip.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tip.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/titleBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/titleBar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/verticalTab.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/verticalTab.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/verticalTabCell.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/verticalTabCell.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/components/accordion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/accordion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/components/button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/button/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,12 +65,12 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="Sass File" />
         <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="Stylus File" />
         <option value="Vue Single File Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -212,7 +257,7 @@
       <workItem from="1570347598504" duration="1353000" />
       <workItem from="1570349935166" duration="4486000" />
       <workItem from="1570366797163" duration="12400000" />
-      <workItem from="1570503381968" duration="2258000" />
+      <workItem from="1570503381968" duration="5019000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -508,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570511126698</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="app&#10;0.5.2 日志更新">
+      <created>1570513441634</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1570513441634</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -555,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="API&#10;- Animation 组件&#10;- - 新增 onAnimationStart、onAnimationEnd 事件&#10;- Tabs 组件&#10;- - 新增 tabs 属性下的 id 属性&#10;- - 新增 touchMove 可滑动属性&#10;- VerticalTab 组件&#10;- - 新增 backTop 属性&#10;BUG&#10;- Card 组件&#10;- - 修复插入 children 内容时的异常提醒（不影响使用）" />
     <MESSAGE value="COMPONENT&#10;- 新增 FloatButton 浮动按钮组件" />
     <MESSAGE value="FEATURE&#10;ICON 组件支持第三方组件库" />
     <MESSAGE value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
@@ -580,7 +631,7 @@
     <MESSAGE value="修改 README 文件" />
     <MESSAGE value="新增 docs 文档" />
     <MESSAGE value="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="app&#10;0.5.2 日志更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="app&#10;0.5.2 日志更新" />
   </component>
 </project>

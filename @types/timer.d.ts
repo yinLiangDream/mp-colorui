@@ -1,6 +1,7 @@
 import { ComponentClass } from 'react'
+import { BaseComponent } from './baseType'
 
-export interface TimerProps {
+export interface TimerProps extends BaseComponent {
   startTime: number,
   endTime: number,
   onTimeup?(): void,
