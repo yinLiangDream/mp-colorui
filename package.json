@@ -30,8 +30,10 @@
     "lint": "eslint ./src --fix",
     "test": "jest --coverage",
     "build": "TARO_BUILD_TYPE=ui taro build --ui",
-    "publish:beta": "npm run build & npm publish --tag=beta",
-    "publish:production": "npm run build & npm publish"
+    "publish:beta": "npm run build && npm publish --tag=beta",
+    "publish:production": "npm run build && npm publish",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": [
@@ -65,6 +67,10 @@
     "@types/react": "^16.8.20",
     "@types/sinon": "^5.0.7",
     "@types/webpack-env": "^1.13.9",
+    "@vuepress/plugin-active-header-links": "^1.0.0-rc.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-nprogress": "^1.0.0-rc.1",
+    "@vuepress/plugin-search": "^1.0.0-rc.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
@@ -87,10 +93,14 @@
     "nerv-server": "^1.4.0",
     "nerv-test-utils": "^1.4.0",
     "nervjs": "^1.4.4",
+    "node-sass": "^4.12.0",
+    "qrcode": "^1.4.2",
     "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^8.0.0",
     "simulant": "^0.2.2",
     "sinon": "^7.3.2",
     "tslint": "^5.19.0",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.2",
+    "vuepress": "^1.1.0"
   }
 }
