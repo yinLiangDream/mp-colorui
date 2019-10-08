@@ -364,5 +364,5 @@ export type solidBoldType =
 export interface BaseComponent {
   className?: string | string[] | { [key: string]: boolean };
 
-  style?: string | CSSProperties
+  style?: CSSProperties
 }

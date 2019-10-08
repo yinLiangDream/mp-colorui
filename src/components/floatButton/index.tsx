@@ -1,12 +1,12 @@
-import Taro, { useState, useEffect, pxTransform } from '@tarojs/taro';
-import { View } from '@tarojs/components';
-import utils, { generateId } from '../utils/index';
-import { IProps } from '../../../@types/floatButton';
-import ClIcon from '../icon';
+import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
+import { View } from "@tarojs/components";
+import utils, { classNames, generateId } from "../utils/index";
+import { IProps } from "../../../@types/floatButton";
+import ClIcon from "../icon";
 
-import './index.scss';
-import ClAnimation from '../animation';
-import ClLayout from '../layout';
+import "./index.scss";
+import ClAnimation from "../animation";
+import ClLayout from "../layout";
 
 let tempPageX = 0;
 let tempPageY = 0;
@@ -16,7 +16,7 @@ export default function ClFloatButton(props: IProps) {
   const [show, setShow] = useState(false);
   const [rotate, setRotate] = useState(0);
   const [animation, setAnimation] = useState({});
-  const [actionListState, setActionListState] = useState(props.actionList)
+  const [actionListState, setActionListState] = useState(props.actionList);
   const {
     move,
     open,
@@ -33,42 +33,47 @@ export default function ClFloatButton(props: IProps) {
     closeWithShadow
   } = props;
   useEffect(() => {
-    const list = actionList || []
-    setActionListState(list.map((item: any) => {
-      item.cu_float_button_id = generateId()
-      return item
-    }))
-  }, [props.actionList])
-  const dealSize = utils.model.SIZE[size || 'normal'];
-  const dealBgColor = utils.model.BG_COLOR_LIST[bgColor || 'blue'];
-  const dealShadow = shadow ? 'shadow' : '';
-  const dealIconColor = iconColor || '';
+    const list = actionList || [];
+    setActionListState(
+      list.map((item: any) => {
+        item.cu_float_button_id = generateId();
+        return item;
+      })
+    );
+  }, [props.actionList]);
+  const dealSize = utils.model.SIZE[size || "normal"];
+  const dealBgColor = utils.model.BG_COLOR_LIST[bgColor || "blue"];
+  const dealShadow = shadow ? "shadow" : "";
+  const dealIconColor = iconColor || "";
   let dealActionList = actionListState || [];
   const len = dealActionList.length;
   const type = () => {
-    if (direction === 'vertical') {
-      return show ? 'slide-bottom' : 'slide-top';
+    if (direction === "vertical") {
+      return show ? "slide-bottom" : "slide-top";
     } else {
-      return show ? 'slide-right' : 'slide-left';
+      return show ? "slide-right" : "slide-left";
     }
   };
   const actionListComponent = dealActionList.map((item: any, index) => (
-    <View key={item.cu_float_button_id} style={{ position: show ? 'relative' : 'absolute' }}>
+    <View
+      key={item.cu_float_button_id}
+      style={{ position: show ? "relative" : "absolute" }}
+    >
       <ClAnimation
         type={type()}
         delay={show ? (len - index - 1) / 10 : 0}
         duration={0.2}
       >
         <ClLayout
-          padding='small'
-          paddingDirection={direction === 'vertical' ? 'bottom' : 'right'}
+          padding="small"
+          paddingDirection={direction === "vertical" ? "bottom" : "right"}
         >
           <View
             className={`cu-avatar ${shape} ${dealSize} ${
               item.bgColor
                 ? utils.model.BG_COLOR_LIST[item.bgColor]
                 : dealBgColor
-              } ${dealShadow}`}
+            } ${dealShadow}`}
             onClick={e => {
               e.stopPropagation();
               clickButton();
@@ -83,25 +88,47 @@ export default function ClFloatButton(props: IProps) {
       </ClAnimation>
     </View>
   ));
-  const directionClass = direction === 'vertical' ? '' : 'flex';
+  const directionClass = direction === "vertical" ? "" : "flex";
   const clickButton = () => {
     open && setShow(!show);
     open && setRotate(rotate ? 0 : 45);
   };
+  const position = props.position || {
+    top: "auto",
+    right: 50,
+    bottom: 200,
+    left: "auto"
+  };
   return (
     <View
-      className={`${show ? 'float_button__mask' : ''}`}
+      className={classNames(
+        `${show ? "float_button__mask" : ""}`,
+        props.className
+      )}
+      style={Object.assign({}, props.style)}
       onClick={() => {
         closeWithShadow && clickButton();
       }}
     >
       <View
-        className='float_button__fixed'
+        className="float_button__fixed"
         style={{
-          top: props.position.top && props.position.top !== 'auto' ? pxTransform(props.position.top) : 'auto',
-          right: props.position.right && props.position.right !== 'auto' ? pxTransform(props.position.right) : 'auto',
-          bottom: props.position.bottom && props.position.bottom !== 'auto' ? pxTransform(props.position.bottom) : 'auto',
-          left: props.position.left && props.position.left !== 'auto' ? pxTransform(props.position.left) : 'auto',
+          top:
+            position.top && position.top !== "auto"
+              ? pxTransform(position.top)
+              : "auto",
+          right:
+            position.right && position.right !== "auto"
+              ? pxTransform(position.right)
+              : "auto",
+          bottom:
+            position.bottom && position.bottom !== "auto"
+              ? pxTransform(position.bottom)
+              : "auto",
+          left:
+            position.left && position.left !== "auto"
+              ? pxTransform(position.left)
+              : "auto"
         }}
         animation={animation}
         onTouchStart={e => {
@@ -117,10 +144,10 @@ export default function ClFloatButton(props: IProps) {
           let newAnimation = Taro.createAnimation(animation);
           pageX = pageX - (touchs.pageX - tempPageX);
           pageY = pageY - (touchs.pageY - tempPageY);
-          const length = Math.sqrt(Math.pow(pageX, 2) + Math.pow(pageY, 2))
+          const length = Math.sqrt(Math.pow(pageX, 2) + Math.pow(pageY, 2));
           newAnimation.right(pageX);
           newAnimation.bottom(pageY).step({
-            duration: 13 * length / 100
+            duration: (13 * length) / 100
           });
           setAnimation(newAnimation.export());
           tempPageX = touchs.pageX;
@@ -144,7 +171,7 @@ export default function ClFloatButton(props: IProps) {
               className={`${dealIconColor}`}
               style={{
                 transform: `rotate(${rotate}deg)`,
-                transition: 'all 0.15s linear'
+                transition: "all 0.15s linear"
               }}
             >
               <ClIcon iconName={icon} size={size} />
@@ -163,21 +190,21 @@ ClFloatButton.options = {
 ClFloatButton.defaultProps = {
   move: false,
   open: true,
-  icon: 'add',
-  bgColor: 'blue',
+  icon: "add",
+  bgColor: "blue",
   iconColor: undefined,
-  direction: 'vertical',
-  onClick: () => { },
+  direction: "vertical",
+  onClick: () => {},
   shadow: true,
-  onActionClick: () => { },
+  onActionClick: () => {},
   actionList: [],
-  size: 'normal',
-  shape: 'round',
+  size: "normal",
+  shape: "round",
   closeWithShadow: false,
   position: {
-    top: 'auto',
+    top: "auto",
     right: 50,
     bottom: 200,
-    left: 'auto'
+    left: "auto"
   }
 } as IProps;

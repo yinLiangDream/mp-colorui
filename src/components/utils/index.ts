@@ -1,9 +1,12 @@
-import Taro from '@tarojs/taro'
-import * as model from './model';
-import rule from './rules';
+import Taro from "@tarojs/taro";
+import classnames from "classnames";
+import * as model from "./model";
+import rule from "./rules";
+
+export const classNames = classnames;
 
 const fullDate = (num: number) => {
-  if (num < 10) return '0' + num;
+  if (num < 10) return "0" + num;
   return num;
 };
 
@@ -11,14 +14,14 @@ const fullDate = (num: number) => {
  * 获取当前日期
  * @param type 单位
  */
-export const getNowDate = (type: 'year' | 'day' | 'month') => {
+export const getNowDate = (type: "year" | "day" | "month") => {
   const date = new Date();
   const year = date.getFullYear();
   const month = fullDate(date.getMonth());
   const day = fullDate(date.getDate());
-  if (type === 'year') return `${year}`;
-  if (type === 'month') return `${year}-${month}`;
-  if (type === 'day') return `${year}-${month}-${day}`;
+  if (type === "year") return `${year}`;
+  if (type === "month") return `${year}-${month}`;
+  if (type === "day") return `${year}-${month}-${day}`;
   return `${year}-${month}-${day}`;
 };
 
@@ -37,7 +40,7 @@ export const getNowTIme = () => {
  * @param obj  参数值
  */
 export const isNumber = (obj: any) => {
-  return typeof obj === 'number' && !isNaN(obj);
+  return typeof obj === "number" && !isNaN(obj);
 };
 
 /**
@@ -48,16 +51,16 @@ export const isNumber = (obj: any) => {
  */
 export const debounce = (func: Function, wait: number) => {
   let timeout: any;
-  return function () {
+  return function() {
     let context = this;
     let args = arguments;
 
     if (timeout) clearTimeout(timeout);
 
     timeout = setTimeout(() => {
-      func.apply(context, args)
-      clearTimeout(timeout)
-    }, wait)
+      func.apply(context, args);
+      clearTimeout(timeout);
+    }, wait);
   };
 };
 
@@ -69,16 +72,16 @@ export const debounce = (func: Function, wait: number) => {
  */
 export const throttling = (func: Function, wait: number) => {
   let timeout: any;
-  return function () {
+  return function() {
     let context = this;
     let args = arguments;
 
     if (timeout) return;
 
     timeout = setTimeout(() => {
-      func.apply(context, args)
+      func.apply(context, args);
       clearTimeout(timeout);
-    }, wait)
+    }, wait);
   };
 };
 
@@ -93,47 +96,85 @@ export const screenPercent = Taro.getSystemInfoSync().screenWidth / 750;
  * @returns {string} id
  */
 export const generateId = (hashLength: number = 24): string => {
-  if (!hashLength || typeof (Number(hashLength)) != 'number') { return ''; }
-  const ar: any[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+  if (!hashLength || typeof Number(hashLength) != "number") {
+    return "";
+  }
+  const ar: any[] = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+  ];
   const hs: any[] = [];
   const hl = Number(hashLength);
   const al = ar.length;
   for (let i = 0; i < hl; i++) {
-    const radom = Math.random() * al
-    const index = Math.floor(radom)
-    const code = ar[index]
+    const radom = Math.random() * al;
+    const index = Math.floor(radom);
+    const code = ar[index];
     hs.push(code);
   }
 
-  return `id-${hs.join('')}`;
-}
+  return `id-${hs.join("")}`;
+};
 
 /**
  * 是否是 H5 环境
  * @type {boolean}
  */
-export const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv()
+export const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv();
 
 /**
  * 是否是 支付宝 环境
  * @type {boolean}
  */
-export const isAliPay = Taro.ENV_TYPE.ALIPAY === Taro.getEnv()
+export const isAliPay = Taro.ENV_TYPE.ALIPAY === Taro.getEnv();
 
 /**
  * 是否是 微信 环境
  * @type {boolean}
  */
-export const isWeApp = Taro.ENV_TYPE.WEAPP === Taro.getEnv()
+export const isWeApp = Taro.ENV_TYPE.WEAPP === Taro.getEnv();
 /**
  * 获取 Rect
  * @returns {number}
  */
 export const getRectNumber = () => {
-  if (isAliPay) return 0
-  return 1
-}
-
+  if (isAliPay) return 0;
+  return 1;
+};
 
 /**
  * 是否为本地链接
@@ -141,8 +182,8 @@ export const getRectNumber = () => {
  * @returns {boolean}
  */
 export const idLocalUrl = (url: string) => {
-  return url.indexOf('.') === 0 || url.indexOf('/') === 0
-}
+  return url.indexOf(".") === 0 || url.indexOf("/") === 0;
+};
 
 export default {
   model,

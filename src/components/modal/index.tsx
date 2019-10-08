@@ -1,7 +1,8 @@
-import { Text, View } from '@tarojs/components';
-import Taro, { Component } from '@tarojs/taro';
-import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from '../utils/model';
-import { IProps } from '../../../@types/modal';
+import { Text, View } from "@tarojs/components";
+import Taro, { Component } from "@tarojs/taro";
+import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from "../utils/model";
+import { IProps } from "../../../@types/modal";
+import { classNames } from "@/components/utils";
 
 export default class ClModal extends Component<IProps, {}> {
   static options = {
@@ -21,10 +22,10 @@ export default class ClModal extends Component<IProps, {}> {
   render() {
     const titleBgColorClassName = this.props.titleBgColor
       ? BG_COLOR_LIST[this.props.titleBgColor]
-      : '';
+      : "";
     const actionColor = this.props.actionColor
       ? BG_COLOR_LIST[this.props.actionColor]
-      : '';
+      : "";
 
     const title = this.props.title;
     const actions = this.props.actions || [];
@@ -33,24 +34,28 @@ export default class ClModal extends Component<IProps, {}> {
     };
     const actionsComponent = actions.map((item, index) => (
       <View
-        className={`${index > 0 ? 'solid-left' : ''} action margin-0 flex-sub`}
+        className={`${index > 0 ? "solid-left" : ""} action margin-0 flex-sub`}
         key={item.text}
         onClick={() => {
           onClick(index);
         }}
       >
-        <Text className={`${item.color ? TEXT_COLOR_LIST[item.color] : ''}`}>
+        <Text className={`${item.color ? TEXT_COLOR_LIST[item.color] : ""}`}>
           {item.text}
         </Text>
       </View>
     ));
     const dealSize = (size: any) => {
-      if (!size || size === 'normal') return '';
+      if (!size || size === "normal") return "";
       else return `-${SIZE[size]}`;
     };
     return (
       <View
-        className={`cu-modal ${this.state.showModal ? 'show' : ''}`}
+        className={classNames(
+          `cu-modal ${this.state.showModal ? "show" : ""}`,
+          this.props.className
+        )}
+        style={Object.assign({}, this.props.style)}
         onClick={() => {
           this.props.closeWithShadow &&
             this.setState({
@@ -60,7 +65,7 @@ export default class ClModal extends Component<IProps, {}> {
         }}
       >
         <View
-          className='cu-dialog'
+          className="cu-dialog"
           onClick={e => {
             e.stopPropagation();
           }}
@@ -69,10 +74,10 @@ export default class ClModal extends Component<IProps, {}> {
             this.props.renderTitle
           ) : (
             <View className={`cu-bar justify-end ${titleBgColorClassName}`}>
-              <View className='content'>{title}</View>
+              <View className="content">{title}</View>
               {this.props.close ? (
                 <View
-                  className='action'
+                  className="action"
                   onClick={() => {
                     this.setState({
                       showModal: false
@@ -80,10 +85,10 @@ export default class ClModal extends Component<IProps, {}> {
                     this.props.onClose && this.props.onClose();
                   }}
                 >
-                  <Text className='cuIcon-close text-black' />
+                  <Text className="cuIcon-close text-black" />
                 </View>
               ) : (
-                ''
+                ""
               )}
             </View>
           )}

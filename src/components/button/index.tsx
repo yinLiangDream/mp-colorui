@@ -1,94 +1,110 @@
-import { Button, Text, View } from '@tarojs/components';
-import Taro, { Component } from '@tarojs/taro';
-import { IProps } from '../../../@types/button';
-import { BG_COLOR_LIST, SIZE } from '../utils/model';
+import { Button, Text, View } from "@tarojs/components";
+import Taro from "@tarojs/taro";
+import { classNames } from "@/components/utils";
+import { IProps } from "../../../@types/button";
+import { BG_COLOR_LIST, SIZE } from "../utils/model";
 
-
-interface IState {}
-
-export default class ClButton extends Component<IProps, IState> {
-  static options = {
-    addGlobalClass: true
+export default function ClButton(props: IProps) {
+  const onClick = (e: any) => {
+    !props.disabled && props.onClick && props.onClick(e);
   };
-  static defaultProps = {
-    shape: 'radius',
-    size: 'normal',
-    bgColor: 'blue',
-    disabled: false,
-    loading: false,
-    long: false,
-    plain: false,
-    plainSize: 'default',
-    shadow: true,
-    openType: undefined,
-  } as IProps;
-  onClick(e: any) {
-    !this.props.disabled && this.props.onClick && this.props.onClick(e);
-  }
-  onOpenSetting(e: any) {
-    !this.props.disabled && this.props.onOpenSetting && this.props.onOpenSetting(e)
-  }
-  onGetUserInfo(e: any) {
-    !this.props.disabled && this.props.onGetUserInfo && this.props.onGetUserInfo(e)
-  }
-  onContact(e: any) {
-    !this.props.disabled && this.props.onContact && this.props.onContact(e)
-  }
-  onGetPhoneNumber(e: any) {
-    !this.props.disabled && this.props.onGetPhoneNumber && this.props.onGetPhoneNumber(e)
-  }
+  const onOpenSetting = (e: any) => {
+    !props.disabled && props.onOpenSetting && props.onOpenSetting(e);
+  };
+  const onGetUserInfo = (e: any) => {
+    !props.disabled && props.onGetUserInfo && props.onGetUserInfo(e);
+  };
+  const onContact = (e: any) => {
+    !props.disabled && props.onContact && props.onContact(e);
+  };
+  const onGetPhoneNumber = (e: any) => {
+    !props.disabled && props.onGetPhoneNumber && props.onGetPhoneNumber(e);
+  };
 
-  onGetRealnameAuthInfo (e: any) {
-    !this.props.disabled && this.props.onGetRealnameAuthInfo && this.props.onGetRealnameAuthInfo(e)
-  }
-  onError(e: any) {
-    !this.props.disabled &&this.props.onError && this.props.onError(e);
-  }
-  render() {
-    const shapeClassName = this.props.shape || 'radius';
-    const sizeClassName = this.props.size || 'normal';
-    const colorClassName = this.props.bgColor || 'blue';
-    const disabledClassName = this.props.disabled;
-    const loadingClassName = this.props.loading
-      ? 'cuIcon-loading iconfont-spin'
-      : '';
-    const plainClassName = this.props.plain;
-    const plainSizeName = this.props.plainSize === 'default' ? 'line' : 'lines';
-    const shadowSizeName = this.props.shadow ? 'shadow' : '';
-    const buttonClassName = `cu-btn ${shapeClassName} ${SIZE[sizeClassName]} ${
-      plainClassName ? '' : BG_COLOR_LIST[colorClassName]
-    } ${
-      plainClassName ? plainSizeName + '-' + colorClassName : ''
-    } ${shadowSizeName}`;
-    const normalButton = (
-      <Button
-        className={`${buttonClassName} ${disabledClassName ? 'disabled' : ''}`}
-        // disabled={disabledClassName}
-        onClick={this.onClick.bind(this)}
-        openType={this.props.disabled ? undefined : this.props.openType}
-        onOpenSetting={this.onOpenSetting}
-        onGetUserInfo={this.onGetUserInfo}
-        onContact={this.onContact}
-        onGetPhoneNumber={this.onGetPhoneNumber}
-        onGetRealnameAuthInfo={this.onGetRealnameAuthInfo}
-        onError={this.onError}
-        appParameter={this.props.appParameter}
-        showMessageCard={this.props.showMessageCard}
-        sessionFrom={this.props.sessionFrom}
-        sendMessageTitle={this.props.sendMessageTitle}
-        sendMessagePath={this.props.sendMessagePath}
-        sendMessageImg={this.props.sendMessageImg}
-        scope={this.props.scope}
-        lang={this.props.lang}
-      >
-        <Text className={loadingClassName} />
-        <Text>{this.props.text}</Text>
-        {this.props.children}
-      </Button>
-    );
-    const longButton = (
-      <View className='flex flex-direction'>{normalButton}</View>
-    );
-    return this.props.long ? longButton : <View style={{ display: 'inline-block' }}>{normalButton}</View>
-  }
+  const onGetRealnameAuthInfo = (e: any) => {
+    !props.disabled &&
+      props.onGetRealnameAuthInfo &&
+      props.onGetRealnameAuthInfo(e);
+  };
+  const onError = (e: any) => {
+    !props.disabled && props.onError && props.onError(e);
+  };
+
+  const shapeClassName = props.shape || "radius";
+  const sizeClassName = props.size || "normal";
+  const colorClassName = props.bgColor || "blue";
+  const disabledClassName = props.disabled;
+  const loadingClassName = props.loading ? "cuIcon-loading iconfont-spin" : "";
+  const plainClassName = props.plain;
+  const plainSizeName = props.plainSize === "default" ? "line" : "lines";
+  const shadowSizeName = props.shadow ? "shadow" : "";
+  const buttonClassName = `cu-btn ${shapeClassName} ${SIZE[sizeClassName]} ${
+    plainClassName ? "" : BG_COLOR_LIST[colorClassName]
+  } ${
+    plainClassName ? plainSizeName + "-" + colorClassName : ""
+  } ${shadowSizeName}`;
+  const normalButton = (
+    <Button
+      className={classNames(
+        `${buttonClassName} ${disabledClassName ? "disabled" : ""}`
+      )}
+      // disabled={disabledClassName}
+      onClick={onClick.bind(this)}
+      openType={props.disabled ? undefined : props.openType}
+      onOpenSetting={onOpenSetting}
+      onGetUserInfo={onGetUserInfo}
+      onContact={onContact}
+      onGetPhoneNumber={onGetPhoneNumber}
+      onGetRealnameAuthInfo={onGetRealnameAuthInfo}
+      onError={onError}
+      appParameter={props.appParameter}
+      showMessageCard={props.showMessageCard}
+      sessionFrom={props.sessionFrom}
+      sendMessageTitle={props.sendMessageTitle}
+      sendMessagePath={props.sendMessagePath}
+      sendMessageImg={props.sendMessageImg}
+      scope={props.scope}
+      lang={props.lang}
+    >
+      <Text className={loadingClassName} />
+      <Text>{props.text}</Text>
+      {this.props.children}
+    </Button>
+  );
+  const longButton = (
+    <View
+      className={classNames("flex flex-direction", props.className)}
+      style={Object.assign({}, props.style)}
+    >
+      {normalButton}
+    </View>
+  );
+  return props.long ? (
+    longButton
+  ) : (
+    <View
+      className={classNames(props.className)}
+      style={Object.assign({ display: "inline-block" }, props.style)}
+    >
+      {normalButton}
+    </View>
+  );
 }
+
+ClButton.options = {
+  addGlobalClass: true
+};
+
+ClButton.defaultProps = {
+  shape: "radius",
+  size: "normal",
+  bgColor: "blue",
+  disabled: false,
+  icon: undefined,
+  loading: false,
+  long: false,
+  plain: false,
+  plainSize: "default",
+  shadow: true,
+  openType: undefined
+} as IProps;

@@ -1,7 +1,7 @@
-import { Picker, View } from '@tarojs/components';
-import Taro, { useState, useMemo } from '@tarojs/taro';
-import { getNowDate } from '../utils/index';
-import { IProps } from '../../../@types/select';
+import { Picker, View } from "@tarojs/components";
+import Taro, { useState, useMemo } from "@tarojs/taro";
+import { classNames, getNowDate } from "../utils/index";
+import { IProps } from "../../../@types/select";
 import { getAreaData } from "../utils/area";
 
 function ClSelect(props: IProps) {
@@ -16,36 +16,41 @@ function ClSelect(props: IProps) {
     rangeKey: (props.multiSelector && props.multiSelector.rangeKey) || undefined
   };
   const timeSelector = {
-    value: (props.time && props.time.value) || '00:00',
-    start: (props.time && props.time.start) || '00:00',
-    end: (props.time && props.time.end) || '23:59'
+    value: (props.time && props.time.value) || "00:00",
+    start: (props.time && props.time.start) || "00:00",
+    end: (props.time && props.time.end) || "23:59"
   };
   const dateSelector = {
     value:
       (props.date && props.date.value) ||
-      getNowDate((props.date && props.date.fields) || 'day'),
-    fields: (props.date && props.date.fields) || 'day',
-    start: (props.date && props.date.start) || '',
-    end: (props.date && props.date.end) || ''
+      getNowDate((props.date && props.date.fields) || "day"),
+    fields: (props.date && props.date.fields) || "day",
+    start: (props.date && props.date.start) || "",
+    end: (props.date && props.date.end) || ""
   };
-  const getRegionData = (province?: { key: number; value: string }, city?: { key: number; value: string }) => {
-    const regionObjData = getAreaData(province, city)
-    const provinceArr = regionObjData.province.map((item) => ({
+  const getRegionData = (
+    province?: { key: string; value: string },
+    city?: { key: string; value: string }
+  ) => {
+    const regionObjData = getAreaData(province, city);
+    const provinceArr = regionObjData.province.map(item => ({
       key: item[0],
       value: item[1]
-    }))
-    const cityArr = regionObjData.city.map((item) => ({
+    }));
+    const cityArr = regionObjData.city.map(item => ({
       key: item[0],
-      value: item[1]
-    }))
-    const districtArr = regionObjData.district.map((item) => ({
+      value: item[1] as string
+    }));
+    const districtArr = regionObjData.district.map(item => ({
       key: item[0],
-      value: item[1]
-    }))
-    return [provinceArr, cityArr, districtArr]
-  }
+      value: item[1] as string
+    }));
+    return [provinceArr, cityArr, districtArr];
+  };
   const regionSelector = {
-    value: (props.region && props.region.value) || getRegionData().map((item) => item[0])
+    value:
+      (props.region && props.region.value) ||
+      getRegionData().map(item => item[0])
   };
 
   // 单选
@@ -70,7 +75,7 @@ function ClSelect(props: IProps) {
         : item[rangeValue];
       value.push(temp);
     });
-    return value.join(',');
+    return value.join(",");
   };
   const [mutiSelected, setMutiSelected] = useState(() =>
     getMutiSelectorValue(mutiSelector.value)
@@ -95,13 +100,16 @@ function ClSelect(props: IProps) {
     setDateSelected(getDateSelectorValue(value));
   };
   // 地区选择
-  const [areaData, setAreaData] = useState(getRegionData(...regionSelector.value))
-  const getRegionSelectorValue = (value: any[]) => value.map((item) => item.value).join(',');
+  const [areaData, setAreaData] = useState(
+    getRegionData(...regionSelector.value)
+  );
+  const getRegionSelectorValue = (value: any[]) =>
+    value.map(item => item.value).join(",");
   const [regionSelected, setRegionSelected] = useState(() =>
     getRegionSelectorValue(regionSelector.value)
   );
-  const [confirmRegion, setConfirmRegion] = useState(regionSelector.value)
-  const [originAreaData, setOriginAreaData] = useState(areaData)
+  const [confirmRegion, setConfirmRegion] = useState(regionSelector.value);
+  const [originAreaData, setOriginAreaData] = useState(areaData);
   const setRegionSelect = value => {
     setRegionSelected(getRegionSelectorValue(value));
   };
@@ -134,45 +142,54 @@ function ClSelect(props: IProps) {
     setDateSelect(index);
     props.onChange && props.onChange(index);
   };
-  const origin = regionSelector.value.map((item, index) => originAreaData[index].findIndex(obj => obj.key === item.key))
+  const origin = regionSelector.value.map((item, index) =>
+    originAreaData[index].findIndex(obj => obj.key === item.key)
+  );
 
   const onCancel = (e: any) => {
-    setAreaData(originAreaData)
-    setTempSelect(confirmRegion.map((item, index) => originAreaData[index].findIndex(origin => origin.key === item.key)))
+    setAreaData(originAreaData);
+    setTempSelect(
+      confirmRegion.map((item, index) =>
+        originAreaData[index].findIndex(origin => origin.key === item.key)
+      )
+    );
     props.onCancel && props.onCancel(e);
   };
   // 地区触发
   const onRegionSelectorChange = (e: any) => {
     const detail = e.detail.value;
-    const dataSelected = detail.map((key, index) => (areaData[index][key]))
+    const dataSelected = detail.map((key, index) => areaData[index][key]);
     setRegionSelect(dataSelected);
-    setOriginAreaData(areaData)
-    setConfirmRegion(dataSelected)
+    setOriginAreaData(areaData);
+    setConfirmRegion(dataSelected);
     props.onChange && props.onChange(dataSelected);
   };
-  const [tempSelect, setTempSelect] = useState(origin)
+  const [tempSelect, setTempSelect] = useState(origin);
   const onRegionMutiSelectorColumChange = (e: any) => {
-    const detail = e.detail
-    const column = detail.column
-    const index = e.detail.value
-    tempSelect[column] = index
+    const detail = e.detail;
+    const column = detail.column;
+    const index = e.detail.value;
+    tempSelect[column] = index;
     if (column !== 2) {
       if (column === 0) {
-        tempSelect[1] = 0
-        tempSelect[2] = 0
-        setAreaData(getRegionData(areaData[0][tempSelect[0]]))
+        tempSelect[1] = 0;
+        tempSelect[2] = 0;
+        setAreaData(getRegionData(areaData[0][tempSelect[0]]));
       }
       if (column === 1) {
-        tempSelect[2] = 0
-        setAreaData(getRegionData(areaData[0][tempSelect[0]], areaData[1][tempSelect[1]]))
+        tempSelect[2] = 0;
+        setAreaData(
+          getRegionData(areaData[0][tempSelect[0]], areaData[1][tempSelect[1]])
+        );
       }
     }
-    setTempSelect(tempSelect)
-  }
+    setTempSelect(tempSelect);
+  };
   useMemo(() => {
-    props.mode === 'selector' && setSelected(getSelectorValue(selector.value))
-    props.mode === 'multiSelector' && setMutiSelected(getMutiSelectorValue(mutiSelector.value))
-  }, [props.selector])
+    props.mode === "selector" && setSelected(getSelectorValue(selector.value));
+    props.mode === "multiSelector" &&
+      setMutiSelected(getMutiSelectorValue(mutiSelector.value));
+  }, [props.selector]);
   // 单选组件
   const selectorComponent = (
     <Picker
@@ -236,7 +253,7 @@ function ClSelect(props: IProps) {
     <Picker
       mode="multiSelector"
       range={areaData}
-      rangeKey={'value'}
+      rangeKey={"value"}
       value={tempSelect}
       onChange={onRegionSelectorChange}
       onColumnChange={onRegionMutiSelectorColumChange}
@@ -249,13 +266,19 @@ function ClSelect(props: IProps) {
 
   const title = props.title;
   return (
-    <View className={`cu-form-group ${props.disabled ? 'text-gray' : ''}`}>
-      <View className="title">{title || ''}</View>
-      {props.mode === 'selector' ? selectorComponent : ''}
-      {props.mode === 'multiSelector' ? mutiSelectorComponent : ''}
-      {props.mode === 'time' ? timeSelectorComponent : ''}
-      {props.mode === 'date' ? dateSelectorComponent : ''}
-      {props.mode === 'region' ? regionSelectorComponent : ''}
+    <View
+      className={classNames(
+        `cu-form-group ${props.disabled ? "text-gray" : ""}`,
+        props.className
+      )}
+      style={Object.assign({}, props.style)}
+    >
+      <View className="title">{title || ""}</View>
+      {props.mode === "selector" ? selectorComponent : ""}
+      {props.mode === "multiSelector" ? mutiSelectorComponent : ""}
+      {props.mode === "time" ? timeSelectorComponent : ""}
+      {props.mode === "date" ? dateSelectorComponent : ""}
+      {props.mode === "region" ? regionSelectorComponent : ""}
     </View>
   );
 }
@@ -264,7 +287,7 @@ ClSelect.options = {
   addGlobalClass: true
 };
 ClSelect.defaultProps = {
-  mode: 'selector',
+  mode: "selector",
   selector: [],
   multiSelector: [],
   time: [],

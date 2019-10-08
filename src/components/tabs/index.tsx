@@ -1,10 +1,10 @@
-import {ScrollView, Text, View} from '@tarojs/components';
-import Taro, {Component, pxTransform} from '@tarojs/taro';
-import {BG_COLOR_LIST, TEXT_COLOR_LIST} from '../utils/model';
-import {IProps} from '../../../@types/tabs';
+import { ScrollView, Text, View } from "@tarojs/components";
+import Taro, { Component, pxTransform } from "@tarojs/taro";
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
+import { IProps } from "../../../@types/tabs";
 
-import './index.scss'
-import { getRectNumber, isAliPay, screenPercent } from '../utils'
+import "./index.scss";
+import { classNames, getRectNumber, isAliPay, screenPercent } from "../utils";
 
 interface IState {
   activeTab: number;
@@ -21,9 +21,9 @@ export default class ClTabs extends Component<IProps, IState> {
     addGlobalClass: true
   };
   static defaultProps: IProps = {
-    type: 'default',
+    type: "default",
     bgColor: undefined,
-    activeColor: 'black',
+    activeColor: "black",
     active: 0,
     tabs: [],
     touchMove: false
@@ -35,7 +35,7 @@ export default class ClTabs extends Component<IProps, IState> {
   };
 
   componentDidMount(): void {
-    this.onClickTab(this.props.active || 0)
+    this.onClickTab(this.props.active || 0);
   }
 
   onClickTab(index: number) {
@@ -45,23 +45,23 @@ export default class ClTabs extends Component<IProps, IState> {
     const view = query.select(`#${id}`);
     const view0 = query.select(`#${id0}`);
     let left = 0;
-    const promise = new Promise(async (resolve) => {
+    const promise = new Promise(async resolve => {
       await new Promise(resolve1 => {
         view0.boundingClientRect().exec(res => {
-          const data = res[0]
-          left = data.left
-          resolve1()
-        })
-      })
+          const data = res[0];
+          left = data.left;
+          resolve1();
+        });
+      });
       view.boundingClientRect().exec(res => {
-        const data = res[getRectNumber()]
+        const data = res[getRectNumber()];
         if (isAliPay) {
-          left = data.width * index
+          left = data.width * index;
         } else {
-          left = Math.abs(left - data.left)
+          left = Math.abs(left - data.left);
         }
         resolve(left);
-      })
+      });
     });
     promise.then(() => {
       this.setState({
@@ -74,152 +74,185 @@ export default class ClTabs extends Component<IProps, IState> {
   }
 
   renderDefaultComponent(paramters: {
-    bgColorClassName: string,
-    activeColor: string,
-    tabs: any[],
-    activeTab: number,
-    scrollLeft: number
+    bgColorClassName: string;
+    activeColor: string;
+    tabs: any[];
+    activeTab: number;
+    scrollLeft: number;
   }) {
-    const {bgColorClassName, activeColor, tabs, activeTab, scrollLeft} = paramters;
+    const {
+      bgColorClassName,
+      activeColor,
+      tabs,
+      activeTab,
+      scrollLeft
+    } = paramters;
     return (
-      <ScrollView scrollX className={`${bgColorClassName} nav`} scrollWithAnimation scrollLeft={scrollLeft}>
+      <ScrollView
+        scrollX
+        className={`${bgColorClassName} nav`}
+        scrollWithAnimation
+        scrollLeft={scrollLeft}
+      >
         {tabs.map((item, index) => (
           <View
             key={index}
             className={`cu-item ${
-              activeTab === index ? `${activeColor} cur` : ''
-              }`}
+              activeTab === index ? `${activeColor} cur` : ""
+            }`}
             onClick={this.onClickTab.bind(this, index)}
           >
             {item.icon ? (
               <Text className={`cuIcon-${item.icon} margin-right-xs`} />
             ) : (
-              ''
+              ""
             )}
             <Text>{item.text}</Text>
           </View>
         ))}
       </ScrollView>
-    )
+    );
   }
 
   renderVerbComponent(paramters: {
-    bgColorClassName: string,
-    activeColor: string,
-    tabs: any[],
-    activeTab: number,
+    bgColorClassName: string;
+    activeColor: string;
+    tabs: any[];
+    activeTab: number;
   }) {
-    const {bgColorClassName, activeColor, tabs, activeTab} = paramters;
+    const { bgColorClassName, activeColor, tabs, activeTab } = paramters;
     return (
       <ScrollView scrollX className={`${bgColorClassName} nav`}>
-        <View className='flex text-center'>
+        <View className="flex text-center">
           {tabs.map((item, index) => (
             <View
               key={index}
               className={`cu-item flex-sub ${
-                activeTab === index ? `${activeColor} cur` : ''
-                }`}
+                activeTab === index ? `${activeColor} cur` : ""
+              }`}
               onClick={this.onClickTab.bind(this, index)}
             >
               {item.icon ? (
                 <Text className={`cuIcon-${item.icon} margin-right-xs`} />
               ) : (
-                ''
+                ""
               )}
               <Text>{item.text}</Text>
             </View>
           ))}
         </View>
       </ScrollView>
-    )
+    );
   }
 
   renderCenterComponent(paramters: {
-    bgColorClassName: string,
-    activeColor: string,
-    tabs: any[],
-    activeTab: number,
+    bgColorClassName: string;
+    activeColor: string;
+    tabs: any[];
+    activeTab: number;
   }) {
-    const {bgColorClassName, activeColor, tabs, activeTab} = paramters;
+    const { bgColorClassName, activeColor, tabs, activeTab } = paramters;
     return (
       <ScrollView scrollX className={`${bgColorClassName} nav text-center`}>
         {tabs.map((item, index) => (
           <View
             key={index}
             className={`cu-item ${
-              activeTab === index ? `${activeColor} cur` : ''
-              }`}
+              activeTab === index ? `${activeColor} cur` : ""
+            }`}
             onClick={this.onClickTab.bind(this, index)}
           >
             {item.icon ? (
               <Text className={`cuIcon-${item.icon} margin-right-xs`} />
             ) : (
-              ''
+              ""
             )}
             <Text>{item.text}</Text>
           </View>
         ))}
       </ScrollView>
-    )
+    );
   }
 
   render(): any {
-    const {contentScrollLeft} = this.state
+    const { contentScrollLeft } = this.state;
     const bgColorClassName: string = this.props.bgColor
       ? BG_COLOR_LIST[this.props.bgColor]
-      : '';
+      : "";
     const activeColor: string = this.props.activeColor
       ? TEXT_COLOR_LIST[this.props.activeColor]
-      : '';
+      : "";
     // 空组件镇压邪魔
-    const centerComponent = <View/>
+    const centerComponent = <View />;
     const renderComponent = () => {
-      const {type, tabs} = this.props;
-      const {activeTab, scrollLeft} = this.state;
-      const defaultParameter = {bgColorClassName, activeColor, tabs, activeTab, scrollLeft};
-      if (type === 'default') return this.renderDefaultComponent(defaultParameter);
-      else if (type === 'verb') return this.renderVerbComponent(defaultParameter);
-      else if (type === 'center') return this.renderCenterComponent(defaultParameter);
-      else return <View/>
+      const { type, tabs } = this.props;
+      const { activeTab, scrollLeft } = this.state;
+      const defaultParameter = {
+        bgColorClassName,
+        activeColor,
+        tabs,
+        activeTab,
+        scrollLeft
+      };
+      if (type === "default")
+        return this.renderDefaultComponent(defaultParameter);
+      else if (type === "verb")
+        return this.renderVerbComponent(defaultParameter);
+      else if (type === "center")
+        return this.renderCenterComponent(defaultParameter);
+      else return <View />;
     };
     return (
-      <View style={{overflow: "hidden"}}>
+      <View
+        className={classNames(this.props.className)}
+        style={Object.assign({ overflow: "hidden" }, this.props.style)}
+      >
         {renderComponent()}
         <ScrollView scrollY>
-          <View className='scrollx' style={{
-            width: "auto",
-            transform: `translateX(-${pxTransform(contentScrollLeft / screenPercent)})`,
-            transitionDuration: `${duration}s`
-          }}
-                onTouchStart={(e) => {
-                  if (!this.props.touchMove) return;
-                  scrollLeftContent = 0;
-                  duration = 0;
-                  move = e.touches[0].pageX;
-                }}
-                onTouchMove={(e) => {
-                  if (!this.props.touchMove) return;
-                  if (scrollLeftContent === 0) scrollLeftContent = e.touches[0].pageX;
-                  distance = e.touches[0].pageX - scrollLeftContent;
-                  this.setState({
-                    contentScrollLeft: contentScrollLeft - distance
-                  });
-                  scrollLeftContent = e.touches[0].pageX;
-                }}
-                onTouchEnd={(e) => {
-                  if (!this.props.touchMove) return;
-                  duration = 0.3;
-                  move = e.changedTouches[0].pageX - move;
-                  const maxIndex = this.props.tabs.length - 1;
-                  if (move < -50) this.onClickTab(this.state.activeTab + 1 > maxIndex ? maxIndex : this.state.activeTab + 1);
-                  else if (move > 50) this.onClickTab(this.state.activeTab - 1);
-                  else this.onClickTab(this.state.activeTab)
-                }}
+          <View
+            className="scrollx"
+            style={{
+              width: "auto",
+              transform: `translateX(-${pxTransform(
+                contentScrollLeft / screenPercent
+              )})`,
+              transitionDuration: `${duration}s`
+            }}
+            onTouchStart={e => {
+              if (!this.props.touchMove) return;
+              scrollLeftContent = 0;
+              duration = 0;
+              move = e.touches[0].pageX;
+            }}
+            onTouchMove={e => {
+              if (!this.props.touchMove) return;
+              if (scrollLeftContent === 0)
+                scrollLeftContent = e.touches[0].pageX;
+              distance = e.touches[0].pageX - scrollLeftContent;
+              this.setState({
+                contentScrollLeft: contentScrollLeft - distance
+              });
+              scrollLeftContent = e.touches[0].pageX;
+            }}
+            onTouchEnd={e => {
+              if (!this.props.touchMove) return;
+              duration = 0.3;
+              move = e.changedTouches[0].pageX - move;
+              const maxIndex = this.props.tabs.length - 1;
+              if (move < -50)
+                this.onClickTab(
+                  this.state.activeTab + 1 > maxIndex
+                    ? maxIndex
+                    : this.state.activeTab + 1
+                );
+              else if (move > 50) this.onClickTab(this.state.activeTab - 1);
+              else this.onClickTab(this.state.activeTab);
+            }}
           >
             {this.props.children}
           </View>
         </ScrollView>
       </View>
-    )
+    );
   }
 }

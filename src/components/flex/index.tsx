@@ -1,6 +1,7 @@
-import { View } from '@tarojs/components';
-import Taro from '@tarojs/taro';
-import { IProps } from '../../../@types/flex';
+import { View } from "@tarojs/components";
+import Taro from "@tarojs/taro";
+import { IProps } from "../../../@types/flex";
+import { classNames } from "@/components/utils";
 
 /**
  * flex 问题
@@ -8,13 +9,19 @@ import { IProps } from '../../../@types/flex';
  * flex-sub==>1, flex-twice==>2, flex-treble==>3
  */
 export default function ClFlex(props: IProps) {
-  const warpClassName = props.wrap ? 'flex-wrap' : '';
-  const justifyClassName = props.justify ? `justify-${props.justify}` : '';
-  const alignClassName = props.align ? `align-${props.align}` : '';
-  const directionClassName = props.direction ? `flex-direction-${props.direction}` : ''
+  const warpClassName = props.wrap ? "flex-wrap" : "";
+  const justifyClassName = props.justify ? `justify-${props.justify}` : "";
+  const alignClassName = props.align ? `align-${props.align}` : "";
+  const directionClassName = props.direction
+    ? `flex-direction-${props.direction}`
+    : "";
   const flexComponent = (
     <View
-      className={`flex ${warpClassName} ${justifyClassName} ${alignClassName} ${directionClassName}`}
+      className={classNames(
+        `flex ${warpClassName} ${justifyClassName} ${alignClassName} ${directionClassName}`,
+        props.className
+      )}
+      style={Object.assign({}, props.style)}
     >
       {this.props.children}
     </View>
@@ -27,8 +34,8 @@ ClFlex.options = {
 };
 
 ClFlex.defaultProps = {
-  justify: 'start',
-  align: 'start',
-  direction: 'row',
+  justify: "start",
+  align: "start",
+  direction: "row",
   wrap: false
 } as IProps;

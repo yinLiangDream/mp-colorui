@@ -1,15 +1,15 @@
-import { ComponentClass } from 'react';
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
 type direction =
-  | 'around'
-  | 'horizontal'
-  | 'vertical'
-  | 'left'
-  | 'right'
-  | 'top'
-  | 'bottom';
-type distance = 'xsmall' | 'small' | 'normal' | 'large' | 'xlarge';
+  | "around"
+  | "horizontal"
+  | "vertical"
+  | "left"
+  | "right"
+  | "top"
+  | "bottom";
+type distance = "xsmall" | "small" | "normal" | "large" | "xlarge";
 
 export interface IProps extends BaseComponent {
   /**
@@ -17,7 +17,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `left`, `right`
    */
-  float?: 'left' | 'right';
+  float?: "left" | "right";
   /**
    * padding 距离，默认没有 padding
    *
@@ -42,6 +42,7 @@ export interface IProps extends BaseComponent {
    * 可选参数 `around`, `horizontal`, `vertical`, `left`, `right`, `top`, `bottom`
    */
   marginDirection?: direction;
+  children?: any;
 }
 
 export interface LayoutProps extends IProps {}

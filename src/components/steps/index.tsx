@@ -1,12 +1,10 @@
-import { Text, View } from '@tarojs/components';
-import Taro, { Component } from '@tarojs/taro';
+import { Text, View } from "@tarojs/components";
+import Taro, { Component } from "@tarojs/taro";
+import { classNames } from "@/components/utils";
 import { TEXT_COLOR_LIST } from "../utils/model";
-import { IProps } from '../../../@types/steps';
+import { IProps } from "../../../@types/steps";
 
-
-
-interface IState {
-}
+interface IState {}
 
 export default class ClStep extends Component<IProps, IState> {
   static options = {
@@ -14,32 +12,49 @@ export default class ClStep extends Component<IProps, IState> {
   };
   static defaultProps: IProps = {
     steps: [],
-    type: 'line',
+    type: "line",
     activeColor: "blue",
     step: 0,
     stepIconType: "number",
     stepTitlePosition: "bottom"
   };
-  state: IState = {
-  };
+  state: IState = {};
 
   render(): any {
-    const stepTypeClassName = this.props.type === 'arrow' ? 'steps-arrow' : '';
-    const activeColorClassName = this.props.activeColor ? TEXT_COLOR_LIST[this.props.activeColor] : '';
-    const step = this.props.step || 0
-    const tabsComponents = this.props.steps.map((item, index) =>
-      <View className={`cu-item ${step > index ? activeColorClassName : ''}`} key={index}>
-        {this.props.stepTitlePosition === 'top' ? item.title : ''}
-        {<Text
-          className={`${this.props.stepIconType === 'number' ? 'num' : ''} ${this.props.stepIconType === 'custom' ? 'cuIcon-' + item.icon : ''}`}
-          data-index={index + 1}
-        />}
-        {this.props.stepTitlePosition === 'bottom' ? item.title : ''}
-      </View>);
+    const stepTypeClassName = this.props.type === "arrow" ? "steps-arrow" : "";
+    const activeColorClassName = this.props.activeColor
+      ? TEXT_COLOR_LIST[this.props.activeColor]
+      : "";
+    const step = this.props.step || 0;
+    const tabsComponents = this.props.steps.map((item, index) => (
+      <View
+        className={`cu-item ${step > index ? activeColorClassName : ""}`}
+        key={index}
+      >
+        {this.props.stepTitlePosition === "top" ? item.title : ""}
+        {
+          <Text
+            className={`${this.props.stepIconType === "number" ? "num" : ""} ${
+              this.props.stepIconType === "custom" ? "cuIcon-" + item.icon : ""
+            }`}
+            data-index={index + 1}
+          />
+        }
+        {this.props.stepTitlePosition === "bottom" ? item.title : ""}
+      </View>
+    ));
     return (
-      <View className={`cu-steps ${stepTypeClassName}  ${this.props.stepTitlePosition === 'top' ? 'steps-bottom' : ''}`}>
+      <View
+        className={classNames(
+          `cu-steps ${stepTypeClassName}  ${
+            this.props.stepTitlePosition === "top" ? "steps-bottom" : ""
+          }`,
+          this.props.className
+        )}
+        style={Object.assign({}, this.props.style)}
+      >
         {tabsComponents}
       </View>
-    )
+    );
   }
 }

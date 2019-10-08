@@ -1,16 +1,16 @@
-import Taro, { useState, useMemo, useEffect, pxTransform } from '@tarojs/taro';
-import classnames from 'classnames';
-import { IProps } from '../../../@types/actionSheet';
-import ClCard from '../card';
-import { generateId } from '../utils';
-import { bgColorType, bgColorMoreType, lightBgColorType } from '../utils/types';
-import ClText from '../text';
-import { View } from '@tarojs/components';
-import ClLayout from '../layout';
+import Taro, { useState, useMemo, pxTransform } from "@tarojs/taro";
+import classNames from "classnames";
+import { IProps } from "../../../@types/actionSheet";
+import ClCard from "../card";
+import { generateId } from "../utils";
+import { bgColorType, bgColorMoreType, lightBgColorType } from "../utils/types";
+import ClText from "../text";
+import { View } from "@tarojs/components";
+import ClLayout from "../layout";
 
-import './index.scss';
+import "./index.scss";
 
-import { BG_COLOR_LIST } from '../utils/model';
+import { BG_COLOR_LIST } from "../utils/model";
 
 export default function ClActionSheet(props: IProps) {
   const {
@@ -46,21 +46,25 @@ export default function ClActionSheet(props: IProps) {
   const cancelComponent = (
     <View>
       <View
-        onClick={(e) => {
-          e.stopPropagation()
+        onClick={e => {
+          e.stopPropagation();
           onCancel && onCancel();
         }}
         style={{
           marginTop: pxTransform(20)
         }}
-        className={classnames([
+        className={classNames([
           {
-            cu_action_sheet_card: type === 'card'
+            cu_action_sheet_card: type === "card"
           }
         ])}
       >
         <ClCard bgColor={cancelBgColor} type="full" active>
-          <ClText text={cancelText} textColor={cancelFontColor} align="center" />
+          <ClText
+            text={cancelText}
+            textColor={cancelFontColor}
+            align="center"
+          />
         </ClCard>
       </View>
     </View>
@@ -81,30 +85,34 @@ export default function ClActionSheet(props: IProps) {
       },
       index: number
     ) => (
-        <View
-          onClick={click.bind(this, index)}
-          className={classnames([
-            {
-              cu_action_sheet_line: index !== actionsArr.length - 1
-            },
-            BG_COLOR_LIST[item.bgColor]
-          ])}
-          key={item.cu_action_sheet_id}
-        >
-          <ClCard bgColor={item.bgColor} type="full" active>
-            {item.text}
-          </ClCard>
-        </View>
-      )
+      <View
+        onClick={click.bind(this, index)}
+        className={classNames([
+          {
+            cu_action_sheet_line: index !== actionsArr.length - 1
+          },
+          BG_COLOR_LIST[item.bgColor]
+        ])}
+        key={item.cu_action_sheet_id}
+      >
+        <ClCard bgColor={item.bgColor} type="full" active>
+          {item.text}
+        </ClCard>
+      </View>
+    )
   );
   return (
     <View
-      className={classnames([
-        'cu-modal bottom-modal',
-        {
-          show: show
-        }
-      ])}
+      className={classNames(
+        [
+          "cu-modal bottom-modal",
+          {
+            show: show
+          }
+        ],
+        props.className
+      )}
+      style={Object.assign({}, props.style)}
       onClick={e => {
         closeWithShadow && setShow(false);
         onCancel && onCancel();
@@ -113,23 +121,26 @@ export default function ClActionSheet(props: IProps) {
     >
       <View
         className="cu-dialog"
-        style={{ maxHeight: '70vh', backgroundColor: `${type === 'card' ? 'transparent' : '#f8f8f8'}` }}
+        style={{
+          maxHeight: "70vh",
+          backgroundColor: `${type === "card" ? "transparent" : "#f8f8f8"}`
+        }}
         onClick={e => {
           e.stopPropagation();
         }}
       >
         <View
-          className={classnames([
+          className={classNames([
             {
-              cu_action_sheet_card: type === 'card'
+              cu_action_sheet_card: type === "card"
             }
           ])}
         >
-          {tip ? tipComponent : ''}
+          {tip ? tipComponent : ""}
           {actionsComponents}
         </View>
-        {showCancel ? cancelComponent : ''}
-        <View style={{ height: '20px', width: '100%' }} />
+        {showCancel ? cancelComponent : ""}
+        <View style={{ height: "20px", width: "100%" }} />
       </View>
     </View>
   );
@@ -140,14 +151,14 @@ ClActionSheet.options = {
 };
 
 ClActionSheet.defaultProps = {
-  tip: '',
+  tip: "",
   isOpened: false,
   closeWithShadow: true,
   actions: [],
-  cancelText: '取消',
+  cancelText: "取消",
   showCancel: false,
-  cancelBgColor: 'white',
+  cancelBgColor: "white",
   cancelFontColor: undefined,
-  onClick: () => { },
-  onCancel: () => { }
+  onClick: () => {},
+  onCancel: () => {}
 } as IProps;

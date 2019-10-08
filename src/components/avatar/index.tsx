@@ -1,8 +1,8 @@
-import { Text, View, Image } from '@tarojs/components';
-import Taro, { pxTransform, useEffect, useState } from '@tarojs/taro';
-import { isNumber, generateId } from '../utils';
-import { BG_COLOR_LIST } from '../utils/model';
-import { IProps, THeaderArray } from '../../../@types/avatar';
+import { Text, View, Image } from "@tarojs/components";
+import Taro, { pxTransform, useEffect, useState } from "@tarojs/taro";
+import { isNumber, generateId, classNames } from "../utils";
+import { BG_COLOR_LIST } from "../utils/model";
+import { IProps, THeaderArray } from "../../../@types/avatar";
 
 function ClAvatar(props: IProps) {
   const [headList, setHeadList] = useState(props.headerArray);
@@ -26,18 +26,18 @@ function ClAvatar(props: IProps) {
   };
   const width = isNumber(props.size)
     ? pxTransform(props.size as number)
-    : pxTransform(customSize[props.size || 'normal']);
+    : pxTransform(customSize[props.size || "normal"]);
   const height = isNumber(props.size)
     ? pxTransform(props.size as number)
-    : pxTransform(customSize[props.size || 'normal']);
+    : pxTransform(customSize[props.size || "normal"]);
   const em = isNumber(props.size)
     ? (props.size as number) / 48
-    : customSize[props.size || 'normal'] / 48;
+    : customSize[props.size || "normal"] / 48;
   const avatarArray = (headList as THeaderArray[]).map((item: any) => (
     <View
       key={item.cu_avatar_id}
-      className={`${props.shape} ${BG_COLOR_LIST[item.bgColor || 'black']} ${
-        props.shadow ? 'shadow' : ''
+      className={`${props.shape} ${BG_COLOR_LIST[item.bgColor || "black"]} ${
+        props.shadow ? "shadow" : ""
       } cu-avatar`}
       style={{
         width,
@@ -51,31 +51,32 @@ function ClAvatar(props: IProps) {
         style={{
           width,
           height,
-          position: 'absolute',
+          position: "absolute",
           left: 0,
           right: 0,
           bottom: 0,
           top: 0
         }}
-        mode='aspectFill'
+        mode="aspectFill"
       />
       <Text className={`cuIcon-${item.icon}`}>
-        {item.text ? item.text.slice(0, 1) : ''}
+        {item.text ? item.text.slice(0, 1) : ""}
       </Text>
       {item.tag ? (
         <View
           className={`cu-tag badge cuIcon-${item.tag} ${
-            item.tagColor ? BG_COLOR_LIST[item.tagColor] : ''
+            item.tagColor ? BG_COLOR_LIST[item.tagColor] : ""
           }`}
         />
       ) : (
-        ''
+        ""
       )}
     </View>
   ));
   const avatarArrayComponent = (
     <View
-      className='cu-avatar-group'
+      className={classNames("cu-avatar-group", props.className)}
+      style={Object.assign({}, props.style)}
       onClick={() => {
         onClick();
       }}
@@ -87,6 +88,8 @@ function ClAvatar(props: IProps) {
     avatarArrayComponent
   ) : (
     <View
+      className={classNames(props.className)}
+      style={Object.assign({}, props.style)}
       onClick={() => {
         onClick();
       }}
@@ -101,9 +104,9 @@ ClAvatar.options = {
 };
 
 ClAvatar.defaultProps = {
-  size: 'normal',
-  shape: 'radius',
-  type: 'normal',
+  size: "normal",
+  shape: "radius",
+  type: "normal",
   headerArray: [],
   shadow: true
 } as IProps;

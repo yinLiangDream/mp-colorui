@@ -1,7 +1,8 @@
-import { Text, View } from '@tarojs/components';
-import Taro, {Component, pxTransform} from '@tarojs/taro';
-import { BG_COLOR_LIST } from '../utils/model';
-import { IProps } from '../../../@types/titleBar';
+import { Text, View } from "@tarojs/components";
+import Taro, { Component, pxTransform } from "@tarojs/taro";
+import { classNames } from "@/components/utils";
+import { BG_COLOR_LIST } from "../utils/model";
+import { IProps } from "../../../@types/titleBar";
 
 interface IState {}
 
@@ -11,16 +12,16 @@ export default class ClTitleBar extends Component<IProps, IState> {
   };
 
   static defaultProps: IProps = {
-    bgColor: 'white',
-    textColor: 'green',
-    type: 'border-title',
+    bgColor: "white",
+    textColor: "green",
+    type: "border-title",
     borderLong: 20,
-    borderColor: 'green',
-    icon: 'title',
-    iconColor: 'green',
-    title: '',
-    subTitle: '',
-    subTitleColor: 'gray'
+    borderColor: "green",
+    icon: "title",
+    iconColor: "green",
+    title: "",
+    subTitle: "",
+    subTitleColor: "gray"
   };
 
   render() {
@@ -29,7 +30,7 @@ export default class ClTitleBar extends Component<IProps, IState> {
       : ``;
     const borderColorClassName = this.props.borderColor
       ? BG_COLOR_LIST[this.props.borderColor]
-      : 'bg-green';
+      : "bg-green";
     const bgColorClassName = this.props.bgColor
       ? BG_COLOR_LIST[this.props.bgColor]
       : `bg-white`;
@@ -38,23 +39,21 @@ export default class ClTitleBar extends Component<IProps, IState> {
       ? `text-${this.props.iconColor}`
       : ``;
     const borderComponent = (
-      <View className='action border-title justify-between'>
+      <View className="action border-title justify-between">
         <View>
           <Text className={`${textColorClassName} text-bold text-xl`}>
             {this.props.title}
           </Text>
           <Text
             className={`${borderColorClassName}`}
-            style={{width: `${pxTransform(this.props.borderLong || 20)}`}}
+            style={{ width: `${pxTransform(this.props.borderLong || 20)}` }}
           />
         </View>
-        <View>
-          {this.props.renderRight}
-        </View>
+        <View>{this.props.renderRight}</View>
       </View>
     );
     const subComponent = (
-      <View className='action sub-title justify-between'>
+      <View className="action sub-title justify-between">
         <View>
           <Text className={`text-xl text-bold ${textColorClassName}`}>
             {this.props.title}
@@ -67,29 +66,31 @@ export default class ClTitleBar extends Component<IProps, IState> {
             <Text className={`${borderColorClassName}`}>{}</Text>
           )}
         </View>
-        <View>
-          {this.props.renderRight}
-        </View>
+        <View>{this.props.renderRight}</View>
       </View>
     );
     const iconComponent = (
-      <View className='action justify-between'>
+      <View className="action justify-between">
         <View>
-          <Text className={`${iconClassName} ${iconColorClassName}`}/>
+          <Text className={`${iconClassName} ${iconColorClassName}`} />
           <Text className={`text-xl text-bold ${textColorClassName}`}>
             {this.props.title}
           </Text>
         </View>
-        <View>
-          {this.props.renderRight}
-        </View>
+        <View>{this.props.renderRight}</View>
       </View>
     );
     return (
-      <View className={`${bgColorClassName} cu-bar`}>
-        {this.props.type === 'border-title' ? borderComponent : ''}
-        {this.props.type === 'sub-title' ? subComponent : ''}
-        {this.props.type === 'icon' ? iconComponent : ''}
+      <View
+        className={classNames(
+          `${bgColorClassName} cu-bar`,
+          this.props.className
+        )}
+        style={Object.assign({}, this.props.style)}
+      >
+        {this.props.type === "border-title" ? borderComponent : ""}
+        {this.props.type === "sub-title" ? subComponent : ""}
+        {this.props.type === "icon" ? iconComponent : ""}
       </View>
     );
   }

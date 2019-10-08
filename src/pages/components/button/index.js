@@ -14,7 +14,7 @@ export default function ButtonView () {
   const renderRight =
     <ClFlex align='center' justify='center'>
       <ClLayout padding='small' paddingDirection='right'>
-        <ClText text='粗细'/>
+        <ClText text='粗细' />
       </ClLayout>
       <ClSwitch onChange={(value) => {
         setShowLines(value)
@@ -24,7 +24,7 @@ export default function ButtonView () {
 
   return (
     <ClLayout>
-      <ClTitleBar title='形状' textColor='black' type='icon' subTitle='shape'/>
+      <ClTitleBar title='形状' textColor='black' type='icon' subTitle='shape' />
       <ClFlex justify='around' wrap>
         <View style={{ flex: 1 }}>
           <ClCard>
@@ -35,9 +35,9 @@ export default function ButtonView () {
           </ClCard>
         </View>
       </ClFlex>
-      <GenerateCode code={shapeCode}/>
+      <GenerateCode code={shapeCode} />
 
-      <ClTitleBar title='尺寸' textColor='black' type='icon' subTitle='size'/>
+      <ClTitleBar title='尺寸' textColor='black' type='icon' subTitle='size' />
       <ClFlex justify='around' wrap>
         <View style={{ flex: 1 }}>
           <ClCard>
@@ -49,9 +49,9 @@ export default function ButtonView () {
           </ClCard>
         </View>
       </ClFlex>
-      <GenerateCode code={sizeCode}/>
+      <GenerateCode code={sizeCode} />
 
-      <ClTitleBar title='按钮颜色' textColor='black' type='icon' subTitle='bgColor'/>
+      <ClTitleBar title='按钮颜色' textColor='black' type='icon' subTitle='bgColor' />
       <ClFlex justify='between' wrap>
         <View style={{ flex: 1 }}>
           <ClCard>
@@ -74,7 +74,8 @@ export default function ButtonView () {
                   <View key={item.title}>
                     <ClLayout padding='small' paddingDirection='around'>
                       <ClButton long shape='round'
-                                bgColor={convertLightColor(item.title)}>{convertLightColor(item.title)}</ClButton>
+                        bgColor={convertLightColor(item.title)}
+                      >{convertLightColor(item.title)}</ClButton>
                     </ClLayout>
                   </View>
                 ))
@@ -96,9 +97,9 @@ export default function ButtonView () {
           </ClCard>
         </View>
       </ClFlex>
-      <GenerateCode code={colorCode}/>
+      <GenerateCode code={colorCode} />
 
-      <ClTitleBar title='按钮镂空' textColor='black' type='icon' subTitle='plain' renderRight={renderRight}/>
+      <ClTitleBar title='按钮镂空' textColor='black' type='icon' subTitle='plain' renderRight={renderRight} />
       <ClFlex justify='between' wrap>
         <ClCard>
           <ClGrid col={2}>
@@ -107,7 +108,8 @@ export default function ButtonView () {
                 <View key={item.title}>
                   <ClLayout padding='small' paddingDirection='around'>
                     <ClButton long plain plainSize={showLines ? 'bold' : 'default'} shape='round'
-                              bgColor={item.title}>{item.title}</ClButton>
+                      bgColor={item.title}
+                    >{item.title}</ClButton>
                   </ClLayout>
                 </View>
               ))
@@ -115,10 +117,10 @@ export default function ButtonView () {
           </ClGrid>
         </ClCard>
       </ClFlex>
-      <GenerateCode code={linesCode}/>
+      <GenerateCode code={linesCode} />
 
 
-      <ClTitleBar title='块状按钮' textColor='black' type='icon' subTitle='long'/>
+      <ClTitleBar title='块状按钮' textColor='black' type='icon' subTitle='long' />
       <ClFlex justify='between' wrap>
         <View style={{ flex: 1 }}>
           <ClCard>
@@ -126,21 +128,21 @@ export default function ButtonView () {
           </ClCard>
         </View>
       </ClFlex>
-      <GenerateCode code={longCode}/>
+      <GenerateCode code={longCode} />
 
-      <ClTitleBar title='失效按钮' textColor='black' type='icon' subTitle='disabled'/>
+      <ClTitleBar title='失效按钮' textColor='black' type='icon' subTitle='disabled' />
       <ClCard>
         <ClButton shape='round' bgColor='blue' long disabled>禁止按钮</ClButton>
       </ClCard>
-      <GenerateCode code={disabledCode}/>
+      <GenerateCode code={disabledCode} />
 
-      <ClTitleBar title='加载中' textColor='black' type='icon' subTitle='loading'/>
+      <ClTitleBar title='加载中' textColor='black' type='icon' subTitle='loading' />
       <ClCard>
         <ClButton shape='round' bgColor='blue' long loading>加载中</ClButton>
       </ClCard>
-      <GenerateCode code={loadingCode}/>
+      <GenerateCode code={loadingCode} />
 
-      <ClTitleBar title='开放能力' textColor='black' type='icon'/>
+      <ClTitleBar title='开放能力' textColor='black' type='icon' />
       <ClCard>
         <ClButton
           shape='round'
@@ -157,7 +159,7 @@ export default function ButtonView () {
           }}
         >获取用户信息</ClButton>
       </ClCard>
-      <GenerateCode code={openTypeCode}/>
+      <GenerateCode code={openTypeCode} />
     </ClLayout>
   )
 }

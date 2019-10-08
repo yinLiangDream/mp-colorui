@@ -2,54 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="component&#10;add @types className 和 style">
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/accordion.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/accordion.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/actionSheet.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/actionSheet.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/animation.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/animation.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/avatar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/avatar.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/@types/baseType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/baseType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/button.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/button.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/card.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/card.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/checkbox.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/checkbox.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/curtain.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/curtain.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/divider.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/divider.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/drawer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/drawer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/flex.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/flex.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/floatButton.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/floatButton.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/form.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/form.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/formItem.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/formItem.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/grid.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/grid.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/icon.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/icon.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/imagePicker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/imagePicker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/input.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/input.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/@types/layout.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/layout.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/loading.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/loading.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/menuList.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/menuList.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/message.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/message.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/modal.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/modal.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/navBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/navBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/progress.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/progress.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/radio.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/radio.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/screenDrawer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/screenDrawer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/searchBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/searchBar.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/@types/select.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/select.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/shopBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/shopBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/steps.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/steps.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/swiper.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiper.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/swiperAction.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiperAction.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/switch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/switch.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tabBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tabs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabs.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tag.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tag.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/text.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/text.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/timeline.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/timeline.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/timer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/timer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tip.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tip.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/titleBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/titleBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/verticalTab.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/verticalTab.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/verticalTabCell.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/verticalTabCell.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/accordion/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/actionSheet/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/actionSheet/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animation/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/avatar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/curtain/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/divider/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/divider/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/drawer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/drawer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/flex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/flex/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/floatButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/floatButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icon/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menuList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/message/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/progress/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/progress/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/radio/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/screenDrawer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screenDrawer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/searchReault/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/searchReault/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/select/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/select/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shopBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shopBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/steps/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/steps/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiperAction/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiperAction/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/switch/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tabBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tabs/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabs/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tag/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tag/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/timeline/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timeline/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tip/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tip/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/titleBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/titleBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/verticalTab/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/verticalTab/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/components/accordion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/accordion/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/components/button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/button/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +117,7 @@
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -188,8 +194,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.build:weapp" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.docs:build" />
       </list>
@@ -257,7 +263,7 @@
       <workItem from="1570347598504" duration="1353000" />
       <workItem from="1570349935166" duration="4486000" />
       <workItem from="1570366797163" duration="12400000" />
-      <workItem from="1570503381968" duration="5019000" />
+      <workItem from="1570503381968" duration="15673000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -560,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570513441634</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="component&#10;add @types className 和 style">
+      <created>1570519800241</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1570519800241</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -607,7 +620,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="COMPONENT&#10;- 新增 FloatButton 浮动按钮组件" />
     <MESSAGE value="FEATURE&#10;ICON 组件支持第三方组件库" />
     <MESSAGE value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
     <MESSAGE value="BUG&#10;修复无法自定义主题颜色问题" />
@@ -632,6 +644,7 @@
     <MESSAGE value="新增 docs 文档" />
     <MESSAGE value="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新" />
     <MESSAGE value="app&#10;0.5.2 日志更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="app&#10;0.5.2 日志更新" />
+    <MESSAGE value="component&#10;add @types className 和 style" />
+    <option name="LAST_COMMIT_MESSAGE" value="component&#10;add @types className 和 style" />
   </component>
 </project>

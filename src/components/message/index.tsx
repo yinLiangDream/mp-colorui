@@ -1,13 +1,14 @@
-import Taro, { useState, useEffect } from '@tarojs/taro';
-import { View } from '@tarojs/components';
+import Taro, { useState, useEffect } from "@tarojs/taro";
+import { View } from "@tarojs/components";
 
-import { IProps } from '../../../@types/message';
-import ClCard from '../card';
-import ClFlex from '../flex';
-import ClText from '../text';
-import ClIcon from '../icon';
+import { IProps } from "../../../@types/message";
+import ClCard from "../card";
+import ClFlex from "../flex";
+import ClText from "../text";
+import ClIcon from "../icon";
 
-import './index.scss';
+import "./index.scss";
+import { classNames } from "@/components/utils";
 
 let timer;
 export default function ClMessage(props: IProps) {
@@ -15,24 +16,24 @@ export default function ClMessage(props: IProps) {
   const { bgColor, type, onClose, message, show, duration } = props;
   const [showMessage, setShowMessage] = useState(show);
   const [contentHeight, setContentHeight] = useState(tempHeight);
-  const [tempMessage, setTempMessage] = useState('')
-  const [tempType, setTempType] = useState()
+  const [tempMessage, setTempMessage] = useState("");
+  const [tempType, setTempType] = useState();
   const durationTime = duration || 3;
   const mapColor = {
-    success: 'light-green',
-    error: 'light-red',
-    warn: 'light-yellow',
-    info: 'light-grey',
+    success: "light-green",
+    error: "light-red",
+    warn: "light-yellow",
+    info: "light-grey",
     custom: bgColor
   };
   const caculateHeight = async () => {
     const view = Taro.createSelectorQuery().in(this.$scope);
-    const query = view.select('#content');
+    const query = view.select("#content");
     return await new Promise(resolve => {
       query.boundingClientRect().exec(res => {
-        const data = res[0]
-        resolve(data.height)
-      })
+        const data = res[0];
+        resolve(data.height);
+      });
     });
   };
   const clickClose = async () => {
@@ -51,8 +52,8 @@ export default function ClMessage(props: IProps) {
       setShowMessage(false);
     } else {
       tempHeight = 0;
-      setTempType(type)
-      setTempMessage(message || '')
+      setTempType(type);
+      setTempMessage(message || "");
       if (duration !== 0) {
         if (timer) {
           clickClose();
@@ -64,7 +65,7 @@ export default function ClMessage(props: IProps) {
           clickClose();
           clearTimeout(timer);
           timer = null;
-          props.message = '';
+          props.message = "";
         }, durationTime * 1000);
       }
       setContentHeight(tempHeight);
@@ -73,7 +74,7 @@ export default function ClMessage(props: IProps) {
   }, [showMessage]);
   useEffect(() => {
     show && setShowMessage(!!show);
-    props.show = false
+    props.show = false;
   }, [show]);
   useEffect(() => {
     if (show) {
@@ -82,29 +83,32 @@ export default function ClMessage(props: IProps) {
       clickClose();
       setTimeout(() => {
         setShowMessage(true);
-        setTempMessage(message || '')
-        setTempType(type)
+        setTempMessage(message || "");
+        setTempType(type);
       }, 300);
     }
   }, [message, show]);
   return (
     <View
-      className='cu-cl-message'
-      style={{
-        transition: `all 0.2s linear`,
-        top: `${showMessage ? '0' : '-' + contentHeight + 'px'}`
-      }}
+      className={classNames("cu-cl-message", props.className)}
+      style={Object.assign(
+        {
+          transition: `all 0.2s linear`,
+          top: `${showMessage ? "0" : "-" + contentHeight + "px"}`
+        },
+        props.style
+      )}
     >
-      <View className='cu-cl-message__conetent' id='content'>
-        <ClCard bgColor={mapColor[tempType] || 'light-grey'} shadow={false}>
-          <ClFlex justify='between' align='center'>
+      <View className="cu-cl-message__conetent" id="content">
+        <ClCard bgColor={mapColor[tempType] || "light-grey"} shadow={false}>
+          <ClFlex justify="between" align="center">
             <ClText text={tempMessage} />
             <View
               onClick={() => {
                 clickClose();
               }}
             >
-              <ClIcon iconName='close' size='xsmall' />
+              <ClIcon iconName="close" size="xsmall" />
             </View>
           </ClFlex>
         </ClCard>
@@ -118,10 +122,10 @@ ClMessage.options = {
 };
 
 ClMessage.defaultProps = {
-  bgColor: 'light-grey',
-  type: 'info',
+  bgColor: "light-grey",
+  type: "info",
   onClose: () => {},
-  message: '',
+  message: "",
   show: false,
   duration: 3
 } as IProps;
