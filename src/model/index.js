@@ -1,5 +1,19 @@
 export const updateList = [
   {
+    node: '2019-10'
+  },
+  {
+    title: '0.5.2',
+    time: '2019-10-05',
+    bgColor: 'olive',
+    iconColor: 'olive',
+    content: [
+      '🐞fix Radio 组件，不渲染问题',
+      '🐞fix Select 组件，多选不渲染问题',
+      '🐞fix According 组件，在某些机型下高度不对的问题'
+    ]
+  },
+  {
     node: '2019-09'
   },
   {

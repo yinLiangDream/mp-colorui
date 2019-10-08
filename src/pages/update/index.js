@@ -11,7 +11,7 @@ export default function Update () {
         margin='xlarge'
         marginDirection='bottom'
       >
-        <ClTimeline times={updateList}/>
+        <ClTimeline times={updateList} />
       </ClLayout>
     </ClCard>
   )
