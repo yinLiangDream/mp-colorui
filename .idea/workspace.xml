@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/BaseColor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/FloatPhone.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/GradualColor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/Icons.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/LightColor.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/styles/icons.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/styles/index.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/styles/palette.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/input.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/input.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/input.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/input.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:alipay">
+  <component name="RunManager" selected="npm.dev:weapp">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -112,21 +109,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev:alipay" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="build:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev:alipay" />
+        <script value="build:weapp" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="dev:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev:h5" />
+        <script value="dev:weapp" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -154,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:build" />
-        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.dev:alipay" />
-        <item itemvalue="npm.dev:h5" />
+        <item itemvalue="npm.build:weapp" />
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.docs:build" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +220,8 @@
       <workItem from="1570347382208" duration="192000" />
       <workItem from="1570347598504" duration="1353000" />
       <workItem from="1570349935166" duration="4486000" />
-      <workItem from="1570366797163" duration="10208000" />
+      <workItem from="1570366797163" duration="12400000" />
+      <workItem from="1570503381968" duration="1850000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -505,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569337880541</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="新增 docs 文档">
+      <created>1570500820821</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1570500820821</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -552,7 +557,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="API&#10;新增 menuList list 属性下 disabled 属性&#10;BUG&#10;menuList 点击失效问题" />
     <MESSAGE value="API&#10;新增 titleBar renderRight 属性&#10;BUG&#10;解决 浅色 light-pink 失效问题" />
     <MESSAGE value="API&#10;- Animation 组件&#10;- - 新增 onAnimationStart、onAnimationEnd 事件&#10;- Tabs 组件&#10;- - 新增 tabs 属性下的 id 属性&#10;- - 新增 touchMove 可滑动属性&#10;- VerticalTab 组件&#10;- - 新增 backTop 属性&#10;BUG&#10;- Card 组件&#10;- - 修复插入 children 内容时的异常提醒（不影响使用）" />
     <MESSAGE value="COMPONENT&#10;- 新增 FloatButton 浮动按钮组件" />
@@ -577,7 +581,8 @@
     <MESSAGE value="BUG&#10;支付宝小程序 ActionSheet 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 Steps 适配" />
     <MESSAGE value="修改 README 文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 README 文件" />
+    <MESSAGE value="新增 docs 文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增 docs 文档" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

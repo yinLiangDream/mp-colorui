@@ -106,7 +106,8 @@ function ClInput(props: IProps) {
     type,
     maxLength,
     disabled,
-    renderCustomRight
+    renderCustomRight,
+    autoFocus
   } = props;
   let titleWidth = props.titleWidth === 'auto' ? 'auto' : pxTransform(props.titleWidth || 200)
   useMemo(() => {
@@ -142,6 +143,7 @@ function ClInput(props: IProps) {
       {title && props.pattern === 'normal' ? normalTitle : ''}
       {title && props.pattern === 'material' ? isH5 ? renderMaterialTitle_H5 : renderMaterialTitle : ''}
       <Input
+        autoFocus={autoFocus}
         placeholder={placeholder}
         value={defaultValue || initValue}
         onInput={onChange}
@@ -166,6 +168,7 @@ ClInput.options = {
   addGlobalClass: true
 };
 ClInput.defaultProps = {
+  autoFocus: false,
   titleWidth: 'auto',
   align: 'left',
   pattern: 'normal',

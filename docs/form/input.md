@@ -54,22 +54,23 @@ import {ClInput} from 'mp-colorui'
 
 ### Input 参数
 
-| 参数              | 说明                                                                                                          | 类型            | 可选值                                                      | 默认值    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------- | --------------- | ----------------------------------------------------------- | --------- |
-| type              | *输入框类型*                                                                                                  | string          | *`text`*,*`number`*,*`password`*,<br />*`idcard`*,*`digit`* | *`text`*  |
-| title             | *输入框标题*                                                                                                  | string          | -                                                           | -         |
-| maxLength         | *最大输入长度*                                                                                                | number          | -                                                           | *-1*      |
-| disabled          | *禁止输入*                                                                                                    | boolean         | *`true`*,*`false`*                                          | *`false`* |
-| adjustPosition    | *键盘弹起时，是否自动上推页面*                                                                                | boolean         | *`true`*,*`false`*                                          | *`false`* |
-| icon              | *输入框后置icon*                                                                                              | Object          | 参考文档 [Icon-*Icon* 参数](/base/icon?id=icon-参数)        | {}        |
-| button            | *输入框后置按钮*                                                                                              | Object          | 参考文档 [button-Button 参数](/base/button?id=button-参数)  | {}        |
-| image             | *输入框后置图片 url*                                                                                          | string          | -                                                           | -         |
-| renderCustomRight | *自定义按钮右边的内容，请传入自定义内容*                                                                      | Element         | -                                                           | -         |
+| 参数              | 说明                                                         | 类型            | 可选值                                                      | 默认值    |
+| ----------------- | ------------------------------------------------------------ | --------------- | ----------------------------------------------------------- | --------- |
+| type              | *输入框类型*                                                 | string          | *`text`*,*`number`*,*`password`*,<br />*`idcard`*,*`digit`* | *`text`*  |
+| title             | *输入框标题*                                                 | string          | -                                                           | -         |
+| maxLength         | *最大输入长度*                                               | number          | -                                                           | *-1*      |
+| disabled          | *禁止输入*                                                   | boolean         | *`true`*,*`false`*                                          | *`false`* |
+| adjustPosition    | *键盘弹起时，是否自动上推页面*                               | boolean         | *`true`*,*`false`*                                          | *`false`* |
+| icon              | *输入框后置icon*                                             | Object          | 参考文档 [Icon-Icon 参数](/base/icon?id=icon-参数)        | {}        |
+| button            | *输入框后置按钮*                                             | Object          | 参考文档 [button-Button 参数](/base/button?id=button-参数)  | {}        |
+| image             | *输入框后置图片 url*                                         | string          | -                                                           | -         |
+| renderCustomRight | *自定义按钮右边的内容，请传入自定义内容*                     | Element         | -                                                           | -         |
 | value             | *输入框默认值，不同于 defaultValue，该值在每次改变的时候都会进行初始化，所以要避免在 onChange 事件里修改该值* | string          | -                                                           | -         |
-| defaultValue      | *输入框初始值，不同于 value，该值只会初始化一次*                                                              | string          | -                                                           | -         |
-| titleWidth        | *标题栏的宽度*                                                                                                | number\| string | `auto`                                                      | `auto`    |
-| align             | *文字对齐位置*                                                                                                | string          | `left`,`right`,`center`,`none`                              | `none`    |
-| pattern           | *表现形式*                                                                                                    | string          | `normal`,`material`                                         | `normal`  |
+| defaultValue      | *输入框初始值，不同于 value，该值只会初始化一次*             | string          | -                                                           | -         |
+| titleWidth        | *标题栏的宽度*                                               | number\| string | `auto`                                                      | `auto`    |
+| align             | *文字对齐位置*                                               | string          | `left`,`right`,`center`,`none`                              | `none`    |
+| pattern           | *表现形式*                                                   | string          | `normal`,`material`                                         | `normal`  |
+| autoFocus         | *自动聚焦*                                                   | boolean         | -                                                           | `false`   |
 
 ### Input 事件
 

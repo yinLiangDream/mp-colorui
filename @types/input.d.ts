@@ -22,6 +22,12 @@ export type TOnImageClick = (e: any) => void;
 
 export interface IProps {
   /**
+   * 自动聚焦
+   *
+   * 默认值 `false`
+   */
+  autoFocus?: boolean;
+  /**
    * 标题宽度
    *
    * 默认 `none`
