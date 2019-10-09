@@ -2,7 +2,7 @@ import { Image, Text, View } from "@tarojs/components";
 import Taro, { useEffect, useState } from "@tarojs/taro";
 import { BG_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/loading";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 
 // interface IState {
 //   loadProgress: number;

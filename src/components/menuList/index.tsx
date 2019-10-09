@@ -3,7 +3,7 @@ import Taro from "@tarojs/taro";
 import ClIcon from "../icon/index";
 import { TEXT_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/menuList";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 
 export default function ClMenuList(props: IProps) {
   const shortLineClassName = props.shortBorder ? "sm-border" : "";

@@ -3,7 +3,7 @@ import Taro from "@tarojs/taro";
 import { IProps } from "../../../@types/divider";
 import { TEXT_COLOR_LIST, SIZE } from "../utils/model";
 import ClLayout from "../layout";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 
 export default function ClDivider(props: IProps) {
   const { color, size } = props;

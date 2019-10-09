@@ -4,7 +4,7 @@ import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/searchBar";
 import ClCard from "../card";
 import ClSearchResult from "./searchReault";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 
 interface IState {
   showSearch?: boolean;

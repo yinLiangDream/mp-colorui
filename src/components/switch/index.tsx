@@ -1,6 +1,6 @@
 import { Switch, View } from "@tarojs/components";
 import Taro from "@tarojs/taro";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 import { IProps } from "../../../@types/switch";
 import ClSwitch_h5 from "./h5";
 

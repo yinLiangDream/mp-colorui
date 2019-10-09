@@ -1,6 +1,6 @@
 import { View } from "@tarojs/components";
 import Taro from "@tarojs/taro";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 import { IProps } from "../../../@types/grid";
 
 export default function ClGrid(props: IProps) {

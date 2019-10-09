@@ -1,5 +1,3 @@
----
-
 > `MP ColorUI` 是一款基于 [Taro](https://taro.aotu.io/) 框架并且联合 [Color-UI](https://github.com/weilanwl/ColorUI) CSS 库开发的多端 UI 组件库（目前仅支持小程序端）
 
 ## Taro

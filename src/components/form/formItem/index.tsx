@@ -1,6 +1,6 @@
 import Taro, { useEffect, useState } from "@tarojs/taro";
 import { View } from "@tarojs/components";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../../components/utils";
 import { IProps } from "../../../../@types/formItem";
 // import { FormContext } from '../index'
 import defaultRules from "../../utils/rules";

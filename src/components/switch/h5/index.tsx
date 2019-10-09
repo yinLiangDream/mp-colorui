@@ -1,6 +1,6 @@
 import { View } from "@tarojs/components";
 import Taro, { Component, useState } from "@tarojs/taro";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../../components/utils";
 import { IProps } from "../../../../@types/switch";
 
 export default class ClSwitch_h5 extends Component<IProps, {}> {

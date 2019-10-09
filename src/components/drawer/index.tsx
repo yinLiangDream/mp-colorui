@@ -1,6 +1,6 @@
 import { View } from "@tarojs/components";
 import Taro, { useMemo, useState } from "@tarojs/taro";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 import { IProps } from "../../../@types/drawer";
 
 export default function ClDrawer(props: IProps) {

@@ -8,7 +8,7 @@ import ClText from "../text";
 import ClIcon from "../icon";
 
 import "./index.scss";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 
 let timer;
 export default function ClMessage(props: IProps) {

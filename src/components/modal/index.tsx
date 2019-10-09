@@ -2,7 +2,7 @@ import { Text, View } from "@tarojs/components";
 import Taro, { Component } from "@tarojs/taro";
 import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/modal";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 
 export default class ClModal extends Component<IProps, {}> {
   static options = {

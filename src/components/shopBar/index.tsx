@@ -1,6 +1,6 @@
 import { View } from "@tarojs/components";
 import Taro, { Component } from "@tarojs/taro";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 import { BG_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/shopBar";
 

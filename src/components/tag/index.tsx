@@ -3,7 +3,7 @@ import Taro, { Component } from "@tarojs/taro";
 import { BG_COLOR_LIST } from "../utils/model";
 import { bgColorType } from "../utils/types";
 import { IProps } from "../../../@types/tag";
-import { classNames } from "@/components/utils";
+import { classNames } from "../../components/utils";
 
 interface IState {}
 
