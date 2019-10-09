@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,16 +100,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="build:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:weapp" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="dev:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -141,13 +130,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="publish:production" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="publish:production" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.docs:build" />
+        <item itemvalue="npm.publish:production" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.docs:dev" />
-        <item itemvalue="npm.build:weapp" />
       </list>
     </recent_temporary>
   </component>
@@ -553,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570607790665</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="version&#10;&#10;update version&#10;update README">
+      <created>1570607865462</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1570607865462</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -600,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
     <MESSAGE value="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题" />
     <MESSAGE value="更新版本" />
     <MESSAGE value="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题" />
@@ -625,6 +630,7 @@
     <MESSAGE value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
     <MESSAGE value="CI&#10;update travis" />
     <MESSAGE value="app&#10;delete all&#10;fix all components utils bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="app&#10;delete all&#10;fix all components utils bug" />
+    <MESSAGE value="version&#10;&#10;update version&#10;update README" />
+    <option name="LAST_COMMIT_MESSAGE" value="version&#10;&#10;update version&#10;update README" />
   </component>
 </project>

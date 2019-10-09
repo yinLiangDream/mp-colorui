@@ -25,6 +25,15 @@ export default {
   data() {
     return {
       updateList: [
+        generatorData("0.5.5", "2019-10-09", [
+          {
+            title: "FEATURE",
+            desc: [
+              "🌟 Input 组件新增 autoFocus 属性",
+              "🎉🎉 所有组件可以添加 className 和 style 属性"
+            ]
+          }
+        ]),
         generatorData("0.5.2", "2019-10-05", [
           {
             title: "BUG",
