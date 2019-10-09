@@ -1,7 +1,7 @@
 import { ComponentClass } from "react";
-import { bgColorMoreType, bgColorType, iconType, lightBgColorType, normalSizeType } from "./baseType";
+import { BaseComponent, bgColorMoreType, bgColorType, iconType, lightBgColorType, normalSizeType } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 初始化时 Button 的位置
    *

@@ -1,6 +1,7 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
-export type TMode = 'selector' | 'multiSelector' | 'time' | 'date' | 'region';
+export type TMode = "selector" | "multiSelector" | "time" | "date" | "region";
 export type TOnChange = (e: any) => void;
 export type TOnCancel = (e: any) => void;
 export type TOnColumnChange = (e: any) => void;
@@ -66,7 +67,7 @@ export type TDate = {
   /**
    * 日期选择精度
    */
-  fields?: 'year' | 'month' | 'day';
+  fields?: "year" | "month" | "day";
 };
 export type TRegion = {
   /**
@@ -75,10 +76,10 @@ export type TRegion = {
    * value: 地址名称
    * 详情请在官方文档中查看 areaData
    */
-  value?: { key: number; value: string }[];
+  value?: { key: string; value: string }[];
 };
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 标题
    */

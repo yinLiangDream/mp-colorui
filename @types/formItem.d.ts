@@ -1,6 +1,7 @@
 import { ComponentClass } from 'react';
+import { BaseComponent } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * prop 需要校验的 key 值
    */

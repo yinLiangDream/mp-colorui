@@ -1,7 +1,7 @@
 import { ComponentClass } from 'react';
-import { bgColorType, bgColorMoreType, lightBgColorType } from './baseType';
+import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 是否开启
    *

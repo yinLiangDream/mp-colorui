@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/swiper.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiper.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swiper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +19,12 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="Sass File" />
         <option value="TypeScript JSX File" />
         <option value="SCSS File" />
+        <option value="Stylus File" />
+        <option value="Vue Single File Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -46,12 +47,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.introduce.parameter.add.jsdoc" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/.vuepress/styles" />
+    <property name="list.type.of.created.stylesheet" value="Stylus" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,7 +67,15 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:alipay">
+  <component name="RunManager" selected="npm.dev:weapp">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,21 +100,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev:alipay" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="build:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev:alipay" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev:h5" />
+        <script value="build:weapp" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -120,11 +120,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="docs:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="publish" />
+        <script value="docs:build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docs:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -133,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.dev:h5" />
-        <item itemvalue="npm.dev:alipay" />
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.publish" />
+        <item itemvalue="npm.build:weapp" />
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.docs:build" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +207,14 @@
       <workItem from="1569334930390" duration="2478000" />
       <workItem from="1569465692665" duration="1380000" />
       <workItem from="1569571758292" duration="163000" />
+      <workItem from="1570346925362" duration="442000" />
+      <workItem from="1570347382208" duration="192000" />
+      <workItem from="1570347598504" duration="1353000" />
+      <workItem from="1570349935166" duration="4486000" />
+      <workItem from="1570366797163" duration="12400000" />
+      <workItem from="1570503381968" duration="16049000" />
+      <workItem from="1570543640531" duration="2794000" />
+      <workItem from="1570590024695" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -478,7 +496,49 @@
       <option name="project" value="LOCAL" />
       <updated>1569337880541</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="新增 docs 文档">
+      <created>1570500820821</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1570500820821</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新">
+      <created>1570511126698</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1570511126698</updated>
+    </task>
+    <task id="LOCAL-00043" summary="app&#10;0.5.2 日志更新">
+      <created>1570513441634</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1570513441634</updated>
+    </task>
+    <task id="LOCAL-00044" summary="component&#10;add @types className 和 style">
+      <created>1570519800241</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1570519800241</updated>
+    </task>
+    <task id="LOCAL-00045" summary="component&#10;add component className and style&#10;fix(components/verticalTab) H5 attributes scrollAnimationDuration  not working">
+      <created>1570531351907</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1570531351907</updated>
+    </task>
+    <task id="LOCAL-00046" summary="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23">
+      <created>1570588057624</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1570588057624</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -525,12 +585,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="API&#10;新增 menuList list 属性下 disabled 属性&#10;BUG&#10;menuList 点击失效问题" />
-    <MESSAGE value="API&#10;新增 titleBar renderRight 属性&#10;BUG&#10;解决 浅色 light-pink 失效问题" />
-    <MESSAGE value="API&#10;- Animation 组件&#10;- - 新增 onAnimationStart、onAnimationEnd 事件&#10;- Tabs 组件&#10;- - 新增 tabs 属性下的 id 属性&#10;- - 新增 touchMove 可滑动属性&#10;- VerticalTab 组件&#10;- - 新增 backTop 属性&#10;BUG&#10;- Card 组件&#10;- - 修复插入 children 内容时的异常提醒（不影响使用）" />
-    <MESSAGE value="COMPONENT&#10;- 新增 FloatButton 浮动按钮组件" />
-    <MESSAGE value="FEATURE&#10;ICON 组件支持第三方组件库" />
-    <MESSAGE value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
     <MESSAGE value="BUG&#10;修复无法自定义主题颜色问题" />
     <MESSAGE value="FEATURE&#10;组件 Avatar 可自定义大小" />
     <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
@@ -550,7 +604,12 @@
     <MESSAGE value="BUG&#10;支付宝小程序 ActionSheet 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 Steps 适配" />
     <MESSAGE value="修改 README 文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 README 文件" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="新增 docs 文档" />
+    <MESSAGE value="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新" />
+    <MESSAGE value="app&#10;0.5.2 日志更新" />
+    <MESSAGE value="component&#10;add @types className 和 style" />
+    <MESSAGE value="component&#10;add component className and style&#10;fix(components/verticalTab) H5 attributes scrollAnimationDuration  not working" />
+    <MESSAGE value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
+    <option name="LAST_COMMIT_MESSAGE" value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
   </component>
 </project>

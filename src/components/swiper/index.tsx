@@ -1,7 +1,7 @@
-import { Image, Swiper, SwiperItem, Video, View } from '@tarojs/components';
-import Taro, { useState, useEffect, pxTransform } from '@tarojs/taro';
-import { IProps, TList } from '../../../@types/swiper';
-import { generateId, isAliPay, screenPercent } from '../utils';
+import { Image, Swiper, SwiperItem, Video, View } from "@tarojs/components";
+import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
+import { IProps, TList } from "../../../@types/swiper";
+import { classNames, generateId, isAliPay, screenPercent } from "../utils";
 
 export default function ClSwiper(props: IProps) {
   const [listState, setListState] = useState(props.list || []);
@@ -15,14 +15,14 @@ export default function ClSwiper(props: IProps) {
     );
   }, [props.list]);
   const swiperTypeClassName = type =>
-    type ? `${type}-swiper` : 'screen-swiper';
+    type ? `${type}-swiper` : "screen-swiper";
   const dotClassName = type =>
-    type === 'round' ? `${type}-dot` : 'square-dot';
+    type === "round" ? `${type}-dot` : "square-dot";
   const duration = props.duration || 500;
   const interval = props.interval || 5000;
   const indicatorDots = !!props.indicatorDots;
-  const indicatorColor = props.indicatorColor || '#000';
-  const indicatorActiveColor = props.indicatorActiveColor || '#FFF';
+  const indicatorColor = props.indicatorColor || "#000";
+  const indicatorActiveColor = props.indicatorActiveColor || "#FFF";
   const circular = !!props.circular;
   const autoplay = autoplayData => !!autoplayData;
   const loop = loopData => !!loopData;
@@ -47,26 +47,28 @@ export default function ClSwiper(props: IProps) {
   // const onTouchStart = e => {}
   // const onTouchEnd = e => {}
   const renderImg = (item: TList) => (
-    <Image src={item.url || ''} mode='aspectFill' />
+    <Image src={item.url || ""} mode="aspectFill" />
   );
   const renderVideo = (item: TList) => (
     <Video
-      src={item.url || ''}
+      src={item.url || ""}
       autoplay={autoplay(item.autoplay)}
       loop={loop(item.loop)}
       muted={muted(item.muted)}
       showPlayBtn={showPlayBtn(item.showPlayBtn)}
       controls={controls(item.controls)}
-      objectFit='cover'
+      objectFit="cover"
       title={title(item.title)}
       poster={poster(item.poster)}
     />
   );
   const screenComponent = (
     <Swiper
-      className={`${dotClassName(props.dot)} ${swiperTypeClassName(
-        props.type
-      )}`}
+      className={classNames(
+        `${dotClassName(props.dot)} ${swiperTypeClassName(props.type)}`,
+        props.className
+      )}
+      style={Object.assign({}, props.style)}
       circular={circular}
       indicatorDots={indicatorDots}
       indicatorColor={indicatorColor}
@@ -83,17 +85,19 @@ export default function ClSwiper(props: IProps) {
             onClick(index);
           }}
         >
-          {item.type === 'image' ? renderImg(item) : ''}
-          {item.type === 'video' ? renderVideo(item) : ''}
+          {item.type === "image" ? renderImg(item) : ""}
+          {item.type === "video" ? renderVideo(item) : ""}
         </SwiperItem>
       ))}
     </Swiper>
   );
   const cardComponent = (
     <Swiper
-      className={`${dotClassName(props.dot)} ${swiperTypeClassName(
-        props.type
-      )}`}
+      className={classNames(
+        `${dotClassName(props.dot)} ${swiperTypeClassName(props.type)}`,
+        props.className
+      )}
+      style={Object.assign({}, props.style)}
       circular={circular}
       indicatorDots={indicatorDots}
       indicatorColor={indicatorColor}
@@ -108,14 +112,14 @@ export default function ClSwiper(props: IProps) {
       {list.map((item: any, index: number) => (
         <SwiperItem
           key={item.cu_swiper_id}
-          className={`${cur === index ? 'cur' : ''}`}
+          className={`${cur === index ? "cur" : ""}`}
           onClick={() => {
             onClick(index);
           }}
         >
-          <View className='swiper-item'>
-            {item.type === 'image' ? renderImg(item) : ''}
-            {item.type === 'video' ? renderVideo(item) : ''}
+          <View className="swiper-item">
+            {item.type === "image" ? renderImg(item) : ""}
+            {item.type === "video" ? renderVideo(item) : ""}
           </View>
         </SwiperItem>
       ))}
@@ -126,7 +130,7 @@ export default function ClSwiper(props: IProps) {
   //     <View className={`tower-item ${}`}></View>
   //   </View>
   // );
-  return props.type === 'card' ? cardComponent : screenComponent;
+  return props.type === "card" ? cardComponent : screenComponent;
 }
 
 ClSwiper.options = {
@@ -135,15 +139,15 @@ ClSwiper.options = {
 
 ClSwiper.defaultProps = {
   autoplay: false,
-  type: 'screen',
+  type: "screen",
   list: [],
-  dot: 'square',
+  dot: "square",
   duration: 500,
   onClick: () => {},
   indicatorDots: false,
-  indicatorColor: '#000',
-  indicatorActiveColor: '#FFF',
+  indicatorColor: "#000",
+  indicatorActiveColor: "#FFF",
   interval: 5000,
   circular: false,
   onChange: () => {}
-} as IProps
+} as IProps;

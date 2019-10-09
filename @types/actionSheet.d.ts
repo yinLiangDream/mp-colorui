@@ -1,7 +1,7 @@
-import { bgColorType, bgColorMoreType, lightBgColorType } from './baseType';
-import { ComponentClass } from "react";
+import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
+import { ComponentClass } from 'react'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 出现类型
    */
@@ -9,7 +9,7 @@ export interface IProps {
   /**
    * 提示文字
    */
-  tip?: string
+  tip?: string;
   /**
    * 是否打开
    *
@@ -29,40 +29,40 @@ export interface IProps {
     /**
      * 文字
      */
-    text?: string
+    text?: string;
     /**
      * 背景色
      */
     bgColor?: bgColorType | bgColorMoreType | lightBgColorType | string
-  }[]
+  }[];
   /**
    * 取消按钮的文本
    */
-  cancelText?: string
+  cancelText?: string;
   /**
    * 是否显示取消按钮
    *
    * 默认 `false`
    */
-  showCancel?: boolean
+  showCancel?: boolean;
   /**
    * 取消按钮背景色
    *
    * 默认 `white`
    */
-  cancelBgColor?: bgColorType | bgColorMoreType | lightBgColorType
+  cancelBgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   /**
    * 取消按钮按钮文字颜色
    */
-  cancelFontColor?: bgColorType
+  cancelFontColor?: bgColorType;
   /**
    * 点击按钮事件
    */
-  onClick?: (index: number) => void
+  onClick?: (index: number) => void;
   /**
    * 点击取消触发
    */
-  onCancel?: () => void
+  onCancel?: () => void;
 }
 
 declare const ActionSheet: ComponentClass<IProps>

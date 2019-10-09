@@ -1,7 +1,7 @@
-import { ComponentClass } from 'react';
-import { bgColorType, extendSizeType } from './baseType';
+import { ComponentClass } from 'react'
+import { BaseComponent, bgColorType, extendSizeType } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 分割线颜色
    *
@@ -13,10 +13,10 @@ export interface IProps {
    *
    * 默认 `normal`
    */
-  size?: extendSizeType
+  size?: extendSizeType;
   children?: any;
 }
 
-declare const Divider: ComponentClass<IProps>;
+declare const Divider: ComponentClass<IProps>
 
-export default Divider;
+export default Divider

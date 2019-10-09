@@ -1,39 +1,47 @@
-import { Block, View } from '@tarojs/components';
-import Taro, { pxTransform } from '@tarojs/taro';
-import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../utils/model';
-import { IProps } from '../../../@types/timeline';
+import { View } from "@tarojs/components";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
+import { IProps } from "../../../@types/timeline";
 import ClFlex from "../flex";
-import { generateId } from '../utils'
+import { classNames, generateId } from "../utils";
 
 export default function ClTimeline(props: IProps) {
   const times = props.times || [];
-  const iconColorClassName = color => (color ? TEXT_COLOR_LIST[color] : '');
-  const iconClassName = icon => (icon ? `cuIcon-${icon}` : '');
-  const bgColorClassName = color => (color ? BG_COLOR_LIST[color] : '');
-  const items = times.map((item) => (
-    item.node ?
-      <View className='cu-time' key={generateId()}>{item.node}</View>
-      :
+  const iconColorClassName = color => (color ? TEXT_COLOR_LIST[color] : "");
+  const iconClassName = icon => (icon ? `cuIcon-${icon}` : "");
+  const bgColorClassName = color => (color ? BG_COLOR_LIST[color] : "");
+  const items = times.map(item =>
+    item.node ? (
+      <View className="cu-time" key={generateId()}>
+        {item.node}
+      </View>
+    ) : (
       <View
-        className={`cu-item ${iconColorClassName(item.iconColor)} ${iconClassName(
-          item.icon
-        )}`}
+        className={`cu-item ${iconColorClassName(
+          item.iconColor
+        )} ${iconClassName(item.icon)}`}
         key={generateId()}
       >
         <View className={`${bgColorClassName(item.bgColor)} content`}>
-          <ClFlex justify='between' align='end'>
+          <ClFlex justify="between" align="end">
             <View style={{ fontSize: pxTransform(36) }}>{item.title}</View>
             <View>{item.time}</View>
           </ClFlex>
-          {
-            item.content ? item.content.map((desc, index) => (
-              <View key={index}>{desc}</View>
-            )) : ''
-          }
+          {item.content
+            ? item.content.map((desc, index) => <View key={index}>{desc}</View>)
+            : ""}
         </View>
       </View>
-  ));
-  return <View className='cu-timeline'>{items}</View>;
+    )
+  );
+  return (
+    <View
+      className={classNames("cu-timeline", props.className)}
+      style={Object.assign({}, props.style)}
+    >
+      {items}
+    </View>
+  );
 }
 
 ClTimeline.options = {

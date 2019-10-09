@@ -4,8 +4,8 @@ import {
   bgColorType,
   bgColorMoreType,
   lightBgColorType,
-  iconType
-} from './baseType';
+  iconType, BaseComponent
+} from './baseType'
 
 export type TTimes = {
   /**
@@ -38,7 +38,7 @@ export type TTimes = {
   icon?: iconType;
 };
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 时间轴数组
    *

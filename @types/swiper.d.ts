@@ -1,4 +1,5 @@
 import { ComponentClass } from 'react';
+import { BaseComponent } from './baseType'
 
 export type TType = 'screen' | 'card';
 export type TDot = 'square' | 'round';
@@ -46,7 +47,7 @@ export type TList = {
   poster?: string;
 };
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 轮播图类型
    *

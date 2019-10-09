@@ -1,8 +1,9 @@
 import { ComponentClass } from 'react';
+import { BaseComponent } from './baseType'
 
 export type TDirection = 'left' | 'right' | 'bottom';
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 是否显示
    *

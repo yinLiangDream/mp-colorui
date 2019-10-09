@@ -1,6 +1,7 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from 'react'
+import { BaseComponent } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 分为多少列
    *
@@ -18,6 +19,6 @@ export interface IProps {
   children?: any;
 }
 
-declare const Grid: ComponentClass<IProps>;
+declare const Grid: ComponentClass<IProps>
 
-export default Grid;
+export default Grid

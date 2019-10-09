@@ -1,8 +1,8 @@
 import { ComponentClass } from 'react';
 
-import { bgColorType, iconType } from './baseType';
+import { BaseComponent, bgColorType, iconType } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * tag 形状
    *

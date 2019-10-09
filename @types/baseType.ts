@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react'
+
 export type bgColorMoreType =
   | 'gradualRed'
   | 'gradualOrange'
@@ -358,3 +360,9 @@ export type solidBoldType =
   | 'bold-left'
   | 'bold-right'
   | 'bold-bottom';
+
+export interface BaseComponent {
+  className?: string | string[] | { [key: string]: boolean };
+
+  style?: CSSProperties
+}

@@ -1,7 +1,7 @@
 import { ComponentClass } from 'react';
-import { extendSizeType, bgColorType, iconType } from './baseType';
+import { extendSizeType, bgColorType, iconType, BaseComponent } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 图标大小设置
    *

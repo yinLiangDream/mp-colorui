@@ -1,20 +1,25 @@
-import Taro from '@tarojs/taro';
-import { View } from '@tarojs/components';
-import classnames from 'classnames';
-import { IProps } from '../../../@types/card.d';
-import { BG_COLOR_LIST } from '../utils/model';
+import Taro from "@tarojs/taro";
+import { View } from "@tarojs/components";
+import { IProps } from "../../../@types/card.d";
+import { BG_COLOR_LIST } from "../utils/model";
 
-import './index.scss'
+import "./index.scss";
+import { classNames } from "@/components/utils";
 
 export default function ClCard(props: IProps) {
-  const typeClassName = props.type === 'full' ? 'no-card' : '';
-  const colorClassName = props.bgColor ? BG_COLOR_LIST[props.bgColor] : 'bg-white';
+  const typeClassName = props.type === "full" ? "no-card" : "";
+  const colorClassName = props.bgColor
+    ? BG_COLOR_LIST[props.bgColor]
+    : "bg-white";
   return (
-    <View className={classnames([`cu-card case ${typeClassName}`])}>
+    <View
+      className={classNames([`cu-card case ${typeClassName}`], props.className)}
+      style={Object.assign({}, props.style)}
+    >
       <View
-        className={classnames([
-          'cu-item',
-          'padding',
+        className={classNames([
+          "cu-item",
+          "padding",
           {
             shadow: props.shadow
           },
@@ -35,8 +40,8 @@ ClCard.options = {
 };
 
 ClCard.defaultProps = {
-  type: 'card',
-  bgColor: 'white',
+  type: "card",
+  bgColor: "white",
   shadow: true,
   active: false
 } as IProps;

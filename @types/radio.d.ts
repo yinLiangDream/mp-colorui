@@ -1,6 +1,6 @@
 import { ComponentClass } from 'react';
 
-import { bgColorType } from './baseType';
+import { BaseComponent, bgColorType } from './baseType'
 
 export type TType = 'normal' | 'form' | 'list';
 export type TShape = 'normal' | 'radio';
@@ -20,7 +20,7 @@ export type TRadioDirection = 'vertical' | 'horizontal';
 
 export type TOnChange = (value: any) => void;
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 单选框类型
    *

@@ -1,6 +1,7 @@
 import { ComponentClass } from 'react';
+import { BaseComponent } from './baseType'
 
-export interface IProps {
+export interface IProps extends BaseComponent{
   /**
    * 数据模型
    */

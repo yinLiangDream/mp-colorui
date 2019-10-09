@@ -1,7 +1,7 @@
 import { ComponentClass } from 'react';
 
 import { IProps as iconProps } from './icon';
-import { bgColorType } from './baseType';
+import { BaseComponent, bgColorType } from './baseType'
 
 export type TIcon = iconProps;
 export type TTitle = string;
@@ -41,7 +41,7 @@ export type TTist = {
   imgUrl?: string;
 }[];
 
-export interface IProps {
+export interface IProps extends BaseComponent {
   /**
    * 是否为短分割线
    *

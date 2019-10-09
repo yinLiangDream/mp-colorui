@@ -5,7 +5,8 @@ const config = {
   alias:{
     '@/components': path.resolve(__dirname, '..', 'src/components'),
     '@/': path.resolve(__dirname, '..', 'src/'),
-    '@types': path.resolve(__dirname, '..', '@types')
+    '@types': path.resolve(__dirname, '..', '@types'),
+    'mp-colorui': path.resolve(__dirname, '..', 'src/index.js')
   },
   date: '2018-10-30',
   designWidth: 750,
