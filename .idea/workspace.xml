@@ -3,207 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/accordion.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/accordion.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/actionSheet.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/actionSheet.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/animation.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/animation.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/avatar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/avatar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/baseType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/baseType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/button.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/button.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/card.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/card.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/checkbox.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/checkbox.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/curtain.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/curtain.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/divider.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/divider.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/drawer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/drawer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/flex.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/flex.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/floatButton.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/floatButton.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/form.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/form.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/formItem.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/formItem.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/grid.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/grid.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/icon.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/icon.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/imagePicker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/imagePicker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/input.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/input.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/loading.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/loading.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/menuList.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/menuList.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/message.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/message.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/modal.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/modal.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/navBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/navBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/progress.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/progress.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/radio.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/radio.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/screenDrawer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/screenDrawer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/searchBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/searchBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/shopBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/shopBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/steps.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/steps.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/swiper.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiper.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/swiperAction.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/swiperAction.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/switch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/switch.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tabBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tabs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabs.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tag.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tag.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/text.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/text.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/timeline.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/timeline.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/timer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/timer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tip.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tip.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/titleBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/titleBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/verticalTab.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/verticalTab.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/verticalTabCell.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/verticalTabCell.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/BaseColor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/BaseColor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/FloatPhone.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/FloatPhone.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/GradualColor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/GradualColor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/Icons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/Icons.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/LightColor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/LightColor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/actionSheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/actionSheet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/animation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/animation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/loading.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/loading.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/message.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/message.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/modal.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/modal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/progress.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/progress.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/swiperAction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/swiperAction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/tip.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/tip.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/button.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/floatButton.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/floatButton.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/icon.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/icon.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/text.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/text.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/checkbox.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/checkbox.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/form.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/form.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/imagePicker.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/imagePicker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/input.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/input.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/radio.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/radio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/select.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/select.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/switch.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/switch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/color.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/color.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/custom.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/custom.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/introduce.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/introduce.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/issue.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/issue.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/plan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/quick.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/quick.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/accordion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/accordion.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/card.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/card.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/drawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/drawer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/flex.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/flex.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/grid.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/grid.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/layout.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/menuList.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/menuList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/screenDrawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/screenDrawer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/navBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/navBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/tabBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/tabs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/verticalTab.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/verticalTab.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/util/rule.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/util/rule.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/avatar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/avatar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/curtain.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/curtain.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/divider.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/divider.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/searchBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/searchBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/shopBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/shopBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/steps.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/steps.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/swiper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/swiper.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/tag.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/tag.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/timeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/timeline.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/titleBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/titleBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/icon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/size.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/size.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/action/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/base/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/base/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/accordion/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/accordion/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/accordion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/accordion/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/actionSheet/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/actionSheet/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/actionSheet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/actionSheet/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/animation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/animation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/avatar/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/avatar/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/avatar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/avatar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/button/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/button/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/button/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/card/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/card/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/card/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/checkbox/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/checkbox/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/checkbox/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/checkbox/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/color/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/color/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/curtain/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/curtain/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/curtain/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/curtain/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/divider/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/divider/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/divider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/divider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/drawer/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/drawer/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/drawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/drawer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/flex/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/flex/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/flex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/flex/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/floatButton/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/floatButton/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/floatButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/floatButton/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/grid/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/grid/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/grid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/grid/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/icon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/icon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/imagePicker/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/imagePicker/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/imagePicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/imagePicker/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/input/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/input/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/input/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/input/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/layout/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/layout/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/layout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/loading/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/loading/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/loading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/loading/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/menuList/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/menuList/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/menuList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/menuList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/message/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/message/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/message/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/message/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/modal/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/modal/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/modal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/modal/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/navBar/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/navBar/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/navBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/navBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/progress/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/progress/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/progress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/progress/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/radio/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/radio/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/radio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/radio/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/screenDrawer/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/screenDrawer/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/screenDrawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/screenDrawer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/searchBar/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/searchBar/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/searchBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/searchBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/select/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/select/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/select/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/select/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/shopBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/shopBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/steps/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/steps/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/steps/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/steps/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiper/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/swiper/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiper/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/swiper/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiperAction/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/swiperAction/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiperAction/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/swiperAction/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/switch/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/switch/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/switch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/switch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabBar/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tabBar/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tabBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabs/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tabs/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tabs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tag/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tag/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tag/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tag/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/text/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/text/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/text/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/text/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/timeline/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/timeline/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/timeline/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/timeline/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tip/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tip/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tip/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/tip/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/titleBar/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/titleBar/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/titleBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/titleBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/verticalTab/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/verticalTab/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/verticalTab/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/verticalTab/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/components/userCenter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/components/userCenter/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/layout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/navigate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/navigate/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/update/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/update/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/view/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/view/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usedComponents/generateCode/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/usedComponents/generateCode/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usedComponents/menuNavigate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/usedComponents/menuNavigate/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -414,7 +214,7 @@
       <workItem from="1570366797163" duration="12400000" />
       <workItem from="1570503381968" duration="16049000" />
       <workItem from="1570543640531" duration="2794000" />
-      <workItem from="1570590024695" duration="1808000" />
+      <workItem from="1570590024695" duration="2171000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -738,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570588057624</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="CI&#10;update travis">
+      <created>1570602027005</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1570602027006</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
@@ -785,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BUG&#10;修复无法自定义主题颜色问题" />
     <MESSAGE value="FEATURE&#10;组件 Avatar 可自定义大小" />
     <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
     <MESSAGE value="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题" />
@@ -810,6 +616,7 @@
     <MESSAGE value="component&#10;add @types className 和 style" />
     <MESSAGE value="component&#10;add component className and style&#10;fix(components/verticalTab) H5 attributes scrollAnimationDuration  not working" />
     <MESSAGE value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
-    <option name="LAST_COMMIT_MESSAGE" value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
+    <MESSAGE value="CI&#10;update travis" />
+    <option name="LAST_COMMIT_MESSAGE" value="CI&#10;update travis" />
   </component>
 </project>
