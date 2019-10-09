@@ -1,5 +1,10 @@
-import { ComponentClass } from 'react';
-import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import {
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -9,7 +14,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认 `info`
    */
-  type: 'success' | 'error' | 'warn' | 'info' | 'custom';
+  type: "success" | "error" | "warn" | "info" | "custom";
   /**
    * 背景色
    */
@@ -34,6 +39,6 @@ export interface IProps extends BaseComponent {
   onClose?: () => void;
 }
 
-declare const Message: ComponentClass<IProps>
+declare const Message: ComponentClass<IProps>;
 
 export default Message;

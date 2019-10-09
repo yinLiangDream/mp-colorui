@@ -6,7 +6,7 @@ export const normalCode = `
   </View>
 </ClLayout>
 \`\`\`
-`
+`;
 export const paddingCode = `
 \`\`\`
 <View className="bg-black">
@@ -17,7 +17,7 @@ export const paddingCode = `
   </ClLayout>
 </View>
 \`\`\`
-`
+`;
 
 export const marginCode = `
 \`\`\`
@@ -30,7 +30,7 @@ export const marginCode = `
   </ClLayout>
 </View>
 \`\`\`
-`
+`;
 
 export const floatCode = `
 \`\`\`
@@ -38,4 +38,4 @@ export const floatCode = `
 
 <ClLayout float="left">我是一块内容，我是左浮动</ClLayout>
 \`\`\`
-`
+`;

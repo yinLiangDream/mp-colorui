@@ -16,7 +16,7 @@ const steps = [
 
 <ClStep steps={steps} type='line' step={stepShape} activeColor='brown' />
 \`\`\`
-`
+`;
 
 export const customIconCode = `
 \`\`\`
@@ -42,7 +42,7 @@ const customSteps = [
 
 <ClStep steps={customSteps} type='arrow' stepIconType='space' step={stepShape} activeColor='blue' />
 \`\`\`
-`
+`;
 
 export const positionCode = `
 \`\`\`
@@ -66,4 +66,4 @@ const customSteps = [
 
 <ClStep steps={customSteps} stepTitlePosition='top' type='line' stepIconType='custom' step={stepShape} activeColor='blue' />
 \`\`\`
-`
+`;

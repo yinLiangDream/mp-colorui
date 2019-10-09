@@ -31,7 +31,7 @@ export const normalCode = `
   我是内容，我可以插入任何内容，点击阴影也可以关闭
 </ClModal>
 \`\`\`
-`
+`;
 
 export const customCode = `
 \`\`\`
@@ -99,4 +99,4 @@ export const customCode = `
   </ClLayout>
 </ClModal>
 \`\`\`
-`
+`;

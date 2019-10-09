@@ -1,12 +1,12 @@
-import { ComponentClass } from 'react'
+import { ComponentClass } from "react";
 
 import {
   bgColorType,
   lightBgColorType,
   bgColorMoreType,
   BaseComponent
-} from './baseType'
-import { CommonEventFunction } from '@tarojs/components/types/common'
+} from "./baseType";
+import { CommonEventFunction } from "@tarojs/components/types/common";
 
 export interface IProps extends BaseComponent {
   /**
@@ -20,7 +20,7 @@ export interface IProps extends BaseComponent {
    *
    * `radius` 正常
    */
-  shape?: 'round' | 'radius';
+  shape?: "round" | "radius";
   /**
    * 按钮大小设置
    *
@@ -28,7 +28,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `small`, `normal`, `large`
    */
-  size?: 'small' | 'normal' | 'large';
+  size?: "small" | "normal" | "large";
   /**
    * 按钮背景色设置，可选类型请查看 默认色
    *
@@ -50,7 +50,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `default`, `bold`
    */
-  plainSize?: 'default' | 'bold';
+  plainSize?: "default" | "bold";
   /**
    * 按钮阴影设置
    *
@@ -93,20 +93,20 @@ export interface IProps extends BaseComponent {
    * 可选类型 `contact`, `getUserInfo`, `getPhoneNumber`, `openSetting`, `feedback`, `getRealnameAuthInfo`
    */
   openType?:
-    | 'contact'
-    | 'getUserInfo'
-    | 'getPhoneNumber'
-    | 'openSetting'
-    | 'feedback'
-    | 'getRealnameAuthInfo'
-    | 'launchApp'
-    | 'share';
+    | "contact"
+    | "getUserInfo"
+    | "getPhoneNumber"
+    | "openSetting"
+    | "feedback"
+    | "getRealnameAuthInfo"
+    | "launchApp"
+    | "share";
   /**
    * 打开 APP 时，向 APP 传递的参数
    *
    * 生效时机：`open-type="launchApp"`
    */
-  appParameter?: string,
+  appParameter?: string;
   /**
    * 普通按钮点击事件
    * @param e any
@@ -120,9 +120,9 @@ export interface IProps extends BaseComponent {
     /** 用户信息 */
     userInfo: {
       /** 昵称 */
-      nickName: string,
+      nickName: string;
       /** 头像 */
-      avatarUrl: string,
+      avatarUrl: string;
       /**
        * 性别
        *
@@ -130,22 +130,22 @@ export interface IProps extends BaseComponent {
        * - `1`: 男
        * - `2`: 女
        */
-      gender: 0 | 1 | 2,
+      gender: 0 | 1 | 2;
       /** 省份，如：`Yunnan` */
-      province: string,
+      province: string;
       /** 城市，如：`Dalian` */
-      city: string,
+      city: string;
       /** 国家，如：`China` */
-      country: string,
-    },
+      country: string;
+    };
     /** 不包括敏感信息的原始数据 `JSON` 字符串，用于计算签名 */
-    rawData: string,
+    rawData: string;
     /** 使用 `sha1(rawData + sessionkey)` 得到字符串，用于校验用户信息 */
-    signature: string,
+    signature: string;
     /** 包括敏感数据在内的完整用户信息的加密数据 */
-    encryptedData: string,
+    encryptedData: string;
     /** 加密算法的初始向量 */
-    iv: string,
+    iv: string;
   }>;
   /**
    * open-type 为 contact 时触发
@@ -153,9 +153,9 @@ export interface IProps extends BaseComponent {
    */
   onContact?: (event: {
     /** 小程序消息指定的路径 */
-    path: string,
+    path: string;
     /** 小程序消息指定的查询参数 */
-    query: Record<string, any>
+    query: Record<string, any>;
   }) => void;
   /**
    * open-type 为 getPhoneNumber 时触发
@@ -163,16 +163,16 @@ export interface IProps extends BaseComponent {
    */
   onGetPhoneNumber?: CommonEventFunction<{
     /** 包括敏感数据在内的完整用户信息的加密数据 */
-    encryptedData: string,
+    encryptedData: string;
     /** 加密算法的初始向量 */
-    iv: string
+    iv: string;
   }>;
   /**
    * 会话来源
    *
    * 生效时机：`open-type="contact"`
    */
-  sessionFrom?: string,
+  sessionFrom?: string;
 
   /**
    * 会话内消息卡片标题
@@ -181,7 +181,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认值： 当前标题
    */
-  sendMessageTitle?: string,
+  sendMessageTitle?: string;
 
   /**
    * 会话内消息卡片点击跳转小程序路径
@@ -190,7 +190,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认值： 当前标题
    */
-  sendMessagePath?: string,
+  sendMessagePath?: string;
 
   /**
    * 会话内消息卡片图片
@@ -199,7 +199,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认值： 截图
    */
-  sendMessageImg?: string,
+  sendMessageImg?: string;
 
   /**
    * 显示会话内消息卡片
@@ -208,7 +208,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认值： false
    */
-  showMessageCard?: boolean,
+  showMessageCard?: boolean;
   /**
    * open-type调用失败时触发
    * @param e any
@@ -235,7 +235,7 @@ export interface IProps extends BaseComponent {
    *
    * 生效时机：`open-type="getAuthorize"`
    */
-  scope?: 'userInfo' | 'phoneNumber';
+  scope?: "userInfo" | "phoneNumber";
   /**
    * 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。
    *
@@ -244,6 +244,6 @@ export interface IProps extends BaseComponent {
   lang?: string;
 }
 
-declare const Button: ComponentClass<IProps>
+declare const Button: ComponentClass<IProps>;
 
-export default Button
+export default Button;

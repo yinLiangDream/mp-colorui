@@ -1,11 +1,12 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
 import {
   extendSizeType,
   bgColorType,
   bgColorMoreType,
-  lightBgColorType, BaseComponent
-} from './baseType'
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -21,13 +22,13 @@ export interface IProps extends BaseComponent {
    *
    * 默认值 `none`
    */
-  lineSpacing?: 'none' | 'small' | 'normal' | 'large' | number;
+  lineSpacing?: "none" | "small" | "normal" | "large" | number;
   /**
    * 字间距
    *
    * 默认值 `none`
    */
-  fontSpacing?: 'none' | 'small' | 'normal' | 'large' | number;
+  fontSpacing?: "none" | "small" | "normal" | "large" | number;
   /**
    * 文字颜色，可选类型请查看 默认色-标准色
    */
@@ -49,7 +50,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `left`, `center`, `right`
    */
-  align?: 'left' | 'center' | 'right';
+  align?: "left" | "center" | "right";
   /**
    * 特殊需求
    *
@@ -63,7 +64,7 @@ export interface IProps extends BaseComponent {
    *
    * `lower` 文字小写
    */
-  special?: 'firstUpper' | 'upper' | 'lower';
+  special?: "firstUpper" | "upper" | "lower";
   /**
    * 文字
    */
@@ -73,7 +74,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认值 `normal`
    */
-  fontWeight?: 'normal' | 'bold' | 'bolder' | 'lighter' | number;
+  fontWeight?: "normal" | "bold" | "bolder" | "lighter" | number;
   children?: any;
 }
 

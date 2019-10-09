@@ -1,4 +1,4 @@
-import Taro, { useState } from '@tarojs/taro'
+import Taro, { useState } from "@tarojs/taro";
 import {
   ClLayout,
   ClTitleBar,
@@ -6,16 +6,16 @@ import {
   ClFlex,
   ClButton,
   ClMessage
-} from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { typeCode } from './code'
+} from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { typeCode } from "./code";
 
-export default function Message () {
-  const [text, setText] = useState('')
-  const [show, setShow] = useState(false)
-  const [type, setType] = useState('info')
-  const [duration, setDuration] = useState(3)
-  const [bgColor, setBgcolor] = useState('')
+export default function Message() {
+  const [text, setText] = useState("");
+  const [show, setShow] = useState(false);
+  const [type, setType] = useState("info");
+  const [duration, setDuration] = useState(3);
+  const [bgColor, setBgcolor] = useState("");
   return (
     <ClLayout>
       <ClMessage
@@ -25,17 +25,17 @@ export default function Message () {
         duration={duration}
         bgColor={bgColor}
       />
-      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type"/>
+      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type" />
       <ClCard>
         <ClFlex justify="between">
           <ClButton
             shape="round"
             bgColor="light-grey"
             onClick={() => {
-              setText('这是一条提示的消息')
-              setType('info')
-              setShow(true)
-              setDuration(3)
+              setText("这是一条提示的消息");
+              setType("info");
+              setShow(true);
+              setDuration(3);
             }}
           >
             提示
@@ -44,10 +44,10 @@ export default function Message () {
             shape="round"
             bgColor="light-green"
             onClick={() => {
-              setText('这是一条成功的消息')
-              setType('success')
-              setShow(true)
-              setDuration(3)
+              setText("这是一条成功的消息");
+              setType("success");
+              setShow(true);
+              setDuration(3);
             }}
           >
             成功
@@ -56,10 +56,10 @@ export default function Message () {
             shape="round"
             bgColor="light-red"
             onClick={() => {
-              setText('这是一条失败的消息')
-              setType('error')
-              setShow(true)
-              setDuration(3)
+              setText("这是一条失败的消息");
+              setType("error");
+              setShow(true);
+              setDuration(3);
             }}
           >
             失败
@@ -68,10 +68,10 @@ export default function Message () {
             shape="round"
             bgColor="light-yellow"
             onClick={() => {
-              setText('这是一条警告的消息')
-              setType('warn')
-              setShow(true)
-              setDuration(3)
+              setText("这是一条警告的消息");
+              setType("warn");
+              setShow(true);
+              setDuration(3);
             }}
           >
             警告
@@ -93,10 +93,10 @@ export default function Message () {
           <ClButton
             shape="round"
             onClick={() => {
-              setText('默认持续 3s')
-              setType('info')
-              setShow(true)
-              setDuration(3)
+              setText("默认持续 3s");
+              setType("info");
+              setShow(true);
+              setDuration(3);
             }}
           >
             默认持续 3s
@@ -104,10 +104,10 @@ export default function Message () {
           <ClButton
             shape="round"
             onClick={() => {
-              setText('持续 1s')
-              setType('info')
-              setShow(true)
-              setDuration(1)
+              setText("持续 1s");
+              setType("info");
+              setShow(true);
+              setDuration(1);
             }}
           >
             持续 1s
@@ -115,10 +115,10 @@ export default function Message () {
           <ClButton
             shape="round"
             onClick={() => {
-              setText('永久保持')
-              setType('info')
-              setShow(true)
-              setDuration(0)
+              setText("永久保持");
+              setType("info");
+              setShow(true);
+              setDuration(0);
             }}
           >
             永久保持
@@ -137,22 +137,22 @@ export default function Message () {
             shape="round"
             bgColor="black"
             onClick={() => {
-              setText('黑色的提示消息')
-              setType('custom')
-              setBgcolor('black')
-              setDuration(3)
-              setShow(true)
+              setText("黑色的提示消息");
+              setType("custom");
+              setBgcolor("black");
+              setDuration(3);
+              setShow(true);
             }}
           >
             我是黑色的
           </ClButton>
         </ClFlex>
       </ClCard>
-      <GenerateCode code={typeCode}/>
+      <GenerateCode code={typeCode} />
     </ClLayout>
-  )
+  );
 }
 
 Message.config = {
-  navigationBarTitleText: 'Message 提示消息'
-}
+  navigationBarTitleText: "Message 提示消息"
+};

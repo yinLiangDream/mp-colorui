@@ -1,11 +1,12 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
 import {
   bgColorType,
   bgColorMoreType,
   lightBgColorType,
-  iconType, BaseComponent
-} from './baseType'
+  iconType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**

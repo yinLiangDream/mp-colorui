@@ -1,18 +1,18 @@
-import Taro from '@tarojs/taro'
-import { ClCard, ClFlex, ClLayout, ClTitleBar } from 'mp-colorui'
-import { View } from '@tarojs/components'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { alignCode, justifyCode, perCode, sizeCode } from './code'
+import Taro from "@tarojs/taro";
+import { ClCard, ClFlex, ClLayout, ClTitleBar } from "mp-colorui";
+import { View } from "@tarojs/components";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { alignCode, justifyCode, perCode, sizeCode } from "./code";
 
-const size = ['xs', 'sm', 'df', 'lg', 'xl']
+const size = ["xs", "sm", "df", "lg", "xl"];
 
-const percent = ['sub', 'twice', 'treble']
-const colors = ['blue', 'red', 'green']
+const percent = ["sub", "twice", "treble"];
+const colors = ["blue", "red", "green"];
 
-const justify = ['start', 'end', 'center', 'between', 'around']
-const align = ['start', 'end', 'center']
+const justify = ["start", "end", "center", "between", "around"];
+const align = ["start", "end", "center"];
 
-export default function Flex () {
+export default function Flex() {
   const base = size.map(cc => (
     <ClCard key={cc}>
       <ClFlex>
@@ -23,7 +23,7 @@ export default function Flex () {
         </View>
       </ClFlex>
     </ClCard>
-  ))
+  ));
 
   const per = percent.map((perc, index) => (
     <View key={perc} className={`flex-${perc}`}>
@@ -31,7 +31,7 @@ export default function Flex () {
         {perc}({index + 1})
       </ClCard>
     </View>
-  ))
+  ));
 
   const justifyComponent = justify.map(jus => (
     <ClCard key={jus}>
@@ -44,7 +44,7 @@ export default function Flex () {
         </ClCard>
       </ClFlex>
     </ClCard>
-  ))
+  ));
 
   const alignComponent = align.map(al => (
     <ClCard key={al}>
@@ -58,7 +58,7 @@ export default function Flex () {
         </ClCard>
       </ClFlex>
     </ClCard>
-  ))
+  ));
   return (
     <ClLayout>
       <ClTitleBar
@@ -68,7 +68,7 @@ export default function Flex () {
         subTitle="basis"
       />
       {base}
-      <GenerateCode code={sizeCode}/>
+      <GenerateCode code={sizeCode} />
 
       <ClTitleBar
         title="比例布局"
@@ -79,7 +79,7 @@ export default function Flex () {
       <ClCard>
         <ClFlex>{per}</ClFlex>
       </ClCard>
-      <GenerateCode code={perCode}/>
+      <GenerateCode code={perCode} />
 
       <ClTitleBar
         title="水平对齐"
@@ -88,7 +88,7 @@ export default function Flex () {
         subTitle="justify"
       />
       {justifyComponent}
-      <GenerateCode code={justifyCode}/>
+      <GenerateCode code={justifyCode} />
 
       <ClTitleBar
         title="垂直对齐"
@@ -97,11 +97,11 @@ export default function Flex () {
         subTitle="align"
       />
       {alignComponent}
-      <GenerateCode code={alignCode}/>
+      <GenerateCode code={alignCode} />
     </ClLayout>
-  )
+  );
 }
 
 Flex.config = {
-  navigationBarTitleText: 'Flex 弹性布局'
-}
+  navigationBarTitleText: "Flex 弹性布局"
+};

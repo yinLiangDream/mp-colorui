@@ -1,7 +1,7 @@
 ## 使用说明
 
 ```jsx
-import {ClSwiperAction} from 'mp-colorui'
+import { ClSwiperAction } from "mp-colorui";
 ```
 
 ## 一般用法
@@ -47,18 +47,18 @@ import {ClSwiperAction} from 'mp-colorui'
 
 | 参数      | 说明                      | 类型      | 可选值         | 默认值    |
 | --------- | ------------------------- | --------- | -------------- | --------- |
-| show      | *是否是显示状态*          | boolean   | -              | *`false`* |
-| disabled  | *是否禁止滑动*            | boolean   |                | *`false`* |
-| autoClose | *点击选项时,是否自动关闭* | boolean   | -              | *`false`* |
-| direction | *方向*                    | string    | `left`,`right` | `right`   |
-| options   | *展示的选项数组*          | options[] | -              | *`[]`*    |
+| show      | _是否是显示状态_          | boolean   | -              | _`false`_ |
+| disabled  | _是否禁止滑动_            | boolean   |                | _`false`_ |
+| autoClose | _点击选项时,是否自动关闭_ | boolean   | -              | _`false`_ |
+| direction | _方向_                    | string    | `left`,`right` | `right`   |
+| options   | _展示的选项数组_          | options[] | -              | _`[]`_    |
 
 ### options
 
 | 参数    | 说明         | 类型   | 可选值                         | 默认值    |
 | ------- | ------------ | ------ | ------------------------------ | --------- |
-| bgColor | *按钮背景色* | string | 参考文档 [默认色](/home/color) | *`white`* |
-| text    | *文字内容*   | string |                                |           |
+| bgColor | _按钮背景色_ | string | 参考文档 [默认色](/home/color) | _`white`_ |
+| text    | _文字内容_   | string |                                |           |
 
 ## SwiperAction 事件
 

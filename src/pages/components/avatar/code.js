@@ -20,7 +20,7 @@ const headerArray = [
 
 <ClAvatar headerArray={headerArray.slice(0, 1)} shape='round' />
 \`\`\`
-`
+`;
 
 export const sizeCode = `
 \`\`\`
@@ -32,13 +32,13 @@ export const sizeCode = `
 
 <ClAvatar headerArray={headerArray.slice(0, 1)} shape='round' size='xlarge' />
 \`\`\`
-`
+`;
 
 export const shadowCode = `
 \`\`\`
 <ClAvatar headerArray={headerArray.slice(0, 1)} shape='round' size='normal' shadow />
 \`\`\`
-`
+`;
 
 export const typeCode = `
 \`\`\`
@@ -52,9 +52,9 @@ export const typeCode = `
 
 <ClAvatar headerArray={headerArray.slice(3, 4)} shape='round' size='normal' shadow />
 \`\`\`
-`
+`;
 export const headersCode = `
 \`\`\`
 <ClAvatar headerArray={headerArray} shape='round' size='normal' shadow />
 \`\`\`
-`
+`;

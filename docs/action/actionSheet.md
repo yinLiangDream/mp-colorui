@@ -1,7 +1,7 @@
 ## 使用说明
 
 ```jsx
-import {ClActionSheet} from 'mp-colorui'
+import { ClActionSheet } from "mp-colorui";
 ```
 
 ## 一般用法
@@ -25,22 +25,22 @@ import {ClActionSheet} from 'mp-colorui'
 
 | 参数            | 说明                   | 类型      | 可选值                                          | 默认值    |
 | --------------- | ---------------------- | --------- | ----------------------------------------------- | --------- |
-| isOpened        | *是否是显示*           | boolean   | -                                               | *`false`* |
-| type            | *类型*                 | string    | `full`, `card`                                  | *`full`*  |
-| showCancel      | *是否显示取消按钮*     | boolean   | -                                               | *`false`* |
-| tip             | *提示文字*             | string    |                                                 | -         |
-| closeWithShadow | *点击阴影关闭*         | boolean   | -                                               | *`true`*  |
-| cancelText      | *取消按钮的文字*       | string    | -                                               | *`取消`*  |
-| cancelBgColor   | *取消按钮背景色*       | string    | 参考文档 [默认色](/home/color)                  | *`white`* |
-| cancelFontColor | *取消按钮按钮文字颜色* | string    | 参考文档 [默认色-标准色](/home/color?id=标准色) | -         |
-| options         | *展示的数组*           | options[] | -                                               | *`[]`*    |
+| isOpened        | _是否是显示_           | boolean   | -                                               | _`false`_ |
+| type            | _类型_                 | string    | `full`, `card`                                  | _`full`_  |
+| showCancel      | _是否显示取消按钮_     | boolean   | -                                               | _`false`_ |
+| tip             | _提示文字_             | string    |                                                 | -         |
+| closeWithShadow | _点击阴影关闭_         | boolean   | -                                               | _`true`_  |
+| cancelText      | _取消按钮的文字_       | string    | -                                               | _`取消`_  |
+| cancelBgColor   | _取消按钮背景色_       | string    | 参考文档 [默认色](/home/color)                  | _`white`_ |
+| cancelFontColor | _取消按钮按钮文字颜色_ | string    | 参考文档 [默认色-标准色](/home/color?id=标准色) | -         |
+| options         | _展示的数组_           | options[] | -                                               | _`[]`_    |
 
 ### options
 
 | 参数    | 说明         | 类型   | 可选值                         | 默认值    |
 | ------- | ------------ | ------ | ------------------------------ | --------- |
-| bgColor | *按钮背景色* | string | 参考文档 [默认色](/home/color) | *`white`* |
-| text    | *文字内容*   | string |                                |           |
+| bgColor | _按钮背景色_ | string | 参考文档 [默认色](/home/color) | _`white`_ |
+| text    | _文字内容_   | string |                                |           |
 
 ## ActionSheet 事件
 

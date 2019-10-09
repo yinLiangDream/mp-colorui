@@ -1,9 +1,9 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
-import { BaseComponent, bgColorType } from './baseType'
+import { BaseComponent, bgColorType } from "./baseType";
 
-export type TType = 'normal' | 'form' | 'list';
-export type TShape = 'normal' | 'radio';
+export type TType = "normal" | "form" | "list";
+export type TShape = "normal" | "radio";
 export type TTitle = string;
 export type TColor = bgColorType;
 export type TList = {
@@ -16,7 +16,7 @@ export type TList = {
    */
   value?: string;
 }[];
-export type TRadioDirection = 'vertical' | 'horizontal';
+export type TRadioDirection = "vertical" | "horizontal";
 
 export type TOnChange = (value: any) => void;
 

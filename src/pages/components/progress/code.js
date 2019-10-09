@@ -6,7 +6,7 @@ export const shapeCode = `
 
 <ClProgress shape='round' percent={40} />
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -16,7 +16,7 @@ export const colorCode = `
 
 <ClProgress shape='round' percent={80} bgColor='gradualRed' />
 \`\`\`
-`
+`;
 
 export const stripeCode = `
 \`\`\`
@@ -24,7 +24,7 @@ export const stripeCode = `
 
 <ClProgress shape="round" stripe percent={40} bgColor="light-red" />
 \`\`\`
-`
+`;
 
 export const animationCode = `
 \`\`\`
@@ -38,7 +38,7 @@ export const animationCode = `
   bgColor="light-red"
 />
 \`\`\`
-`
+`;
 
 export const sizeCode = `
 \`\`\`
@@ -58,4 +58,4 @@ export const sizeCode = `
   bgColor="gradualRed"
 />
 \`\`\`
-`
+`;

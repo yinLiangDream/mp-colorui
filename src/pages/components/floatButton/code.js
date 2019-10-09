@@ -16,8 +16,8 @@ export const demo = `
   ]}
 />
 \`\`\`
-`
+`;
 
 export default {
   demo
-}
+};

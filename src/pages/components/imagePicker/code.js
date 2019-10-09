@@ -37,12 +37,12 @@ const success = list => {
   开始上传
 </ClButton>
 \`\`\`
-`
+`;
 export const maxCode = `
 \`\`\`
 <ClImagePicker chooseImgObj={{ count: 3 }} />
 \`\`\`
-`
+`;
 
 export const beforeDelCode = `
 \`\`\`
@@ -58,4 +58,4 @@ export const beforeDelCode = `
   }}
 />
 \`\`\`
-`
+`;

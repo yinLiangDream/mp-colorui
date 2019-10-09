@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import Taro from "@tarojs/taro";
 import {
   ClLayout,
   ClTitleBar,
@@ -8,8 +8,8 @@ import {
   ClAccordion,
   ClCard,
   ClText
-} from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
+} from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
 import {
   autoCode,
   colorCode,
@@ -17,9 +17,9 @@ import {
   lengthCode,
   positionCode,
   touchTypeCode
-} from './code'
+} from "./code";
 
-export default function Tip () {
+export default function Tip() {
   const renderMessage = (
     <ClLayout>
       <ClAccordion title="我是手风琴组件">
@@ -43,93 +43,93 @@ export default function Tip () {
             />
           </ClCard>
           <ClCard type="full">
-            <ClText text="道生一，一生二，二生三，三生万物。万物负阴而抱阳，冲气以为和。"/>
+            <ClText text="道生一，一生二，二生三，三生万物。万物负阴而抱阳，冲气以为和。" />
           </ClCard>
         </ClLayout>
       </ClAccordion>
     </ClLayout>
-  )
+  );
   return (
     <ClLayout>
-      <ClTitleBar title="方向" type="icon"/>
+      <ClTitleBar title="方向" type="icon" />
       <ClLayout padding="normal" paddingDirection="around">
         <ClFlex justify="between">
           <ClTip message="我是上方提示" direction="top">
-            <ClButton text="上方" shape="round"/>
+            <ClButton text="上方" shape="round" />
           </ClTip>
           <ClTip message="我是右方提示" direction="right">
-            <ClButton text="右方" shape="round"/>
+            <ClButton text="右方" shape="round" />
           </ClTip>
           <ClTip message="我是左方提示" direction="left">
-            <ClButton text="左方" shape="round"/>
+            <ClButton text="左方" shape="round" />
           </ClTip>
           <ClTip message="我是下方提示" direction="bottom">
-            <ClButton text="下方" shape="round"/>
+            <ClButton text="下方" shape="round" />
           </ClTip>
         </ClFlex>
       </ClLayout>
       <ClLayout padding="normal" paddingDirection="vertical">
-        <GenerateCode code={positionCode}/>
+        <GenerateCode code={positionCode} />
       </ClLayout>
-      <ClTitleBar title="触发方式" type="icon"/>
+      <ClTitleBar title="触发方式" type="icon" />
       <ClLayout padding="normal" paddingDirection="around">
         <ClFlex justify="around">
           <ClTip message="我是点击触发" direction="top" mode="click">
-            <ClButton text="点击触发" shape="round"/>
+            <ClButton text="点击触发" shape="round" />
           </ClTip>
           <ClTip message="我是触摸触发" direction="right">
-            <ClButton text="触摸触发" shape="round"/>
+            <ClButton text="触摸触发" shape="round" />
           </ClTip>
         </ClFlex>
       </ClLayout>
       <ClLayout padding="normal" paddingDirection="vertical">
-        <GenerateCode code={touchTypeCode}/>
+        <GenerateCode code={touchTypeCode} />
       </ClLayout>
-      <ClTitleBar title="自适应" type="icon"/>
+      <ClTitleBar title="自适应" type="icon" />
       <ClLayout padding="normal" paddingDirection="around">
         <ClFlex justify="around">
           <ClTip
             message="我本应该左侧出现，但是自动检测到左侧距离不够，所以自动转换成右侧触发，上下亦是如此"
             direction="left"
           >
-            <ClButton text="左侧出现" shape="round"/>
+            <ClButton text="左侧出现" shape="round" />
           </ClTip>
           <ClTip
             message="我本应该右侧出现，但是自动检测到右侧距离不够，所以自动转换成左侧触发，上下亦是如此"
             direction="right"
           >
-            <ClButton text="右侧出现" shape="round"/>
+            <ClButton text="右侧出现" shape="round" />
           </ClTip>
         </ClFlex>
       </ClLayout>
       <ClLayout padding="normal" paddingDirection="vertical">
-        <GenerateCode code={autoCode}/>
+        <GenerateCode code={autoCode} />
       </ClLayout>
-      <ClTitleBar title="背景色" type="icon"/>
+      <ClTitleBar title="背景色" type="icon" />
       <ClLayout padding="normal" paddingDirection="around">
         <ClFlex justify="between">
           <ClTip message="我是上方提示" direction="top" bgColor="gradualBlue">
-            <ClButton text="上方" shape="round"/>
+            <ClButton text="上方" shape="round" />
           </ClTip>
           <ClTip message="我是右方提示" direction="right" bgColor="black">
-            <ClButton text="右方" shape="round"/>
+            <ClButton text="右方" shape="round" />
           </ClTip>
           <ClTip message="我是左方提示" direction="left" bgColor="gradualRed">
-            <ClButton text="左方" shape="round"/>
+            <ClButton text="左方" shape="round" />
           </ClTip>
           <ClTip
             message="我是下方提示"
             direction="bottom"
             bgColor="light-olive"
           >
-            <ClButton text="下方" shape="round"/>
+            <ClButton text="下方" shape="round" />
           </ClTip>
         </ClFlex>
       </ClLayout>
       <ClLayout padding="normal" paddingDirection="vertical">
-        <GenerateCode code={colorCode}/>
+        <GenerateCode code={colorCode} />
       </ClLayout>
-      <ClTitleBar title="自定义渲染" type="icon"/>
+      <ClTitleBar title="自定义渲染" type="icon" />
       <ClLayout padding="normal" paddingDirection="around">
         <ClFlex justify="between">
           <ClTip
@@ -139,31 +139,31 @@ export default function Tip () {
             mode="click"
             width={350}
           >
-            <ClButton text="渲染的内容" shape="round"/>
+            <ClButton text="渲染的内容" shape="round" />
           </ClTip>
         </ClFlex>
       </ClLayout>
       <ClLayout padding="normal" paddingDirection="vertical">
-        <GenerateCode code={customCode}/>
+        <GenerateCode code={customCode} />
       </ClLayout>
-      <ClTitleBar title="长度" type="icon"/>
+      <ClTitleBar title="长度" type="icon" />
       <ClLayout padding="normal" paddingDirection="around">
         <ClFlex justify="between">
           <ClTip message="是时候表演真正的技术了" direction="right">
-            <ClButton text="默认长度" shape="round"/>
+            <ClButton text="默认长度" shape="round" />
           </ClTip>
           <ClTip message="是时候表演真正的技术了" direction="left" width={200}>
-            <ClButton text="长度200" shape="round"/>
+            <ClButton text="长度200" shape="round" />
           </ClTip>
         </ClFlex>
       </ClLayout>
       <ClLayout padding="normal" paddingDirection="vertical">
-        <GenerateCode code={lengthCode}/>
+        <GenerateCode code={lengthCode} />
       </ClLayout>
     </ClLayout>
-  )
+  );
 }
 
 Tip.config = {
-  navigationBarTitleText: 'Tip 提示'
-}
+  navigationBarTitleText: "Tip 提示"
+};

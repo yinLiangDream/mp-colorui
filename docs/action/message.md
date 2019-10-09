@@ -1,12 +1,8 @@
-
-
 ## 使用说明
 
 ```jsx
-import {ClMessage} from 'mp-colorui'
+import { ClMessage } from "mp-colorui";
 ```
-
-
 
 ## 注意
 
@@ -19,18 +15,14 @@ import {ClMessage} from 'mp-colorui'
 ### 类型
 
 ```jsx
-<ClMessage type='success' message='我是消息' />
+<ClMessage type="success" message="我是消息" />
 ```
 
 ### 持续时间
 
 ```jsx
-<ClMessage duration={2} message='我是消息' />
+<ClMessage duration={2} message="我是消息" />
 ```
-
-
-
-
 
 ## 参数说明
 
@@ -38,13 +30,11 @@ import {ClMessage} from 'mp-colorui'
 
 | 参数     | 说明                             | 类型    | 可选值                                             | 默认值    |
 | -------- | -------------------------------- | ------- | -------------------------------------------------- | --------- |
-| type     | *类型，在 custom 下可自定义颜色* | string  | *`success`*,*`error`*,*`warn`*,*`info`*,*`custom`* | *`info`*  |
-| bgColor  | *背景色*                         | string  | 参考文档 [默认色](/home/color)                     | -         |
-| message  | *消息文本*                       | number  | -                                                  | 0         |
-| duration | *持续时间*                       | number  | -                                                  | 3         |
-| show     | *是否显示*                       | boolean | -                                                  | *`false`* |
-
-
+| type     | _类型，在 custom 下可自定义颜色_ | string  | _`success`_,_`error`_,_`warn`_,_`info`_,_`custom`_ | _`info`_  |
+| bgColor  | _背景色_                         | string  | 参考文档 [默认色](/home/color)                     | -         |
+| message  | _消息文本_                       | number  | -                                                  | 0         |
+| duration | _持续时间_                       | number  | -                                                  | 3         |
+| show     | _是否显示_                       | boolean | -                                                  | _`false`_ |
 
 ## Message 事件
 
@@ -52,6 +42,4 @@ import {ClMessage} from 'mp-colorui'
 | ----------- | ---------- | ---- |
 | **onClose** | 关闭时触发 | -    |
 
-
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/message/index" />
-

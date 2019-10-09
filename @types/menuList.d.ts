@@ -1,7 +1,7 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
-import { IProps as iconProps } from './icon';
-import { BaseComponent, bgColorType } from './baseType'
+import { IProps as iconProps } from "./icon";
+import { BaseComponent, bgColorType } from "./baseType";
 
 export type TIcon = iconProps;
 export type TTitle = string;

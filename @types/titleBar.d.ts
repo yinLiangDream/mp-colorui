@@ -1,11 +1,12 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
 import {
   bgColorType,
   bgColorMoreType,
   lightBgColorType,
-  iconType, BaseComponent
-} from './baseType'
+  iconType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -27,7 +28,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `border-title`, `sub-title`, `icon`
    */
-  type?: 'border-title' | 'sub-title' | 'icon';
+  type?: "border-title" | "sub-title" | "icon";
   /**
    * 仅 type 为 sub-title时设置，子标题
    */

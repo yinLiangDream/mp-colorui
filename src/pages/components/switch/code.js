@@ -4,7 +4,7 @@ export const typeCode = `
 
 <ClSwitch type="form" title="~(≧▽≦)/~啦啦啦" />
 \`\`\`
-`
+`;
 
 export const shapeCode = `
 \`\`\`
@@ -12,7 +12,7 @@ export const shapeCode = `
 
 <ClSwitch type="form" title="~(≧▽≦)/~啦啦啦" shape="radius" />
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -30,4 +30,4 @@ export const colorCode = `
   color="red"
 />
 \`\`\`
-`
+`;

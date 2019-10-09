@@ -1,4 +1,4 @@
-import Taro, { useState } from '@tarojs/taro'
+import Taro, { useState } from "@tarojs/taro";
 import {
   ClButton,
   ClCard,
@@ -8,29 +8,29 @@ import {
   ClTitleBar,
   ClText,
   ClTimeline
-} from 'mp-colorui'
-import { View } from '@tarojs/components'
+} from "mp-colorui";
+import { View } from "@tarojs/components";
 
-import GenerateCode from '../../../usedComponents/generateCode'
+import GenerateCode from "../../../usedComponents/generateCode";
 
-import { normalCode, customCode } from './code'
+import { normalCode, customCode } from "./code";
 
-export default function Modal () {
-  const [normal, setNormal] = useState(false)
-  const [custom, setCustom] = useState(false)
+export default function Modal() {
+  const [normal, setNormal] = useState(false);
+  const [custom, setCustom] = useState(false);
   return (
     <ClLayout>
-      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type"/>
+      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type" />
       <ClCard>
         <ClButton
           text="普通"
           long
           onClick={() => {
-            setNormal(true)
+            setNormal(true);
           }}
         />
       </ClCard>
-      <GenerateCode code={normalCode}/>
+      <GenerateCode code={normalCode} />
       <ClModal
         show={normal}
         closeWithShadow
@@ -38,25 +38,25 @@ export default function Modal () {
         close
         actions={[
           {
-            text: '取消',
-            color: 'red'
+            text: "取消",
+            color: "red"
           },
           {
-            text: '确认',
-            color: 'blue'
+            text: "确认",
+            color: "blue"
           }
         ]}
         onCancel={() => {
-          setNormal(false)
+          setNormal(false);
         }}
         onClose={() => {
-          setNormal(false)
+          setNormal(false);
         }}
         onClick={index => {
           Taro.showToast({
-            title: index === 0 ? '取消' : '确认',
-            icon: 'none'
-          })
+            title: index === 0 ? "取消" : "确认",
+            icon: "none"
+          });
         }}
       >
         我是内容，我可以插入任何内容，点击阴影也可以关闭
@@ -74,11 +74,11 @@ export default function Modal () {
           bgColor="light-cyan"
           long
           onClick={() => {
-            setCustom(true)
+            setCustom(true);
           }}
         />
       </ClCard>
-      <GenerateCode code={customCode}/>
+      <GenerateCode code={customCode} />
       <ClModal
         show={custom}
         closeWithShadow
@@ -94,7 +94,7 @@ export default function Modal () {
           />
         }
         onCancel={() => {
-          setCustom(false)
+          setCustom(false);
         }}
         renderAction={
           <ClLayout>
@@ -105,9 +105,9 @@ export default function Modal () {
                   long
                   onClick={() => {
                     Taro.showToast({
-                      title: '取消',
-                      icon: 'none'
-                    })
+                      title: "取消",
+                      icon: "none"
+                    });
                   }}
                 >
                   取消
@@ -119,9 +119,9 @@ export default function Modal () {
                   long
                   onClick={() => {
                     Taro.showToast({
-                      title: '确认',
-                      icon: 'none'
-                    })
+                      title: "确认",
+                      icon: "none"
+                    });
                   }}
                 >
                   确认
@@ -131,21 +131,21 @@ export default function Modal () {
           </ClLayout>
         }
       >
-        <ClText text="我是内容，我可以插入任何内容，点击阴影也可以关闭，头部自定义，使用了组件 TitleBar，脚部 actions 使用了两个 button"/>
+        <ClText text="我是内容，我可以插入任何内容，点击阴影也可以关闭，头部自定义，使用了组件 TitleBar，脚部 actions 使用了两个 button" />
         <ClLayout padding="normal" paddingDirection="vertical">
           <ClTimeline
             times={[
               {
-                content: ['这是我插入的 Timeline 组件']
+                content: ["这是我插入的 Timeline 组件"]
               }
             ]}
           />
         </ClLayout>
       </ClModal>
     </ClLayout>
-  )
+  );
 }
 
 Modal.config = {
-  navigationBarTitleText: 'Modal 模态框'
-}
+  navigationBarTitleText: "Modal 模态框"
+};

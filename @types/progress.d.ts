@@ -1,6 +1,11 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
-import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
+import {
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -10,7 +15,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `normal`, `radius`, `round`
    */
-  shape?: 'normal' | 'radius' | 'round';
+  shape?: "normal" | "radius" | "round";
   /**
    * 进度条背景色，可选类型请查看 默认色
    *
@@ -24,7 +29,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `small`, `normal`, `xsmall`
    */
-  size?: 'small' | 'normal' | 'xsmall';
+  size?: "small" | "normal" | "xsmall";
   /**
    * 进度条条纹
    *

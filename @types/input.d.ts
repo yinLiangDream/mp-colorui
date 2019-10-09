@@ -1,12 +1,12 @@
-import { ComponentClass } from 'react'
+import { ComponentClass } from "react";
 
-import { IProps as IButton } from './button'
-import { IProps as IIcon } from './icon'
-import { BaseComponent } from './baseType'
+import { IProps as IButton } from "./button";
+import { IProps as IIcon } from "./icon";
+import { BaseComponent } from "./baseType";
 
 export type TValue = string;
 export type TPlaceholder = string;
-export type TType = 'text' | 'number' | 'password' | 'idcard' | 'digit';
+export type TType = "text" | "number" | "password" | "idcard" | "digit";
 export type TTitle = string;
 export type TMaxLength = number;
 export type TDisabled = boolean;
@@ -33,19 +33,19 @@ export interface IProps extends BaseComponent {
    *
    * 默认 `none`
    */
-  titleWidth?: number | 'auto';
+  titleWidth?: number | "auto";
   /**
    * 对齐方式
    *
    * 默认值 `none`
    */
-  align?: 'left' | 'right' | 'center' | 'none';
+  align?: "left" | "right" | "center" | "none";
   /**
    * 表现形式
    *
    * 默认值 `normal`
    */
-  pattern?: 'normal' | 'material';
+  pattern?: "normal" | "material";
   /**
    * 输入框默认值，不同于 defaultValue，
    * 该值在每次渲染的时候都会进行初始化，所以要避免在 onChange 事件里修改该值
@@ -133,6 +133,6 @@ export interface IProps extends BaseComponent {
 
 export interface InputProps extends IProps {}
 
-declare const Input: ComponentClass<InputProps>
+declare const Input: ComponentClass<InputProps>;
 
-export default Input
+export default Input;

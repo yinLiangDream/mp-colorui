@@ -10,7 +10,7 @@ export const leftCode = `
   我是左侧抽屉
 </ClDrawer>
 \`\`\`
-`
+`;
 
 export const rightCode = `
 \`\`\`
@@ -24,7 +24,7 @@ export const rightCode = `
   我是右侧抽屉
 </ClDrawer>
 \`\`\`
-`
+`;
 
 export const bottomCode = `
 \`\`\`
@@ -40,4 +40,4 @@ export const bottomCode = `
   </ClCard>
 </ClDrawer>
 \`\`\`
-`
+`;

@@ -1,5 +1,10 @@
-import { ComponentClass } from 'react';
-import { extendSizeType, bgColorType, iconType, BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import {
+  extendSizeType,
+  bgColorType,
+  iconType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**

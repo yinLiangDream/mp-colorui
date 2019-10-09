@@ -12,4 +12,4 @@ const tabs = [...Array(50)].map((key, index) => ({name: 'tab-' + index, id: 'id-
   </View>
 </ClVerticalTab>
 \`\`\`
-`
+`;

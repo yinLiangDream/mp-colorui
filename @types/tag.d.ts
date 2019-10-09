@@ -1,6 +1,6 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
-import { BaseComponent, bgColorType, iconType } from './baseType'
+import { BaseComponent, bgColorType, iconType } from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -10,7 +10,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `normal`, `round`, `radius`
    */
-  shape?: 'normal' | 'round' | 'radius';
+  shape?: "normal" | "round" | "radius";
   /**
    * tag 大小设置
    *
@@ -18,7 +18,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `small`, `normla`
    */
-  size?: 'small' | 'normal';
+  size?: "small" | "normal";
   /**
    * 点击事件
    */

@@ -1,7 +1,7 @@
 ## 使用说明
 
 ```jsx
-import {ClTip} from 'mp-colorui'
+import { ClTip } from "mp-colorui";
 ```
 
 ## 一般用法
@@ -34,17 +34,13 @@ import {ClTip} from 'mp-colorui'
 </ClTip>
 ```
 
-
-
 ### 背景色
 
 ```jsx
-<ClTip message='我是上方提示' direction='top' bgColor='gradualBlue'>
+<ClTip message="我是上方提示" direction="top" bgColor="gradualBlue">
   ...
 </ClTip>
 ```
-
-
 
 ### 自定义渲染
 
@@ -60,24 +56,18 @@ const renderMessage = (
 </ClTip>
 ```
 
-
-
-
-
 ## 参数说明
 
 ### Tip 参数
 
 | 参数          | 说明       | 类型    | 可选值                         | 默认值    |
 | ------------- | ---------- | ------- | ------------------------------ | --------- |
-| show          | *是否显示* | boolean | -                              | *`false`* |
-| bgColor       | *背景色*   | string  | 参考文档 [默认色](/home/color) | -         |
-| message       | *消息文本* | string  | -                              | -         |
-| mode          | *触发方式* | number  | `click`,`touch`                | `touch`   |
-| width         | *宽度*     | boolean | -                              | *`150`*   |
+| show          | _是否显示_ | boolean | -                              | _`false`_ |
+| bgColor       | _背景色_   | string  | 参考文档 [默认色](/home/color) | -         |
+| message       | _消息文本_ | string  | -                              | -         |
+| mode          | _触发方式_ | number  | `click`,`touch`                | `touch`   |
+| width         | _宽度_     | boolean | -                              | _`150`_   |
 | renderMessage | 自定义渲染 | Element | -                              | -         |
-
-
 
 ## Tip 事件
 

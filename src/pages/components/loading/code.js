@@ -2,7 +2,7 @@ export const barCode = `
 \`\`\`
 <ClLoading type='bar' show={barLoading} />
 \`\`\`
-`
+`;
 
 export const lineCode = `
 \`\`\`
@@ -13,7 +13,7 @@ export const lineCode = `
   noMore={lineLoadingEnd}
 />
 \`\`\`
-`
+`;
 
 export const modalCode = `
 \`\`\`
@@ -23,7 +23,7 @@ export const modalCode = `
   imgUrl="https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/loading.gif"
 />
 \`\`\`
-`
+`;
 
 export const imageCode = `
 \`\`\`
@@ -33,4 +33,4 @@ export const imageCode = `
   imgUrl="https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/loading.gif"
 />
 \`\`\`
-`
+`;

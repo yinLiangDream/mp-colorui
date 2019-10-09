@@ -6,7 +6,7 @@ export const gridCode = `
   内容部分
 </ClGrid>
 \`\`\`
-`
+`;
 
 export const squaCode = `
 \`\`\`
@@ -16,4 +16,4 @@ export const squaCode = `
   <View className='bg-blue light'>3</View>
 </ClGrid>
 \`\`\`
-`
+`;

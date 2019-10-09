@@ -4,7 +4,7 @@ export const typeCode = `
 
 <ClCheckbox title="选一个" type="form" checkboxGroup={checkboxGroup} />
 \`\`\`
-`
+`;
 
 export const positionCode = `
 \`\`\`
@@ -22,7 +22,7 @@ export const positionCode = `
   direction="horizontal"
 />
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -41,7 +41,7 @@ export const colorCode = `
   direction="horizontal"
 />
 \`\`\`
-`
+`;
 
 export const shapeCode = `
 \`\`\`
@@ -62,4 +62,4 @@ export const shapeCode = `
   direction="horizontal"
 />
 \`\`\`
-`
+`;

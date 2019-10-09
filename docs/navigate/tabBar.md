@@ -1,34 +1,30 @@
-****
+---
 
 ## 使用说明
 
 ```jsx
-import {ClTabBar} from 'mp-colorui'
+import { ClTabBar } from "mp-colorui";
 ```
-
-
 
 ## 一般用法
 
 ### 背景色
 
 ```jsx
-<ClTabBar bgColor='black' ></ClTabBar>
+<ClTabBar bgColor="black" />
 ```
 
 ### 激活图标的颜色
 
 ```jsx
-<ClTabBar activeColor='white' ></ClTabBar>
+<ClTabBar activeColor="white" />
 ```
 
 ### 激活的索引
 
 ```jsx
-<ClTabBar active={2} ></ClTabBar>
+<ClTabBar active={2} />
 ```
-
-
 
 ## 参数说明
 
@@ -36,28 +32,26 @@ import {ClTabBar} from 'mp-colorui'
 
 | 参数        | 说明              | 类型    | 可选值                                          | 默认值    |
 | ----------- | ----------------- | ------- | ----------------------------------------------- | --------- |
-| bgColor     | *背景色*          | string  | 参考文档 [默认色](/home/color)                  | *`white`* |
-| activeColor | *激活的颜色*      | string  | 参考文档 [默认色-标准色](/home/color?id=标准色) | *`blue`*  |
-| active      | *激活的下标*      | number  | -                                               | 0         |
-| fix         | *是否固定在底部*  | boolean | *`true`*,*`false`*                              | *`false`* |
-| tabs        | *每一项 tab 内容* | tabs[]  | [详情](/navigate/tabBar?id=tabs)                | []        |
+| bgColor     | _背景色_          | string  | 参考文档 [默认色](/home/color)                  | _`white`_ |
+| activeColor | _激活的颜色_      | string  | 参考文档 [默认色-标准色](/home/color?id=标准色) | _`blue`_  |
+| active      | _激活的下标_      | number  | -                                               | 0         |
+| fix         | _是否固定在底部_  | boolean | _`true`_,_`false`_                              | _`false`_ |
+| tabs        | _每一项 tab 内容_ | tabs[]  | [详情](/navigate/tabBar?id=tabs)                | []        |
 
 ### tabs
 
 | 参数   | 说明             | 类型           | 可选值                                             | 默认值    |
 | ------ | ---------------- | -------------- | -------------------------------------------------- | --------- |
-| badge  | *右上角提示*     | boolean/Number | -                                                  | *`false`* |
-| icon   | *图标*           | string         | 参考文档 [Icon-*iconName*](/base/icon?id=iconname) | -         |
-| img    | *图片地址*       | string         | -                                                  | -         |
-| title  | *标题*           | string         | -                                                  | -         |
-| action | *是否为突出操作* | boolean        | *`true`*,*`false`*                                 | *`false`* |
-
-
+| badge  | _右上角提示_     | boolean/Number | -                                                  | _`false`_ |
+| icon   | _图标_           | string         | 参考文档 [Icon-_iconName_](/base/icon?id=iconname) | -         |
+| img    | _图片地址_       | string         | -                                                  | -         |
+| title  | _标题_           | string         | -                                                  | -         |
+| action | _是否为突出操作_ | boolean        | _`true`_,_`false`_                                 | _`false`_ |
 
 ### TabBar 事件
 
 | 事件名称 | 说明       | 参数返回 |
 | -------- | ---------- | -------- |
-| onClick  | *点击事件* | index    |
+| onClick  | _点击事件_ | index    |
 
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/tabBar/index" />

@@ -12,7 +12,7 @@ export const positionCode = `
   </ClCard>
 </ClSwiperAction>
 \`\`\`
-`
+`;
 
 export const openCode = `
 \`\`\`
@@ -22,7 +22,7 @@ export const openCode = `
   </ClCard>
 </ClSwiperAction>
 \`\`\`
-`
+`;
 
 export const disabledCode = `
 \`\`\`
@@ -32,7 +32,7 @@ export const disabledCode = `
   </ClCard>
 </ClSwiperAction>
 \`\`\`
-`
+`;
 
 export const autoCloseCode = `
 \`\`\`
@@ -42,7 +42,7 @@ export const autoCloseCode = `
   </ClCard>
 </ClSwiperAction>
 \`\`\`
-`
+`;
 
 export const touchCode = `
 \`\`\`
@@ -61,7 +61,7 @@ export const touchCode = `
   </ClCard>
 </ClSwiperAction>
 \`\`\`
-`
+`;
 
 export const changeCode = `
 \`\`\`
@@ -86,4 +86,4 @@ export const changeCode = `
   </ClCard>
 </ClSwiperAction>
 \`\`\`
-`
+`;

@@ -21,7 +21,7 @@ export const typeCode = `
   checkedValue={checkedValue}
 />
 \`\`\`
-`
+`;
 
 export const positionCode = `
 \`\`\`
@@ -41,7 +41,7 @@ export const positionCode = `
   direction="vertical"
 />
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -63,7 +63,7 @@ export const colorCode = `
   color="red"
 />
 \`\`\`
-`
+`;
 
 export const shapeCode = `
 \`\`\`
@@ -87,4 +87,4 @@ export const shapeCode = `
   color="red"
 />
 \`\`\`
-`
+`;

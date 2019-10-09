@@ -1,6 +1,11 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
-import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
+import {
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -10,7 +15,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `modal`, `bar`, `line`
    */
-  type?: 'modal' | 'bar' | 'line' | 'image';
+  type?: "modal" | "bar" | "line" | "image";
   /**
    * 背景色，可选类型请查看 默认色
    *

@@ -1,28 +1,28 @@
-import Taro from '@tarojs/taro'
-import { ClCard, ClLayout, ClProgress, ClTitleBar } from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
+import Taro from "@tarojs/taro";
+import { ClCard, ClLayout, ClProgress, ClTitleBar } from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
 import {
   animationCode,
   colorCode,
   shapeCode,
   sizeCode,
   stripeCode
-} from './code'
+} from "./code";
 
-export default function Progress () {
+export default function Progress() {
   return (
     <ClLayout>
-      <ClTitleBar title="形状" textColor="black" type="icon" subTitle="shape"/>
+      <ClTitleBar title="形状" textColor="black" type="icon" subTitle="shape" />
       <ClCard>
-        <ClProgress shape="normal" percent={10}/>
+        <ClProgress shape="normal" percent={10} />
       </ClCard>
       <ClCard>
-        <ClProgress shape="radius" percent={20}/>
+        <ClProgress shape="radius" percent={20} />
       </ClCard>
       <ClCard>
-        <ClProgress shape="round" percent={40}/>
+        <ClProgress shape="round" percent={40} />
       </ClCard>
-      <GenerateCode code={shapeCode}/>
+      <GenerateCode code={shapeCode} />
 
       <ClTitleBar
         title="背景色"
@@ -31,15 +31,15 @@ export default function Progress () {
         subTitle="bgColor"
       />
       <ClCard>
-        <ClProgress shape="round" percent={20} bgColor="red"/>
+        <ClProgress shape="round" percent={20} bgColor="red" />
       </ClCard>
       <ClCard>
-        <ClProgress shape="round" percent={40} bgColor="light-red"/>
+        <ClProgress shape="round" percent={40} bgColor="light-red" />
       </ClCard>
       <ClCard>
-        <ClProgress shape="round" percent={80} bgColor="gradualRed"/>
+        <ClProgress shape="round" percent={80} bgColor="gradualRed" />
       </ClCard>
-      <GenerateCode code={colorCode}/>
+      <GenerateCode code={colorCode} />
 
       <ClTitleBar
         title="纹理"
@@ -48,12 +48,12 @@ export default function Progress () {
         subTitle="stripe"
       />
       <ClCard>
-        <ClProgress shape="round" stripe percent={20} bgColor="red"/>
+        <ClProgress shape="round" stripe percent={20} bgColor="red" />
       </ClCard>
       <ClCard>
-        <ClProgress shape="round" stripe percent={40} bgColor="light-red"/>
+        <ClProgress shape="round" stripe percent={40} bgColor="light-red" />
       </ClCard>
-      <GenerateCode code={stripeCode}/>
+      <GenerateCode code={stripeCode} />
 
       <ClTitleBar
         title="动画"
@@ -62,7 +62,7 @@ export default function Progress () {
         subTitle="animation"
       />
       <ClCard>
-        <ClProgress animation shape="round" stripe percent={20} bgColor="red"/>
+        <ClProgress animation shape="round" stripe percent={20} bgColor="red" />
       </ClCard>
       <ClCard>
         <ClProgress
@@ -73,11 +73,11 @@ export default function Progress () {
           bgColor="light-red"
         />
       </ClCard>
-      <GenerateCode code={animationCode}/>
+      <GenerateCode code={animationCode} />
 
-      <ClTitleBar title="大小" textColor="black" type="icon" subTitle="size"/>
+      <ClTitleBar title="大小" textColor="black" type="icon" subTitle="size" />
       <ClCard>
-        <ClProgress shape="round" size="xsmall" percent={20} bgColor="red"/>
+        <ClProgress shape="round" size="xsmall" percent={20} bgColor="red" />
       </ClCard>
       <ClCard>
         <ClProgress
@@ -95,11 +95,11 @@ export default function Progress () {
           bgColor="gradualRed"
         />
       </ClCard>
-      <GenerateCode code={sizeCode}/>
+      <GenerateCode code={sizeCode} />
     </ClLayout>
-  )
+  );
 }
 
 Progress.config = {
-  navigationBarTitleText: 'Progress 进度条'
-}
+  navigationBarTitleText: "Progress 进度条"
+};

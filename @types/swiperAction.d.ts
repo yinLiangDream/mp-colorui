@@ -1,5 +1,10 @@
-import { ComponentClass } from 'react';
-import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import {
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -40,7 +45,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认 `right`
    */
-  direction?: 'right' | 'left';
+  direction?: "right" | "left";
   /**
    * 点击按钮事件
    */
@@ -53,7 +58,7 @@ export interface IProps extends BaseComponent {
    * 关闭时触发
    */
   onClose?: () => void;
-  children?: any
+  children?: any;
 }
 
 declare const SwiperAction: ComponentClass<IProps>;

@@ -1,7 +1,7 @@
-import { ComponentClass } from 'react';
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
-export interface IProps extends BaseComponent{
+export interface IProps extends BaseComponent {
   /**
    * 数据模型
    */

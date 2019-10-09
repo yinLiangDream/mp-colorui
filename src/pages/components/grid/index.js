@@ -1,46 +1,46 @@
-import Taro, { pxTransform } from '@tarojs/taro'
-import { ClCard, ClGrid, ClLayout, ClTitleBar } from 'mp-colorui'
-import { View, Block } from '@tarojs/components'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { gridCode, squaCode } from './code'
+import Taro, { pxTransform } from "@tarojs/taro";
+import { ClCard, ClGrid, ClLayout, ClTitleBar } from "mp-colorui";
+import { View, Block } from "@tarojs/components";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { gridCode, squaCode } from "./code";
 
 const generatorArr = num => {
-  let i = 0
-  const arr = []
+  let i = 0;
+  const arr = [];
   while (i < num * 2) {
-    arr.push('')
-    i++
+    arr.push("");
+    i++;
   }
-  return arr
-}
+  return arr;
+};
 
 export default class Grid extends Taro.Component {
   config = {
-    navigationBarTitleText: 'Grid 栅格布局'
-  }
+    navigationBarTitleText: "Grid 栅格布局"
+  };
 
-  renderComponent (num) {
+  renderComponent(num) {
     return generatorArr(num).map((un, index) => (
       <View key={Math.random()}>
         <ClCard
           type="full"
-          bgColor={index % 2 === 0 ? 'light-blue' : 'light-brown'}
+          bgColor={index % 2 === 0 ? "light-blue" : "light-brown"}
         >
           {index + 1}
         </ClCard>
       </View>
-    ))
+    ));
   }
 
-  renderCards (num) {
+  renderCards(num) {
     return (
       <ClCard>
         <ClGrid col={num}>{this.renderComponent(num)}</ClGrid>
       </ClCard>
-    )
+    );
   }
 
-  render () {
+  render() {
     return (
       <ClLayout>
         <ClTitleBar
@@ -54,7 +54,7 @@ export default class Grid extends Taro.Component {
         {this.renderCards(3)}
         {this.renderCards(4)}
         {this.renderCards(5)}
-        <GenerateCode code={gridCode}/>
+        <GenerateCode code={gridCode} />
 
         <ClTitleBar
           title="等高"
@@ -69,8 +69,8 @@ export default class Grid extends Taro.Component {
             <View className="bg-blue light">3</View>
           </ClGrid>
         </ClCard>
-        <GenerateCode code={squaCode}/>
+        <GenerateCode code={squaCode} />
       </ClLayout>
-    )
+    );
   }
 }

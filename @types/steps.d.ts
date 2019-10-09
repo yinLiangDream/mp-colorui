@@ -1,6 +1,6 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
-import { BaseComponent, bgColorType, iconType } from './baseType'
+import { BaseComponent, bgColorType, iconType } from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -10,7 +10,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `arrow`, `line`
    */
-  type?: 'arrow' | 'line';
+  type?: "arrow" | "line";
   /**
    * 激活的颜色，可选类型请查看 默认色-标准色
    *
@@ -28,7 +28,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `custom`, `number`, `space`
    */
-  stepIconType?: 'custom' | 'number' | 'space';
+  stepIconType?: "custom" | "number" | "space";
   /**
    * 每一步提示文字位置
    *
@@ -36,7 +36,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `top`, `bottom`
    */
-  stepTitlePosition?: 'top' | 'bottom';
+  stepTitlePosition?: "top" | "bottom";
   /**
    * 每一步的设置
    *

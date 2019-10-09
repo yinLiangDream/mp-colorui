@@ -34,7 +34,7 @@ export const typeCode = `
 }}
 />
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -72,7 +72,7 @@ export const colorCode = `
 }}
 />
 \`\`\`
-`
+`;
 
 export const cancelCode = `
 \`\`\`
@@ -112,4 +112,4 @@ export const cancelCode = `
 }}
 />
 \`\`\`
-`
+`;

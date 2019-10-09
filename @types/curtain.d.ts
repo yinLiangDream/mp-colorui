@@ -1,5 +1,5 @@
-import { ComponentClass } from 'react';
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -19,16 +19,22 @@ export interface IProps extends BaseComponent {
    *
    * 默认 `bottom`
    */
-  closeBtnPosition?: 'top' | 'bottom' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+  closeBtnPosition?:
+    | "top"
+    | "bottom"
+    | "top-left"
+    | "top-right"
+    | "bottom-left"
+    | "bottom-right";
   children?: any;
   /**
    * 点击幕帘事件
    */
-  onClick?: () => void
+  onClick?: () => void;
   /**
    * 点击关闭事件
    */
-  onClose?: () => void
+  onClose?: () => void;
 }
 
 declare const Curtain: ComponentClass<IProps>;

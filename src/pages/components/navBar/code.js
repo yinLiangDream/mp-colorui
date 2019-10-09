@@ -14,7 +14,7 @@ export const colorCode = `
   }}
 />
 \`\`\`
-`
+`;
 
 export const iconCode = `
 \`\`\`
@@ -51,4 +51,4 @@ const rightIcon = [
   }}
 />
 \`\`\`
-`
+`;

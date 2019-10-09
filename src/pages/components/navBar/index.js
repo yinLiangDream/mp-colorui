@@ -1,23 +1,23 @@
-import Taro from '@tarojs/taro'
-import { ClCard, ClLayout, ClNavBar, ClTitleBar } from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { colorCode, iconCode } from './code'
+import Taro from "@tarojs/taro";
+import { ClCard, ClLayout, ClNavBar, ClTitleBar } from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { colorCode, iconCode } from "./code";
 
 const leftIcon = [
   {
-    icon: 'emoji',
-    color: 'black',
-    text: '左侧文字'
+    icon: "emoji",
+    color: "black",
+    text: "左侧文字"
   }
-]
+];
 const rightIcon = [
   {
-    icon: 'like',
-    color: 'blue'
+    icon: "like",
+    color: "blue"
   }
-]
+];
 
-export default function NavBar () {
+export default function NavBar() {
   return (
     <ClLayout>
       <ClTitleBar
@@ -30,20 +30,20 @@ export default function NavBar () {
         <ClNavBar
           leftIcon={[
             {
-              icon: 'roundleftfill-copy',
-              text: '返回上一页'
+              icon: "roundleftfill-copy",
+              text: "返回上一页"
             }
           ]}
           bgColor="light-blue"
           title="我是标题"
           onClickLeftIcon={index => {
-            Taro.navigateBack()
+            Taro.navigateBack();
           }}
         />
       </ClCard>
-      <GenerateCode code={colorCode}/>
+      <GenerateCode code={colorCode} />
 
-      <ClTitleBar title="图标" textColor="black" type="icon" subTitle="icon"/>
+      <ClTitleBar title="图标" textColor="black" type="icon" subTitle="icon" />
       <ClCard>
         <ClNavBar
           leftIcon={leftIcon}
@@ -52,22 +52,22 @@ export default function NavBar () {
           onClickLeftIcon={index => {
             Taro.showToast({
               title: leftIcon[index].icon,
-              icon: 'none'
-            })
+              icon: "none"
+            });
           }}
           onClickRightIcon={index => {
             Taro.showToast({
               title: rightIcon[index].icon,
-              icon: 'none'
-            })
+              icon: "none"
+            });
           }}
         />
       </ClCard>
-      <GenerateCode code={iconCode}/>
+      <GenerateCode code={iconCode} />
     </ClLayout>
-  )
+  );
 }
 
 NavBar.config = {
-  navigationBarTitleText: 'NavBar 导航栏'
-}
+  navigationBarTitleText: "NavBar 导航栏"
+};

@@ -1,8 +1,8 @@
-import { ComponentClass } from 'react';
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
-export type TType = 'screen' | 'card';
-export type TDot = 'square' | 'round';
+export type TType = "screen" | "card";
+export type TDot = "square" | "round";
 export type TOnClick = (index: number) => void;
 export type TList = {
   /**
@@ -12,7 +12,7 @@ export type TList = {
    *
    * 可选参数 `image`, `video`
    */
-  type?: 'image' | 'video';
+  type?: "image" | "video";
   /**
    * 图片、视频的地址
    */

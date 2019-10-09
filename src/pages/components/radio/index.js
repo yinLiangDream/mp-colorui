@@ -1,24 +1,24 @@
-import Taro, { useState } from '@tarojs/taro'
-import { ClCard, ClLayout, ClRadio, ClTitleBar } from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { colorCode, positionCode, shapeCode, typeCode } from './code'
+import Taro, { useState } from "@tarojs/taro";
+import { ClCard, ClLayout, ClRadio, ClTitleBar } from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { colorCode, positionCode, shapeCode, typeCode } from "./code";
 
 const radioGroup = [
   {
-    key: '男生',
-    value: 'male'
+    key: "男生",
+    value: "male"
   },
   {
-    key: '女生',
-    value: 'female'
+    key: "女生",
+    value: "female"
   }
-]
+];
 
-export default function Radio () {
-  const [checkedValue, setCheckedValue] = useState('male')
+export default function Radio() {
+  const [checkedValue, setCheckedValue] = useState("male");
   return (
     <ClLayout>
-      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type"/>
+      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type" />
       <ClCard>
         <ClRadio
           type="normal"
@@ -43,7 +43,7 @@ export default function Radio () {
           checkedValue={checkedValue}
         />
       </ClCard>
-      <GenerateCode code={typeCode}/>
+      <GenerateCode code={typeCode} />
 
       <ClTitleBar
         title="方向"
@@ -69,9 +69,9 @@ export default function Radio () {
           direction="vertical"
         />
       </ClCard>
-      <GenerateCode code={positionCode}/>
+      <GenerateCode code={positionCode} />
 
-      <ClTitleBar title="颜色" textColor="black" type="icon" subTitle="color"/>
+      <ClTitleBar title="颜色" textColor="black" type="icon" subTitle="color" />
       <ClCard>
         <ClRadio
           type="normal"
@@ -92,9 +92,9 @@ export default function Radio () {
           color="red"
         />
       </ClCard>
-      <GenerateCode code={colorCode}/>
+      <GenerateCode code={colorCode} />
 
-      <ClTitleBar title="形状" textColor="black" type="icon" subTitle="shape"/>
+      <ClTitleBar title="形状" textColor="black" type="icon" subTitle="shape" />
       <ClCard>
         <ClRadio
           type="normal"
@@ -117,11 +117,11 @@ export default function Radio () {
           color="red"
         />
       </ClCard>
-      <GenerateCode code={shapeCode}/>
+      <GenerateCode code={shapeCode} />
     </ClLayout>
-  )
+  );
 }
 
 Radio.config = {
-  navigationBarTitleText: 'Radio 单选按钮'
-}
+  navigationBarTitleText: "Radio 单选按钮"
+};

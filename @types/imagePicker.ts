@@ -1,5 +1,5 @@
-import { ComponentClass } from 'react';
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
 export type TChooseImgObj = {
   /**
@@ -15,7 +15,7 @@ export type TChooseImgObj = {
    *
    * 可选参数 [`original` , `compressed`]
    */
-  sizeType?: ('original' | 'compressed')[];
+  sizeType?: ("original" | "compressed")[];
   /**
    * 选择图片的来源
    *
@@ -23,7 +23,7 @@ export type TChooseImgObj = {
    *
    * 可选类型 [`album`, `camera`]
    */
-  sourceType?: ('album' | 'camera')[];
+  sourceType?: ("album" | "camera")[];
   /**
    * 选择成功回调函数
    */
@@ -39,9 +39,9 @@ export type TChooseImgObj = {
 };
 
 export type imgList = {
-  url: string,
-  status: 'success' | 'fail' | 'loading' | 'none'
-}[]
+  url: string;
+  status: "success" | "fail" | "loading" | "none";
+}[];
 
 export type TBeforeDel = (index: number) => boolean;
 
@@ -65,4 +65,3 @@ export interface IProps extends BaseComponent {
 declare const ImagePicker: ComponentClass<IProps>;
 
 export default ImagePicker;
-

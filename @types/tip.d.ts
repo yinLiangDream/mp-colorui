@@ -1,5 +1,10 @@
-import { ComponentClass, ReactNode } from 'react'
-import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
+import { ComponentClass, ReactNode } from "react";
+import {
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -9,7 +14,7 @@ export interface IProps extends BaseComponent {
   /**
    * 提示方向
    */
-  direction?: 'top' | 'right' | 'bottom' | 'left'
+  direction?: "top" | "right" | "bottom" | "left";
   /**
    * 背景色
    */
@@ -24,7 +29,7 @@ export interface IProps extends BaseComponent {
    * `click` 点击触发
    * `touch` 触摸触发
    */
-  mode?: 'click' | 'touch'
+  mode?: "click" | "touch";
   /**
    * 自定义提示
    */
@@ -41,6 +46,6 @@ export interface IProps extends BaseComponent {
   onChange?: (show: boolean) => void;
 }
 
-declare const Tip: ComponentClass<IProps>
+declare const Tip: ComponentClass<IProps>;
 
-export default Tip
+export default Tip;

@@ -1,11 +1,12 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
 import {
   iconType,
   bgColorType,
   bgColorMoreType,
-  lightBgColorType, BaseComponent
-} from './baseType'
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -15,7 +16,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `radius`, `round`
    */
-  shape?: 'radius' | 'round';
+  shape?: "radius" | "round";
   /**
    * 占位内容
    */
@@ -35,7 +36,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `button`, `text`, `none`
    */
-  searchType?: 'button' | 'text' | 'none';
+  searchType?: "button" | "text" | "none";
   /**
    * 左边的图标组，可选类型请查看 Icon-iconName
    */
@@ -83,7 +84,7 @@ export interface IProps extends BaseComponent {
    * 点击搜索结果事件
    * @param {number} index
    */
-  onTouchResult?: (index: number) => void
+  onTouchResult?: (index: number) => void;
 }
 
 export interface SearchBarProps extends IProps {}

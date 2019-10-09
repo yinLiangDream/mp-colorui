@@ -1,5 +1,5 @@
-import { ComponentClass } from 'react'
-import { BaseComponent, bgColorType, extendSizeType } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent, bgColorType, extendSizeType } from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -17,6 +17,6 @@ export interface IProps extends BaseComponent {
   children?: any;
 }
 
-declare const Divider: ComponentClass<IProps>
+declare const Divider: ComponentClass<IProps>;
 
-export default Divider
+export default Divider;

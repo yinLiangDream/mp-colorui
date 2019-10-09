@@ -1,5 +1,5 @@
-import { ComponentClass } from 'react'
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -34,6 +34,6 @@ export interface IProps extends BaseComponent {
   children?: any;
 }
 
-declare const According: ComponentClass<IProps>
+declare const According: ComponentClass<IProps>;
 
-export default According
+export default According;

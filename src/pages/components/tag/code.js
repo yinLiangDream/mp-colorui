@@ -20,7 +20,7 @@ const tags = [
 
 <ClTag tags={tags.slice(0, 1)} shape='round' />
 \`\`\`
-`
+`;
 
 export const sizeCode = `
 \`\`\`
@@ -28,13 +28,13 @@ export const sizeCode = `
 
 <ClTag tags={tags.slice(0, 1)} shape='radius' size='normal' />
 \`\`\`
-`
+`;
 
 export const tagsCode = `
 \`\`\`
 <ClTag tags={tags} shape='round' size='normal' />
 \`\`\`
-`
+`;
 
 export const clickCode = `
 \`\`\`
@@ -50,4 +50,4 @@ export const clickCode = `
   }}
 />
 \`\`\`
-`
+`;

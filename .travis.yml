@@ -16,6 +16,7 @@ jobs:
     - stage: deploy
       if: (branch = master) AND (NOT (type IN (pull_request)))
       install:
+        - npm install -g @tarojs/cli
         - npm install
       script:
         - npm run build

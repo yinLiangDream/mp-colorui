@@ -1,32 +1,28 @@
 ## 使用说明
 
 ```jsx
-import {ClFlex} from 'mp-colorui'
+import { ClFlex } from "mp-colorui";
 ```
-
-
 
 ## 一般用法
 
 ### 水平方向排列方式
 
 ```jsx
-<ClFlex justify='center' ></ClFlex>
+<ClFlex justify="center" />
 ```
 
 ### 垂直方向排列方式
 
 ```jsx
-<ClFlex align='center' ></ClFlex>
+<ClFlex align="center" />
 ```
 
 ### 换行
 
 ```jsx
-<ClFlex wrap ></ClFlex>
+<ClFlex wrap />
 ```
-
-
 
 ## 参数说明
 
@@ -34,9 +30,9 @@ import {ClFlex} from 'mp-colorui'
 
 | 参数      | 说明               | 类型    | 可选值                                              | 默认值    |
 | --------- | ------------------ | ------- | --------------------------------------------------- | --------- |
-| justify   | *水平方向排列方式* | string  | *`start`*,*`end`*,*`center`*,*`between`*,*`around`* | *`start`* |
-| align     | *垂直方向排列方式* | string  | *`start`*,*`end`*,*`center`*                        | *`start`* |
-| wrap      | *换行*             | boolean | *`true`*,*`false`*                                  | *`false`* |
+| justify   | _水平方向排列方式_ | string  | _`start`_,_`end`_,_`center`_,_`between`_,_`around`_ | _`start`_ |
+| align     | _垂直方向排列方式_ | string  | _`start`_,_`end`_,_`center`_                        | _`start`_ |
+| wrap      | _换行_             | boolean | _`true`_,_`false`_                                  | _`false`_ |
 | direction | 浮动方向           | string  | `row`,`row-reverse`,`column`,`column-reverse`       | `row`     |
 
 ### 子元素固定尺寸参数说明
@@ -45,11 +41,9 @@ import {ClFlex} from 'mp-colorui'
 
 ```jsx
 <ClFlex>
-	<View className="basis-xs"></View>
+  <View className="basis-xs" />
 </ClFlex>
 ```
-
-
 
 | 参数     | 说明 |
 | -------- | ---- |
@@ -65,8 +59,8 @@ import {ClFlex} from 'mp-colorui'
 
 ```jsx
 <ClFlex>
-	<View className="flex-sub"></View>
-  <View className="flex-twice"></View>
+  <View className="flex-sub" />
+  <View className="flex-twice" />
 </ClFlex>
 ```
 
@@ -77,4 +71,3 @@ import {ClFlex} from 'mp-colorui'
 | flex-treble | 3    |
 
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/flex/index" />
-

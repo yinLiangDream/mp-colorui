@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import Taro from "@tarojs/taro";
 import {
   ClLayout,
   ClForm,
@@ -9,73 +9,73 @@ import {
   ClCard,
   ClMessage,
   ClCheckbox
-} from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { fullCode } from './code'
+} from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { fullCode } from "./code";
 
 export default class Cl_Form extends Taro.Component {
   static config = {
-    navigationBarTitleText: 'Form 表单'
-  }
-  ref = null
+    navigationBarTitleText: "Form 表单"
+  };
+  ref = null;
   refFunc = node => {
-    this.ref = node
-  }
+    this.ref = node;
+  };
 
-  handleSubmit () {
+  handleSubmit() {
     this.ref.validate(success => {
       this.setState({
-        message: `数据校验${success ? '通过' : '未通过'}`,
-        messageType: success ? 'success' : 'error',
+        message: `数据校验${success ? "通过" : "未通过"}`,
+        messageType: success ? "success" : "error",
         showMessage: true
-      })
-    })
+      });
+    });
   }
 
   state = {
     model: {
-      name: '我是名字',
-      phone: '188',
+      name: "我是名字",
+      phone: "188",
       hobby: []
     },
-    message: '',
+    message: "",
     showMessage: false,
-    messageType: 'info'
-  }
+    messageType: "info"
+  };
 
-  render () {
+  render() {
     const rules = {
-      name (rule, value, callback) {
+      name(rule, value, callback) {
         if (!rule.required(value)) {
-          callback('姓名不能为空')
-          return false
+          callback("姓名不能为空");
+          return false;
         }
         if (value.length > 5) {
-          callback('姓名长度不能超过 5')
-          return false
+          callback("姓名长度不能超过 5");
+          return false;
         }
-        return true
+        return true;
       },
-      phone (rule, value, callback) {
+      phone(rule, value, callback) {
         if (!rule.required(value)) {
-          callback('手机号码不能为空')
-          return false
+          callback("手机号码不能为空");
+          return false;
         }
         if (!rule.phone(value)) {
-          callback('手机号码不正确')
-          return false
+          callback("手机号码不正确");
+          return false;
         }
-        return true
+        return true;
       },
-      hobby (rule, value, callback) {
+      hobby(rule, value, callback) {
         if (value.length < 2) {
-          callback('至少选择 2 项')
-          return false
+          callback("至少选择 2 项");
+          return false;
         }
-        return true
+        return true;
       }
-    }
-    const { model, showMessage, message, messageType } = this.state
+    };
+    const { model, showMessage, message, messageType } = this.state;
     return (
       <ClLayout>
         <ClMessage
@@ -85,10 +85,10 @@ export default class Cl_Form extends Taro.Component {
           onClose={() => {
             this.setState({
               showMessage: false
-            })
+            });
           }}
         />
-        <ClTitleBar title="实时校验&&失焦校验" textColor="black" type="icon"/>
+        <ClTitleBar title="实时校验&&失焦校验" textColor="black" type="icon" />
         <ClCard>
           由于小程序的 view 没有失焦事件，目前组件库只能做到 model
           里面的数据更新就会进行校验，如果想做到失焦校验请手动在 Input
@@ -106,7 +106,7 @@ export default class Cl_Form extends Taro.Component {
                       ...this.state.model,
                       name: value
                     }
-                  })
+                  });
                 }}
               />
             </ClFormItem>
@@ -120,7 +120,7 @@ export default class Cl_Form extends Taro.Component {
                       ...this.state.model,
                       phone: value
                     }
-                  })
+                  });
                 }}
               />
             </ClFormItem>
@@ -131,16 +131,16 @@ export default class Cl_Form extends Taro.Component {
                 title="选择爱好"
                 checkboxGroup={[
                   {
-                    key: '下棋',
-                    value: 'xiaqi'
+                    key: "下棋",
+                    value: "xiaqi"
                   },
                   {
-                    key: '画画',
-                    value: 'huahua'
+                    key: "画画",
+                    value: "huahua"
                   },
                   {
-                    key: '唱歌',
-                    value: 'singsong'
+                    key: "唱歌",
+                    value: "singsong"
                   }
                 ]}
                 onChange={value => {
@@ -149,7 +149,7 @@ export default class Cl_Form extends Taro.Component {
                       ...model,
                       hobby: value
                     }
-                  })
+                  });
                 }}
               />
             </ClFormItem>
@@ -163,8 +163,8 @@ export default class Cl_Form extends Taro.Component {
             onClick={this.handleSubmit.bind(this)}
           />
         </ClLayout>
-        <GenerateCode code={fullCode}/>
+        <GenerateCode code={fullCode} />
       </ClLayout>
-    )
+    );
   }
 }

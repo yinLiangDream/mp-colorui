@@ -25,7 +25,7 @@ renderContent(card, animation, speed = 0.15) {
 
 this.renderContent(false, true)
 \`\`\`
-`
+`;
 
 export const cardCode = `
 \`\`\`
@@ -54,7 +54,7 @@ renderContent(card, animation, speed = 0.15) {
 
 this.renderContent(true, true)
 \`\`\`
-`
+`;
 
 export const disabledAnimationCode = `
 \`\`\`
@@ -83,7 +83,7 @@ renderContent(card, animation, speed = 0.15) {
 
 this.renderContent(false, false)
 \`\`\`
-`
+`;
 
 export const speedCode = `
 \`\`\`
@@ -112,4 +112,4 @@ renderContent(card, animation, speed = 0.15) {
 
 this.renderContent(false, true, 0.5)
 \`\`\`
-`
+`;

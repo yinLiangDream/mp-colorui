@@ -1,6 +1,11 @@
-import { ComponentClass, ReactNode } from 'react';
+import { ComponentClass, ReactNode } from "react";
 
-import { BaseComponent, bgColorMoreType, bgColorType, lightBgColorType } from './baseType'
+import {
+  BaseComponent,
+  bgColorMoreType,
+  bgColorType,
+  lightBgColorType
+} from "./baseType";
 
 export type TTitle = string;
 export type TClose = boolean;
@@ -19,10 +24,10 @@ export type TActions = {
   /**
    * action 颜色，具体查看 默认色-标准色
    */
-  color?: bgColorType
+  color?: bgColorType;
 }[];
 
-export type TModalType = 'normal' | 'image' | 'radio' | 'checkbox';
+export type TModalType = "normal" | "image" | "radio" | "checkbox";
 
 export type normal = {
   title?: string;
@@ -49,7 +54,7 @@ export type radio = {};
 
 export type checkbox = {};
 
-export interface IProps extends BaseComponent{
+export interface IProps extends BaseComponent {
   /**
    * 是否显示
    *
@@ -100,7 +105,7 @@ export interface IProps extends BaseComponent{
    *
    * 可选参数 `xsmall`, `small`, `normal`, `large`, `xlarge`
    */
-  padding?: 'xsmall' | 'small' | 'normal' | 'large' | 'xlarge';
+  padding?: "xsmall" | "small" | "normal" | "large" | "xlarge";
   /**
    * 操作栏操作组
    *

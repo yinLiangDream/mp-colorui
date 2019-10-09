@@ -1,7 +1,7 @@
 ## 使用指南
 
 ```js
-import { ClAccordion } from 'mp-colorui'
+import { ClAccordion } from "mp-colorui";
 ```
 
 ## 一般用法
@@ -10,23 +10,23 @@ import { ClAccordion } from 'mp-colorui'
 
 ```html
 <ClAccordion card>
-	...
+  ...
 </ClAccordion>
 ```
 
 ### 禁止动画
 
 ```html
-<ClAccordion animation={false}>
-	...
+<ClAccordion animation="{false}">
+  ...
 </ClAccordion>
 ```
 
 ### 展开速度
 
 ```html
-<ClAccordion speed={0.3}>
-	...
+<ClAccordion speed="{0.3}">
+  ...
 </ClAccordion>
 ```
 
@@ -36,11 +36,11 @@ import { ClAccordion } from 'mp-colorui'
 
 | 参数      | 说明               | 类型    | 可选值 | 默认值    |
 | --------- | ------------------ | ------- | ------ | --------- |
-| title     | *手风琴标题*       | string  | -      | -         |
-| open      | *是否展开*         | boolean | -      | *`false`* |
-| animation | *开启动画效果*     | boolean | -      | *`true`*  |
-| card      | *是否使用卡片形式* | boolean | -      | *`false`* |
-| speed     | *展开速度*         | number  | -      | *`0.15`*  |
+| title     | _手风琴标题_       | string  | -      | -         |
+| open      | _是否展开_         | boolean | -      | _`false`_ |
+| animation | _开启动画效果_     | boolean | -      | _`true`_  |
+| card      | _是否使用卡片形式_ | boolean | -      | _`false`_ |
+| speed     | _展开速度_         | number  | -      | _`0.15`_  |
 
 ### Accordion 事件
 
@@ -49,4 +49,3 @@ import { ClAccordion } from 'mp-colorui'
 | onClick  | 点击手风琴事件 | boolean  |
 
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/accordion/index" />
-

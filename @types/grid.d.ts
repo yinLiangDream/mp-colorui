@@ -1,5 +1,5 @@
-import { ComponentClass } from 'react'
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -15,10 +15,10 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `square`, `normal`
    */
-  mode?: 'normal' | 'square';
+  mode?: "normal" | "square";
   children?: any;
 }
 
-declare const Grid: ComponentClass<IProps>
+declare const Grid: ComponentClass<IProps>;
 
-export default Grid
+export default Grid;

@@ -1,11 +1,12 @@
-import { ComponentClass } from 'react';
+import { ComponentClass } from "react";
 
 import {
   bgColorType,
   bgColorMoreType,
   lightBgColorType,
-  iconType, BaseComponent
-} from './baseType'
+  iconType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -15,7 +16,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选参数 `center`, `verb`, `default`
    */
-  type?: 'center' | 'verb' | 'default';
+  type?: "center" | "verb" | "default";
   /**
    * 背景色，可选类型请查看 默认色
    */

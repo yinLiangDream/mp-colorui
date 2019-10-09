@@ -32,7 +32,7 @@ export const resultCode = `
   result={filterResult}
 />
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -52,7 +52,7 @@ export const colorCode = `
   }}
 />
 \`\`\`
-`
+`;
 
 export const placeholderCode = `
 \`\`\`
@@ -64,7 +64,7 @@ export const placeholderCode = `
   }}
 />
 \`\`\`
-`
+`;
 
 export const actionsCode = `
 \`\`\`
@@ -87,4 +87,4 @@ export const actionsCode = `
   }}
 />
 \`\`\`
-`
+`;

@@ -2,12 +2,12 @@ export const cardCode = `
 \`\`\`
 <ClSwiper type='card' list={fileList} circular />
 \`\`\`
-`
+`;
 export const fullCode = `
 \`\`\`
 <ClSwiper type='screen' list={fileList} circular />
 \`\`\`
-`
+`;
 
 export const dotCode = `
 \`\`\`
@@ -21,7 +21,7 @@ export const dotCode = `
   indicatorActiveColor='#0081ff'
 />
 \`\`\`
-`
+`;
 export const videoCode = `
 \`\`\`
 const videoList = [{
@@ -54,4 +54,4 @@ const videoList = [{
   }}
 />
 \`\`\`
-`
+`;

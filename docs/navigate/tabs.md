@@ -1,12 +1,10 @@
-****
+---
 
 ### 使用说明
 
 ```jsx
-import {ClTabs} from 'mp-colorui'
+import { ClTabs } from "mp-colorui";
 ```
-
-
 
 ### 一般用法
 
@@ -37,73 +35,55 @@ const verbTabs = [
 </ClTabs>
 ```
 
-
-
 ### tab 排列类型
 
 ```jsx
-<ClTabs type='center' >
-	...
-</ClTabs>
+<ClTabs type="center">...</ClTabs>
 ```
 
 ### 背景色
 
 ```jsx
-<ClTabs bgColor='black' >
-	...
-</ClTabs>
+<ClTabs bgColor="black">...</ClTabs>
 ```
 
 ### 激活的颜色
 
 ```jsx
-<ClTabs activeColor='white' >
-	...
-</ClTabs>
+<ClTabs activeColor="white">...</ClTabs>
 ```
 
 ### 默认激活的索引
 
 ```jsx
-<ClTabs active={0} >
-	...
-</ClTabs>
+<ClTabs active={0}>...</ClTabs>
 ```
-
-
-
-
 
 ## 参数说明
 
 ### Tabs 参数
 
-| 参数        | 说明           | 类型    | 可选值                                          | 默认值      |
-| ----------- | -------------- | ------- | ----------------------------------------------- | ----------- |
-| type        | *tabs类型选择* | string  | *`default`*,*`center`*,*`verb`*                 | *`default`* |
-| bgColor     | *背景色*       | string  | 参考文档 [默认色](/home/color)                  | -           |
-| activeColor | *激活的颜色*   | string  | 参考文档 [默认色-标准色](/home/color?id=标准色) | *`black`*   |
-| active      | *激活的下标*   | number  | -                                               | 0           |
-| tabs        | *tab 数组*     | tabs[]  | [详情](/navigate/tabs?id=tabs)                  | []          |
-| touchMove   | *是否可拖动*   | boolean | -                                               | *`false`*   |
-
-
+| 参数        | 说明            | 类型    | 可选值                                          | 默认值      |
+| ----------- | --------------- | ------- | ----------------------------------------------- | ----------- |
+| type        | _tabs 类型选择_ | string  | _`default`_,_`center`_,_`verb`_                 | _`default`_ |
+| bgColor     | _背景色_        | string  | 参考文档 [默认色](/home/color)                  | -           |
+| activeColor | _激活的颜色_    | string  | 参考文档 [默认色-标准色](/home/color?id=标准色) | _`black`_   |
+| active      | _激活的下标_    | number  | -                                               | 0           |
+| tabs        | _tab 数组_      | tabs[]  | [详情](/navigate/tabs?id=tabs)                  | []          |
+| touchMove   | _是否可拖动_    | boolean | -                                               | _`false`_   |
 
 ### tabs
 
 | 参数 | 说明         | 类型   | 可选值                                             | 默认值 |
 | ---- | ------------ | ------ | -------------------------------------------------- | ------ |
-| text | *标题*       | string | -                                                  | -      |
-| icon | *图标*       | string | 参考文档 [Icon-*iconName*](/base/icon?id=iconname) | -      |
-| id   | *唯一标识符* | string | -                                                  | -      |
-
-
+| text | _标题_       | string | -                                                  | -      |
+| icon | _图标_       | string | 参考文档 [Icon-_iconName_](/base/icon?id=iconname) | -      |
+| id   | _唯一标识符_ | string | -                                                  | -      |
 
 ### Tabs 事件
 
 | 事件名称 | 说明       | 参数返回 |
 | -------- | ---------- | -------- |
-| onClick  | *点击事件* | index    |
+| onClick  | _点击事件_ | index    |
 
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/tabs/index" />

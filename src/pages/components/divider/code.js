@@ -2,7 +2,7 @@ export const normalCode = `
 \`\`\`
 <ClDivider>我是分割线</ClDivider>
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -12,7 +12,7 @@ export const colorCode = `
       
 <ClDivider color='blue'>我是分割线</ClDivider>
 \`\`\`
-`
+`;
 
 export const sizeCode = `
 \`\`\`
@@ -22,4 +22,4 @@ export const sizeCode = `
 
 <ClDivider size='xxlarge'>我是分割线</ClDivider>
 \`\`\`
-`
+`;

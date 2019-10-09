@@ -1,11 +1,11 @@
-import { ComponentClass } from 'react'
+import { ComponentClass } from "react";
 
-import { BaseComponent, bgColorType } from './baseType'
+import { BaseComponent, bgColorType } from "./baseType";
 
-export type TType = 'normal' | 'form';
-export type TShape = 'normal' | 'round';
+export type TType = "normal" | "form";
+export type TShape = "normal" | "round";
 export type TColor = bgColorType;
-export type TDirection = 'vertical' | 'horizontal';
+export type TDirection = "vertical" | "horizontal";
 
 export type TCheckboxGroup = {
   /**
@@ -40,7 +40,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `normal`, `form`
    */
-  type?: 'normal' | 'form';
+  type?: "normal" | "form";
   /**
    * 复选框形状设置
    *
@@ -77,6 +77,6 @@ export interface IProps extends BaseComponent {
 
 export interface CheckboxProps extends IProps {}
 
-declare const Checkbox: ComponentClass<CheckboxProps>
+declare const Checkbox: ComponentClass<CheckboxProps>;
 
-export default Checkbox
+export default Checkbox;

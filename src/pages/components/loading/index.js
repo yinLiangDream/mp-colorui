@@ -1,15 +1,15 @@
-import Taro, { useState } from '@tarojs/taro'
-import { ClCard, ClLayout, ClLoading, ClSwitch, ClTitleBar } from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { barCode, imageCode, lineCode, modalCode } from './code'
+import Taro, { useState } from "@tarojs/taro";
+import { ClCard, ClLayout, ClLoading, ClSwitch, ClTitleBar } from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { barCode, imageCode, lineCode, modalCode } from "./code";
 
-export default function Loading () {
-  const [barLoading, setBarLoading] = useState(false)
-  const [lineLoading, setLineLoading] = useState(false)
-  const [lineLoadingErr, setLineLoadingErr] = useState(false)
-  const [lineLoadingEnd, setLineLoadingEnd] = useState(false)
-  const [modalLoading, setModalLoading] = useState(false)
-  const [imageLoading, setImageLoading] = useState(false)
+export default function Loading() {
+  const [barLoading, setBarLoading] = useState(false);
+  const [lineLoading, setLineLoading] = useState(false);
+  const [lineLoadingErr, setLineLoadingErr] = useState(false);
+  const [lineLoadingEnd, setLineLoadingEnd] = useState(false);
+  const [modalLoading, setModalLoading] = useState(false);
+  const [imageLoading, setImageLoading] = useState(false);
   return (
     <ClLayout>
       <ClTitleBar
@@ -24,12 +24,12 @@ export default function Loading () {
           type="form"
           checked={barLoading}
           onChange={flag => {
-            setBarLoading(flag)
+            setBarLoading(flag);
           }}
         />
       </ClCard>
-      <GenerateCode code={barCode}/>
-      <ClLoading type="bar" show={barLoading}/>
+      <GenerateCode code={barCode} />
+      <ClLoading type="bar" show={barLoading} />
 
       <ClTitleBar
         title="line加载"
@@ -50,10 +50,10 @@ export default function Loading () {
           type="form"
           checked={lineLoading}
           onChange={flag => {
-            setLineLoading(flag)
+            setLineLoading(flag);
             if (!flag) {
-              setLineLoadingErr(false)
-              setLineLoadingEnd(false)
+              setLineLoadingErr(false);
+              setLineLoadingEnd(false);
             }
           }}
         />
@@ -62,8 +62,8 @@ export default function Loading () {
           type="form"
           checked={lineLoadingErr}
           onChange={flag => {
-            if (flag) setLineLoadingEnd(false)
-            setLineLoadingErr(flag)
+            if (flag) setLineLoadingEnd(false);
+            setLineLoadingErr(flag);
           }}
         />
         <ClSwitch
@@ -71,12 +71,12 @@ export default function Loading () {
           type="form"
           checked={lineLoadingEnd}
           onChange={flag => {
-            if (flag) setLineLoadingErr(false)
-            setLineLoadingEnd(flag)
+            if (flag) setLineLoadingErr(false);
+            setLineLoadingEnd(flag);
           }}
         />
       </ClCard>
-      <GenerateCode code={lineCode}/>
+      <GenerateCode code={lineCode} />
 
       <ClTitleBar
         title="modal加载"
@@ -95,14 +95,14 @@ export default function Loading () {
           type="form"
           checked={modalLoading}
           onChange={flag => {
-            setModalLoading(flag)
+            setModalLoading(flag);
             // setTimeout(() => {
             //   setModalLoading(false)
             // }, 3000)
           }}
         />
       </ClCard>
-      <GenerateCode code={modalCode}/>
+      <GenerateCode code={modalCode} />
 
       <ClTitleBar
         title="image加载"
@@ -121,18 +121,18 @@ export default function Loading () {
           type="form"
           checked={imageLoading}
           onChange={flag => {
-            setImageLoading(flag)
+            setImageLoading(flag);
             setTimeout(() => {
-              setImageLoading(false)
-            }, 3000)
+              setImageLoading(false);
+            }, 3000);
           }}
         />
       </ClCard>
-      <GenerateCode code={imageCode}/>
+      <GenerateCode code={imageCode} />
     </ClLayout>
-  )
+  );
 }
 
 Loading.config = {
-  navigationBarTitleText: 'Loading 加载'
-}
+  navigationBarTitleText: "Loading 加载"
+};

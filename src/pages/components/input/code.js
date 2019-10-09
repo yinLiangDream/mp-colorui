@@ -2,7 +2,7 @@ export const valueCode = `
 \`\`\`
 <ClInput defaultValue="我是预先输入的内容" />
 \`\`\`
-`
+`;
 
 export const titleCode = `
 \`\`\`
@@ -10,7 +10,7 @@ export const titleCode = `
 
 <ClInput title="年龄" placeholder="请输入年龄" type="number" />
 \`\`\`
-`
+`;
 
 export const patternCode = `
 <ClInput title="标准形式" placeholder="请输入姓名" />
@@ -21,7 +21,7 @@ export const patternCode = `
   type="number"
   pattern="material"
 />
-`
+`;
 
 export const titleWidthCode = `
 \`\`\`
@@ -34,13 +34,13 @@ export const titleWidthCode = `
   titleWidth={200}
 />
 \`\`\`
-`
+`;
 
 export const placeholderCode = `
 \`\`\`
 <ClInput placeholder="我是提示内容" />
 \`\`\`
-`
+`;
 
 export const typeCode = `
 \`\`\`
@@ -54,7 +54,7 @@ export const typeCode = `
 
 <ClInput placeholder="我可以输入身份证" type="idcard" />
 \`\`\`
-`
+`;
 
 export const longCode = `
 \`\`\`
@@ -64,19 +64,19 @@ export const longCode = `
   maxLength={10}
 />
 \`\`\`
-`
+`;
 
 export const disabledCode = `
 \`\`\`
 <ClInput placeholder="我禁止输入" type="text" disabled />
 \`\`\`
-`
+`;
 
 export const autoPushCode = `
 \`\`\`
 <ClInput placeholder="我自动上推" type="text" adjustPosition />
 \`\`\`
-`
+`;
 
 export const contentCode = `
 \`\`\`
@@ -122,4 +122,4 @@ export const contentCode = `
   }}
 />
 \`\`\`
-`
+`;

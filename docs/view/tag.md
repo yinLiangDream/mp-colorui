@@ -1,9 +1,9 @@
-****
+---
 
 ## 使用说明
 
 ```jsx
-import {ClTag} from 'mp-colorui'
+import { ClTag } from "mp-colorui";
 ```
 
 ## 一般用法
@@ -11,13 +11,13 @@ import {ClTag} from 'mp-colorui'
 ### 形状设置
 
 ```jsx
-<ClTag shape='round' />
+<ClTag shape="round" />
 ```
 
 ### 大小设置
 
 ```jsx
-<ClTag size='small' />
+<ClTag size="small" />
 ```
 
 ### 角标设置
@@ -38,23 +38,21 @@ import {ClTag} from 'mp-colorui'
 
 | 参数         | 说明                                                   | 类型        | 可选值                          | 默认值        |
 | ------------ | ------------------------------------------------------ | ----------- | ------------------------------- | ------------- |
-| shape        | *tag 形状*                                             | string      | *`normal`*,*`round`*,*`radius`* | *`normal`*    |
-| size         | *tag 大小设置*                                         | string      | *`normal`*,*`small`*            | *`normal`*    |
-| ~~canTouch~~ | ~~是否可以点击~~（属性已废弃，实际上也并没有产生效果） | ~~boolean~~ | ~~*`true`*,*`false`*~~          | ~~*`false`*~~ |
-| badge        | *该标签是否显示为角标位置*                             | boolean     | *`true`*,*`false`*              | *`false`*     |
-| tags         | *tag 数组*                                             | tags[]      | [详情](/view/tag?id=tags)       | []            |
+| shape        | _tag 形状_                                             | string      | _`normal`_,_`round`_,_`radius`_ | _`normal`_    |
+| size         | _tag 大小设置_                                         | string      | _`normal`_,_`small`_            | _`normal`_    |
+| ~~canTouch~~ | ~~是否可以点击~~（属性已废弃，实际上也并没有产生效果） | ~~boolean~~ | ~~_`true`_,_`false`_~~          | ~~_`false`_~~ |
+| badge        | _该标签是否显示为角标位置_                             | boolean     | _`true`_,_`false`_              | _`false`_     |
+| tags         | _tag 数组_                                             | tags[]      | [详情](/view/tag?id=tags)       | []            |
 
 ### tags
 
 | 参数     | 说明           | 类型    | 可选值                                               | 默认值    |
 | -------- | -------------- | ------- | ---------------------------------------------------- | --------- |
-| color    | *标签颜色*     | string  | 参考文档 [默认色](/home/color)（镂空只能使用标准色） | -         |
-| plain    | *是否镂空*     | boolean | *`true`*,*`false`*                                   | *`false`* |
-| icon     | *图标*         | string  | 参考文档 [Icon-*iconName*](/base/icon?id=iconname)   | -         |
+| color    | _标签颜色_     | string  | 参考文档 [默认色](/home/color)（镂空只能使用标准色） | -         |
+| plain    | _是否镂空_     | boolean | _`true`_,_`false`_                                   | _`false`_ |
+| icon     | _图标_         | string  | 参考文档 [Icon-_iconName_](/base/icon?id=iconname)   | -         |
 | text     | 文字           | string  | -                                                    | -         |
-| disabled | *是否禁止点击* | boolean | *`true`*,*`false`*                                   | *`false`* |
-
-
+| disabled | _是否禁止点击_ | boolean | _`true`_,_`false`_                                   | _`false`_ |
 
 ### Tag 事件
 

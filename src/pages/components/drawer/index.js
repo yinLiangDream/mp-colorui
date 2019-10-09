@@ -1,13 +1,13 @@
-import Taro, { pxTransform, useState } from '@tarojs/taro'
-import { ClButton, ClCard, ClDrawer, ClLayout, ClTitleBar } from 'mp-colorui'
-import { View } from '@tarojs/components'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { bottomCode, leftCode, rightCode } from './code'
+import Taro, { pxTransform, useState } from "@tarojs/taro";
+import { ClButton, ClCard, ClDrawer, ClLayout, ClTitleBar } from "mp-colorui";
+import { View } from "@tarojs/components";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { bottomCode, leftCode, rightCode } from "./code";
 
-export default function Drawer () {
-  const [left, setLeft] = useState(false)
-  const [right, setRight] = useState(false)
-  const [bottom, setBottom] = useState(false)
+export default function Drawer() {
+  const [left, setLeft] = useState(false);
+  const [right, setRight] = useState(false);
+  const [bottom, setBottom] = useState(false);
   return (
     <ClLayout>
       <ClTitleBar
@@ -21,43 +21,43 @@ export default function Drawer () {
         <ClButton
           long
           onClick={() => {
-            setLeft(true)
+            setLeft(true);
           }}
           shape="round"
         >
           我是左侧抽屉
         </ClButton>
       </ClCard>
-      <GenerateCode code={leftCode}/>
+      <GenerateCode code={leftCode} />
       <ClCard>
         <ClButton
           long
           onClick={() => {
-            setRight(true)
+            setRight(true);
           }}
           shape="round"
         >
           我是右侧抽屉
         </ClButton>
       </ClCard>
-      <GenerateCode code={rightCode}/>
+      <GenerateCode code={rightCode} />
       <ClCard>
         <ClButton
           long
           onClick={() => {
-            setBottom(true)
+            setBottom(true);
           }}
           shape="round"
         >
           我是下侧抽屉
         </ClButton>
       </ClCard>
-      <GenerateCode code={bottomCode}/>
+      <GenerateCode code={bottomCode} />
       <ClDrawer
         show={left}
         direction="left"
         onCancel={() => {
-          setLeft(false)
+          setLeft(false);
         }}
       >
         我是左侧抽屉
@@ -66,7 +66,7 @@ export default function Drawer () {
         show={right}
         direction="right"
         onCancel={() => {
-          setRight(false)
+          setRight(false);
         }}
       >
         我是右侧抽屉
@@ -75,7 +75,7 @@ export default function Drawer () {
         show={bottom}
         direction="bottom"
         onCancel={() => {
-          setBottom(false)
+          setBottom(false);
         }}
       >
         <ClCard type="full">
@@ -83,9 +83,9 @@ export default function Drawer () {
         </ClCard>
       </ClDrawer>
     </ClLayout>
-  )
+  );
 }
 
 Drawer.config = {
-  navigationBarTitleText: 'Drawer 抽屉'
-}
+  navigationBarTitleText: "Drawer 抽屉"
+};

@@ -5,7 +5,7 @@ export const cardCode = `
   我自带边距，你可以在里面填充任何自定义内容
 </ClCard>
 \`\`\`
-`
+`;
 export const fullCode = `
 \`\`\`
 <ClCard type="full">
@@ -13,7 +13,7 @@ export const fullCode = `
   我自带边距，你可以在里面填充任何自定义内容
 </ClCard>
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -24,7 +24,7 @@ export const colorCode = `
   我自带边距，你可以在里面填充任何自定义内容
 </ClCard>
 \`\`\`
-`
+`;
 
 export const activeCode = `
 \`\`\`
@@ -35,4 +35,4 @@ export const activeCode = `
   我自带边距，你可以在里面填充任何自定义内容
 </ClCard>
 \`\`\`
-`
+`;

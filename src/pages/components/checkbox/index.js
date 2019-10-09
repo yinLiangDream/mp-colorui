@@ -1,32 +1,32 @@
-import Taro from '@tarojs/taro'
-import { ClCard, ClCheckbox, ClLayout, ClTitleBar } from 'mp-colorui'
-import GenerateCode from '../../../usedComponents/generateCode'
-import { colorCode, positionCode, shapeCode, typeCode } from './code'
+import Taro from "@tarojs/taro";
+import { ClCard, ClCheckbox, ClLayout, ClTitleBar } from "mp-colorui";
+import GenerateCode from "../../../usedComponents/generateCode";
+import { colorCode, positionCode, shapeCode, typeCode } from "./code";
 
 const checkboxGroup = [
   {
     checked: false,
-    key: '凯尔',
-    value: 'ker'
+    key: "凯尔",
+    value: "ker"
   },
   {
     checked: true,
-    key: '莫甘娜',
-    value: 'mgn'
+    key: "莫甘娜",
+    value: "mgn"
   }
-]
+];
 
-export default function Checkbox () {
+export default function Checkbox() {
   return (
     <ClLayout>
-      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type"/>
+      <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type" />
       <ClCard>
-        <ClCheckbox type="normal" checkboxGroup={checkboxGroup}/>
+        <ClCheckbox type="normal" checkboxGroup={checkboxGroup} />
       </ClCard>
       <ClCard>
-        <ClCheckbox title="选一个" type="form" checkboxGroup={checkboxGroup}/>
+        <ClCheckbox title="选一个" type="form" checkboxGroup={checkboxGroup} />
       </ClCard>
-      <GenerateCode code={typeCode}/>
+      <GenerateCode code={typeCode} />
 
       <ClTitleBar
         title="方向"
@@ -50,9 +50,9 @@ export default function Checkbox () {
           direction="horizontal"
         />
       </ClCard>
-      <GenerateCode code={positionCode}/>
+      <GenerateCode code={positionCode} />
 
-      <ClTitleBar title="颜色" textColor="black" type="icon" subTitle="color"/>
+      <ClTitleBar title="颜色" textColor="black" type="icon" subTitle="color" />
       <ClCard>
         <ClCheckbox
           type="normal"
@@ -70,9 +70,9 @@ export default function Checkbox () {
           direction="horizontal"
         />
       </ClCard>
-      <GenerateCode code={colorCode}/>
+      <GenerateCode code={colorCode} />
 
-      <ClTitleBar title="形状" textColor="black" type="icon" subTitle="shape"/>
+      <ClTitleBar title="形状" textColor="black" type="icon" subTitle="shape" />
       <ClCard>
         <ClCheckbox
           shape="normal"
@@ -92,11 +92,11 @@ export default function Checkbox () {
           direction="horizontal"
         />
       </ClCard>
-      <GenerateCode code={shapeCode}/>
+      <GenerateCode code={shapeCode} />
     </ClLayout>
-  )
+  );
 }
 
 Checkbox.config = {
-  navigationBarTitleText: 'Checkbox 多选按钮'
-}
+  navigationBarTitleText: "Checkbox 多选按钮"
+};

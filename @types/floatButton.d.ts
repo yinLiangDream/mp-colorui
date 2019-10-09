@@ -1,5 +1,12 @@
 import { ComponentClass } from "react";
-import { BaseComponent, bgColorMoreType, bgColorType, iconType, lightBgColorType, normalSizeType } from './baseType'
+import {
+  BaseComponent,
+  bgColorMoreType,
+  bgColorType,
+  iconType,
+  lightBgColorType,
+  normalSizeType
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -8,11 +15,11 @@ export interface IProps extends BaseComponent {
    * 默认 top: `auto`, right: `50`, bottom: `200`, left: `auto`
    */
   position?: {
-    top?: number | 'auto';
-    right?: number | 'auto';
-    bottom?: number | 'auto';
-    left?: number | 'auto';
-  }
+    top?: number | "auto";
+    right?: number | "auto";
+    bottom?: number | "auto";
+    left?: number | "auto";
+  };
   /**
    * 点击阴影关闭
    *
@@ -24,7 +31,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认 `round`
    */
-  shape?: 'radius' | 'round';
+  shape?: "radius" | "round";
   /**
    * 按钮大小
    *
@@ -70,7 +77,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认 `vertical`
    */
-  direction?: 'vertical' | 'horizontal';
+  direction?: "vertical" | "horizontal";
   /**
    * 图标点击事件
    */
@@ -98,7 +105,7 @@ export interface IProps extends BaseComponent {
      * 图标色
      */
     iconColor?: bgColorType;
-  }[]
+  }[];
 }
 
 declare const FloatButton: ComponentClass<IProps>;

@@ -1,11 +1,12 @@
-import { ComponentClass } from 'react'
+import { ComponentClass } from "react";
 
 import {
   bgColorType,
   lightBgColorType,
   bgColorMoreType,
-  iconType, BaseComponent
-} from './baseType'
+  iconType,
+  BaseComponent
+} from "./baseType";
 
 export interface IProps extends BaseComponent {
   /**
@@ -78,6 +79,6 @@ export interface IProps extends BaseComponent {
 
 export interface ShopBarProps extends IProps {}
 
-declare const ShopBar: ComponentClass<ShopBarProps>
+declare const ShopBar: ComponentClass<ShopBarProps>;
 
-export default ShopBar
+export default ShopBar;

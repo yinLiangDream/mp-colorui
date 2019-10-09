@@ -16,7 +16,7 @@ export const positionCode = `
   <ClButton text='下方' shape='round' />
 </ClTip>
 \`\`\`
-`
+`;
 
 export const touchTypeCode = `
 \`\`\`
@@ -28,7 +28,7 @@ export const touchTypeCode = `
   <ClButton text='触摸触发' shape='round' />
 </ClTip>
 \`\`\`
-`
+`;
 
 export const autoCode = `
 \`\`\`
@@ -40,7 +40,7 @@ export const autoCode = `
   <ClButton text='右侧出现' shape='round' />
 </ClTip>
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -60,7 +60,7 @@ export const colorCode = `
   <ClButton text='下方' shape='round' />
 </ClTip>
 \`\`\`
-`
+`;
 
 export const customCode = `
 \`\`\`
@@ -70,7 +70,7 @@ const renderMessage = <View>...</View>
   <ClButton text='渲染的内容' shape='round' />
 </ClTip>
 \`\`\`
-`
+`;
 
 export const lengthCode = `
 \`\`\`
@@ -82,4 +82,4 @@ export const lengthCode = `
   <ClButton text='长度200' shape='round' />
 </ClTip>
 \`\`\`
-`
+`;

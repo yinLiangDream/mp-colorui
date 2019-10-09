@@ -1,8 +1,13 @@
-import { ComponentClass } from 'react'
+import { ComponentClass } from "react";
 
-import { bgColorMoreType, bgColorType, lightBgColorType, BaseComponent } from './baseType'
+import {
+  bgColorMoreType,
+  bgColorType,
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
 
-export type TTtype = 'card' | 'full';
+export type TTtype = "card" | "full";
 export type TTitle = string;
 
 export interface IProps extends BaseComponent {
@@ -35,6 +40,6 @@ export interface IProps extends BaseComponent {
   children?: any;
 }
 
-declare const Card: ComponentClass<IProps>
+declare const Card: ComponentClass<IProps>;
 
-export default Card
+export default Card;

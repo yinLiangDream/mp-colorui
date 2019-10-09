@@ -1,11 +1,16 @@
-import { bgColorType, bgColorMoreType, lightBgColorType, BaseComponent } from './baseType'
-import { ComponentClass } from 'react'
+import {
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType,
+  BaseComponent
+} from "./baseType";
+import { ComponentClass } from "react";
 
 export interface IProps extends BaseComponent {
   /**
    * 出现类型
    */
-  type?: 'full' | 'card';
+  type?: "full" | "card";
   /**
    * 提示文字
    */
@@ -33,7 +38,7 @@ export interface IProps extends BaseComponent {
     /**
      * 背景色
      */
-    bgColor?: bgColorType | bgColorMoreType | lightBgColorType | string
+    bgColor?: bgColorType | bgColorMoreType | lightBgColorType | string;
   }[];
   /**
    * 取消按钮的文本
@@ -65,6 +70,6 @@ export interface IProps extends BaseComponent {
   onCancel?: () => void;
 }
 
-declare const ActionSheet: ComponentClass<IProps>
+declare const ActionSheet: ComponentClass<IProps>;
 
-export default ActionSheet
+export default ActionSheet;

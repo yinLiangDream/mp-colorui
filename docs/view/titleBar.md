@@ -1,34 +1,30 @@
-****
+---
 
 ## 使用说明
 
 ```jsx
-import {ClTitleBar} from 'mp-colorui'
+import { ClTitleBar } from "mp-colorui";
 ```
-
-
 
 ## 一般用法
 
 ### 背景色
 
 ```jsx
-<ClTitleBar bgColor='black' />
+<ClTitleBar bgColor="black" />
 ```
 
 ### 文字颜色
 
 ```jsx
-<ClTitleBar textColor='white' />
+<ClTitleBar textColor="white" />
 ```
 
 ### 子标题类型
 
 ```jsx
-<ClTitleBar type='border-title' />
+<ClTitleBar type="border-title" />
 ```
-
-
 
 ## 参数说明
 
@@ -36,16 +32,16 @@ import {ClTitleBar} from 'mp-colorui'
 
 | 参数          | 说明                                     | 类型    | 可选值                                             | 默认值           |
 | ------------- | ---------------------------------------- | ------- | -------------------------------------------------- | ---------------- |
-| bgColor       | *标题栏背景色*                           | string  | 参考文档 [默认色](/home/color)                     | *`white`*        |
-| textColor     | *文字颜色*                               | string  | 参考文档 [默认色-标准色](/home/color?id=标准色)    | *`green`*        |
-| type          | *子标题类型*                             | string  | *`border-title`*,*`sub-title`*,*`icon`*            | *`border-title`* |
-| subTitle      | *子标题，仅 type 为 sub-title时设置*     | string  | -                                                  | -                |
-| subTitleColor | *子标题颜色*                             | string  | 参考文档 [默认色-标准色](/home/color?id=标准色)    |                  |
-| borderColor   | *子边线，仅 type 为 border-title 时设置* | string  | 参考文档 [默认色](/home/color)                     | *`green`*        |
-| borderLong    | *子边线长度*                             | number  | -                                                  | 20               |
-| icon          | *仅 type 为 icon 时设置，图标*           | string  | 参考文档 [Icon-*iconName*](/base/icon?id=iconname) | -                |
-| iconColor     | *图标颜色*                               | string  | 参考文档 [Icon-*iconName*](/base/icon?id=iconname) | *`green`*        |
-| title         | *标题*                                   | string  | -                                                  | -                |
-| renderRight   | *标题栏右侧自定义渲染*                   | Element | -                                                  | -                |
+| bgColor       | _标题栏背景色_                           | string  | 参考文档 [默认色](/home/color)                     | _`white`_        |
+| textColor     | _文字颜色_                               | string  | 参考文档 [默认色-标准色](/home/color?id=标准色)    | _`green`_        |
+| type          | _子标题类型_                             | string  | _`border-title`_,_`sub-title`_,_`icon`_            | _`border-title`_ |
+| subTitle      | _子标题，仅 type 为 sub-title 时设置_    | string  | -                                                  | -                |
+| subTitleColor | _子标题颜色_                             | string  | 参考文档 [默认色-标准色](/home/color?id=标准色)    |                  |
+| borderColor   | _子边线，仅 type 为 border-title 时设置_ | string  | 参考文档 [默认色](/home/color)                     | _`green`_        |
+| borderLong    | _子边线长度_                             | number  | -                                                  | 20               |
+| icon          | _仅 type 为 icon 时设置，图标_           | string  | 参考文档 [Icon-_iconName_](/base/icon?id=iconname) | -                |
+| iconColor     | _图标颜色_                               | string  | 参考文档 [Icon-_iconName_](/base/icon?id=iconname) | _`green`_        |
+| title         | _标题_                                   | string  | -                                                  | -                |
+| renderRight   | _标题栏右侧自定义渲染_                   | Element | -                                                  | -                |
 
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/titleBar/index" />

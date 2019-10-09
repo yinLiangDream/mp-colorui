@@ -1,7 +1,7 @@
-import { ComponentClass } from 'react';
-import { BaseComponent } from './baseType'
+import { ComponentClass } from "react";
+import { BaseComponent } from "./baseType";
 
-export type TDirection = 'left' | 'right' | 'bottom';
+export type TDirection = "left" | "right" | "bottom";
 
 export interface IProps extends BaseComponent {
   /**
@@ -33,7 +33,7 @@ export interface IProps extends BaseComponent {
   onCancel?: () => void;
 }
 
-export interface DrawerProps extends IProps { }
+export interface DrawerProps extends IProps {}
 declare const Drawer: ComponentClass<DrawerProps>;
 
 export default Drawer;

@@ -1,4 +1,4 @@
-import { ComponentClass } from 'react'
+import { ComponentClass } from "react";
 
 import {
   normalSizeType,
@@ -7,9 +7,9 @@ import {
   bgColorMoreType,
   lightBgColorType,
   BaseComponent
-} from './baseType'
+} from "./baseType";
 
-export type TShape = 'radius' | 'round';
+export type TShape = "radius" | "round";
 export type TSize = normalSizeType | number;
 export type TBgColor = bgColorType | bgColorMoreType | lightBgColorType;
 export type THeaderArray = {
@@ -79,6 +79,6 @@ export interface IProps extends BaseComponent {
   headerArray?: THeaderArray[];
 }
 
-declare const ClAvatar: ComponentClass<IProps>
+declare const ClAvatar: ComponentClass<IProps>;
 
-export default ClAvatar
+export default ClAvatar;

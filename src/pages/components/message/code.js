@@ -8,4 +8,4 @@ export const typeCode = `
   bgColor={bgColor}
 />
 \`\`\`
-`
+`;

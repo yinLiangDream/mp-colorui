@@ -13,7 +13,7 @@ const typeMenu = [
 
 <ClMenuList list={typeMenu} />
 \`\`\`
-`
+`;
 
 export const contentCode = `
 \`\`\`
@@ -36,7 +36,7 @@ const arrowMenu = [
 
 <ClMenuList card list={arrowMenu} />
 \`\`\`
-`
+`;
 
 export const lineCode = `
 \`\`\`
@@ -44,4 +44,4 @@ export const lineCode = `
 
 <ClMenuList list={typeMenu} />
 \`\`\`
-`
+`;

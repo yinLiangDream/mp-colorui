@@ -19,7 +19,7 @@ const defaultTabs = [...new Array(10)].map(gen)
   }
 </ClTabs>
 \`\`\`
-`
+`;
 
 export const moveCode = `
 \`\`\`
@@ -40,7 +40,7 @@ const defaultTabs = [...new Array(10)].map(gen)
   ))}
 </ClTabs>
 \`\`\`
-`
+`;
 
 export const verbCode = `
 const verbTabs = [
@@ -65,7 +65,7 @@ const verbTabs = [
     </View>
   ))}
 </ClTabs>
-`
+`;
 
 export const centerCode = `
 \`\`\`
@@ -98,7 +98,7 @@ const verbTabs = [
   ))}
 </ClTabs>
 \`\`\`
-`
+`;
 
 export const colorCode = `
 \`\`\`
@@ -133,7 +133,7 @@ const verbTabs = [
   ))}
 </ClTabs>
 \`\`\`
-`
+`;
 
 export const iconCode = `
 \`\`\`
@@ -165,4 +165,4 @@ const iconTabs = [
   </ClTabs>
 </ClCard>
 \`\`\`
-`
+`;

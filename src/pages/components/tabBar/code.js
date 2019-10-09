@@ -20,7 +20,7 @@ const defaultTabs = [
 
 <ClTabBar active={1} tabs={defaultTabs} />
 \`\`\`
-`
+`;
 
 export const bgColorCode = `
 \`\`\`
@@ -44,7 +44,7 @@ const defaultTabs = [
 
 <ClTabBar active={1} bgColor="light-cyan" tabs={defaultTabs} />
 \`\`\`
-`
+`;
 
 export const activeColorCode = `
 \`\`\`
@@ -73,7 +73,7 @@ const defaultTabs = [
   tabs={defaultTabs}
 />
 \`\`\`
-`
+`;
 
 export const upCode = `
 \`\`\`
@@ -102,4 +102,4 @@ const defaultTabs = [
   tabs={actionTabs}
 />
 \`\`\`
-`
+`;

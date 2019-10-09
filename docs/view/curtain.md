@@ -1,9 +1,9 @@
-****
+---
 
 ## 使用指南
 
 ```js
-import { ClCurtain } from 'mp-colorui'
+import { ClCurtain } from "mp-colorui";
 ```
 
 ## 一般用法
@@ -13,7 +13,7 @@ import { ClCurtain } from 'mp-colorui'
 ### 关闭位置
 
 ```html
-<ClCurtain closeBtnPosition='top'>
+<ClCurtain closeBtnPosition="top">
   ...
 </ClCurtain>
 ```
@@ -21,7 +21,7 @@ import { ClCurtain } from 'mp-colorui'
 ### 点击阴影关闭
 
 ```html
-<ClCurtain closeWithShadow >
+<ClCurtain closeWithShadow>
   ...
 </ClCurtain>
 ```
@@ -32,9 +32,9 @@ import { ClCurtain } from 'mp-colorui'
 
 | 参数             | 说明               | 类型    | 可选值                                                                         | 默认值     |
 | ---------------- | ------------------ | ------- | ------------------------------------------------------------------------------ | ---------- |
-| show             | *是否显示*         | boolean |                                                                                | `false`    |
-| closeWithShadow  | *是否点击阴影关闭* | boolean |                                                                                | *`false`*  |
-| closeBtnPosition | *关闭按钮位置*     | string  | *`top`*,*`top-ledt`*,*`top-right`*,*`bottom`*,*`bottom-left`*,*`bottom-right`* | *`bottom`* |
+| show             | _是否显示_         | boolean |                                                                                | `false`    |
+| closeWithShadow  | _是否点击阴影关闭_ | boolean |                                                                                | _`false`_  |
+| closeBtnPosition | _关闭按钮位置_     | string  | _`top`_,_`top-ledt`_,_`top-right`_,_`bottom`_,_`bottom-left`_,_`bottom-right`_ | _`bottom`_ |
 
 ### Curtain 事件
 

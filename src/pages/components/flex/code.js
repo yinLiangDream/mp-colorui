@@ -14,7 +14,7 @@ size.map(cc => (
   </ClCard>
 ));
 \`\`\
-`
+`;
 
 export const perCode = `
 \`\`\`
@@ -28,7 +28,7 @@ percent.map((perc, index) => (
   </View>
 ));
 \`\`\`
-`
+`;
 
 export const justifyCode = `
 \`\`\`
@@ -47,7 +47,7 @@ justify.map(jus => (
   </ClCard>
 ));
 \`\`\`
-`
+`;
 
 export const alignCode = `
 \`\`\`
@@ -67,4 +67,4 @@ align.map(al => (
   </ClCard>
 ));
 \`\`\`
-`
+`;
