@@ -1,171 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="CI&#10;update travis">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/loading.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/loading.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/modal.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/modal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/progress.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/progress.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/button.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/icon.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/icon.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/text.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/text.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/checkbox.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/checkbox.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/form.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/form.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/imagePicker.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/imagePicker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/input.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/input.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/radio.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/radio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/select.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/select.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/switch.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/switch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/color.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/color.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/introduce.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/introduce.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/quick.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/quick.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/card.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/card.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/drawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/drawer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/layout.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/menuList.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/menuList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/screenDrawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/screenDrawer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/navBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/navBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/tabBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/tabs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/verticalTab.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/verticalTab.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/avatar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/avatar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/curtain.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/curtain.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/searchBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/searchBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/shopBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/shopBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/steps.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/steps.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/swiper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/swiper.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/tag.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/tag.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/timeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/timeline.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/titleBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/titleBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/curtain/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/curtain/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/divider/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/divider/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/drawer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/drawer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/flex/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/flex/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/formItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/grid/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menuList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menuList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/message/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/progress/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/progress/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/screenDrawer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screenDrawer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shopBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shopBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/steps/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/steps/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/switch/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tag/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tag/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/titleBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/titleBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/color.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/icon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/size.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/action/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/base/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/accordion/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/accordion/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/actionSheet/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/actionSheet/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/animation/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/animation/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/avatar/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/avatar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/button/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/button/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/card/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/card/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/checkbox/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/checkbox/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/color/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/curtain/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/curtain/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/divider/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/divider/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/drawer/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/drawer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/flex/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/flex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/floatButton/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/floatButton/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/grid/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/grid/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/icon/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/imagePicker/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/imagePicker/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/input/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/input/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/layout/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/layout/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/loading/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/loading/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/menuList/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/menuList/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/message/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/message/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/modal/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/modal/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/navBar/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/navBar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/progress/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/progress/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/radio/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/radio/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/screenDrawer/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/screenDrawer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/searchBar/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/searchBar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/select/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/select/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/shopBar/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/shopBar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/steps/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/steps/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiper/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiper/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiperAction/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/swiperAction/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/switch/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/switch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabBar/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabBar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabs/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tabs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tag/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tag/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/text/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/text/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/timeline/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/timeline/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tip/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/tip/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/titleBar/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/titleBar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/verticalTab/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/verticalTab/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/form/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/components/userCenter/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/layout/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/navigate/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/update/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/view/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usedComponents/generateCode/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usedComponents/menuNavigate/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -707,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570602027006</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="app&#10;delete all&#10;fix all components utils bug">
+      <created>1570607790665</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1570607790665</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView">
@@ -754,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="FEATURE&#10;组件 Avatar 可自定义大小" />
     <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
     <MESSAGE value="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题" />
     <MESSAGE value="更新版本" />
@@ -779,6 +624,7 @@
     <MESSAGE value="component&#10;add component className and style&#10;fix(components/verticalTab) H5 attributes scrollAnimationDuration  not working" />
     <MESSAGE value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
     <MESSAGE value="CI&#10;update travis" />
-    <option name="LAST_COMMIT_MESSAGE" value="CI&#10;update travis" />
+    <MESSAGE value="app&#10;delete all&#10;fix all components utils bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="app&#10;delete all&#10;fix all components utils bug" />
   </component>
 </project>

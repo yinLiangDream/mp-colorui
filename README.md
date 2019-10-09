@@ -4,22 +4,21 @@
 
 [![npm](https://img.shields.io/npm/dm/mp-colorui) ![NPM](https://img.shields.io/npm/l/mp-colorui) ![npm type definitions](https://img.shields.io/npm/types/mp-colorui) ![GitHub package.json version](https://img.shields.io/github/package-json/v/yinliangdream/mp-colorui)](https://github.com/yinLiangDream/mp-colorui)
 
-
 ## 特色
 
- - 全部采用 TypeScript 编写，类型声明一目了然
- - 丰富的配色方案，极具色彩表现力
- - 丰富的组件库，应有尽有
+- 全部采用 TypeScript 编写，类型声明一目了然
+- 丰富的配色方案，极具色彩表现力
+- 丰富的组件库，应有尽有
 
 ## 使用方式
 
-> 具体文档请查看：[MP-ColorUI 文档](https://yinliangdream.github.io/mp-colorui-doc/#/)
+> 具体文档请查看：[MP-ColorUI 文档](https://yinliangdream.github.io/mp-colorui-doc/home/introduce.html)
 >
 > 安装：`npm i mp-colorui`， `yarn add mp-colorui`
 
-## *注意*
+## _注意_
 
-> *由于该组件库还处于快速迭代期，更新频率会比较高，请 [watch](https://github.com/yinLiangDream/mp-colorui) 关注版本动向，及时更新版本！*
+> _由于该组件库还处于快速迭代期，更新频率会比较高，请 [watch](https://github.com/yinLiangDream/mp-colorui) 关注版本动向，及时更新版本！_
 
 ## 投票及建议
 
@@ -42,7 +41,7 @@
 ### 引入组件
 
 ```jsx
-import { ClAvatar } from 'mp-colorui'
+import { ClAvatar } from "mp-colorui";
 
-<ClAvatar shadow shape='round' size='large'/>
+<ClAvatar shadow shape="round" size="large" />;
 ```
