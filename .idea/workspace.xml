@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/timer/timer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/timer/timer.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +47,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
@@ -66,7 +66,7 @@
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -213,7 +213,8 @@
       <workItem from="1570349935166" duration="4486000" />
       <workItem from="1570366797163" duration="12400000" />
       <workItem from="1570503381968" duration="16049000" />
-      <workItem from="1570543640531" duration="1385000" />
+      <workItem from="1570543640531" duration="2794000" />
+      <workItem from="1570590024695" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="shopBar 组件完成">
       <created>1556257760903</created>
@@ -530,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570531351907</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23">
+      <created>1570588057624</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1570588057624</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -577,7 +585,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BUG&#10;修复 MenuList 组件 list 属性下的 disabled 属性声明为必输项问题" />
     <MESSAGE value="BUG&#10;修复无法自定义主题颜色问题" />
     <MESSAGE value="FEATURE&#10;组件 Avatar 可自定义大小" />
     <MESSAGE value="FEATURE&#10;组件 Flex 新增属性 direction，用于控制浮动布局的方向" />
@@ -602,6 +609,7 @@
     <MESSAGE value="app&#10;0.5.2 日志更新" />
     <MESSAGE value="component&#10;add @types className 和 style" />
     <MESSAGE value="component&#10;add component className and style&#10;fix(components/verticalTab) H5 attributes scrollAnimationDuration  not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="component&#10;add component className and style&#10;fix(components/verticalTab) H5 attributes scrollAnimationDuration  not working" />
+    <MESSAGE value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
+    <option name="LAST_COMMIT_MESSAGE" value="version&#10;1.update version&#10;2.change homepage address&#10;3.fix #23" />
   </component>
 </project>
