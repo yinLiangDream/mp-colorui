@@ -21,6 +21,12 @@ import { ClButton } from "mp-colorui";
 @import "~mp-colorui/dist/style/index.scss"; // 引入组件样式
 ```
 
+如果你不是使用的 `scss` 文件，用下面一种引用方式，在 `app.js/jsx/tsx` 里引入
+
+```js
+import 'mp-colorui/dist/style/index.scss'; // 引入组件样式，仅需引入一次即可
+```
+
 ## 示例
 
 在 `/myApp/src/pages/index/index.tsx` 文件添加以下代码
