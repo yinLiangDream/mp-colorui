@@ -6,35 +6,7 @@ import { ClSearchBar } from "mp-colorui";
 
 ## 一般用法
 
-### 搜索栏形状
-
-```jsx
-<ClSearchBar shape="round" />
-```
-
-### 占位符设置
-
-```jsx
-<ClSearchBar placeholder="请输入内容" />
-```
-
-### 固定顶端
-
-```jsx
-<ClSearchBar fix />
-```
-
-### 功能图标组
-
-```jsx
-<ClSearchBar leftIcons={["round", "close"]} />
-```
-
-### 搜索结果显示
-
-```jsx
-<ClSearchBar showResult result={[...]} />
-```
+<CodeShow componentName='searchBar' />
 
 ## 参数说明
 
@@ -46,10 +18,10 @@ import { ClSearchBar } from "mp-colorui";
 | placeholder      | _占位内容_                      | string   | -                                                  | -          |
 | fix              | _是否固定最上端_                | string   | _`true`_,_`false`_                                 | _`false`_  |
 | searchType       | _搜索框右边显示的内容的类型_    | string   | _`button`_,_`text`_,_`none`_,_`list`_              | _`button`_ |
-| leftIcons        | _左边的图标组_                  | icon[]   | 参考文档 [Icon-_iconName_](/base/icon?id=iconname) | []         |
+| leftIcons        | _左边的图标组_                  | icon[]   | 参考文档 [Icon-_iconName_](/base/icon#iconname) | []         |
 | bgColor          | _背景色_                        | string   | 参考文档 [默认色](/home/color)                     | -          |
 | rightButtonColor | _右侧按钮颜色_                  | string   | 参考文档 [默认色](/home/color)                     | _`white`_  |
-| rightTextColor   | _type 为 text 时，右侧文字颜色_ | string   | 参考文档 [默认色-标准色](/home/color?id=标准色)    | _`black`_  |
+| rightTextColor   | _type 为 text 时，右侧文字颜色_ | string   | 参考文档 [默认色-标准色](/home/color#标准色)    | _`black`_  |
 | showResult       | 是否显示搜索结果                | boolean  | -                                                  | `false`    |
 | showLoading      | 是否显示搜索结果加载页面        | Boolean  | -                                                  | `false`    |
 | result           | 搜索结果列表                    | result[] | 参考下方 result 参数                               | []         |

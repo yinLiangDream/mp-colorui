@@ -6,23 +6,7 @@ import { ClDrawer } from "mp-colorui";
 
 ## 一般用法
 
-### 显示抽屉
-
-```jsx
-<ClDrawer show>内容</ClDrawer>
-```
-
-### 抽屉方向
-
-```jsx
-<ClDrawer direction="left">内容</ClDrawer>
-```
-
-### 点击阴影关闭
-
-```jsx
-<ClDrawer closeWithShadow>内容</ClDrawer>
-```
+<CodeShow componentName='drawer' />
 
 ## 参数说明
 

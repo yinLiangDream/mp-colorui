@@ -6,41 +6,7 @@ import { ClInput } from "mp-colorui";
 
 ## 一般用法
 
-### 输入框默认值
-
-```jsx
-<ClInput value="我是内容" />
-```
-
-### 输入框占位符
-
-```jsx
-<ClInput placeholder="请输入内容" />
-```
-
-### 输入类型
-
-```jsx
-<ClInput type="number" placeholder="我只能输入数字" />
-```
-
-### 最大长度设置
-
-```jsx
-<ClInput maxLength="140" placeholder="我最大只能输入 140 个字符" />
-```
-
-### 禁止输入
-
-```jsx
-<ClInput disabled />
-```
-
-### 键盘弹起时，自动上推页面
-
-```jsx
-<ClInput adjustPosition />
-```
+<CodeShow componentName='input' />
 
 ## 参数说明
 
@@ -53,8 +19,8 @@ import { ClInput } from "mp-colorui";
 | maxLength         | _最大输入长度_                                                                                                | number          | -                                                           | _-1_      |
 | disabled          | _禁止输入_                                                                                                    | boolean         | _`true`_,_`false`_                                          | _`false`_ |
 | adjustPosition    | _键盘弹起时，是否自动上推页面_                                                                                | boolean         | _`true`_,_`false`_                                          | _`false`_ |
-| icon              | _输入框后置 icon_                                                                                             | Object          | 参考文档 [Icon-Icon 参数](/base/icon?id=icon-参数)          | {}        |
-| button            | _输入框后置按钮_                                                                                              | Object          | 参考文档 [button-Button 参数](/base/button?id=button-参数)  | {}        |
+| icon              | _输入框后置 icon_                                                                                             | Object          | 参考文档 [Icon-Icon 参数](/base/icon#icon-参数)          | {}        |
+| button            | _输入框后置按钮_                                                                                              | Object          | 参考文档 [button-Button 参数](/base/button#button-参数)  | {}        |
 | image             | _输入框后置图片 url_                                                                                          | string          | -                                                           | -         |
 | renderCustomRight | _自定义按钮右边的内容，请传入自定义内容_                                                                      | Element         | -                                                           | -         |
 | value             | _输入框默认值，不同于 defaultValue，该值在每次改变的时候都会进行初始化，所以要避免在 onChange 事件里修改该值_ | string          | -                                                           | -         |

@@ -6,29 +6,7 @@ import { ClRadio } from "mp-colorui";
 
 ## 一般用法
 
-### 单选框表现形式
-
-```jsx
-<ClRadio type="form" />
-```
-
-### 单选框排列方向
-
-```jsx
-<ClRadio direction="vertical" />
-```
-
-### 单选框形状
-
-```jsx
-<ClRadio shape="radio" />
-```
-
-### 选中颜色
-
-```jsx
-<ClRadio color="black" />
-```
+<CodeShow componentName='radio' />
 
 ## 参数说明
 
@@ -40,9 +18,9 @@ import { ClRadio } from "mp-colorui";
 | direction    | _单选框方向_            | string       | _`vertical`_,_`horizontal`_                     | _`vertical`_ |
 | shape        | _单选框形状_            | string       | _`normal`_,_`radio`_                            | _`normal`_   |
 | title        | _type 为 form 时的标题_ | string       | -                                               | -            |
-| color        | _选中颜色_              | string       | 参考文档 [默认色-标准色](/home/color?id=标准色) | _`green`_    |
+| color        | _选中颜色_              | string       | 参考文档 [默认色-标准色](/home/color#标准色) | _`green`_    |
 | checkedValue | 选中的 Value 值         | string       | -                                               | -            |
-| radioGroup   | _单选框组_              | radioGroup[] | [详情](/form/radio?id=radiogroup)               | []           |
+| radioGroup   | _单选框组_              | radioGroup[] | [详情](/form/radio#radiogroup)               | []           |
 
 ### radioGroup
 

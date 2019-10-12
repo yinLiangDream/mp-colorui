@@ -6,17 +6,7 @@ import { ClCard } from "mp-colorui";
 
 ## 一般用法
 
-### 卡片类型
-
-```jsx
-<ClCard type="card">我是卡片</ClCard>
-```
-
-### 背景色
-
-```jsx
-<ClCard bgColor="blue">背景是蓝色的</ClCard>
-```
+<CodeShow componentName='card' />
 
 ## 参数说明
 

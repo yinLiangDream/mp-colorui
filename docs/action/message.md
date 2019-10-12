@@ -12,17 +12,7 @@ import { ClMessage } from "mp-colorui";
 
 ## 一般用法
 
-### 类型
-
-```jsx
-<ClMessage type="success" message="我是消息" />
-```
-
-### 持续时间
-
-```jsx
-<ClMessage duration={2} message="我是消息" />
-```
+<CodeShow componentName='message' />
 
 ## 参数说明
 

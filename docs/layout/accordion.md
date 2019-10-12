@@ -6,29 +6,9 @@ import { ClAccordion } from "mp-colorui";
 
 ## 一般用法
 
-### 卡片模式
+<CodeShow componentName='accordion' />
 
-```html
-<ClAccordion card>
-  ...
-</ClAccordion>
-```
 
-### 禁止动画
-
-```html
-<ClAccordion animation="{false}">
-  ...
-</ClAccordion>
-```
-
-### 展开速度
-
-```html
-<ClAccordion speed="{0.3}">
-  ...
-</ClAccordion>
-```
 
 ## 参数说明
 

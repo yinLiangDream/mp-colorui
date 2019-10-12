@@ -6,35 +6,7 @@ import { ClProgress } from "mp-colorui";
 
 ## 一般用法
 
-### 进度条形状
-
-```jsx
-<ClProgress shape="round" />
-```
-
-### 进度条背景色
-
-```jsx
-<ClProgress bgColor="black" />
-```
-
-### 进度条动画
-
-```jsx
-<ClProgress animation />
-```
-
-### 进度条条纹
-
-```jsx
-<ClProgress stripe />
-```
-
-### 进度条百分比
-
-```jsx
-<ClProgress percent={60} />
-```
+<CodeShow componentName='progress' />
 
 ## 参数说明
 

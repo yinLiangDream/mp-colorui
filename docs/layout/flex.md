@@ -6,23 +6,7 @@ import { ClFlex } from "mp-colorui";
 
 ## 一般用法
 
-### 水平方向排列方式
-
-```jsx
-<ClFlex justify="center" />
-```
-
-### 垂直方向排列方式
-
-```jsx
-<ClFlex align="center" />
-```
-
-### 换行
-
-```jsx
-<ClFlex wrap />
-```
+<CodeShow componentName='flex' />
 
 ## 参数说明
 

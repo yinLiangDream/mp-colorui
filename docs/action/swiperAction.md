@@ -6,40 +6,7 @@ import { ClSwiperAction } from "mp-colorui";
 
 ## 一般用法
 
-### 方向
-
-```jsx
-<ClSwiperAction direction="right" options={list}>
-  ...
-</ClSwiperAction>
-<ClSwiperAction direction="left" options={list}>
-  ...
-</ClSwiperAction>
-```
-
-### 开启状态
-
-```jsx
-<ClSwiperAction direction="right" options={list} show>
-  ...
-</ClSwiperAction>
-```
-
-### 禁止滑动
-
-```jsx
-<ClSwiperAction direction="right" options={list} disabled>
-  ...
-</ClSwiperAction>
-```
-
-### 自动关闭
-
-```jsx
-<ClSwiperAction direction="right" options={list} autoClose>
-  ...
-</ClSwiperAction>
-```
+<CodeShow componentName='swiperAction' />
 
 ## 参数说明
 

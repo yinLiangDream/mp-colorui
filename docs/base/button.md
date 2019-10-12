@@ -8,30 +8,7 @@ import { ClButton } from "mp-colorui";
 
 ## 一般用法
 
-```html
-<ClButton>按钮文案</ClButton>
-```
-
-```html
-<ClButton bgColor="block">按钮文案</ClButton>
-```
-
-```html
-<ClButton shape="round">按钮文案</ClButton>
-```
-
-### 不同尺寸
-
-```html
-<ClButton size="normal">按钮文案</ClButton>
-<ClButton size="small">按钮文案</ClButton>
-```
-
-### 带 loading icon
-
-```html
-<ClButton loading type="primary">按钮文案</ClButton>
-```
+<CodeShow componentName='button' />
 
 ## 参数说明
 

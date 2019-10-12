@@ -6,23 +6,7 @@ import { ClLayout } from "mp-colorui";
 
 ## 一般用法
 
-### 浮动
-
-```jsx
-<ClLayout float="left" />
-```
-
-### 内边距
-
-```jsx
-<ClLayout padding="normal" paddingDirection="around" />
-```
-
-### 外边距
-
-```jsx
-<ClLayout margin="normal" marginDirection="round" />
-```
+<CodeShow componentName='layout' />
 
 ## 参数说明
 

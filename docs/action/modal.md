@@ -10,45 +10,7 @@ import { ClModal } from "mp-colorui";
 
 ## 一般用法
 
-### 显示模态框
-
-```jsx
-<ClModal show>我是内容</ClModal>
-```
-
-### 设置标题
-
-```jsx
-<ClModal title="我是标题">我是内容</ClModal>
-```
-
-### 设置右上角关闭按钮
-
-```jsx
-<ClModal close>我是内容</ClModal>
-```
-
-### 设置点击遮罩层关闭
-
-```jsx
-<ClModal closeWithShadow>我是内容</ClModal>
-```
-
-### 自定义操作栏
-
-```jsx
-const action = <ClButton>点我</ClButton>
-
-<ClModal renderAction={action} >我是内容</ClModal>
-```
-
-### 自定义标题栏
-
-```jsx
-const title = <View>我是标题</View>
-
-<Clmodal renderTitle={title} >我是内容</Clmodal>
-```
+<CodeShow componentName='modal' />
 
 ## 参数说明
 
@@ -64,7 +26,7 @@ const title = <View>我是标题</View>
 | titleBgColor    | _标题栏背景色_         | string    | 参考文档 [默认色](/home/color)                       | -         |
 | actionColor     | _操作栏颜色_           | string    | 参考文档 [默认色](/home/color)                       | -         |
 | padding         | _padding 距离_         | string    | _`xsmall`_,_`small`_,_`normal`_,_`large`_,_`xlarge`_ | -         |
-| actions         | _操作栏操作组_         | actions[] | [详情](/action/modal?id=actions)                     | []        |
+| actions         | _操作栏操作组_         | actions[] | [详情](/action/modal#actions)                     | []        |
 | renderAction    | _自定义操作栏_         | Element   | -                                                    | -         |
 | renderTitle     | _自定义标题栏_         | Element   | -                                                    | -         |
 
@@ -73,7 +35,7 @@ const title = <View>我是标题</View>
 | 参数  | 说明          | 类型   | 可选值                                          | 默认值 |
 | ----- | ------------- | ------ | ----------------------------------------------- | ------ |
 | text  | _action 文字_ | string | -                                               | -      |
-| color | _action 颜色_ | string | 参考文档 [默认色-标准色](/home/color?id=标准色) | -      |
+| color | _action 颜色_ | string | 参考文档 [默认色-标准色](/home/color#标准色) | -      |
 
 ### Modal 事件
 

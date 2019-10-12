@@ -10,45 +10,7 @@ import { ClVerticalTab, ClVerticalTabCell } from "mp-colorui";
 
 > 注：ClVerticalTab 内部元素必须由一层 View 包裹，且 id 必须和 tabs 一一对应。
 
-```jsx
-const tabs = [{
-  name: '标签 1',
-  id: 'id-1'
-}, {
-  name: '标签 2',
-  id: 'id-2'
-}]
-
-<ClVerticalTab tabs={tabs} height={600}>
-  <View id='id-1'>
-    <ClVerticalTabCell>我是内容</ClVerticalTabCell>
-  </View>
-  <View id='id-2'>
-    <ClVerticalTabCell>我是内容</ClVerticalTabCell>
-  </View>
-</ClVerticalTab>
-```
-
-### 默认激活的索引
-
-```jsx
-const tabs = [{
-  name: '标签 1',
-  id: 'id-1'
-}, {
-  name: '标签 2',
-  id: 'id-2'
-}]
-
-<ClVerticalTab tabs={tabs} current={tabs[0].id} height={600}>
-  <View id='id-1'>
-    <ClVerticalTabCell>我是内容</ClVerticalTabCell>
-  </View>
-  <View id='id-2'>
-    <ClVerticalTabCell>我是内容</ClVerticalTabCell>
-  </View>
-</ClVerticalTab>
-```
+<CodeShow componentName='verticalTab' />
 
 ## 参数说明
 

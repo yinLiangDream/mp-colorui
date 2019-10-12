@@ -6,23 +6,7 @@ import { ClShopBar } from "mp-colorui";
 
 ## 一般用法
 
-### 设置背景色
-
-```jsx
-<ClShopBar bgColor="black" />
-```
-
-### 固定在底部
-
-```jsx
-<ClShopBar fix />
-```
-
-### 分割线
-
-```jsx
-<ClShopBar border />
-```
+<CodeShow componentName='shopBar' />
 
 ## 参数说明
 
@@ -33,15 +17,15 @@ import { ClShopBar } from "mp-colorui";
 | bgColor | _背景色_         | string    | 参考文档 [默认色](/home/color)   | _`white`_ |
 | fix     | _是否固定在底部_ | boolean   | _`true`_,_`false`_               | _`false`_ |
 | border  | _是否显示分割线_ | boolean   | _`true`_,_`false`_               | _`false`_ |
-| tabs    | _每一项 tab_     | tabs[]    | [详情](/view/shopBar?id=tabs)    | []        |
-| buttons | _右侧按钮组_     | buttons[] | [详情](/view/shopBar?id=buttons) | []        |
+| tabs    | _每一项 tab_     | tabs[]    | [详情](/view/shopBar#tabs)    | []        |
+| buttons | _右侧按钮组_     | buttons[] | [详情](/view/shopBar#buttons) | []        |
 
 ### tabs
 
 | 参数  | 说明     | 类型           | 可选值                                             | 默认值   |
 | ----- | -------- | -------------- | -------------------------------------------------- | -------- |
 | badge | _角标_   | boolean/Number | -                                                  | _`true`_ |
-| icon  | _图标_   | string         | 参考文档 [Icon-_iconName_](/base/icon?id=iconname) | -        |
+| icon  | _图标_   | string         | 参考文档 [Icon-_iconName_](/base/icon#iconname) | -        |
 | img   | 图片地址 | string         | -                                                  | -        |
 | title | 标题     | string         | -                                                  | -        |
 

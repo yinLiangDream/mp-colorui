@@ -1,0 +1,224 @@
+{
+  "accordion": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "card", "value": "卡片模式" },
+    { "key": "disabledAnimation", "value": "禁止动画" },
+    { "key": "speed", "value": "速度" }
+  ],
+  "actionSheet": [
+    { "key": "type", "value": "类型" },
+    { "key": "color", "value": "颜色" },
+    { "key": "cancel", "value": "取消" }
+  ],
+  "animation": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "reverse", "value": "反转" },
+    { "key": "delay", "value": "延迟" }
+  ],
+  "avatar": [
+    { "key": "shape", "value": "形状" },
+    { "key": "size", "value": "大小" },
+    { "key": "shadow", "value": "阴影" },
+    { "key": "type", "value": "类型" },
+    { "key": "headers", "value": "头像数组" }
+  ],
+  "button": [
+    { "key": "shape", "value": "形状" },
+    { "key": "size", "value": "大小" },
+    { "key": "color", "value": "颜色" },
+    { "key": "lines", "value": "镂空" },
+    { "key": "long", "value": "块状" },
+    { "key": "disabled", "value": "禁止" },
+    { "key": "loading", "value": "加载" },
+    { "key": "openType", "value": "开放能力" }
+  ],
+  "card": [
+    { "key": "card", "value": "卡片模式" },
+    { "key": "full", "value": "全铺模式" },
+    { "key": "color", "value": "颜色" },
+    { "key": "active", "value": "激活" }
+  ],
+  "checkbox": [
+    { "key": "type", "value": "类型" },
+    { "key": "position", "value": "位置" },
+    { "key": "color", "value": "颜色" },
+    { "key": "shape", "value": "形状" }
+  ],
+  "curtain": [{ "key": "position", "value": "位置" }],
+  "divider": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "color", "value": "颜色" },
+    { "key": "size", "value": "大小" }
+  ],
+  "drawer": [
+    { "key": "left", "value": "左侧" },
+    { "key": "right", "value": "右侧" },
+    { "key": "bottom", "value": "下方" }
+  ],
+  "flex": [
+    { "key": "size", "value": "大小" },
+    { "key": "per", "value": "比例" },
+    { "key": "justify", "value": "水平位置" },
+    { "key": "align", "value": "垂直位置" }
+  ],
+  "floatButton": [{ "key": "demo", "value": "示例" }],
+  "form": [{ "key": "demo", "value": "示例" }],
+  "grid": [
+    { "key": "grid", "value": "栅格模式" },
+    { "key": "squa", "value": "等高模式" }
+  ],
+  "imagePicker": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "max", "value": "最大数量" },
+    { "key": "beforeDel", "value": "删除之前触发" }
+  ],
+  "input": [
+    { "key": "autoFocus", "value": "自动聚焦" },
+    { "key": "value", "value": "默认值" },
+    { "key": "title", "value": "标题" },
+    { "key": "pattern", "value": "表现形式" },
+    { "key": "titleWidth", "value": "标题宽度" },
+    { "key": "placeholder", "value": "占位文字" },
+    { "key": "type", "value": "类型" },
+    { "key": "inputMax", "value": "最多输入" },
+    { "key": "disabled", "value": "禁止" },
+    { "key": "autoPush", "value": "自动上推" },
+    { "key": "content", "value": "内容" }
+  ],
+  "layout": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "padding", "value": "padding" },
+    { "key": "margin", "value": "margin" },
+    { "key": "float", "value": "浮动" }
+  ],
+  "loading": [
+    { "key": "bar", "value": "进度条加载" },
+    { "key": "line", "value": "行内加载" },
+    { "key": "modal", "value": "模态框加载" },
+    { "key": "image", "value": "图片加载" }
+  ],
+  "menuList": [
+    { "key": "type", "value": "类型" },
+    { "key": "content", "value": "内容" },
+    { "key": "shortBordere", "value": "shortBordere" }
+  ],
+  "message": [{ "key": "type", "value": "类型" }],
+  "modal": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "custom", "value": "自定义" }
+  ],
+  "navBar": [
+    { "key": "color", "value": "颜色" },
+    { "key": "icon", "value": "图标" }
+  ],
+  "progress": [
+    { "key": "shape", "value": "形状" },
+    { "key": "color", "value": "颜色" },
+    { "key": "stripe", "value": "条纹" },
+    { "key": "animation", "value": "动画" },
+    { "key": "size", "value": "大小" }
+  ],
+  "radio": [
+    { "key": "type", "value": "类型" },
+    { "key": "position", "value": "位置" },
+    { "key": "color", "value": "颜色" },
+    { "key": "shape", "value": "形状" }
+  ],
+  "screenDrawer": [{ "key": "demo", "value": "示例" }],
+  "searchBar": [
+    { "key": "result", "value": "结果" },
+    { "key": "color", "value": "颜色" },
+    { "key": "placeholder", "value": "占位文字" },
+    { "key": "actions", "value": "操作组" }
+  ],
+  "select": [
+    { "key": "single", "value": "单选" },
+    { "key": "muti", "value": "多选" },
+    { "key": "time", "value": "选择时间" },
+    { "key": "region", "value": "选择地区" },
+    { "key": "date", "value": "选择日期" }
+  ],
+  "shopBar": [
+    { "key": "color", "value": "颜色" },
+    { "key": "divid", "value": "分割线" },
+    { "key": "badge", "value": "角标" }
+  ],
+  "steps": [
+    { "key": "type", "value": "类型" },
+    { "key": "customIcon", "value": "自定义图标" },
+    { "key": "position", "value": "位置" }
+  ],
+  "swiper": [
+    { "key": "card", "value": "卡片模式" },
+    { "key": "full", "value": "全铺模式" },
+    { "key": "dot", "value": "指示点" },
+    { "key": "video", "value": "视频" }
+  ],
+  "swiperAction": [
+    { "key": "position", "value": "位置" },
+    { "key": "open", "value": "打开" },
+    { "key": "disabled", "value": "禁止" },
+    { "key": "autoClose", "value": "自动关闭" },
+    { "key": "touch", "value": "触摸后关闭" },
+    { "key": "change", "value": "改变时触发" }
+  ],
+  "switch": [
+    { "key": "type", "value": "类型" },
+    { "key": "shape", "value": "形状" },
+    { "key": "color", "value": "颜色" }
+  ],
+  "tabBar": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "bgColor", "value": "背景色" },
+    { "key": "activeColor", "value": "激活色" },
+    { "key": "up", "value": "突出" }
+  ],
+  "tabs": [
+    { "key": "normal", "value": "正常用法" },
+    { "key": "move", "value": "可拖动" },
+    { "key": "verb", "value": "平分" },
+    { "key": "center", "value": "居中" },
+    { "key": "color", "value": "颜色" },
+    { "key": "icon", "value": "图标" }
+  ],
+  "tag": [
+    { "key": "shape", "value": "形状" },
+    { "key": "size", "value": "大小" },
+    { "key": "tags", "value": "标签组" },
+    { "key": "click", "value": "点击时触发" }
+  ],
+  "text": [
+    { "key": "xsmall", "value": "xsmall" },
+    { "key": "small", "value": "small" },
+    { "key": "normal", "value": "normal" },
+    { "key": "large", "value": "large" },
+    { "key": "xlarge", "value": "xlarge" },
+    { "key": "xxlarge", "value": "xxlarge" },
+    { "key": "slarge", "value": "slarge" },
+    { "key": "xslarge", "value": "xslarge" },
+    { "key": "color", "value": "颜色" },
+    { "key": "cut", "value": "截断" },
+    { "key": "left", "value": "左侧" },
+    { "key": "middle", "value": "居中" },
+    { "key": "right", "value": "右侧" },
+    { "key": "firstUpper", "value": "首字母大写" },
+    { "key": "upper", "value": "大写" },
+    { "key": "lower", "value": "小写" }
+  ],
+  "timeline": [{ "key": "timeline", "value": "时间轴数组" }],
+  "tip": [
+    { "key": "position", "value": "位置" },
+    { "key": "touchType", "value": "触摸类型" },
+    { "key": "auto", "value": "自动" },
+    { "key": "color", "value": "颜色" },
+    { "key": "custom", "value": "自定义" },
+    { "key": "length", "value": "长度" }
+  ],
+  "titleBar": [
+    { "key": "color", "value": "颜色" },
+    { "key": "border", "value": "边线" },
+    { "key": "subTitle", "value": "子标题" },
+    { "key": "icon", "value": "图标" }
+  ],
+  "verticalTab": [{ "key": "demo", "value": "示例" }]
+}

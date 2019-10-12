@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="更新文档">
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/CodeShow.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/button-shape.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/button-size.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/base/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/button.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/base/floatButton.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/floatButton.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/base/icon.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/icon.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/accordion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/accordion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/avatar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/avatar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/curtain.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/curtain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/timeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/timeline.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +36,9 @@
         <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="Stylus File" />
-        <option value="Vue Single File Component" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -50,9 +64,10 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Vue" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.introduce.parameter.add.jsdoc" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/.vuepress/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/.vuepress/public/code" />
     <property name="list.type.of.created.stylesheet" value="Stylus" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -70,11 +85,14 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public/code" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public/code/button" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -89,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:weapp">
+  <component name="RunManager" selected="npm.docs:dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -142,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:build" />
-        <item itemvalue="npm.publish:production" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.dev:weapp" />
+        <item itemvalue="npm.docs:build" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.publish:production" />
       </list>
     </recent_temporary>
   </component>
@@ -215,13 +233,8 @@
       <workItem from="1570503381968" duration="16049000" />
       <workItem from="1570543640531" duration="2794000" />
       <workItem from="1570590024695" duration="2171000" />
-    </task>
-    <task id="LOCAL-00001" summary="shopBar 组件完成">
-      <created>1556257760903</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1556257760903</updated>
+      <workItem from="1570609840927" duration="2938000" />
+      <workItem from="1570614671770" duration="12375000" />
     </task>
     <task id="LOCAL-00002" summary="loading 组件 bug 修复">
       <created>1556257806212</created>
@@ -559,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570607865462</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="更新文档">
+      <created>1570608210738</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1570608210739</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -606,7 +626,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BUG&#10;修复组件 Form,FormItem 不设置规则直接会出现err问题&#10;修复组件 FormItem 初始化时就进行数据校验问题" />
     <MESSAGE value="更新版本" />
     <MESSAGE value="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题" />
     <MESSAGE value="BUG&#10;fix #12" />
@@ -631,6 +650,7 @@
     <MESSAGE value="CI&#10;update travis" />
     <MESSAGE value="app&#10;delete all&#10;fix all components utils bug" />
     <MESSAGE value="version&#10;&#10;update version&#10;update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="version&#10;&#10;update version&#10;update README" />
+    <MESSAGE value="更新文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新文档" />
   </component>
 </project>

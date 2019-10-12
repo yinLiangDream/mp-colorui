@@ -6,40 +6,7 @@ import { ClSelect } from "mp-colorui";
 
 ## 一般用法
 
-### 多列选择
-
-```jsx
-<ClSelect mode="mutiSelector" />
-```
-
-### 标题
-
-```jsx
-<ClSelect title="选择器" />
-```
-
-### 禁止选择
-
-```jsx
-<ClSelect disabled />
-```
-
-### 地区选择
-
-```jsx
-const value = [{
-  key: 110000,
-  value: '北京市'
-}, {
-  key: 110100,
-  value: '市辖区'
-}, {
-  key: 110101,
-  value: '东城区'
-}]
-
-<ClSelect mode='region' value={value} />
-```
+<CodeShow componentName='select' />
 
 ## 参数说明
 
@@ -50,11 +17,11 @@ const value = [{
 | title         | _标题_                         | string  | -                                                                 | -            |
 | disabled      | _是否禁止选择_                 | boolean | _`true`_,_`false`_                                                | _`false`_    |
 | mode          | _选择类型_，                   | string  | _`selector`_,_`multiSelector`_,<br />_`time`_,_`date`_,_`region`_ | _`selector`_ |
-| selector      | _mode 为 selector 时设置_      | Object  | [详情](/form/select?id=selector)                                  | {}           |
-| multiSelector | _mode 为 multiSelector 时设置_ | Object  | [详情](/form/select?id=multiSelector)                             | {}           |
-| time          | _mode 为 time 时设置_          | Object  | [详情](/form/select?id=time)                                      | {}           |
-| date          | _mode 为 date 时设置_          | Object  | [详情](/form/select?id=date)                                      | {}           |
-| region        | _mode 为 region 时设置_        | Object  | [详情](/form/select?id=region)                                    | {}           |
+| selector      | _mode 为 selector 时设置_      | Object  | [详情](/form/select#selector)                                  | {}           |
+| multiSelector | _mode 为 multiSelector 时设置_ | Object  | [详情](/form/select#multiSelector)                             | {}           |
+| time          | _mode 为 time 时设置_          | Object  | [详情](/form/select#time)                                      | {}           |
+| date          | _mode 为 date 时设置_          | Object  | [详情](/form/select#date)                                      | {}           |
+| region        | _mode 为 region 时设置_        | Object  | [详情](/form/select#region)                                    | {}           |
 
 ### selector
 
@@ -93,7 +60,7 @@ const value = [{
 
 | 参数  | 说明                                                                                                                           | 类型     | 可选值 | 默认值 |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------ | -------- | ------ | ------ |
-| value | _初始化选中的值（具体 key,value 请查看[地区编码](https://yinliangdream.github.io/area/)）（[示例](/form/select?id=地区选择)）_ | region[] | -      | []     |
+| value | _初始化选中的值（具体 key,value 请查看[地区编码](https://yinliangdream.github.io/area/)）（[示例](/form/select#地区选择)）_ | region[] | -      | []     |
 
 #### region 参数
 

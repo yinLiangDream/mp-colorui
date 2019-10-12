@@ -6,19 +6,7 @@ import { ClAnimation } from "mp-colorui";
 
 ## 一般用法
 
-### animation 类型
-
-```jsx
-<ClAnimation type="fade">...</ClAnimation>
-```
-
-### animation 动画翻转
-
-```jsx
-<ClAnimation type="fade" reserve>
-  ...
-</ClAnimation>
-```
+<CodeShow componentName='animation' />
 
 ## 参数说明
 

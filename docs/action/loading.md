@@ -1,22 +1,6 @@
 ## 使用说明
 
-```jsx
-import { ClLoading } from "mp-colorui";
-```
-
-## 一般用法
-
-### loading 类型
-
-```jsx
-<ClLoading type="line" />
-```
-
-### loading 背景色
-
-```jsx
-<ClLoading bgColor="black" />
-```
+<CodeShow componentName='loading' />
 
 ## 参数说明
 

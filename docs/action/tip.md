@@ -6,55 +6,7 @@ import { ClTip } from "mp-colorui";
 
 ## 一般用法
 
-### 方向
-
-```jsx
-<ClTip message='我是上方提示' direction='top'>
-  ...
-</ClTip>
-<ClTip message='我是右方提示' direction='right'>
-  ...
-</ClTip>
-<ClTip message='我是左方提示' direction='left'>
-  ...
-</ClTip>
-<ClTip message='我是下方提示' direction='bottom'>
-  ...
-</ClTip>
-```
-
-### 触发方式
-
-```jsx
- <ClTip message='我是点击触发' direction='top' mode='click'>
-  ...
-</ClTip>
-<ClTip message='我是触摸触发' direction='right'>
-  ...
-</ClTip>
-```
-
-### 背景色
-
-```jsx
-<ClTip message="我是上方提示" direction="top" bgColor="gradualBlue">
-  ...
-</ClTip>
-```
-
-### 自定义渲染
-
-```jsx
-const renderMessage = (
-    <ClLayout>
-      ...
-    </ClLayout>
-  )
-
-<ClTip renderMessage={renderMessage} direction='top' bgColor='gradualBlue' mode='click' width={350}>
-  ...
-</ClTip>
-```
+<CodeShow componentName='tip' />
 
 ## 参数说明
 

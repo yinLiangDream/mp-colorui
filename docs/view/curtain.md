@@ -8,21 +8,7 @@ import { ClCurtain } from "mp-colorui";
 
 > Curtain 幕帘是受控组件，参数 show 来控制是否显示，请关闭时在 onClose 事件中，手动将其参数设置为 false
 
-### 关闭位置
-
-```html
-<ClCurtain closeBtnPosition="top">
-  ...
-</ClCurtain>
-```
-
-### 点击阴影关闭
-
-```html
-<ClCurtain closeWithShadow>
-  ...
-</ClCurtain>
-```
+<CodeShow componentName='curtain' />
 
 ## 参数说明
 

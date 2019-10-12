@@ -6,11 +6,7 @@ import { ClScreenDrawer } from "mp-colorui";
 
 ## 一般用法
 
-### 显示全屏抽屉
-
-```jsx
-<ClScreenDrawer show>我是内容</ClScreenDrawer>
-```
+<CodeShow componentName='screenDrawer' />
 
 ## 参数说明
 

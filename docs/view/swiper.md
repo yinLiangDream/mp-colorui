@@ -6,23 +6,7 @@ import { ClSwiper } from "mp-colorui";
 
 ## 一般用法
 
-### 轮播图类型
-
-```jsx
-<ClSwiper type="card" />
-```
-
-### 每个节点的形状
-
-```jsx
-<ClSwiper dot="round" />
-```
-
-### 采用衔接滑动
-
-```jsx
-<ClSwiper circular />
-```
+<CodeShow componentName='swiper' />
 
 ## 参数说明
 
@@ -33,7 +17,7 @@ import { ClSwiper } from "mp-colorui";
 | type                 | _轮播图类型_           | string  | _`card`_,_`screen`_          | _`card`_   |
 | dot                  | _每个点的形状_         | string  | _`square`_,_`round`_         | _`square`_ |
 | duration             | _滑动动画时长_         | number  | _0-2000_                     | _500_      |
-| list                 | _每一项_               | list[]  | [详情](/view/swiper?id=list) | []         |
+| list                 | _每一项_               | list[]  | [详情](/view/swiper#list) | []         |
 | indicatorDots        | _是否显示面板指示点_   | boolean | _`true`_,_`false`_           | _`false`_  |
 | indicatorColor       | _指示点颜色_           | string  | -                            | -          |
 | indicatorActiveColor | _当前选中的指示点颜色_ | string  | -                            | -          |

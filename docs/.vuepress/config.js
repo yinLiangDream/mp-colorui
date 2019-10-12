@@ -145,5 +145,17 @@ module.exports = {
     markdown: {
       lineNumbers: true
     }
+  },
+  configureWebpack: {
+    devServer: {
+      proxy: {
+        "/code": {
+          target: "https://mp-colorui-1255362963.cos.ap-chengdu.myqcloud.com",
+          // target: 'https://devmeet.onecc.net',
+          // target: 'http://10.12.3.248:8088',
+          changeOrigin: true
+        }
+      }
+    }
   }
 };

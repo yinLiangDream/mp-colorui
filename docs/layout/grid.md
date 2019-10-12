@@ -6,11 +6,7 @@ import { ClGrid } from "mp-colorui";
 
 ## 一般用法
 
-### 分割成几格
-
-```jsx
-<ClGrid col={4} />
-```
+<CodeShow componentName='grid' />
 
 ## 参数说明
 
