@@ -75,6 +75,12 @@ export interface IProps extends BaseComponent {
    * 默认值 `normal`
    */
   fontWeight?: "normal" | "bold" | "bolder" | "lighter" | number;
+  /**
+   * 文字是否换行
+   *
+   * 默认为 `true` 换行
+   */
+  wrap?: boolean;
   children?: any;
 }
 

@@ -68,7 +68,17 @@ export default function ClText(props: IProps) {
       )}
     >
       <Text
-        className={`${specialClassName} ${cutClassName ? "" : "cl-text__wrap"}`}
+        className={classNames(
+          [
+            {
+              "cl-text__wrap": props.wrap || !cutClassName
+            },
+            {
+              "cl-text__nowrap": !props.wrap || cutClassName
+            }
+          ],
+          `${specialClassName}`
+        )}
       >
         {props.text}
         {this.props.children}
@@ -91,5 +101,6 @@ ClText.defaultProps = {
   text: "",
   lineSpacing: "none",
   fontSpacing: "none",
-  fontWeight: "normal"
+  fontWeight: "normal",
+  wrap: true
 } as IProps;
