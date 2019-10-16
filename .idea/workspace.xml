@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="更新文档">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/CodeShow.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/button-shape.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/button-size.md" afterDir="false" />
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/noticeBar-close.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/noticeBar-color.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/noticeBar-customIcon.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/noticeBar-lines.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/noticeBar-marquee.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/noticeBar-more.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/view/noticeBar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/UpdateLog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/noticeBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/noticeBar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/button.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/floatButton.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/floatButton.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/icon.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/icon.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/accordion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/accordion.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/avatar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/avatar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/curtain.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/curtain.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/timeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/timeline.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/noticebar/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/noticeBar/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/noticebar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/noticeBar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,14 +85,14 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docs/.vuepress/public/code" />
-      <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/.vuepress/public" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/code/button" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public/code" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -107,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.docs:dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -160,10 +160,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.docs:build" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.publish:production" />
       </list>
     </recent_temporary>
@@ -235,13 +235,8 @@
       <workItem from="1570590024695" duration="2171000" />
       <workItem from="1570609840927" duration="2938000" />
       <workItem from="1570614671770" duration="12375000" />
-    </task>
-    <task id="LOCAL-00002" summary="loading 组件 bug 修复">
-      <created>1556257806212</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1556257806212</updated>
+      <workItem from="1571127368696" duration="169000" />
+      <workItem from="1571127557458" duration="9956000" />
     </task>
     <task id="LOCAL-00003" summary="titleBar 组件完成">
       <created>1556262042781</created>
@@ -579,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570608210739</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="feat Text 组件新增 warp 属性&#10;feat NoticeBar 组件新增">
+      <created>1571127520503</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1571127520503</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -626,7 +628,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="更新版本" />
     <MESSAGE value="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题" />
     <MESSAGE value="BUG&#10;fix #12" />
     <MESSAGE value="Input 组件新增 defaultValue 属性" />
@@ -651,6 +652,7 @@
     <MESSAGE value="app&#10;delete all&#10;fix all components utils bug" />
     <MESSAGE value="version&#10;&#10;update version&#10;update README" />
     <MESSAGE value="更新文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新文档" />
+    <MESSAGE value="feat Text 组件新增 warp 属性&#10;feat NoticeBar 组件新增" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat Text 组件新增 warp 属性&#10;feat NoticeBar 组件新增" />
   </component>
 </project>

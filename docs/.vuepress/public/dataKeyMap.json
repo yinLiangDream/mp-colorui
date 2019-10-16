@@ -220,5 +220,13 @@
     { "key": "subTitle", "value": "子标题" },
     { "key": "icon", "value": "图标" }
   ],
-  "verticalTab": [{ "key": "demo", "value": "示例" }]
+  "verticalTab": [{ "key": "demo", "value": "示例" }],
+  "noticeBar": [
+    { "key": "lines", "value": "单行&多行" },
+    { "key": "marquee", "value": "滚动&速度" },
+    { "key": "close", "value": "关闭" },
+    { "key": "more", "value": "查看更多" },
+    { "key": "customIcon", "value": "自定义图标" },
+    { "key": "color", "value": "自定义颜色" }
+  ]
 }

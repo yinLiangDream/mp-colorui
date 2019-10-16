@@ -28,14 +28,20 @@ export interface IProps {
   marquee?: boolean;
   /**
    * 滚动速度
+   *
+   * 默认值 `5`
    */
   speed?: number;
   /**
    * 显示查看更多
+   *
+   * 默认值 `false`
    */
   showMore?: boolean;
   /**
    * 查看详情文本
+   *
+   * 默认值`查看详情`
    */
   moreText?: string;
   /**

@@ -81,7 +81,8 @@ module.exports = {
           viewPath("shopBar", "ShopBar 购物栏"),
           viewPath("titleBar", "TitleBar 标题栏"),
           viewPath("divider", "Divider 分割线"),
-          viewPath("curtain", "Curtain 幕帘")
+          viewPath("curtain", "Curtain 幕帘"),
+          viewPath("noticeBar", "NoticeBar 通告栏")
         ]
       },
       {

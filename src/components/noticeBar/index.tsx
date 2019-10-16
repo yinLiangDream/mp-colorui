@@ -1,16 +1,16 @@
 import Taro, { pxTransform, useEffect, useState } from "@tarojs/taro";
 import { View, Text } from "@tarojs/components";
 import { IProps } from "../../../@types/noticeBar";
-import ClText from "@/components/text";
+import ClText from "../text";
 import ClIcon from "../icon/index";
 import ClFlex from "../flex";
 import { BG_COLOR_LIST } from "../utils/model";
+import { generateId, isH5, screenPercent } from "../utils";
 
 import "./index.scss";
 import "../text/index.scss";
 import classnames from "classnames";
 import ClLayout from "../layout";
-import { generateId, isH5, screenPercent } from "@/components/utils";
 
 export default function ClNoticeBar(props: IProps) {
   const {
@@ -32,6 +32,7 @@ export default function ClNoticeBar(props: IProps) {
   const [textId] = useState(generateId());
   const [contentId] = useState(generateId());
   const [marqueeClass, setMarqueeClass] = useState(single && marquee);
+  const [show, setShow] = useState(true);
   const cut = single && !marquee;
 
   useEffect(() => {
@@ -55,7 +56,6 @@ export default function ClNoticeBar(props: IProps) {
       query
         .select(isH5 ? textId : "#textId")
         .boundingClientRect((res: any) => {
-          console.log(res.width <= content.width);
           if (res.width < content.width) {
             setMarqueeClass(false);
             setMarqueeSpeed(0);
@@ -72,7 +72,6 @@ export default function ClNoticeBar(props: IProps) {
               timeout = setTimeout(() => {
                 setContentWidth(-res.width);
                 const percentSpeed = res.width / (speed as number);
-                console.log((speed as number) + content.width / percentSpeed);
                 const speedNow =
                   (speed as number) + content.width / percentSpeed;
                 setMarqueeSpeed(speedNow);
@@ -110,10 +109,11 @@ export default function ClNoticeBar(props: IProps) {
   const showCloseComponent = close ? (
     <View
       onClick={() => {
+        setShow(false);
         onClose && onClose();
       }}
     >
-      <ClIcon iconName={"close"} size={40} color={"gray"} />
+      <ClIcon iconName={"close"} size={24} color={"gray"} />
     </View>
   ) : (
     ""
@@ -125,71 +125,69 @@ export default function ClNoticeBar(props: IProps) {
         `${BG_COLOR_LIST[bgColor || "yellow"]}`
       )}
     >
-      <ClFlex
-        align={"center"}
-        justify={"between"}
-        style={{ minHeight: pxTransform(40) }}
-      >
-        {showCloseComponent}
-        <ClLayout
-          margin="xsmall"
-          marginDirection="right"
-          style={{ zIndex: 10, flex: "0 0 auto" }}
+      {show ? (
+        <ClFlex
+          align={"center"}
+          justify={"between"}
+          style={{ minHeight: pxTransform(40) }}
         >
-          <View
-            className={classnames({
-              "shadow-yellow": true
-            })}
+          <ClLayout
+            margin="xsmall"
+            marginDirection="right"
+            style={{ zIndex: 10, flex: "0 0 auto" }}
           >
-            <ClLayout padding="xsmall" paddingDirection="horizontal">
-              <ClIcon
-                iconName={icon || "notificationfill"}
-                color="yellow"
-                size={24}
-              />
-            </ClLayout>
-          </View>
-        </ClLayout>
-        <View
-          id={isH5 ? contentId : "contentId"}
-          style={{
-            flex: "1 1 auto",
-            overflow: "hidden",
-            minHeight: pxTransform(40)
-          }}
-        >
+            <View>
+              <ClLayout padding="xsmall" paddingDirection="horizontal">
+                <ClFlex>
+                  {showCloseComponent}
+                  <ClIcon iconName={icon || "notificationfill"} size={24} />
+                </ClFlex>
+              </ClLayout>
+            </View>
+          </ClLayout>
           <View
-            className={classnames([
-              "text-sm",
-              {
-                "text-cut": cut
-              }
-            ])}
+            id={isH5 ? contentId : "contentId"}
             style={{
-              lineHeight: pxTransform(42),
-              transition: `all ${marqueeClass ? marqueeSpeed : 0}s linear`,
-              transform: `translateX(${
-                marqueeClass ? pxTransform(contentWidth / screenPercent) : 0
-              })`,
-              whiteSpace: "nowrap",
-              width: singleContentWidth
+              flex: "1 1 auto",
+              overflow: "hidden",
+              minHeight: pxTransform(40)
             }}
           >
-            <Text
-              id={isH5 ? textId : "textId"}
+            <View
               className={classnames([
+                "text-sm",
                 {
-                  "cl-text__nowrap": single,
-                  "cl-text__wrap": !single
+                  "text-cut": cut
                 }
               ])}
+              style={{
+                lineHeight: pxTransform(42),
+                transition: `all ${marqueeClass ? marqueeSpeed : 0}s linear`,
+                transform: `translateX(${
+                  marqueeClass ? pxTransform(contentWidth / screenPercent) : 0
+                })`,
+                whiteSpace: "nowrap",
+                width: singleContentWidth
+              }}
             >
-              {text}
-            </Text>
+              <Text
+                id={isH5 ? textId : "textId"}
+                className={classnames([
+                  {
+                    "cl-text__nowrap": single,
+                    "cl-text__wrap": !single
+                  }
+                ])}
+              >
+                {text}
+              </Text>
+            </View>
           </View>
-        </View>
-        {showMoreComponent}
-      </ClFlex>
+          {showMoreComponent}
+        </ClFlex>
+      ) : (
+        ""
+      )}
     </View>
   );
 }
