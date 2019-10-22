@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.docs:dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -146,10 +145,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.docs:dev" />
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.docs:build" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.publish:production" />
       </list>
     </recent_temporary>
@@ -222,14 +221,7 @@
       <workItem from="1570609840927" duration="2938000" />
       <workItem from="1570614671770" duration="12375000" />
       <workItem from="1571127368696" duration="169000" />
-      <workItem from="1571127557458" duration="11370000" />
-    </task>
-    <task id="LOCAL-00004" summary="navBar 组件完成">
-      <created>1556271059312</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1556271059312</updated>
+      <workItem from="1571127557458" duration="11767000" />
     </task>
     <task id="LOCAL-00005" summary="searBar 组件完成，list 部分还未完成">
       <created>1556523695175</created>
@@ -567,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571208167670</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="0.5.6版本更新">
+      <created>1571209597539</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1571209597539</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -614,7 +613,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BUG&#10;fix #12" />
     <MESSAGE value="Input 组件新增 defaultValue 属性" />
     <MESSAGE value="BUG&#10;修复 Button 在 flex 布局下会拉伸问题" />
     <MESSAGE value="BUG&#10;修复 Button 缺失的属性，并添加诸多属性" />
@@ -639,6 +637,7 @@
     <MESSAGE value="更新文档" />
     <MESSAGE value="feat Text 组件新增 warp 属性&#10;feat NoticeBar 组件新增" />
     <MESSAGE value="feat Message 组件 修复类型说明消失问题&#10;feat NoticeBar 组件 新增" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat Message 组件 修复类型说明消失问题&#10;feat NoticeBar 组件 新增" />
+    <MESSAGE value="0.5.6版本更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.5.6版本更新" />
   </component>
 </project>

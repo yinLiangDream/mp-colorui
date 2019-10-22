@@ -1,6 +1,12 @@
-.cu_card_active {
-  transition: all 0.2s ease-in-out 0s;
-  &:active {
-    background-color: #b6b6b6;
+.cu_card {
+  &__title-line {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+  }
+  &_active {
+    transition: all 0.2s ease-in-out 0s;
+    &:active {
+      background-color: #b6b6b6;
+    }
   }
 }

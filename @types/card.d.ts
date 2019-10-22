@@ -7,6 +7,8 @@ import {
   BaseComponent
 } from "./baseType";
 
+import {IProps as textIProps} from './text'
+
 export type TTtype = "card" | "full";
 export type TTitle = string;
 
@@ -37,6 +39,10 @@ export interface IProps extends BaseComponent {
    * 默认 `false`
    */
   active?: boolean;
+  /**
+   * 卡片标题
+   */
+  title?: textIProps;
   children?: any;
 }
 

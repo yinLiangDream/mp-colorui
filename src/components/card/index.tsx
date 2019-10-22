@@ -5,6 +5,7 @@ import { BG_COLOR_LIST } from "../utils/model";
 
 import "./index.scss";
 import { classNames } from "../../components/utils";
+import ClText from "../text";
 
 export default function ClCard(props: IProps) {
   const typeClassName = props.type === "full" ? "no-card" : "";
@@ -19,7 +20,6 @@ export default function ClCard(props: IProps) {
       <View
         className={classNames([
           "cu-item",
-          "padding",
           {
             shadow: props.shadow
           },
@@ -29,7 +29,14 @@ export default function ClCard(props: IProps) {
           }
         ])}
       >
-        {this.props.children}
+        {props.title && props.title.text ? (
+          <View className="cu_card__title-line padding">
+            <ClText {...props.title}></ClText>
+          </View>
+        ) : (
+          ""
+        )}
+        <View className="padding">{this.props.children}</View>
       </View>
     </View>
   );
@@ -43,5 +50,6 @@ ClCard.defaultProps = {
   type: "card",
   bgColor: "white",
   shadow: true,
-  active: false
+  active: false,
+  title: {}
 } as IProps;
