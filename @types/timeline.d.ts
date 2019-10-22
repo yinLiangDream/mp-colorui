@@ -46,6 +46,10 @@ export interface IProps extends BaseComponent {
    * 每一项可设置以下参数 `content`, `bgColor`, `iconColor`, `icon`
    */
   times?: TTimes[];
+  /**
+   * 时间轴点击事件
+   */
+  onClick?: (index: number) => void
 }
 
 export interface TimelineProps extends IProps {}

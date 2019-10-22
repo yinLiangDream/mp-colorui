@@ -10,9 +10,18 @@ export default function ClTimeline(props: IProps) {
   const iconColorClassName = color => (color ? TEXT_COLOR_LIST[color] : "");
   const iconClassName = icon => (icon ? `cuIcon-${icon}` : "");
   const bgColorClassName = color => (color ? BG_COLOR_LIST[color] : "");
-  const items = times.map(item =>
+  const onClick = (index: number) => {
+    props.onClick && props.onClick(index);
+  };
+  const items = times.map((item, index) =>
     item.node ? (
-      <View className="cu-time" key={generateId()}>
+      <View
+        className="cu-time"
+        key={generateId()}
+        onClick={() => {
+          onClick(index);
+        }}
+      >
         {item.node}
       </View>
     ) : (
@@ -21,6 +30,9 @@ export default function ClTimeline(props: IProps) {
           item.iconColor
         )} ${iconClassName(item.icon)}`}
         key={generateId()}
+        onClick={() => {
+          onClick(index);
+        }}
       >
         <View className={`${bgColorClassName(item.bgColor)} content`}>
           <ClFlex justify="between" align="end">
@@ -47,3 +59,8 @@ export default function ClTimeline(props: IProps) {
 ClTimeline.options = {
   addGlobalClass: true
 };
+
+ClTimeline.defaultProps = {
+  times: [],
+  onClick: () => {}
+} as IProps;
