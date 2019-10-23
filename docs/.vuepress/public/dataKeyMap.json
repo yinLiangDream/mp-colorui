@@ -36,7 +36,8 @@
     { "key": "card", "value": "卡片模式" },
     { "key": "full", "value": "全铺模式" },
     { "key": "color", "value": "颜色" },
-    { "key": "active", "value": "激活" }
+    { "key": "active", "value": "激活" },
+    { "key": "title", "value": "标题" }
   ],
   "checkbox": [
     { "key": "type", "value": "类型" },

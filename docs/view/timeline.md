@@ -28,4 +28,10 @@ import { ClTimeline } from "mp-colorui";
 | node      | _节点(若存在则会忽略其他属性)_ | string   | -                                                  | -      |
 | time      | 时间（右上角内容）             | string   | -                                                  | -      |
 
+### Timeline 事件
+
+| 事件名称 | 说明     | 返回参数          |
+| -------- | -------- | ----------------- |
+| onClick  | 点击事件 | index(第几个标签) |
+
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/timeline/index" />

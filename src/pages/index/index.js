@@ -29,31 +29,17 @@ import ClAvatar from "../../components/avatar";
 
 console.log(Taro);
 export default function Index() {
-  const muti = [["水果", "蔬菜"], ["苹果", "桃子", "葡萄", "火龙果", "西瓜"]];
-  const [single, setSingle] = useState([]);
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    setTimeout(() => {
-      setSingle(["苹果", "桃子", "葡萄", "火龙果", "西瓜"]);
-    }, 1000);
-    setTimeout(() => {
-      setValue(3);
-    }, 2000);
-  }, []);
   return (
     <View>
-      <ClNoticeBar
-        text="我是文字我很长啊啊啊啊啊啊啊啊啊啊啊啊啊我是文字我很长啊啊啊啊啊啊啊啊啊啊啊啊啊"
-        single
-        marquee
-        showMore
-        close
-      />
-      <View style={{ width: pxTransform(300) }}>
-        <ClText cut align="left">
-          泰国、新加坡、印度尼西亚~{" "}
-        </ClText>
-      </View>
+      <ClCard
+        title={{
+          text: "阿里巴巴",
+          textColor: "cyan",
+          size: "large"
+        }}
+      >
+        我是内容太打了我是内容太打了我是内容太打了我是内容太打了我是内容太打了我是内容太打了
+      </ClCard>
     </View>
   );
 }
