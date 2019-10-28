@@ -1,3 +1,4 @@
+import { IProps } from './button.d';
 import { ComponentClass } from "react";
 
 import {
@@ -51,6 +52,7 @@ export interface IProps extends BaseComponent {
      * 标题
      */
     title?: string;
+    moreAction?: IProps;
   }[];
   /**
    * 右侧按钮组
