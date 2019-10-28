@@ -84,7 +84,9 @@
     { "key": "inputMax", "value": "最多输入" },
     { "key": "disabled", "value": "禁止" },
     { "key": "autoPush", "value": "自动上推" },
-    { "key": "content", "value": "内容" }
+    { "key": "content", "value": "内容" },
+    { "key": "clear", "value": "清除" },
+    { "key": "complete", "value": "自动补全" }
   ],
   "layout": [
     { "key": "normal", "value": "正常用法" },
@@ -142,7 +144,8 @@
   "shopBar": [
     { "key": "color", "value": "颜色" },
     { "key": "divid", "value": "分割线" },
-    { "key": "badge", "value": "角标" }
+    { "key": "badge", "value": "角标" },
+    { "key": "openType", "value": "开放能力" }
   ],
   "steps": [
     { "key": "type", "value": "类型" },

@@ -18,6 +18,7 @@ function ClInput(props: IProps) {
   const [materialWidth, setMaterialWidth] = useState("0px");
   const [defaultValue, setDefaultValue] = useState(props.defaultValue);
   const [showComplete, setShowComplete] = useState(false);
+  const [firstInit, setFirstInit] = useState(true);
   useMemo(() => {
     if (props.defaultValue !== "" && defaultValue === "") {
       setDefaultValue(defaultValue);
@@ -26,9 +27,10 @@ function ClInput(props: IProps) {
   const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv();
 
   const onChange = (event: any) => {
+    setFirstInit(false);
     let input = event.detail.value;
     setInitValue(input);
-    props.autoComplete && setShowComplete(true)
+    props.autoComplete && setShowComplete(true);
     if (props.type === "number") {
       if (Taro.ENV_TYPE.WEB === Taro.getEnv()) {
         if (!isNaN(event.data - 0)) {
@@ -105,13 +107,13 @@ function ClInput(props: IProps) {
     <View
       style={{
         position: "absolute",
-        top: pxTransform(84),
+        top: pxTransform(100),
         left: pxTransform(0),
         width: `100%`,
         display: showComplete ? "" : "none"
       }}
     >
-      <ClCard shadow={false} bgColor={this.props.bgColor} type='full'>
+      <ClCard shadow={false} bgColor={this.props.bgColor} type="full">
         <ScrollView scrollY style={{ maxHeight: "300px" }}>
           <ClSearchResult
             showLoading={props.completeLoading}
@@ -123,8 +125,11 @@ function ClInput(props: IProps) {
                 : []
             }
             onTouchResult={index => {
-              props.completes && setInitValue(props.completes[index]);
-              setShowComplete(false)
+              if (props.completes) {
+                setInitValue(props.completes[index]);
+                setTempInput(props.completes[index]);
+              }
+              setShowComplete(false);
             }}
           />
         </ScrollView>
@@ -213,7 +218,7 @@ function ClInput(props: IProps) {
         <Input
           autoFocus={autoFocus}
           placeholder={placeholder}
-          value={defaultValue || initValue}
+          value={firstInit && defaultValue ? defaultValue : initValue}
           onInput={onChange}
           onBlur={onBlur}
           onFocus={onFocus}
@@ -237,7 +242,10 @@ function ClInput(props: IProps) {
           style={{
             position: "absolute",
             right: 0,
-            display: props.clear && initValue !== "" ? "relative" : "none"
+            display:
+              props.clear && initValue !== "" && !firstInit
+                ? "relative"
+                : "none"
           }}
           onClick={e => {
             e.stopPropagation();

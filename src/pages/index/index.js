@@ -26,20 +26,28 @@ import ClTabs from "../../components/tabs";
 import ClSelect from "../../components/select/index";
 import ClNoticeBar from "../../components/noticebar/index";
 import ClAvatar from "../../components/avatar";
+import ClShopBar from "../../components/shopBar";
 
-console.log(Taro);
 export default function Index() {
+  const [showLoading, setLoading] = useState(true);
   return (
     <View>
-      <ClCard
-        title={{
-          text: "阿里巴巴",
-          textColor: "cyan",
-          size: "large"
+      <ClInput
+        defaultValue="自动补全"
+        style={{
+          zIndex: 1
         }}
-      >
-        我是内容太打了我是内容太打了我是内容太打了我是内容太打了我是内容太打了我是内容太打了
-      </ClCard>
+        autoComplete
+        completes={["补全内容 1", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2"]}
+        completeLoading={showLoading}
+        clear
+        onChange={() => {
+          setLoading(true);
+          setTimeout(() => {
+            setLoading(false);
+          }, 1000);
+        }}
+      />
     </View>
   );
 }

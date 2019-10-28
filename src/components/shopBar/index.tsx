@@ -6,6 +6,8 @@ import { IProps } from "../../../@types/shopBar";
 import ClButton from "../button";
 import { generateId } from "../utils/index";
 
+import './index.scss'
+
 export default function ClShopBar(props: IProps) {
   const [tabs, setTabs] = useState(props.tabs || []);
   const [buttons, setButtons] = useState(props.buttons || []);
@@ -33,7 +35,7 @@ export default function ClShopBar(props: IProps) {
     setButtons(buttons);
   }, [props.buttons]);
   const tabsComponent = tabs.map((item: any, index) => (
-    <View key={item.id}>
+    <View key={item.id} className='ClShopBar__tab'>
       <ClButton
         bgColor={props.bgColor}
         shadow={false}
@@ -42,7 +44,12 @@ export default function ClShopBar(props: IProps) {
           onClickTab(index);
         }}
       >
-        <View className="action">
+        <View
+          className="action"
+          style={{
+            background: "transparent"
+          }}
+        >
           <View className={`${item.icon ? "cuIcon-" + item.icon : ""}`}>
             {item.badge !== false ? (
               <View className="cu-tag badge">
