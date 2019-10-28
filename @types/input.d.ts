@@ -129,6 +129,10 @@ export interface IProps extends BaseComponent {
    * 自定义按钮右边的内容，请传入自定义内容
    */
   renderCustomRight?: Element;
+  /**
+   * 是否显示清空按钮
+   */
+  clear?: boolean;
 }
 
 export interface InputProps extends IProps {}

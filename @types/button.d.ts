@@ -242,6 +242,7 @@ export interface IProps extends BaseComponent {
    * 生效时机: `open-type="getUserInfo"`
    */
   lang?: string;
+  children?: any;
 }
 
 declare const Button: ComponentClass<IProps>;

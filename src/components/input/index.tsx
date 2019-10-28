@@ -166,27 +166,51 @@ function ClInput(props: IProps) {
           ? renderMaterialTitle_H5
           : renderMaterialTitle
         : ""}
-      <Input
-        autoFocus={autoFocus}
-        placeholder={placeholder}
-        value={defaultValue || initValue}
-        onInput={onChange}
-        onBlur={onBlur}
-        onFocus={onFocus}
-        adjustPosition={adjustPosition}
-        type={normalType}
-        password={type === "password"}
-        maxLength={maxLength || -1}
-        disabled={disabled}
+      <View
         style={{
-          textAlign: props.align,
-          paddingLeft: `${
-            props.pattern === "material" && !(focus || initValue)
-              ? materialWidth
-              : 0
-          }`
+          position: "relative",
+          display: "flex",
+          width: "100%",
+          alignItems: "center"
         }}
-      />
+      >
+        <Input
+          autoFocus={autoFocus}
+          placeholder={placeholder}
+          value={defaultValue || initValue}
+          onInput={onChange}
+          onBlur={onBlur}
+          onFocus={onFocus}
+          adjustPosition={adjustPosition}
+          type={normalType}
+          password={type === "password"}
+          maxLength={maxLength || -1}
+          disabled={disabled}
+          style={{
+            textAlign: props.align,
+            flex: "1 0 auto",
+            paddingLeft: `${
+              props.pattern === "material" && !(focus || initValue)
+                ? materialWidth
+                : 0
+            }`,
+            paddingRight: props.clear ? pxTransform(60) : ""
+          }}
+        />
+        <View
+          style={{
+            position: "absolute",
+            right: 0,
+            display: props.clear && initValue !== "" ? "relative" : "none"
+          }}
+          onClick={e => {
+            e.stopPropagation();
+            setInitValue("");
+          }}
+        >
+          <ClIcon iconName="roundclosefill" size="xsmall" color="gray" />
+        </View>
+      </View>
       {iconComponent}
       {buttonComponent}
       {imageComponent}
