@@ -12,22 +12,23 @@ import { ClShopBar } from "mp-colorui";
 
 ### ShopBar 参数
 
-| 参数    | 说明             | 类型      | 可选值                           | 默认值    |
-| ------- | ---------------- | --------- | -------------------------------- | --------- |
-| bgColor | _背景色_         | string    | 参考文档 [默认色](/home/color)   | _`white`_ |
-| fix     | _是否固定在底部_ | boolean   | _`true`_,_`false`_               | _`false`_ |
-| border  | _是否显示分割线_ | boolean   | _`true`_,_`false`_               | _`false`_ |
-| tabs    | _每一项 tab_     | tabs[]    | [详情](/view/shopBar#tabs)    | []        |
-| buttons | _右侧按钮组_     | buttons[] | [详情](/view/shopBar#buttons) | []        |
+| 参数    | 说明             | 类型      | 可选值                         | 默认值    |
+| ------- | ---------------- | --------- | ------------------------------ | --------- |
+| bgColor | _背景色_         | string    | 参考文档 [默认色](/home/color) | _`white`_ |
+| fix     | _是否固定在底部_ | boolean   | _`true`_,_`false`_             | _`false`_ |
+| border  | _是否显示分割线_ | boolean   | _`true`_,_`false`_             | _`false`_ |
+| tabs    | _每一项 tab_     | tabs[]    | [详情](/view/shopBar#tabs)     | []        |
+| buttons | _右侧按钮组_     | buttons[] | [详情](/view/shopBar#buttons)  | []        |
 
 ### tabs
 
-| 参数  | 说明     | 类型           | 可选值                                             | 默认值   |
-| ----- | -------- | -------------- | -------------------------------------------------- | -------- |
-| badge | _角标_   | boolean/Number | -                                                  | _`true`_ |
-| icon  | _图标_   | string         | 参考文档 [Icon-_iconName_](/base/icon#iconname) | -        |
-| img   | 图片地址 | string         | -                                                  | -        |
-| title | 标题     | string         | -                                                  | -        |
+| 参数       | 说明                                 | 类型           | 可选值                                          | 默认值   |
+| ---------- | ------------------------------------ | -------------- | ----------------------------------------------- | -------- |
+| badge      | _角标_                               | boolean/Number | -                                               | _`true`_ |
+| icon       | _图标_                               | string         | 参考文档 [Icon-_iconName_](/base/icon#iconname) | -        |
+| img        | 图片地址                             | string         | -                                               | -        |
+| title      | 标题                                 | string         | -                                               | -        |
+| moreAction | 更多操作，可传入 ClButton 的任何属性 | button         | 参考文档 [Button](/base/button)                 | {}       |
 
 ### buttons
 
