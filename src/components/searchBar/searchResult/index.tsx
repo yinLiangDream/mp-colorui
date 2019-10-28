@@ -6,9 +6,18 @@ import ClLayout from "../../layout";
 
 import "./index.scss";
 import ClIcon from "../../icon";
-import { classNames, generateId } from "../../../components/utils";
+import { classNames, generateId } from "../../utils";
 
-export default function ClSearchResult(props: any) {
+export default function ClSearchResult(props: {
+  result?: {
+    title?: string;
+    desc?: string;
+  }[];
+  showLoading?: boolean;
+  onTouchResult: (index: number) => void;
+  className?: any;
+  style?: any;
+}) {
   const [resultState, setResultState] = useState(props.result || []);
   useEffect(() => {
     const list = props.result || [];

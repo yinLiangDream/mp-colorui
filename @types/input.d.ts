@@ -133,6 +133,18 @@ export interface IProps extends BaseComponent {
    * 是否显示清空按钮
    */
   clear?: boolean;
+  /**
+   * 是否显示自动补全内容
+   */
+  autoComplete?: boolean;
+  /**
+   * 补全的数组
+   */
+  completes?: string[];
+  /**
+   * 异步过程显示loading
+   */
+  completeLoading?: boolean;
 }
 
 export interface InputProps extends IProps {}

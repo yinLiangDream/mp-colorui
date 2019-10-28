@@ -3,7 +3,7 @@ import Taro, { Component, pxTransform } from "@tarojs/taro";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/searchBar";
 import ClCard from "../card";
-import ClSearchResult from "./searchReault";
+import ClSearchResult from "./searchResult";
 import { classNames } from "../../components/utils";
 
 interface IState {
@@ -107,9 +107,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
     const buttonComponent = (
       <View className="action" onClick={ClSearchBar.onPreventProp.bind(this)}>
         <Button
-          className={`cu-btn shadow-blur ${
-            this.props.shape
-          } ${buttonColorClassName} ${textColorClassName}`}
+          className={`cu-btn shadow-blur ${this.props.shape} ${buttonColorClassName} ${textColorClassName}`}
           onClick={this.onSearch.bind(this)}
         >
           搜索
@@ -164,7 +162,10 @@ export default class ClSearchBar extends Component<IProps, IState> {
                     <ClSearchResult
                       result={this.props.result}
                       showLoading={this.props.showLoading}
-                      onTouchResult={this.props.onTouchResult}
+                      onTouchResult={index => {
+                        this.props.onTouchResult &&
+                          this.props.onTouchResult(index);
+                      }}
                     />
                   </ScrollView>
                 </ClCard>

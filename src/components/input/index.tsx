@@ -1,4 +1,4 @@
-import { Image, Input, View } from "@tarojs/components";
+import { Image, Input, View, ScrollView } from "@tarojs/components";
 import Taro, { useState, pxTransform, useEffect, useMemo } from "@tarojs/taro";
 import ClButton from "../button";
 import ClIcon from "../icon/index";
@@ -6,6 +6,8 @@ import { IProps } from "../../../@types/input";
 
 import "./index.scss";
 import { classNames, screenPercent } from "../../components/utils/index";
+import ClSearchResult from "../searchBar/searchResult/index";
+import ClCard from "../card";
 
 function ClInput(props: IProps) {
   const [focus, setFocus] = useState(false);
@@ -15,6 +17,7 @@ function ClInput(props: IProps) {
   const [inputId, setInputId] = useState(`cl-input-${+new Date()}`);
   const [materialWidth, setMaterialWidth] = useState("0px");
   const [defaultValue, setDefaultValue] = useState(props.defaultValue);
+  const [showComplete, setShowComplete] = useState(props.autoComplete);
   useMemo(() => {
     if (props.defaultValue !== "" && defaultValue === "") {
       setDefaultValue(defaultValue);
@@ -25,6 +28,7 @@ function ClInput(props: IProps) {
   const onChange = (event: any) => {
     let input = event.detail.value;
     setInitValue(input);
+    props.autoComplete && setShowComplete(true)
     if (props.type === "number") {
       if (Taro.ENV_TYPE.WEB === Taro.getEnv()) {
         if (!isNaN(event.data - 0)) {
@@ -93,6 +97,38 @@ function ClInput(props: IProps) {
           maxHeight: Taro.pxTransform(100)
         }}
       />
+    </View>
+  ) : (
+    ""
+  );
+  const autoCompleteComponent = props.autoComplete ? (
+    <View
+      style={{
+        position: "absolute",
+        top: pxTransform(84),
+        left: pxTransform(0),
+        width: `100%`,
+        display: showComplete ? "" : "none"
+      }}
+    >
+      <ClCard shadow={false} bgColor={this.props.bgColor} type='full'>
+        <ScrollView scrollY style={{ maxHeight: "300px" }}>
+          <ClSearchResult
+            showLoading={props.completeLoading}
+            result={
+              props.completes
+                ? props.completes.map(str => ({
+                    title: str
+                  }))
+                : []
+            }
+            onTouchResult={index => {
+              props.completes && setInitValue(props.completes[index]);
+              setShowComplete(false)
+            }}
+          />
+        </ScrollView>
+      </ClCard>
     </View>
   ) : (
     ""
@@ -215,6 +251,7 @@ function ClInput(props: IProps) {
       {buttonComponent}
       {imageComponent}
       {renderCustomRight}
+      {autoCompleteComponent}
     </View>
   );
 }

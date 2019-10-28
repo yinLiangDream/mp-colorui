@@ -1,11 +1,14 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import Taro, { useState, useMemo } from "@tarojs/taro";
 import { classNames } from "../../components/utils";
 import { BG_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/shopBar";
 import ClButton from "../button";
+import { generateId } from "../utils/index";
 
 export default function ClShopBar(props: IProps) {
+  const [tabs, setTabs] = useState(props.tabs || []);
+  const [buttons, setButtons] = useState(props.buttons || []);
   const onClickTab = (index: number) => {
     props.onClickTab && props.onClickTab(index);
   };
@@ -13,44 +16,56 @@ export default function ClShopBar(props: IProps) {
     props.onClickButton && props.onClickButton(index);
   };
   const bgColorClassName = BG_COLOR_LIST[props.bgColor || "white"];
-  const tabsComponent =
-    props.tabs &&
-    props.tabs.map((item, index) => (
-      <View key={index}>
-        <ClButton bgColor={props.bgColor} shadow={false} {...item.moreAction}>
-          <View
-            className="action"
-            onClick={() => {
-              onClickTab(index);
-            }}
-          >
-            <View className={`${item.icon ? "cuIcon-" + item.icon : ""}`}>
-              {item.badge !== false ? (
-                <View className="cu-tag badge">
-                  {item.badge === true ? "" : item.badge}
-                </View>
-              ) : (
-                ""
-              )}
-            </View>
-            <View>{item.title}</View>
+  useMemo(() => {
+    const initTabs = props.tabs || [];
+    const tabs: any[] = initTabs.map(item => ({
+      id: generateId(),
+      ...item
+    }));
+    setTabs(tabs);
+  }, [props.tabs]);
+  useMemo(() => {
+    const initButtons = props.buttons || [];
+    const buttons: any[] = initButtons.map(item => ({
+      id: generateId(),
+      ...item
+    }));
+    setButtons(buttons);
+  }, [props.buttons]);
+  const tabsComponent = tabs.map((item: any, index) => (
+    <View key={item.id}>
+      <ClButton bgColor={props.bgColor} shadow={false} {...item.moreAction}>
+        <View
+          className="action"
+          onClick={() => {
+            onClickTab(index);
+          }}
+        >
+          <View className={`${item.icon ? "cuIcon-" + item.icon : ""}`}>
+            {item.badge !== false ? (
+              <View className="cu-tag badge">
+                {item.badge === true ? "" : item.badge}
+              </View>
+            ) : (
+              ""
+            )}
           </View>
-        </ClButton>
-      </View>
-    ));
-  const buttonsComponent =
-    props.buttons &&
-    props.buttons.map((item, index) => (
-      <View
-        key={index}
-        className={`${BG_COLOR_LIST[item.bgColor || "red"]} submit`}
-        onClick={() => {
-          onClickButton(index);
-        }}
-      >
-        {item.text}
-      </View>
-    ));
+          <View>{item.title}</View>
+        </View>
+      </ClButton>
+    </View>
+  ));
+  const buttonsComponent = buttons.map((item: any, index) => (
+    <View
+      key={item.id}
+      className={`${BG_COLOR_LIST[item.bgColor || "red"]} submit`}
+      onClick={() => {
+        onClickButton(index);
+      }}
+    >
+      {item.text}
+    </View>
+  ));
   return (
     <View
       className={classNames(
