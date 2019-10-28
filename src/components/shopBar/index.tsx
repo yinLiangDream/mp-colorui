@@ -34,13 +34,15 @@ export default function ClShopBar(props: IProps) {
   }, [props.buttons]);
   const tabsComponent = tabs.map((item: any, index) => (
     <View key={item.id}>
-      <ClButton bgColor={props.bgColor} shadow={false} {...item.moreAction}>
-        <View
-          className="action"
-          onClick={() => {
-            onClickTab(index);
-          }}
-        >
+      <ClButton
+        bgColor={props.bgColor}
+        shadow={false}
+        {...item.moreAction}
+        onClick={() => {
+          onClickTab(index);
+        }}
+      >
+        <View className="action">
           <View className={`${item.icon ? "cuIcon-" + item.icon : ""}`}>
             {item.badge !== false ? (
               <View className="cu-tag badge">

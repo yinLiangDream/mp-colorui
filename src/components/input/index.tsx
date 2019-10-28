@@ -17,7 +17,7 @@ function ClInput(props: IProps) {
   const [inputId, setInputId] = useState(`cl-input-${+new Date()}`);
   const [materialWidth, setMaterialWidth] = useState("0px");
   const [defaultValue, setDefaultValue] = useState(props.defaultValue);
-  const [showComplete, setShowComplete] = useState(props.autoComplete);
+  const [showComplete, setShowComplete] = useState(false);
   useMemo(() => {
     if (props.defaultValue !== "" && defaultValue === "") {
       setDefaultValue(defaultValue);
@@ -268,6 +268,9 @@ ClInput.defaultProps = {
   placeholder: "",
   type: "text",
   adjustPosition: true,
-  defaultValue: ""
+  defaultValue: "",
+  completeLoading: false,
+  completes: [],
+  autoComplete: false
 } as IProps;
 export default ClInput;
