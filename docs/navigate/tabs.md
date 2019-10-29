@@ -17,10 +17,10 @@ import { ClTabs } from "mp-colorui";
 | 参数        | 说明            | 类型    | 可选值                                          | 默认值      |
 | ----------- | --------------- | ------- | ----------------------------------------------- | ----------- |
 | type        | _tabs 类型选择_ | string  | _`default`_,_`center`_,_`verb`_                 | _`default`_ |
-| bgColor     | _背景色_        | string  | 参考文档 [默认色](/home/color)                  | -           |
-| activeColor | _激活的颜色_    | string  | 参考文档 [默认色-标准色](/home/color#标准色) | _`black`_   |
+| bgColor     | _背景色_        | string  | 参考文档 [默认色](/mp-colorui-doc/home/color)                  | -           |
+| activeColor | _激活的颜色_    | string  | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`black`_   |
 | active      | _激活的下标_    | number  | -                                               | 0           |
-| tabs        | _tab 数组_      | tabs[]  | [详情](/navigate/tabs#tabs)                  | []          |
+| tabs        | _tab 数组_      | tabs[]  | [详情](/mp-colorui-doc/navigate/tabs#tabs)                  | []          |
 | touchMove   | _是否可拖动_    | boolean | -                                               | _`false`_   |
 
 ### tabs
@@ -28,7 +28,7 @@ import { ClTabs } from "mp-colorui";
 | 参数 | 说明         | 类型   | 可选值                                             | 默认值 |
 | ---- | ------------ | ------ | -------------------------------------------------- | ------ |
 | text | _标题_       | string | -                                                  | -      |
-| icon | _图标_       | string | 参考文档 [Icon-_iconName_](/base/icon#iconname) | -      |
+| icon | _图标_       | string | 参考文档 [Icon-_iconName_](/mp-colorui-doc/base/icon#iconname) | -      |
 | id   | _唯一标识符_ | string | -                                                  | -      |
 
 ### Tabs 事件

@@ -22,15 +22,15 @@ import { ClActionSheet } from "mp-colorui";
 | tip             | _提示文字_             | string    |                                                 | -         |
 | closeWithShadow | _点击阴影关闭_         | boolean   | -                                               | _`true`_  |
 | cancelText      | _取消按钮的文字_       | string    | -                                               | _`取消`_  |
-| cancelBgColor   | _取消按钮背景色_       | string    | 参考文档 [默认色](/home/color)                  | _`white`_ |
-| cancelFontColor | _取消按钮按钮文字颜色_ | string    | 参考文档 [默认色-标准色](/home/color#标准色) | -         |
+| cancelBgColor   | _取消按钮背景色_       | string    | 参考文档 [默认色](/mp-colorui-doc/home/color)                  | _`white`_ |
+| cancelFontColor | _取消按钮按钮文字颜色_ | string    | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | -         |
 | options         | _展示的数组_           | options[] | -                                               | _`[]`_    |
 
 ### options
 
 | 参数    | 说明         | 类型   | 可选值                         | 默认值    |
 | ------- | ------------ | ------ | ------------------------------ | --------- |
-| bgColor | _按钮背景色_ | string | 参考文档 [默认色](/home/color) | _`white`_ |
+| bgColor | _按钮背景色_ | string | 参考文档 [默认色](/mp-colorui-doc/home/color) | _`white`_ |
 | text    | _文字内容_   | string |                                |           |
 
 ## ActionSheet 事件

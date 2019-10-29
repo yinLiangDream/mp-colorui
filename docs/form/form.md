@@ -14,7 +14,7 @@ import { ClForm, ClFormItem } from "mp-colorui";
 
 ### 内置函数
 
-> rules 里面的校验函数第一个参数 rule 是传入的内置函数，以简化部分校验规则的手动实现，具体函数请查看[内置工具](/util/rule)
+> rules 里面的校验函数第一个参数 rule 是传入的内置函数，以简化部分校验规则的手动实现，具体函数请查看[内置工具](/mp-colorui-doc/util/rule)
 
 ### 整体校验
 

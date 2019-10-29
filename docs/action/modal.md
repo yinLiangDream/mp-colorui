@@ -23,10 +23,10 @@ import { ClModal } from "mp-colorui";
 | close           | _是否显示关闭按钮_     | boolean   | _`true`_,_`false`_                                   | _`true`_  |
 | custom          | _是否自定义整个 modal_ | boolean   | _`true`_,_`false`_                                   | _`false`_ |
 | closeWithShadow | _点击阴影关闭_         | boolean   | _`true`_,_`false`_                                   | _`false`_ |
-| titleBgColor    | _标题栏背景色_         | string    | 参考文档 [默认色](/home/color)                       | -         |
-| actionColor     | _操作栏颜色_           | string    | 参考文档 [默认色](/home/color)                       | -         |
+| titleBgColor    | _标题栏背景色_         | string    | 参考文档 [默认色](/mp-colorui-doc/home/color)                       | -         |
+| actionColor     | _操作栏颜色_           | string    | 参考文档 [默认色](/mp-colorui-doc/home/color)                       | -         |
 | padding         | _padding 距离_         | string    | _`xsmall`_,_`small`_,_`normal`_,_`large`_,_`xlarge`_ | -         |
-| actions         | _操作栏操作组_         | actions[] | [详情](/action/modal#actions)                     | []        |
+| actions         | _操作栏操作组_         | actions[] | [详情](/mp-colorui-doc/action/modal#actions)                     | []        |
 | renderAction    | _自定义操作栏_         | Element   | -                                                    | -         |
 | renderTitle     | _自定义标题栏_         | Element   | -                                                    | -         |
 
@@ -35,7 +35,7 @@ import { ClModal } from "mp-colorui";
 | 参数  | 说明          | 类型   | 可选值                                          | 默认值 |
 | ----- | ------------- | ------ | ----------------------------------------------- | ------ |
 | text  | _action 文字_ | string | -                                               | -      |
-| color | _action 颜色_ | string | 参考文档 [默认色-标准色](/home/color#标准色) | -      |
+| color | _action 颜色_ | string | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | -      |
 
 ### Modal 事件
 

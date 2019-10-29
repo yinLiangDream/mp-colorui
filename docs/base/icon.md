@@ -38,7 +38,7 @@ import { ClIcon } from "mp-colorui";
 | :------- | :----------------- | :-------------- | :---------------------------------------------- | :--------- |
 | iconName | 图标图案           | string          | 参考下表                                        | -          |
 | size     | 图标大小           | string / Number | 大于 10 的整数或者默认支持大小                  | _`normal`_ |
-| color    | 图标颜色           | string          | 参考文档 [默认色-标准色](/home/color#标准色) | -          |
+| color    | 图标颜色           | string          | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | -          |
 | other    | 是否为第三方图标库 | boolean         | -                                               | `false`    |
 
 ### size

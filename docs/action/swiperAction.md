@@ -24,7 +24,7 @@ import { ClSwiperAction } from "mp-colorui";
 
 | 参数    | 说明         | 类型   | 可选值                         | 默认值    |
 | ------- | ------------ | ------ | ------------------------------ | --------- |
-| bgColor | _按钮背景色_ | string | 参考文档 [默认色](/home/color) | _`white`_ |
+| bgColor | _按钮背景色_ | string | 参考文档 [默认色](/mp-colorui-doc/home/color) | _`white`_ |
 | text    | _文字内容_   | string |                                |           |
 
 ## SwiperAction 事件

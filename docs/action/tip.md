@@ -15,7 +15,7 @@ import { ClTip } from "mp-colorui";
 | 参数          | 说明       | 类型    | 可选值                         | 默认值    |
 | ------------- | ---------- | ------- | ------------------------------ | --------- |
 | show          | _是否显示_ | boolean | -                              | _`false`_ |
-| bgColor       | _背景色_   | string  | 参考文档 [默认色](/home/color) | -         |
+| bgColor       | _背景色_   | string  | 参考文档 [默认色](/mp-colorui-doc/home/color) | -         |
 | message       | _消息文本_ | string  | -                              | -         |
 | mode          | _触发方式_ | number  | `click`,`touch`                | `touch`   |
 | width         | _宽度_     | boolean | -                              | _`150`_   |

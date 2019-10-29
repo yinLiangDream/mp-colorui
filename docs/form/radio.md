@@ -18,9 +18,9 @@ import { ClRadio } from "mp-colorui";
 | direction    | _单选框方向_            | string       | _`vertical`_,_`horizontal`_                     | _`vertical`_ |
 | shape        | _单选框形状_            | string       | _`normal`_,_`radio`_                            | _`normal`_   |
 | title        | _type 为 form 时的标题_ | string       | -                                               | -            |
-| color        | _选中颜色_              | string       | 参考文档 [默认色-标准色](/home/color#标准色) | _`green`_    |
+| color        | _选中颜色_              | string       | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`green`_    |
 | checkedValue | 选中的 Value 值         | string       | -                                               | -            |
-| radioGroup   | _单选框组_              | radioGroup[] | [详情](/form/radio#radiogroup)               | []           |
+| radioGroup   | _单选框组_              | radioGroup[] | [详情](/mp-colorui-doc/form/radio#radiogroup)               | []           |
 
 ### radioGroup
 

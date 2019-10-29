@@ -17,9 +17,9 @@ import { ClCheckbox } from "mp-colorui";
 | title         | _form 类型下，复选框标题设置_ | string          | -                                               | -            |
 | type          | _复选框类型选择_              | string          | _`normal`_,_`form`_                             | _`normal`_   |
 | shape         | _复选框形状设置_              | string          | _`normal`_,_`round`_                            | _`normal`_   |
-| color         | _复选框选中色设置_            | string          | 参考文档 [默认色-标准色](/home/color#标准色) | _`green`_    |
+| color         | _复选框选中色设置_            | string          | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`green`_    |
 | direction     | _复选框排列类型_              | string          | _`vertical`_,_`horizontal`_                     | _`vertical`_ |
-| checkboxGroup | _复选框每一项设置_            | checkboxGroup[] | [详情](/form/checkbox#checkboxgroup)         | []           |
+| checkboxGroup | _复选框每一项设置_            | checkboxGroup[] | [详情](/mp-colorui-doc/form/checkbox#checkboxgroup)         | []           |
 
 ### checkboxGroup
 

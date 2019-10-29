@@ -14,13 +14,13 @@ import { ClNoticeBar } from "mp-colorui";
 
 | 参数     | 说明               | 类型    | 可选值                               | 默认值             |
 | -------- | ------------------ | ------- | ------------------------------------ | ------------------ |
-| bgColor  | _背景色_           | string  | 参考文档 [默认色](/home/color)       | _`yellow`_         |
+| bgColor  | _背景色_           | string  | 参考文档 [默认色](/mp-colorui-doc/home/color)       | _`yellow`_         |
 | single   | _是否单行_         | boolean | -                                    | `false`            |
 | marquee  | _内容滚动_         | boolean | -                                    | `false`            |
 | speed    | _滚动速度_         | number  | -                                    | `5`                |
 | showMore | _显示查看详情按钮_ | boolean | -                                    | `false`            |
 | moreText | _查看详情文字_     | string  | -                                    | `查看详情`         |
-| icon     | _前置图标_         | string  | [Icon-iconName](/base/icon#iconname) | `notificationfill` |
+| icon     | _前置图标_         | string  | [Icon-iconName](/mp-colorui-doc/base/icon#iconname) | `notificationfill` |
 | close    | _是否显示关闭按钮_ | boolean | -                                    | `false`            |
 | text     | _消息的内容_       | string  | -                                    |                    |
 

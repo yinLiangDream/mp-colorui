@@ -22,9 +22,9 @@ import { ClFloatButton } from "mp-colorui";
 | shadow          | 是否有阴影     | boolean      | -                                                | `true`     |
 | move            | 是否可移动     | boolean      | -                                                | `false`    |
 | open            | 是否可展开     | boolean      | -                                                | `true`     |
-| icon            | 图标           | string       | 参考文档 [Icon-iconName](/base/icon#iconname) | `add`      |
-| bgColor         | 背景色         | string       | 参考文档 [默认色](/home/color)                   | `blue`     |
-| iconColor       | 图标色         | string       | 参考文档 [默认色-标准色](/home/color#标准色)  | -          |
+| icon            | 图标           | string       | 参考文档 [Icon-iconName](/mp-colorui-doc/base/icon#iconname) | `add`      |
+| bgColor         | 背景色         | string       | 参考文档 [默认色](/mp-colorui-doc/home/color)                   | `blue`     |
+| iconColor       | 图标色         | string       | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色)  | -          |
 | direction       | 展开方向       | string       | `vertical`,`horizontal`                          | `vertical` |
 | actionList      | 展开按钮组     | actionList[] | -                                                | []         |
 
@@ -32,9 +32,9 @@ import { ClFloatButton } from "mp-colorui";
 
 | 参数      | 说明   | 类型   | 可选值                                           | 默认值 |
 | --------- | ------ | ------ | ------------------------------------------------ | ------ |
-| icon      | 图标   | string | 参考文档 [Icon-iconName](/base/icon#iconname) | -      |
-| bgColor   | 背景色 | string | 参考文档 [默认色](/home/color)                   | -      |
-| iconColor | 图标色 | string | 参考文档 [默认色-标准色](/home/color#标准色)  | -      |
+| icon      | 图标   | string | 参考文档 [Icon-iconName](/mp-colorui-doc/base/icon#iconname) | -      |
+| bgColor   | 背景色 | string | 参考文档 [默认色](/mp-colorui-doc/home/color)                   | -      |
+| iconColor | 图标色 | string | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色)  | -      |
 
 ### FloatButton 事件
 

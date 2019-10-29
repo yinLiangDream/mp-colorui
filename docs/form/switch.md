@@ -17,7 +17,7 @@ import { ClSwitch } from "mp-colorui";
 | type    | _switch 类型_ | string  | _`normal`_,_`form`_                             | _`normal`_ |
 | title   | _标题_        | string  | -                                               | -          |
 | shape   | _形状_        | string  | _`normal`_,_`radius`_                           | _`normal`_ |
-| color   | _选中颜色_    | string  | 参考文档 [默认色-标准色](/home/color#标准色) | _`green`_  |
+| color   | _选中颜色_    | string  | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`green`_  |
 | checked | _是否选中_    | boolean | _`true`_,_`false`_                              | _`false`_  |
 
 ### Switch 事件

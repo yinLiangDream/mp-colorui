@@ -14,8 +14,8 @@ import { ClImagePicker } from "mp-colorui";
 
 | 参数         | 说明           | 类型                                                | 可选值                                    | 默认值 |
 | ------------ | -------------- | --------------------------------------------------- | ----------------------------------------- | ------ |
-| chooseImgObj | _选择图片对象_ | [chooseImgObj](/form/imagePicker#chooseImgObj)[] | [详情](/form/imagePicker#chooseimgobj) | []     |
-| imgList      | _图片列表_     | [imgList](/form/imagePicker#imglist)[]           | -                                         | []     |
+| chooseImgObj | _选择图片对象_ | [chooseImgObj](/mp-colorui-doc/form/imagePicker#chooseImgObj)[] | [详情](/mp-colorui-doc/form/imagePicker#chooseimgobj) | []     |
+| imgList      | _图片列表_     | [imgList](/mp-colorui-doc/form/imagePicker#imglist)[]           | -                                         | []     |
 
 ### imgList
 
