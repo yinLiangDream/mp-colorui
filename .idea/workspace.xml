@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/accordion.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/accordion.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/accordion/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/flex.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/flex.d.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,14 +224,7 @@
       <workItem from="1571127368696" duration="169000" />
       <workItem from="1571127557458" duration="11767000" />
       <workItem from="1572832768560" duration="733000" />
-      <workItem from="1572833529115" duration="1033000" />
-    </task>
-    <task id="LOCAL-00005" summary="searBar 组件完成，list 部分还未完成">
-      <created>1556523695175</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1556523695175</updated>
+      <workItem from="1572833529115" duration="1256000" />
     </task>
     <task id="LOCAL-00006" summary="buttonGroup">
       <created>1556604867015</created>
@@ -571,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571209597539</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="feat Accordion 组件新增 height 属性，可以自定义高度">
+      <created>1572847153444</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1572847153445</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
@@ -618,7 +616,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Input 组件新增 defaultValue 属性" />
     <MESSAGE value="BUG&#10;修复 Button 在 flex 布局下会拉伸问题" />
     <MESSAGE value="BUG&#10;修复 Button 缺失的属性，并添加诸多属性" />
     <MESSAGE value="BUG&#10;SwiperAction 支付宝小程序适配" />
@@ -643,6 +640,7 @@
     <MESSAGE value="feat Text 组件新增 warp 属性&#10;feat NoticeBar 组件新增" />
     <MESSAGE value="feat Message 组件 修复类型说明消失问题&#10;feat NoticeBar 组件 新增" />
     <MESSAGE value="0.5.6版本更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.5.6版本更新" />
+    <MESSAGE value="feat Accordion 组件新增 height 属性，可以自定义高度" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat Accordion 组件新增 height 属性，可以自定义高度" />
   </component>
 </project>

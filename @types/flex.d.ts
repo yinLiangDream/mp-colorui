@@ -15,9 +15,9 @@ export interface IProps extends BaseComponent {
    *
    * 默认值 `start`
    *
-   * 可选参数 `start`, `center`, `end`
+   * 可选参数 `start`, `center`, `end`, `stretch`
    */
-  align?: "start" | "center" | "end";
+  align?: "start" | "center" | "end" | "stretch";
   /**
    * 是否换行
    *
