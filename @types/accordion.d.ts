@@ -27,6 +27,12 @@ export interface IProps extends BaseComponent {
    */
   card?: boolean;
   /**
+   * 高度，可自定义高度，不设置则自动调节高度
+   *
+   * 默认 `0`
+   */
+  height?: number;
+  /**
    * 点击事件
    * @param flag
    */

@@ -1,5 +1,5 @@
 import Taro, { pxTransform, useEffect, useState } from "@tarojs/taro";
-import { View } from "@tarojs/components";
+import { View, ScrollView } from "@tarojs/components";
 
 import { IProps } from "../../../@types/accordion";
 import ClIcon from "../icon";
@@ -65,7 +65,14 @@ export default function ClAccordion(props: IProps) {
         </View>
       </View>
       <View id={id} className="bg-white">
-        {this.props.children}
+        <ScrollView
+          scrollY
+          style={{
+            height: props.height ? pxTransform(props.height) : "100%"
+          }}
+        >
+          {this.props.children}
+        </ScrollView>
       </View>
     </View>
   );
@@ -81,5 +88,6 @@ ClAccordion.defaultProps = {
   animation: true,
   onClick: () => {},
   card: false,
-  speed: 0.15
+  speed: 0.15,
+  height: 0
 } as IProps;

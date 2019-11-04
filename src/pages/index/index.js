@@ -32,22 +32,13 @@ export default function Index() {
   const [showLoading, setLoading] = useState(true);
   return (
     <View>
-      <ClInput
-        defaultValue="自动补全"
-        style={{
-          zIndex: 1
-        }}
-        autoComplete
-        completes={["补全内容 1", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2", "补全内容 2"]}
-        completeLoading={showLoading}
-        clear
-        onChange={() => {
-          setLoading(true);
-          setTimeout(() => {
-            setLoading(false);
-          }, 1000);
-        }}
-      />
+      <ClAccordion title="我是标头">
+        <View>123</View>
+        <View>123</View>
+        <View>123</View>
+        <View>123</View>
+        <View>123</View>
+      </ClAccordion>
     </View>
   );
 }

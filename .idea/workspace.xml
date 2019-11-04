@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/accordion.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/accordion.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/accordion/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,10 +148,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.publish:production" />
       </list>
     </recent_temporary>
@@ -222,6 +225,8 @@
       <workItem from="1570614671770" duration="12375000" />
       <workItem from="1571127368696" duration="169000" />
       <workItem from="1571127557458" duration="11767000" />
+      <workItem from="1572832768560" duration="733000" />
+      <workItem from="1572833529115" duration="1033000" />
     </task>
     <task id="LOCAL-00005" summary="searBar 组件完成，list 部分还未完成">
       <created>1556523695175</created>
