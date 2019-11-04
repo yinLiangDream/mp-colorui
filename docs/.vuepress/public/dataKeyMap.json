@@ -3,7 +3,8 @@
     { "key": "normal", "value": "正常用法" },
     { "key": "card", "value": "卡片模式" },
     { "key": "disabledAnimation", "value": "禁止动画" },
-    { "key": "speed", "value": "速度" }
+    { "key": "speed", "value": "速度" },
+    { "key": "height", "value": "高度" }
   ],
   "actionSheet": [
     { "key": "type", "value": "类型" },

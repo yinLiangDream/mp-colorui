@@ -15,7 +15,7 @@ import { ClFlex } from "mp-colorui";
 | 参数      | 说明               | 类型    | 可选值                                              | 默认值    |
 | --------- | ------------------ | ------- | --------------------------------------------------- | --------- |
 | justify   | _水平方向排列方式_ | string  | _`start`_,_`end`_,_`center`_,_`between`_,_`around`_ | _`start`_ |
-| align     | _垂直方向排列方式_ | string  | _`start`_,_`end`_,_`center`_                        | _`start`_ |
+| align     | _垂直方向排列方式_ | string  | _`start`_,_`end`_,_`center`_,_`stretch`_            | _`start`_ |
 | wrap      | _换行_             | boolean | _`true`_,_`false`_                                  | _`false`_ |
 | direction | 浮动方向           | string  | `row`,`row-reverse`,`column`,`column-reverse`       | `row`     |
 
