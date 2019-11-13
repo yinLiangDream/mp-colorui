@@ -51,7 +51,7 @@ export default function ClTabBar(props: IProps) {
   return (
     <View
       className={classNames(
-        `cu-bar tabbar ${colorClassName}`,
+        `cu-bar tabbar ${props.safeArea ? "safe-area" : ""} ${colorClassName}`,
         props.className
       )}
       style={Object.assign(
@@ -74,5 +74,6 @@ ClTabBar.defaultProps = {
   bgColor: "white",
   activeColor: "blue",
   active: 0,
-  tabs: []
+  tabs: [],
+  safeArea: true
 } as IProps;

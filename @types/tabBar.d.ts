@@ -59,6 +59,12 @@ export interface IProps extends BaseComponent {
     action?: boolean;
   }[];
   /**
+   * 是否显示手机下方安全区域
+   *
+   * 默认 `true`
+   */
+  safeArea?: boolean;
+  /**
    * 每一项的点击事件
    */
   onClick?: (index: number) => void;

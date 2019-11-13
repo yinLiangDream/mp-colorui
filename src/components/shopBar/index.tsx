@@ -6,7 +6,7 @@ import { IProps } from "../../../@types/shopBar";
 import ClButton from "../button";
 import { generateId } from "../utils/index";
 
-import './index.scss'
+import "./index.scss";
 
 export default function ClShopBar(props: IProps) {
   const [tabs, setTabs] = useState(props.tabs || []);
@@ -35,7 +35,7 @@ export default function ClShopBar(props: IProps) {
     setButtons(buttons);
   }, [props.buttons]);
   const tabsComponent = tabs.map((item: any, index) => (
-    <View key={item.id} className='ClShopBar__tab'>
+    <View key={item.id} className="ClShopBar__tab">
       <ClButton
         bgColor={props.bgColor}
         shadow={false}
@@ -78,9 +78,9 @@ export default function ClShopBar(props: IProps) {
   return (
     <View
       className={classNames(
-        `cu-bar ${bgColorClassName} tabbar shop ${
-          props.border ? "border" : ""
-        }`,
+        `cu-bar ${bgColorClassName} tabbar ${
+          props.safeArea ? "safe-area" : ""
+        } shop ${props.border ? "border" : ""}`,
         props.className
       )}
       style={Object.assign(
@@ -106,5 +106,6 @@ ClShopBar.defaultProps = {
   buttons: [],
   border: false,
   onClickButton: () => {},
-  onClickTab: () => {}
+  onClickTab: () => {},
+  safeArea: true
 };

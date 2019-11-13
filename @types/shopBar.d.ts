@@ -1,4 +1,4 @@
-import { IProps } from './button.d';
+import { IProps } from "./button.d";
 import { ComponentClass } from "react";
 
 import {
@@ -69,6 +69,12 @@ export interface IProps extends BaseComponent {
      */
     bgColor?: bgColorType | bgColorMoreType | lightBgColorType;
   }[];
+  /**
+   * 是否显示手机下方安全区域
+   *
+   * 默认 `true`
+   */
+  safeArea?: boolean;
   /**
    * 每个 tab 点击事件， 参数 index 为每一项的下标
    */

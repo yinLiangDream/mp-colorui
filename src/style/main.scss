@@ -6,7 +6,7 @@
   load-progress 2000
   modal 1110
 */
-@import './vars';
+@import "./vars";
 /* ==================
           头像
  ==================== */
@@ -90,7 +90,7 @@
 .dashed-left {
   position: relative;
   &::after {
-    content: ' ';
+    content: " ";
     width: 200%;
     height: 200%;
     position: absolute;
@@ -196,7 +196,7 @@
     &:before,
     &:after {
       position: absolute;
-      content: '';
+      content: "";
       top: 20px;
       bottom: 30px;
       left: 20px;
@@ -214,7 +214,7 @@
   &-blur {
     position: relative;
     &::before {
-      content: '';
+      content: "";
       display: block;
       background: inherit;
       filter: blur(10px);
@@ -260,13 +260,13 @@ button.icon.lg {
   &::after {
     display: none;
   }
-  &:not([class*='bg-']) {
+  &:not([class*="bg-"]) {
     background-color: #f0f0f0;
   }
-  &[class*='line'] {
+  &[class*="line"] {
     background-color: transparent;
     &::after {
-      content: ' ';
+      content: " ";
       display: block;
       width: 200%;
       height: 200%;
@@ -283,18 +283,18 @@ button.icon.lg {
     }
   }
   &.round {
-    &[class*='line'] {
+    &[class*="line"] {
       &::after {
         border-radius: 1000px;
       }
     }
   }
-  &[class*='lines'] {
+  &[class*="lines"] {
     &::after {
       border: 6px solid currentColor;
     }
   }
-  &[class*='bg-'] {
+  &[class*="bg-"] {
     &::after {
       display: none;
     }
@@ -363,12 +363,12 @@ button[disabled] {
   height: 48px;
   font-family: Helvetica Neue, Helvetica, sans-serif;
   white-space: nowrap;
-  &:not([class*='bg']):not([class*='line']) {
+  &:not([class*="bg"]):not([class*="line"]) {
     background-color: #f1f1f1;
   }
-  &[class*='line-'] {
+  &[class*="line-"] {
     &::after {
-      content: ' ';
+      content: " ";
       width: 200%;
       height: 200%;
       position: absolute;
@@ -384,14 +384,14 @@ button[disabled] {
     }
   }
   &.radius {
-    &[class*='line'] {
+    &[class*="line"] {
       &::after {
         border-radius: 12px;
       }
     }
   }
   &.round {
-    &[class*='line'] {
+    &[class*="line"] {
       &::after {
         border-radius: 1000px;
       }
@@ -414,12 +414,12 @@ button[disabled] {
     padding: 0px 10px;
     height: 28px;
     color: $white;
-    &:not([class*='bg-']) {
+    &:not([class*="bg-"]) {
       background-color: #dd514c;
     }
   }
   &:empty {
-    &:not([class*='cuIcon-']) {
+    &:not([class*="cuIcon-"]) {
       padding: 0px;
       width: 16px;
       height: 16px;
@@ -427,7 +427,7 @@ button[disabled] {
       right: -4px;
     }
   }
-  &[class*='cuIcon-'] {
+  &[class*="cuIcon-"] {
     width: 32px;
     height: 32px;
     top: -4px;
@@ -447,7 +447,7 @@ button[disabled] {
   }
   .cu-tag {
     margin: 0;
-    &[class*='line-'] {
+    &[class*="line-"] {
       &:last-child {
         &::after {
           border-left: 0px solid transparent;
@@ -467,7 +467,7 @@ button[disabled] {
         border-bottom-left-radius: 6px;
       }
       &:last-child::after,
-      &[class*='line-'] {
+      &[class*="line-"] {
         border-top-right-radius: 12px;
         border-bottom-right-radius: 12px;
       }
@@ -504,7 +504,7 @@ button[disabled] {
   + view,
   + div,
   + text,
-  + span{
+  + span {
     line-height: 1;
   }
   &.xs {
@@ -513,7 +513,8 @@ button[disabled] {
   &.sm {
     height: 20px;
   }
-  view, div {
+  view,
+  div {
     width: 0;
     height: 100%;
     align-items: center;
@@ -524,7 +525,8 @@ button[disabled] {
     color: $white;
     transition: width 0.6s ease;
   }
-  text, span {
+  text,
+  span {
     align-items: center;
     display: flex;
     font-size: 20px;
@@ -535,7 +537,8 @@ button[disabled] {
     padding-right: 60px;
   }
   &.striped {
-    view, div {
+    view,
+    div {
       background-image: linear-gradient(
         45deg,
         rgba(255, 255, 255, 0.15) 25%,
@@ -550,7 +553,8 @@ button[disabled] {
     }
   }
   &.active {
-    view, div {
+    view,
+    div {
       animation: progress-stripes 2s linear infinite;
     }
   }
@@ -575,33 +579,33 @@ button[disabled] {
   line-height: 3em;
   text-align: center;
   &::before {
-    font-family: 'cuIcon';
+    font-family: "cuIcon";
     display: inline-block;
     margin-right: 6px;
   }
   &.loading {
     &::before {
-      content: '\e67a';
+      content: "\e67a";
       animation: cuIcon-spin 2s infinite linear;
     }
     &::after {
-      content: '加载中...';
+      content: "加载中...";
     }
   }
   &.over {
     &::before {
-      content: '\e64a';
+      content: "\e64a";
     }
     &::after {
-      content: '没有更多了';
+      content: "没有更多了";
     }
   }
   &.erro {
     &::before {
-      content: '\e658';
+      content: "\e658";
     }
     &::after {
-      content: '加载失败';
+      content: "加载失败";
     }
   }
   &.load-icon {
@@ -634,15 +638,17 @@ button[disabled] {
     font-size: 28px;
     z-index: 9999;
     line-height: 2.4em;
-    [class*='cuIcon-'] {
+    [class*="cuIcon-"] {
       font-size: 60px;
     }
-    image, img, div[class*='taro-img'] {
+    image,
+    img,
+    div[class*="taro-img"] {
       width: 70px;
       height: 70px;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $white;
       border-radius: 50%;
@@ -698,7 +704,7 @@ button[disabled] {
     z-index: 2000;
     display: block;
     &::after {
-      content: '';
+      content: "";
       display: block;
       width: 24px;
       height: 24px;
@@ -761,7 +767,8 @@ button[disabled] {
         width: 260px;
         height: 100%;
         transform: translateX(100%);
-        view, div {
+        view,
+        div {
           display: flex;
           flex: 1;
           justify-content: center;
@@ -807,7 +814,7 @@ button[disabled] {
           height: 200%;
           border-bottom: 2px solid #ddd;
           border-radius: inherit;
-          content: ' ';
+          content: " ";
           transform: scale(0.5);
           transform-origin: 0 0;
           pointer-events: none;
@@ -821,7 +828,7 @@ button[disabled] {
         &.arrow {
           padding-right: 90px;
           &:before {
-            content: '\e6a3';
+            content: "\e6a3";
             position: absolute;
             top: 0;
             right: 30px;
@@ -842,7 +849,7 @@ button[disabled] {
           padding-right: 90px;
 
           &:before {
-            content: '\e645';
+            content: "\e645";
             position: absolute;
             top: 0;
             right: 30px;
@@ -859,7 +866,7 @@ button[disabled] {
           }
         }
 
-        &:not([class*='disabled']):active {
+        &:not([class*="disabled"]):active {
           background-color: rgba(0, 0, 0, 0.2);
         }
         button {
@@ -886,14 +893,16 @@ button[disabled] {
             height: auto;
           }
           > {
-            view, div:not([class*="taro-img"]) {
+            view,
+            div:not([class*="taro-img"]) {
               &:first-child {
                 display: flex;
                 align-items: center;
               }
             }
-            text, span {
-              &[class*='cuIcon-'] {
+            text,
+            span {
+              &[class*="cuIcon-"] {
                 display: inline-block;
                 margin-right: 10px;
                 width: 1.6rem;
@@ -901,7 +910,8 @@ button[disabled] {
               }
             }
             image,
-            div > img, div[class*='taro-img'] {
+            div > img,
+            div[class*="taro-img"] {
               display: inline-block;
               margin-right: 10px;
               width: 1.6rem;
@@ -952,7 +962,7 @@ button[disabled] {
             width: calc(100% - 96px - 60px - 20px);
           }
           > view:first-child,
-            div:first-child {
+          div:first-child {
             font-size: 30px;
             display: flex;
             align-items: center;
@@ -1013,7 +1023,7 @@ button[disabled] {
           border-right: 2px solid rgba(0, 0, 0, 0.1);
           border-bottom: 2px solid rgba(0, 0, 0, 0.1);
           border-radius: inherit;
-          content: ' ';
+          content: " ";
           transform: scale(0.5);
           transform-origin: 0 0;
           pointer-events: none;
@@ -1025,7 +1035,7 @@ button[disabled] {
           font-size: 26px;
           line-height: 40px;
         }
-        [class*='cuIcon-'] {
+        [class*="cuIcon-"] {
           position: relative;
           display: block;
           margin-top: 20px;
@@ -1084,8 +1094,9 @@ button[disabled] {
     &.border-title {
       position: relative;
       top: -10px;
-      text, span {
-        &[class*='bg-'] {
+      text,
+      span {
+        &[class*="bg-"] {
           &:last-child {
             position: absolute;
             bottom: -0.5rem;
@@ -1099,10 +1110,11 @@ button[disabled] {
     &.sub-title {
       position: relative;
       top: -0.2rem;
-      text, span {
+      text,
+      span {
         position: relative;
         z-index: 1;
-        &[class*='bg-'] {
+        &[class*="bg-"] {
           &:last-child {
             position: absolute;
             display: inline-block;
@@ -1115,7 +1127,7 @@ button[disabled] {
             z-index: 0;
           }
         }
-        &[class*='text-'] {
+        &[class*="text-"] {
           &:last-child {
             position: absolute;
             display: inline-block;
@@ -1134,8 +1146,9 @@ button[disabled] {
       margin-left: 30px;
       font-size: 30px;
       > {
-        text, span {
-          &[class*='cuIcon-'] {
+        text,
+        span {
+          &[class*="cuIcon-"] {
             margin-left: -0.3em;
             margin-right: 0.3em;
           }
@@ -1150,23 +1163,24 @@ button[disabled] {
       width: 100%;
       justify-content: space-between;
     }
-    text, span {
+    text,
+    span {
       &.text-cut {
         text-align: left;
         width: 100%;
       }
     }
     > {
-      text[class*='cuIcon-'],
-      span[class*='cuIcon-'],
-      view[class*='cuIcon-'],
-      div[class*='cuIcon-']{
+      text[class*="cuIcon-"],
+      span[class*="cuIcon-"],
+      view[class*="cuIcon-"],
+      div[class*="cuIcon-"] {
         font-size: 36px;
       }
-      text[class*='cuIcon-'] + text[class*='cuIcon-'] {
+      text[class*="cuIcon-"] + text[class*="cuIcon-"] {
         margin-left: 0.5em;
       }
-      span[class*='cuIcon-'] + span[class*='cuIcon-'] {
+      span[class*="cuIcon-"] + span[class*="cuIcon-"] {
         margin-left: 0.5em;
       }
     }
@@ -1175,7 +1189,7 @@ button[disabled] {
     .action.border-title text:last-child,
     .action.border-title span:last-child,
     .action.sub-title text:last-child,
-    .action.sub-title span:last-child{
+    .action.sub-title span:last-child {
       left: 0;
       right: 0;
       margin: auto;
@@ -1242,7 +1256,7 @@ button[disabled] {
       line-height: 64px;
       font-size: 26px;
     }
-    [class*='cuIcon-'] {
+    [class*="cuIcon-"] {
       margin: 0 0.5em 0 0.8em;
       &::before {
         top: 0px;
@@ -1259,7 +1273,7 @@ button[disabled] {
   &.tabbar {
     padding: 0;
     height: calc(100px + env(safe-area-inset-bottom) / 2);
-    padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+    //padding-bottom: calc(env(safe-area-inset-bottom) / 2);
     &.shadow {
       box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
     }
@@ -1279,7 +1293,7 @@ button[disabled] {
         position: relative;
         z-index: 2;
         padding-top: 50px;
-        [class*='cuIcon-'] {
+        [class*="cuIcon-"] {
           position: absolute;
           width: 70px;
           z-index: 2;
@@ -1294,7 +1308,7 @@ button[disabled] {
           padding: 0;
         }
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           width: 100px;
           height: 100px;
@@ -1308,7 +1322,7 @@ button[disabled] {
           z-index: 0;
         }
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           width: 100px;
           height: 30px;
@@ -1328,7 +1342,7 @@ button[disabled] {
           display: inline-block;
         }
       }
-      [class*='cuIcon-'] {
+      [class*="cuIcon-"] {
         width: 100px;
         position: relative;
         display: block;
@@ -1376,7 +1390,7 @@ button[disabled] {
     &.border {
       .action {
         &::before {
-          content: ' ';
+          content: " ";
           width: 200%;
           height: 200%;
           position: absolute;
@@ -1413,11 +1427,11 @@ button[disabled] {
     }
     .action {
       margin-left: 20px;
-      [class*='cuIcon-'] {
+      [class*="cuIcon-"] {
         font-size: 48px;
       }
       &:first-child {
-        [class*='cuIcon-'] {
+        [class*="cuIcon-"] {
           margin-left: 0px;
         }
       }
@@ -1460,7 +1474,7 @@ button[disabled] {
       border-radius: 1000px;
       height: 30px;
       &::after {
-        content: ' ';
+        content: " ";
         width: 200%;
         height: 200%;
         position: absolute;
@@ -1475,7 +1489,7 @@ button[disabled] {
         opacity: 0.5;
       }
       &::before {
-        content: ' ';
+        content: " ";
         width: 1px;
         height: 110%;
         position: absolute;
@@ -1490,7 +1504,8 @@ button[disabled] {
         opacity: 0.6;
         background-color: $white;
       }
-      text, span {
+      text,
+      span {
         display: block;
         flex: 1;
         margin: auto !important;
@@ -1543,11 +1558,11 @@ button[disabled] {
       position: relative;
       display: block;
       z-index: 0;
-      &:not([class*='text-']) {
+      &:not([class*="text-"]) {
         color: #ccc;
       }
       &::after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 2px;
@@ -1558,7 +1573,7 @@ button[disabled] {
         z-index: 8;
       }
       &::before {
-        font-family: 'cuIcon';
+        font-family: "cuIcon";
         display: block;
         position: absolute;
         top: 36px;
@@ -1571,12 +1586,12 @@ button[disabled] {
         line-height: 50px;
         left: 36px;
       }
-      &:not([class*='cuIcon-']) {
+      &:not([class*="cuIcon-"]) {
         &::before {
-          content: '\e763';
+          content: "\e763";
         }
       }
-      &[class*='cuIcon-'] {
+      &[class*="cuIcon-"] {
         &::before {
           background-color: $white;
           width: 50px;
@@ -1593,7 +1608,7 @@ button[disabled] {
           border-radius: 6px;
           display: block;
           line-height: 1.6;
-          &:not([class*='bg-']) {
+          &:not([class*="bg-"]) {
             background-color: #f1f1f1;
             color: #666;
           }
@@ -1640,7 +1655,7 @@ button[disabled] {
           min-height: 80px;
           line-height: 40px;
           text-align: left;
-          &:not([class*='bg-']) {
+          &:not([class*="bg-"]) {
             background-color: $white;
             color: #666;
             &::before {
@@ -1649,7 +1664,7 @@ button[disabled] {
             }
           }
           &::after {
-            content: '';
+            content: "";
             top: 27px;
             transform: rotate(45deg);
             position: absolute;
@@ -1663,7 +1678,7 @@ button[disabled] {
             background-color: inherit;
           }
           &::before {
-            content: '';
+            content: "";
             top: 30px;
             transform: rotate(45deg);
             position: absolute;
@@ -1892,8 +1907,9 @@ button[disabled] {
     padding-right: 20px;
   }
   > {
-    text, span {
-      &[class*='cuIcon-'] {
+    text,
+    span {
+      &[class*="cuIcon-"] {
         font-size: 36px;
         padding: 0;
         box-sizing: border-box;
@@ -1959,7 +1975,7 @@ button[disabled] {
     &::after {
       font-family: cuIcon;
       display: block;
-      content: '\e6a3';
+      content: "\e6a3";
       position: absolute;
       font-size: 34px;
       color: $grey;
@@ -1996,7 +2012,7 @@ button[disabled] {
   transition: all 0.3s ease-in-out 0s;
   pointer-events: none;
   &::before {
-    content: '\200B';
+    content: "\200B";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
@@ -2074,7 +2090,7 @@ button[disabled] {
   align-items: center;
   &::before,
   &::after {
-    content: '';
+    content: "";
     flex: 1;
     font-family: cuIcon;
     display: block;
@@ -2082,7 +2098,7 @@ button[disabled] {
     border: 1px solid;
     box-sizing: border-box;
     margin: 0 20px;
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -2117,7 +2133,7 @@ swiper {
         height: 18px;
         top: 0px;
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           width: 10px;
           height: 10px;
@@ -2140,18 +2156,18 @@ swiper {
 
 .screen-swiper image,
 .screen-swiper img,
-.screen-swiper div[class*='taro-img'],
+.screen-swiper div[class*="taro-img"],
 .screen-swiper video,
 .swiper-item image,
 .swiper-item img,
-.swiper-item div[class*='taro-img'],
+.swiper-item div[class*="taro-img"],
 .swiper-item video {
   width: 100%;
   display: block;
   height: 100%;
   margin: 0;
   pointer-events: none;
-};
+}
 
 .swiper-wrapper .taro-img {
   width: 100%;
@@ -2221,7 +2237,7 @@ swiper {
   .cu-item::after,
   &.steps-arrow .cu-item::before,
   &.steps-arrow .cu-item::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     height: 0rem;
@@ -2233,8 +2249,8 @@ swiper {
   }
   &.steps-arrow .cu-item::before,
   &.steps-arrow .cu-item::after {
-    content: '\e6a3';
-    font-family: 'cuIcon';
+    content: "\e6a3";
+    font-family: "cuIcon";
     height: 30px;
     border-bottom-width: 0px;
     line-height: 30px;
@@ -2257,10 +2273,10 @@ swiper {
     text-align: center;
     position: relative;
     min-width: 100px;
-    &:not([class*='text-']) {
+    &:not([class*="text-"]) {
       color: $grey;
     }
-    [class*='cuIcon-'] {
+    [class*="cuIcon-"] {
       display: block;
       font-size: 40px;
       line-height: 80px;
@@ -2302,7 +2318,7 @@ swiper {
       width: 0px;
       transition: all 0.3s ease-in-out 0s;
     }
-    &[class*='text-'] {
+    &[class*="text-"] {
       &::after {
         width: calc(100% - 80px);
         color: currentColor;
@@ -2314,21 +2330,21 @@ swiper {
           color: $white;
         }
         &::after {
-          content: '\e645';
-          font-family: 'cuIcon';
+          content: "\e645";
+          font-family: "cuIcon";
           color: $white;
           transform: translateY(0px);
         }
         &.err {
           &::after {
-            content: '\e646';
+            content: "\e646";
           }
         }
       }
     }
     &:first-child::before,
     &:first-child::after {
-        display: none !important;
+      display: none !important;
     }
   }
 }
@@ -2468,15 +2484,17 @@ scroll-view {
       background-color: rgba(0, 0, 0, 0.5);
     }
     > {
-      view, div {
+      view,
+      div {
         margin-right: 20px;
         margin-bottom: 20px;
         border-radius: 6px;
         position: relative;
         overflow: hidden;
         > {
-          text, span {
-            &[class*='cuIcon-'] {
+          text,
+          span {
+            &[class*="cuIcon-"] {
               font-size: 52px;
               position: absolute;
               color: $grey;
@@ -2498,13 +2516,15 @@ scroll-view {
   &.col {
     &-1 {
       > {
-        view, div {
+        view,
+        div {
           width: 100%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: 100%;
             height: 0;
             margin-right: 0;
@@ -2514,13 +2534,15 @@ scroll-view {
     }
     &-2 {
       > {
-        view, div {
+        view,
+        div {
           width: 50%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 20px) / 2);
             height: 0;
             width: calc((100% - 20px) / 2);
@@ -2533,13 +2555,15 @@ scroll-view {
     }
     &-3 {
       > {
-        view, div {
+        view,
+        div {
           width: 33.33%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 40px) / 3);
             height: 0;
             width: calc((100% - 40px) / 3);
@@ -2552,13 +2576,15 @@ scroll-view {
     }
     &-4 {
       > {
-        view, div {
+        view,
+        div {
           width: 25%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 60px) / 4);
             height: 0;
             width: calc((100% - 60px) / 4);
@@ -2571,13 +2597,15 @@ scroll-view {
     }
     &-5 {
       > {
-        view, div {
+        view,
+        div {
           width: 20%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 80px) / 5);
             height: 0;
             width: calc((100% - 80px) / 5);
@@ -2587,13 +2615,15 @@ scroll-view {
     }
     &-6 {
       > {
-        view, div {
+        view,
+        div {
           width: 16.66%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 100px) / 5);
             height: 0;
             width: calc((100% - 100px) / 5);
@@ -2603,13 +2633,15 @@ scroll-view {
     }
     &-7 {
       > {
-        view, div {
+        view,
+        div {
           width: 14.28%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 120px) / 5);
             height: 0;
             width: calc((100% - 120px) / 5);
@@ -2619,13 +2651,15 @@ scroll-view {
     }
     &-8 {
       > {
-        view, div {
+        view,
+        div {
           width: 12.5%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 140px) / 5);
             height: 0;
             width: calc((100% - 140px) / 5);
@@ -2635,13 +2669,15 @@ scroll-view {
     }
     &-9 {
       > {
-        view, div {
+        view,
+        div {
           width: 11.11%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 160px) / 5);
             height: 0;
             width: calc((100% - 160px) / 5);
@@ -2651,13 +2687,15 @@ scroll-view {
     }
     &-10 {
       > {
-        view, div {
+        view,
+        div {
           width: 10%;
         }
       }
       &.grid-square {
         > {
-          view, div {
+          view,
+          div {
             padding-bottom: calc((100% - 180px) / 5);
             height: 0;
             width: calc((100% - 180px) / 5);
@@ -2912,7 +2950,7 @@ scroll-view {
 .cf {
   &::after,
   &::before {
-    content: ' ';
+    content: " ";
     display: table;
   }
   &::after {
@@ -3156,7 +3194,7 @@ scroll-view {
     background-color: $black;
     position: relative;
     &::after {
-      content: '';
+      content: "";
       border-radius: inherit;
       width: 100%;
       height: 100%;
@@ -3192,50 +3230,50 @@ scroll-view {
 }
 
 .shadow {
-  &[class*='-red'] {
+  &[class*="-red"] {
     box-shadow: $ShadowSize $redShadow;
   }
-  &[class*='-orange'] {
+  &[class*="-orange"] {
     box-shadow: $ShadowSize $orangeShadow;
   }
-  &[class*='-yellow'] {
+  &[class*="-yellow"] {
     box-shadow: $ShadowSize $yellowShadow;
   }
-  &[class*='-olive'] {
+  &[class*="-olive"] {
     box-shadow: $ShadowSize $oliveShadow;
   }
-  &[class*='-green'] {
+  &[class*="-green"] {
     box-shadow: $ShadowSize $greenShadow;
   }
-  &[class*='-cyan'] {
+  &[class*="-cyan"] {
     box-shadow: $ShadowSize $cyanShadow;
   }
-  &[class*='-blue'] {
+  &[class*="-blue"] {
     box-shadow: $ShadowSize $blueShadow;
   }
-  &[class*='-purple'] {
+  &[class*="-purple"] {
     box-shadow: $ShadowSize $purpleShadow;
   }
-  &[class*='-mauve'] {
+  &[class*="-mauve"] {
     box-shadow: $ShadowSize $mauveShadow;
   }
-  &[class*='-pink'] {
+  &[class*="-pink"] {
     box-shadow: $ShadowSize $pinkShadow;
   }
-  &[class*='-white'] {
+  &[class*="-white"] {
     box-shadow: $ShadowSize $blackShadow;
   }
 }
 
 .cu-btn {
   &.shadow {
-    &[class*='-brown'] {
+    &[class*="-brown"] {
       box-shadow: $ShadowSize $brownShadow;
     }
-    &[class*='-gray'] {
+    &[class*="-gray"] {
       box-shadow: $ShadowSize $grayShadow;
     }
-    &[class*='-black'] {
+    &[class*="-black"] {
       box-shadow: $ShadowSize $blackShadow;
     }
   }
@@ -3243,46 +3281,46 @@ scroll-view {
 
 .text {
   &-shadow {
-    &[class*='-red'] {
+    &[class*="-red"] {
       text-shadow: $ShadowSize $redShadow;
     }
-    &[class*='-orange'] {
+    &[class*="-orange"] {
       text-shadow: $ShadowSize $orangeShadow;
     }
-    &[class*='-yellow'] {
+    &[class*="-yellow"] {
       text-shadow: $ShadowSize $yellowShadow;
     }
-    &[class*='-olive'] {
+    &[class*="-olive"] {
       text-shadow: $ShadowSize $oliveShadow;
     }
-    &[class*='-green'] {
+    &[class*="-green"] {
       text-shadow: $ShadowSize $greenShadow;
     }
-    &[class*='-cyan'] {
+    &[class*="-cyan"] {
       text-shadow: $ShadowSize $cyanShadow;
     }
-    &[class*='-blue'] {
+    &[class*="-blue"] {
       text-shadow: $ShadowSize $blueShadow;
     }
-    &[class*='-purple'] {
+    &[class*="-purple"] {
       text-shadow: $ShadowSize $purpleShadow;
     }
-    &[class*='-mauve'] {
+    &[class*="-mauve"] {
       text-shadow: $ShadowSize $mauveShadow;
     }
-    &[class*='-pink'] {
+    &[class*="-pink"] {
       text-shadow: $ShadowSize $pinkShadow;
     }
-    &[class*='-brown'] {
+    &[class*="-brown"] {
       text-shadow: $ShadowSize $brownShadow;
     }
-    &[class*='-grey'] {
+    &[class*="-grey"] {
       text-shadow: $ShadowSize $greyShadow;
     }
-    &[class*='-gray'] {
+    &[class*="-gray"] {
       text-shadow: $ShadowSize $grayShadow;
     }
-    &[class*='-black'] {
+    &[class*="-black"] {
       text-shadow: $ShadowSize $blackShadow;
     }
   }
@@ -3328,7 +3366,7 @@ scroll-view {
   }
   &-price {
     &::before {
-      content: '¥';
+      content: "¥";
       font-size: 80%;
       margin-right: 4px;
     }
