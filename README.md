@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/yinliangdream/mp-colorui?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/yinliangdream/mp-colorui?style=for-the-badge)](https://github.com/yinLiangDream/mp-colorui)
 
-[![npm](https://img.shields.io/npm/dw/mp-colorui?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/mp-colorui?style=for-the-badge) ![npm type definitions](https://img.shields.io/npm/types/mp-colorui?style=for-the-badge) ![GitHub package.json version](https://img.shields.io/github/package-json/v/yinliangdream/mp-colorui?style=for-the-badge)](https://github.com/yinLiangDream/mp-colorui)
+[![npm](https://img.shields.io/npm/dt/mp-colorui?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/mp-colorui?style=for-the-badge) ![npm type definitions](https://img.shields.io/npm/types/mp-colorui?style=for-the-badge) ![GitHub package.json version](https://img.shields.io/github/package-json/v/yinliangdream/mp-colorui?style=for-the-badge)](https://github.com/yinLiangDream/mp-colorui)
 
 ## 特色
 
