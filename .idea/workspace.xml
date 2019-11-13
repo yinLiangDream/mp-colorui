@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/shopBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/shopBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/tabBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/tabBar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shopBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shopBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tabBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabBar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigate/tabBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/shopBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/shopBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.docs:dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -233,14 +230,7 @@
       <workItem from="1573104764035" duration="1012000" />
       <workItem from="1573442868845" duration="1532000" />
       <workItem from="1573462705712" duration="730000" />
-      <workItem from="1573612809302" duration="2140000" />
-    </task>
-    <task id="LOCAL-00010" summary="修复 H5 Radio 样式问题">
-      <created>1561947774106</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1561947774106</updated>
+      <workItem from="1573612809302" duration="3297000" />
     </task>
     <task id="LOCAL-00011" summary="修复 H5 button 无动效问题">
       <created>1562060107799</created>
@@ -578,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573612928359</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="feat shopBar、tabBar 组件新增 safeArea 属性">
+      <created>1573615366921</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1573615366921</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -625,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BUG&#10;SwiperAction H5适配问题" />
     <MESSAGE value="获取节点功能兼容支付宝小程序" />
     <MESSAGE value="BUG&#10;修复 VerticalTab 支付宝小程序端的 bug" />
     <MESSAGE value="BUG&#10;支付宝小程序 CheckBox 适配" />
@@ -650,6 +646,7 @@
     <MESSAGE value="更新文档" />
     <MESSAGE value="更新版本" />
     <MESSAGE value="fix Tip 组件 无法手动关闭 tip 的问题 #33" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Tip 组件 无法手动关闭 tip 的问题 #33" />
+    <MESSAGE value="feat shopBar、tabBar 组件新增 safeArea 属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat shopBar、tabBar 组件新增 safeArea 属性" />
   </component>
 </project>
