@@ -51,7 +51,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选以下参数 `count`, `sizeType`, `sourceType`, `success`, `fail`, `complete`
    */
-  chooseImgObj: TChooseImgObj;
+  chooseImgObj?: TChooseImgObj;
   /**
    * 图片列表
    */
@@ -60,6 +60,12 @@ export interface IProps extends BaseComponent {
    * 删除之前确认函数
    */
   beforeDel?: TBeforeDel;
+  /**
+   * 显示的最大数量
+   *
+   * 默认值 `0` 代表不限制
+   */
+  max?: number;
 }
 
 declare const ImagePicker: ComponentClass<IProps>;

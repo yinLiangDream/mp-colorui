@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="css 分离完成，样式可按需加载">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swiper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/imagePicker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/imagePicker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/imagePicker/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imagePicker/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/category/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/category/swiper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/h5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/h5.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,14 +243,7 @@
       <workItem from="1574663910166" duration="27534000" />
       <workItem from="1574759856042" duration="104000" />
       <workItem from="1574759971117" duration="38000" />
-      <workItem from="1574760020470" duration="7038000" />
-    </task>
-    <task id="LOCAL-00012" summary="修复 H5 timeline 线条过细问题">
-      <created>1562060893260</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1562060893260</updated>
+      <workItem from="1574760020470" duration="10072000" />
     </task>
     <task id="LOCAL-00013" summary="修复 H5 swiper 未铺满问题">
       <created>1562062241771</created>
@@ -591,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574758352100</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fix Swiper组件在h5中阻挡跳转,type=card滑动会浏览器崩溃 #38">
+      <created>1574777353649</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1574777353649</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -638,7 +635,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BUG&#10;修复 VerticalTab 支付宝小程序端的 bug" />
     <MESSAGE value="BUG&#10;支付宝小程序 CheckBox 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 Radio 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 ActionSheet 适配" />
@@ -663,17 +659,18 @@
     <MESSAGE value="fix Tip 组件 无法手动关闭 tip 的问题 #33" />
     <MESSAGE value="feat shopBar、tabBar 组件新增 safeArea 属性" />
     <MESSAGE value="css 分离完成，样式可按需加载" />
-    <option name="LAST_COMMIT_MESSAGE" value="css 分离完成，样式可按需加载" />
+    <MESSAGE value="fix Swiper组件在h5中阻挡跳转,type=card滑动会浏览器崩溃 #38" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Swiper组件在h5中阻挡跳转,type=card滑动会浏览器崩溃 #38" />
   </component>
   <component name="WindowStateProjectService">
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574759865531">
       <screen x="0" y="23" width="1920" height="1133" />
     </state>
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574759865531" />
-    <state x="431" y="123" key="CommitChangelistDialog2" timestamp="1574777273033">
+    <state x="431" y="123" key="CommitChangelistDialog2" timestamp="1574777352663">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574777273033" />
+    <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574777352663" />
     <state x="168" y="94" key="DiffContextDialog" timestamp="1574777268994">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
