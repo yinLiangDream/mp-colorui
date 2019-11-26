@@ -28,7 +28,9 @@ export default class ClSearchBar extends Component<IProps, IState> {
     showLoading: false,
     showResult: false,
     result: [],
-    onTouchResult: () => {}
+    onTouchResult: () => {},
+    onBlur: () => {},
+    onFocus: () => {}
   };
   state: IState = {
     showSearch: false,
@@ -44,13 +46,16 @@ export default class ClSearchBar extends Component<IProps, IState> {
     this.props.onSearch && this.props.onSearch(this.state.value || "");
   }
 
-  onFocus() {
+  onFocus(e) {
+    this.props.onFocus && this.props.onFocus(this.state.value || "");
     this.setState({
-      showSearch: true
+      showSearch: true,
+      value: e.detail.value
     });
   }
 
   onBlur(e) {
+    this.props.onBlur && this.props.onBlur(this.state.value || "");
     this.setState({
       showSearch: false,
       value: e.detail.value
@@ -107,7 +112,9 @@ export default class ClSearchBar extends Component<IProps, IState> {
     const buttonComponent = (
       <View className="action" onClick={ClSearchBar.onPreventProp.bind(this)}>
         <Button
-          className={`cu-btn shadow-blur ${this.props.shape} ${buttonColorClassName} ${textColorClassName}`}
+          className={`cu-btn shadow-blur ${
+            this.props.shape
+          } ${buttonColorClassName} ${textColorClassName}`}
           onClick={this.onSearch.bind(this)}
         >
           搜索

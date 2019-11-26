@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="css 分离完成，样式可按需加载">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/imagePicker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/imagePicker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/imagePicker/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imagePicker/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/imagePicker/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/searchBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/searchBar.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,14 +242,7 @@
       <workItem from="1574663910166" duration="27534000" />
       <workItem from="1574759856042" duration="104000" />
       <workItem from="1574759971117" duration="38000" />
-      <workItem from="1574760020470" duration="10072000" />
-    </task>
-    <task id="LOCAL-00013" summary="修复 H5 swiper 未铺满问题">
-      <created>1562062241771</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1562062241771</updated>
+      <workItem from="1574760020470" duration="11636000" />
     </task>
     <task id="LOCAL-00014" summary="API&#10;新增 checkbox 组件 type 属性下的 list 属性">
       <created>1562315801246</created>
@@ -588,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574777353649</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="feat ClImagePicker对图片数量限制的选择图片数量问题 #34">
+      <created>1574780861378</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1574780861378</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView">
@@ -635,7 +634,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BUG&#10;支付宝小程序 CheckBox 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 Radio 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 ActionSheet 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 Steps 适配" />
@@ -660,41 +658,50 @@
     <MESSAGE value="feat shopBar、tabBar 组件新增 safeArea 属性" />
     <MESSAGE value="css 分离完成，样式可按需加载" />
     <MESSAGE value="fix Swiper组件在h5中阻挡跳转,type=card滑动会浏览器崩溃 #38" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Swiper组件在h5中阻挡跳转,type=card滑动会浏览器崩溃 #38" />
+    <MESSAGE value="feat ClImagePicker对图片数量限制的选择图片数量问题 #34" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat ClImagePicker对图片数量限制的选择图片数量问题 #34" />
   </component>
   <component name="WindowStateProjectService">
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574759865531">
       <screen x="0" y="23" width="1920" height="1133" />
     </state>
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574759865531" />
-    <state x="431" y="123" key="CommitChangelistDialog2" timestamp="1574777352663">
+    <state x="431" y="123" key="CommitChangelistDialog2" timestamp="1574780860476">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574777352663" />
+    <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574780860476" />
     <state x="168" y="94" key="DiffContextDialog" timestamp="1574777268994">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="168" y="94" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574777268994" />
-    <state width="1894" height="216" key="GridCell.Tab.0.bottom" timestamp="1574763550374">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1658" height="223" key="GridCell.Tab.0.bottom" timestamp="1574781260293">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042678" />
     <state width="1894" height="216" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550374" />
-    <state width="1894" height="216" key="GridCell.Tab.0.center" timestamp="1574763550372">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1658" height="223" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260293" />
+    <state width="1658" height="223" key="GridCell.Tab.0.center" timestamp="1574781260292">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042676" />
     <state width="1894" height="216" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550372" />
-    <state width="1894" height="216" key="GridCell.Tab.0.left" timestamp="1574763550365">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1658" height="223" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260292" />
+    <state width="1658" height="223" key="GridCell.Tab.0.left" timestamp="1574781260291">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042674" />
     <state width="1894" height="216" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550365" />
-    <state width="1894" height="216" key="GridCell.Tab.0.right" timestamp="1574763550373">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1658" height="223" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260291" />
+    <state width="1658" height="223" key="GridCell.Tab.0.right" timestamp="1574781260293">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042677" />
     <state width="1894" height="216" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550373" />
+    <state width="1658" height="223" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260293" />
+    <state x="582" y="242" key="RollbackChangesDialog" timestamp="1574780846378">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="582" y="242" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574780846378" />
     <state x="309" y="109" key="SettingsEditor" timestamp="1574777207933">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

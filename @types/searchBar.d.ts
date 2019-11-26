@@ -66,6 +66,16 @@ export interface IProps extends BaseComponent {
    */
   onInput?: (value: string) => void;
   /**
+   * 聚焦事件
+   * @param {string} value
+   */
+  onFocus?: (value: string) => void;
+  /**
+   * 失焦事件
+   * @param {string} value
+   */
+  onBlur?: (value: string) => void;
+  /**
    * 是否显示搜索结果
    */
   showResult?: boolean;
