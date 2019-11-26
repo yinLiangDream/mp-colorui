@@ -1,90 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="feat shopBar、tabBar 组件新增 safeArea 属性">
-      <change afterPath="$PROJECT_DIR$/src/style/baseCSS.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/avatar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/bar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/bgColor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/border.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/chat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/lineColor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/load.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/steps.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/swiper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/tag.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/category/timeline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/accordion.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/actionSheet.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/animation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/avatar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/checkbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/curtain.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/drawer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/floatButton.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/imagePicker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/input.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/loading.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/menuList.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/message.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/navBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/noticeBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/radio.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/screenDrawer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/searchBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/select.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/shopBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/steps.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/swiper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/swiperAction.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/switch.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/tabBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/tag.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/timeline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/tip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/titleBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/verticalTab.scss" afterDir="false" />
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="css 分离完成，样式可按需加载">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/accordion/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/grid/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/radio/components/ListRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio/components/ListRadio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/category/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/category/swiper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/h5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/h5.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +48,11 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1OSt12FrZZifGIUiwjs9gKmYJfh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -146,7 +77,7 @@
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -162,24 +93,22 @@
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:h5" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -215,25 +144,27 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="publish:production" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="publish:production" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.docs:dev" />
-        <item itemvalue="npm.publish:production" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -312,14 +243,10 @@
       <workItem from="1573612809302" duration="3297000" />
       <workItem from="1573617185918" duration="184000" />
       <workItem from="1574661212666" duration="1492000" />
-      <workItem from="1574663910166" duration="26165000" />
-    </task>
-    <task id="LOCAL-00011" summary="修复 H5 button 无动效问题">
-      <created>1562060107799</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1562060107799</updated>
+      <workItem from="1574663910166" duration="27534000" />
+      <workItem from="1574759856042" duration="104000" />
+      <workItem from="1574759971117" duration="38000" />
+      <workItem from="1574760020470" duration="7038000" />
     </task>
     <task id="LOCAL-00012" summary="修复 H5 timeline 线条过细问题">
       <created>1562060893260</created>
@@ -657,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573615366921</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="css 分离完成，样式可按需加载">
+      <created>1574758352100</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1574758352100</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView">
@@ -704,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="获取节点功能兼容支付宝小程序" />
     <MESSAGE value="BUG&#10;修复 VerticalTab 支付宝小程序端的 bug" />
     <MESSAGE value="BUG&#10;支付宝小程序 CheckBox 适配" />
     <MESSAGE value="BUG&#10;支付宝小程序 Radio 适配" />
@@ -729,6 +662,51 @@
     <MESSAGE value="更新版本" />
     <MESSAGE value="fix Tip 组件 无法手动关闭 tip 的问题 #33" />
     <MESSAGE value="feat shopBar、tabBar 组件新增 safeArea 属性" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat shopBar、tabBar 组件新增 safeArea 属性" />
+    <MESSAGE value="css 分离完成，样式可按需加载" />
+    <option name="LAST_COMMIT_MESSAGE" value="css 分离完成，样式可按需加载" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574759865531">
+      <screen x="0" y="23" width="1920" height="1133" />
+    </state>
+    <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574759865531" />
+    <state x="431" y="123" key="CommitChangelistDialog2" timestamp="1574777273033">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574777273033" />
+    <state x="168" y="94" key="DiffContextDialog" timestamp="1574777268994">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="168" y="94" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574777268994" />
+    <state width="1894" height="216" key="GridCell.Tab.0.bottom" timestamp="1574763550374">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1894" height="109" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042678" />
+    <state width="1894" height="216" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550374" />
+    <state width="1894" height="216" key="GridCell.Tab.0.center" timestamp="1574763550372">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1894" height="109" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042676" />
+    <state width="1894" height="216" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550372" />
+    <state width="1894" height="216" key="GridCell.Tab.0.left" timestamp="1574763550365">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1894" height="109" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042674" />
+    <state width="1894" height="216" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550365" />
+    <state width="1894" height="216" key="GridCell.Tab.0.right" timestamp="1574763550373">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1894" height="109" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042677" />
+    <state width="1894" height="216" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574763550373" />
+    <state x="309" y="109" key="SettingsEditor" timestamp="1574777207933">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="353" y="124" key="SettingsEditor/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760515368" />
+    <state x="353" y="140" key="SettingsEditor/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574760009742" />
+    <state x="309" y="109" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1574777207933" />
+    <state x="570" y="177" width="779" height="846" key="find.popup" timestamp="1574762592090">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="570" y="177" width="779" height="846" key="find.popup/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574762592090" />
   </component>
 </project>

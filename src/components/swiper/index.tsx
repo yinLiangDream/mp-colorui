@@ -80,7 +80,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item: any, index: number) => (
         <SwiperItem
-          key={item.cu_swiper_id}
+          key={index}
           onClick={() => {
             onClick(index);
           }}
@@ -111,7 +111,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item: any, index: number) => (
         <SwiperItem
-          key={item.cu_swiper_id}
+          key={index}
           className={`${cur === index ? "cur" : ""}`}
           onClick={() => {
             onClick(index);

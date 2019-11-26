@@ -8801,6 +8801,15 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
+nerv-devtools@^1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/nerv-devtools/-/nerv-devtools-1.5.5.tgz#8b336a1a8dad97d4dd9d50846b6c2b16faabb16d"
+  integrity sha512-7Jbrj0LoHyX1y4sjyX6jLNQphpXCDS4WQ8lRSRCJs4sWIHjxri5Ays6ctC2graChOcKE8HfhH7MMYMhbCrerAA==
+  dependencies:
+    nerv-shared "1.4.0"
+    nerv-utils "1.4.5"
+    nervjs "1.5.5"
+
 nerv-server@1.4.3, nerv-server@^1.4.0:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/nerv-server/-/nerv-server-1.4.3.tgz#4d2e6d9b84ceade6fcd4061f59aa7d7a8886ad85"
@@ -8844,7 +8853,7 @@ nervjs@1.4.3:
     nerv-shared "1.4.0"
     nerv-utils "1.4.3"
 
-nervjs@^1.5.5:
+nervjs@1.5.5, nervjs@^1.5.5:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/nervjs/-/nervjs-1.5.5.tgz#aead03e8834943d09bb34bffce397eca6740f7b9"
   integrity sha512-NztNN3GG83D3sA+c5AwoXucohTJtnstQolAjGnuCIPtMZkzAhFoEwYv3yJskubFt6d4DptB1fvVyJXSHNhTB5Q==

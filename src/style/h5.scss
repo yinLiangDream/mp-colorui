@@ -1,4 +1,4 @@
-@import './vars.scss';
+@import "./vars.scss";
 
 /*h5 兼容 switch*/
 .weui-switch,
@@ -39,8 +39,8 @@ input.weui-check {
   vertical-align: 0;
   top: 5px;
   &::before {
-    font-family: 'cuIcon';
-    content: '\e645';
+    font-family: "cuIcon";
+    content: "\e645";
     position: absolute;
     color: $white !important;
     top: 50%;
@@ -69,7 +69,7 @@ input.weui-check {
   }
   &.radio.checked {
     .h5-radio-input::after {
-      content: '';
+      content: "";
       background-color: transparent;
       display: block;
       position: absolute;
@@ -119,8 +119,8 @@ input.weui-check {
   }
   &.normal {
     .h5-radio-input::before {
-      font-family: 'cuIcon';
-      content: '\e645';
+      font-family: "cuIcon";
+      content: "\e645";
       position: absolute;
       color: $white !important;
       top: 50%;
@@ -177,7 +177,7 @@ input.weui-check {
       border-radius: 6px;
     }
     &::after {
-      content: '';
+      content: "";
       margin: auto;
       width: 52px;
       height: 52px;
@@ -408,36 +408,4 @@ radio.checked .h5-radio-input {
 .h5-radio.white.checked .h5-radio-input {
   background-color: $white !important;
   color: $black !important;
-}
-
-
-// swiper
-.card-swiper {
-  height: 420px;
-  .swiper-slide {
-    // width: 610px !important;
-    // width: 90% !important;
-    width: 750px !important;
-    box-sizing: border-box;
-    padding: 40px 0 70px;
-    left: 70px;
-    overflow: initial;
-    .swiper-item {
-      width: 100%;
-      display: block;
-      height: 100%;
-      border-radius: 10px;
-      transform: scale(0.9);
-      transition: all 0.3s ease-in 0.1s;
-      overflow: hidden;
-    }
-    &.cur {
-      width: 610px !important;
-      transition: all 0.2s ease;
-      .swiper-item {
-        transform: none;
-        transition: all 0.3s ease-in 0.1s;
-      }
-    }
-  }
 }
