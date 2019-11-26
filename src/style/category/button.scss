@@ -1,0 +1,120 @@
+/* ==================
+          按钮
+ ==================== */
+@import "../vars";
+
+.cu-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 30px;
+  font-size: 28px;
+  height: 64px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  overflow: visible;
+  margin-left: initial;
+  transform: translate(0px, 0px);
+  margin-right: initial;
+  &::after {
+    display: none;
+  }
+  &:not([class*="bg-"]) {
+    background-color: #f0f0f0;
+  }
+  &[class*="line"] {
+    background-color: transparent;
+    &::after {
+      content: " ";
+      display: block;
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 2px solid currentColor;
+      transform: scale(0.5);
+      transform-origin: 0 0;
+      box-sizing: border-box;
+      border-radius: 12px;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+  &.round {
+    &[class*="line"] {
+      &::after {
+        border-radius: 1000px;
+      }
+    }
+  }
+  &[class*="lines"] {
+    &::after {
+      border: 6px solid currentColor;
+    }
+  }
+  &[class*="bg-"] {
+    &::after {
+      display: none;
+    }
+  }
+  &.sm {
+    padding: 0 20px;
+    font-size: 20px;
+    height: 48px;
+  }
+  &.lg {
+    padding: 0 40px;
+    font-size: 32px;
+    height: 80px;
+  }
+  &.icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 500px;
+    padding: 0;
+    &.sm {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &.shadow-blur {
+    &::before {
+      top: 4px;
+      left: 4px;
+      filter: blur(6px);
+      opacity: 0.6;
+    }
+  }
+  &.button-hover:not([class*="disabled"]) {
+    transform: translate(1px, 1px);
+  }
+  &:active:not([class*="disabled"]) {
+    transform: translate(1px, 1px);
+  }
+  &.block {
+    display: flex;
+  }
+  &[disabled],
+  &.disabled {
+    opacity: 0.6;
+    color: $white;
+  }
+}
+
+.cu-btn {
+  &.shadow {
+    &[class*="-brown"] {
+      box-shadow: $ShadowSize $brownShadow;
+    }
+    &[class*="-gray"] {
+      box-shadow: $ShadowSize $grayShadow;
+    }
+    &[class*="-black"] {
+      box-shadow: $ShadowSize $blackShadow;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+/* ==================
+         聊天
+ ==================== */
+@import "../vars";
+
+.cu-chat {
+  display: flex;
+  flex-direction: column;
+  .cu-item {
+    display: flex;
+    padding: 30px 30px 70px;
+    position: relative;
+    > {
+      .cu-avatar {
+        width: 80px;
+        height: 80px;
+      }
+      .main {
+        max-width: calc(100% - 260px);
+        margin: 0 40px;
+        display: flex;
+        align-items: center;
+        .content {
+          padding: 20px;
+          border-radius: 6px;
+          display: inline-flex;
+          max-width: 100%;
+          align-items: center;
+          font-size: 30px;
+          position: relative;
+          min-height: 80px;
+          line-height: 40px;
+          text-align: left;
+          &:not([class*="bg-"]) {
+            background-color: $white;
+            color: #666;
+            &::before {
+              background-color: $black;
+              opacity: 0.1;
+            }
+          }
+          &::after {
+            content: "";
+            top: 27px;
+            transform: rotate(45deg);
+            position: absolute;
+            z-index: 100;
+            display: inline-block;
+            overflow: hidden;
+            width: 24px;
+            height: 24px;
+            left: -12px;
+            right: initial;
+            background-color: inherit;
+          }
+          &::before {
+            content: "";
+            top: 30px;
+            transform: rotate(45deg);
+            position: absolute;
+            z-index: -1;
+            display: inline-block;
+            overflow: hidden;
+            width: 24px;
+            height: 24px;
+            left: -12px;
+            right: initial;
+            background-color: inherit;
+            filter: blur(5px);
+            opacity: 0.3;
+          }
+        }
+      }
+      image {
+        height: 320px;
+      }
+    }
+    .date {
+      position: absolute;
+      font-size: 24px;
+      color: $grey;
+      width: calc(100% - 320px);
+      bottom: 20px;
+      left: 160px;
+    }
+    .action {
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+    }
+    &.self {
+      justify-content: flex-end;
+      text-align: right;
+      > {
+        .main {
+          .content {
+            &::after {
+              left: auto;
+              right: -12px;
+            }
+            &::before {
+              left: auto;
+              right: -12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cu-info {
+    display: inline-block;
+    margin: 20px auto;
+    font-size: 24px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    color: $white;
+    max-width: 400px;
+    line-height: 1.4;
+  }
+}

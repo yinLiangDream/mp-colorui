@@ -1,0 +1,64 @@
+@import "../vars";
+
+.line {
+  &-red::after,
+  &s-red::after {
+    border-color: $red;
+  }
+  &-orange::after,
+  &s-orange::after {
+    border-color: $orange;
+  }
+  &-yellow::after,
+  &s-yellow::after {
+    border-color: $yellow;
+  }
+  &-olive::after,
+  &s-olive::after {
+    border-color: $olive;
+  }
+  &-green::after,
+  &s-green::after {
+    border-color: $green;
+  }
+  &-cyan::after,
+  &s-cyan::after {
+    border-color: $cyan;
+  }
+  &-blue::after,
+  &s-blue::after {
+    border-color: $blue;
+  }
+  &-purple::after,
+  &s-purple::after {
+    border-color: $purple;
+  }
+  &-mauve::after,
+  &s-mauve::after {
+    border-color: $mauve;
+  }
+  &-pink::after,
+  &s-pink::after {
+    border-color: $pink;
+  }
+  &-brown::after,
+  &s-brown::after {
+    border-color: $brown;
+  }
+  &-grey::after,
+  &s-grey::after {
+    border-color: $grey;
+  }
+  &-gray::after,
+  &s-gray::after {
+    border-color: $gray;
+  }
+  &-black::after,
+  &s-black::after {
+    border-color: $black;
+  }
+  &-white::after,
+  &s-white::after {
+    border-color: $white;
+  }
+}

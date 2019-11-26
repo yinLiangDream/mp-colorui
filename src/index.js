@@ -1,5 +1,4 @@
 import Taro from "@tarojs/taro";
-import "./app.scss";
 import "./style/index.scss";
 
 export { default as ClUtils } from "./components/utils";

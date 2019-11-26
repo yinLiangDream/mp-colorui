@@ -1,0 +1,21 @@
+/* ==================
+        分割线
+ ==================== */
+.cu-divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    font-family: "cuIcon";
+    display: block;
+    font-size: 34px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin: 0 20px;
+    width: 100%;
+  }
+}

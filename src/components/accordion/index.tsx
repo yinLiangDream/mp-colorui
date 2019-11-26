@@ -1,10 +1,10 @@
 import Taro, { pxTransform, useEffect, useState } from "@tarojs/taro";
 import { View, ScrollView } from "@tarojs/components";
+import classNames from "classnames";
 
 import { IProps } from "../../../@types/accordion";
 import ClIcon from "../icon";
 import { screenPercent } from "../utils";
-import classNames from "classnames";
 
 export default function ClAccordion(props: IProps) {
   const { open, title, animation, onClick, card } = props;

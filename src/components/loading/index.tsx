@@ -4,11 +4,6 @@ import { BG_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/loading";
 import { classNames } from "../../components/utils";
 
-// interface IState {
-//   loadProgress: number;
-//   timer: any;
-// }
-
 export default function ClLoading(props: IProps) {
   const [loadProgress, setLoadProgress] = useState(0);
   const loadProgressFn = () => {

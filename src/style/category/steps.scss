@@ -1,0 +1,134 @@
+/* ==================
+          步骤条
+ ==================== */
+@import "../vars";
+
+.cu-steps {
+  counter-reset: index 0;
+  display: flex;
+  .cu-item::before,
+  .cu-item::after,
+  &.steps-arrow .cu-item::before,
+  &.steps-arrow .cu-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0rem;
+    width: calc(100% - 80px);
+    border-bottom: 2px solid #ccc;
+    left: calc(0rem - (100% - 80px) / 2);
+    top: 40px;
+    z-index: 0;
+  }
+  &.steps-arrow .cu-item::before,
+  &.steps-arrow .cu-item::after {
+    content: "\e6a3";
+    font-family: "cuIcon";
+    height: 30px;
+    border-bottom-width: 0px;
+    line-height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+  }
+  &.steps-bottom {
+    .cu-item {
+      &::before,
+      &::after {
+        bottom: 40px;
+        top: initial;
+      }
+    }
+  }
+  .cu-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    min-width: 100px;
+    &:not([class*="text-"]) {
+      color: $grey;
+    }
+    [class*="cuIcon-"] {
+      display: block;
+      font-size: 40px;
+      line-height: 80px;
+    }
+    .num {
+      counter-increment: index 1;
+      display: block;
+      //font-size: 40px;
+      //line-height: 80px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      line-height: 40px;
+      margin: 20px auto;
+      font-size: 24px;
+      border: 2px solid currentColor;
+      position: relative;
+      overflow: hidden;
+      &::before,
+      &::after {
+        content: counter(index);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition: all 0.3s ease-in-out 0s;
+        transform: translateY(0px);
+      }
+      &::after {
+        transform: translateY(40px);
+        color: $white;
+        transition: all 0.3s ease-in-out 0s;
+      }
+    }
+    &::after {
+      border-bottom: 2px solid currentColor;
+      width: 0px;
+      transition: all 0.3s ease-in-out 0s;
+    }
+    &[class*="text-"] {
+      &::after {
+        width: calc(100% - 80px);
+        color: currentColor;
+      }
+      .num {
+        background-color: currentColor;
+        &::before {
+          transform: translateY(-40px);
+          color: $white;
+        }
+        &::after {
+          content: "\e645";
+          font-family: "cuIcon";
+          color: $white;
+          transform: translateY(0px);
+        }
+        &.err {
+          &::after {
+            content: "\e646";
+          }
+        }
+      }
+    }
+    &:first-child::before,
+    &:first-child::after {
+      display: none !important;
+    }
+  }
+}
+
+scroll-view {
+  &.cu-steps {
+    display: block;
+    white-space: nowrap;
+    .cu-item {
+      display: inline-block;
+      position: relative;
+    }
+  }
+}

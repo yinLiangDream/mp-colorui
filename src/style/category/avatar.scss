@@ -1,0 +1,60 @@
+@import "../vars";
+
+/* ==================
+          头像
+ ==================== */
+.cu-avatar {
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: $white;
+  white-space: nowrap;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+  &.sm {
+    width: 48px;
+    height: 48px;
+    font-size: 1em;
+  }
+  &.lg {
+    width: 96px;
+    height: 96px;
+    font-size: 2em;
+  }
+  &.xl {
+    width: 128px;
+    height: 128px;
+    font-size: 2.5em;
+  }
+  .avatar-text {
+    font-size: 0.4em;
+  }
+}
+
+.cu-avatar-group {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  padding: 0 10px 0 40px;
+  display: inline-block;
+  .cu-avatar {
+    margin-left: -30px;
+    border: 4px solid #f1f1f1;
+    vertical-align: middle;
+  }
+  .cu-avatar {
+    &.sm {
+      margin-left: -20px;
+      border: 2px solid #f1f1f1;
+    }
+  }
+}

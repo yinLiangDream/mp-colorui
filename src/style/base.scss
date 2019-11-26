@@ -451,3 +451,13 @@ radio.white[checked] .wx-radio-input {
 .safe-area {
   padding-bottom: calc(env(safe-area-inset-bottom) / 2);
 }
+
+button[disabled] {
+  opacity: 0.6;
+  color: $white;
+}
+
+button.icon.lg {
+  width: 80px;
+  height: 80px;
+}

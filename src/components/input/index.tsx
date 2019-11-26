@@ -150,7 +150,13 @@ function ClInput(props: IProps) {
     autoFocus
   } = props;
   let titleWidth =
-    props.titleWidth === "auto" ? "auto" : pxTransform(props.titleWidth || 200);
+    props.titleWidth === "auto"
+      ? {
+          flex: "1 0 auto"
+        }
+      : {
+          width: pxTransform(props.titleWidth || 200)
+        };
   useMemo(() => {
     setInitValue(value);
   }, [props.value]);
@@ -173,7 +179,7 @@ function ClInput(props: IProps) {
   const renderMaterialTitle = (
     <View
       className={`${focus || initValue ? "materialFocus" : "materialBlur"}`}
-      style={{ width: titleWidth }}
+      style={titleWidth}
       id="cl-input"
     >
       {title}
@@ -182,14 +188,14 @@ function ClInput(props: IProps) {
   const renderMaterialTitle_H5 = (
     <View
       className={`${focus || initValue ? "materialFocus" : "materialBlur"}`}
-      style={{ width: titleWidth }}
+      style={titleWidth}
       id={inputId}
     >
       {title}
     </View>
   );
   const normalTitle = (
-    <View className="title" style={{ width: titleWidth }}>
+    <View className="title" style={titleWidth}>
       {title}
     </View>
   );

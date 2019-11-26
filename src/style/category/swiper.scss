@@ -1,0 +1,124 @@
+/* ==================
+         轮播
+ ==================== */
+@import "../vars";
+
+swiper {
+  &.square-dot {
+    .wx-swiper-dot {
+      background-color: $white;
+      opacity: 0.4;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out 0s;
+      &.wx-swiper-dot-active {
+        opacity: 1;
+        width: 30px;
+      }
+    }
+  }
+  &.round-dot {
+    .wx-swiper-dot {
+      width: 10px;
+      height: 10px;
+      top: -4px;
+      transition: all 0.3s ease-in-out 0s;
+      position: relative;
+      &.wx-swiper-dot-active {
+        width: 18px;
+        height: 18px;
+        top: 0px;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: 0px;
+          left: 0px;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          background-color: $white;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.screen-swiper {
+  min-height: 375px;
+}
+
+.screen-swiper image,
+.screen-swiper img,
+.screen-swiper div[class*="taro-img"],
+.screen-swiper video,
+.swiper-item image,
+.swiper-item img,
+.swiper-item div[class*="taro-img"],
+.swiper-item video {
+  width: 100%;
+  display: block;
+  height: 100%;
+  margin: 0;
+  pointer-events: none;
+}
+
+.swiper-wrapper .taro-img {
+  width: 100%;
+}
+
+.card-swiper {
+  height: 420px !important;
+  swiper-item {
+    width: 610px !important;
+    //left: 70px;
+    box-sizing: border-box;
+    padding: 40px 0px 70px;
+    overflow: initial;
+    .swiper-item {
+      width: 100%;
+      display: block;
+      height: 100%;
+      border-radius: 10px;
+      transform: scale(0.9);
+      transition: all 0.2s ease-in 0s;
+      overflow: hidden;
+    }
+    &.cur {
+      .swiper-item {
+        transform: none;
+        transition: all 0.2s ease-in 0s;
+      }
+    }
+  }
+}
+
+.tower-swiper {
+  height: 420px;
+  position: relative;
+  max-width: 750px;
+  overflow: hidden;
+  .tower-item {
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    transition: all 0.2s ease-in 0s;
+    opacity: 1;
+    &.none {
+      opacity: 0;
+    }
+    .swiper-item {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+  }
+}

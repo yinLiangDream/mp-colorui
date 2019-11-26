@@ -1,0 +1,114 @@
+/* ==================
+         表单
+ ==================== */
+@import "../vars";
+
+.cu-form-group {
+  background-color: $white;
+  padding: 1px 30px;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  justify-content: space-between;
+  + {
+    .cu-form-group {
+      border-top: 2px solid #eee;
+    }
+  }
+  .title {
+    text-align: justify;
+    padding-right: 30px;
+    font-size: 30px;
+    position: relative;
+    min-height: 60px;
+    line-height: 60px;
+  }
+  input {
+    flex: 1;
+    font-size: 30px;
+    color: #555;
+    padding-right: 20px;
+  }
+  > {
+    text,
+    span {
+      &[class*="cuIcon-"] {
+        font-size: 36px;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+  &.top {
+    .title {
+      height: 1em;
+      line-height: 1;
+      align-self: flex-start;
+      margin-top: 16px;
+    }
+  }
+  textarea {
+    margin: 32px 0 30px;
+    height: 4.6em;
+    width: 100%;
+    line-height: 1.2em;
+    flex: 1;
+    font-size: 28px;
+    padding: 0;
+    box-sizing: content-box;
+    display: inline-block;
+    vertical-align: top;
+    .placeholder {
+      color: transparent;
+    }
+    &::after {
+      content: attr(data-placeholder);
+      color: gray;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      transition: 0.2s;
+      opacity: 1;
+    }
+    &.value {
+      &::after {
+        opacity: 0;
+      }
+    }
+    &[disabled],
+    &[disabled] .placeholder {
+      color: transparent;
+    }
+  }
+  picker {
+    flex: 1;
+    padding-right: 40px;
+    overflow: hidden;
+    position: relative;
+    .picker {
+      line-height: 100px;
+      font-size: 28px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      text-align: right;
+    }
+    &::after {
+      font-family: "cuIcon";
+      display: block;
+      content: "\e6a3";
+      position: absolute;
+      font-size: 34px;
+      color: $grey;
+      line-height: 100px;
+      width: 60px;
+      text-align: center;
+      top: 0;
+      bottom: 0;
+      right: -20px;
+      margin: auto;
+    }
+  }
+}

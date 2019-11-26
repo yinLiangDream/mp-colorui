@@ -1,0 +1,140 @@
+/* ==================
+          徽章
+ ==================== */
+
+@import "../vars";
+
+.cu-tag {
+  font-size: 24px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0px 16px;
+  height: 48px;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  white-space: nowrap;
+  &:not([class*="bg"]):not([class*="line"]) {
+    background-color: #f1f1f1;
+  }
+  &[class*="line-"] {
+    &::after {
+      content: " ";
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 2px solid currentColor;
+      transform: scale(0.5);
+      transform-origin: 0 0;
+      box-sizing: border-box;
+      border-radius: inherit;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+  &.radius {
+    &[class*="line"] {
+      &::after {
+        border-radius: 12px;
+      }
+    }
+  }
+  &.round {
+    &[class*="line"] {
+      &::after {
+        border-radius: 1000px;
+      }
+    }
+  }
+  + .cu-tag {
+    margin-left: 10px;
+  }
+  &.sm {
+    font-size: 20px;
+    padding: 0px 12px;
+    height: 32px;
+  }
+  &.badge {
+    border-radius: 200px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    padding: 0px 10px;
+    height: 28px;
+    color: $white;
+    &:not([class*="bg-"]) {
+      background-color: #dd514c;
+    }
+  }
+  &:empty {
+    &:not([class*="cuIcon-"]) {
+      padding: 0px;
+      width: 16px;
+      height: 16px;
+      top: -4px;
+      right: -4px;
+    }
+  }
+  &[class*="cuIcon-"] {
+    width: 32px;
+    height: 32px;
+    top: -4px;
+    right: -4px;
+  }
+}
+
+.cu-capsule {
+  display: inline-flex;
+  vertical-align: middle;
+  + .cu-capsule {
+    margin-left: 10px;
+  }
+  .cu-tag {
+    margin: 0;
+    &[class*="line-"] {
+      &:last-child {
+        &::after {
+          border-left: 0px solid transparent;
+        }
+      }
+      &:first-child {
+        &::after {
+          border-right: 0px solid transparent;
+        }
+      }
+    }
+  }
+  &.radius {
+    .cu-tag {
+      &:first-child {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+      &:last-child::after,
+      &[class*="line-"] {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+    }
+  }
+  &.round {
+    .cu-tag {
+      &:first-child {
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+        text-indent: 4px;
+      }
+      &:last-child::after,
+      &:last-child {
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+        text-indent: -4px;
+      }
+    }
+  }
+}

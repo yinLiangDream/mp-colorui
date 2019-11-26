@@ -1,0 +1,607 @@
+/* ==================
+          布局
+ ==================== */
+
+@import "../vars";
+
+/*  -- flex弹性布局 -- */
+
+.flex {
+  display: flex;
+  &-sub {
+    flex: 1;
+  }
+  &-twice {
+    flex: 2;
+  }
+  &-treble {
+    flex: 3;
+  }
+
+  &-direction {
+    flex-direction: column;
+  }
+  &-direction-column {
+    flex-direction: column;
+  }
+
+  &-direction-row {
+    flex-direction: row;
+  }
+
+  &-direction-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &-direction-row-reverse {
+    flex-direction: row-reverse;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.basis {
+  &-xs {
+    flex-basis: 20%;
+  }
+  &-sm {
+    flex-basis: 40%;
+  }
+  &-df {
+    flex-basis: 50%;
+  }
+  &-lg {
+    flex-basis: 60%;
+  }
+  &-xl {
+    flex-basis: 80%;
+  }
+}
+
+.align {
+  &-start {
+    align-items: flex-start;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+  &-center {
+    align-items: center;
+  }
+  &-stretch {
+    align-items: stretch;
+  }
+}
+
+.self {
+  &-start {
+    align-self: flex-start;
+  }
+  &-center {
+    align-self: flex-center;
+  }
+  &-end {
+    align-self: flex-end;
+  }
+  &-stretch {
+    align-self: stretch;
+  }
+}
+
+.justify {
+  &-start {
+    justify-content: flex-start;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+}
+
+/* grid布局 */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  &.grid-square {
+    overflow: hidden;
+    .cu-tag {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-bottom-left-radius: 6px;
+      padding: 6px 12px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    > {
+      view,
+      div {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        > {
+          text,
+          span {
+            &[class*="cuIcon-"] {
+              font-size: 52px;
+              position: absolute;
+              color: $grey;
+              margin: auto;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.col {
+    &-1 {
+      > {
+        view,
+        div {
+          width: 100%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: 100%;
+            height: 0;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    &-2 {
+      > {
+        view,
+        div {
+          width: 50%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 20px) / 2);
+            height: 0;
+            width: calc((100% - 20px) / 2);
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    &-3 {
+      > {
+        view,
+        div {
+          width: 33.33%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 40px) / 3);
+            height: 0;
+            width: calc((100% - 40px) / 3);
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    &-4 {
+      > {
+        view,
+        div {
+          width: 25%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 60px) / 4);
+            height: 0;
+            width: calc((100% - 60px) / 4);
+            &:nth-child(4n) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    &-5 {
+      > {
+        view,
+        div {
+          width: 20%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 80px) / 5);
+            height: 0;
+            width: calc((100% - 80px) / 5);
+          }
+        }
+      }
+    }
+    &-6 {
+      > {
+        view,
+        div {
+          width: 16.66%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 100px) / 5);
+            height: 0;
+            width: calc((100% - 100px) / 5);
+          }
+        }
+      }
+    }
+    &-7 {
+      > {
+        view,
+        div {
+          width: 14.28%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 120px) / 5);
+            height: 0;
+            width: calc((100% - 120px) / 5);
+          }
+        }
+      }
+    }
+    &-8 {
+      > {
+        view,
+        div {
+          width: 12.5%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 140px) / 5);
+            height: 0;
+            width: calc((100% - 140px) / 5);
+          }
+        }
+      }
+    }
+    &-9 {
+      > {
+        view,
+        div {
+          width: 11.11%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 160px) / 5);
+            height: 0;
+            width: calc((100% - 160px) / 5);
+          }
+        }
+      }
+    }
+    &-10 {
+      > {
+        view,
+        div {
+          width: 10%;
+        }
+      }
+      &.grid-square {
+        > {
+          view,
+          div {
+            padding-bottom: calc((100% - 180px) / 5);
+            height: 0;
+            width: calc((100% - 180px) / 5);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*  -- 内外边距 -- */
+
+.margin {
+  margin: 30px;
+  &-0 {
+    margin: 0;
+  }
+  &-xs {
+    margin: 10px;
+  }
+  &-sm {
+    margin: 20px;
+  }
+  &-lg {
+    margin: 40px;
+  }
+  &-xl {
+    margin: 50px;
+  }
+  &-top {
+    margin-top: 30px;
+    &-xs {
+      margin-top: 10px;
+    }
+    &-sm {
+      margin-top: 20px;
+    }
+    &-lg {
+      margin-top: 40px;
+    }
+    &-xl {
+      margin-top: 50px;
+    }
+  }
+  &-right {
+    margin-right: 30px;
+    &-xs {
+      margin-right: 10px;
+    }
+    &-sm {
+      margin-right: 20px;
+    }
+    &-lg {
+      margin-right: 40px;
+    }
+    &-xl {
+      margin-right: 50px;
+    }
+  }
+  &-bottom {
+    margin-bottom: 30px;
+    &-xs {
+      margin-bottom: 10px;
+    }
+    &-sm {
+      margin-bottom: 20px;
+    }
+    &-lg {
+      margin-bottom: 40px;
+    }
+    &-xl {
+      margin-bottom: 50px;
+    }
+  }
+  &-left {
+    margin-left: 30px;
+    &-xs {
+      margin-left: 10px;
+    }
+    &-sm {
+      margin-left: 20px;
+    }
+    &-lg {
+      margin-left: 40px;
+    }
+    &-xl {
+      margin-left: 50px;
+    }
+  }
+  &-lr {
+    margin-left: 30px;
+    margin-right: 30px;
+    &-xs {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &-sm {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    &-lg {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    &-xl {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  &-tb {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &-xs {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    &-sm {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &-lg {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    &-xl {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.padding {
+  padding: 30px;
+  &-0 {
+    padding: 0;
+  }
+  &-xs {
+    padding: 10px;
+  }
+  &-sm {
+    padding: 20px;
+  }
+  &-lg {
+    padding: 40px;
+  }
+  &-xl {
+    padding: 50px;
+  }
+  &-top {
+    padding-top: 30px;
+    &-xs {
+      padding-top: 10px;
+    }
+    &-sm {
+      padding-top: 20px;
+    }
+    &-lg {
+      padding-top: 40px;
+    }
+    &-xl {
+      padding-top: 50px;
+    }
+  }
+  &-right {
+    padding-right: 30px;
+    &-xs {
+      padding-right: 10px;
+    }
+    &-sm {
+      padding-right: 20px;
+    }
+    &-lg {
+      padding-right: 40px;
+    }
+    &-xl {
+      padding-right: 50px;
+    }
+  }
+  &-bottom {
+    padding-bottom: 30px;
+    &-xs {
+      padding-bottom: 10px;
+    }
+    &-sm {
+      padding-bottom: 20px;
+    }
+    &-lg {
+      padding-bottom: 40px;
+    }
+    &-xl {
+      padding-bottom: 50px;
+    }
+  }
+  &-left {
+    padding-left: 30px;
+    &-xs {
+      padding-left: 10px;
+    }
+    &-sm {
+      padding-left: 20px;
+    }
+    &-lg {
+      padding-left: 40px;
+    }
+    &-xl {
+      padding-left: 50px;
+    }
+  }
+  &-lr {
+    padding-left: 30px;
+    padding-right: 30px;
+    &-xs {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &-sm {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &-lg {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &-xl {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  &-tb {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &-xs {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    &-sm {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &-lg {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &-xl {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+/* -- 浮动 --  */
+.cf {
+  &::after,
+  &::before {
+    content: " ";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}

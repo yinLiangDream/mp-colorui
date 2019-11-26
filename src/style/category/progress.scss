@@ -1,0 +1,81 @@
+/* ==================
+         进度条
+ ==================== */
+
+@import "../vars";
+
+.cu-progress {
+  overflow: hidden;
+  height: 28px;
+  background-color: #ebeef5;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  + view,
+  + div,
+  + text,
+  + span {
+    line-height: 1;
+  }
+  &.xs {
+    height: 10px;
+  }
+  &.sm {
+    height: 20px;
+  }
+  view,
+  div {
+    width: 0;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-items: flex-end;
+    justify-content: space-around;
+    font-size: 20px;
+    color: $white;
+    transition: width 0.6s ease;
+  }
+  text,
+  span {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    color: #666;
+    text-indent: 10px;
+  }
+  &.text-progress {
+    padding-right: 60px;
+  }
+  &.striped {
+    view,
+    div {
+      background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.15) 50%,
+        rgba(255, 255, 255, 0.15) 75%,
+        transparent 75%,
+        transparent
+      );
+      background-size: 72px 72px;
+    }
+  }
+  &.active {
+    view,
+    div {
+      animation: progress-stripes 2s linear infinite;
+    }
+  }
+}
+
+@keyframes progress-stripes {
+  from {
+    background-position: 72px 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}

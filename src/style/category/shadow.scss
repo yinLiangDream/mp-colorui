@@ -1,0 +1,86 @@
+/* -- 阴影 -- */
+
+@import "../vars";
+
+.shadow {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  &-lg {
+    box-shadow: 0px 40px 100px 0px rgba(0, 0, 0, 0.07);
+  }
+  &-warp {
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      top: 20px;
+      bottom: 30px;
+      left: 20px;
+      width: 50%;
+      box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+      transform: rotate(-3deg);
+      z-index: -1;
+    }
+    &:after {
+      right: 20px;
+      left: auto;
+      transform: rotate(3deg);
+    }
+  }
+  &-blur {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      background: inherit;
+      filter: blur(10px);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 10px;
+      left: 10px;
+      z-index: -1;
+      opacity: 0.4;
+      transform-origin: 0 0;
+      border-radius: inherit;
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.shadow {
+  &[class*="-red"] {
+    box-shadow: $ShadowSize $redShadow;
+  }
+  &[class*="-orange"] {
+    box-shadow: $ShadowSize $orangeShadow;
+  }
+  &[class*="-yellow"] {
+    box-shadow: $ShadowSize $yellowShadow;
+  }
+  &[class*="-olive"] {
+    box-shadow: $ShadowSize $oliveShadow;
+  }
+  &[class*="-green"] {
+    box-shadow: $ShadowSize $greenShadow;
+  }
+  &[class*="-cyan"] {
+    box-shadow: $ShadowSize $cyanShadow;
+  }
+  &[class*="-blue"] {
+    box-shadow: $ShadowSize $blueShadow;
+  }
+  &[class*="-purple"] {
+    box-shadow: $ShadowSize $purpleShadow;
+  }
+  &[class*="-mauve"] {
+    box-shadow: $ShadowSize $mauveShadow;
+  }
+  &[class*="-pink"] {
+    box-shadow: $ShadowSize $pinkShadow;
+  }
+  &[class*="-white"] {
+    box-shadow: $ShadowSize $blackShadow;
+  }
+}

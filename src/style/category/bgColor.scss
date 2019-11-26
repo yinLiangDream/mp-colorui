@@ -1,0 +1,197 @@
+@import "../vars";
+
+.bg {
+  &-red {
+    background-color: $red;
+    color: $white;
+    &.light {
+      color: $red;
+      background-color: $redLight;
+    }
+  }
+  &-orange {
+    background-color: $orange;
+    color: $white;
+    &.light {
+      color: $orange;
+      background-color: $orangeLight;
+    }
+  }
+  &-yellow {
+    background-color: $yellow;
+    color: $black;
+    &.light {
+      color: $yellow;
+      background-color: $yellowLight;
+    }
+  }
+  &-olive {
+    background-color: $olive;
+    color: $white;
+    &.light {
+      color: $olive;
+      background-color: $oliveLight;
+    }
+  }
+  &-green {
+    background-color: $green;
+    color: $white;
+    &.light {
+      color: $green;
+      background-color: $greenLight;
+    }
+  }
+  &-cyan {
+    background-color: $cyan;
+    color: $white;
+    &.light {
+      color: $cyan;
+      background-color: $cyanLight;
+    }
+  }
+  &-blue {
+    background-color: $blue;
+    color: $white;
+    &.light {
+      color: $blue;
+      background-color: $blueLight;
+    }
+  }
+  &-purple {
+    background-color: $purple;
+    color: $white;
+    &.light {
+      color: $purple;
+      background-color: $purpleLight;
+    }
+  }
+  &-mauve {
+    background-color: $mauve;
+    color: $white;
+    &.light {
+      color: $mauve;
+      background-color: $mauveLight;
+    }
+  }
+  &-pink {
+    background-color: $pink;
+    color: $white;
+
+    &.light {
+      color: $pink;
+      background-color: $pinkLight;
+    }
+  }
+  &-brown {
+    background-color: $brown;
+    color: $white;
+    &.light {
+      color: $brown;
+      background-color: $brownLight;
+    }
+  }
+  &-grey {
+    background-color: $grey;
+    color: $white;
+    &.light {
+      color: $grey;
+      background-color: $greyLight;
+    }
+  }
+  &-gray {
+    background-color: #f0f0f0;
+    color: $black;
+    &.light {
+      color: #666;
+      background-color: #fadbd9;
+    }
+    &.light {
+      color: #888;
+      background-color: #f1f1f1;
+    }
+  }
+  &-black {
+    background-color: $black;
+    color: $white;
+  }
+  &-white {
+    background-color: $white;
+    color: $darkGray;
+  }
+  &-shadeTop {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
+    color: $white;
+  }
+  &-shadeBottom {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
+    color: $white;
+  }
+  &-gradual {
+    &-red {
+      background-image: $gradualRed;
+      color: $white;
+    }
+    &-orange {
+      background-image: $gradualOrange;
+      color: $white;
+    }
+    &-green {
+      background-image: $gradualGreen;
+      color: $white;
+    }
+    &-purple {
+      background-image: $gradualPurple;
+      color: $white;
+    }
+    &-pink {
+      background-image: $gradualPink;
+      color: $white;
+    }
+    &-blue {
+      background-image: $gradualBlue;
+      color: $white;
+    }
+  }
+  &-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &-mask {
+    background-color: $black;
+    position: relative;
+    &::after {
+      content: "";
+      border-radius: inherit;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+    view,
+    div,
+    cover-view {
+      z-index: 5;
+      position: relative;
+    }
+  }
+  &-video {
+    position: relative;
+    video {
+      display: block;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+  }
+}

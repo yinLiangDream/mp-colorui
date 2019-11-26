@@ -1,11 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="feat shopBar、tabBar 组件新增 safeArea 属性">
+      <change afterPath="$PROJECT_DIR$/src/style/baseCSS.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/avatar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/bar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/bgColor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/border.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/chat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/lineColor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/load.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/steps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/swiper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/tag.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/category/timeline.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/accordion.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/actionSheet.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/animation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/avatar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/checkbox.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/curtain.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/floatButton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/icon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/imagePicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/input.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/loading.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/menuList.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/message.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/navBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/noticeBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/radio.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/screenDrawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/searchBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/select.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/shopBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/steps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/swiper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/swiperAction.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/switch.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/tabBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/tag.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/timeline.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/tip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/titleBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/verticalTab.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/tabBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/shopBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/shopBar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/accordion/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/accordion/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/radio/components/ListRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio/components/ListRadio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,18 +146,20 @@
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docs/.vuepress/public" />
-      <recent name="$PROJECT_DIR$/docs/.vuepress/public/code/button" />
-      <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/code" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/style/components" />
+      <recent name="$PROJECT_DIR$/src/style/category" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public/code/button" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -231,6 +310,9 @@
       <workItem from="1573442868845" duration="1532000" />
       <workItem from="1573462705712" duration="730000" />
       <workItem from="1573612809302" duration="3297000" />
+      <workItem from="1573617185918" duration="184000" />
+      <workItem from="1574661212666" duration="1492000" />
+      <workItem from="1574663910166" duration="26165000" />
     </task>
     <task id="LOCAL-00011" summary="修复 H5 button 无动效问题">
       <created>1562060107799</created>

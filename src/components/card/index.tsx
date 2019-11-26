@@ -31,7 +31,7 @@ export default function ClCard(props: IProps) {
       >
         {props.title && props.title.text ? (
           <View className="cu_card__title-line padding">
-            <ClText {...props.title}></ClText>
+            <ClText {...props.title} />
           </View>
         ) : (
           ""

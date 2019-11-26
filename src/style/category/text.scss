@@ -1,0 +1,205 @@
+@import "../vars";
+
+.text {
+  &-shadow {
+    &[class*="-red"] {
+      text-shadow: $ShadowSize $redShadow;
+    }
+    &[class*="-orange"] {
+      text-shadow: $ShadowSize $orangeShadow;
+    }
+    &[class*="-yellow"] {
+      text-shadow: $ShadowSize $yellowShadow;
+    }
+    &[class*="-olive"] {
+      text-shadow: $ShadowSize $oliveShadow;
+    }
+    &[class*="-green"] {
+      text-shadow: $ShadowSize $greenShadow;
+    }
+    &[class*="-cyan"] {
+      text-shadow: $ShadowSize $cyanShadow;
+    }
+    &[class*="-blue"] {
+      text-shadow: $ShadowSize $blueShadow;
+    }
+    &[class*="-purple"] {
+      text-shadow: $ShadowSize $purpleShadow;
+    }
+    &[class*="-mauve"] {
+      text-shadow: $ShadowSize $mauveShadow;
+    }
+    &[class*="-pink"] {
+      text-shadow: $ShadowSize $pinkShadow;
+    }
+    &[class*="-brown"] {
+      text-shadow: $ShadowSize $brownShadow;
+    }
+    &[class*="-grey"] {
+      text-shadow: $ShadowSize $greyShadow;
+    }
+    &[class*="-gray"] {
+      text-shadow: $ShadowSize $grayShadow;
+    }
+    &[class*="-black"] {
+      text-shadow: $ShadowSize $blackShadow;
+    }
+  }
+}
+
+.text {
+  &-xs {
+    font-size: 20px;
+  }
+  &-sm {
+    font-size: 24px;
+  }
+  &-df {
+    font-size: 28px;
+  }
+  &-lg {
+    font-size: 32px;
+  }
+  &-xl {
+    font-size: 36px;
+  }
+  &-xxl {
+    font-size: 44px;
+  }
+  &-sl {
+    font-size: 80px;
+  }
+  &-xsl {
+    font-size: 120px;
+  }
+  &-Abc {
+    text-transform: Capitalize;
+  }
+  &-ABC {
+    text-transform: Uppercase;
+  }
+  &-abc {
+    text-transform: Lowercase;
+  }
+  &-price {
+    &::before {
+      content: "¥";
+      font-size: 80%;
+      margin-right: 4px;
+    }
+  }
+  &-cut {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-content {
+    line-height: 1.6;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+.text-red,
+.line-red,
+.lines-red {
+  color: $red;
+}
+
+.text-orange,
+.line-orange,
+.lines-orange {
+  color: $orange;
+}
+
+.text-yellow,
+.line-yellow,
+.lines-yellow {
+  color: $yellow;
+}
+
+.text-olive,
+.line-olive,
+.lines-olive {
+  color: $olive;
+}
+
+.text-green,
+.line-green,
+.lines-green {
+  color: $green;
+}
+
+.text-cyan,
+.line-cyan,
+.lines-cyan {
+  color: $cyan;
+}
+
+.text-blue,
+.line-blue,
+.lines-blue {
+  color: $blue;
+}
+
+.text-purple,
+.line-purple,
+.lines-purple {
+  color: $purple;
+}
+
+.text-mauve,
+.line-mauve,
+.lines-mauve {
+  color: $mauve;
+}
+
+.text-pink,
+.line-pink,
+.lines-pink {
+  color: $pink;
+}
+
+.text-brown,
+.line-brown,
+.lines-brown {
+  color: $brown;
+}
+
+.text-grey,
+.line-grey,
+.lines-grey {
+  color: $grey;
+}
+
+.text-gray,
+.line-gray,
+.lines-gray {
+  color: $gray;
+}
+
+.text-black,
+.line-black,
+.lines-black {
+  color: $black;
+}
+
+.text-white,
+.line-white,
+.lines-white {
+  color: $white;
+}
+
+.text-shadow {
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}

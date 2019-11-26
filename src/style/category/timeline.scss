@@ -1,0 +1,86 @@
+/* ==================
+         时间轴
+ ==================== */
+@import "../vars";
+
+.cu-timeline {
+  display: block;
+  background-color: $white;
+  .cu-time {
+    width: 120px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+    color: #888;
+    display: block;
+  }
+  > {
+    .cu-item {
+      padding: 30px 30px 30px 120px;
+      position: relative;
+      display: block;
+      z-index: 0;
+      &:not([class*="text-"]) {
+        color: #ccc;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 2px;
+        background-color: #ddd;
+        left: 60px;
+        height: 100%;
+        top: 0;
+        z-index: 8;
+      }
+      &::before {
+        font-family: "cuIcon";
+        display: block;
+        position: absolute;
+        top: 36px;
+        z-index: 9;
+        background-color: $white;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border: none;
+        line-height: 50px;
+        left: 36px;
+      }
+      &:not([class*="cuIcon-"]) {
+        &::before {
+          content: "\e763";
+        }
+      }
+      &[class*="cuIcon-"] {
+        &::before {
+          background-color: $white;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          border: none;
+          line-height: 50px;
+          left: 36px;
+        }
+      }
+      > {
+        .content {
+          padding: 30px;
+          border-radius: 6px;
+          display: block;
+          line-height: 1.6;
+          &:not([class*="bg-"]) {
+            background-color: #f1f1f1;
+            color: #666;
+          }
+          + {
+            .content {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
