@@ -5,7 +5,7 @@ export interface IProps extends BaseComponent {
   /**
    * 高度
    */
-  height: number;
+  height: number | "full";
   /**
    * 标签页
    */

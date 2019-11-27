@@ -126,7 +126,11 @@ export default function ClVerticalTab(props: IProps) {
       scrollY
       scrollWithAnimation
       scrollAnimationDuration={200}
-      style={{ height: pxTransform(props.height), width: "100%" }}
+      style={{
+        height: props.height === "full" ? "100%" : pxTransform(props.height),
+        maxHeight: "100vh",
+        width: "100%"
+      }}
       scrollIntoView={scrollId}
       onScroll={onScroll}
       scrollTop={isAliPay ? undefined : scrollContent}
@@ -140,7 +144,11 @@ export default function ClVerticalTab(props: IProps) {
       scrollY
       scrollWithAnimation
       scrollAnimationDuration={200}
-      style={{ height: pxTransform(props.height), width: "100%" }}
+      style={{
+        height: props.height === "full" ? "100%" : pxTransform(props.height),
+        maxHeight: "100vh",
+        width: "100%"
+      }}
       onScroll={onH5Scroll}
       scrollTop={scrollContent}
       enableBackToTop={props.backTop}
@@ -157,7 +165,10 @@ export default function ClVerticalTab(props: IProps) {
         scrollY
         scrollWithAnimation
         className="VerticalNav nav"
-        style={{ height: pxTransform(props.height) }}
+        style={{
+          height: props.height === "full" ? "100%" : pxTransform(props.height),
+          maxHeight: "100vh"
+        }}
         scrollTop={(verticalNavTop - 1) * screenPercent * 100}
         enableBackToTop={props.backTop}
       >

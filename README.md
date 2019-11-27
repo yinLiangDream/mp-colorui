@@ -26,7 +26,7 @@
 
 ## 小程序演示
 
-![MP ColorUI](https://md-1255362963.cos.ap-chengdu.myqcloud.com/coloruiqrcode.png)
+![MP ColorUI](https://md-1255362963.cos.ap-chengdu.myqcloud.com/mpcolorui/coloruiqrcode.png)
 
 ## 使用案例
 
