@@ -1,6 +1,7 @@
 ## 使用说明
 
 ```jsx
+// 按需引入需要在 app.scss 中引入对应样式 imagePicker.scss
 import { ClImagePicker } from "mp-colorui";
 ```
 
@@ -12,10 +13,11 @@ import { ClImagePicker } from "mp-colorui";
 
 ### ImagePicker 参数
 
-| 参数         | 说明           | 类型                                                | 可选值                                    | 默认值 |
-| ------------ | -------------- | --------------------------------------------------- | ----------------------------------------- | ------ |
-| chooseImgObj | _选择图片对象_ | [chooseImgObj](/mp-colorui-doc/form/imagePicker#chooseImgObj)[] | [详情](/mp-colorui-doc/form/imagePicker#chooseimgobj) | []     |
-| imgList      | _图片列表_     | [imgList](/mp-colorui-doc/form/imagePicker#imglist)[]           | -                                         | []     |
+| 参数         | 说明                   | 类型                                                            | 可选值                                                | 默认值 |
+| ------------ | ---------------------- | --------------------------------------------------------------- | ----------------------------------------------------- | ------ |
+| chooseImgObj | _选择图片对象_         | [chooseImgObj](/mp-colorui-doc/form/imagePicker#chooseImgObj)[] | [详情](/mp-colorui-doc/form/imagePicker#chooseimgobj) | []     |
+| imgList      | _图片列表_             | [imgList](/mp-colorui-doc/form/imagePicker#imglist)[]           | -                                                     | []     |
+| max          | _列表显示图片最大数量_ | number                                                          | -                                                     | 0      |
 
 ### imgList
 

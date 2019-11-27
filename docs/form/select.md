@@ -1,6 +1,7 @@
 ## 使用说明
 
 ```jsx
+// 按需引入需要在 app.scss 中引入对应样式 select.scss
 import { ClSelect } from "mp-colorui";
 ```
 

@@ -24,7 +24,23 @@ import { ClButton } from "mp-colorui";
 如果你不是使用的 `scss` 文件，用下面一种引用方式，在 `app.js/jsx/tsx` 里引入
 
 ```js
-import 'mp-colorui/dist/style/index.scss'; // 引入组件样式，仅需引入一次即可
+import "mp-colorui/dist/style/index.scss"; // 引入组件样式，仅需引入一次即可
+```
+
+**按需引入**
+
+> 说明：因为 `Taro` 会将所有引入的文件进行打包，所以会造成重复的样式代码，从而浪费空间，按需引入请遵循以下引入规则。
+
+> 按需引入请将样式文件引入到统一一个文件中，例如 `app.js` 或者 `app.scss` 中
+
+```scss
+// app.scss
+@import "~mp-colorui/dist/style/components/avatar.scss";
+```
+
+```js
+// app.js
+import "mp-colorui/dist/style/components/avatar.scss";
 ```
 
 ## 示例

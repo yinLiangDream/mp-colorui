@@ -1,10 +1,11 @@
-### 使用说明
+## 使用说明
 
 ```jsx
+// 按需引入需要在 app.scss 中引入对应样式 tabs.scss
 import { ClTabs } from "mp-colorui";
 ```
 
-### 一般用法
+## 一般用法
 
 > 注：ClTabs 内部元素必须由一层 View 包裹，且 id 必须和 tabs 一一对应。
 

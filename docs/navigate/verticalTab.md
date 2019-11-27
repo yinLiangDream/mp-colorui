@@ -1,10 +1,11 @@
-### 使用说明
+## 使用说明
 
 ```jsx
+// 按需引入需要在 app.scss 中引入对应样式 verticalTab.scss
 import { ClVerticalTab, ClVerticalTabCell } from "mp-colorui";
 ```
 
-### 一般用法
+## 一般用法
 
 ### 用法
 
@@ -16,12 +17,12 @@ import { ClVerticalTab, ClVerticalTabCell } from "mp-colorui";
 
 ### VerticalTab 参数
 
-| 参数    | 说明               | 类型    | 可选值 | 默认值    |
-| ------- | ------------------ | ------- | ------ | --------- |
-| height  | 高度               | number  | -      | -         |
-| tabs    | 标签页数组         | tabs[]  | -      | []        |
-| current | 默认激活的标签页   | string  | -      | -         |
-| backTop | 点击标题回到最上方 | boolean | -      | _`false`_ |
+| 参数    | 说明               | 类型    | 可选值               | 默认值    |
+| ------- | ------------------ | ------- | -------------------- | --------- |
+| height  | 高度               | number  | 'full'(代表撑满屏幕) | -         | - |
+| tabs    | 标签页数组         | tabs[]  | -                    | []        |
+| current | 默认激活的标签页   | string  | -                    | -         |
+| backTop | 点击标题回到最上方 | boolean | -                    | _`false`_ |
 
 ### tabs
 

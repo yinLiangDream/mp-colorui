@@ -1,6 +1,7 @@
 ## 使用指南
 
 ```js
+// 按需引入需要在 app.scss 中引入对应样式 text.scss
 import { ClText } from "mp-colorui";
 ```
 

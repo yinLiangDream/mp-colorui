@@ -24,6 +24,15 @@ module.exports = {
   description:
     "MP ColorUI 是一款基于 Taro 框架并且联合 Color-UI CSS 库开发的多端 UI 组件库（支持小程序端和H5端）",
   base: "/mp-colorui-doc/",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: `https://mp-colorui-1255362963.cos.ap-chengdu.myqcloud.com/mp-colorui-logo.jpeg`
+      }
+    ]
+  ],
   plugins: [
     [
       "@vuepress/search",

@@ -3,6 +3,7 @@
 在 Taro 文件中引入组件
 
 ```js
+// 按需引入需要在 app.scss 中引入对应样式 button.scss
 import { ClButton } from "mp-colorui";
 ```
 
@@ -18,7 +19,7 @@ import { ClButton } from "mp-colorui";
 | ---------------- | ---------------------------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | shape            | _按钮形状设置_                                                                                       | string  | _`round`_,_`radius`_                                                                                                                                | _`radius`_  |
 | size             | _按钮大小设置_                                                                                       | string  | _`small`_,`normal`,_`large`_                                                                                                                        | _`normal`_  |
-| bgColor          | _按钮背景色设置_                                                                                     | string  | _参考文档 [默认色](/mp-colorui-doc/home/color)_                                                                                                                    | _`blue`_    |
+| bgColor          | _按钮背景色设置_                                                                                     | string  | _参考文档 [默认色](/mp-colorui-doc/home/color)_                                                                                                     | _`blue`_    |
 | plain            | _镂空设置_                                                                                           | boolean | _`true`_,_`false`_                                                                                                                                  | _`false`_   |
 | plainSize        | _镂空边框粗细设置_                                                                                   | string  | _`default`_,_`bold`_                                                                                                                                | _`default`_ |
 | shadow           | _按钮阴影设置_                                                                                       | boolean | _`true`_,_`false`_                                                                                                                                  | _`true`_    |

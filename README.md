@@ -12,7 +12,7 @@
 
 ## 使用方式
 
-> 具体文档请查看：[MP-ColorUI 文档](https://yinliangdream.github.io/mp-colorui-doc/home/introduce.html)
+> 具体文档请查看：[MP-ColorUI 文档](https://yinliangdream.github.io/mp-colorui-doc/)
 >
 > 安装：`npm i mp-colorui`， `yarn add mp-colorui`
 
