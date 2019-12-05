@@ -2,55 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="feat VerticalTab height 属性新增 'full'，可以直接撑满屏幕">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/mp-colorui-logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/@types/calendar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/@types/week.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calendar/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calendar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/week/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/week/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/actionSheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/actionSheet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/animation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/animation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/loading.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/loading.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/message.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/message.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/modal.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/modal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/progress.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/progress.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/swiperAction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/swiperAction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/action/tip.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/tip.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/button.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/floatButton.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/floatButton.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/text.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/text.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/checkbox.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/checkbox.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/form.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/form.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/imagePicker.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/imagePicker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/input.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/input.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/radio.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/radio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/select.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/select.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/switch.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/switch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/home/quick.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/home/quick.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/accordion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/accordion.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/card.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/card.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/drawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/drawer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/flex.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/flex.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/grid.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/grid.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/layout.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/menuList.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/menuList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/layout/screenDrawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/screenDrawer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/navBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/navBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/tabBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/tabs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/navigate/verticalTab.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/verticalTab.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/avatar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/avatar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/curtain.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/curtain.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/divider.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/divider.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/noticeBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/noticeBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/searchBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/searchBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/shopBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/shopBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/steps.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/steps.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/swiper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/swiper.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/tag.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/tag.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/timeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/timeline.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/view/titleBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/titleBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/text.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/text.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/actionSheet/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/actionSheet/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/message/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/message/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/message/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/searchResult/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +34,12 @@
       <list>
         <option value="CSS File" />
         <option value="Sass File" />
-        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="Stylus File" />
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -188,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.docs:build" />
-        <item itemvalue="npm.dev:weapp" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +258,9 @@
       <workItem from="1574759856042" duration="104000" />
       <workItem from="1574759971117" duration="38000" />
       <workItem from="1574760020470" duration="20688000" />
+      <workItem from="1575276570767" duration="337000" />
+      <workItem from="1575276930802" duration="4014000" />
+      <workItem from="1575362832680" duration="28816000" />
     </task>
     <task id="LOCAL-00016" summary="API&#10;新增 titleBar renderRight 属性&#10;BUG&#10;解决 浅色 light-pink 失效问题">
       <created>1562513202906</created>
@@ -708,6 +680,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat VerticalTab height 属性新增 'full'，可以直接撑满屏幕" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="190" key="#ESLint/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575279583136" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1574759865531">
       <screen x="0" y="23" width="1920" height="1133" />
     </state>
@@ -721,30 +697,30 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="168" y="94" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574777268994" />
-    <state width="1898" height="223" key="GridCell.Tab.0.bottom" timestamp="1574846576387">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1659" height="189" key="GridCell.Tab.0.bottom" timestamp="1575426151710">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042678" />
-    <state width="1898" height="223" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574846576387" />
-    <state width="1658" height="223" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260293" />
-    <state width="1898" height="223" key="GridCell.Tab.0.center" timestamp="1574846576386">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1898" height="223" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574848369568" />
+    <state width="1659" height="189" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575426151710" />
+    <state width="1659" height="189" key="GridCell.Tab.0.center" timestamp="1575426151709">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042676" />
-    <state width="1898" height="223" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574846576386" />
-    <state width="1658" height="223" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260292" />
-    <state width="1898" height="223" key="GridCell.Tab.0.left" timestamp="1574846576385">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1898" height="223" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574848369567" />
+    <state width="1659" height="189" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575426151709" />
+    <state width="1659" height="189" key="GridCell.Tab.0.left" timestamp="1575426151708">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042674" />
-    <state width="1898" height="223" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574846576385" />
-    <state width="1658" height="223" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260291" />
-    <state width="1898" height="223" key="GridCell.Tab.0.right" timestamp="1574846576387">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1898" height="223" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574848369566" />
+    <state width="1659" height="189" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575426151708" />
+    <state width="1659" height="189" key="GridCell.Tab.0.right" timestamp="1575426151709">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1894" height="109" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760042677" />
-    <state width="1898" height="223" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574846576387" />
-    <state width="1658" height="223" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1574781260293" />
+    <state width="1898" height="223" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574848369568" />
+    <state width="1659" height="189" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575426151709" />
     <state x="582" y="242" key="RollbackChangesDialog" timestamp="1574780846378">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -755,9 +731,14 @@
     <state x="353" y="124" key="SettingsEditor/-1920.0.1920.1080/1920.-511.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574760515368" />
     <state x="353" y="140" key="SettingsEditor/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574760009742" />
     <state x="309" y="109" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1574777207933" />
-    <state x="570" y="177" width="779" height="846" key="find.popup" timestamp="1574845443842">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="499" y="155" width="682" height="741" key="find.popup" timestamp="1575532778763">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="499" y="155" width="682" height="741" key="find.popup/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575532778763" />
     <state x="570" y="177" width="779" height="846" key="find.popup/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1574845443842" />
+    <state x="503" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1575369888327">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="503" y="231" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575369888327" />
   </component>
 </project>

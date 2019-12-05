@@ -1,6 +1,6 @@
 import { View, Text } from "@tarojs/components";
 import Taro, { pxTransform } from "@tarojs/taro";
-import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from "../utils/model";
+import { BG_COLOR_LIST, pxMap, SIZE, TEXT_COLOR_LIST } from "../utils/model";
 import { IProps } from "../../../@types/text";
 
 import "./index.scss";
@@ -27,8 +27,11 @@ const FONT_SPACING = {
 export default function ClText(props: IProps) {
   const lineSpacing = props.lineSpacing || "none";
   const fontSpacing = props.fontSpacing || "none";
-  const size = props.size || "normal";
-  const sizeClassName = `text-${SIZE[size === "normal" ? "df" : size]}`;
+  const size = isNumber(props.size) ? props.size : props.size || "normal";
+  const fontSize = isNumber(size)
+    ? pxTransform(size as number)
+    : pxTransform(pxMap[size || "normal"] * screenPercent);
+  // const sizeClassName = `text-${SIZE[size === "normal" ? "df" : size]}`;
   const textColorClassName = props.textColor
     ? TEXT_COLOR_LIST[props.textColor || "black"]
     : "";
@@ -41,7 +44,7 @@ export default function ClText(props: IProps) {
   return (
     <View
       className={classNames(
-        `${sizeClassName} ${textColorClassName} ${bgColorClassName} ${cutClassName} ${alignClassName}`,
+        ` ${textColorClassName} ${bgColorClassName} ${cutClassName} ${alignClassName}`,
         props.className
       )}
       style={Object.assign(
@@ -62,7 +65,8 @@ export default function ClText(props: IProps) {
                     ? fontSpacing
                     : FONT_SPACING[fontSpacing]
                 ),
-          fontWeight: props.fontWeight
+          fontWeight: props.fontWeight,
+          fontSize
         },
         props.style
       )}

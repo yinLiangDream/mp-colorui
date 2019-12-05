@@ -16,7 +16,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `xsmall`, `small`, `normal`, `large`, `xlarge`, `xxlarge`, `slarge`, `xslarge`
    */
-  size?: extendSizeType;
+  size?: extendSizeType | number;
   /**
    * 行间距
    *
