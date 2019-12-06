@@ -38,12 +38,12 @@ export default function ClSearchResult(props: {
   const resultComponent = result.map((item: any, index: number) => (
     <View
       key={item.cu_search_bar_result_id}
-      className="cl_search_result"
+      className="cl_search_result solid-bottom"
       onClick={() => {
         onTouchResult(index);
       }}
     >
-      <ClLayout padding="xsmall" paddingDirection="vertical">
+      <ClLayout padding="small" paddingDirection="vertical">
         <ClText text={item.title} size="large" />
         <ClText text={item.desc} size="xsmall" cut />
       </ClLayout>

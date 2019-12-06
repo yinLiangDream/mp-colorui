@@ -1,11 +1,9 @@
 .cl_search_result {
-  border-bottom: 1px solid;
   width: 100%;
-  &:active {
-    background-color: rgba(0,0,0,0.1);
-  }
-  &:last-child {
-    border-bottom: none;
+  &.solid-bottom {
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 .cl_search_loading {
