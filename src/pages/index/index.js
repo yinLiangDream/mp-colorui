@@ -31,12 +31,12 @@ import ClSwiper from "../../components/swiper";
 
 import PCAA from "area-data/pcaa";
 import ClCalendar from "../../components/calendar";
-import ClWeek from "../../components/week";
 
 export default function Index() {
   return (
     <ClLayout>
-      <ClWeek
+      <ClCalendar
+        showType="full"
         tipDay={[
           {
             date: "2019-12-05",
@@ -46,6 +46,15 @@ export default function Index() {
             tipBottomColor: "red"
           }
         ]}
+        badge={[
+          {
+            date: "2019-12-05",
+            color: "yellow",
+            num: 12
+          }
+        ]}
+        disabledDay={[[, "2019-12-06"]]}
+        specialDay={["2019-12-06"]}
       />
     </ClLayout>
   );

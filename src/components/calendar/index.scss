@@ -1,0 +1,12 @@
+.cuCalendar {
+  .day {
+    &-normal {
+      min-width: 80px;
+      min-height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -26,7 +26,7 @@ export default function ClMessage(props: IProps) {
     info: "light-grey",
     custom: bgColor
   };
-  const caculateHeight = async () => {
+  const calculateHeight = async () => {
     const view = Taro.createSelectorQuery().in(this.$scope);
     const query = view.select("#content");
     return await new Promise(resolve => {
@@ -37,45 +37,49 @@ export default function ClMessage(props: IProps) {
     });
   };
   const clickClose = async () => {
-    const height: any = await caculateHeight();
+    const height: any = await calculateHeight();
     clearTimeout(timer);
     timer = null;
     setContentHeight(height);
     setShowMessage(false);
     onClose && onClose();
   };
-  useEffect(async () => {
-    if (!showMessage) {
-      const height: any = await caculateHeight();
-      tempHeight = height;
-      setContentHeight(tempHeight);
-      setShowMessage(false);
-    } else {
-      tempHeight = 0;
-      setTempType(type);
-      setTempMessage(message || "");
-      if (duration !== 0) {
-        if (timer) {
-          clickClose();
-          clearTimeout(timer);
-          timer = null;
-          return;
+  useEffect(() => {
+    (async function() {
+      if (!showMessage) {
+        const height: any = await calculateHeight();
+        tempHeight = height;
+        setContentHeight(tempHeight);
+        setShowMessage(false);
+      } else {
+        tempHeight = 0;
+        setTempType(type);
+        setTempMessage(message || "");
+        if (duration !== 0) {
+          if (timer) {
+            clickClose();
+            clearTimeout(timer);
+            timer = null;
+            return;
+          }
+          timer = setTimeout(() => {
+            clickClose();
+            clearTimeout(timer);
+            timer = null;
+            props.message = "";
+          }, durationTime * 1000);
         }
-        timer = setTimeout(() => {
-          clickClose();
-          clearTimeout(timer);
-          timer = null;
-          props.message = "";
-        }, durationTime * 1000);
+        setContentHeight(tempHeight);
+        setShowMessage(true);
       }
-      setContentHeight(tempHeight);
-      setShowMessage(true);
-    }
+    })();
   }, [showMessage]);
+
   useEffect(() => {
     show && setShowMessage(!!show);
     props.show = false;
   }, [show]);
+
   useEffect(() => {
     if (show) {
       clearTimeout(timer);
@@ -99,7 +103,7 @@ export default function ClMessage(props: IProps) {
         props.style
       )}
     >
-      <View className="cu-cl-message__conetent" id="content">
+      <View className="cu-cl-message__content" id="content">
         <ClCard bgColor={mapColor[tempType] || "light-grey"} shadow={false}>
           <ClFlex justify="between" align="center">
             <ClText text={tempMessage} />
