@@ -233,5 +233,13 @@
     { "key": "more", "value": "查看更多" },
     { "key": "customIcon", "value": "自定义图标" },
     { "key": "color", "value": "自定义颜色" }
+  ],
+  "calendar": [
+    { "key": "showType", "value": "表现形式 平铺/卡片" },
+    { "key": "calendarType", "value": "显示类型 周/月" },
+    { "key": "disabledDay", "value": "禁止的日期" },
+    { "key": "activeDayColor", "value": "激活的颜色" },
+    { "key": "dayTip", "value": "日期的提示/角标" },
+    { "key": "highlightWeekend", "value": "高亮周末" }
   ]
 }

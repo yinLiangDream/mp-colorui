@@ -11,6 +11,8 @@ export interface IProps extends BaseComponent {
    * 显示周/月
    *
    * 默认 `month`
+   *
+   * 可选参数 `week`, `month`
    */
   calendarType?: "week" | "month";
   /**

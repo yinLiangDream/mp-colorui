@@ -134,6 +134,7 @@ export default function ClCalendar(props: IProps) {
   };
 
   const changeDate = (arrayIndex: number) => {
+    let currentDate = "";
     if (calendarType === "week") {
       const oldWeeks = {
         thisWeek,
@@ -142,6 +143,7 @@ export default function ClCalendar(props: IProps) {
       };
       const showWeeks = oldWeeks[mapChangeWeekIndex[arrayIndex]];
       setCurrentDate(dealYearMonth(dayjs(showWeeks[3].date)));
+      currentDate = dayjs(showWeeks[3].date).format("YYYY-MM");
       const newWeeks = getWeeks(
         oldWeeks[mapChangeWeekIndex[arrayIndex]][3].date
       );
@@ -157,6 +159,7 @@ export default function ClCalendar(props: IProps) {
         nextMonth
       };
       const showMonths = oldMonths[mapChangeMonthIndex[arrayIndex]];
+      currentDate = dayjs(showMonths[8].date).format("YYYY-MM");
       setCurrentDate(dealYearMonth(dayjs(showMonths[8].date)));
       setCurrentActiveLines(Math.ceil(showMonths.length / 7));
       const newMonths = getMonths(
@@ -168,7 +171,7 @@ export default function ClCalendar(props: IProps) {
       setNextMonth(current[NEXT_MONTH]);
       setThisMonth(current[THIS_MONTH]);
     }
-    onChange && onChange();
+    onChange && onChange(currentDate);
   };
 
   function changeMonth(date) {
