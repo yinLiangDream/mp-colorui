@@ -56,6 +56,29 @@ export default function Index() {
         disabledDay={[[, "2019-12-06"]]}
         specialDay={["2019-12-06"]}
       />
+
+      <ClCalendar
+        showType="card"
+        calendarType="week"
+        tipDay={[
+          {
+            date: "2019-12-05",
+            tipTop: "圣诞",
+            tipBottom: "可预约",
+            tipTopColor: "blue",
+            tipBottomColor: "red"
+          }
+        ]}
+        badge={[
+          {
+            date: "2019-12-05",
+            color: "yellow",
+            num: 12
+          }
+        ]}
+        disabledDay={[[, "2019-12-06"]]}
+        specialDay={["2019-12-06"]}
+      />
     </ClLayout>
   );
 }
