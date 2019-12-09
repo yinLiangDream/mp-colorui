@@ -642,11 +642,6 @@ export default function ClCalendar(props: IProps) {
       <View className={classNames([BG_COLOR_LIST["white"], "cuCalendar"])}>
         <ClLayout padding={"small"} paddingDirection={"bottom"}>
           <ClFlex justify={"between"} align={"center"}>
-            {/*<ClText*/}
-            {/*  className={"chooseDate"}*/}
-            {/*  lineSpacing={"normal"}*/}
-            {/*  text={chooseDate}*/}
-            {/*/>*/}
             <ClTip
               renderMessage={renderMonths}
               mode={"click"}

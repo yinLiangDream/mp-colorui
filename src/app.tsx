@@ -1,7 +1,7 @@
 import "@tarojs/async-await";
 import Taro, { Component, Config } from "@tarojs/taro";
 import Index from "./pages/index";
-import "./style/index.scss";
+import "./app.scss";
 
 // if (process.env.NODE_ENV !== "production" && process.env.TARO_ENV === "h5") {
 //   require("nerv-devtools");
