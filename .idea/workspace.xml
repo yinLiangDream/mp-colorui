@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="fix 文档关于按需加载引入的方式问题">
       <change afterPath="$PROJECT_DIR$/src/components/calendar/h5/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/swiper/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swiper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/tip/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tip/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,14 +251,7 @@
       <workItem from="1575981259384" duration="147000" />
       <workItem from="1575981511481" duration="11788000" />
       <workItem from="1576044307231" duration="7195000" />
-      <workItem from="1576056707622" duration="1484000" />
-    </task>
-    <task id="LOCAL-00026" summary="更新版本">
-      <created>1567072959866</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1567072959866</updated>
+      <workItem from="1576056707622" duration="1901000" />
     </task>
     <task id="LOCAL-00027" summary="BUG&#10;修复 ImagePicker H5 端更变状态时的报错问题">
       <created>1567133684946</created>
@@ -601,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576050932871</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="fix ClSwiper video 不能二次呼出 进度条 #40">
+      <created>1576058248326</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1576058248327</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TodoView">
@@ -658,7 +653,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="version&#10;&#10;update version&#10;update README" />
     <MESSAGE value="feat Text 组件新增 warp 属性&#10;feat NoticeBar 组件新增" />
     <MESSAGE value="feat Message 组件 修复类型说明消失问题&#10;feat NoticeBar 组件 新增" />
     <MESSAGE value="0.5.6版本更新" />
@@ -683,7 +677,8 @@
     <MESSAGE value="fix 文档关于按需加载引入的方式问题" />
     <MESSAGE value="fix Tip 组件在 H5 端无法手动关闭的问题" />
     <MESSAGE value="fix 按需加载样式 不能展示全面。复杂的组件 按需使用样式错乱，打开全局没有问题 #41" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 按需加载样式 不能展示全面。复杂的组件 按需使用样式错乱，打开全局没有问题 #41" />
+    <MESSAGE value="fix ClSwiper video 不能二次呼出 进度条 #40" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ClSwiper video 不能二次呼出 进度条 #40" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -697,11 +692,11 @@
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574759865531" />
     <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575949208753" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1575981262982" />
-    <state x="493" y="141" width="915" height="924" key="CommitChangelistDialog2" timestamp="1576050931665">
+    <state x="493" y="141" width="915" height="924" key="CommitChangelistDialog2" timestamp="1576061396474">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="431" y="2" width="915" height="924" key="CommitChangelistDialog2/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575534365463" />
-    <state x="493" y="141" key="CommitChangelistDialog2/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1576050931665" />
+    <state x="493" y="141" key="CommitChangelistDialog2/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1576061396474" />
     <state x="431" y="25" key="CommitChangelistDialog2/-1920.23.1920.1013/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1575875131716" />
     <state x="431" y="25" key="CommitChangelistDialog2/-1920.23.1920.1057/1680.23.1920.1013/0.23.1680.1027@0.23.1680.1027" timestamp="1575858847608" />
     <state x="493" y="2" key="CommitChangelistDialog2/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029917592" />

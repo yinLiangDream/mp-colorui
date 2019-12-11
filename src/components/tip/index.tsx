@@ -30,6 +30,9 @@ export default function ClTip(props: IProps) {
     return distance;
   };
   useEffect(() => {
+    setShowTip(props.show);
+  }, [props.show]);
+  useEffect(() => {
     async function reRender() {
       if (Taro.ENV_TYPE.WEB === Taro.getEnv()) return;
       const query = Taro.createSelectorQuery().in(this.$scope);
