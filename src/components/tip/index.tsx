@@ -30,118 +30,120 @@ export default function ClTip(props: IProps) {
     return distance;
   };
   useEffect(() => {
-    setShowTip(props.show);
-  }, [props.show]);
-  useEffect(async () => {
-    if (Taro.ENV_TYPE.WEB === Taro.getEnv()) return;
-    const query = Taro.createSelectorQuery().in(this.$scope);
-    const res: any = await new Promise(resolve => {
-      query
-        .select(`#content`)
-        .boundingClientRect()
-        .exec(res => {
-          resolve(res[0]);
-        });
-    });
-    query
-      .select("#message")
-      .boundingClientRect()
-      .exec(data => {
-        const messageData = data[0];
-        const contentWidth = props.width || 100;
-        const screenWidth = 750 * screenPercent;
-        let customDirection: any[] = [];
-        const systemInfo = Taro.getSystemInfoSync();
-        const bottomDistance = systemInfo.windowHeight - res.top - res.height;
-        const leftDistance = screenWidth - res.left - res.width;
-        const sqrt = Math.sqrt(Math.pow(20 * screenPercent, 2) * 2) / 2;
-        if (props.direction === "top") {
-          if (res.top < bottomDistance && res.top < messageData.height)
-            props.direction = "bottom";
-          customDirection = [{ direction: "bottom", long: 0 }];
-          let translateX = (res.width - contentWidth) / 2;
-          if (res.left < res.right && res.left < screenWidth / 2) {
-            if (Math.abs(translateX) > res.left) translateX = -res.left;
-            distance.transform = `translateX(${translateX}px) translateY(-${res.height +
-              10}px)`;
-            distance.arrowTransform = `translateX(${Math.abs(translateX) +
-              res.width / 2}px) rotate(45deg) translateY(0)`;
-          } else {
-            const maxRight = screenWidth - res.left;
-            if (maxRight < contentWidth) translateX = contentWidth - maxRight;
-            distance.transform = `translateX(-${translateX}px) translateY(-${res.height +
-              10}px)`;
-            distance.arrowTransform = `translateX(${Math.abs(translateX) +
-              res.width / 2}px) rotate(45deg) translateY(30%)`;
-          }
-        } else if (props.direction === "bottom") {
-          if (res.top > bottomDistance && bottomDistance < messageData.height)
-            props.direction = "bottom";
-          customDirection = [{ direction: "left", long: 0 }];
-          let translateX = (res.width - contentWidth) / 2;
-          if (res.left < res.right && res.left < screenWidth / 2) {
-            if (Math.abs(translateX) > res.left) translateX = -res.left;
-            distance.transform = `translateX(${translateX}px) translateY(${res.height +
-              10}px)`;
-            distance.arrowTransform = `translateX(${Math.abs(translateX) +
-              res.width / 2 -
-              10}px) rotate(45deg) translateY(0)`;
-          } else {
-            const maxRight = screenWidth - res.left;
-            if (maxRight < contentWidth) translateX = contentWidth - maxRight;
-            distance.transform = `translateX(-${translateX}px) translateY(${res.height +
-              10}px)`;
-            distance.arrowTransform = `translateX(${Math.abs(translateX) +
-              res.width / 2 -
-              10}px) rotate(45deg) translateY(-30%)`;
-          }
-        } else if (props.direction === `left`) {
-          const diffHeight = messageData.height - res.height;
-          if (res.left < contentWidth + 10 && leftDistance > res.left)
-            props.direction = "right";
-          customDirection = [
-            {
-              direction: "right",
-              long: 0
-            }
-          ];
-          let moveTop =
-            bottomDistance - (messageData.height / 2 - res.height / 2);
-          let moveBottom = res.top - (messageData.height / 2 - res.height / 2);
-          if (moveTop > 0) moveTop = 0;
-          if (moveBottom > 0) moveBottom = 0;
-          distance.arrowTransform = `translateY(${messageData.height / 2 -
-            moveTop +
-            moveBottom -
-            sqrt}px) translateX(30%) rotate(45deg)`;
-          distance.transform = `translateX(${-res.width -
-            10}px) translateY(${-diffHeight / 2 + moveTop - moveBottom}px)`;
-        } else if (props.direction === "right") {
-          if (leftDistance - 10 < contentWidth && leftDistance < res.left)
-            props.direction = "left";
-          const diffHeight = messageData.height - res.height;
-          if (res.left < contentWidth + 10) props.direction = "right";
-          customDirection = [
-            {
-              direction: "left",
-              long: 0
-            }
-          ];
-          let moveTop =
-            bottomDistance - (messageData.height / 2 - res.height / 2);
-          let moveBottom = res.top - (messageData.height / 2 - res.height / 2);
-          if (moveTop > 0) moveTop = 0;
-          if (moveBottom > 0) moveBottom = 0;
-          distance.arrowTransform = `translateY(${messageData.height / 2 -
-            moveTop +
-            moveBottom -
-            sqrt}px) translateX(-30%) rotate(45deg)`;
-          distance.transform = `translateX(${res.width +
-            10}px) translateY(${-diffHeight / 2 + moveTop - moveBottom}px)`;
-        }
-        Object.assign(distance, resver2Zero(customDirection));
-        setDistance(distance);
+    async function reRender() {
+      if (Taro.ENV_TYPE.WEB === Taro.getEnv()) return;
+      const query = Taro.createSelectorQuery().in(this.$scope);
+      const res: any = await new Promise(resolve => {
+        query
+          .select(`#content`)
+          .boundingClientRect()
+          .exec(res => {
+            resolve(res[0]);
+          });
       });
+      query
+        .select("#message")
+        .boundingClientRect()
+        .exec(data => {
+          const messageData = data[0];
+          const contentWidth = props.width || 100;
+          const screenWidth = 750 * screenPercent;
+          let customDirection: any[] = [];
+          const systemInfo = Taro.getSystemInfoSync();
+          const bottomDistance = systemInfo.windowHeight - res.top - res.height;
+          const leftDistance = screenWidth - res.left - res.width;
+          const sqrt = Math.sqrt(Math.pow(20 * screenPercent, 2) * 2) / 2;
+          if (props.direction === "top") {
+            if (res.top < bottomDistance && res.top < messageData.height)
+              props.direction = "bottom";
+            customDirection = [{ direction: "bottom", long: 0 }];
+            let translateX = (res.width - contentWidth) / 2;
+            if (res.left < res.right && res.left < screenWidth / 2) {
+              if (Math.abs(translateX) > res.left) translateX = -res.left;
+              distance.transform = `translateX(${translateX}px) translateY(-${res.height +
+                10}px)`;
+              distance.arrowTransform = `translateX(${Math.abs(translateX) +
+                res.width / 2}px) rotate(45deg) translateY(0)`;
+            } else {
+              const maxRight = screenWidth - res.left;
+              if (maxRight < contentWidth) translateX = contentWidth - maxRight;
+              distance.transform = `translateX(-${translateX}px) translateY(-${res.height +
+                10}px)`;
+              distance.arrowTransform = `translateX(${Math.abs(translateX) +
+                res.width / 2}px) rotate(45deg) translateY(30%)`;
+            }
+          } else if (props.direction === "bottom") {
+            if (res.top > bottomDistance && bottomDistance < messageData.height)
+              props.direction = "bottom";
+            customDirection = [{ direction: "left", long: 0 }];
+            let translateX = (res.width - contentWidth) / 2;
+            if (res.left < res.right && res.left < screenWidth / 2) {
+              if (Math.abs(translateX) > res.left) translateX = -res.left;
+              distance.transform = `translateX(${translateX}px) translateY(${res.height +
+                10}px)`;
+              distance.arrowTransform = `translateX(${Math.abs(translateX) +
+                res.width / 2 -
+                10}px) rotate(45deg) translateY(0)`;
+            } else {
+              const maxRight = screenWidth - res.left;
+              if (maxRight < contentWidth) translateX = contentWidth - maxRight;
+              distance.transform = `translateX(-${translateX}px) translateY(${res.height +
+                10}px)`;
+              distance.arrowTransform = `translateX(${Math.abs(translateX) +
+                res.width / 2 -
+                10}px) rotate(45deg) translateY(-30%)`;
+            }
+          } else if (props.direction === `left`) {
+            const diffHeight = messageData.height - res.height;
+            if (res.left < contentWidth + 10 && leftDistance > res.left)
+              props.direction = "right";
+            customDirection = [
+              {
+                direction: "right",
+                long: 0
+              }
+            ];
+            let moveTop =
+              bottomDistance - (messageData.height / 2 - res.height / 2);
+            let moveBottom =
+              res.top - (messageData.height / 2 - res.height / 2);
+            if (moveTop > 0) moveTop = 0;
+            if (moveBottom > 0) moveBottom = 0;
+            distance.arrowTransform = `translateY(${messageData.height / 2 -
+              moveTop +
+              moveBottom -
+              sqrt}px) translateX(30%) rotate(45deg)`;
+            distance.transform = `translateX(${-res.width -
+              10}px) translateY(${-diffHeight / 2 + moveTop - moveBottom}px)`;
+          } else if (props.direction === "right") {
+            if (leftDistance - 10 < contentWidth && leftDistance < res.left)
+              props.direction = "left";
+            const diffHeight = messageData.height - res.height;
+            if (res.left < contentWidth + 10) props.direction = "right";
+            customDirection = [
+              {
+                direction: "left",
+                long: 0
+              }
+            ];
+            let moveTop =
+              bottomDistance - (messageData.height / 2 - res.height / 2);
+            let moveBottom =
+              res.top - (messageData.height / 2 - res.height / 2);
+            if (moveTop > 0) moveTop = 0;
+            if (moveBottom > 0) moveBottom = 0;
+            distance.arrowTransform = `translateY(${messageData.height / 2 -
+              moveTop +
+              moveBottom -
+              sqrt}px) translateX(-30%) rotate(45deg)`;
+            distance.transform = `translateX(${res.width +
+              10}px) translateY(${-diffHeight / 2 + moveTop - moveBottom}px)`;
+          }
+          Object.assign(distance, resver2Zero(customDirection));
+          setDistance(distance);
+        });
+    }
+    reRender();
   }, [props.width, props.direction, showTip]);
   const clTip = (
     <View
