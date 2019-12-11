@@ -33,13 +33,17 @@ import "mp-colorui/dist/style/index.scss"; // 引入组件样式，仅需引入�
 
 > 按需引入请将样式文件引入到统一一个文件中，例如 `app.js` 或者 `app.scss` 中
 
+> 按需加载需要先引入基础样式 `baseCSS.scss`
+
 ```scss
 // app.scss
+@import "~mp-colorui/dist/style/baseCSS.scss";
 @import "~mp-colorui/dist/style/components/avatar.scss";
 ```
 
 ```js
 // app.js
+import "mp-colorui/dist/style/baseCSS.scss";
 import "mp-colorui/dist/style/components/avatar.scss";
 ```
 
