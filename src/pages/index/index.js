@@ -33,6 +33,27 @@ import PCAA from "area-data/pcaa";
 import ClCalendar from "../../components/calendar";
 
 export default function Index() {
+  const videoList = [
+    {
+      url:
+        "https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/video/spyuzaoqian.mp4",
+      type: "video",
+      controls: true,
+      autoplay: true,
+      showPlayBtn: true,
+      title: "烬天玉藻前",
+      muted: true
+    },
+    {
+      url:
+        "https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/video/CGkaichang.mp4",
+      type: "video",
+      controls: true,
+      autoplay: false,
+      showPlayBtn: true,
+      title: "CG"
+    }
+  ];
   return (
     <ClLayout>
       <ClCalendar
@@ -57,28 +78,44 @@ export default function Index() {
         specialDay={["2019-12-06"]}
       />
 
-      <ClCalendar
-        showType="card"
-        calendarType="week"
-        tipDay={[
-          {
-            date: "2019-12-05",
-            tipTop: "圣诞",
-            tipBottom: "可预约",
-            tipTopColor: "blue",
-            tipBottomColor: "red"
-          }
-        ]}
-        badge={[
-          {
-            date: "2019-12-05",
-            color: "yellow",
-            num: 12
-          }
-        ]}
-        disabledDay={[[, "2019-12-06"]]}
-        specialDay={["2019-12-06"]}
+      <ClSwiper
+        type="screen"
+        list={videoList}
+        circular
+        dot="round"
+        indicatorDots
+        indicatorColor="#8799a3"
+        indicatorActiveColor="#0081ff"
+        onClick={index => {
+          console.log(index);
+        }}
+        style={{
+          height: pxTransform(450)
+        }}
       />
+
+      {/*<ClCalendar*/}
+      {/*  showType="card"*/}
+      {/*  calendarType="week"*/}
+      {/*  tipDay={[*/}
+      {/*    {*/}
+      {/*      date: "2019-12-05",*/}
+      {/*      tipTop: "圣诞",*/}
+      {/*      tipBottom: "可预约",*/}
+      {/*      tipTopColor: "blue",*/}
+      {/*      tipBottomColor: "red"*/}
+      {/*    }*/}
+      {/*  ]}*/}
+      {/*  badge={[*/}
+      {/*    {*/}
+      {/*      date: "2019-12-05",*/}
+      {/*      color: "yellow",*/}
+      {/*      num: 12*/}
+      {/*    }*/}
+      {/*  ]}*/}
+      {/*  disabledDay={[[, "2019-12-06"]]}*/}
+      {/*  specialDay={["2019-12-06"]}*/}
+      {/*/>*/}
     </ClLayout>
   );
 }

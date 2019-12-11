@@ -143,7 +143,7 @@ export default function ClTip(props: IProps) {
           setDistance(distance);
         });
     }
-    reRender();
+    reRender.call(this);
   }, [props.width, props.direction, showTip]);
   const clTip = (
     <View

@@ -3,6 +3,8 @@ import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
 import { IProps, TList } from "../../../@types/swiper";
 import { classNames, generateId, isAliPay, screenPercent } from "../utils";
 
+import "./index.scss";
+
 export default function ClSwiper(props: IProps) {
   const [listState, setListState] = useState(props.list || []);
   useEffect(() => {
@@ -97,7 +99,7 @@ export default function ClSwiper(props: IProps) {
         `${dotClassName(props.dot)} ${swiperTypeClassName(props.type)}`,
         props.className
       )}
-      style={Object.assign({}, props.style)}
+      style={Object.assign({  }, props.style)}
       circular={circular}
       indicatorDots={indicatorDots}
       indicatorColor={indicatorColor}
