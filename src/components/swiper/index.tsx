@@ -53,6 +53,9 @@ export default function ClSwiper(props: IProps) {
   );
   const renderVideo = (item: TList) => (
     <Video
+      onClick={() => {
+        console.log("click");
+      }}
       src={item.url || ""}
       autoplay={autoplay(item.autoplay)}
       loop={loop(item.loop)}
@@ -99,7 +102,7 @@ export default function ClSwiper(props: IProps) {
         `${dotClassName(props.dot)} ${swiperTypeClassName(props.type)}`,
         props.className
       )}
-      style={Object.assign({  }, props.style)}
+      style={Object.assign({}, props.style)}
       circular={circular}
       indicatorDots={indicatorDots}
       indicatorColor={indicatorColor}

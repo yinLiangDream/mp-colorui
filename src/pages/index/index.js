@@ -1,5 +1,5 @@
 import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
-import { View, Image } from "@tarojs/components";
+import { View, Image, Swiper, SwiperItem, Video } from "@tarojs/components";
 import ClLayout from "../../components/layout";
 import ClAccordion from "../../components/accordion";
 import ClCard from "../../components/card";
@@ -86,36 +86,10 @@ export default function Index() {
         indicatorDots
         indicatorColor="#8799a3"
         indicatorActiveColor="#0081ff"
-        onClick={index => {
-          console.log(index);
-        }}
         style={{
           height: pxTransform(450)
         }}
       />
-
-      {/*<ClCalendar*/}
-      {/*  showType="card"*/}
-      {/*  calendarType="week"*/}
-      {/*  tipDay={[*/}
-      {/*    {*/}
-      {/*      date: "2019-12-05",*/}
-      {/*      tipTop: "圣诞",*/}
-      {/*      tipBottom: "可预约",*/}
-      {/*      tipTopColor: "blue",*/}
-      {/*      tipBottomColor: "red"*/}
-      {/*    }*/}
-      {/*  ]}*/}
-      {/*  badge={[*/}
-      {/*    {*/}
-      {/*      date: "2019-12-05",*/}
-      {/*      color: "yellow",*/}
-      {/*      num: 12*/}
-      {/*    }*/}
-      {/*  ]}*/}
-      {/*  disabledDay={[[, "2019-12-06"]]}*/}
-      {/*  specialDay={["2019-12-06"]}*/}
-      {/*/>*/}
     </ClLayout>
   );
 }
