@@ -57,43 +57,47 @@ export default function Index() {
   ];
   return (
     <ClLayout>
-      <ClCalendar
-        showType="full"
-        tipDay={[
-          {
-            date: "2019-12-05",
-            tipTop: "圣诞",
-            tipBottom: "可预约",
-            tipTopColor: "blue",
-            tipBottomColor: "red"
-          }
-        ]}
-        badge={[
-          {
-            date: "2019-12-05",
-            color: "yellow",
-            num: 12
-          }
-        ]}
-        disabledDay={[[, "2019-12-06"]]}
-        specialDay={["2019-12-06"]}
-      />
-      <ClRadio
-        type="form"
-        title="性别"
-        radioGroup={[
-          {
-            key: "男",
-            value: "1"
-          },
-          {
-            key: "女",
-            value: "2"
-          }
-        ]}
-        checkedValue=""
-        direction="horizontal"
-      />
+      {/*<ClCalendar*/}
+      {/*  showType="full"*/}
+      {/*  tipDay={[*/}
+      {/*    {*/}
+      {/*      date: "2019-12-05",*/}
+      {/*      tipTop: "圣诞",*/}
+      {/*      tipBottom: "可预约",*/}
+      {/*      tipTopColor: "blue",*/}
+      {/*      tipBottomColor: "red"*/}
+      {/*    }*/}
+      {/*  ]}*/}
+      {/*  badge={[*/}
+      {/*    {*/}
+      {/*      date: "2019-12-05",*/}
+      {/*      color: "yellow",*/}
+      {/*      num: 12*/}
+      {/*    }*/}
+      {/*  ]}*/}
+      {/*  disabledDay={[[, "2019-12-06"]]}*/}
+      {/*  specialDay={["2019-12-06"]}*/}
+      {/*/>*/}
+      <ClForm>
+        <ClFormItem prop="sex">
+          <ClRadio
+            type="form"
+            title="性别"
+            radioGroup={[
+              {
+                key: "男",
+                value: "nan"
+              },
+              {
+                key: "女",
+                value: "nv"
+              }
+            ]}
+            checkedValue=""
+            direction="horizontal"
+          />
+        </ClFormItem>
+      </ClForm>
     </ClLayout>
   );
 }
