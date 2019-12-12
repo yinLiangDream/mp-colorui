@@ -17,7 +17,7 @@ export default function ClRadio(props: IProps) {
     props.onChange && props.onChange(e.detail.value);
   };
   const radioComponent = list.map(item => (
-    <View className="padding-xs" key={item.value}>
+    <View className="padding-xs" key={"radio-" + item.value}>
       <Text className="padding-right-sm">{item.key}</Text>
       <Radio
         className={`${colorClassName()} ${shapeClassName()}`}

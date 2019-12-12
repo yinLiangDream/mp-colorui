@@ -17,6 +17,7 @@ import ClVerticalTabCell from "../../components/verticalTab/verticalTabCell";
 import ClVerticalTab from "../../components/verticalTab";
 import ClImagePicker from "../../components/imagePicker";
 import ClSearchBar from "../../components/searchBar";
+import ClRadio from "../../components/radio";
 // import { provinceArr, getAreaData } from "../../components/utils/area";
 import ClMenuList from "../../components/menuList";
 import ClSwiperAction from "../../components/swiperAction/index";
@@ -77,18 +78,21 @@ export default function Index() {
         disabledDay={[[, "2019-12-06"]]}
         specialDay={["2019-12-06"]}
       />
-
-      <ClSwiper
-        type="screen"
-        list={videoList}
-        circular
-        dot="round"
-        indicatorDots
-        indicatorColor="#8799a3"
-        indicatorActiveColor="#0081ff"
-        style={{
-          height: pxTransform(450)
-        }}
+      <ClRadio
+        type="form"
+        title="性别"
+        radioGroup={[
+          {
+            key: "男",
+            value: "1"
+          },
+          {
+            key: "女",
+            value: "2"
+          }
+        ]}
+        checkedValue=""
+        direction="horizontal"
       />
     </ClLayout>
   );
