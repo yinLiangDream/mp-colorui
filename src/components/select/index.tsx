@@ -47,12 +47,12 @@ function ClSelect(props: IProps) {
     }));
     return [provinceArr, cityArr, districtArr];
   };
+
   const regionSelector = {
     value:
       (props.region && props.region.value) ||
       getRegionData().map(item => item[0])
   };
-
   // 单选
   const getSelectorValue = index =>
     selector.rangeKey
@@ -186,10 +186,43 @@ function ClSelect(props: IProps) {
     setTempSelect(tempSelect);
   };
   useMemo(() => {
-    props.mode === "selector" && setSelected(getSelectorValue(selector.value));
-    props.mode === "multiSelector" &&
-      setMutiSelected(getMutiSelectorValue(mutiSelector.value));
-  }, [props.selector]);
+    switch (props.mode) {
+      case "selector": {
+        setSelected(getSelectorValue(selector.value));
+        break;
+      }
+      case "multiSelector": {
+        setMutiSelected(getMutiSelectorValue(mutiSelector.value));
+        break;
+      }
+      case "region": {
+        setRegionSelected(getRegionSelectorValue(regionSelector.value));
+        const area = getRegionData(...regionSelector.value);
+        setAreaData(area);
+        const origin = regionSelector.value.map((item, index) =>
+          area[index].findIndex(obj => obj.key === item.key)
+        );
+        setTempSelect(origin);
+        break;
+      }
+      case "date": {
+        setDateSelected(getDateSelectorValue(dateSelector.value));
+        break;
+      }
+      case "time": {
+        setTimeSelected(getTimeSelectorValue(timeSelector.value));
+        break;
+      }
+      default: {
+      }
+    }
+  }, [
+    props.selector,
+    props.region,
+    props.date,
+    props.time,
+    props.multiSelector
+  ]);
   // 单选组件
   const selectorComponent = (
     <Picker
