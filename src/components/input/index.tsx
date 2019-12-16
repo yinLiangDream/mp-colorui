@@ -218,7 +218,8 @@ function ClInput(props: IProps) {
           position: "relative",
           display: "flex",
           width: "100%",
-          alignItems: "center"
+          alignItems: "center",
+          flex: 1
         }}
       >
         <Input

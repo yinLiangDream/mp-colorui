@@ -34,70 +34,64 @@ import PCAA from "area-data/pcaa";
 import ClCalendar from "../../components/calendar";
 
 export default function Index() {
-  const videoList = [
+  const [value, setValue] = useState([
     {
-      url:
-        "https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/video/spyuzaoqian.mp4",
-      type: "video",
-      controls: true,
-      autoplay: true,
-      showPlayBtn: true,
-      title: "烬天玉藻前",
-      muted: true
+      key: "210000",
+      value: "辽宁省"
     },
     {
-      url:
-        "https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/video/CGkaichang.mp4",
-      type: "video",
-      controls: true,
-      autoplay: false,
-      showPlayBtn: true,
-      title: "CG"
+      key: "210400",
+      value: "抚顺市"
+    },
+    {
+      key: "210423",
+      value: "清原满族自治县"
     }
-  ];
+  ]);
   return (
     <ClLayout>
-      {/*<ClCalendar*/}
-      {/*  showType="full"*/}
-      {/*  tipDay={[*/}
-      {/*    {*/}
-      {/*      date: "2019-12-05",*/}
-      {/*      tipTop: "圣诞",*/}
-      {/*      tipBottom: "可预约",*/}
-      {/*      tipTopColor: "blue",*/}
-      {/*      tipBottomColor: "red"*/}
-      {/*    }*/}
-      {/*  ]}*/}
-      {/*  badge={[*/}
-      {/*    {*/}
-      {/*      date: "2019-12-05",*/}
-      {/*      color: "yellow",*/}
-      {/*      num: 12*/}
-      {/*    }*/}
-      {/*  ]}*/}
-      {/*  disabledDay={[[, "2019-12-06"]]}*/}
-      {/*  specialDay={["2019-12-06"]}*/}
-      {/*/>*/}
-      <ClForm>
-        <ClFormItem prop="sex">
-          <ClRadio
-            type="form"
-            title="性别"
-            radioGroup={[
-              {
-                key: "男",
-                value: "nan"
-              },
-              {
-                key: "女",
-                value: "nv"
-              }
-            ]}
-            checkedValue=""
-            direction="horizontal"
-          />
-        </ClFormItem>
-      </ClForm>
+      <ClSelect
+        mode="region"
+        title="选择地点"
+        region={{
+          value
+        }}
+      />
+      <ClInput
+        placeholder="我有按钮"
+        type="text"
+        adjustPosition
+        button={{
+          text: "按钮",
+          bgColor: "light-blue",
+          onClick() {
+            Taro.showToast({
+              title: "您点击了按钮",
+              icon: "none"
+            });
+          }
+        }}
+      />
+      <ClButton
+        onClick={() => {
+          setValue([
+            {
+              key: "210000",
+              value: "辽宁省"
+            },
+            {
+              key: "210400",
+              value: "抚顺市"
+            },
+            {
+              key: "210421",
+              value: "抚顺县"
+            }
+          ]);
+        }}
+      >
+        11
+      </ClButton>
     </ClLayout>
   );
 }
