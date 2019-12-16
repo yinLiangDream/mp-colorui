@@ -151,9 +151,7 @@ function ClInput(props: IProps) {
   } = props;
   let titleWidth =
     props.titleWidth === "auto"
-      ? {
-          flex: "1 0 auto"
-        }
+      ? {}
       : {
           width: pxTransform(props.titleWidth || 200)
         };

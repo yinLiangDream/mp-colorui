@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="fix ClSelect 重置默认城市 #46">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/components/input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/input.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,14 +257,7 @@
       <workItem from="1576056707622" duration="4373000" />
       <workItem from="1576070535361" duration="825000" />
       <workItem from="1576115957911" duration="4862000" />
-      <workItem from="1576507445710" duration="3114000" />
-    </task>
-    <task id="LOCAL-00032" summary="BUG&#10;SwiperAction 支付宝小程序适配">
-      <created>1569227720439</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1569227720439</updated>
+      <workItem from="1576507445710" duration="3373000" />
     </task>
     <task id="LOCAL-00033" summary="BUG&#10;SwiperAction H5适配问题">
       <created>1569227863052</created>
@@ -603,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576510471158</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="fix ClInput 里的 button 会缩在一起 #47">
+      <created>1576510730420</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1576510730420</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TodoView">
@@ -660,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="feat Flex 组件 align 属性新增 stretch 选项 #28" />
     <MESSAGE value="更新文档" />
     <MESSAGE value="更新版本" />
     <MESSAGE value="fix Tip 组件 无法手动关闭 tip 的问题 #33" />
@@ -685,7 +683,8 @@
     <MESSAGE value="fix ClSwiper video 不能二次呼出 进度条 #40" />
     <MESSAGE value="fix ClRadio 遍历的问题 #43" />
     <MESSAGE value="fix ClSelect 重置默认城市 #46" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix ClSelect 重置默认城市 #46" />
+    <MESSAGE value="fix ClInput 里的 button 会缩在一起 #47" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ClInput 里的 button 会缩在一起 #47" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -699,7 +698,7 @@
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574759865531" />
     <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575949208753" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1575981262982" />
-    <state x="493" y="2" width="915" height="924" key="CommitChangelistDialog2" timestamp="1576510470249">
+    <state x="493" y="23" width="915" height="924" key="CommitChangelistDialog2" timestamp="1576510729661">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="431" y="2" width="915" height="924" key="CommitChangelistDialog2/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575534365463" />
@@ -708,7 +707,7 @@
     <state x="431" y="25" key="CommitChangelistDialog2/-1920.23.1920.1057/1680.23.1920.1013/0.23.1680.1027@0.23.1680.1027" timestamp="1575858847608" />
     <state x="493" y="2" key="CommitChangelistDialog2/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029917592" />
     <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574783070398" />
-    <state x="493" y="2" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1576510470249" />
+    <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1576510729661" />
     <state x="168" y="115" key="DiffContextDialog" timestamp="1575871035725">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
