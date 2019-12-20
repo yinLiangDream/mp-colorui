@@ -7,7 +7,7 @@ import { ClTabs } from "mp-colorui";
 
 ## 一般用法
 
-> 注：ClTabs 内部元素必须由一层 View 包裹，且 id 必须和 tabs 一一对应。
+> 注：ClTabs 内部元素必须由一层 View 包裹，且 id 必须和 tabs 一一对应，且 id 不能为纯数字，其格式必须为符合 DOM 元素的 id。
 
 <CodeShow componentName='tabs' />
 
@@ -15,22 +15,22 @@ import { ClTabs } from "mp-colorui";
 
 ### Tabs 参数
 
-| 参数        | 说明            | 类型    | 可选值                                          | 默认值      |
-| ----------- | --------------- | ------- | ----------------------------------------------- | ----------- |
-| type        | _tabs 类型选择_ | string  | _`default`_,_`center`_,_`verb`_                 | _`default`_ |
-| bgColor     | _背景色_        | string  | 参考文档 [默认色](/mp-colorui-doc/home/color)                  | -           |
+| 参数        | 说明            | 类型    | 可选值                                                      | 默认值      |
+| ----------- | --------------- | ------- | ----------------------------------------------------------- | ----------- |
+| type        | _tabs 类型选择_ | string  | _`default`_,_`center`_,_`verb`_                             | _`default`_ |
+| bgColor     | _背景色_        | string  | 参考文档 [默认色](/mp-colorui-doc/home/color)               | -           |
 | activeColor | _激活的颜色_    | string  | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`black`_   |
-| active      | _激活的下标_    | number  | -                                               | 0           |
+| active      | _激活的下标_    | number  | -                                                           | 0           |
 | tabs        | _tab 数组_      | tabs[]  | [详情](/mp-colorui-doc/navigate/tabs#tabs)                  | []          |
-| touchMove   | _是否可拖动_    | boolean | -                                               | _`false`_   |
+| touchMove   | _是否可拖动_    | boolean | -                                                           | _`false`_   |
 
 ### tabs
 
-| 参数 | 说明         | 类型   | 可选值                                             | 默认值 |
-| ---- | ------------ | ------ | -------------------------------------------------- | ------ |
-| text | _标题_       | string | -                                                  | -      |
+| 参数 | 说明         | 类型   | 可选值                                                         | 默认值 |
+| ---- | ------------ | ------ | -------------------------------------------------------------- | ------ |
+| text | _标题_       | string | -                                                              | -      |
 | icon | _图标_       | string | 参考文档 [Icon-_iconName_](/mp-colorui-doc/base/icon#iconname) | -      |
-| id   | _唯一标识符_ | string | -                                                  | -      |
+| id   | _唯一标识符_ | string | -                                                              | -      |
 
 ### Tabs 事件
 
