@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/searchBar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/searchBar.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/avatar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tabs/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabs/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,14 +263,7 @@
       <workItem from="1576512048784" duration="704000" />
       <workItem from="1576595309775" duration="375000" />
       <workItem from="1576685022482" duration="759000" />
-      <workItem from="1576811629375" duration="76000" />
-    </task>
-    <task id="LOCAL-00034" summary="获取节点功能兼容支付宝小程序">
-      <created>1569247122457</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1569247122457</updated>
+      <workItem from="1576811629375" duration="627000" />
     </task>
     <task id="LOCAL-00035" summary="BUG&#10;修复 VerticalTab 支付宝小程序端的 bug">
       <created>1569304269325</created>
@@ -607,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576510979597</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="fix Tabs 组件 .scrollx view 样式问题 #51">
+      <created>1576811973777</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1576811973777</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TodoView">
@@ -664,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="更新版本" />
     <MESSAGE value="fix Tip 组件 无法手动关闭 tip 的问题 #33" />
     <MESSAGE value="feat shopBar、tabBar 组件新增 safeArea 属性" />
     <MESSAGE value="css 分离完成，样式可按需加载" />
@@ -689,7 +689,8 @@
     <MESSAGE value="fix ClSelect 重置默认城市 #46" />
     <MESSAGE value="fix ClInput 里的 button 会缩在一起 #47" />
     <MESSAGE value="fix ClInput 里的 title 长度异常问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix ClInput 里的 title 长度异常问题" />
+    <MESSAGE value="fix Tabs 组件 .scrollx view 样式问题 #51" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Tabs 组件 .scrollx view 样式问题 #51" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -703,7 +704,7 @@
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574759865531" />
     <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575949208753" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1575981262982" />
-    <state x="493" y="23" width="915" height="924" key="CommitChangelistDialog2" timestamp="1576510978833">
+    <state x="493" y="23" width="915" height="924" key="CommitChangelistDialog2" timestamp="1576811972894">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="431" y="2" width="915" height="924" key="CommitChangelistDialog2/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575534365463" />
@@ -712,7 +713,7 @@
     <state x="431" y="25" key="CommitChangelistDialog2/-1920.23.1920.1057/1680.23.1920.1013/0.23.1680.1027@0.23.1680.1027" timestamp="1575858847608" />
     <state x="493" y="2" key="CommitChangelistDialog2/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029917592" />
     <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574783070398" />
-    <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1576510978833" />
+    <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1576811972894" />
     <state x="168" y="115" key="DiffContextDialog" timestamp="1575871035725">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

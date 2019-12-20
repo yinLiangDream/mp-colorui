@@ -29,6 +29,8 @@ export default class ClSearchBar extends Component<IProps, IState> {
     showResult: false,
     result: [],
     onTouchResult: () => {},
+    onScrollToUpper: () => {},
+    onScrollToLower: () => {},
     onBlur: () => {},
     onFocus: () => {}
   };
@@ -165,7 +167,18 @@ export default class ClSearchBar extends Component<IProps, IState> {
               {(this.props.result && this.props.result.length) ||
               this.props.showLoading ? (
                 <ClCard shadow={false} bgColor={this.props.bgColor}>
-                  <ScrollView scrollY style={{ maxHeight: "300px" }}>
+                  <ScrollView
+                    scrollY
+                    style={{ maxHeight: "300px" }}
+                    onScrollToLower={() => {
+                      this.props.onScrollToLower &&
+                        this.props.onScrollToLower();
+                    }}
+                    onScrollToUpper={() => {
+                      this.props.onScrollToUpper &&
+                        this.props.onScrollToUpper();
+                    }}
+                  >
                     <ClSearchResult
                       result={this.props.result}
                       showLoading={this.props.showLoading}

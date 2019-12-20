@@ -76,6 +76,14 @@ export interface IProps extends BaseComponent {
    */
   onBlur?: (value: string) => void;
   /**
+   * 搜索结果滑动到底部触发
+   */
+  onScrollToLower?: () => void;
+  /**
+   * 搜索结果滑动到顶部触发
+   */
+  onScrollToUpper?: () => void;
+  /**
    * 是否显示搜索结果
    */
   showResult?: boolean;
