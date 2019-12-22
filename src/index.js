@@ -50,5 +50,6 @@ export { default as ClActionSheet } from "./components/actionSheet";
 export { default as ClCurtain } from "./components/curtain";
 export { default as ClNoticeBar } from "./components/noticeBar";
 export { default as ClCalendar } from "./components/calendar";
+export { default as ClTextarea } from "./components/textarea";
 
 Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

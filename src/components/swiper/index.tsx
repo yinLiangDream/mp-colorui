@@ -90,7 +90,7 @@ export default function ClSwiper(props: IProps) {
             onClick(index);
           }}
         >
-          {item.type === "image" ? renderImg(item) : ""}
+          {item.type !== "video" ? renderImg(item) : ""}
           {item.type === "video" ? renderVideo(item) : ""}
         </SwiperItem>
       ))}
