@@ -57,6 +57,35 @@ function ClInput(props: IProps) {
           });
         }
       }
+    } else if (props.type === "digit") {
+      if (Taro.ENV_TYPE.WEB === Taro.getEnv()) {
+        if (!isNaN(event.data - 0)) {
+          if (event.data === null) {
+            input = tempInput.slice(0, tempInput.length - 1);
+          } else {
+            input = tempInput + parseInt(`${event.data - 0}`);
+          }
+        } else {
+          input =
+            event.data === "." && tempInput.indexOf(".") === -1
+              ? tempInput + event.data
+              : tempInput;
+        }
+        setTempInput(input);
+        setTimeout(() => {
+          setInitValue(input);
+        });
+      } else {
+        input = !isNaN(event.detail.value - 0) ? event.detail.value : null;
+        if (input !== null) {
+          setTempInput(input);
+          setInitValue(input);
+        } else {
+          setTimeout(() => {
+            setInitValue(tempInput);
+          });
+        }
+      }
     } else {
       setInitValue(input);
     }
@@ -78,7 +107,7 @@ function ClInput(props: IProps) {
   };
   if (props.type !== "password") {
     if (props.type !== normalType) {
-      setNormalType(props.type);
+      setNormalType(props.type === "digit" ? "text" : props.type);
     }
   }
   const iconComponent = props.icon ? (

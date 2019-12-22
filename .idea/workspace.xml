@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/input.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/input.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/avatar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/textarea/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/textarea/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
       <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev:weapp">
+  <component name="RunManager" selected="npm.dev:h5">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -148,8 +147,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.dev:h5" />
+        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.docs:dev" />
       </list>
@@ -263,14 +262,7 @@
       <workItem from="1576512048784" duration="704000" />
       <workItem from="1576595309775" duration="375000" />
       <workItem from="1576685022482" duration="759000" />
-      <workItem from="1576811629375" duration="13226000" />
-    </task>
-    <task id="LOCAL-00038" summary="BUG&#10;支付宝小程序 ActionSheet 适配">
-      <created>1569314465959</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1569314465959</updated>
+      <workItem from="1576811629375" duration="15187000" />
     </task>
     <task id="LOCAL-00039" summary="BUG&#10;支付宝小程序 Steps 适配">
       <created>1569317081927</created>
@@ -608,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577016907315</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="feat ClInput Input autocomplete mode, click complete item not trigger onChange event #56">
+      <created>1577017704238</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1577017704238</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TodoView">
@@ -665,7 +664,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix Swiper组件在h5中阻挡跳转,type=card滑动会浏览器崩溃 #38" />
     <MESSAGE value="feat ClImagePicker对图片数量限制的选择图片数量问题 #34" />
     <MESSAGE value="feat 对 `ClSearchBar` 的 `onBlur` 和 `onFocus` 支持更多的行为? #35" />
     <MESSAGE value="feat VerticalTab height 属性新增 'full'，可以直接撑满屏幕" />
@@ -690,7 +688,8 @@
     <MESSAGE value="fix ClSearchBar [Function Require] Add scroll to bottom listener to ClSearchBar result list #53" />
     <MESSAGE value="fix ClTabs 文档关于 id 命名的限制问题" />
     <MESSAGE value="feat ClTextarea 新增 ClTextarea 组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat ClTextarea 新增 ClTextarea 组件" />
+    <MESSAGE value="feat ClInput Input autocomplete mode, click complete item not trigger onChange event #56" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat ClInput Input autocomplete mode, click complete item not trigger onChange event #56" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -719,7 +718,7 @@
     </state>
     <state x="168" y="115" key="DiffContextDialog/-1920.23.1920.1013/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1575871035725" />
     <state x="168" y="94" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574777268994" />
-    <state width="1899" height="268" key="GridCell.Tab.0.bottom" timestamp="1576837618278">
+    <state width="1899" height="268" key="GridCell.Tab.0.bottom" timestamp="1577020294436">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866026" />
@@ -731,10 +730,10 @@
     <state width="1899" height="260" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486350" />
     <state width="1899" height="102" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925291" />
     <state width="1147" height="179" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318518" />
-    <state width="1899" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1576837618278" />
+    <state width="1899" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1577020294436" />
     <state width="1659" height="189" key="GridCell.Tab.0.bottom/0.23.1680.983@0.23.1680.983" timestamp="1575783740771" />
     <state width="1899" height="431" key="GridCell.Tab.0.bottom/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186756" />
-    <state width="1899" height="268" key="GridCell.Tab.0.center" timestamp="1576837618277">
+    <state width="1899" height="268" key="GridCell.Tab.0.center" timestamp="1577020294435">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.center/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866016" />
@@ -746,10 +745,10 @@
     <state width="1899" height="260" key="GridCell.Tab.0.center/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486349" />
     <state width="1899" height="102" key="GridCell.Tab.0.center/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925289" />
     <state width="1147" height="179" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318515" />
-    <state width="1899" height="268" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1576837618277" />
+    <state width="1899" height="268" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1577020294435" />
     <state width="1659" height="189" key="GridCell.Tab.0.center/0.23.1680.983@0.23.1680.983" timestamp="1575783740770" />
     <state width="1899" height="431" key="GridCell.Tab.0.center/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186755" />
-    <state width="1899" height="268" key="GridCell.Tab.0.left" timestamp="1576837618277">
+    <state width="1899" height="268" key="GridCell.Tab.0.left" timestamp="1577020294435">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.left/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866010" />
@@ -761,10 +760,10 @@
     <state width="1899" height="260" key="GridCell.Tab.0.left/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486347" />
     <state width="1899" height="102" key="GridCell.Tab.0.left/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925288" />
     <state width="1147" height="179" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318513" />
-    <state width="1899" height="268" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1576837618277" />
+    <state width="1899" height="268" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1577020294435" />
     <state width="1659" height="189" key="GridCell.Tab.0.left/0.23.1680.983@0.23.1680.983" timestamp="1575783740769" />
     <state width="1899" height="431" key="GridCell.Tab.0.left/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186755" />
-    <state width="1899" height="268" key="GridCell.Tab.0.right" timestamp="1576837618278">
+    <state width="1899" height="268" key="GridCell.Tab.0.right" timestamp="1577020294436">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.right/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866022" />
@@ -776,7 +775,7 @@
     <state width="1899" height="260" key="GridCell.Tab.0.right/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486349" />
     <state width="1899" height="102" key="GridCell.Tab.0.right/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925290" />
     <state width="1147" height="179" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318515" />
-    <state width="1899" height="268" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1576837618278" />
+    <state width="1899" height="268" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1577020294436" />
     <state width="1659" height="189" key="GridCell.Tab.0.right/0.23.1680.983@0.23.1680.983" timestamp="1575783740770" />
     <state width="1899" height="431" key="GridCell.Tab.0.right/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186756" />
     <state width="1899" height="413" key="GridCell.Tab.1.bottom" timestamp="1576225150060">

@@ -77,10 +77,12 @@ export default function ClTextarea(props: IProps) {
       >
         <Textarea
           style={{
-            height: `${height ? pxTransform(height) : ""}`,
+            height: `${height ? pxTransform(height) : pxTransform(300)}`,
             padding: `${pxTransform(10)} ${pxTransform(14)} ${pxTransform(40)}`,
-            width: "100%"
+            width: "100%",
+            border: "none"
           }}
+          className={classNames([BG_COLOR_LIST[bgColor || "white"]])}
           value={value || ""}
           autoFocus={autoFocus}
           focus={focus}
