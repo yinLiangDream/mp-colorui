@@ -45,6 +45,7 @@ export default function Index() {
         bgColor="light-brown"
         overMaxForbidden
       />
+      <ClInput type="digit" />
     </View>
   );
 }

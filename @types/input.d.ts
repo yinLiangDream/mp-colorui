@@ -145,6 +145,11 @@ export interface IProps extends BaseComponent {
    * 异步过程显示loading
    */
   completeLoading?: boolean;
+  /**
+   * 点击补全项时触发
+   * @param {string} value
+   */
+  onTouchResult?: (value: string, index: number) => void;
 }
 
 export interface InputProps extends IProps {}

@@ -128,6 +128,8 @@ function ClInput(props: IProps) {
               if (props.completes) {
                 setInitValue(props.completes[index]);
                 setTempInput(props.completes[index]);
+                props.onTouchResult &&
+                  props.onTouchResult(props.completes[index], index);
               }
               setShowComplete(false);
             }}
@@ -284,6 +286,7 @@ ClInput.defaultProps = {
   defaultValue: "",
   completeLoading: false,
   completes: [],
-  autoComplete: false
+  autoComplete: false,
+  onTouchResult: () => {}
 } as IProps;
 export default ClInput;
