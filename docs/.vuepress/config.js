@@ -119,7 +119,8 @@ module.exports = {
           formPath("checkbox", "Checkbox 多选按钮"),
           formPath("switch", "Switch 开关"),
           formPath("select", "Select 选择器"),
-          formPath("imagePicker", "ImagePicker 图片选择器")
+          formPath("imagePicker", "ImagePicker 图片选择器"),
+          formPath("textarea", "Textarea 输入域")
         ]
       },
       {

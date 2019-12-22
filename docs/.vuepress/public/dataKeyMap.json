@@ -241,5 +241,11 @@
     { "key": "activeDayColor", "value": "激活的颜色" },
     { "key": "dayTip", "value": "日期的提示/角标" },
     { "key": "highlightWeekend", "value": "高亮周末" }
+  ],
+  "textarea": [
+    { "key": "autoFocus", "value": "自动聚焦" },
+    { "key": "placeholder", "value": "占位符" },
+    { "key": "limit", "value": "限制字数" },
+    { "key": "bgColor", "value": "背景色" }
   ]
 }

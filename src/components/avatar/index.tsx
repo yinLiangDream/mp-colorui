@@ -33,46 +33,48 @@ function ClAvatar(props: IProps) {
   const em = isNumber(props.size)
     ? (props.size as number) / 48
     : customSize[props.size || "normal"] / 48;
-  const avatarArray = (headList as THeaderArray[]).map((item: any) => (
-    <View
-      key={item.cu_avatar_id}
-      className={`${props.shape} ${BG_COLOR_LIST[item.bgColor || "black"]} ${
-        props.shadow ? "shadow" : ""
-      } cu-avatar`}
-      style={{
-        width,
-        height,
-        fontSize: `${em}em`
-      }}
-    >
-      <Image
-        className={`${props.shape}`}
-        src={item.url}
+  const avatarArray = (headList as THeaderArray[]).map(
+    (item: any, index: number) => (
+      <View
+        key={item.cu_avatar_id || index}
+        className={`${props.shape} ${BG_COLOR_LIST[item.bgColor || "black"]} ${
+          props.shadow ? "shadow" : ""
+        } cu-avatar`}
         style={{
           width,
           height,
-          position: "absolute",
-          left: 0,
-          right: 0,
-          bottom: 0,
-          top: 0
+          fontSize: `${em}em`
         }}
-        mode="aspectFill"
-      />
-      <Text className={`cuIcon-${item.icon}`}>
-        {item.text ? item.text.slice(0, 1) : ""}
-      </Text>
-      {item.tag ? (
-        <View
-          className={`cu-tag badge cuIcon-${item.tag} ${
-            item.tagColor ? BG_COLOR_LIST[item.tagColor] : ""
-          }`}
+      >
+        <Image
+          className={`${props.shape}`}
+          src={item.url}
+          style={{
+            width,
+            height,
+            position: "absolute",
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0
+          }}
+          mode="aspectFill"
         />
-      ) : (
-        ""
-      )}
-    </View>
-  ));
+        <Text className={`cuIcon-${item.icon}`}>
+          {item.text ? item.text.slice(0, 1) : ""}
+        </Text>
+        {item.tag ? (
+          <View
+            className={`cu-tag badge cuIcon-${item.tag} ${
+              item.tagColor ? BG_COLOR_LIST[item.tagColor] : ""
+            }`}
+          />
+        ) : (
+          ""
+        )}
+      </View>
+    )
+  );
   const avatarArrayComponent = (
     <View
       className={classNames("cu-avatar-group", props.className)}
