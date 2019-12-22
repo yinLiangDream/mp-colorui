@@ -7,7 +7,7 @@ import ClLayout from "../../components/layout";
 import { classNames } from "../../components/utils";
 
 import "./index.scss";
-import { BG_COLOR_LIST } from "@/components/utils/model";
+import { BG_COLOR_LIST } from "../../components/utils/model";
 
 export default function ClTextarea(props: IProps) {
   const {
@@ -67,7 +67,8 @@ export default function ClTextarea(props: IProps) {
         style={{
           position: "relative",
           width: "100%",
-          borderRadius: pxTransform(12)
+          borderRadius: pxTransform(12),
+          overflow: "hidden"
         }}
         className={classNames([
           { shadow },

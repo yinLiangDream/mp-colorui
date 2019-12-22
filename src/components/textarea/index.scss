@@ -4,4 +4,35 @@
     right: 0;
     bottom: 5px;
   }
+  textarea {
+    line-height: 1.2em;
+    flex: 1;
+    font-size: 28px;
+    padding: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    .placeholder {
+      color: transparent;
+    }
+    &::after {
+      content: attr(data-placeholder);
+      color: gray;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      transition: 0.2s;
+      opacity: 1;
+    }
+    &.value {
+      &::after {
+        opacity: 0;
+      }
+    }
+    &[disabled],
+    &[disabled] .placeholder {
+      color: transparent;
+    }
+  }
 }
