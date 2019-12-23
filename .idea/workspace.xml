@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/textarea-autoFocus.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/textarea-bgColor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/textarea-limit.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/textarea-placeholder.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/form/textarea.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/avatar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +88,7 @@
       <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.docs:build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -268,14 +257,7 @@
       <workItem from="1576512048784" duration="704000" />
       <workItem from="1576595309775" duration="375000" />
       <workItem from="1576685022482" duration="759000" />
-      <workItem from="1576811629375" duration="18461000" />
-    </task>
-    <task id="LOCAL-00041" summary="新增 docs 文档">
-      <created>1570500820821</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1570500820821</updated>
+      <workItem from="1576811629375" duration="18796000" />
     </task>
     <task id="LOCAL-00042" summary="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新">
       <created>1570511126698</created>
@@ -613,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577034271058</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="feat ClTextarea 更新文档&#10;升级版本">
+      <created>1577034994181</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1577034994181</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TodoView">
@@ -670,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="feat VerticalTab height 属性新增 'full'，可以直接撑满屏幕" />
     <MESSAGE value="feat Text size 属性可传入 number，自定义大小" />
     <MESSAGE value="feat SearchBar 搜索结果列表显示微调了间距" />
     <MESSAGE value="feat 新增 Calendar 组件" />
@@ -695,7 +683,8 @@
     <MESSAGE value="feat ClInput Input autocomplete mode, click complete item not trigger onChange event #56" />
     <MESSAGE value="feat ClInput type=‘digit’似乎无效 #55" />
     <MESSAGE value="feat ClTextarea 样式微调" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat ClTextarea 样式微调" />
+    <MESSAGE value="feat ClTextarea 更新文档&#10;升级版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat ClTextarea 更新文档&#10;升级版本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">

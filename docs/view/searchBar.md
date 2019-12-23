@@ -36,13 +36,15 @@ import { ClSearchBar } from "mp-colorui";
 
 ### SearchBar 事件
 
-| 事件名称      | 说明               | 参数返回                         |
-| ------------- | ------------------ | -------------------------------- |
-| onIconClick   | _图标点击事件_     | index，_参数 index 为第几个图标_ |
-| onSearch      | _搜索事件_         | value，_参数 value 为输入的内容_ |
-| onInput       | _键盘输入事件_     | value，_参数 value 为输入的内容_ |
-| onTouchResult | _搜索结果点击事件_ | index，_参数 index 为结果下标_   |
-| onFocus       | _搜索框聚焦事件_   | value, _参数 value 为输入的内容_ |
-| onBlur        | _搜索框失焦事件_   | value, _参数 value 为输入的内容_ |
+| 事件名称        | 说明                   | 参数返回                         |
+| --------------- | ---------------------- | -------------------------------- |
+| onIconClick     | _图标点击事件_         | index，_参数 index 为第几个图标_ |
+| onSearch        | _搜索事件_             | value，_参数 value 为输入的内容_ |
+| onInput         | _键盘输入事件_         | value，_参数 value 为输入的内容_ |
+| onTouchResult   | _搜索结果点击事件_     | index，_参数 index 为结果下标_   |
+| onFocus         | _搜索框聚焦事件_       | value, _参数 value 为输入的内容_ |
+| onBlur          | _搜索框失焦事件_       | value, _参数 value 为输入的内容_ |
+| onScrollToLower | 搜索结果滑动到底部触发 | -                                |
+| onScrollToUpper | 搜索结果滑动到顶部触发 | -                                |
 
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/searchBar/index" />
