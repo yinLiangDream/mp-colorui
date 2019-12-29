@@ -28,6 +28,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
     showLoading: false,
     showResult: false,
     result: [],
+    autoFocus: false,
     onTouchResult: () => {},
     onScrollToUpper: () => {},
     onScrollToLower: () => {},
@@ -105,6 +106,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
           onBlur={this.onBlur}
           focus={this.state.showSearch}
           adjustPosition
+          autoFocus={this.props.autoFocus}
           value={this.state.value}
           onConfirm={this.onSearch.bind(this)}
           onInput={this.onInput.bind(this)}

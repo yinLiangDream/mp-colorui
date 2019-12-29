@@ -54,6 +54,10 @@ export interface IProps extends BaseComponent {
    */
   rightTextColor?: bgColorType;
   /**
+   * 自动聚焦
+   */
+  autoFocus?: boolean;
+  /**
    * 图标点击事件，参数 index 为第几个图标
    */
   onIconClick?: (index: number) => void;
