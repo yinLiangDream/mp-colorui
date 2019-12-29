@@ -64,16 +64,10 @@ export default function ClTextarea(props: IProps) {
   return (
     <View className={classNames(["cu-textarea"])}>
       <View
-        style={{
-          position: "relative",
-          width: "100%",
-          borderRadius: pxTransform(12),
-          overflow: "hidden"
-        }}
         className={classNames([
+          "bg",
           { shadow },
-          BG_COLOR_LIST[bgColor || "white"],
-          "solid"
+          BG_COLOR_LIST[bgColor || "white"]
         ])}
       >
         <Textarea

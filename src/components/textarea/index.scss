@@ -4,6 +4,14 @@
     right: 0;
     bottom: 5px;
   }
+  .bg {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+  }
   textarea {
     line-height: 1.2em;
     flex: 1;
