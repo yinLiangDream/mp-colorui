@@ -32,4 +32,4 @@ import { ClNoticeBar } from "mp-colorui";
 | onClose  | _点击关闭事件_ | -        |
 | onMore   | _点击更多事件_ | -        |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/noticeBar/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/viewPackage/noticeBar/index" />

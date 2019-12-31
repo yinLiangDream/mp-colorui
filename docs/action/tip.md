@@ -13,14 +13,14 @@ import { ClTip } from "mp-colorui";
 
 ### Tip 参数
 
-| 参数          | 说明       | 类型    | 可选值                         | 默认值    |
-| ------------- | ---------- | ------- | ------------------------------ | --------- |
-| show          | _是否显示_ | boolean | -                              | _`false`_ |
+| 参数          | 说明       | 类型    | 可选值                                        | 默认值    |
+| ------------- | ---------- | ------- | --------------------------------------------- | --------- |
+| show          | _是否显示_ | boolean | -                                             | _`false`_ |
 | bgColor       | _背景色_   | string  | 参考文档 [默认色](/mp-colorui-doc/home/color) | -         |
-| message       | _消息文本_ | string  | -                              | -         |
-| mode          | _触发方式_ | number  | `click`,`touch`                | `touch`   |
-| width         | _宽度_     | boolean | -                              | _`150`_   |
-| renderMessage | 自定义渲染 | Element | -                              | -         |
+| message       | _消息文本_ | string  | -                                             | -         |
+| mode          | _触发方式_ | number  | `click`,`touch`                               | `touch`   |
+| width         | _宽度_     | boolean | -                                             | _`150`_   |
+| renderMessage | 自定义渲染 | Element | -                                             | -         |
 
 ## Tip 事件
 
@@ -28,4 +28,4 @@ import { ClTip } from "mp-colorui";
 | ----------- | ---------------------- | ---- |
 | **onClose** | 展示或者关闭展示时触发 | show |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/tip/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/actionPackage/tip/index" />

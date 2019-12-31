@@ -38,4 +38,4 @@ import { ClTabs } from "mp-colorui";
 | -------- | ---------- | -------- |
 | onClick  | _点击事件_ | index    |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/tabs/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/navigatePackage/tabs/index" />

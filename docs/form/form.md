@@ -47,4 +47,4 @@ import { ClForm, ClFormItem } from "mp-colorui";
 | prop     | _prop 必须和 model 里的 key 值对应_                                 | string  | -      | -         |
 | required | _添加为必输项（此功能仅仅作为界面红点，具体校验请写在 rules 里面）_ | boolean | -      | _`false`_ |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/form/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/form/index" />

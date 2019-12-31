@@ -59,3 +59,5 @@ import { ClCalendar } from "mp-colorui";
 | -------- | ----------------------------- | ---------- |
 | onClick  | 点击日期事件                  | YYYY-MM-DD |
 | onChange | 切换 周/月 时触发（左右滑动） | YYYY-MM    |
+
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/viewPackage/calendar/index" />

@@ -18,11 +18,11 @@ import { ClSelect } from "mp-colorui";
 | title         | _标题_                         | string  | -                                                                 | -            |
 | disabled      | _是否禁止选择_                 | boolean | _`true`_,_`false`_                                                | _`false`_    |
 | mode          | _选择类型_，                   | string  | _`selector`_,_`multiSelector`_,<br />_`time`_,_`date`_,_`region`_ | _`selector`_ |
-| selector      | _mode 为 selector 时设置_      | Object  | [详情](/mp-colorui-doc/form/select#selector)                                  | {}           |
-| multiSelector | _mode 为 multiSelector 时设置_ | Object  | [详情](/mp-colorui-doc/form/select#multiSelector)                             | {}           |
-| time          | _mode 为 time 时设置_          | Object  | [详情](/mp-colorui-doc/form/select#time)                                      | {}           |
-| date          | _mode 为 date 时设置_          | Object  | [详情](/mp-colorui-doc/form/select#date)                                      | {}           |
-| region        | _mode 为 region 时设置_        | Object  | [详情](/mp-colorui-doc/form/select#region)                                    | {}           |
+| selector      | _mode 为 selector 时设置_      | Object  | [详情](/mp-colorui-doc/form/select#selector)                      | {}           |
+| multiSelector | _mode 为 multiSelector 时设置_ | Object  | [详情](/mp-colorui-doc/form/select#multiSelector)                 | {}           |
+| time          | _mode 为 time 时设置_          | Object  | [详情](/mp-colorui-doc/form/select#time)                          | {}           |
+| date          | _mode 为 date 时设置_          | Object  | [详情](/mp-colorui-doc/form/select#date)                          | {}           |
+| region        | _mode 为 region 时设置_        | Object  | [详情](/mp-colorui-doc/form/select#region)                        | {}           |
 
 ### selector
 
@@ -59,8 +59,8 @@ import { ClSelect } from "mp-colorui";
 
 ### region
 
-| 参数  | 说明                                                                                                                           | 类型     | 可选值 | 默认值 |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------ | -------- | ------ | ------ |
+| 参数  | 说明                                                                                                                                       | 类型     | 可选值 | 默认值 |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------ | ------ |
 | value | _初始化选中的值（具体 key,value 请查看[地区编码](https://yinliangdream.github.io/area/)）（[示例](/mp-colorui-doc/form/select#地区选择)）_ | region[] | -      | []     |
 
 #### region 参数
@@ -78,4 +78,4 @@ import { ClSelect } from "mp-colorui";
 | onCancel       | _取消选择时触发_ | Event 对象 |
 | onColumnChange | _多列改变时触发_ | Event 对象 |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/select/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/select/index" />

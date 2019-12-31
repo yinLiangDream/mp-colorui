@@ -49,4 +49,4 @@ import { ClImagePicker } from "mp-colorui";
 | --------- | ------------------ | -------- |
 | beforeDel | _删除之前确认函数_ | index    |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/imagePicker/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/imagePicker/index" />

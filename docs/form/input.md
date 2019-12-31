@@ -23,7 +23,7 @@ import { ClInput } from "mp-colorui";
 | icon              | _输入框后置 icon_                                                                                             | Object          | 参考文档 [Icon-Icon 参数](/mp-colorui-doc/base/icon#icon-参数)         | {}        |
 | button            | _输入框后置按钮_                                                                                              | Object          | 参考文档 [button-Button 参数](/mp-colorui-doc/base/button#button-参数) | {}        |
 | image             | _输入框后置图片 url_                                                                                          | string          | -                                                                      | -         |
-| renderCustomRight | _自定义按钮右边的内容，请传入自定义内容_                                                                      | Element         | -                                                                      | -         |
+| renderCustomRight | _自定义按钮右边的内容，请传入自定义内容_                                                                      | Element         | -                                                                      | -         | base: process.env.BASE_URL, |
 | value             | _输入框默认值，不同于 defaultValue，该值在每次改变的时候都会进行初始化，所以要避免在 onChange 事件里修改该值_ | string          | -                                                                      | -         |
 | defaultValue      | _输入框初始值，不同于 value，该值只会初始化一次_                                                              | string          | -                                                                      | -         |
 | titleWidth        | _标题栏的宽度_                                                                                                | number\| string | `auto`                                                                 | `auto`    |
@@ -46,4 +46,4 @@ import { ClInput } from "mp-colorui";
 | onFocus       | _获得焦点时触发_             | value      |
 | onTouchResult | 点击补全项时触发             | value      |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/input/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/input/index" />

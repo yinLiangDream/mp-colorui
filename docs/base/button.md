@@ -49,4 +49,4 @@ import { ClButton } from "mp-colorui";
 | onGetRealnameAuthInfo | open-type 为 getRealnameAuthInfo 时触发，参考参考[微信 button 文档](https://developers.weixin.qq.com/miniprogram/dev/component/button.html) | event 对象 |
 | onGetAuthorize        | 支付宝获取会员基础信息授权回调，生效时机：`open-type="getAuthorize"`                                                                        |            |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/button/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/basePackage/button/index" />

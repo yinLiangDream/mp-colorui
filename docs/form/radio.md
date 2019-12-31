@@ -13,14 +13,14 @@ import { ClRadio } from "mp-colorui";
 
 ### Radio 参数
 
-| 参数         | 说明                    | 类型         | 可选值                                          | 默认值       |
-| ------------ | ----------------------- | ------------ | ----------------------------------------------- | ------------ |
-| type         | _单选框类型_            | string       | _`normal`_,_`form`_,_`list`_                    | _`normal`_   |
-| direction    | _单选框方向_            | string       | _`vertical`_,_`horizontal`_                     | _`vertical`_ |
-| shape        | _单选框形状_            | string       | _`normal`_,_`radio`_                            | _`normal`_   |
-| title        | _type 为 form 时的标题_ | string       | -                                               | -            |
+| 参数         | 说明                    | 类型         | 可选值                                                      | 默认值       |
+| ------------ | ----------------------- | ------------ | ----------------------------------------------------------- | ------------ |
+| type         | _单选框类型_            | string       | _`normal`_,_`form`_,_`list`_                                | _`normal`_   |
+| direction    | _单选框方向_            | string       | _`vertical`_,_`horizontal`_                                 | _`vertical`_ |
+| shape        | _单选框形状_            | string       | _`normal`_,_`radio`_                                        | _`normal`_   |
+| title        | _type 为 form 时的标题_ | string       | -                                                           | -            |
 | color        | _选中颜色_              | string       | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`green`_    |
-| checkedValue | 选中的 Value 值         | string       | -                                               | -            |
+| checkedValue | 选中的 Value 值         | string       | -                                                           | -            |
 | radioGroup   | _单选框组_              | radioGroup[] | [详情](/mp-colorui-doc/form/radio#radiogroup)               | []           |
 
 ### radioGroup
@@ -36,4 +36,4 @@ import { ClRadio } from "mp-colorui";
 | -------- | ------------------ | -------- |
 | onChange | _选项发生改变事件_ | value    |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/radio/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/radio/index" />

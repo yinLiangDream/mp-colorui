@@ -13,13 +13,13 @@ import { ClCheckbox } from "mp-colorui";
 
 ### Checkbox 参数
 
-| 参数          | 说明                          | 类型            | 可选值                                          | 默认值       |
-| ------------- | ----------------------------- | --------------- | ----------------------------------------------- | ------------ |
-| title         | _form 类型下，复选框标题设置_ | string          | -                                               | -            |
-| type          | _复选框类型选择_              | string          | _`normal`_,_`form`_                             | _`normal`_   |
-| shape         | _复选框形状设置_              | string          | _`normal`_,_`round`_                            | _`normal`_   |
+| 参数          | 说明                          | 类型            | 可选值                                                      | 默认值       |
+| ------------- | ----------------------------- | --------------- | ----------------------------------------------------------- | ------------ |
+| title         | _form 类型下，复选框标题设置_ | string          | -                                                           | -            |
+| type          | _复选框类型选择_              | string          | _`normal`_,_`form`_                                         | _`normal`_   |
+| shape         | _复选框形状设置_              | string          | _`normal`_,_`round`_                                        | _`normal`_   |
 | color         | _复选框选中色设置_            | string          | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`green`_    |
-| direction     | _复选框排列类型_              | string          | _`vertical`_,_`horizontal`_                     | _`vertical`_ |
+| direction     | _复选框排列类型_              | string          | _`vertical`_,_`horizontal`_                                 | _`vertical`_ |
 | checkboxGroup | _复选框每一项设置_            | checkboxGroup[] | [详情](/mp-colorui-doc/form/checkbox#checkboxgroup)         | []           |
 
 ### checkboxGroup
@@ -36,4 +36,4 @@ import { ClCheckbox } from "mp-colorui";
 | -------- | ---------------- | -------- |
 | onChange | _选择改变时触发_ | value[]  |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/checkbox/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/checkbox/index" />

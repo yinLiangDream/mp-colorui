@@ -31,4 +31,4 @@ import { ClVerticalTab, ClVerticalTabCell } from "mp-colorui";
 | id   | _Tab id_   | string | -      | -      |
 | name | _Tab 名称_ | string | -      | -      |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/verticalTab/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/navigatePackage/verticalTab/index" />

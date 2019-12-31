@@ -23,10 +23,10 @@ import { ClSwiperAction } from "mp-colorui";
 
 ### options
 
-| 参数    | 说明         | 类型   | 可选值                         | 默认值    |
-| ------- | ------------ | ------ | ------------------------------ | --------- |
+| 参数    | 说明         | 类型   | 可选值                                        | 默认值    |
+| ------- | ------------ | ------ | --------------------------------------------- | --------- |
 | bgColor | _按钮背景色_ | string | 参考文档 [默认色](/mp-colorui-doc/home/color) | _`white`_ |
-| text    | _文字内容_   | string |                                |           |
+| text    | _文字内容_   | string |                                               |           |
 
 ## SwiperAction 事件
 
@@ -36,4 +36,4 @@ import { ClSwiperAction } from "mp-colorui";
 | **onOpened** | 打开时触发     |       |
 | **onClick**  | 点击按钮时触发 | index |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/swiperAction/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/actionPackage/swiperAction/index" />

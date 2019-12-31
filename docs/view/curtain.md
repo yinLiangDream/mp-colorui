@@ -28,4 +28,4 @@ import { ClCurtain } from "mp-colorui";
 | onClick  | 点击幕帘事件     | -        |
 | onClose  | 点击关闭按钮事件 | -        |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/curtain/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/viewPackage/curtain/index" />

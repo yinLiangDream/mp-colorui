@@ -25,4 +25,4 @@ import { ClDrawer } from "mp-colorui";
 | -------- | ------------------ | -------- |
 | onCancel | _点击阴影取消事件_ | -        |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/drawer/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/layoutPackage/drawer/index" />

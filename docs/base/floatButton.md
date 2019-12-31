@@ -44,4 +44,4 @@ import { ClFloatButton } from "mp-colorui";
 | onClick       | 点击按钮时触发 | event 对象 |     |
 | onActionClick | 点击展开的按钮 | index 索引 |     |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/floatButton/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/basePackage/floatButton/index" />

@@ -27,4 +27,4 @@ import { ClAnimation } from "mp-colorui";
 | onAnimationStart | 动画开始触发 | -    |
 | onAnimationEnd   | 动画结束触发 | -    |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/animation/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/actionPackage/animation/index" />

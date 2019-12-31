@@ -28,4 +28,4 @@ import { ClAccordion } from "mp-colorui";
 | -------- | -------------- | -------- |
 | onClick  | 点击手风琴事件 | boolean  |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/accordion/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/layoutPackage/accordion/index" />

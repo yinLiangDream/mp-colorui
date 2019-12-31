@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="" />
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="fix: Textarea 组件边角被遮盖问题">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/actionSheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/actionSheet.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/animation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/animation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/loading.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/loading.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/message.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/message.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/modal.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/modal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/progress.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/progress.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/swiperAction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/swiperAction.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/tip.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/tip.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/base/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/button.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/base/floatButton.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/floatButton.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/base/text.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/text.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/checkbox.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/checkbox.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/form.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/form.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/imagePicker.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/imagePicker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/input.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/input.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/radio.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/radio.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/select.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/select.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/switch.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/switch.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/textarea.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/textarea.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/accordion.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/accordion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/card.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/card.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/drawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/drawer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/flex.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/flex.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/grid.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/grid.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/layout.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/menuList.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/menuList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/screenDrawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/screenDrawer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigate/navBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/navBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigate/tabBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigate/tabs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/tabs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigate/verticalTab.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigate/verticalTab.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/avatar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/avatar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/calendar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/calendar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/curtain.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/curtain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/divider.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/divider.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/noticeBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/noticeBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/searchBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/searchBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/shopBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/shopBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/steps.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/steps.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/swiper.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/swiper.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/tag.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/tag.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/timeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/timeline.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/view/titleBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/view/titleBar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,9 +188,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev:weapp" />
+        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.docs:dev" />
       </list>
@@ -257,28 +304,8 @@
       <workItem from="1576512048784" duration="704000" />
       <workItem from="1576595309775" duration="375000" />
       <workItem from="1576685022482" duration="759000" />
-      <workItem from="1576811629375" duration="18796000" />
-    </task>
-    <task id="LOCAL-00042" summary="add(pages/*) 所有组件组件整合&#10;fix(pages/update) 标题更新">
-      <created>1570511126698</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1570511126698</updated>
-    </task>
-    <task id="LOCAL-00043" summary="app&#10;0.5.2 日志更新">
-      <created>1570513441634</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1570513441634</updated>
-    </task>
-    <task id="LOCAL-00044" summary="component&#10;add @types className 和 style">
-      <created>1570519800241</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1570519800241</updated>
+      <workItem from="1576811629375" duration="19167000" />
+      <workItem from="1577513554566" duration="4565000" />
     </task>
     <task id="LOCAL-00045" summary="component&#10;add component className and style&#10;fix(components/verticalTab) H5 attributes scrollAnimationDuration  not working">
       <created>1570531351907</created>
@@ -602,7 +629,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577034994181</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="完善文档">
+      <created>1577067007353</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1577067007353</updated>
+    </task>
+    <task id="LOCAL-00092" summary="fix: Textarea 组件边角被遮盖问题">
+      <created>1577590431383</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1577590431384</updated>
+    </task>
+    <task id="LOCAL-00093" summary="feat: searchBar 新增 autoFocus 属性，mp-colorui 0.6.4 使用ClSearchBar 时无法控制focus #58">
+      <created>1577590628908</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1577590628908</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TodoView">
@@ -659,9 +707,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="feat Text size 属性可传入 number，自定义大小" />
-    <MESSAGE value="feat SearchBar 搜索结果列表显示微调了间距" />
-    <MESSAGE value="feat 新增 Calendar 组件" />
     <MESSAGE value="feat 新增 Calendar 组件 scss 文件" />
     <MESSAGE value="升级依赖" />
     <MESSAGE value="完善 calendar 文档以及修复 onChange 无参数 bug" />
@@ -684,7 +729,10 @@
     <MESSAGE value="feat ClInput type=‘digit’似乎无效 #55" />
     <MESSAGE value="feat ClTextarea 样式微调" />
     <MESSAGE value="feat ClTextarea 更新文档&#10;升级版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat ClTextarea 更新文档&#10;升级版本" />
+    <MESSAGE value="完善文档" />
+    <MESSAGE value="fix: Textarea 组件边角被遮盖问题" />
+    <MESSAGE value="feat: searchBar 新增 autoFocus 属性，mp-colorui 0.6.4 使用ClSearchBar 时无法控制focus #58" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: searchBar 新增 autoFocus 属性，mp-colorui 0.6.4 使用ClSearchBar 时无法控制focus #58" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -698,7 +746,7 @@
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.23.1920.1057/1920.-488.1920.1057/0.23.1920.1133@0.23.1920.1133" timestamp="1574759865531" />
     <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575949208753" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1575981262982" />
-    <state x="493" y="23" width="915" height="924" key="CommitChangelistDialog2" timestamp="1577034270166">
+    <state x="493" y="23" width="915" height="924" key="CommitChangelistDialog2" timestamp="1577590628181">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="431" y="2" width="915" height="924" key="CommitChangelistDialog2/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575534365463" />
@@ -707,13 +755,13 @@
     <state x="431" y="25" key="CommitChangelistDialog2/-1920.23.1920.1057/1680.23.1920.1013/0.23.1680.1027@0.23.1680.1027" timestamp="1575858847608" />
     <state x="493" y="2" key="CommitChangelistDialog2/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029917592" />
     <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574783070398" />
-    <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1577034270166" />
+    <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1577590628181" />
     <state x="168" y="115" key="DiffContextDialog" timestamp="1575871035725">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="168" y="115" key="DiffContextDialog/-1920.23.1920.1013/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1575871035725" />
     <state x="168" y="94" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574777268994" />
-    <state width="1329" height="268" key="GridCell.Tab.0.bottom" timestamp="1577034854488">
+    <state width="1899" height="268" key="GridCell.Tab.0.bottom" timestamp="1577757534963">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866026" />
@@ -725,10 +773,10 @@
     <state width="1899" height="260" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486350" />
     <state width="1899" height="102" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925291" />
     <state width="1147" height="179" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318518" />
-    <state width="1329" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1577034854488" />
+    <state width="1899" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1577757534963" />
     <state width="1659" height="189" key="GridCell.Tab.0.bottom/0.23.1680.983@0.23.1680.983" timestamp="1575783740771" />
     <state width="1899" height="431" key="GridCell.Tab.0.bottom/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186756" />
-    <state width="1329" height="268" key="GridCell.Tab.0.center" timestamp="1577034854487">
+    <state width="1899" height="268" key="GridCell.Tab.0.center" timestamp="1577757534962">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.center/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866016" />
@@ -740,10 +788,10 @@
     <state width="1899" height="260" key="GridCell.Tab.0.center/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486349" />
     <state width="1899" height="102" key="GridCell.Tab.0.center/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925289" />
     <state width="1147" height="179" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318515" />
-    <state width="1329" height="268" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1577034854487" />
+    <state width="1899" height="268" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1577757534962" />
     <state width="1659" height="189" key="GridCell.Tab.0.center/0.23.1680.983@0.23.1680.983" timestamp="1575783740770" />
     <state width="1899" height="431" key="GridCell.Tab.0.center/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186755" />
-    <state width="1329" height="268" key="GridCell.Tab.0.left" timestamp="1577034854486">
+    <state width="1899" height="268" key="GridCell.Tab.0.left" timestamp="1577757534959">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.left/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866010" />
@@ -755,10 +803,10 @@
     <state width="1899" height="260" key="GridCell.Tab.0.left/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486347" />
     <state width="1899" height="102" key="GridCell.Tab.0.left/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925288" />
     <state width="1147" height="179" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318513" />
-    <state width="1329" height="268" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1577034854486" />
+    <state width="1899" height="268" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1577757534958" />
     <state width="1659" height="189" key="GridCell.Tab.0.left/0.23.1680.983@0.23.1680.983" timestamp="1575783740769" />
     <state width="1899" height="431" key="GridCell.Tab.0.left/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186755" />
-    <state width="1329" height="268" key="GridCell.Tab.0.right" timestamp="1577034854487">
+    <state width="1899" height="268" key="GridCell.Tab.0.right" timestamp="1577757534963">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="1659" height="189" key="GridCell.Tab.0.right/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575614866022" />
@@ -770,7 +818,7 @@
     <state width="1899" height="260" key="GridCell.Tab.0.right/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1156@0.0.1920.1156" timestamp="1576051486349" />
     <state width="1899" height="102" key="GridCell.Tab.0.right/-1920.23.1920.1057/1920.23.1920.1057/0.0.1920.1200@0.0.1920.1200" timestamp="1576029925290" />
     <state width="1147" height="179" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318515" />
-    <state width="1329" height="268" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1577034854487" />
+    <state width="1899" height="268" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1577757534963" />
     <state width="1659" height="189" key="GridCell.Tab.0.right/0.23.1680.983@0.23.1680.983" timestamp="1575783740770" />
     <state width="1899" height="431" key="GridCell.Tab.0.right/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186756" />
     <state width="1899" height="413" key="GridCell.Tab.1.bottom" timestamp="1576225150060">
@@ -833,12 +881,13 @@
     </state>
     <state width="1899" height="413" key="GridCell.Tab.3.right/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1576132037370" />
     <state width="1899" height="413" key="GridCell.Tab.3.right/0.0.1920.1200@0.0.1920.1200" timestamp="1576225150067" />
-    <state x="582" y="260" key="RollbackChangesDialog" timestamp="1575871039414">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="665" y="277" key="RollbackChangesDialog" timestamp="1577589619498">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="582" y="260" key="RollbackChangesDialog/-1920.23.1920.1013/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1575871039414" />
     <state x="582" y="260" key="RollbackChangesDialog/-1920.23.1920.1057/1680.23.1920.1013/0.23.1680.1027@0.23.1680.1027" timestamp="1575858739577" />
     <state x="582" y="242" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574780846378" />
+    <state x="665" y="277" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1577589619498" />
     <state x="353" y="124" width="1360" height="722" key="SettingsEditor" timestamp="1576822638644">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -848,10 +897,10 @@
     <state x="353" y="124" width="1360" height="722" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1576822638644" />
     <state x="265" y="109" key="SettingsEditor/0.23.1440.833@0.23.1440.833" timestamp="1575943742792" />
     <state x="353" y="140" key="SettingsEditor/0.23.1920.1133@0.23.1920.1133" timestamp="1575984513890" />
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1577020494682">
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2" timestamp="1577599621029">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1577020494682" />
+    <state x="560" y="340" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1577599621029" />
     <state x="100" y="123" width="1480" height="783" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575615971667">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

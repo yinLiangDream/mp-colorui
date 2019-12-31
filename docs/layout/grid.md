@@ -18,4 +18,4 @@ import { ClGrid } from "mp-colorui";
 | col  | _一行分割成几格_ | number | `2`,`3`,`4`,`5`,`6`,`7`,`8`,`9`,`10` | 3          |
 | mode | _类型_           | string | _`square`_,_`normal`_                | _`normal`_ |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/grid/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/layoutPackage/grid/index" />

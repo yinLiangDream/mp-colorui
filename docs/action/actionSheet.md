@@ -41,4 +41,4 @@ import { ClActionSheet } from "mp-colorui";
 | **onCancel** | 取消时触发         |       |
 | **onClick**  | 点击选项按钮时触发 | index |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/actionSheet/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/actionPackage/actionSheet/index" />

@@ -22,7 +22,7 @@ import { ClMessage } from "mp-colorui";
 | 参数     | 说明                             | 类型    | 可选值                                             | 默认值    |
 | -------- | -------------------------------- | ------- | -------------------------------------------------- | --------- |
 | type     | _类型，在 custom 下可自定义颜色_ | string  | _`success`_,_`error`_,_`warn`_,_`info`_,_`custom`_ | _`info`_  |
-| bgColor  | _背景色_                         | string  | 参考文档 [默认色](/mp-colorui-doc/home/color)                     | -         |
+| bgColor  | _背景色_                         | string  | 参考文档 [默认色](/mp-colorui-doc/home/color)      | -         |
 | message  | _消息文本_                       | number  | -                                                  | 0         |
 | duration | _持续时间_                       | number  | -                                                  | 3         |
 | show     | _是否显示_                       | boolean | -                                                  | _`false`_ |
@@ -33,4 +33,4 @@ import { ClMessage } from "mp-colorui";
 | ----------- | ---------- | ---- |
 | **onClose** | 关闭时触发 | -    |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/message/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/actionPackage/message/index" />

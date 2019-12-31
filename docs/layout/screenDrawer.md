@@ -25,4 +25,4 @@ import { ClScreenDrawer } from "mp-colorui";
 | -------- | -------------------- | -------- |
 | onHide   | _点击返回小箭头触发_ | -        |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/screenDrawer/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/layoutPackage/screenDrawer/index" />

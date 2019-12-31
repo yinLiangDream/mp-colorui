@@ -37,3 +37,5 @@ import { ClTextarea } from "mp-colorui";
 | onBlur       | 失去焦点触发     | value                                                  |
 | onConfirm    | 点击完成触发     | value                                                  |
 | onLineChange | 行数变换时触发   | {height: number; heightRpx: number; lineCount: number} |
+
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/textarea/index" />

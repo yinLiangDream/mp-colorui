@@ -21,4 +21,4 @@ import { ClLayout } from "mp-colorui";
 | margin           | _margin 距离，默认没有 margin_   | string | _`xsmall`_,_`small`_,_`normal`_,<br />_`large`_,_`xlarge`_              | -          |
 | marginDirection  | _margin 方向_                    | string | _`around`_,_`horizontal`_,_`vertical`_,<br />_`left`_,_`right`_,_`top`_ | _`around`_ |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/layout/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/layoutPackage/layout/index" />

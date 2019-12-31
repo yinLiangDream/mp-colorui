@@ -47,4 +47,4 @@ import { ClSearchBar } from "mp-colorui";
 | onScrollToLower | 搜索结果滑动到底部触发 | -                                |
 | onScrollToUpper | 搜索结果滑动到顶部触发 | -                                |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/searchBar/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/viewPackage/searchBar/index" />

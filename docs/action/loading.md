@@ -23,4 +23,4 @@ import { ClLoading } from "mp-colorui";
 | loadingError | _type 为 line 时设置，加载失败_       | boolean | _`true`_,_`false`_                            | _`false`_ |
 | noMore       | _type 为 line 时设置，没有更多了_     | boolean | _`true`_,_`false`_                            | _`false`_ |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/loading/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/actionPackage/loading/index" />

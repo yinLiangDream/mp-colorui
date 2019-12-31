@@ -37,14 +37,16 @@ import ClCalendar from "../../components/calendar";
 export default function Index() {
   return (
     <View>
-      <ClTextarea
-        value="aaa"
-        showLengthTip
-        maxLength={2000}
-        placeholder="请输入……"
-        bgColor="light-brown"
-        overMaxForbidden
-      />
+      <ClCard>
+        <ClTextarea
+          value="aaa"
+          showLengthTip
+          maxLength={2000}
+          placeholder="请输入……"
+          bgColor="light-green"
+          overMaxForbidden
+        />
+      </ClCard>
       <ClInput type="digit" />
     </View>
   );

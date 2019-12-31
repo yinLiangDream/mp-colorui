@@ -55,4 +55,4 @@ import { ClFlex } from "mp-colorui";
 | flex-twice  | 2    |
 | flex-treble | 3    |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/flex/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/layoutPackage/flex/index" />

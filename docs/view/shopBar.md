@@ -46,4 +46,4 @@ import { ClShopBar } from "mp-colorui";
 | onClickTab    | _每个 tab 点击事件_  | index，_参数 index 为每一项的下标_ |
 | onClickButton | _每个按钮的点击事件_ | index，_参数 index 为每一项的下标_ |
 
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/pages/components/shopBar/index" />
+<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/viewPackage/shopBar/index" />
