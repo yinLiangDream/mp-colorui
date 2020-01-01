@@ -38,6 +38,17 @@ export default class ClTabs extends Component<IProps, IState> {
     this.onClickTab(this.props.active || 0);
   }
 
+  componentWillReceiveProps(
+    nextProps: Readonly<IProps>,
+    nextContext: any
+  ): void {
+    const nextActive = nextProps.active;
+    const thisActive = this.props.active;
+    if (nextActive !== thisActive) {
+      this.onClickTab(nextActive || 0);
+    }
+  }
+
   onClickTab(index: number) {
     const id = this.props.tabs[index].id;
     const id0 = this.props.tabs[0].id;
