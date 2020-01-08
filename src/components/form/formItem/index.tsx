@@ -20,6 +20,7 @@ export default class ClFormItem extends Taro.Component<IProps> {
     const [firstInit, setFirstInit] = useState(true);
     const [flag, setFlag] = useState(true);
     const [message, setMessage] = useState("");
+    const [beforeModelData, setBeforeModelData] = useState({});
     const { prop, required } = this.props;
     const modelData = context.inject("model") || {};
     const rulesData = context.inject("rules") || {};
@@ -39,7 +40,16 @@ export default class ClFormItem extends Taro.Component<IProps> {
       if (firstInit) setFirstInit(false);
     }, []);
     useEffect(() => {
-      setFlag(firstInit ? true : ruleFunc(defaultRules, value, callback));
+      if (firstInit) {
+        setBeforeModelData(modelData);
+      } else {
+        Object.keys(modelData).forEach(key => {
+          if (beforeModelData[key] !== modelData[key] && prop === key) {
+            setFlag(ruleFunc(defaultRules, value, callback));
+          }
+        });
+        setBeforeModelData(modelData);
+      }
     }, [modelData]);
     useEffect(() => {
       setErr(!flag);
