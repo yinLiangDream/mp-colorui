@@ -24,6 +24,10 @@ export type TCheckboxGroup = {
    * 复选框的 value 设置，该参数为选中时的参数
    */
   value?: string;
+  /**
+   * 禁用
+   */
+  disabled?: boolean;
 }[];
 
 export type TOnChange = (value: string[]) => void;
@@ -41,6 +45,10 @@ export interface IProps extends BaseComponent {
    * 可选类型 `normal`, `form`
    */
   type?: "normal" | "form";
+  /**
+   * tree 使用
+   */
+  more?: boolean;
   /**
    * 复选框形状设置
    *

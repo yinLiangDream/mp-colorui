@@ -13,11 +13,14 @@ export default function ClCheckbox(props: IProps) {
   const title = props.title;
   const checkboxComponent = list.map(item => (
     <View className="padding-xs" key={item.value}>
-      <Text className="padding-right-sm">{item.key}</Text>
+      {item.key ? <Text className="padding-right-sm">{item.key}</Text> : ""}
       <Checkbox
-        className={`${colorClassName} ${shapeClassName}`}
+        className={`${colorClassName} ${shapeClassName} ${
+          props.more ? "more" : ""
+        }`}
         value={item.value || ""}
         checked={item.checked}
+        disabled={item.disabled}
       />
     </View>
   ));

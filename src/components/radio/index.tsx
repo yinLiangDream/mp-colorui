@@ -1,5 +1,5 @@
 import { Radio, RadioGroup, Text, View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import Taro, { useEffect, useState } from "@tarojs/taro";
 import H5Radio from "./h5";
 import ListRadio from "./components/ListRadio";
 import { IProps } from "../../../@types/radio";
@@ -13,15 +13,27 @@ export default function ClRadio(props: IProps) {
   const directionClassName = props.direction === "horizontal" ? "flex" : "";
   const list = props.radioGroup || [];
 
+  const [checkedValue, setCheckedValue] = useState(props.checkedValue);
+
+  useEffect(() => {
+    setCheckedValue(checkedValue);
+  }, [props.checkedValue]);
+
   const changeRadio = e => {
     props.onChange && props.onChange(e.detail.value);
   };
   const radioComponent = list.map(item => (
-    <View className="padding-xs" key={"radio-" + item.value}>
+    <View
+      className="padding-xs"
+      key={"radio-" + item.value}
+      onClick={() => {
+        setCheckedValue(item.value);
+      }}
+    >
       <Text className="padding-right-sm">{item.key}</Text>
       <Radio
         className={`${colorClassName()} ${shapeClassName()}`}
-        checked={item.value === props.checkedValue}
+        checked={item.value === checkedValue}
         value={item.value || ""}
       />
     </View>
