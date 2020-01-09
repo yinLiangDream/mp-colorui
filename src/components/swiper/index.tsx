@@ -53,9 +53,6 @@ export default function ClSwiper(props: IProps) {
   );
   const renderVideo = (item: TList) => (
     <Video
-      onClick={() => {
-        console.log("click");
-      }}
       src={item.url || ""}
       autoplay={autoplay(item.autoplay)}
       loop={loop(item.loop)}
@@ -85,7 +82,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item: any, index: number) => (
         <SwiperItem
-          key={index}
+          key={"id-" + index}
           onClick={() => {
             onClick(index);
           }}
@@ -116,7 +113,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item: any, index: number) => (
         <SwiperItem
-          key={index}
+          key={"id-" + index}
           className={`${cur === index ? "cur" : ""}`}
           onClick={() => {
             onClick(index);

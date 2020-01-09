@@ -5,7 +5,7 @@ import ClCheckbox from "../checkbox";
 import ClIcon from "../icon";
 import ClText from "../text";
 import ClFlex from "../flex";
-import { generateId } from "@/components/utils";
+import { generateId } from "../../components/utils";
 
 import "./index.scss";
 
@@ -69,7 +69,7 @@ export default class ClTree extends Component<IProps, IState> {
     return temp;
   }
 
-  public clickItem(item) {
+  public openItem(item) {
     const thisOpen = !item.open;
     const originItem = this.getTreeItem(item.commonId);
     originItem.open = thisOpen;
@@ -78,6 +78,11 @@ export default class ClTree extends Component<IProps, IState> {
     this.setState({
       list: newList
     });
+  }
+
+  public clickItem(item) {
+    const { onClickItem } = this.props;
+    onClickItem && onClickItem(item);
   }
 
   private getTreeItem(id) {
@@ -166,7 +171,7 @@ export default class ClTree extends Component<IProps, IState> {
   }
 
   renderItem(item) {
-    const { color } = this.props;
+    const { color, showCheck } = this.props;
     return (
       <View
         style={{
@@ -179,27 +184,31 @@ export default class ClTree extends Component<IProps, IState> {
               transform: `rotate(${item.open ? 180 : 90}deg)`,
               visibility: item.children ? "initial" : "hidden"
             }}
-            onClick={this.clickItem.bind(this, item)}
+            onClick={this.openItem.bind(this, item)}
           >
             <ClIcon iconName={"triangleupfill"} size={"small"} />
           </View>
-          <ClCheckbox
-            type={"normal"}
-            shape={"round"}
-            more={item.someCheck}
-            color={color}
-            checkboxGroup={[
-              {
-                checked: item.checked,
-                key: "",
-                value: item.commonId,
-                disabled: item.disabled
-              }
-            ]}
-            onChange={commonId => {
-              this.changeChecked.call(this, commonId, item);
-            }}
-          />
+          {showCheck ? (
+            <ClCheckbox
+              type={"normal"}
+              shape={"round"}
+              more={item.someCheck}
+              color={color}
+              checkboxGroup={[
+                {
+                  checked: item.checked,
+                  key: "",
+                  value: item.commonId,
+                  disabled: item.disabled
+                }
+              ]}
+              onChange={commonId => {
+                this.changeChecked.call(this, commonId, item);
+              }}
+            />
+          ) : (
+            ""
+          )}
           <View onClick={this.clickItem.bind(this, item)}>
             <ClText text={item.name} />
           </View>

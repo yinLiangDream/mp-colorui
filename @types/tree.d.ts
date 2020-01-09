@@ -38,7 +38,11 @@ export interface IProps extends BaseComponent {
   /**
    * 展开或者收缩时发生改变
    */
-  onOpenChange?: ({ }) => void;
+  onOpenChange?: (obj: Object) => void;
+  /**
+   * 点击一项时触发
+   */
+  onClickItem?: (obj: Object) => void;
 }
 
 declare const Tree: ComponentClass<IProps>;
