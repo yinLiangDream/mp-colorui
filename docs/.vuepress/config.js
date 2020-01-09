@@ -120,7 +120,8 @@ module.exports = {
           formPath("switch", "Switch 开关"),
           formPath("select", "Select 选择器"),
           formPath("imagePicker", "ImagePicker 图片选择器"),
-          formPath("textarea", "Textarea 输入域")
+          formPath("textarea", "Textarea 输入域"),
+          formPath("tree", "Tree 树形结构")
         ]
       },
       {
