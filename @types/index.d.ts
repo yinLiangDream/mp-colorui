@@ -44,5 +44,6 @@ export { default as ClCurtain } from "./curtain";
 export { default as ClNoticeBar } from "./noticeBar";
 export { default as ClCalendar } from "./calendar";
 export { default as ClTextarea } from "./textarea";
+export { default as ClTree } from "./tree";
 
 export { default as ClUtils } from "./utils";

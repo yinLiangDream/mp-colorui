@@ -27,7 +27,7 @@ export default function ClTabBar(props: IProps) {
       onClick={() => {
         onClick(index);
       }}
-      key={item.icon}
+      key={"key-" + item.icon}
       className={`action ${item.action ? "add-action" : ""} ${
         activeIndex === index ? activeColorClassName : ""
       }`}

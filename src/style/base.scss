@@ -186,6 +186,88 @@ checkbox::before {
   z-index: 9;
 }
 
+checkbox.more::before {
+  font-family: "cuIcon";
+  content: "\e768";
+  position: absolute;
+  color: $white !important;
+  top: 50%;
+  margin-top: -16px;
+  right: 10px;
+  font-size: 32px;
+  line-height: 32px;
+  pointer-events: none;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
+radio[checked][disabled]::before,
+checkbox[checked][disabled]::before {
+  font-family: "cuIcon";
+  content: "\e645";
+  position: absolute;
+  color: $white !important;
+  top: 50%;
+  margin-top: -16px;
+  right: 10px;
+  font-size: 32px;
+  line-height: 32px;
+  pointer-events: none;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
+checkbox[checked][disabled].more::before {
+  font-family: "cuIcon";
+  content: "\e768";
+  position: absolute;
+  color: $white !important;
+  top: 50%;
+  margin-top: -16px;
+  right: 10px;
+  font-size: 32px;
+  line-height: 32px;
+  pointer-events: none;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
+radio[disabled]::before,
+checkbox[disabled]::before {
+  font-family: "cuIcon";
+  content: "\e645";
+  position: absolute;
+  color: rgb(225, 225, 225) !important;
+  top: 50%;
+  margin-top: -16px;
+  right: 10px;
+  font-size: 32px;
+  line-height: 32px;
+  pointer-events: none;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
+checkbox[disabled].more::before {
+  font-family: "cuIcon";
+  content: "\e768";
+  position: absolute;
+  color: rgb(225, 225, 225) !important;
+  top: 50%;
+  margin-top: -16px;
+  right: 10px;
+  font-size: 32px;
+  line-height: 32px;
+  pointer-events: none;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
 radio .wx-radio-input,
 checkbox .wx-checkbox-input {
   margin: 0;
@@ -255,10 +337,22 @@ radio.red[checked] .wx-radio-input {
   border-color: $red !important;
 }
 
+switch.red[checked][disabled] .wx-switch-input,
+checkbox.red[checked][disabled] .wx-checkbox-input,
+radio.red[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.orange[checked] .wx-switch-input,
 checkbox.orange[checked] .wx-checkbox-input,
 radio.orange[checked] .wx-radio-input {
   border-color: $orange !important;
+}
+
+switch.orange[checked][disabled] .wx-switch-input,
+checkbox.orange[checked][disabled] .wx-checkbox-input,
+radio.orange[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 switch.yellow[checked] .wx-switch-input,
@@ -267,10 +361,22 @@ radio.yellow[checked] .wx-radio-input {
   border-color: $yellow !important;
 }
 
+switch.yellow[checked][disabled] .wx-switch-input,
+checkbox.yellow[checked][disabled] .wx-checkbox-input,
+radio.yellow[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.olive[checked] .wx-switch-input,
 checkbox.olive[checked] .wx-checkbox-input,
 radio.olive[checked] .wx-radio-input {
   border-color: $olive !important;
+}
+
+switch.olive[checked][disabled] .wx-switch-input,
+checkbox.olive[checked][disabled] .wx-checkbox-input,
+radio.olive[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 switch.green[checked] .wx-switch-input,
@@ -280,10 +386,23 @@ radio.green[checked] .wx-radio-input {
   border-color: $green !important;
 }
 
+switch.green[checked][disabled] .wx-switch-input,
+checkbox.green[checked][disabled] .wx-checkbox-input,
+checkbox[checked][disabled] .wx-checkbox-input,
+radio.green[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.cyan[checked] .wx-switch-input,
 checkbox.cyan[checked] .wx-checkbox-input,
 radio.cyan[checked] .wx-radio-input {
   border-color: $cyan !important;
+}
+
+switch.cyan[checked][disabled] .wx-switch-input,
+checkbox.cyan[checked][disabled] .wx-checkbox-input,
+radio.cyan[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 switch.blue[checked] .wx-switch-input,
@@ -292,10 +411,22 @@ radio.blue[checked] .wx-radio-input {
   border-color: $blue !important;
 }
 
+switch.blue[checked][disabled] .wx-switch-input,
+checkbox.blue[checked][disabled] .wx-checkbox-input,
+radio.blue[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.purple[checked] .wx-switch-input,
 checkbox.purple[checked] .wx-checkbox-input,
 radio.purple[checked] .wx-radio-input {
   border-color: $purple !important;
+}
+
+switch.purple[checked][disabled] .wx-switch-input,
+checkbox.purple[checked][disabled] .wx-checkbox-input,
+radio.purple[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 switch.mauve[checked] .wx-switch-input,
@@ -304,10 +435,22 @@ radio.mauve[checked] .wx-radio-input {
   border-color: $mauve !important;
 }
 
+switch.mauve[checked][disabled] .wx-switch-input,
+checkbox.mauve[checked][disabled] .wx-checkbox-input,
+radio.mauve[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.pink[checked] .wx-switch-input,
 checkbox.pink[checked] .wx-checkbox-input,
 radio.pink[checked] .wx-radio-input {
   border-color: $pink !important;
+}
+
+switch.pink[checked][disabled] .wx-switch-input,
+checkbox.pink[checked][disabled] .wx-checkbox-input,
+radio.pink[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 switch.brown[checked] .wx-switch-input,
@@ -316,10 +459,22 @@ radio.brown[checked] .wx-radio-input {
   border-color: $brown !important;
 }
 
+switch.brown[checked][disabled] .wx-switch-input,
+checkbox.brown[checked][disabled] .wx-checkbox-input,
+radio.brown[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.grey[checked] .wx-switch-input,
 checkbox.grey[checked] .wx-checkbox-input,
 radio.grey[checked] .wx-radio-input {
   border-color: $grey !important;
+}
+
+switch.grey[checked][disabled] .wx-switch-input,
+checkbox.grey[checked][disabled] .wx-checkbox-input,
+radio.grey[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 switch.gray[checked] .wx-switch-input,
@@ -328,10 +483,22 @@ radio.gray[checked] .wx-radio-input {
   border-color: $grey !important;
 }
 
+switch.gray[checked][disabled] .wx-switch-input,
+checkbox.gray[checked][disabled] .wx-checkbox-input,
+radio.gray[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.black[checked] .wx-switch-input,
 checkbox.black[checked] .wx-checkbox-input,
 radio.black[checked] .wx-radio-input {
   border-color: $black !important;
+}
+
+switch.black[checked][disabled] .wx-switch-input,
+checkbox.black[checked][disabled] .wx-checkbox-input,
+radio.black[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 switch.white[checked] .wx-switch-input,
@@ -340,10 +507,23 @@ radio.white[checked] .wx-radio-input {
   border-color: $white !important;
 }
 
+switch.white[checked][disabled] .wx-switch-input,
+checkbox.white[checked][disabled] .wx-checkbox-input,
+radio.white[checked][disabled] .wx-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 switch.red[checked] .wx-switch-input.wx-switch-input-checked,
 checkbox.red[checked] .wx-checkbox-input,
 radio.red[checked] .wx-radio-input {
   background-color: $red !important;
+  color: $white !important;
+}
+
+switch.red[checked][disabled] .wx-switch-input.wx-switch-input-checked,
+checkbox.red[checked][disabled] .wx-checkbox-input,
+radio.red[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -354,6 +534,13 @@ radio.orange[checked] .wx-radio-input {
   color: $white !important;
 }
 
+switch.orange[checked][disabled] .wx-switch-input,
+checkbox.orange[checked][disabled] .wx-checkbox-input,
+radio.orange[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 switch.yellow[checked] .wx-switch-input,
 checkbox.yellow[checked] .wx-checkbox-input,
 radio.yellow[checked] .wx-radio-input {
@@ -361,10 +548,24 @@ radio.yellow[checked] .wx-radio-input {
   color: $black !important;
 }
 
+switch.yellow[checked][disabled] .wx-switch-input,
+checkbox.yellow[checked][disabled] .wx-checkbox-input,
+radio.yellow[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $black !important;
+}
+
 switch.olive[checked] .wx-switch-input,
 checkbox.olive[checked] .wx-checkbox-input,
 radio.olive[checked] .wx-radio-input {
   background-color: $olive !important;
+  color: $white !important;
+}
+
+switch.olive[checked][disabled] .wx-switch-input,
+checkbox.olive[checked][disabled] .wx-checkbox-input,
+radio.olive[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -378,10 +579,27 @@ radio[checked] .wx-radio-input {
   color: $white !important;
 }
 
+switch.green[checked][disabled] .wx-switch-input,
+switch[checked][disabled] .wx-switch-input,
+checkbox.green[checked][disabled] .wx-checkbox-input,
+checkbox[checked][disabled] .wx-checkbox-input,
+radio.green[checked][disabled] .wx-radio-input,
+radio[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 switch.cyan[checked] .wx-switch-input,
 checkbox.cyan[checked] .wx-checkbox-input,
 radio.cyan[checked] .wx-radio-input {
   background-color: $cyan !important;
+  color: $white !important;
+}
+
+switch.cyan[checked][disabled] .wx-switch-input,
+checkbox.cyan[checked][disabled] .wx-checkbox-input,
+radio.cyan[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -392,10 +610,24 @@ radio.blue[checked] .wx-radio-input {
   color: $white !important;
 }
 
+switch.blue[checked][disabled] .wx-switch-input,
+checkbox.blue[checked][disabled] .wx-checkbox-input,
+radio.blue[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 switch.purple[checked] .wx-switch-input,
 checkbox.purple[checked] .wx-checkbox-input,
 radio.purple[checked] .wx-radio-input {
   background-color: $purple !important;
+  color: $white !important;
+}
+
+switch.purple[checked][disabled] .wx-switch-input,
+checkbox.purple[checked][disabled] .wx-checkbox-input,
+radio.purple[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -406,10 +638,24 @@ radio.mauve[checked] .wx-radio-input {
   color: $white !important;
 }
 
+switch.mauve[checked][disabled] .wx-switch-input,
+checkbox.mauve[checked][disabled] .wx-checkbox-input,
+radio.mauve[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 switch.pink[checked] .wx-switch-input,
 checkbox.pink[checked] .wx-checkbox-input,
 radio.pink[checked] .wx-radio-input {
   background-color: $pink !important;
+  color: $white !important;
+}
+
+switch.pink[checked][disabled] .wx-switch-input,
+checkbox.pink[checked][disabled] .wx-checkbox-input,
+radio.pink[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -420,10 +666,24 @@ radio.brown[checked] .wx-radio-input {
   color: $white !important;
 }
 
+switch.brown[checked][disabled] .wx-switch-input,
+checkbox.brown[checked][disabled] .wx-checkbox-input,
+radio.brown[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 switch.grey[checked] .wx-switch-input,
 checkbox.grey[checked] .wx-checkbox-input,
 radio.grey[checked] .wx-radio-input {
   background-color: $grey !important;
+  color: $white !important;
+}
+
+switch.grey[checked][disabled] .wx-switch-input,
+checkbox.grey[checked][disabled] .wx-checkbox-input,
+radio.grey[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -434,6 +694,13 @@ radio.gray[checked] .wx-radio-input {
   color: $black !important;
 }
 
+switch.gray[checked][disabled] .wx-switch-input,
+checkbox.gray[checked][disabled] .wx-checkbox-input,
+radio.gray[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $black !important;
+}
+
 switch.black[checked] .wx-switch-input,
 checkbox.black[checked] .wx-checkbox-input,
 radio.black[checked] .wx-radio-input {
@@ -441,10 +708,24 @@ radio.black[checked] .wx-radio-input {
   color: $white !important;
 }
 
+switch.black[checked][disabled] .wx-switch-input,
+checkbox.black[checked][disabled] .wx-checkbox-input,
+radio.black[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 switch.white[checked] .wx-switch-input,
 checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
   background-color: $white !important;
+  color: $black !important;
+}
+
+switch.white[checked][disabled] .wx-switch-input,
+checkbox.white[checked][disabled] .wx-checkbox-input,
+radio.white[checked][disabled] .wx-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $black !important;
 }
 
