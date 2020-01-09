@@ -80,14 +80,16 @@ export default function ClTip_H5(props: IProps) {
         distance.transform = `translateX(${translateX}px) translateY(-${res.height +
           10}px)`;
         distance.arrowTransform = `translateX(${Math.abs(translateX) +
-          res.width / 2}px) rotate(45deg) translateY(0)`;
+          res.width / 2 -
+          sqrt}px) rotate(45deg) translateY(0)`;
       } else {
         const maxRight = screenWidth - res.left;
         if (maxRight < contentWidth) translateX = contentWidth - maxRight;
         distance.transform = `translateX(-${translateX}px) translateY(-${res.height +
           10}px)`;
         distance.arrowTransform = `translateX(${Math.abs(translateX) +
-          res.width / 2}px) rotate(45deg) translateY(30%)`;
+          res.width / 2 -
+          sqrt}px) rotate(45deg) translateY(30%)`;
       }
     } else if (props.direction === "bottom") {
       console.log(res, messageData);
