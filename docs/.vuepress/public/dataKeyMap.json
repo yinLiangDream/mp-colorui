@@ -247,5 +247,9 @@
     { "key": "placeholder", "value": "占位符" },
     { "key": "limit", "value": "限制字数" },
     { "key": "bgColor", "value": "背景色" }
+  ],
+  "tree": [
+    { "key": "check", "value": "显示复选框" },
+    { "key": "color", "value": "颜色" }
   ]
 }

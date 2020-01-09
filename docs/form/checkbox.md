@@ -24,11 +24,12 @@ import { ClCheckbox } from "mp-colorui";
 
 ### checkboxGroup
 
-| 参数    | 说明                                        | 类型    | 可选值             | 默认值    |
-| ------- | ------------------------------------------- | ------- | ------------------ | --------- |
-| checked | _是否选中_                                  | boolean | _`true`_,_`false`_ | _`false`_ |
-| key     | _复选框的 key 设置，显示于复选框外_         | string  | -                  | -         |
-| value   | _复选框的 value 设置，该参数为选中时的参数_ | string  | -                  | -         |
+| 参数     | 说明                                        | 类型    | 可选值             | 默认值    |
+| -------- | ------------------------------------------- | ------- | ------------------ | --------- |
+| checked  | _是否选中_                                  | boolean | _`true`_,_`false`_ | _`false`_ |
+| key      | _复选框的 key 设置，显示于复选框外_         | string  | -                  | -         |
+| value    | _复选框的 value 设置，该参数为选中时的参数_ | string  | -                  | -         |
+| disabled | _禁用_                                      | boolean | -                  | `false`   |
 
 ### Checkbox 事件
 
