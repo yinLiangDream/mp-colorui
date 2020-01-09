@@ -290,7 +290,7 @@ export default class ClTree extends Component<IProps, IState> {
     | undefined {
     const { list } = this.state;
     const listComponent = list.map(item => (
-      <View key={item.commonId}>{this.renderItem(item)}</View>
+      <View key={"key-" + item.commonId}>{this.renderItem(item)}</View>
     ));
     return <View className={"cu-tree"}>{listComponent}</View>;
   }

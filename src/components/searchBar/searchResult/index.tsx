@@ -37,7 +37,7 @@ export default function ClSearchResult(props: {
   const onTouchResult = props.onTouchResult;
   const resultComponent = result.map((item: any, index: number) => (
     <View
-      key={item.cu_search_bar_result_id}
+      key={"key-" + index}
       className="cl_search_result solid-bottom"
       onClick={() => {
         onTouchResult(index);

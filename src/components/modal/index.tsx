@@ -35,7 +35,7 @@ export default class ClModal extends Component<IProps, {}> {
     const actionsComponent = actions.map((item, index) => (
       <View
         className={`${index > 0 ? "solid-left" : ""} action margin-0 flex-sub`}
-        key={item.text}
+        key={"key-" + item.text}
         onClick={() => {
           onClick(index);
         }}

@@ -89,7 +89,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
     const leftIconComponent = this.props.leftIcons
       ? this.props.leftIcons.map((item, index) => (
           <View
-            key={index}
+            key={"key-" + index}
             className={`cu-avatar round cuIcon-${item}`}
             onClick={this.onIconClick.bind(this, index)}
           />
@@ -116,9 +116,7 @@ export default class ClSearchBar extends Component<IProps, IState> {
     const buttonComponent = (
       <View className="action" onClick={ClSearchBar.onPreventProp.bind(this)}>
         <Button
-          className={`cu-btn shadow-blur ${
-            this.props.shape
-          } ${buttonColorClassName} ${textColorClassName}`}
+          className={`cu-btn shadow-blur ${this.props.shape} ${buttonColorClassName} ${textColorClassName}`}
           onClick={this.onSearch.bind(this)}
         >
           搜索
