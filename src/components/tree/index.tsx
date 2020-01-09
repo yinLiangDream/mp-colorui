@@ -55,7 +55,6 @@ export default class ClTree extends Component<IProps, IState> {
         id,
         parent: parentId,
         childrenCheck: [],
-        open: item.open,
         commonId: generateId(),
         levelId: newLevelId,
         children: this.dealLevel({
@@ -104,6 +103,7 @@ export default class ClTree extends Component<IProps, IState> {
 
   public changeChecked(commonId: any[] = [], item: any) {
     const { flatList } = this.state;
+    const { onCheckedChange } = this.props;
     const id = item.commonId;
     const checked = commonId.length > 0;
     const data = flatList.find(item => item.commonId === id);
@@ -134,6 +134,7 @@ export default class ClTree extends Component<IProps, IState> {
       parent => parent.deepIndex === item.deepIndex - 1
     );
     data.checked = checked;
+    onCheckedChange && onCheckedChange(data);
     const maxDeep = allParent.length;
     let i = maxDeep;
     if (checked) {
@@ -260,6 +261,11 @@ export default class ClTree extends Component<IProps, IState> {
       },
       () => {
         const checkedList = flatList.filter(item => item.checked);
+        const openList = flatList.filter(item => item.open);
+        openList.forEach(item => {
+          item.open = !item.open;
+          this.openItem(item);
+        });
         checkedList.forEach(item => {
           this.changeChecked(item.commonId, item);
         });
