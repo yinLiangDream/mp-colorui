@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { ClCard, ClFloatButton, ClText } from "../../../index";
 import { View } from "@tarojs/components";
+import { ClCard, ClFloatButton, ClText } from "../../../index";
 
 export default function FloatButton() {
   const text =

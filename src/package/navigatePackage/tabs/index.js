@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { ClCard, ClLayout, ClTabs, ClTitleBar } from "../../../index";
 import { View } from "@tarojs/components";
+import { ClCard, ClLayout, ClTabs, ClTitleBar } from "../../../index";
 
 function gen(item, index) {
   return {

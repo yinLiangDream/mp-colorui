@@ -1,6 +1,6 @@
-import Taro, { useState } from "@tarojs/taro";
-import { ClVerticalTab, ClVerticalTabCell } from "../../../index";
+import Taro from "@tarojs/taro";
 import { View } from "@tarojs/components";
+import { ClVerticalTab, ClVerticalTabCell } from "../../../index";
 
 export default function VerticalTab() {
   const tabs = [...Array(50)].map((key, index) => ({

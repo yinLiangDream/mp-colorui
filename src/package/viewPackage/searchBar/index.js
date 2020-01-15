@@ -1,6 +1,6 @@
 import Taro, { useState } from "@tarojs/taro";
-import { ClCard, ClLayout, ClSearchBar, ClTitleBar } from "../../../index";
 import PCAA from "area-data/pcaa";
+import { ClCard, ClLayout, ClSearchBar, ClTitleBar } from "../../../index";
 
 let timer;
 export default function SearchBar() {

@@ -1,6 +1,6 @@
 import Taro, { pxTransform } from "@tarojs/taro";
-import { ClTitleBar, ClText, ClLayout, ClFlex, ClCard } from "../../../index";
 import { View } from "@tarojs/components";
+import { ClTitleBar, ClText, ClLayout, ClFlex, ClCard } from "../../../index";
 
 import size from "../../../constant/size";
 import color from "../../../constant/color";

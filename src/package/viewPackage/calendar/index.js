@@ -1,7 +1,7 @@
 import Taro from "@tarojs/taro";
 import { View } from "@tarojs/components";
-import { ClCalendar, ClTitleBar } from "../../../index";
 import dayjs from "dayjs";
+import { ClCalendar, ClTitleBar } from "../../../index";
 
 export default function Calendar() {
   return (

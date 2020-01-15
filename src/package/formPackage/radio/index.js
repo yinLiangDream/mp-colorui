@@ -13,7 +13,7 @@ const radioGroup = [
 ];
 
 export default function Radio() {
-  const [checkedValue, setCheckedValue] = useState("male");
+  const [checkedValue] = useState("male");
   return (
     <ClLayout>
       <ClTitleBar title="类型" textColor="black" type="icon" subTitle="type" />

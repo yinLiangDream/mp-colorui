@@ -1,6 +1,12 @@
 import Taro, { pxTransform, useState } from "@tarojs/taro";
-import { ClButton, ClCard, ClDrawer, ClLayout, ClTitleBar } from "../../../index";
 import { View } from "@tarojs/components";
+import {
+  ClButton,
+  ClCard,
+  ClDrawer,
+  ClLayout,
+  ClTitleBar
+} from "../../../index";
 
 export default function Drawer() {
   const [left, setLeft] = useState(false);

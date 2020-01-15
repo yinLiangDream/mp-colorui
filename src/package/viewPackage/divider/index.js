@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { ClDivider, ClLayout, ClTitleBar } from "../../../index";
 import { View } from "@tarojs/components";
+import { ClDivider, ClTitleBar } from "../../../index";
 
 export default function Divider() {
   return (

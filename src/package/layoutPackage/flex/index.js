@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { ClCard, ClFlex, ClLayout, ClTitleBar } from "../../../index";
 import { View } from "@tarojs/components";
+import { ClCard, ClFlex, ClLayout, ClTitleBar } from "../../../index";
 
 const size = ["xs", "sm", "df", "lg", "xl"];
 

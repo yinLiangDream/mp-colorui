@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { ClCard, ClGrid, ClLayout, ClTitleBar } from "../../../index";
 import { View } from "@tarojs/components";
+import { ClCard, ClGrid, ClLayout, ClTitleBar } from "../../../index";
 
 const generatorArr = num => {
   let i = 0;

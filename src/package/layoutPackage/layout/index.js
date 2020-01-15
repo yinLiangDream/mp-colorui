@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { ClCard, ClLayout, ClTitleBar } from "../../../index";
 import { View } from "@tarojs/components";
+import { ClCard, ClLayout, ClTitleBar } from "../../../index";
 
 export default function Layout() {
   return (
