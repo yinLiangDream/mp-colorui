@@ -1,7 +1,7 @@
 ## 使用指南
 
 ```js
-import { ClUtils } from "mp-colorui";
+import { ClUtils } from "mp-colorui/dist/weapp/lib";
 
 // 使用
 

@@ -39,8 +39,20 @@ export type TChooseImgObj = {
 };
 
 export type imgList = {
+  /**
+   * url 地址
+   */
   url: string;
+  /**
+   * 状态
+   */
   status: "success" | "fail" | "loading" | "none";
+  /**
+   * 是否禁止删除
+   *
+   * 默认值 `false`
+   */
+  disabled?: boolean;
 }[];
 
 export type TBeforeDel = (index: number) => boolean;

@@ -17,16 +17,30 @@ const config = {
   },
   sourceRoot: "src",
   outputRoot: "dist",
-  plugins: {
-    babel: {
-      sourceMap: true,
-      presets: ["env"],
-      plugins: [
-        "transform-class-properties",
-        "transform-decorators-legacy",
-        "transform-object-rest-spread"
+  babel: {
+    sourceMap: true,
+    presets: [
+      [
+        "env",
+        {
+          modules: false
+        }
       ]
-    }
+    ],
+    plugins: [
+      "transform-class-properties",
+      "transform-decorators-legacy",
+      "transform-object-rest-spread",
+      [
+        "transform-runtime",
+        {
+          helpers: false,
+          polyfill: false,
+          regenerator: true,
+          moduleName: "babel-runtime"
+        }
+      ]
+    ]
   },
   defineConstants: {},
   copy: {

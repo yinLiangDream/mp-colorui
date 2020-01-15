@@ -7,15 +7,12 @@ import ClText from "../../text";
 import ClFlex from "../../flex";
 import ClLayout from "../../layout";
 import ClCard from "../../card";
-import { classNames } from "../../../components/utils";
-import {
-  BG_COLOR_LIST,
-  TEXT_COLOR_LIST
-} from "../../../components/utils/model";
-
-import "../index.scss";
+import { classNames } from "../../../lib";
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../../lib/model";
 import ClButton from "../../button";
 import ClTip from "../../tip";
+
+import "../index.scss";
 
 export default function Calendar_weapp(props: IProps) {
   const {

@@ -1,7 +1,7 @@
 import { Image, Swiper, SwiperItem, Video, View } from "@tarojs/components";
 import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
 import { IProps, TList } from "../../../@types/swiper";
-import { classNames, generateId, isAliPay, screenPercent } from "../utils";
+import { classNames, generateId, isAliPay, screenPercent } from "../../lib";
 
 import "./index.scss";
 
@@ -82,7 +82,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item: any, index: number) => (
         <SwiperItem
-          key={"id-" + index}
+          key={"key-" + index}
           onClick={() => {
             onClick(index);
           }}
@@ -113,7 +113,7 @@ export default function ClSwiper(props: IProps) {
     >
       {list.map((item: any, index: number) => (
         <SwiperItem
-          key={"id-" + index}
+          key={"key-" + index}
           className={`${cur === index ? "cur" : ""}`}
           onClick={() => {
             onClick(index);

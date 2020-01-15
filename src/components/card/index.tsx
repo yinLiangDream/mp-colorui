@@ -1,11 +1,11 @@
 import Taro from "@tarojs/taro";
 import { View } from "@tarojs/components";
 import { IProps } from "../../../@types/card.d";
-import { BG_COLOR_LIST } from "../utils/model";
-
-import "./index.scss";
-import { classNames } from "../../components/utils";
+import { BG_COLOR_LIST } from "../../lib/model";
 import ClText from "../text";
+
+import { classNames } from "../../lib";
+import "./index.scss";
 
 export default function ClCard(props: IProps) {
   const typeClassName = props.type === "full" ? "no-card" : "";

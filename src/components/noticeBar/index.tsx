@@ -4,13 +4,13 @@ import { IProps } from "../../../@types/noticeBar";
 import ClText from "../text";
 import ClIcon from "../icon/index";
 import ClFlex from "../flex";
-import { BG_COLOR_LIST } from "../utils/model";
-import { generateId, isH5, screenPercent } from "../utils";
-
-import "./index.scss";
-import "../text/index.scss";
+import { BG_COLOR_LIST } from "../../lib/model";
+import { generateId, isH5, screenPercent } from "../../lib";
 import classnames from "classnames";
 import ClLayout from "../layout";
+import "../text/index.scss";
+
+import "./index.scss";
 
 export default function ClNoticeBar(props: IProps) {
   const {

@@ -1,8 +1,8 @@
 import { Picker, View } from "@tarojs/components";
 import Taro, { useState, useMemo } from "@tarojs/taro";
-import { classNames, getNowDate } from "../utils/index";
+import { classNames, getNowDate } from "../../lib";
 import { IProps } from "../../../@types/select";
-import { getAreaData } from "../utils/area";
+import { getAreaData } from "../../lib/area";
 
 function ClSelect(props: IProps) {
   const selector = {

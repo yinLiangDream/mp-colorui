@@ -1,99 +1,259 @@
-import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
-import { View, Image, Swiper, SwiperItem, Video } from "@tarojs/components";
-import ClLayout from "../../components/layout";
-import ClAccordion from "../../components/accordion";
-import ClCard from "../../components/card";
-import ClText from "../../components/text";
-import ClTitleBar from "../../components/titleBar";
-import ClFlex from "../../components/flex";
-import ClButton from "../../components/button";
-import ClTip from "../../components/tip";
-import ClIcon from "../../components/icon";
-import ClForm from "../../components/form";
-import ClFormItem from "../../components/form/formItem";
-import ClInput from "../../components/input";
-import ClCheckbox from "../../components/checkbox";
-import ClVerticalTabCell from "../../components/verticalTab/verticalTabCell";
-import ClVerticalTab from "../../components/verticalTab";
-import ClImagePicker from "../../components/imagePicker";
-import ClSearchBar from "../../components/searchBar";
-import ClRadio from "../../components/radio";
-// import { provinceArr, getAreaData } from "../../components/utils/area";
-import ClMenuList from "../../components/menuList";
-import ClSwiperAction from "../../components/swiperAction/index";
-import ClActionSheet from "../../components/actionSheet/index";
-import ClCurtain from "../../components/curtain/index";
-import ClTabs from "../../components/tabs";
-import ClSelect from "../../components/select/index";
-import ClNoticeBar from "../../components/noticebar/index";
-import ClAvatar from "../../components/avatar";
-import ClShopBar from "../../components/shopBar";
-import ClSwiper from "../../components/swiper";
-import ClTextarea from "../../components/textarea";
-import ClTree from "../../components/tree";
+import { View } from "@tarojs/components";
+import Taro, { useState, useEffect } from "@tarojs/taro";
+import {
+  ClAnimation,
+  ClCard,
+  ClFlex,
+  ClIcon,
+  ClLayout,
+  ClModal,
+  ClSearchBar,
+  ClTabBar,
+  ClText
+} from "../../index";
+import ClUtils from "../../components/utils";
 
-import PCAA from "area-data/pcaa";
-import ClCalendar from "../../components/calendar";
-
+import UserCenter from "./components/userCenter";
+import * as menu from "../../constant/menu.js";
 import "./index.scss";
+// import { updateList } from "../../model/index";
 
-export default function Tree() {
-  const data = [
+const allList = [].concat(
+  menu.baseList,
+  menu.actionList,
+  menu.formList,
+  menu.layoutList,
+  menu.navigateList,
+  menu.viewList
+);
+
+const basePackage = menu.baseList.map(item => item.key);
+const actionPackage = menu.actionList.map(item => item.key);
+const formPackage = menu.formList.map(item => item.key);
+const layoutPackage = menu.layoutList.map(item => item.key);
+const navigatePackage = menu.navigateList.map(item => item.key);
+const viewPackage = menu.viewList.map(item => item.key);
+
+export default function Index() {
+  console.log(ClUtils);
+  // 变量声明区
+  const icons = ["emoji", "cascades", "we", "form", "apps", "taxi"];
+  const tabs = [
     {
-      name: "中国",
-      checked: true,
-      children: [
-        {
-          name: "江苏"
-        },
-        {
-          name: "浙江",
-          children: [
-            {
-              name: "杭州"
-            },
-            {
-              name: "台州"
-            }
-          ]
-        }
-      ]
+      icon: "home",
+      title: "主页",
+      badge: false
     },
     {
-      name: "美国",
-      open: true,
-      children: [
-        {
-          name: "旧金山",
-          checked: true
-        },
-        {
-          name: "洛杉矶"
-        }
-      ]
+      icon: "magic",
+      title: "关于",
+      badge: false
     }
   ];
-  return (
-    <View>
-      <ClTitleBar title="选择选项" textColor="black" type="icon" />
-      <ClCard>
-        <ClTree data={data} showCheck />
-      </ClCard>
-      <ClCard>
-        <ClTree
-          data={data}
-          onClickItem={item => {
-            Taro.showToast({
-              icon: "none",
-              title: item.name
+  const [updated, setUpdated] = useState(null);
+  const [active, setActive] = useState(0);
+  const [animate, setAnimation] = useState("none");
+  const [show, setShow] = useState(false);
+  const [tempfilter, setTempfilter] = useState([]);
+  const [showUpdate, setShowUpdate] = useState(false);
+  // 事件声明区
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      setAnimation("scale-up");
+      setShow(true);
+    }, 800);
+    Taro.request({
+      url:
+        "https://mp-colorui-1255362963.cos.ap-chengdu.myqcloud.com/update/update.json"
+    }).then(res => {
+      setUpdated(res.data[0]);
+      setShowUpdate(true);
+    });
+    if (
+      Taro.getEnv() !== Taro.ENV_TYPE.WEB &&
+      Taro.canIUse("getUpdateManager")
+    ) {
+      let updateManager = Taro.getUpdateManager();
+      updateManager.onCheckForUpdate(res => {
+        if (res.hasUpdate) {
+          updateManager.onUpdateReady(() => {
+            Taro.showModal({
+              title: "更新提示",
+              content: "有新版本，是否重启应用？",
+              success: ress => {
+                if (ress.confirm) {
+                  updateManager.applyUpdate();
+                } else if (ress.cancel) {
+                  return false;
+                }
+              }
             });
-          }}
-        />
-      </ClCard>
-      <ClTitleBar title="颜色" textColor="black" type="icon" />
-      <ClCard>
-        <ClTree data={data} color="brown" showCheck />
-      </ClCard>
+          });
+          updateManager.onUpdateFailed(() => {
+            Taro.hideLoading();
+            Taro.showModal({
+              title: "更新失败",
+              content: "新版本更新失败，请检查网络",
+              showCancel: false
+            });
+          });
+        }
+      });
+    }
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+  //组件区
+  const cardsComponent = menu.default.map((item, index) => (
+    <View
+      key={"key-" + item.key}
+      onClick={() => {
+        Taro.navigateTo({
+          url: `/package/${item.key}Package/index/index`
+        });
+      }}
+    >
+      <ClAnimation type={animate} delay={index / 10}>
+        <ClCard bgColor="white">
+          <View
+            style={{
+              backgroundImage:
+                "url(https://md-1255362963.cos.ap-chengdu.myqcloud.com/mpcolorui/home.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <ClFlex justify="between" align="center">
+              <ClFlex align="center">
+                <ClIcon iconName={icons[index]} color="cyan" />
+                <ClLayout padding="small" paddingDirection="left">
+                  <ClText size="xlarge" text={item.name} fontWeight="bold" />
+                  <ClText
+                    size="xsmall"
+                    textColor="gray"
+                    text={item.description}
+                  />
+                </ClLayout>
+              </ClFlex>
+              <ClIcon iconName="roundrightfill" color="blue" />
+            </ClFlex>
+          </View>
+        </ClCard>
+      </ClAnimation>
+    </View>
+  ));
+
+  return (
+    <View className="index">
+      {active === 0 ? (
+        <ClLayout padding="xlarge" paddingDirection="vertical">
+          <ClSearchBar
+            shape="round"
+            bgColor="white"
+            fix
+            searchType="none"
+            placeholder="找不到组件在哪？来试试搜索组件吧！"
+            showResult
+            result={tempfilter}
+            onTouchResult={index => {
+              Taro.navigateTo({
+                url: tempfilter[index].url
+              });
+            }}
+            onInput={value => {
+              setTempfilter(
+                value !== ""
+                  ? allList
+                      .filter(item =>
+                        item.name
+                          .toLowerCase()
+                          .includes(value.toLocaleLowerCase())
+                      )
+                      .map(item => {
+                        let packageName = "";
+                        if (basePackage.includes(item.key)) {
+                          packageName = "basePackage";
+                        } else if (actionPackage.includes(item.key)) {
+                          packageName = "actionPackage";
+                        } else if (formPackage.includes(item.key)) {
+                          packageName = "formPackage";
+                        } else if (layoutPackage.includes(item.key)) {
+                          packageName = "layoutPackage";
+                        } else if (navigatePackage.includes(item.key)) {
+                          packageName = "navigatePackage";
+                        } else if (viewPackage.includes(item.key)) {
+                          packageName = "viewPackage";
+                        }
+                        return {
+                          arrow: true,
+                          title: item.name,
+                          key: item.key,
+                          url: `/package/${packageName}/${item.key}/index`
+                        };
+                      })
+                  : []
+              );
+            }}
+          />
+        </ClLayout>
+      ) : (
+        ""
+      )}
+      {active === 0 ? (
+        <ClLayout
+          padding="xlarge"
+          paddingDirection="bottom"
+          margin="xlarge"
+          marginDirection="bottom"
+        >
+          {show ? cardsComponent : ""}
+        </ClLayout>
+      ) : (
+        ""
+      )}
+      {active === 1 ? <UserCenter /> : ""}
+      <ClTabBar
+        tabs={tabs}
+        fix
+        active={active}
+        onClick={index => {
+          setActive(index);
+        }}
+      />
+      <ClModal
+        show={showUpdate}
+        close
+        onClose={() => {
+          setShowUpdate(false);
+        }}
+        closeWithShadow
+        onCancel={() => {
+          setShowUpdate(false);
+        }}
+        title={`${updated && updated.title} 版本`}
+      >
+        <ClFlex direction="column">
+          <View style={{ width: "100%" }}>
+            <ClText
+              text={`${updated && updated.time}`}
+              textColor="cyan"
+              align="right"
+            />
+          </View>
+          {updated &&
+            updated.content.map(text => (
+              <View key={"key-" + text}>
+                <ClText text={text} size="small" textColor="grey" />
+              </View>
+            ))}
+        </ClFlex>
+      </ClModal>
     </View>
   );
 }
+
+Index.config = {
+  navigationBarTitleText: "MP-ColorUI"
+};

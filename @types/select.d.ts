@@ -144,7 +144,7 @@ export interface IProps extends BaseComponent {
   onColumnChange?: TOnColumnChange;
 }
 
-export interface SelectProps extends IProps {}
+export interface SelectProps extends IProps { }
 declare const Select: ComponentClass<SelectProps>;
 
 export default Select;

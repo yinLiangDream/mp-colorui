@@ -51,7 +51,7 @@ export const isNumber = (obj: any) => {
  */
 export const debounce = (func: Function, wait: number) => {
   let timeout: any;
-  return function() {
+  return function () {
     let context = this;
     let args = arguments;
 
@@ -72,7 +72,7 @@ export const debounce = (func: Function, wait: number) => {
  */
 export const throttling = (func: Function, wait: number) => {
   let timeout: any;
-  return function() {
+  return function () {
     let context = this;
     let args = arguments;
 
@@ -185,8 +185,13 @@ export const idLocalUrl = (url: string) => {
   return url.indexOf(".") === 0 || url.indexOf("/") === 0;
 };
 
+export const ClUtils = {
+  rule
+}
+
 export default {
   model,
   getNowDate,
   rule
 };
+

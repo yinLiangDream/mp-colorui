@@ -1,9 +1,8 @@
 import Taro from "@tarojs/taro";
 import { View } from "@tarojs/components";
 import { IProps } from "../../../@types/calendar";
-import { isH5, isWeApp } from "../../components/utils";
+import { isH5, isWeApp } from "../../lib";
 
-import "./index.scss";
 import Calendar_h5 from "./h5";
 import Calendar_weapp from "./weapp";
 

@@ -1,10 +1,10 @@
 import { ScrollView, Text, View } from "@tarojs/components";
 import Taro, { Component, pxTransform } from "@tarojs/taro";
-import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/tabs";
 
 import "./index.scss";
-import { classNames, getRectNumber, isAliPay, screenPercent } from "../utils";
+import { classNames, getRectNumber, isAliPay, screenPercent } from "../../lib";
 
 interface IState {
   activeTab: number;
@@ -56,22 +56,23 @@ export default class ClTabs extends Component<IProps, IState> {
     const view = query.select(`#${id}`);
     const view0 = query.select(`#${id0}`);
     let left = 0;
-    const promise = new Promise(async resolve => {
-      await new Promise(resolve1 => {
+    const promise = new Promise(resolve => {
+      new Promise(resolve1 => {
         view0.boundingClientRect().exec(res => {
           const data = res[0];
           left = data.left;
           resolve1();
         });
-      });
-      view.boundingClientRect().exec(res => {
-        const data = res[getRectNumber()];
-        if (isAliPay) {
-          left = data.width * index;
-        } else {
-          left = Math.abs(left - data.left);
-        }
-        resolve(left);
+      }).then(() => {
+        view.boundingClientRect().exec(res => {
+          const data = res[getRectNumber()];
+          if (isAliPay) {
+            left = data.width * index;
+          } else {
+            left = Math.abs(left - data.left);
+          }
+          resolve(left);
+        });
       });
     });
     promise.then(() => {

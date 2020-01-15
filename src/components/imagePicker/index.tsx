@@ -1,6 +1,6 @@
 import { Text, View, Image } from "@tarojs/components";
 import Taro, { useState } from "@tarojs/taro";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 import {
   IProps,
   imgList as imgListType,

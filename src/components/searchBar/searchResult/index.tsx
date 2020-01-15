@@ -3,12 +3,10 @@ import { View } from "@tarojs/components";
 import ClFlex from "../../flex";
 import ClText from "../../text";
 import ClLayout from "../../layout";
-
-import "./index.scss";
-
 import ClIcon from "../../icon";
-import { classNames, generateId } from "../../utils";
 
+import { classNames, generateId } from "../../../lib";
+import "./index.scss";
 export default function ClSearchResult(props: {
   result?: {
     title?: string;
