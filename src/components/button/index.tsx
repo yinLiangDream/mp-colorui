@@ -1,8 +1,8 @@
 import { Button, Text, View } from "@tarojs/components";
 import Taro from "@tarojs/taro";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 import { IProps } from "../../../@types/button";
-import { BG_COLOR_LIST, SIZE } from "../utils/model";
+import { BG_COLOR_LIST, SIZE } from "../../lib/model";
 
 export default function ClButton(props: IProps) {
   const onClick = (e: any) => {

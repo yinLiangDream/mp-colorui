@@ -2,15 +2,19 @@ import Taro, { useState, useMemo, pxTransform } from "@tarojs/taro";
 import classNames from "classnames";
 import { IProps } from "../../../@types/actionSheet";
 import ClCard from "../card";
-import { generateId } from "../utils";
-import { bgColorType, bgColorMoreType, lightBgColorType } from "../utils/types";
+import { generateId } from "../../lib";
+import {
+  bgColorType,
+  bgColorMoreType,
+  lightBgColorType
+} from "../../lib/types";
 import ClText from "../text";
 import { View } from "@tarojs/components";
 import ClLayout from "../layout";
 
 import "./index.scss";
 
-import { BG_COLOR_LIST } from "../utils/model";
+import { BG_COLOR_LIST } from "../../lib/model";
 
 export default function ClActionSheet(props: IProps) {
   const {

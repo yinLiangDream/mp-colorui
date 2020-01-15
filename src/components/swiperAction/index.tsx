@@ -3,8 +3,8 @@ import { View } from "@tarojs/components";
 import { IProps } from "../../../@types/swiperAction";
 
 import "./index.scss";
-import { BG_COLOR_LIST } from "../utils/model";
-import { classNames, generateId, isH5, screenPercent } from "../utils/index";
+import { BG_COLOR_LIST } from "../../lib/model";
+import { classNames, generateId, isH5, screenPercent } from "../../lib";
 import ClLayout from "../layout";
 
 export default function ClSwiperAction(props: IProps) {

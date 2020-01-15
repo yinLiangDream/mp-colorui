@@ -1,10 +1,9 @@
 import { View } from "@tarojs/components";
 import Taro, { useState, useMemo } from "@tarojs/taro";
-import { classNames } from "../../components/utils";
-import { BG_COLOR_LIST } from "../utils/model";
+import { classNames, generateId } from "../../lib";
+import { BG_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/shopBar";
 import ClButton from "../button";
-import { generateId } from "../utils/index";
 
 import "./index.scss";
 

@@ -1,7 +1,7 @@
 import { View } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 import { IProps } from "../../../@types/flex";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 
 /**
  * flex 问题

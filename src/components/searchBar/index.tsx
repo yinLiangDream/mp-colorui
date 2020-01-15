@@ -1,10 +1,10 @@
 import { Button, Input, ScrollView, Text, View } from "@tarojs/components";
 import Taro, { Component, pxTransform } from "@tarojs/taro";
-import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/searchBar";
 import ClCard from "../card";
 import ClSearchResult from "./searchResult";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 
 interface IState {
   showSearch?: boolean;

@@ -1,9 +1,9 @@
 import { View } from "@tarojs/components";
 import Taro, { Component } from "@tarojs/taro";
-import { BG_COLOR_LIST } from "../utils/model";
-import { bgColorType } from "../utils/types";
+import { BG_COLOR_LIST } from "../../lib/model";
+import { bgColorType } from "../../lib/types";
 import { IProps } from "../../../@types/tag";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 
 interface IState {}
 

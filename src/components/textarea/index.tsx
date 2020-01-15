@@ -4,10 +4,10 @@ import { IProps } from "../../../@types/textarea";
 import ClFlex from "../../components/flex";
 import ClText from "../../components/text";
 import ClLayout from "../../components/layout";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 
 import "./index.scss";
-import { BG_COLOR_LIST } from "../../components/utils/model";
+import { BG_COLOR_LIST } from "../../lib/model";
 
 export default function ClTextarea(props: IProps) {
   const {

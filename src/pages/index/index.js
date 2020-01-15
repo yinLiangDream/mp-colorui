@@ -11,7 +11,6 @@ import {
   ClTabBar,
   ClText
 } from "../../index";
-import ClUtils from "../../components/utils";
 
 import UserCenter from "./components/userCenter";
 import * as menu from "../../constant/menu.js";
@@ -35,7 +34,6 @@ const navigatePackage = menu.navigateList.map(item => item.key);
 const viewPackage = menu.viewList.map(item => item.key);
 
 export default function Index() {
-  console.log(ClUtils);
   // 变量声明区
   const icons = ["emoji", "cascades", "we", "form", "apps", "taxi"];
   const tabs = [

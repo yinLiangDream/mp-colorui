@@ -1,8 +1,8 @@
 import Taro, { useContext } from "@tarojs/taro";
 import { View } from "@tarojs/components";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 import { IProps } from "../../../@types/form";
-import defaultRules from "../utils/rules";
+import defaultRules from "../../lib/rules";
 import context from "./context";
 
 type init = {

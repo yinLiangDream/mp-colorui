@@ -2,7 +2,7 @@ import { Checkbox, CheckboxGroup, Text, View } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 import { IProps } from "../../../@types/checkbox";
 import ClCheckboxH5 from "./h5";
-import { classNames, isWeApp } from "../utils";
+import { classNames, isWeApp } from "../../lib";
 
 export default function ClCheckbox(props: IProps) {
   const colorClassName = props.color || "green";
