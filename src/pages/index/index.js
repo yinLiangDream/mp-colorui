@@ -151,6 +151,7 @@ export default function Index() {
             shape="round"
             bgColor="white"
             fix
+            clear
             searchType="none"
             placeholder="找不到组件在哪？来试试搜索组件吧！"
             showResult
