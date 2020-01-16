@@ -24,8 +24,9 @@ import { ClSearchBar } from "mp-colorui";
 | rightButtonColor | _右侧按钮颜色_                  | string   | 参考文档 [默认色](/mp-colorui-doc/home/color)                  | _`white`_  |
 | rightTextColor   | _type 为 text 时，右侧文字颜色_ | string   | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色)    | _`black`_  |
 | showResult       | 是否显示搜索结果                | boolean  | -                                                              | `false`    |
-| showLoading      | 是否显示搜索结果加载页面        | Boolean  | -                                                              | `false`    |
+| showLoading      | 是否显示搜索结果加载页面        | boolean  | -                                                              | `false`    |
 | result           | 搜索结果列表                    | result[] | 参考下方 result 参数                                           | []         |
+| clear            | 是否显示清除按钮                | boolean  | -                                                              | `false`    |
 
 ### result 参数
 
@@ -36,15 +37,16 @@ import { ClSearchBar } from "mp-colorui";
 
 ### SearchBar 事件
 
-| 事件名称        | 说明                   | 参数返回                         |
-| --------------- | ---------------------- | -------------------------------- |
-| onIconClick     | _图标点击事件_         | index，_参数 index 为第几个图标_ |
-| onSearch        | _搜索事件_             | value，_参数 value 为输入的内容_ |
-| onInput         | _键盘输入事件_         | value，_参数 value 为输入的内容_ |
-| onTouchResult   | _搜索结果点击事件_     | index，_参数 index 为结果下标_   |
-| onFocus         | _搜索框聚焦事件_       | value, _参数 value 为输入的内容_ |
-| onBlur          | _搜索框失焦事件_       | value, _参数 value 为输入的内容_ |
-| onScrollToLower | 搜索结果滑动到底部触发 | -                                |
-| onScrollToUpper | 搜索结果滑动到顶部触发 | -                                |
+| 事件名称        | 说明                     | 参数返回                         |
+| --------------- | ------------------------ | -------------------------------- |
+| onIconClick     | _图标点击事件_           | index，_参数 index 为第几个图标_ |
+| onSearch        | _搜索事件_               | value，_参数 value 为输入的内容_ |
+| onInput         | _键盘输入事件_           | value，_参数 value 为输入的内容_ |
+| onTouchResult   | _搜索结果点击事件_       | index，_参数 index 为结果下标_   |
+| onFocus         | _搜索框聚焦事件_         | value, _参数 value 为输入的内容_ |
+| onBlur          | _搜索框失焦事件_         | value, _参数 value 为输入的内容_ |
+| onScrollToLower | _搜索结果滑动到底部触发_ | -                                |
+| onScrollToUpper | _搜索结果滑动到顶部触发_ | -                                |
+| onClear         | _清空搜索结果时触发_     | -                                |
 
 <FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/viewPackage/searchBar/index" />
