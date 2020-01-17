@@ -174,7 +174,6 @@ export default class IndexPage extends Taro.Component {
       tempfilter,
       showUpdate
     } = this.state;
-    console.log(active);
     const CardsComponent = menu.default.map((item, index) => (
       <View
         key={"key-" + item.key}
