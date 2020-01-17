@@ -5,6 +5,13 @@ module.exports = {
   defineConstants: {},
   weapp: {},
   h5: {
-    esnextModules: ['mp-colorui']
+    publicPath: "/mp-colorui-h5-demo/",
+    router: {
+      basename: "/mp-colorui-h5-demo/"
+    },
+    webpackChain(chain) {
+      chain.performance.set("hints", false);
+    },
+    esnextModules: ["mp-colorui"]
   }
 };
