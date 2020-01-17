@@ -1,6 +1,6 @@
 import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
 import { View } from "@tarojs/components";
-import utils, { classNames, generateId } from "../utils/index";
+import utils, { classNames, generateId } from "../../lib/index";
 import { IProps } from "../../../@types/floatButton";
 import ClIcon from "../icon";
 

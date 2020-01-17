@@ -1,7 +1,7 @@
 import { Text } from "@tarojs/components";
 import Taro, { pxTransform } from "@tarojs/taro";
-import { classNames, isNumber } from "../utils";
-import { pxMap } from "../utils/model";
+import { classNames, isNumber } from "../../lib";
+import { pxMap } from "../../lib/model";
 import { IProps } from "../../../@types/icon";
 
 export default function ClIcon(props: IProps) {

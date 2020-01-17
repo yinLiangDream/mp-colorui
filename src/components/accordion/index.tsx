@@ -4,8 +4,7 @@ import classNames from "classnames";
 
 import { IProps } from "../../../@types/accordion";
 import ClIcon from "../icon";
-import { screenPercent } from "../utils";
-
+import { screenPercent } from "../../lib";
 export default function ClAccordion(props: IProps) {
   const { open, title, animation, onClick, card } = props;
   const [show, setShow] = useState(open);

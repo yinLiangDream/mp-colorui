@@ -1,10 +1,11 @@
 import { Button, Input, ScrollView, Text, View } from "@tarojs/components";
 import Taro, { Component, pxTransform } from "@tarojs/taro";
-import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../utils/model";
+import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/searchBar";
 import ClCard from "../card";
 import ClSearchResult from "./searchResult";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
+import ClIcon from "../icon";
 
 interface IState {
   showSearch?: boolean;
@@ -29,6 +30,8 @@ export default class ClSearchBar extends Component<IProps, IState> {
     showResult: false,
     result: [],
     autoFocus: false,
+    clear: false,
+    onClear: () => {},
     onTouchResult: () => {},
     onScrollToUpper: () => {},
     onScrollToLower: () => {},
@@ -77,17 +80,35 @@ export default class ClSearchBar extends Component<IProps, IState> {
   }
 
   render(): any {
-    const bgColorClassName = this.props.bgColor
-      ? BG_COLOR_LIST[this.props.bgColor]
+    const {
+      bgColor,
+      rightButtonColor,
+      rightTextColor,
+      leftIcons,
+      shape,
+      placeholder,
+      clear,
+      fix,
+      className,
+      style,
+      searchType,
+      showResult,
+      result,
+      showLoading,
+      onScrollToLower,
+      onScrollToUpper,
+      onTouchResult
+    } = this.props;
+    const { showSearch, value } = this.state;
+    const bgColorClassName = bgColor ? BG_COLOR_LIST[bgColor] : "";
+    const buttonColorClassName = rightButtonColor
+      ? BG_COLOR_LIST[rightButtonColor]
       : "";
-    const buttonColorClassName = this.props.rightButtonColor
-      ? BG_COLOR_LIST[this.props.rightButtonColor]
+    const textColorClassName = rightTextColor
+      ? TEXT_COLOR_LIST[rightTextColor]
       : "";
-    const textColorClassName = this.props.rightTextColor
-      ? TEXT_COLOR_LIST[this.props.rightTextColor]
-      : "";
-    const leftIconComponent = this.props.leftIcons
-      ? this.props.leftIcons.map((item, index) => (
+    const leftIconComponent = leftIcons
+      ? leftIcons.map((item, index) => (
           <View
             key={"key-" + index}
             className={`cu-avatar round cuIcon-${item}`}
@@ -96,27 +117,50 @@ export default class ClSearchBar extends Component<IProps, IState> {
         ))
       : "";
     const searchComponent = (
-      <View className={`search-form ${this.props.shape}`}>
+      <View className={`search-form ${shape}`}>
         <Text className="cuIcon-search" />
         <Input
-          placeholder={this.props.placeholder}
+          placeholder={placeholder}
           confirmType="search"
           type="text"
           onFocus={this.onFocus}
           onBlur={this.onBlur}
-          focus={this.state.showSearch}
+          focus={showSearch}
           adjustPosition
           autoFocus={this.props.autoFocus}
-          value={this.state.value}
+          value={value}
           onConfirm={this.onSearch.bind(this)}
           onInput={this.onInput.bind(this)}
         />
+        {clear && value ? (
+          <View
+            onClick={e => {
+              const { onClear } = this.props;
+              e.stopPropagation();
+              this.setState({
+                value: ""
+              });
+              onClear && onClear();
+            }}
+          >
+            <ClIcon
+              iconName="close"
+              size={32}
+              style={{
+                display: "flex",
+                alignItems: "center"
+              }}
+            />
+          </View>
+        ) : (
+          ""
+        )}
       </View>
     );
     const buttonComponent = (
       <View className="action" onClick={ClSearchBar.onPreventProp.bind(this)}>
         <Button
-          className={`cu-btn shadow-blur ${this.props.shape} ${buttonColorClassName} ${textColorClassName}`}
+          className={`cu-btn shadow-blur ${shape} ${buttonColorClassName} ${textColorClassName}`}
           onClick={this.onSearch.bind(this)}
         >
           搜索
@@ -136,26 +180,21 @@ export default class ClSearchBar extends Component<IProps, IState> {
     return (
       <View
         style={
-          this.props.fix
-            ? { position: "fixed", top: "0", width: "100vw", zIndex: 10 }
-            : ""
+          fix ? { position: "fixed", top: "0", width: "100vw", zIndex: 10 } : ""
         }
       >
         <View
-          className={classNames(
-            `cu-bar ${bgColorClassName}`,
-            this.props.className
-          )}
-          style={Object.assign({ position: "relative" }, this.props.style)}
+          className={classNames(`cu-bar ${bgColorClassName}`, className)}
+          style={Object.assign({ position: "relative" }, style)}
         >
           {leftIconComponent}
           {searchComponent}
-          {this.props.searchType === "text"
+          {searchType === "text"
             ? textComponent
-            : this.props.searchType === "none"
+            : searchType === "none"
             ? ""
             : buttonComponent}
-          {this.props.showResult ? (
+          {showResult ? (
             <View
               style={{
                 position: "absolute",
@@ -164,27 +203,23 @@ export default class ClSearchBar extends Component<IProps, IState> {
                 top: pxTransform(100)
               }}
             >
-              {(this.props.result && this.props.result.length) ||
-              this.props.showLoading ? (
-                <ClCard shadow={false} bgColor={this.props.bgColor}>
+              {(result && result.length) || showLoading ? (
+                <ClCard shadow={false} bgColor={bgColor}>
                   <ScrollView
                     scrollY
                     style={{ maxHeight: "300px" }}
                     onScrollToLower={() => {
-                      this.props.onScrollToLower &&
-                        this.props.onScrollToLower();
+                      onScrollToLower && onScrollToLower();
                     }}
                     onScrollToUpper={() => {
-                      this.props.onScrollToUpper &&
-                        this.props.onScrollToUpper();
+                      onScrollToUpper && onScrollToUpper();
                     }}
                   >
                     <ClSearchResult
-                      result={this.props.result}
-                      showLoading={this.props.showLoading}
+                      result={result}
+                      showLoading={showLoading}
                       onTouchResult={index => {
-                        this.props.onTouchResult &&
-                          this.props.onTouchResult(index);
+                        onTouchResult && onTouchResult(index);
                       }}
                     />
                   </ScrollView>

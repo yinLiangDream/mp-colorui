@@ -1,7 +1,7 @@
 import Taro, { useState, useEffect } from "@tarojs/taro";
 import { Text, View } from "@tarojs/components";
 import { TList } from "../../../../@types/radio";
-import { generateId } from "../../../components/utils";
+import { generateId } from "../../../lib";
 
 interface IProps {
   list: TList;

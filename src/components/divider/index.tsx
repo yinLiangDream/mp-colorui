@@ -1,9 +1,9 @@
 import { View } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 import { IProps } from "../../../@types/divider";
-import { TEXT_COLOR_LIST, SIZE } from "../utils/model";
+import { TEXT_COLOR_LIST, SIZE } from "../../lib/model";
 import ClLayout from "../layout";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 
 export default function ClDivider(props: IProps) {
   const { color, size } = props;

@@ -4,7 +4,7 @@ import { IProps } from "../../../@types/curtain";
 import ClIcon from "../icon";
 
 import "./index.scss";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 
 export default function ClCurtain(props: IProps) {
   const { show, closeWithShadow, closeBtnPosition } = props;

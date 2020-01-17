@@ -7,7 +7,7 @@ import {
   getRectNumber,
   isAliPay,
   classNames
-} from "../utils";
+} from "../../lib";
 
 import "./index.scss";
 
@@ -98,26 +98,28 @@ export default function ClVerticalTab(props: IProps) {
       {item.name}
     </View>
   ));
-  const changeTop = async (id: any) => {
+  const changeTop = (id: any) => {
     const query = Taro.createSelectorQuery();
     const view = query.select("#" + id);
     const topView = query.select("#" + tabs[0].id);
     let top = 0;
-    top = await new Promise(resolve => {
+    new Promise(resolve => {
       topView.boundingClientRect().exec(res => {
         const data = res[0];
         resolve(data.top);
       });
-    });
-    await new Promise(resolve => {
-      view.boundingClientRect().exec(res => {
-        const data = res[getRectNumber()];
-        setTimeout(() => {
-          const endTop = Math.abs(top - data.top);
-          setScrollContent(endTop);
-          scrollTab = false;
-          resolve();
-        }, 300);
+    }).then((res: number) => {
+      top = res;
+      new Promise(resolve => {
+        view.boundingClientRect().exec(res => {
+          const data = res[getRectNumber()];
+          setTimeout(() => {
+            const endTop = Math.abs(top - data.top);
+            setScrollContent(endTop);
+            scrollTab = false;
+            resolve();
+          }, 300);
+        });
       });
     });
   };

@@ -1,7 +1,7 @@
 import { Text, View } from "@tarojs/components";
 import Taro, { Component } from "@tarojs/taro";
-import { classNames } from "../../components/utils";
-import { TEXT_COLOR_LIST } from "../utils/model";
+import { classNames } from "../../lib";
+import { TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/steps";
 
 interface IState {}

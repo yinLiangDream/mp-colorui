@@ -45,5 +45,3 @@ import { ClInput } from "mp-colorui";
 | onBlur        | _失去焦点时触发_             | value      |
 | onFocus       | _获得焦点时触发_             | value      |
 | onTouchResult | 点击补全项时触发             | value      |
-
-<FloatPhone url="https://yinliangdream.github.io/mp-colorui-h5-demo/#/package/formPackage/input/index" />

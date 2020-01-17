@@ -1,7 +1,7 @@
 import { Text, View, Image } from "@tarojs/components";
 import Taro, { pxTransform, useEffect, useState } from "@tarojs/taro";
-import { isNumber, generateId, classNames } from "../utils";
-import { BG_COLOR_LIST } from "../utils/model";
+import { isNumber, generateId, classNames } from "../../lib";
+import { BG_COLOR_LIST } from "../../lib/model";
 import { IProps, THeaderArray } from "../../../@types/avatar";
 
 function ClAvatar(props: IProps) {

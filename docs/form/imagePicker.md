@@ -21,10 +21,11 @@ import { ClImagePicker } from "mp-colorui";
 
 ### imgList
 
-| 参数   | 说明         | 类型   | 可选值                            | 默认值 |
-| ------ | ------------ | ------ | --------------------------------- | ------ |
-| url    | 图片 url     | string | -                                 | -      |
-| status | 图片上传状态 | string | `none`,`loading`,`success`,`fail` | `none` |
+| 参数     | 说明         | 类型    | 可选值                            | 默认值  |
+| -------- | ------------ | ------- | --------------------------------- | ------- |
+| url      | 图片 url     | string  | -                                 | -       |
+| status   | 图片上传状态 | string  | `none`,`loading`,`success`,`fail` | `none`  |
+| disabled | 是否禁止删除 | boolean | -                                 | `false` |
 
 ### chooseImgObj
 

@@ -3,7 +3,7 @@ import Taro, { useEffect, useState } from "@tarojs/taro";
 import H5Radio from "./h5";
 import ListRadio from "./components/ListRadio";
 import { IProps } from "../../../@types/radio";
-import { classNames, isWeApp } from "../utils";
+import { classNames, isWeApp } from "../../lib";
 
 export default function ClRadio(props: IProps) {
   const type = props.type || "normal";

@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
 import { View, Text, ScrollView } from "@tarojs/components";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 import { IProps } from "../../../@types/screenDrawer";
 
 export default function ClScreenDrawer(props: IProps) {

@@ -1,10 +1,10 @@
 import { View, Text } from "@tarojs/components";
 import Taro, { pxTransform } from "@tarojs/taro";
-import { BG_COLOR_LIST, pxMap, SIZE, TEXT_COLOR_LIST } from "../utils/model";
+import { BG_COLOR_LIST, pxMap, SIZE, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/text";
 
 import "./index.scss";
-import { classNames, isNumber, screenPercent } from "../utils/index";
+import { classNames, isNumber, screenPercent } from "../../lib";
 
 const SPECIAL_CLASS = {
   firstUpper: "text-Abc",

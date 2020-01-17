@@ -8,7 +8,7 @@ import ClText from "../text";
 import ClIcon from "../icon";
 
 import "./index.scss";
-import { classNames } from "../../components/utils";
+import { classNames } from "../../lib";
 
 let timer;
 export default function ClMessage(props: IProps) {
@@ -26,31 +26,39 @@ export default function ClMessage(props: IProps) {
     info: "light-grey",
     custom: bgColor
   };
-  const calculateHeight = async () => {
+  const calculateHeight = () => {
     const view = Taro.createSelectorQuery().in(this.$scope);
     const query = view.select("#content");
-    return await new Promise(resolve => {
+    return new Promise(resolve => {
       query.boundingClientRect().exec(res => {
         const data = res[0];
         resolve(data.height);
       });
     });
   };
-  const clickClose = async () => {
-    const height: any = await calculateHeight();
-    clearTimeout(timer);
-    timer = null;
-    setContentHeight(height);
-    setShowMessage(false);
-    onClose && onClose();
+  const clickClose = () => {
+    new Promise(resolve => {
+      resolve(calculateHeight());
+    }).then((res: number) => {
+      const height = res;
+      clearTimeout(timer);
+      timer = null;
+      setContentHeight(height);
+      setShowMessage(false);
+      onClose && onClose();
+    });
   };
   useEffect(() => {
-    (async function() {
+    (function() {
       if (!showMessage) {
-        const height: any = await calculateHeight();
-        tempHeight = height;
-        setContentHeight(tempHeight);
-        setShowMessage(false);
+        new Promise(resolve => {
+          resolve(calculateHeight());
+        }).then((res: number) => {
+          const height = res;
+          tempHeight = height;
+          setContentHeight(tempHeight);
+          setShowMessage(false);
+        });
       } else {
         tempHeight = 0;
         setTempType(type);

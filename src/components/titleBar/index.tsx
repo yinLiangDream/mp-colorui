@@ -1,7 +1,7 @@
 import { Text, View } from "@tarojs/components";
 import Taro, { Component, pxTransform } from "@tarojs/taro";
-import { classNames } from "../../components/utils";
-import { BG_COLOR_LIST } from "../utils/model";
+import { classNames } from "../../lib";
+import { BG_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/titleBar";
 
 interface IState {}

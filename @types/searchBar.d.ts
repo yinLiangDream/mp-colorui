@@ -58,6 +58,14 @@ export interface IProps extends BaseComponent {
    */
   autoFocus?: boolean;
   /**
+   * 清空按钮
+   */
+  clear?: boolean;
+  /**
+   * 清除时触发
+   */
+  onClear?: () => void;
+  /**
    * 图标点击事件，参数 index 为第几个图标
    */
   onIconClick?: (index: number) => void;
@@ -109,7 +117,7 @@ export interface IProps extends BaseComponent {
   onTouchResult?: (index: number) => void;
 }
 
-export interface SearchBarProps extends IProps {}
+export interface SearchBarProps extends IProps { }
 declare const SearchBar: ComponentClass<SearchBarProps>;
 
 export default SearchBar;

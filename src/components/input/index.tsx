@@ -5,7 +5,7 @@ import ClIcon from "../icon/index";
 import { IProps } from "../../../@types/input";
 
 import "./index.scss";
-import { classNames, screenPercent } from "../../components/utils/index";
+import { classNames, screenPercent } from "../../lib";
 import ClSearchResult from "../searchBar/searchResult/index";
 import ClCard from "../card";
 

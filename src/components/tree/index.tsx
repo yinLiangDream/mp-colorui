@@ -5,7 +5,7 @@ import ClCheckbox from "../checkbox";
 import ClIcon from "../icon";
 import ClText from "../text";
 import ClFlex from "../flex";
-import { generateId } from "../../components/utils";
+import { generateId } from "../../lib";
 
 import "./index.scss";
 

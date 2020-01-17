@@ -1,11 +1,11 @@
 import { View } from "@tarojs/components";
 import Taro, { useState, useEffect } from "@tarojs/taro";
 import { IProps } from "../../../../@types/tip";
-import { screenPercent } from "../../utils";
+import { screenPercent } from "../../../lib";
+import ClText from "../../text";
 
 import "./index.scss";
-import { BG_COLOR_LIST } from "../../utils/model";
-import ClText from "../../text";
+import { BG_COLOR_LIST } from "../../../lib/model";
 
 export default function ClTip_H5(props: IProps) {
   const [showTip, setShowTip] = useState(props.show);

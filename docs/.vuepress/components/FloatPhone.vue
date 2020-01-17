@@ -50,12 +50,13 @@ export default {
       this.show = !this.show;
     }
   },
-  mounted() {
-    const QRCode = require("qrcode");
-    setTimeout(() => {
-      const id = document.getElementById("qrcode");
-      QRCode.toCanvas(id, this.url);
-    }, 100);
+  watch: {
+    url(value) {
+      if (value) {
+        const id = document.getElementById("qrcode");
+        QRCode.toCanvas(id, this.url);
+      }
+    }
   }
 };
 </script>
