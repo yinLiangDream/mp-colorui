@@ -47,6 +47,27 @@ const defaultTabs = [
   }
 ];
 
+const imgTabs = [
+  {
+    badge: true,
+    img:
+      "https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/list_head/423.jpg",
+    title: "首页"
+  },
+  {
+    badge: false,
+    img:
+      "https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/list_head/422.jpg",
+    title: "个人中心"
+  },
+  {
+    badge: 99,
+    img:
+      "https://mp-yys-1255362963.cos.ap-chengdu.myqcloud.com/list_head/421.jpg",
+    title: "设置"
+  }
+];
+
 const actionTabs = JSON.parse(JSON.stringify(defaultTabs)).map(
   (item, index) => {
     index === 0 && (item.action = true);
@@ -105,6 +126,16 @@ export default function TabBar() {
           activeColor="black"
           tabs={actionTabs}
         />
+      </ClCard>
+
+      <ClTitleBar
+        title="图片"
+        textColor="black"
+        type="icon"
+        subTitle="action"
+      />
+      <ClCard>
+        <ClTabBar active={1} tabs={imgTabs} />
       </ClCard>
 
       <ClLayout

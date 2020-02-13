@@ -1,4 +1,4 @@
-import { View } from "@tarojs/components";
+import { View, Image } from "@tarojs/components";
 import Taro, { useState, useEffect } from "@tarojs/taro";
 import { classNames, isNumber } from "../../lib";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
@@ -33,10 +33,11 @@ export default function ClTabBar(props: IProps) {
       }`}
     >
       <View
-        className={`${
-          item.img ? "cuIcon-cu-image" : item.icon ? "cuIcon-" + item.icon : ""
-        }`}
+        className={classNames([
+          { "cuIcon-cu-image": item.img, [`cuIcon-${item.icon}`]: item.icon }
+        ])}
       >
+        {item.img ? <Image mode="aspectFit" src={item.img} /> : ""}
         {item.badge !== false ? (
           <View className="cu-tag badge">
             {isNumber(item.badge) ? item.badge : ""}
@@ -51,7 +52,13 @@ export default function ClTabBar(props: IProps) {
   return (
     <View
       className={classNames(
-        `cu-bar tabbar ${props.safeArea ? "safe-area" : ""} ${colorClassName}`,
+        [
+          "cu-bar tabbar",
+          {
+            "safe-area": props.safeArea
+          },
+          colorClassName
+        ],
         props.className
       )}
       style={Object.assign(
