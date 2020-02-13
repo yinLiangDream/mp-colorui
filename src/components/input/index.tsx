@@ -107,7 +107,7 @@ function ClInput(props: IProps) {
   };
   if (props.type !== "password") {
     if (props.type !== normalType) {
-      setNormalType(props.type === "digit" ? "text" : props.type);
+      setNormalType(props.type);
     }
   }
   const iconComponent = props.icon ? (
