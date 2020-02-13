@@ -36,6 +36,7 @@ export default function ClCard(props: IProps) {
         ) : (
           ""
         )}
+        {this.props.renderTitle}
         <View className="padding">{this.props.children}</View>
       </View>
     </View>
