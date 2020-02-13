@@ -20,7 +20,7 @@ class App extends Component {
       "pages/index/index",
       "pages/update/index"
     ],
-    subpackages: [
+    subPackages: [
       {
         root: "package/basePackage",
         pages: [

@@ -1,8 +1,10 @@
 import { Picker, View } from "@tarojs/components";
 import Taro, { useState, useMemo } from "@tarojs/taro";
-import { classNames, getNowDate } from "../../lib";
+import { classNames, getNowDate, isAliPay } from "../../lib";
 import { IProps } from "../../../@types/select";
 import { getAreaData } from "../../lib/area";
+
+import AlipayMutiSelect from "./components/alipay/mutiSelector";
 
 function ClSelect(props: IProps) {
   const selector = {
@@ -252,6 +254,10 @@ function ClSelect(props: IProps) {
       <View className="picker">{mutiSelected}</View>
     </Picker>
   );
+
+  // alipay 多选
+  const alipayMutiSelectorComponent = <AlipayMutiSelect {...props} />;
+
   // 时间选择组件
   const timeSelectorComponent = (
     <Picker
@@ -308,7 +314,10 @@ function ClSelect(props: IProps) {
     >
       <View className="title">{title || ""}</View>
       {props.mode === "selector" ? selectorComponent : ""}
-      {props.mode === "multiSelector" ? mutiSelectorComponent : ""}
+      {props.mode === "multiSelector" && !isAliPay ? mutiSelectorComponent : ""}
+      {props.mode === "multiSelector" && isAliPay
+        ? alipayMutiSelectorComponent
+        : ""}
       {props.mode === "time" ? timeSelectorComponent : ""}
       {props.mode === "date" ? dateSelectorComponent : ""}
       {props.mode === "region" ? regionSelectorComponent : ""}
