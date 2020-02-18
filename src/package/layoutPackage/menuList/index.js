@@ -13,7 +13,8 @@ const typeMenu = [
 const arrowMenu = [
   {
     title: "我有箭头",
-    arrow: true
+    arrow: true,
+    value: "我是右侧文本"
   },
   {
     title: "我有图标",

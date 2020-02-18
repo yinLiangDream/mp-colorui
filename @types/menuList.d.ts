@@ -39,6 +39,10 @@ export type TTist = {
    * 图片地址
    */
   imgUrl?: string;
+  /**
+   * 右侧显示文本
+   */
+  value?: string;
 }[];
 
 export interface IProps extends BaseComponent {

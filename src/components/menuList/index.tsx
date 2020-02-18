@@ -7,7 +7,6 @@ import { classNames } from "../../lib";
 
 export default function ClMenuList(props: IProps) {
   const shortLineClassName = props.shortBorder ? "sm-border" : "";
-  const arrowClassName = (arrow: boolean) => (arrow ? "arrow" : "");
   const cardClassName = props.card ? "card-menu" : "";
   const list = props.list || [];
 
@@ -17,33 +16,40 @@ export default function ClMenuList(props: IProps) {
   const itemComponent = list.map((item, index) => (
     <View
       key={item.title}
-      className={`cu-item ${arrowClassName(!!item.arrow)} ${
-        item.disabled ? "disabled" : ""
-      }`}
+      className={classNames([
+        "cu-item",
+        {
+          arrow: !!item.arrow,
+          disabled: item.disabled
+        }
+      ])}
       onClick={() => {
         !item.disabled && click(index);
       }}
     >
-      <View className="content flex align-center">
-        {item.icon && item.icon.iconName ? (
-          <View className="margin-right-xs flex align-center">
-            <ClIcon {...item.icon} />
-          </View>
-        ) : (
-          ""
-        )}
-        {item.imgUrl ? (
-          <Image
-            src={item.imgUrl}
-            className="png margin-right-xs"
-            mode="aspectFit"
-          />
-        ) : (
-          ""
-        )}
-        <Text className={`${TEXT_COLOR_LIST[item.titleColor || "black"]}`}>
-          {item.title}
-        </Text>
+      <View className={"content flex justify-between"}>
+        <View className="content flex align-center">
+          {item.icon && item.icon.iconName ? (
+            <View className="margin-right-xs flex align-center">
+              <ClIcon {...item.icon} />
+            </View>
+          ) : (
+            ""
+          )}
+          {item.imgUrl ? (
+            <Image
+              src={item.imgUrl}
+              className="png margin-right-xs"
+              mode="aspectFit"
+            />
+          ) : (
+            ""
+          )}
+          <Text className={`${TEXT_COLOR_LIST[item.titleColor || "black"]}`}>
+            {item.title}
+          </Text>
+        </View>
+        <View className={"flex align-center"}>{item.value}</View>
       </View>
     </View>
   ));

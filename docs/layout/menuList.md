@@ -29,6 +29,7 @@ import { ClMenuList } from "mp-colorui";
 | title      | _标题_         | string  | -                                                                | -         |
 | imgUrl     | _图片地址_     | string  | -                                                                | -         |
 | disabled   | _禁止点击_     | boolean | -                                                                | _`false`_ |
+| value      | _右侧文字_     | string  | -                                                                | -         |
 
 ### MenuList 事件
 
