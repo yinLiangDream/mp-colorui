@@ -53,6 +53,53 @@ input.weui-check {
     transition: all 0.3s ease-in-out 0s;
     z-index: 9;
   }
+  &.more::before {
+    font-family: "cuIcon";
+    content: "\e768";
+    position: absolute;
+    color: $white !important;
+    top: 50%;
+    margin-top: -16px;
+    right: 6px;
+    font-size: 32px;
+    line-height: 32px;
+    pointer-events: none;
+    transform: scale(1, 1);
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 9;
+  }
+  &.disabled {
+    &.more::before {
+      font-family: "cuIcon";
+      content: "\e768";
+      position: absolute;
+      color: $white !important;
+      top: 50%;
+      margin-top: -16px;
+      right: 6px;
+      font-size: 32px;
+      line-height: 32px;
+      pointer-events: none;
+      transform: scale(1, 1);
+      transition: all 0.3s ease-in-out 0s;
+      z-index: 9;
+    }
+    &::before {
+      font-family: "cuIcon";
+      content: "\e645";
+      position: absolute;
+      color: $white !important;
+      top: 50%;
+      margin-top: -16px;
+      right: 6px;
+      font-size: 32px;
+      line-height: 32px;
+      pointer-events: none;
+      transform: scale(1, 1);
+      transition: all 0.3s ease-in-out 0s;
+      z-index: 9;
+    }
+  }
   &.round {
     border-radius: 200px;
   }
@@ -217,10 +264,22 @@ input.weui-check {
   border-color: $red !important;
 }
 
+.h5-switch.red.checked.disabled .h5-switch-input.disabled,
+.h5-checkbox.red .disabled.checked.h5-checkbox-input,
+.h5-radio.red.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.orange.checked .h5-switch-input,
 .h5-checkbox.orange .checked.h5-checkbox-input,
 .h5-radio.orange.checked .h5-radio-input {
   border-color: $orange !important;
+}
+
+.h5-switch.orange.checked.disabled .h5-switch-input,
+.h5-checkbox.orange .disabled.checked.h5-checkbox-input,
+.h5-radio.orange.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 .h5-switch.yellow.checked .h5-switch-input,
@@ -229,10 +288,22 @@ input.weui-check {
   border-color: $yellow !important;
 }
 
+.h5-switch.yellow.checked.disabled .h5-switch-input,
+.h5-checkbox.yellow .disabled.checked.h5-checkbox-input,
+.h5-radio.yellow.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.olive.checked .h5-switch-input,
 .h5-checkbox.olive .checked.h5-checkbox-input,
 .h5-radio.olive.checked .h5-radio-input {
   border-color: $olive !important;
+}
+
+.h5-switch.olive.checked.disabled .h5-switch-input,
+.h5-checkbox.olive .disabled.checked.h5-checkbox-input,
+.h5-radio.olive.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 .h5-switch.green.checked .h5-switch-input,
@@ -242,10 +313,23 @@ input.weui-check {
   border-color: $green !important;
 }
 
+.h5-switch.green.checked.disabled .h5-switch-input,
+.h5-checkbox.green .disabled.checked.h5-checkbox-input,
+.h5-checkbox .disabled.checked.h5-checkbox-input,
+.h5-radio.green.checked.disabled .h5-radio-wrapper .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.cyan.checked .h5-switch-input,
 .h5-checkbox.cyan .checked.h5-checkbox-input,
 .h5-radio.cyan.checked .h5-radio-input {
   border-color: $cyan !important;
+}
+
+.h5-switch.cyan.checked.disabled .h5-switch-input,
+.h5-checkbox.cyan .disabled.checked.h5-checkbox-input,
+.h5-radio.cyan.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 .h5-switch.blue.checked .h5-switch-input,
@@ -254,10 +338,22 @@ input.weui-check {
   border-color: $blue !important;
 }
 
+.h5-switch.blue.checked.disabled .h5-switch-input,
+.h5-checkbox.blue .disabled.checked.h5-checkbox-input,
+.h5-radio.blue.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.purple.checked .h5-switch-input,
 .h5-checkbox.purple .checked.h5-checkbox-input,
 .h5-radio.purple.checked .h5-radio-input {
   border-color: $purple !important;
+}
+
+.h5-switch.purple.checked.disabled .h5-switch-input,
+.h5-checkbox.purple .disabled.checked.h5-checkbox-input,
+.h5-radio.purple.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 .h5-switch.mauve.checked .h5-switch-input,
@@ -266,10 +362,22 @@ input.weui-check {
   border-color: $mauve !important;
 }
 
+.h5-switch.mauve.checked.disabled .h5-switch-input,
+.h5-checkbox.mauve .disabled.checked.h5-checkbox-input,
+.h5-radio.mauve.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.pink.checked .h5-switch-input,
 .h5-checkbox.pink .checked.h5-checkbox-input,
 .h5-radio.pink.checked .h5-radio-input {
   border-color: $pink !important;
+}
+
+.h5-switch.pink.checked.disabled .h5-switch-input,
+.h5-checkbox.pink .disabled.checked.h5-checkbox-input,
+.h5-radio.pink.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 .h5-switch.brown.checked .h5-switch-input,
@@ -278,16 +386,34 @@ input.weui-check {
   border-color: $brown !important;
 }
 
+.h5-switch.brown.checked.disabled .h5-switch-input,
+.h5-checkbox.brown .disabled.checked.h5-checkbox-input,
+.h5-radio.brown.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.grey.checked .h5-switch-input,
 .h5-checkbox.grey .checked.h5-checkbox-input,
 .h5-radio.grey.checked .h5-radio-input {
   border-color: $grey !important;
 }
 
+.h5-switch.grey.checked.disabled .h5-switch-input,
+.h5-checkbox.grey .disabled.checked.h5-checkbox-input,
+.h5-radio.grey.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.gray.checked .h5-switch-input,
 .h5-checkbox.gray .checked.h5-checkbox-input,
 .h5-radio.gray.checked .h5-radio-input {
-  border-color: $grey !important;
+  border-color: $gray !important;
+}
+
+.h5-switch.gray.checked.disabled .h5-switch-input,
+.h5-checkbox.gray .disabled.checked.h5-checkbox-input,
+.h5-radio.gray.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
 }
 
 .h5-switch.black.checked .h5-switch-input,
@@ -296,16 +422,35 @@ input.weui-check {
   border-color: $black !important;
 }
 
+.h5-switch.black.checked.disabled .h5-switch-input,
+.h5-checkbox.black .disabled.checked.h5-checkbox-input,
+.h5-radio.black.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.white.checked .h5-switch-input,
 .h5-checkbox.white .checked.h5-checkbox-input,
 .h5-radio.white.checked .h5-radio-input {
   border-color: $white !important;
 }
 
+.h5-switch.white.checked.disabled .h5-switch-input,
+.h5-checkbox.white .disabled.checked.h5-checkbox-input,
+.h5-radio.white.checked.disabled .h5-radio-input {
+  border-color: rgb(209, 209, 209) !important;
+}
+
 .h5-switch.red.checked .h5-switch-input,
 .h5-checkbox.red .checked.h5-checkbox-input,
 .h5-radio.red.checked .h5-radio-input {
   background-color: $red !important;
+  color: $white !important;
+}
+
+.h5-switch.red.checked.disabled .h5-switch-input,
+.h5-checkbox.red .disabled.checked.h5-checkbox-input,
+.h5-radio.red.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -316,10 +461,24 @@ input.weui-check {
   color: $white !important;
 }
 
+.h5-switch.orange.checked.disabled .h5-switch-input,
+.h5-checkbox.orange .disabled.checked.h5-checkbox-input,
+.h5-radio.orange.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 .h5-switch.yellow.checked .h5-switch-input,
 .h5-checkbox.yellow .checked.h5-checkbox-input,
 .h5-radio.yellow.checked .h5-radio-input {
   background-color: $yellow !important;
+  color: $black !important;
+}
+
+.h5-switch.yellow.checked.disabled .h5-switch-input,
+.h5-checkbox.yellow .disabled.checked.h5-checkbox-input,
+.h5-radio.yellow.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $black !important;
 }
 
@@ -330,13 +489,28 @@ input.weui-check {
   color: $white !important;
 }
 
+.h5-switch.olive.checked.disabled .h5-switch-input,
+.h5-checkbox.olive .disabled.checked.h5-checkbox-input,
+.h5-radio.olive.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 .h5-switch.green.checked .h5-switch-input,
-switch.checked .h5-switch-input,
 .h5-checkbox.green .checked.h5-checkbox-input,
 checkbox .checked.h5-checkbox-input,
 .h5-radio.green.checked .h5-radio-input,
 radio.checked .h5-radio-input {
   background-color: $green !important;
+  color: $white !important;
+}
+
+.h5-switch.green.checked.disabled .h5-switch-input,
+.h5-checkbox.green .disabled.checked.h5-checkbox-input,
+checkbox .disabled.checked.h5-checkbox-input,
+.h5-radio.green.checked.disabled .h5-radio-input,
+radio.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -347,10 +521,24 @@ radio.checked .h5-radio-input {
   color: $white !important;
 }
 
+.h5-switch.cyan.checked.disabled .h5-switch-input,
+.h5-checkbox.cyan .disabled.checked.h5-checkbox-input,
+.h5-radio.cyan.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 .h5-switch.blue.checked .h5-switch-input,
 .h5-checkbox.blue .checked.h5-checkbox-input,
 .h5-radio.blue.checked .h5-radio-input {
   background-color: $blue !important;
+  color: $white !important;
+}
+
+.h5-switch.blue.checked.disabled .h5-switch-input,
+.h5-checkbox.blue .disabled.checked.h5-checkbox-input,
+.h5-radio.blue.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -361,10 +549,24 @@ radio.checked .h5-radio-input {
   color: $white !important;
 }
 
+.h5-switch.purple.checked.disabled .h5-switch-input,
+.h5-checkbox.purple .disabled.checked.h5-checkbox-input,
+.h5-radio.purple.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 .h5-switch.mauve.checked .h5-switch-input,
 .h5-checkbox.mauve .checked.h5-checkbox-input,
 .h5-radio.mauve.checked .h5-radio-input {
   background-color: $mauve !important;
+  color: $white !important;
+}
+
+.h5-switch.mauve.checked.disabled .h5-switch-input,
+.h5-checkbox.mauve .disabled.checked.h5-checkbox-input,
+.h5-radio.mauve.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -375,10 +577,24 @@ radio.checked .h5-radio-input {
   color: $white !important;
 }
 
+.h5-switch.pink.checked.disabled .h5-switch-input,
+.h5-checkbox.pink .disabled.checked.h5-checkbox-input,
+.h5-radio.pink.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 .h5-switch.brown.checked .h5-switch-input,
 .h5-checkbox.brown .checked.h5-checkbox-input,
 .h5-radio.brown.checked .h5-radio-input {
   background-color: $brown !important;
+  color: $white !important;
+}
+
+.h5-switch.brown.checked.disabled .h5-switch-input,
+.h5-checkbox.brown .disabled.checked.h5-checkbox-input,
+.h5-radio.brown.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $white !important;
 }
 
@@ -389,10 +605,24 @@ radio.checked .h5-radio-input {
   color: $white !important;
 }
 
+.h5-switch.grey.checked.disabled .h5-switch-input,
+.h5-checkbox.grey .disabled.checked.h5-checkbox-input,
+.h5-radio.grey.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 .h5-switch.gray.checked .h5-switch-input,
 .h5-checkbox.gray .checked.h5-checkbox-input,
 .h5-radio.gray.checked .h5-radio-input {
   background-color: #f0f0f0 !important;
+  color: $black !important;
+}
+
+.h5-switch.gray.checked.disabled .h5-switch-input,
+.h5-checkbox.gray .disabled.checked.h5-checkbox-input,
+.h5-radio.gray.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
   color: $black !important;
 }
 
@@ -403,9 +633,23 @@ radio.checked .h5-radio-input {
   color: $white !important;
 }
 
+.h5-switch.black.checked.disabled .h5-switch-input,
+.h5-checkbox.black .disabled.checked.h5-checkbox-input,
+.h5-radio.black.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
+}
+
 .h5-switch.white.checked .h5-switch-input,
 .h5-checkbox.white .checked.h5-checkbox-input,
 .h5-radio.white.checked .h5-radio-input {
   background-color: $white !important;
-  color: $black !important;
+  color: $white !important;
+}
+
+.h5-switch.white.checked.disabled .h5-switch-input,
+.h5-checkbox.white .disabled.checked.h5-checkbox-input,
+.h5-radio.white.checked.disabled .h5-radio-input {
+  background-color: rgb(225, 225, 225) !important;
+  color: $white !important;
 }

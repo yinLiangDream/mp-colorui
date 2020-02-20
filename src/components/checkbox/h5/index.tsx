@@ -1,6 +1,7 @@
 import { View, Text } from "@tarojs/components";
 import Taro, { pxTransform, Component } from "@tarojs/taro";
 import { IProps } from "../../../../@types/checkbox";
+import { classNames } from "../../../lib";
 
 interface IState {
   list: any[];
@@ -39,7 +40,7 @@ class ClCheckboxH5 extends Component<IProps, IState> {
           const hasExit = this.state.list.find(
             item => item.key === checkbox.key
           );
-          return hasExit ? hasExit : checkbox;
+          return hasExit ? Object.assign(hasExit, checkbox) : checkbox;
         })
       });
     }
@@ -72,7 +73,6 @@ class ClCheckboxH5 extends Component<IProps, IState> {
     const state = this.state;
     const colorClassName = props.color || "green";
     const type = props.type === "form" ? "form" : "";
-    const shapeClassName = props.shape === "round" ? "round" : "";
     const directionClassName = props.direction === "horizontal" ? "flex" : "";
     const title = props.title;
     const checkboxComponent = state.list.map(item => (
@@ -92,17 +92,25 @@ class ClCheckboxH5 extends Component<IProps, IState> {
           ""
         )}
         <View
-          className={`h5-checkbox-input ${shapeClassName} ${
-            item.checked ? "checked" : ""
-          } ${item.disabled ? "disabled" : ""}`}
+          className={classNames([
+            "h5-checkbox-input",
+            {
+              round: props.shape,
+              checked: item.checked,
+              disabled: item.disabled,
+              more: props.more
+            }
+          ])}
           onClick={() => {
-            const checkItem =
-              state.list && state.list.find(has => has.value === item.value);
-            if (checkItem) checkItem.checked = !item.checked;
-            this.setState({
-              list: [...state.list]
-            });
-            this.change();
+            if (!item.disabled) {
+              const checkItem =
+                state.list && state.list.find(has => has.value === item.value);
+              if (checkItem) checkItem.checked = !item.checked;
+              this.setState({
+                list: [...state.list]
+              });
+              this.change();
+            }
           }}
         />
       </View>

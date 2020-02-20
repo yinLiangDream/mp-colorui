@@ -719,14 +719,14 @@ switch.white[checked] .wx-switch-input,
 checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
   background-color: $white !important;
-  color: $black !important;
+  color: $white !important;
 }
 
 switch.white[checked][disabled] .wx-switch-input,
 checkbox.white[checked][disabled] .wx-checkbox-input,
 radio.white[checked][disabled] .wx-radio-input {
   background-color: rgb(225, 225, 225) !important;
-  color: $black !important;
+  color: $white !important;
 }
 
 .safe-area {

@@ -73,12 +73,12 @@ export interface IProps extends BaseComponent {
   direction?: TDirection;
   /**
    * 复选框每一项设置
+   *
+   * 可设置以下参数 `checked`, `key`, `value`
    */
   checkboxGroup?: TCheckboxGroup;
   /**
    * 选择改变时触发
-   *
-   * 可设置以下参数 `checked`, `key`, `value`
    */
   onChange?: TOnChange;
 }

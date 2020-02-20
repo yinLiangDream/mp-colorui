@@ -101,7 +101,7 @@ export default class ClTree extends Component<IProps, IState> {
     return result;
   }
 
-  public changeChecked(commonId: any[] = [], item: any) {
+  private changeChecked(commonId: any[] = [], item: any) {
     const { flatList } = this.state;
     const { onCheckedChange } = this.props;
     const id = item.commonId;
