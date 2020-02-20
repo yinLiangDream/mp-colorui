@@ -1,12 +1,13 @@
 import Taro, { useState, useEffect } from "@tarojs/taro";
 import { Text, View } from "@tarojs/components";
 import { TList } from "../../../../@types/radio";
-import { generateId } from "../../../lib";
+import { classNames, generateId } from "../../../lib";
 
 interface IProps {
   list: TList;
   checkedValue: String;
   onChange: (value) => void;
+  disabled: boolean;
 }
 
 export default function ListRadio(props: IProps) {
@@ -26,10 +27,18 @@ export default function ListRadio(props: IProps) {
   const listComponent = list.map((item: any) => (
     <View
       key={item.cu_radio_list_id}
-      className={`cu-item ${checked === item.value ? "checked" : ""}`}
+      className={classNames([
+        "cu-item",
+        {
+          checked: checked === item.value,
+          disabled: props.disabled
+        }
+      ])}
       onClick={() => {
-        setChecked(item.value || "");
-        props.onChange && props.onChange(item.value);
+        if (!props.disabled) {
+          setChecked(item.value || "");
+          props.onChange && props.onChange(item.value);
+        }
       }}
     >
       <View className="content flex align-center">
@@ -43,7 +52,8 @@ export default function ListRadio(props: IProps) {
 ListRadio.defaultProps = {
   list: [],
   checkedValue: "",
-  onChange: () => {}
+  onChange: () => {},
+  disabled: false
 } as IProps;
 
 ListRadio.options = {

@@ -50,6 +50,9 @@
     }
     > {
       .cu-item {
+        &.disabled {
+          background-color: rgb(225, 225, 225);
+        }
         position: relative;
         display: flex;
         padding: 0 30px;

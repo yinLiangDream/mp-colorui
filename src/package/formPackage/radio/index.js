@@ -112,6 +112,19 @@ export default function Radio() {
           color="red"
         />
       </ClCard>
+      <ClTitleBar title="禁用" textColor="black" type="icon" subTitle="shape" />
+      <ClCard>
+        <ClRadio
+          type="form"
+          shape="radio"
+          title="性别"
+          radioGroup={radioGroup}
+          checkedValue={checkedValue}
+          direction="horizontal"
+          color="red"
+          disabled
+        />
+      </ClCard>
     </ClLayout>
   );
 }

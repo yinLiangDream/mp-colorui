@@ -35,6 +35,7 @@ export default function ClRadio(props: IProps) {
         className={`${colorClassName()} ${shapeClassName()}`}
         checked={item.value === checkedValue}
         value={item.value || ""}
+        disabled={props.disabled}
       />
     </View>
   ));
@@ -52,6 +53,7 @@ export default function ClRadio(props: IProps) {
       }}
       list={list}
       checkedValue={props.checkedValue}
+      disabled={props.disabled}
     />
   );
 

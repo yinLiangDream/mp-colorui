@@ -54,6 +54,10 @@ export interface IProps extends BaseComponent {
    */
   color?: TColor;
   /**
+   * 禁用
+   */
+  disabled?: boolean;
+  /**
    * 默认选中的 value
    */
   checkedValue?: string;
