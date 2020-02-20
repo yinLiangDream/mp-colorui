@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/radio.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/radio.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/form/switch.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/switch.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +265,7 @@
       <workItem from="1578130191236" duration="237000" />
       <workItem from="1578130524712" duration="11437000" />
       <workItem from="1581581192034" duration="12878000" />
-      <workItem from="1582006687203" duration="20203000" />
+      <workItem from="1582006687203" duration="20376000" />
     </task>
     <task id="LOCAL-00054" summary="feat Accordion 组件新增 height 属性，可以自定义高度">
       <created>1572847153444</created>
