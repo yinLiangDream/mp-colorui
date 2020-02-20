@@ -37,6 +37,10 @@ export default function Switch() {
           color="red"
         />
       </ClCard>
+      <ClTitleBar title="禁用" textColor="black" type="icon" subTitle="type" />
+      <ClCard>
+        <ClSwitch type="normal" disabled />
+      </ClCard>
     </ClLayout>
   );
 }

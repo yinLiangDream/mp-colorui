@@ -23,6 +23,7 @@ export default function ClSwitch(props: IProps) {
       style={Object.assign({}, props.style)}
       checked={checked}
       onChange={onChange}
+      disabled={props.disabled}
     />
   );
   const formSwitchComponent = (

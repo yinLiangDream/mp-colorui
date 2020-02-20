@@ -69,13 +69,12 @@ class ClCheckboxH5 extends Component<IProps, IState> {
     | boolean
     | null
     | undefined {
-    const props = this.props;
-    const state = this.state;
-    const colorClassName = props.color || "green";
-    const type = props.type === "form" ? "form" : "";
-    const directionClassName = props.direction === "horizontal" ? "flex" : "";
-    const title = props.title;
-    const checkboxComponent = state.list.map(item => (
+    const colorClassName = this.props.color || "green";
+    const type = this.props.type === "form" ? "form" : "";
+    const directionClassName =
+      this.props.direction === "horizontal" ? "flex" : "";
+    const title = this.props.title;
+    const checkboxComponent = this.state.list.map(item => (
       <View className="padding-xs" key={item.value}>
         {item.key ? (
           <Text
@@ -95,19 +94,20 @@ class ClCheckboxH5 extends Component<IProps, IState> {
           className={classNames([
             "h5-checkbox-input",
             {
-              round: props.shape,
+              round: this.props.shape,
               checked: item.checked,
               disabled: item.disabled,
-              more: props.more
+              more: this.props.more
             }
           ])}
           onClick={() => {
             if (!item.disabled) {
               const checkItem =
-                state.list && state.list.find(has => has.value === item.value);
+                this.state.list &&
+                this.state.list.find(has => has.value === item.value);
               if (checkItem) checkItem.checked = !item.checked;
               this.setState({
-                list: [...state.list]
+                list: [...this.state.list]
               });
               this.change();
             }

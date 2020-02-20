@@ -7,6 +7,7 @@ import { classNames, isWeApp } from "../../lib";
 export default function ClCheckbox(props: IProps) {
   const colorClassName = props.color || "green";
   const type = props.type === "form" ? "form" : "";
+  const shapeClassName = props.shape === "round" ? "round" : "";
   const directionClassName = props.direction === "horizontal" ? "flex" : "";
   const list = props.checkboxGroup ? props.checkboxGroup : [];
   const title = props.title;
@@ -16,8 +17,8 @@ export default function ClCheckbox(props: IProps) {
       <Checkbox
         className={classNames([
           colorClassName,
+          shapeClassName,
           {
-            round: props.shape === "round",
             more: props.more
           }
         ])}

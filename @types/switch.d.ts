@@ -45,6 +45,12 @@ export interface IProps extends BaseComponent {
    * 默认值 `false`
    */
   checked?: boolean;
+  /**
+   * 禁用
+   *
+   * 默认值 `false`
+   */
+  disabled?: boolean;
 }
 
 export interface SwitchProps extends IProps {}

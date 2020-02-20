@@ -1,4 +1,4 @@
-import Taro, { useContext } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
 import { View } from "@tarojs/components";
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/form";

@@ -27,15 +27,22 @@ export default class ClSwitch_h5 extends Component<IProps, {}> {
     const [checkedSwitch, setCheckedSwitch] = useState(checked);
     const switchComponent = (
       <View
-        className={classNames(
-          `h5-switch ${checkedSwitch ? "checked" : ""} ${color}`,
+        className={classNames([
+          "h5-switch",
+          color,
+          {
+            checked: checkedSwitch,
+            disabled: this.props.disabled
+          },
           this.props.className
-        )}
+        ])}
         style={Object.assign({}, this.props.style)}
         onClick={() => {
-          const currentCheck = !checkedSwitch;
-          setCheckedSwitch(currentCheck);
-          this.onChange(currentCheck);
+          if (!this.props.disabled) {
+            const currentCheck = !checkedSwitch;
+            setCheckedSwitch(currentCheck);
+            this.onChange(currentCheck);
+          }
         }}
       >
         <View className={`h5-switch-input sm ${shapeClassName}`} />

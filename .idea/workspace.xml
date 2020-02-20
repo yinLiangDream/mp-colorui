@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="fix(H5): tree 组件 不生效问题&#10;&#10;fix(H5): Checkbox 组件 disabled 属性失效问题&#10;&#10;fix(H5): Checkbox 组件 不能动态更新问题">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="feat: Switch 组件新增 disabled 属性&#10;&#10;fix(weapp): Checkbox 组件引入会导致堆栈溢出问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/radio.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/radio.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/radio/components/ListRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio/components/ListRadio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/radio/h5.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio/h5.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/radio/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/radio/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package/formPackage/radio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/package/formPackage/radio/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/category/list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/category/list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/switch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/switch.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/h5/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/switch/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package/formPackage/switch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/package/formPackage/switch/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/h5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/h5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +100,7 @@
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.docs:build">
+  <component name="RunManager">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -112,6 +116,16 @@
       <command value="run" />
       <scripts>
         <script value="build:weapp" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev:alipay" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:alipay" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -137,23 +151,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="docs:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="docs:build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev:alipay" />
+        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.build:weapp" />
-        <item itemvalue="npm.docs:build" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -271,14 +275,7 @@
       <workItem from="1578130191236" duration="237000" />
       <workItem from="1578130524712" duration="11437000" />
       <workItem from="1581581192034" duration="12878000" />
-      <workItem from="1582006687203" duration="13517000" />
-    </task>
-    <task id="LOCAL-00052" summary="feat Message 组件 修复类型说明消失问题&#10;feat NoticeBar 组件 新增">
-      <created>1571208167670</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1571208167670</updated>
+      <workItem from="1582006687203" duration="20072000" />
     </task>
     <task id="LOCAL-00053" summary="0.5.6版本更新">
       <created>1571209597539</created>
@@ -616,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582175239351</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="feat: Radio 组件新增 disabled 属性">
+      <created>1582181707374</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1582181707374</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TodoView">
@@ -673,7 +677,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix Tip show 参数误删问题" />
     <MESSAGE value="还原按需加载" />
     <MESSAGE value="fix ClSwiper video 不能二次呼出 进度条 #40" />
     <MESSAGE value="fix ClRadio 遍历的问题 #43" />
@@ -698,7 +701,8 @@
     <MESSAGE value="feat: MenuList 组件新增右侧文本内容" />
     <MESSAGE value="fix(H5): form 组件下 CheckBox 点击不生效问题" />
     <MESSAGE value="fix(H5): tree 组件 不生效问题&#10;&#10;fix(H5): Checkbox 组件 disabled 属性失效问题&#10;&#10;fix(H5): Checkbox 组件 不能动态更新问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(H5): tree 组件 不生效问题&#10;&#10;fix(H5): Checkbox 组件 disabled 属性失效问题&#10;&#10;fix(H5): Checkbox 组件 不能动态更新问题" />
+    <MESSAGE value="feat: Radio 组件新增 disabled 属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Radio 组件新增 disabled 属性" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -717,7 +721,7 @@
     <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575949208753" />
     <state x="648" y="311" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1578130305535" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1575981262982" />
-    <state x="493" y="127" width="915" height="924" key="CommitChangelistDialog2" timestamp="1582181661876">
+    <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2" timestamp="1582191365790">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="431" y="123" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581605810190" />
@@ -729,13 +733,14 @@
     <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574783070398" />
     <state x="493" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582020262127" />
     <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1577846024911" />
-    <state x="493" y="127" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582181661876" />
-    <state x="168" y="115" key="DiffContextDialog" timestamp="1575871035725">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191365790" />
+    <state x="192" y="97" width="1536" height="864" key="DiffContextDialog" timestamp="1582191305162">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="168" y="115" key="DiffContextDialog/-1920.23.1920.1013/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1575871035725" />
     <state x="168" y="94" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1574777268994" />
-    <state width="936" height="239" key="GridCell.Tab.0.bottom" timestamp="1582181257843">
+    <state x="192" y="97" width="1536" height="864" key="DiffContextDialog/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191305162" />
+    <state width="936" height="239" key="GridCell.Tab.0.bottom" timestamp="1582191652978">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="819" height="272" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878457" />
@@ -750,11 +755,11 @@
     <state width="1147" height="179" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318518" />
     <state width="583" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812346" />
     <state width="937" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
-    <state width="936" height="239" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582181257843" />
+    <state width="936" height="239" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191652978" />
     <state width="1659" height="189" key="GridCell.Tab.0.bottom/0.23.1680.983@0.23.1680.983" timestamp="1575783740771" />
     <state width="1899" height="268" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974850" />
     <state width="1899" height="431" key="GridCell.Tab.0.bottom/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186756" />
-    <state width="936" height="239" key="GridCell.Tab.0.center" timestamp="1582181257841">
+    <state width="936" height="239" key="GridCell.Tab.0.center" timestamp="1582191652976">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="819" height="272" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878455" />
@@ -769,11 +774,11 @@
     <state width="1147" height="179" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318515" />
     <state width="583" height="239" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812345" />
     <state width="937" height="272" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848412" />
-    <state width="936" height="239" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582181257841" />
+    <state width="936" height="239" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191652976" />
     <state width="1659" height="189" key="GridCell.Tab.0.center/0.23.1680.983@0.23.1680.983" timestamp="1575783740770" />
     <state width="1899" height="268" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974849" />
     <state width="1899" height="431" key="GridCell.Tab.0.center/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186755" />
-    <state width="936" height="239" key="GridCell.Tab.0.left" timestamp="1582181257839">
+    <state width="936" height="239" key="GridCell.Tab.0.left" timestamp="1582191652975">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="819" height="272" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878455" />
@@ -788,11 +793,11 @@
     <state width="1147" height="179" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318513" />
     <state width="583" height="239" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812345" />
     <state width="937" height="272" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848411" />
-    <state width="936" height="239" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582181257839" />
+    <state width="936" height="239" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191652975" />
     <state width="1659" height="189" key="GridCell.Tab.0.left/0.23.1680.983@0.23.1680.983" timestamp="1575783740769" />
     <state width="1899" height="268" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974849" />
     <state width="1899" height="431" key="GridCell.Tab.0.left/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186755" />
-    <state width="936" height="239" key="GridCell.Tab.0.right" timestamp="1582181257842">
+    <state width="936" height="239" key="GridCell.Tab.0.right" timestamp="1582191652977">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="819" height="272" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878456" />
@@ -807,7 +812,7 @@
     <state width="1147" height="179" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1575949318515" />
     <state width="583" height="239" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812346" />
     <state width="937" height="272" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
-    <state width="936" height="239" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582181257842" />
+    <state width="936" height="239" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191652977" />
     <state width="1659" height="189" key="GridCell.Tab.0.right/0.23.1680.983@0.23.1680.983" timestamp="1575783740770" />
     <state width="1899" height="268" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974850" />
     <state width="1899" height="431" key="GridCell.Tab.0.right/0.23.1920.1133@0.23.1920.1133" timestamp="1575895186756" />
