@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="feat: Switch 组件新增 disabled 属性&#10;&#10;fix(weapp): Checkbox 组件引入会导致堆栈溢出问题">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/switch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/switch.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkbox/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/h5/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkbox/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/h5/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/switch/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package/formPackage/switch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/package/formPackage/switch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/h5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/h5.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/radio.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/radio.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/form/switch.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/form/switch.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,14 +267,7 @@
       <workItem from="1578130191236" duration="237000" />
       <workItem from="1578130524712" duration="11437000" />
       <workItem from="1581581192034" duration="12878000" />
-      <workItem from="1582006687203" duration="20072000" />
-    </task>
-    <task id="LOCAL-00053" summary="0.5.6版本更新">
-      <created>1571209597539</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1571209597539</updated>
+      <workItem from="1582006687203" duration="20203000" />
     </task>
     <task id="LOCAL-00054" summary="feat Accordion 组件新增 height 属性，可以自定义高度">
       <created>1572847153444</created>
@@ -620,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582181707374</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="feat: Switch 组件新增 disabled 属性&#10;&#10;fix(weapp): Checkbox 组件引入会导致堆栈溢出问题">
+      <created>1582192094300</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1582192094301</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TodoView">
@@ -677,7 +669,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="还原按需加载" />
     <MESSAGE value="fix ClSwiper video 不能二次呼出 进度条 #40" />
     <MESSAGE value="fix ClRadio 遍历的问题 #43" />
     <MESSAGE value="fix ClSelect 重置默认城市 #46" />
@@ -702,7 +693,8 @@
     <MESSAGE value="fix(H5): form 组件下 CheckBox 点击不生效问题" />
     <MESSAGE value="fix(H5): tree 组件 不生效问题&#10;&#10;fix(H5): Checkbox 组件 disabled 属性失效问题&#10;&#10;fix(H5): Checkbox 组件 不能动态更新问题" />
     <MESSAGE value="feat: Radio 组件新增 disabled 属性" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Radio 组件新增 disabled 属性" />
+    <MESSAGE value="feat: Switch 组件新增 disabled 属性&#10;&#10;fix(weapp): Checkbox 组件引入会导致堆栈溢出问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Switch 组件新增 disabled 属性&#10;&#10;fix(weapp): Checkbox 组件引入会导致堆栈溢出问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -721,7 +713,7 @@
     <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1575949208753" />
     <state x="648" y="311" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1578130305535" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1575981262982" />
-    <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2" timestamp="1582191365790">
+    <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2" timestamp="1582192093096">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="431" y="123" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581605810190" />
@@ -733,7 +725,7 @@
     <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1574783070398" />
     <state x="493" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582020262127" />
     <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1577846024911" />
-    <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191365790" />
+    <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582192093096" />
     <state x="192" y="97" width="1536" height="864" key="DiffContextDialog" timestamp="1582191305162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

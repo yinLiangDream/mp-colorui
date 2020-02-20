@@ -22,6 +22,7 @@ import { ClRadio } from "mp-colorui";
 | color        | _选中颜色_              | string       | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色) | _`green`_    |
 | checkedValue | 选中的 Value 值         | string       | -                                                           | -            |
 | radioGroup   | _单选框组_              | radioGroup[] | [详情](/mp-colorui-doc/form/radio#radiogroup)               | []           |
+| disabled     | _禁用_                  | boolean      | -                                                           | `false`      |
 
 ### radioGroup
 
