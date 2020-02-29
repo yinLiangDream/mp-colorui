@@ -27,7 +27,7 @@ export default function ClRadio(props: IProps) {
       className="padding-xs"
       key={"radio-" + item.value}
       onClick={() => {
-        setCheckedValue(item.value);
+        !props.disabled && setCheckedValue(item.value);
       }}
     >
       <Text className="padding-right-sm">{item.key}</Text>
