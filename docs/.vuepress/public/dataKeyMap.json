@@ -99,7 +99,8 @@
     { "key": "bar", "value": "进度条加载" },
     { "key": "line", "value": "行内加载" },
     { "key": "modal", "value": "模态框加载" },
-    { "key": "image", "value": "图片加载" }
+    { "key": "image", "value": "图片加载" },
+    { "key": "common", "value": "通用加载" }
   ],
   "menuList": [
     { "key": "type", "value": "类型" },

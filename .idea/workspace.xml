@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="feat: Loading 组件新增 content、commonText 属性， type 新增 common 属性">
+    <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-common.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/loading.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/loading.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package/actionPackage/loading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/package/actionPackage/loading/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/animation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/loading-bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-bar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/loading-image.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-image.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/loading-line.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-line.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/action/loading.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/loading.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,14 +275,7 @@
       <workItem from="1582006687203" duration="20376000" />
       <workItem from="1582196000310" duration="764000" />
       <workItem from="1582941786664" duration="182000" />
-      <workItem from="1582941979700" duration="12873000" />
-    </task>
-    <task id="LOCAL-00055" summary="feat Flex 组件 align 属性新增 stretch 选项 #28">
-      <created>1572847431604</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1572847431604</updated>
+      <workItem from="1582941979700" duration="13593000" />
     </task>
     <task id="LOCAL-00056" summary="更新文档">
       <created>1572849382075</created>
@@ -617,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582945289516</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="feat: Loading 组件新增 content、commonText 属性， type 新增 common 属性">
+      <created>1583048605007</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1583048605007</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TodoView">
@@ -674,7 +677,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix ClRadio 遍历的问题 #43" />
     <MESSAGE value="fix ClSelect 重置默认城市 #46" />
     <MESSAGE value="fix ClInput 里的 button 会缩在一起 #47" />
     <MESSAGE value="fix ClInput 里的 title 长度异常问题" />
@@ -699,7 +701,8 @@
     <MESSAGE value="feat: Radio 组件新增 disabled 属性" />
     <MESSAGE value="feat: Switch 组件新增 disabled 属性&#10;&#10;fix(weapp): Checkbox 组件引入会导致堆栈溢出问题" />
     <MESSAGE value="fix(weapp): Radio disabled 属性下仍然生效的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(weapp): Radio disabled 属性下仍然生效的问题" />
+    <MESSAGE value="feat: Loading 组件新增 content、commonText 属性， type 新增 common 属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Loading 组件新增 content、commonText 属性， type 新增 common 属性" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#ESLint" timestamp="1575279583136">
@@ -718,10 +721,10 @@
     <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582941864995" />
     <state x="648" y="311" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1578130305535" />
     <state x="648" y="317" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1575981262982" />
-    <state x="431" y="123" width="839" height="859" key="CommitChangelistDialog2" timestamp="1583048565557">
+    <state x="431" y="123" width="839" height="859" key="CommitChangelistDialog2" timestamp="1583048604173">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="431" y="123" key="CommitChangelistDialog2/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048565557" />
+    <state x="431" y="123" key="CommitChangelistDialog2/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048604173" />
     <state x="431" y="123" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581605810190" />
     <state x="431" y="2" width="915" height="924" key="CommitChangelistDialog2/-1920.0.1920.1080/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1575534365463" />
     <state x="493" y="141" key="CommitChangelistDialog2/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1578278395973" />
