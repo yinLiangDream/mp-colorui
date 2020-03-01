@@ -60,19 +60,19 @@
 
   &-rotate {
     &-90 {
-      animation-name: rotate-90;
+      animation-name: rotate-0-90;
     }
 
     &-180 {
-      animation-name: rotate-180;
+      animation-name: rotate-0-180;
     }
 
     &-270 {
-      animation-name: rotate-270;
+      animation-name: rotate-0-270;
     }
 
     &-360 {
-      animation-name: rotate-360;
+      animation-name: rotate-0-360;
     }
   }
 }
