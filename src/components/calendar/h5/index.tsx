@@ -776,6 +776,7 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
               current={this.state.currentActive}
               skipHiddenItemLayout
               circular
+              key={'key-' + Math.random()}
               style={{
                 width: "100%",
                 height:

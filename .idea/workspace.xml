@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-common.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/dataKeyMap.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/loading-bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-bar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/loading-image.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-image.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/public/loading-line.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/public/loading-line.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/action/loading.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/action/loading.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/calendar/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/h5/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop_feature" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
