@@ -4,6 +4,8 @@ import { classNames, getNowDate, isAliPay } from "../../lib";
 import { IProps } from "../../../@types/select";
 import { getAreaData } from "../../lib/area";
 
+import "./index.scss"
+
 import AlipayMutiSelect from "./components/alipay/mutiSelector";
 
 function ClSelect(props: IProps) {
@@ -235,6 +237,7 @@ function ClSelect(props: IProps) {
       onChange={onSelectorChange}
       onCancel={onCancel}
       disabled={props.disabled}
+      className='longSelect'
     >
       <View className="picker">{selected}</View>
     </Picker>
@@ -250,6 +253,7 @@ function ClSelect(props: IProps) {
       onColumnChange={onMutiSelectorColumChange}
       onCancel={onCancel}
       disabled={props.disabled}
+      className='longSelect'
     >
       <View className="picker">{mutiSelected}</View>
     </Picker>
@@ -268,6 +272,7 @@ function ClSelect(props: IProps) {
       onChange={onTimeSelectorChange}
       onCancel={onCancel}
       disabled={props.disabled}
+      className='longSelect'
     >
       <View className="picker">{timeSelected}</View>
     </Picker>
@@ -282,6 +287,7 @@ function ClSelect(props: IProps) {
       fields={dateSelector.fields}
       onCancel={onCancel}
       onChange={onDateSelectorChange}
+      className='longSelect'
     >
       <View className="picker">{dateSelected}</View>
     </Picker>
@@ -298,6 +304,7 @@ function ClSelect(props: IProps) {
       onColumnChange={onRegionMutiSelectorColumChange}
       onCancel={onCancel}
       disabled={props.disabled}
+      className='longSelect'
     >
       <View className="picker">{regionSelected}</View>
     </Picker>
