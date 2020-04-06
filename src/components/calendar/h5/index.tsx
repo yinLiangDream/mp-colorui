@@ -97,7 +97,6 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
         months[month].forEach(item => (item.active = false));
       });
     }
-
     item.active = true;
     this.setState({
       chooseDate: item.date
@@ -146,7 +145,7 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
     }
     return current;
   }
-  changeDate(e) {
+  changeDate() {
     let arrayIndex = e.detail.current;
     if (render) {
       arrayIndex = 1;
@@ -401,10 +400,10 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
       .subtract(1, "month")
       .daysInMonth();
     const thisMonthDays = dayjs(date).daysInMonth();
-    const thisDays = dayjs(date).date();
     const nextMonthDays = dayjs(date)
       .add(1, "month")
       .daysInMonth();
+    const thisDays = dayjs(date).date();
     let i = -preMonthDays + 1;
     while (1) {
       if (i > nextMonthDays + thisMonthDays) break;
@@ -516,7 +515,7 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
     ));
     const BGClassName = BG_COLOR_LIST[activeColor || "blue"];
     const oldTextClassName = TEXT_COLOR_LIST["gray"];
-
+    console.log('render')
     const weeksComponent = preWeek.length
       ? [preWeek, thisWeek, nextWeek].map((week, index) => (
           <SwiperItem key={week[3].date}>
@@ -784,7 +783,9 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
                     ? pxTransform(120)
                     : pxTransform(120 * currentActiveLines)
               }}
-              onChange={this.changeDate.bind(this)}
+              onChange={() => {
+                this.changeDate.bind(this)
+              }}
             >
               {calendarType === "week" ? weeksComponent : monthsComponent}
             </Swiper>
