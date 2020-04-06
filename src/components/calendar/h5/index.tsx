@@ -7,6 +7,7 @@ import ClText from "../../text";
 import ClFlex from "../../flex";
 import ClLayout from "../../layout";
 import ClCard from "../../card";
+import ClIcon from "../../icon";
 import { classNames } from "../../../lib";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../../lib/model";
 import ClButton from "../../button";
@@ -27,6 +28,7 @@ interface IState {
   currentActiveLines: number;
   showMonths: boolean;
   today: string;
+  currentYear: number;
 }
 
 const FORMAT_DATE = "YYYY-MM-DD";
@@ -59,6 +61,7 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
       thisMonth: [],
       nextMonth: [],
       preMonth: [],
+      currentYear: dayjs().year(),
       chooseDate: today,
       currentDate: dealYearMonth(dayjs(today)),
       currentActive: 1,
@@ -68,11 +71,12 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
     } as IState;
   }
   selectDate(month) {
-    const year = this.state.currentDate.split("年")[0];
+    const year = this.state.currentYear;
     const date = `${year}-${month + 1}-01`;
     this.changeMonth(date);
     this.setState({
-      showMonths: false
+      showMonths: false,
+      currentDate: dealYearMonth(dayjs(date))
     });
   }
   clickDate({ item }) {
@@ -145,7 +149,7 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
     }
     return current;
   }
-  changeDate() {
+  changeDate(e) {
     let arrayIndex = e.detail.current;
     if (render) {
       arrayIndex = 1;
@@ -477,7 +481,8 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
       nextMonth,
       showMonths,
       currentDate,
-      currentActiveLines
+      currentActiveLines,
+      currentYear
     } = this.state;
     const {
       highlightWeekend,
@@ -515,7 +520,6 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
     ));
     const BGClassName = BG_COLOR_LIST[activeColor || "blue"];
     const oldTextClassName = TEXT_COLOR_LIST["gray"];
-    console.log('render')
     const weeksComponent = preWeek.length
       ? [preWeek, thisWeek, nextWeek].map((week, index) => (
           <SwiperItem key={week[3].date}>
@@ -709,36 +713,58 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
             <ClFlex justify={"between"} align={"center"}>
               <ClTip
                 renderMessage={
-                  <ClGrid col={4}>
-                    {months.map((item, index) => (
-                      <View
-                        key={item}
-                        className={classNames([
-                          "flex justify-center align-center"
-                        ])}
-                      >
-                        <ClLayout margin={"small"} marginDirection={"vertical"}>
-                          <ClButton
-                            size={"small"}
-                            bgColor={"light-gray"}
-                            shadow={false}
-                            long
-                            text={item}
-                            onClick={() => {
-                              this.selectDate(index);
-                            }}
-                          />
-                        </ClLayout>
-                      </View>
-                    ))}
-                  </ClGrid>
+                  <View>
+                    <ClLayout>
+                      <ClFlex align={"center"} justify={"between"}>
+                        <View onClick={() => {
+                          this.setState({
+                            currentYear: currentYear - 1
+                          })
+                        }}>
+                          <ClIcon iconName={"pullleft"} />
+                        </View>
+                        <ClText text={currentYear + ""} />
+                        <View onClick={() => {
+                          this.setState({
+                            currentYear: currentYear + 1
+                          })
+                        }}>
+                          <ClIcon iconName={"pullright"} />
+                        </View>
+                      </ClFlex>
+                    </ClLayout>
+                    <ClGrid col={4}>
+                      {months.map((item, index) => (
+                        <View
+                          key={item}
+                          className={classNames([
+                            "flex justify-center align-center"
+                          ])}
+                        >
+                          <ClLayout margin={"small"} marginDirection={"vertical"}>
+                            <ClButton
+                              size={"small"}
+                              bgColor={"light-gray"}
+                              shadow={false}
+                              long
+                              text={item}
+                              onClick={() => {
+                                this.selectDate(index);
+                              }}
+                            />
+                          </ClLayout>
+                        </View>
+                      ))}
+                    </ClGrid>
+                  </View>
                 }
                 mode={"click"}
                 width={300}
                 show={this.state.showMonths}
                 onChange={() => {
+                  const currentShow = !showMonths
                   this.setState({
-                    showMonths: !showMonths
+                    showMonths: currentShow
                   });
                 }}
               >
@@ -783,8 +809,8 @@ export default class Calendar_h5 extends Taro.Component<IProps, IState> {
                     ? pxTransform(120)
                     : pxTransform(120 * currentActiveLines)
               }}
-              onChange={() => {
-                this.changeDate.bind(this)
+              onChange={(e) => {
+                if (this.state.currentActive !== e.detail.current) this.changeDate(e)
               }}
             >
               {calendarType === "week" ? weeksComponent : monthsComponent}

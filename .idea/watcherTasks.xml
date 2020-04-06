@@ -21,5 +21,8 @@
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />
     </TaskOptions>
+    <enabled-global>
+      <option value="Prettier" />
+    </enabled-global>
   </component>
 </project>

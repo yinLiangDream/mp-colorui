@@ -7,6 +7,7 @@ import ClText from "../../text";
 import ClFlex from "../../flex";
 import ClLayout from "../../layout";
 import ClCard from "../../card";
+import ClIcon from "../../icon";
 import { classNames } from "../../../lib";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../../lib/model";
 import ClButton from "../../button";
@@ -52,12 +53,14 @@ export default function Calendar_weapp(props: IProps) {
   const [currentActive, setCurrentActive] = useState(1);
   const [currentActiveLines, setCurrentActiveLines] = useState(5);
   const [showMonths, setShowMonths] = useState(false);
+  const [currentYear, setCurrentYear] = useState(dayjs().year())
 
   const selectDate = month => {
-    const year = currentDate.split("年")[0];
+    const year = currentYear;
     const date = `${year}-${month + 1}-01`;
     changeMonth(date);
     setShowMonths(false);
+    setCurrentDate(dealYearMonth(dayjs(date)))
   };
   function dealYearMonth(day) {
     return `${day.year()}年${day.month() + 1}月`;
@@ -624,29 +627,46 @@ export default function Calendar_weapp(props: IProps) {
           <ClFlex justify={"between"} align={"center"}>
             <ClTip
               renderMessage={
-                <ClGrid col={4}>
-                  {months.map((item, index) => (
-                    <View
-                      key={item}
-                      className={classNames([
-                        "flex justify-center align-center"
-                      ])}
-                    >
-                      <ClLayout margin={"small"} marginDirection={"vertical"}>
-                        <ClButton
-                          size={"small"}
-                          bgColor={"light-gray"}
-                          shadow={false}
-                          long
-                          text={item}
-                          onClick={() => {
-                            selectDate(index);
-                          }}
-                        />
-                      </ClLayout>
-                    </View>
-                  ))}
-                </ClGrid>
+                <View>
+                  <ClLayout>
+                    <ClFlex align={"center"} justify={"between"}>
+                      <View onClick={() => {
+                        setCurrentYear(currentYear - 1)
+                      }}>
+                        <ClIcon iconName={"pullleft"} />
+                      </View>
+                      <ClText text={currentYear + ""} />
+                      <View onClick={() => {
+                        setCurrentYear(currentYear + 1 )
+                      }}>
+                        <ClIcon iconName={"pullright"} />
+                      </View>
+                    </ClFlex>
+                  </ClLayout>
+                  <ClGrid col={4}>
+                    {months.map((item, index) => (
+                      <View
+                        key={item}
+                        className={classNames([
+                          "flex justify-center align-center"
+                        ])}
+                      >
+                        <ClLayout margin={"small"} marginDirection={"vertical"}>
+                          <ClButton
+                            size={"small"}
+                            bgColor={"light-gray"}
+                            shadow={false}
+                            long
+                            text={item}
+                            onClick={() => {
+                              selectDate(index);
+                            }}
+                          />
+                        </ClLayout>
+                      </View>
+                    ))}
+                  </ClGrid>
+                </View>
               }
               mode={"click"}
               width={300}
@@ -695,7 +715,7 @@ export default function Calendar_weapp(props: IProps) {
                   : pxTransform(120 * currentActiveLines)
             }}
             onChange={e => {
-              changeDate(e.detail.current);
+              if (currentActive !== e.detail.current) changeDate(e.detail.current);
             }}
           >
             {calendarType === "week" ? weeksComponent : monthsComponent}

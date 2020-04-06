@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/calendar/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/h5/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/calendar/weapp/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/weapp/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="mp-colorui" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,7 +72,7 @@
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -146,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.dev:weapp" />
+        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.build:weapp" />
         <item itemvalue="npm.build:h5" />
@@ -261,14 +260,7 @@
       <workItem from="1582941786664" duration="182000" />
       <workItem from="1582941979700" duration="13593000" />
       <workItem from="1583907953319" duration="1300000" />
-      <workItem from="1586165008855" duration="6075000" />
-    </task>
-    <task id="LOCAL-00058" summary="fix Tip 组件 无法手动关闭 tip 的问题 #33">
-      <created>1573612928358</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1573612928359</updated>
+      <workItem from="1586165008855" duration="9958000" />
     </task>
     <task id="LOCAL-00059" summary="feat shopBar、tabBar 组件新增 safeArea 属性">
       <created>1573615366921</created>
@@ -606,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583821143317</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="fix: H5 下 Calendar 组件循环渲染问题">
+      <created>1586183602942</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1586183602942</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TodoView">
@@ -662,7 +661,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix ClInput 里的 title 长度异常问题" />
     <MESSAGE value="fix Tabs 组件 .scrollx view 样式问题 #51" />
     <MESSAGE value="fix ClSearchBar [Function Require] Add scroll to bottom listener to ClSearchBar result list #53" />
     <MESSAGE value="fix ClTabs 文档关于 id 命名的限制问题" />
@@ -687,7 +685,8 @@
     <MESSAGE value="feat: Loading 组件新增 content、commonText 属性， type 新增 common 属性" />
     <MESSAGE value="feat: calendar 组件支持 H5" />
     <MESSAGE value="fix: 使用Tabs时, 两个分页内容都会显示在页面上 #72" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 使用Tabs时, 两个分页内容都会显示在页面上 #72" />
+    <MESSAGE value="fix: H5 下 Calendar 组件循环渲染问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: H5 下 Calendar 组件循环渲染问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="429" y="155" key="#build" timestamp="1583908432638">
@@ -719,8 +718,8 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="429" y="155" key="#dev:weapp/0.0.1440.900@0.0.1440.900" timestamp="1583819799771" />
-    <state x="369" y="105" width="839" height="859" key="CommitChangelistDialog2" timestamp="1583821142484">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="492" y="49" width="839" height="859" key="CommitChangelistDialog2" timestamp="1586183599553">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="431" y="123" key="CommitChangelistDialog2/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048604173" />
     <state x="431" y="123" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581605810190" />
@@ -730,11 +729,12 @@
     <state x="493" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582020262127" />
     <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1577846024911" />
     <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582192093096" />
+    <state x="492" y="49" key="CommitChangelistDialog2/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586183599553" />
     <state x="192" y="97" width="1536" height="864" key="DiffContextDialog" timestamp="1582191305162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="192" y="97" width="1536" height="864" key="DiffContextDialog/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191305162" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1586183041277">
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1586185054957">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.bottom/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029786" />
@@ -746,8 +746,8 @@
     <state width="937" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
     <state width="936" height="239" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486551" />
     <state width="1899" height="268" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974850" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586183041277" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1586183041275">
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054957" />
+    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1586185054955">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.center/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029784" />
@@ -759,8 +759,8 @@
     <state width="937" height="272" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848412" />
     <state width="936" height="239" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486550" />
     <state width="1899" height="268" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974849" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586183041275" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1586183041274">
+    <state width="1899" height="215" key="GridCell.Tab.0.center/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054955" />
+    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1586185054954">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.left/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029783" />
@@ -772,8 +772,8 @@
     <state width="937" height="272" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848411" />
     <state width="936" height="239" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486549" />
     <state width="1899" height="268" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974849" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586183041274" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1586183041276">
+    <state width="1899" height="215" key="GridCell.Tab.0.left/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054954" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1586185054956">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.right/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029785" />
@@ -785,19 +785,20 @@
     <state width="937" height="272" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
     <state width="936" height="239" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486550" />
     <state width="1899" height="268" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974850" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586183041276" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054956" />
     <state x="499" y="207" key="RollbackChangesDialog" timestamp="1583823865867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="582" y="242" key="RollbackChangesDialog/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048552593" />
     <state x="499" y="207" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1583823865867" />
     <state x="665" y="277" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1577589619498" />
-    <state x="309" y="109" width="1190" height="722" key="SettingsEditor" timestamp="1581581365082">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="353" y="112" width="1190" height="722" key="SettingsEditor" timestamp="1586185497450">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="309" y="109" width="1190" height="722" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581581365082" />
     <state x="353" y="124" key="SettingsEditor/-1920.0.1920.1080/1920.0.1920.1080/0.0.1920.1200@0.0.1920.1200" timestamp="1578020126099" />
     <state x="353" y="124" width="1360" height="722" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1578130573505" />
+    <state x="353" y="112" key="SettingsEditor/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185497450" />
     <state x="420" y="255" key="Vcs.Push.Dialog.v2" timestamp="1583823909528">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
