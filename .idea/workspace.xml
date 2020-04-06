@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/calendar/h5/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/h5/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/calendar/weapp/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/weapp/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,10 +143,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build:weapp" />
         <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.build:weapp" />
         <item itemvalue="npm.build:h5" />
       </list>
     </recent_temporary>
@@ -260,14 +258,7 @@
       <workItem from="1582941786664" duration="182000" />
       <workItem from="1582941979700" duration="13593000" />
       <workItem from="1583907953319" duration="1300000" />
-      <workItem from="1586165008855" duration="9958000" />
-    </task>
-    <task id="LOCAL-00059" summary="feat shopBar、tabBar 组件新增 safeArea 属性">
-      <created>1573615366921</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1573615366921</updated>
+      <workItem from="1586165008855" duration="10733000" />
     </task>
     <task id="LOCAL-00060" summary="css 分离完成，样式可按需加载">
       <created>1574758352100</created>
@@ -605,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586183602942</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="feat: Calendar 组件新增选择年份功能">
+      <created>1586187897268</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1586187897269</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TodoView">
@@ -661,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix Tabs 组件 .scrollx view 样式问题 #51" />
     <MESSAGE value="fix ClSearchBar [Function Require] Add scroll to bottom listener to ClSearchBar result list #53" />
     <MESSAGE value="fix ClTabs 文档关于 id 命名的限制问题" />
     <MESSAGE value="feat ClTextarea 新增 ClTextarea 组件" />
@@ -686,7 +683,8 @@
     <MESSAGE value="feat: calendar 组件支持 H5" />
     <MESSAGE value="fix: 使用Tabs时, 两个分页内容都会显示在页面上 #72" />
     <MESSAGE value="fix: H5 下 Calendar 组件循环渲染问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: H5 下 Calendar 组件循环渲染问题" />
+    <MESSAGE value="feat: Calendar 组件新增选择年份功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Calendar 组件新增选择年份功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="429" y="155" key="#build" timestamp="1583908432638">
@@ -718,7 +716,7 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="429" y="155" key="#dev:weapp/0.0.1440.900@0.0.1440.900" timestamp="1583819799771" />
-    <state x="492" y="49" width="839" height="859" key="CommitChangelistDialog2" timestamp="1586183599553">
+    <state x="492" y="49" width="839" height="859" key="CommitChangelistDialog2" timestamp="1586187896180">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="431" y="123" key="CommitChangelistDialog2/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048604173" />
@@ -729,12 +727,12 @@
     <state x="493" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582020262127" />
     <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1577846024911" />
     <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582192093096" />
-    <state x="492" y="49" key="CommitChangelistDialog2/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586183599553" />
+    <state x="492" y="49" key="CommitChangelistDialog2/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187896180" />
     <state x="192" y="97" width="1536" height="864" key="DiffContextDialog" timestamp="1582191305162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="192" y="97" width="1536" height="864" key="DiffContextDialog/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191305162" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1586185054957">
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1586187899924">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.bottom/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029786" />
@@ -746,8 +744,8 @@
     <state width="937" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
     <state width="936" height="239" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486551" />
     <state width="1899" height="268" key="GridCell.Tab.0.bottom/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974850" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054957" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1586185054955">
+    <state width="1899" height="215" key="GridCell.Tab.0.bottom/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899924" />
+    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1586187899922">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.center/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029784" />
@@ -759,8 +757,8 @@
     <state width="937" height="272" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848412" />
     <state width="936" height="239" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486550" />
     <state width="1899" height="268" key="GridCell.Tab.0.center/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974849" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054955" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1586185054954">
+    <state width="1899" height="215" key="GridCell.Tab.0.center/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899922" />
+    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1586187899921">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.left/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029783" />
@@ -772,8 +770,8 @@
     <state width="937" height="272" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848411" />
     <state width="936" height="239" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486549" />
     <state width="1899" height="268" key="GridCell.Tab.0.left/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974849" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054954" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1586185054956">
+    <state width="1899" height="215" key="GridCell.Tab.0.left/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899921" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1586187899923">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="817" height="230" key="GridCell.Tab.0.right/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029785" />
@@ -785,7 +783,7 @@
     <state width="937" height="272" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
     <state width="936" height="239" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486550" />
     <state width="1899" height="268" key="GridCell.Tab.0.right/0.23.1920.1131@0.23.1920.1131" timestamp="1578129974850" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185054956" />
+    <state width="1899" height="215" key="GridCell.Tab.0.right/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899923" />
     <state x="499" y="207" key="RollbackChangesDialog" timestamp="1583823865867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
