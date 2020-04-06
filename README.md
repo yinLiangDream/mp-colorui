@@ -16,10 +16,6 @@
 >
 > 安装：`npm i mp-colorui`， `yarn add mp-colorui`
 
-## _注意_
-
-> _由于该组件库还处于快速迭代期，更新频率会比较高，请 [watch](https://github.com/yinLiangDream/mp-colorui) 关注版本动向，及时更新版本！_
-
 ## 投票及建议
 
 [![建议及投票](https://feathub.com/yinLiangDream/mp-colorui?format=svg)](https://feathub.com/yinLiangDream/mp-colorui)

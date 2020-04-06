@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,14 +257,7 @@
       <workItem from="1582941786664" duration="182000" />
       <workItem from="1582941979700" duration="13593000" />
       <workItem from="1583907953319" duration="1300000" />
-      <workItem from="1586165008855" duration="10733000" />
-    </task>
-    <task id="LOCAL-00060" summary="css 分离完成，样式可按需加载">
-      <created>1574758352100</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1574758352100</updated>
+      <workItem from="1586165008855" duration="10772000" />
     </task>
     <task id="LOCAL-00061" summary="fix Swiper组件在h5中阻挡跳转,type=card滑动会浏览器崩溃 #38">
       <created>1574777353649</created>
@@ -603,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586187897269</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="更新版本">
+      <created>1586188358141</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1586188358141</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TodoView">
@@ -669,7 +668,6 @@
     <MESSAGE value="完善文档" />
     <MESSAGE value="fix: Textarea 组件边角被遮盖问题" />
     <MESSAGE value="feat: searchBar 新增 autoFocus 属性，mp-colorui 0.6.4 使用ClSearchBar 时无法控制focus #58" />
-    <MESSAGE value="更新版本" />
     <MESSAGE value="fix: ClTabs 动态变更属性 active 时无法更新 #60" />
     <MESSAGE value="fix: Select 组件多选在支付宝下失效问题" />
     <MESSAGE value="更新版本 0.6.8" />
@@ -684,7 +682,8 @@
     <MESSAGE value="fix: 使用Tabs时, 两个分页内容都会显示在页面上 #72" />
     <MESSAGE value="fix: H5 下 Calendar 组件循环渲染问题" />
     <MESSAGE value="feat: Calendar 组件新增选择年份功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Calendar 组件新增选择年份功能" />
+    <MESSAGE value="更新版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新版本" />
   </component>
   <component name="WindowStateProjectService">
     <state x="429" y="155" key="#build" timestamp="1583908432638">
@@ -716,7 +715,7 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="429" y="155" key="#dev:weapp/0.0.1440.900@0.0.1440.900" timestamp="1583819799771" />
-    <state x="492" y="49" width="839" height="859" key="CommitChangelistDialog2" timestamp="1586187896180">
+    <state x="492" y="49" width="839" height="859" key="CommitChangelistDialog2" timestamp="1586188357177">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="431" y="123" key="CommitChangelistDialog2/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048604173" />
@@ -727,7 +726,7 @@
     <state x="493" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582020262127" />
     <state x="493" y="23" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1577846024911" />
     <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582192093096" />
-    <state x="492" y="49" key="CommitChangelistDialog2/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187896180" />
+    <state x="492" y="49" key="CommitChangelistDialog2/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586188357177" />
     <state x="192" y="97" width="1536" height="864" key="DiffContextDialog" timestamp="1582191305162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
