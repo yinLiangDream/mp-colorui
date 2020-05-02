@@ -35,7 +35,7 @@ export default class ClTabs extends Component<IProps, IState> {
   };
 
   componentDidMount(): void {
-    this.onClickTab(this.props.active || 0);
+    this.props.tabs.length && this.onClickTab(this.props.active || 0);
   }
 
   componentWillReceiveProps(
