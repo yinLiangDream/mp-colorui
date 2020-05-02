@@ -295,6 +295,11 @@ export default class IndexPage extends Taro.Component {
               bgColor="white"
               fix
               clear
+              onClear={() => {
+                this.setState({
+                  tempfilter: []
+                });
+              }}
               searchType="none"
               placeholder="找不到组件在哪？来试试搜索组件吧！"
               showResult
