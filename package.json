@@ -1,6 +1,6 @@
 {
   "name": "mp-colorui",
-  "version": "0.6.12",
+  "version": "0.6.13",
   "description": "MP ColorUI 是一款基于 Taro 框架并且联合 Color-UI CSS 库开发的多端 UI 组件库（支持小程序端和H5端）",
   "keywords": [
     "taro",
@@ -63,7 +63,7 @@
     "@tarojs/router": "2.2.2",
     "@tarojs/taro": "2.2.2",
     "@tarojs/taro-alipay": "2.2.2",
-    "@tarojs/taro-h5": "2.2.2",
+    "@tarojs/taro-h5": "^2.2.2",
     "@tarojs/taro-swan": "2.2.2",
     "@tarojs/taro-weapp": "2.2.2",
     "@tarojs/webpack-runner": "2.2.2",
