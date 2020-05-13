@@ -1,10 +1,12 @@
-import { View } from "@tarojs/components";
-import Taro, { Component } from "@tarojs/taro";
+import { View, Text } from "@tarojs/components";
+import Taro, { Component, pxTransform } from "@tarojs/taro";
+import { IProps } from "../../../@types/tag";
+
 import { BG_COLOR_LIST } from "../../lib/model";
 import { bgColorType } from "../../lib/types";
-import { IProps } from "../../../@types/tag";
 import { classNames } from "../../lib";
 
+import ClIcon from "../icon";
 interface IState {}
 
 export default class ClTag extends Component<IProps, IState> {
@@ -51,7 +53,25 @@ export default class ClTag extends Component<IProps, IState> {
           )}
           style={Object.assign({ overflow: "hidden" }, this.props.style)}
         >
-          {tag.text}
+          {tag.icon ? (
+            <ClIcon
+              iconName={tag.icon}
+              size={"inherit"}
+              style={{
+                paddingRight: pxTransform(8)
+              }}
+            />
+          ) : (
+            ""
+          )}
+          <Text
+            style={{
+              height: "inherit",
+              lineHeight: pxTransform(this.props.size === "normal" ? 48 : 40)
+            }}
+          >
+            {tag.text}
+          </Text>
         </View>
       );
       this.props.tags.length > 1 &&
@@ -73,7 +93,27 @@ export default class ClTag extends Component<IProps, IState> {
                 }`}
                 onClick={this.onClick.bind(this, index)}
               >
-                {tag.text}
+                {tag.icon ? (
+                  <ClIcon
+                    iconName={tag.icon}
+                    size={"inherit"}
+                    style={{
+                      paddingRight: pxTransform(8)
+                    }}
+                  />
+                ) : (
+                  ""
+                )}
+                <Text
+                  style={{
+                    height: "inherit",
+                    lineHeight: pxTransform(
+                      this.props.size === "normal" ? 48 : 40
+                    )
+                  }}
+                >
+                  {tag.text}
+                </Text>
               </View>
             ))}
           </View>

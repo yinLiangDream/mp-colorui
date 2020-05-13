@@ -8,7 +8,8 @@ const tags = [
   },
   {
     text: "和谐",
-    color: "brown"
+    color: "brown",
+    icon: "appreciate"
   },
   {
     text: "民主",
