@@ -93,14 +93,14 @@ export interface IProps extends BaseComponent {
    * 可选类型 `contact`, `getUserInfo`, `getPhoneNumber`, `openSetting`, `feedback`, `getRealnameAuthInfo`
    */
   openType?:
-    | "contact"
-    | "getUserInfo"
-    | "getPhoneNumber"
-    | "openSetting"
-    | "feedback"
-    | "getRealnameAuthInfo"
-    | "launchApp"
-    | "share";
+  | "contact"
+  | "getUserInfo"
+  | "getPhoneNumber"
+  | "openSetting"
+  | "feedback"
+  | "getRealnameAuthInfo"
+  | "launchApp"
+  | "share";
   /**
    * 打开 APP 时，向 APP 传递的参数
    *
@@ -233,7 +233,7 @@ export interface IProps extends BaseComponent {
   /**
    * 支付宝小程序scope
    *
-   * 生效时机：`open-type="getAuthorize"`
+   * 生效时机：`open-type="get/Authorize"`
    */
   scope?: "userInfo" | "phoneNumber";
   /**
@@ -241,7 +241,11 @@ export interface IProps extends BaseComponent {
    *
    * 生效时机: `open-type="getUserInfo"`
    */
-  lang?: string;
+  lang?: 'zh_CN' | 'zh_TW' | 'en';
+  /**
+   * 自定义数据，形式如 { "data-value": value }
+   */
+  customData?: object;
   children?: any;
 }
 

@@ -35,6 +35,7 @@ import { ClButton } from "mp-colorui";
 | showMessageCard  | 显示会话内消息卡片，生效时机：`open-type="contact"`                                                  | boolean | -                                                                                                                                                   | false       |
 | scope            | 支付宝小程序 scope，生效时机：`open-type="getAuthorize"`                                             | string  | `userInfo`,`phoneNumber`                                                                                                                            | -           |
 | lang             | 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。生效时机: `open-type="getUserInfo"` | string  | `zh_CN`,`zh_TW`,`en`                                                                                                                                | -           |
+| customData       | 自定义数据源，格式为 `{ "data-value": value }`                                                       | object  | -                                                                                                                                                   | `{}`        |
 
 ### Button 事件
 
