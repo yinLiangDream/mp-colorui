@@ -45,7 +45,7 @@ export default function ClButton(props: IProps) {
   } ${shadowSizeName}`;
   const normalButton = (
     <Button
-      {...props.customData}
+      data-data={props.customData}
       className={classNames(
         `${buttonClassName} ${disabledClassName ? "disabled" : ""}`
       )}
