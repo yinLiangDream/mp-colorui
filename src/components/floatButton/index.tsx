@@ -174,7 +174,11 @@ export default function ClFloatButton(props: IProps) {
                 transition: "all 0.15s linear"
               }}
             >
-              <ClIcon iconName={icon} size={size} />
+              {typeof icon === "string" ? (
+                <ClIcon iconName={icon as string} size={size} />
+              ) : (
+                <ClIcon {...icon} />
+              )}
             </View>
           </View>
         </View>

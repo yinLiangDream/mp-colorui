@@ -7,6 +7,7 @@ import {
   lightBgColorType,
   normalSizeType
 } from "./baseType";
+import {IconProps} from './icon'
 
 export interface IProps extends BaseComponent {
   /**
@@ -61,7 +62,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认 `add`
    */
-  icon?: iconType;
+  icon?: iconType | IconProps;
   /**
    * 背景色
    *

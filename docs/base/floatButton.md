@@ -23,7 +23,7 @@ import { ClFloatButton } from "mp-colorui";
 | shadow          | 是否有阴影     | boolean      | -                                                            | `true`     |
 | move            | 是否可移动     | boolean      | -                                                            | `false`    |
 | open            | 是否可展开     | boolean      | -                                                            | `true`     |
-| icon            | 图标           | string       | 参考文档 [Icon-iconName](/mp-colorui-doc/base/icon#iconname) | `add`      |
+| icon            | 图标，可以传参为图标名或者直接 icon 类型           | string 、 Icon      | 参考文档 [Icon-iconName](/mp-colorui-doc/base/icon#iconname) | `add`      |
 | bgColor         | 背景色         | string       | 参考文档 [默认色](/mp-colorui-doc/home/color)                | `blue`     |
 | iconColor       | 图标色         | string       | 参考文档 [默认色-标准色](/mp-colorui-doc/home/color#标准色)  | -          |
 | direction       | 展开方向       | string       | `vertical`,`horizontal`                                      | `vertical` |
