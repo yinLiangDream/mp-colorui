@@ -2,14 +2,11 @@ const fs = require("fs");
 const path = require("path");
 
 // 文档所在绝对地址
-const docPath =
-  "/Users/ly/develop/WebProject/WeChatMiniProgram/mp-colorui-doc/";
+const docPath = "../../../mp-colorui-doc/";
 // 打包完成所在地址
-const distPath =
-  "/Users/ly/develop/WebProject/WeChatMiniProgram/mp-colorui/docs/.vuepress/dist/";
+const distPath = "../../docs/.vuepress/dist";
 // code 所在
-const publicPath =
-  "/Users/ly/develop/WebProject/WeChatMiniProgram/mp-colorui/docs/.vuepress/public";
+const publicPath = "../../docs/.vuepress/public";
 
 // 删除/移动文件
 const transfromFile = (relativePath, type) => {
@@ -21,7 +18,12 @@ const transfromFile = (relativePath, type) => {
       if (fs.statSync(currentPath).isDirectory()) {
         if (type === "copy")
           fs.mkdirSync(
-            path.join(docPath, relativePath.split(distPath)[1] || "", filename)
+            path.join(
+              __dirname,
+              docPath,
+              relativePath.split(distPath)[1] || "",
+              filename
+            )
           );
         if (filename !== ".git") transfromFile(currentPath, type);
       } else {
@@ -57,7 +59,7 @@ const cos = new COS({
   SecretKey: "tdsPqiS6MdpriUAjDbpsodKtSvFQWVM7"
 });
 
-const allcodeName = fs.readdirSync(publicPath);
+const allcodeName = fs.readdirSync(path.join(__dirname, publicPath));
 
 // 循环上传
 allcodeName.forEach(name => {
@@ -66,7 +68,7 @@ allcodeName.forEach(name => {
       Bucket: "mp-colorui-1255362963" /* 必须 */,
       Region: "ap-chengdu" /* 必须 */,
       Key: `code/${name}`,
-      Body: fs.createReadStream(path.join(docPath, name)),
+      Body: fs.createReadStream(path.join(__dirname, docPath, name))
       // onProgress: function(progressData) {
       //   console.log(JSON.stringify(progressData));
       // }

@@ -38,12 +38,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/taro-ui-sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/taro-ui-sample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@types/floatButton.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/@types/floatButton.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/base/floatButton.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/base/floatButton.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/floatButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/floatButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/copyDoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/copyDoc.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +154,7 @@
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build:h5">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -166,16 +163,6 @@
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="npm" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="build:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:h5" />
-      </scripts>
-      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
@@ -211,13 +198,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="docs:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.docs:build" />
         <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.build:weapp" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="npm.build:h5" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +331,7 @@
       <workItem from="1589428045636" duration="88000" />
       <workItem from="1593012901575" duration="1248000" />
       <workItem from="1595138857531" duration="773000" />
-      <workItem from="1596077308451" duration="479000" />
+      <workItem from="1596077308451" duration="2317000" />
     </task>
     <task id="LOCAL-00063" summary="feat 对 `ClSearchBar` 的 `onBlur` 和 `onFocus` 支持更多的行为? #35">
       <created>1574783071291</created>
@@ -771,26 +768,78 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="236" y="143" key="EditFileWatcherDialog/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589336694026" />
-    <state width="1398" height="145" key="GridCell.Tab.0.bottom" timestamp="1589340784521">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2518" height="601" key="GridCell.Tab.0.bottom" timestamp="1596079913353">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1398" height="145" key="GridCell.Tab.0.bottom/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857583" />
     <state width="1398" height="145" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589340784521" />
-    <state width="1398" height="145" key="GridCell.Tab.0.center" timestamp="1589340784519">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2518" height="601" key="GridCell.Tab.0.bottom/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596079913353" />
+    <state width="2518" height="601" key="GridCell.Tab.0.center" timestamp="1596079913351">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1398" height="145" key="GridCell.Tab.0.center/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857578" />
     <state width="1398" height="145" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589340784519" />
-    <state width="1398" height="145" key="GridCell.Tab.0.left" timestamp="1589340784515">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2518" height="601" key="GridCell.Tab.0.center/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596079913351" />
+    <state width="2518" height="601" key="GridCell.Tab.0.left" timestamp="1596079913350">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1398" height="145" key="GridCell.Tab.0.left/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857577" />
     <state width="1398" height="145" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589340784515" />
-    <state width="1398" height="145" key="GridCell.Tab.0.right" timestamp="1589340784520">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="2518" height="601" key="GridCell.Tab.0.left/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596079913350" />
+    <state width="2518" height="601" key="GridCell.Tab.0.right" timestamp="1596079913352">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1398" height="145" key="GridCell.Tab.0.right/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857582" />
     <state width="1398" height="145" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589340784520" />
+    <state width="2518" height="601" key="GridCell.Tab.0.right/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596079913352" />
+    <state width="2518" height="520" key="GridCell.Tab.1.bottom" timestamp="1596078776469">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.bottom/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776469" />
+    <state width="2518" height="520" key="GridCell.Tab.1.center" timestamp="1596078776468">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.center/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776468" />
+    <state width="2518" height="520" key="GridCell.Tab.1.left" timestamp="1596078776467">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.left/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776467" />
+    <state width="2518" height="520" key="GridCell.Tab.1.right" timestamp="1596078776469">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.1.right/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776469" />
+    <state width="2518" height="520" key="GridCell.Tab.2.bottom" timestamp="1596078776473">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.2.bottom/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776473" />
+    <state width="2518" height="520" key="GridCell.Tab.2.center" timestamp="1596078776471">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.2.center/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776471" />
+    <state width="2518" height="520" key="GridCell.Tab.2.left" timestamp="1596078776470">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.2.left/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776470" />
+    <state width="2518" height="520" key="GridCell.Tab.2.right" timestamp="1596078776472">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.2.right/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776472" />
+    <state width="2518" height="520" key="GridCell.Tab.3.bottom" timestamp="1596078776476">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.3.bottom/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776476" />
+    <state width="2518" height="520" key="GridCell.Tab.3.center" timestamp="1596078776474">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.3.center/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776474" />
+    <state width="2518" height="520" key="GridCell.Tab.3.left" timestamp="1596078776473">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.3.left/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776473" />
+    <state width="2518" height="520" key="GridCell.Tab.3.right" timestamp="1596078776475">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="520" key="GridCell.Tab.3.right/552.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1596078776475" />
     <state x="1009" y="430" key="RollbackChangesDialog" timestamp="1596077327762">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
