@@ -4,4 +4,4 @@ rn_temp/
 node_modules/
 .DS_Store
 coverage/
-.idea/workspace.xml
+.idea/
