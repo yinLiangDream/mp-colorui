@@ -49,12 +49,6 @@
     "stylelint-scss": "^3.16.0",
     "typescript": "~3.7.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --quiet --cache --fix",
     "src/**/*.scss": "stylelint --syntax scss --fix"
