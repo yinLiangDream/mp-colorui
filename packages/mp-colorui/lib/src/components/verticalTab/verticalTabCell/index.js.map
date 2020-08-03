@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/components/verticalTab/verticalTabCell/index.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AACzB,OAAO,MAAM,MAAM,YAAY,CAAA;AAI/B,MAAM,CAAC,OAAO,UAAU,iBAAiB,CAAC,KAAa;IACrD,OAAO,oBAAC,MAAM,QAAE,KAAK,CAAC,QAAQ,CAAU,CAAA;AAC1C,CAAC;AAED,iBAAiB,CAAC,OAAO,GAAG;IAC1B,cAAc,EAAE,IAAI;CACrB,CAAA"}

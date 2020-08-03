@@ -1,0 +1,185 @@
+import Taro from "@tarojs/taro";
+import classnames from "classnames";
+import * as model from "./model";
+import rule from "./rules";
+
+export const classNames = classnames;
+const fullDate = (num) => {
+    if (num < 10)
+        return "0" + num;
+    return num;
+};
+/**
+ * 获取当前日期
+ * @param type 单位
+ */
+export const getNowDate = (type) => {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = fullDate(date.getMonth());
+    const day = fullDate(date.getDate());
+    if (type === "year")
+        return `${year}`;
+    if (type === "month")
+        return `${year}-${month}`;
+    if (type === "day")
+        return `${year}-${month}-${day}`;
+    return `${year}-${month}-${day}`;
+};
+/**
+ * 获取当前格式化时间 hh:mm
+ */
+export const getNowTIme = () => {
+    const date = new Date();
+    const hour = date.getHours();
+    const min = date.getMinutes();
+    return `${hour}:${min}`;
+};
+/**
+ * 判断是否为 number
+ * @param obj  参数值
+ */
+export const isNumber = (obj) => {
+    return typeof obj === "number" && !isNaN(obj);
+};
+/**
+ * 函数防抖
+ * @param func 要执行的函数
+ * @param wait 延迟时间
+ * @returns func
+ */
+export const debounce = (func, wait) => {
+    let timeout;
+    return function () {
+        let context = this;
+        let args = arguments;
+        if (timeout)
+            clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            func.apply(context, args);
+            clearTimeout(timeout);
+        }, wait);
+    };
+};
+/**
+ * 函数节流
+ * @param func 要执行的函数
+ * @param wait 延迟时间
+ * @returns func
+ */
+export const throttling = (func, wait) => {
+    let timeout;
+    return function () {
+        let context = this;
+        let args = arguments;
+        if (timeout)
+            return;
+        timeout = setTimeout(() => {
+            func.apply(context, args);
+            clearTimeout(timeout);
+        }, wait);
+    };
+};
+/**
+ * 按照 750 作为设计时的百分比
+ */
+export const screenPercent = Taro.getSystemInfoSync().screenWidth / 750;
+/**
+ * 随机生成 id
+ * @param hashLength number 长度
+ * @returns {string} id
+ */
+export const generateId = (hashLength = 24) => {
+    if (!hashLength || typeof Number(hashLength) != "number") {
+        return "";
+    }
+    const ar = [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+    ];
+    const hs = [];
+    const hl = Number(hashLength);
+    const al = ar.length;
+    for (let i = 0; i < hl; i++) {
+        const radom = Math.random() * al;
+        const index = Math.floor(radom);
+        const code = ar[index];
+        hs.push(code);
+    }
+    return `id-${hs.join("")}`;
+};
+/**
+ * 是否是 H5 环境
+ * @type {boolean}
+ */
+export const isH5 = Taro.ENV_TYPE.WEB === Taro.getEnv();
+/**
+ * 是否是 支付宝 环境
+ * @type {boolean}
+ */
+export const isAliPay = Taro.ENV_TYPE.ALIPAY === Taro.getEnv();
+/**
+ * 是否是 微信 环境
+ * @type {boolean}
+ */
+export const isWeApp = Taro.ENV_TYPE.WEAPP === Taro.getEnv();
+/**
+ * 获取 Rect
+ * @returns {number}
+ */
+export const getRectNumber = () => {
+    if (isAliPay)
+        return 0;
+    return 1;
+};
+/**
+ * 是否为本地链接
+ * @param {string} url
+ * @returns {boolean}
+ */
+export const idLocalUrl = (url) => {
+    return url.indexOf(".") === 0 || url.indexOf("/") === 0;
+};
+export const ClUtils = {
+    rule
+};
+export default {
+    model,
+    getNowDate,
+    rule
+};
+//# sourceMappingURL=index.js.map
