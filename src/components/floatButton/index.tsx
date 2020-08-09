@@ -99,6 +99,7 @@ export default function ClFloatButton(props: IProps) {
     bottom: 200,
     left: "auto"
   };
+  const isString = value => typeof value === "string";
   return (
     <View
       className={classNames(
@@ -174,10 +175,10 @@ export default function ClFloatButton(props: IProps) {
                 transition: "all 0.15s linear"
               }}
             >
-              {typeof icon === "string" ? (
+              {isString(icon) ? (
                 <ClIcon iconName={icon as string} size={size} />
               ) : (
-                <ClIcon {...icon} />
+                <ClIcon {...(icon as object)} />
               )}
             </View>
           </View>
