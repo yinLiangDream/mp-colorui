@@ -47,6 +47,7 @@ const config = {
     patterns: [],
     options: {}
   },
+  plugins: ["@tarojs/plugin-sass"],
   weapp: {
     module: {
       postcss: {
