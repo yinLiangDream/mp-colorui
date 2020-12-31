@@ -1,4 +1,5 @@
-import Taro, { Component } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import { Component } from "react";
 import { IProps } from "../../../../../@types/select";
 import { PickerView, PickerViewColumn, View } from "@tarojs/components";
 import { classNames } from "../../../../lib";

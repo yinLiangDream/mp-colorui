@@ -1,4 +1,5 @@
-import Taro, { pxTransform, useState, useEffect } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { useState, useEffect } from "react";
 import { ScrollView, View } from "@tarojs/components";
 import { IProps } from "../../../@types/verticalTab";
 import {

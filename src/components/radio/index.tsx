@@ -1,5 +1,6 @@
 import { Radio, RadioGroup, Text, View } from "@tarojs/components";
-import Taro, { useEffect, useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import { useState, useEffect } from "react";
 import H5Radio from "./h5";
 import ListRadio from "./components/ListRadio";
 import { IProps } from "../../../@types/radio";

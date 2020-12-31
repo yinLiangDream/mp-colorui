@@ -1,5 +1,6 @@
 import { Image, Text, View } from "@tarojs/components";
-import Taro, { useEffect, useState, pxTransform } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { useState, useEffect } from "react";
 import { BG_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/loading";
 import { classNames } from "../../lib";

@@ -1,4 +1,5 @@
-import Taro, { useEffect, useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import { Component, useEffect, useState } from "react";
 import { View } from "@tarojs/components";
 import { classNames } from "../../../lib";
 import { IProps } from "../../../../@types/formItem";
@@ -8,7 +9,7 @@ import defaultRules from "../../../lib/rules";
 import context from "../context";
 import "./index.scss";
 
-export default class ClFormItem extends Taro.Component<IProps> {
+export default class ClFormItem extends Component<IProps> {
   // static contextType = FormContext
   static defaultProps: IProps = {
     prop: "",

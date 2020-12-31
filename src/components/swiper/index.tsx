@@ -1,5 +1,6 @@
 import { Image, Swiper, SwiperItem, Video, View } from "@tarojs/components";
-import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { useState, useEffect } from "react";
 import { IProps, TList } from "../../../@types/swiper";
 import { classNames, generateId, isAliPay, screenPercent } from "../../lib";
 

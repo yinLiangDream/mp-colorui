@@ -1,5 +1,6 @@
 import { View, Text } from "@tarojs/components";
-import Taro, { Component, pxTransform } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { Component } from "react";
 import { IProps } from "../../../@types/tag";
 
 import { BG_COLOR_LIST } from "../../lib/model";

@@ -1,5 +1,6 @@
 import { Block, Text, View } from "@tarojs/components";
-import Taro, { Component } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import { Component } from "react";
 import { classNames } from "../../lib";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/navBar";

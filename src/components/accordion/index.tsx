@@ -1,6 +1,7 @@
-import Taro, { pxTransform, useEffect, useState } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
 import { View, ScrollView } from "@tarojs/components";
 import classNames from "classnames";
+import { useState, useEffect } from "react";
 
 import { IProps } from "../../../@types/accordion";
 import ClIcon from "../icon";

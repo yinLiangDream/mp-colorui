@@ -1,5 +1,6 @@
 import { Image, Input, View, ScrollView } from "@tarojs/components";
-import Taro, { useState, pxTransform, useEffect, useMemo } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { useState, useEffect, useMemo } from "react";
 import ClButton from "../button";
 import ClIcon from "../icon/index";
 import { IProps } from "../../../@types/input";

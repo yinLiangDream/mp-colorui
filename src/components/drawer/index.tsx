@@ -1,5 +1,6 @@
 import { View } from "@tarojs/components";
-import Taro, { useMemo, useState } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import { useMemo, useState } from "react";
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/drawer";
 

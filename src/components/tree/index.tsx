@@ -1,5 +1,6 @@
-import Taro, { pxTransform, Component } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
 import { View } from "@tarojs/components";
+import { Component } from "react";
 import { IProps } from "../../../@types/tree";
 import ClCheckbox from "../checkbox";
 import ClIcon from "../icon";

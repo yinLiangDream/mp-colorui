@@ -1,5 +1,6 @@
 import { View, Text } from "@tarojs/components";
-import Taro, { pxTransform, Component } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { Component } from "react";
 import { IProps } from "../../../../@types/checkbox";
 import { classNames } from "../../../lib";
 

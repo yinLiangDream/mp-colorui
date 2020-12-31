@@ -1,5 +1,6 @@
 import { View } from "@tarojs/components";
-import Taro, { useState, useEffect } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import { useState, useEffect } from "react";
 import { IProps } from "../../../../@types/tip";
 import { screenPercent } from "../../../lib";
 import ClText from "../../text";

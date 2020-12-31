@@ -1,4 +1,5 @@
-import Taro, { useState, useEffect, pxTransform, useMemo } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import { useState, useEffect, useMemo } from "react";
 import { View } from "@tarojs/components";
 import { IProps } from "../../../@types/swiperAction";
 
