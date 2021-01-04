@@ -1,5 +1,6 @@
 import { View } from "@tarojs/components";
-import Taro, { useState, useEffect } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState, useEffect } from "react";
 import { IProps } from "../../../../@types/tip";
 import { screenPercent } from "../../../lib";
 import ClText from "../../text";
@@ -223,12 +224,12 @@ export default function ClTip_H5(props: IProps) {
                 e.stopPropagation();
               }}
             >
-              {this.props.renderMessage}
+              {props.renderMessage}
             </View>
           </View>
         </View>
       </View>
-      {this.props.children}
+      {props.children}
     </View>
   );
 }

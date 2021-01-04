@@ -1,5 +1,5 @@
 import { Button, Text, View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import React from "react";
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/button";
 import { BG_COLOR_LIST, SIZE } from "../../lib/model";
@@ -69,7 +69,7 @@ export default function ClButton(props: IProps) {
     >
       <Text className={loadingClassName} />
       <Text>{props.text}</Text>
-      {this.props.children}
+      {props.children}
     </Button>
   );
   const longButton = (

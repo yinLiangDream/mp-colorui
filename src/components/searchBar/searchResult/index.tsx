@@ -1,4 +1,4 @@
-import Taro, { useState, useEffect } from "@tarojs/taro";
+import React, { useState, useEffect } from "react";
 import { View } from "@tarojs/components";
 import ClFlex from "../../flex";
 import ClText from "../../text";

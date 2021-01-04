@@ -1,5 +1,6 @@
 import { Image, Input, View, ScrollView } from "@tarojs/components";
-import Taro, { useState, pxTransform, useEffect, useMemo } from "@tarojs/taro";
+import Taro, { pxTransform } from "@tarojs/taro";
+import React, { useState, useEffect, useMemo } from "react";
 import ClButton from "../button";
 import ClIcon from "../icon/index";
 import { IProps } from "../../../@types/input";
@@ -8,13 +9,12 @@ import "./index.scss";
 import { classNames, screenPercent } from "../../lib";
 import ClSearchResult from "../searchBar/searchResult/index";
 import ClCard from "../card";
-
 function ClInput(props: IProps) {
   const [focus, setFocus] = useState(false);
-  const [normalType, setNormalType] = useState();
+  const [normalType, setNormalType] = useState<'text' | 'number' | 'idcard' | 'digit' | undefined>();
   const [tempInput, setTempInput] = useState("");
   const [initValue, setInitValue] = useState(props.value);
-  const [inputId, setInputId] = useState(`cl-input-${+new Date()}`);
+  const [inputId] = useState(`cl-input-${+new Date()}`);
   const [materialWidth, setMaterialWidth] = useState("0px");
   const [defaultValue, setDefaultValue] = useState(props.defaultValue);
   const [showComplete, setShowComplete] = useState(false);
@@ -175,7 +175,7 @@ function ClInput(props: IProps) {
     value,
     adjustPosition,
     type,
-    maxLength,
+    // maxLength,
     disabled,
     renderCustomRight,
     autoFocus
@@ -261,7 +261,7 @@ function ClInput(props: IProps) {
           adjustPosition={adjustPosition}
           type={normalType}
           password={type === "password"}
-          maxLength={maxLength || -1}
+          // maxLength={maxLength || -1}
           disabled={disabled}
           style={{
             textAlign: props.align,

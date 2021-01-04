@@ -1,5 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import React from "react";
 import { IProps } from "../../../@types/divider";
 import { TEXT_COLOR_LIST, SIZE } from "../../lib/model";
 import ClLayout from "../layout";
@@ -16,7 +16,7 @@ export default function ClDivider(props: IProps) {
     >
       <ClLayout padding="normal" paddingDirection="vertical">
         <View className={`${colorClassName} ${sizeClassName} cu-divider`}>
-          {this.props.children}
+          {props.children}
         </View>
       </ClLayout>
     </View>

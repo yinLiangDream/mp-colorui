@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { View, Text, ScrollView } from "@tarojs/components";
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/screenDrawer";

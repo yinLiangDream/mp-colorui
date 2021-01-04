@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React, { Component, createContext } from "react";
 import { View } from "@tarojs/components";
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/form";
@@ -11,8 +11,8 @@ type init = {
 };
 
 const date: init = {};
-export const FormContext = Taro.createContext(date);
-export default class ClForm extends Taro.Component<IProps> {
+export const FormContext = createContext(date);
+export default class ClForm extends Component<IProps> {
   static contextType = FormContext;
   static defaultProps: IProps = {
     model: {},

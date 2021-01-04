@@ -1,4 +1,4 @@
-import Taro, { Component } from "@tarojs/taro";
+import React, { Component } from "react";
 import { IProps } from "../../../../../@types/select";
 import { PickerView, PickerViewColumn, View } from "@tarojs/components";
 import { classNames } from "../../../../lib";
@@ -24,8 +24,8 @@ class AlipayMutiSelect extends Component<IProps, IState> {
     tempSelected: [],
     lastSelected: []
   };
-  constructor() {
-    super(...arguments);
+  constructor(props) {
+    super(props);
   }
 
   private updateData() {

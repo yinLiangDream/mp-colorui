@@ -1,4 +1,4 @@
-import Taro, { useEffect, useState } from "@tarojs/taro";
+import React, { useState, useEffect } from "react";
 import { Text, View } from "@tarojs/components";
 
 import { IProps } from "../../../@types/radio";
@@ -14,7 +14,7 @@ export default function RadioH5(props: IProps) {
   const list = props.radioGroup || [];
   const [activeValue, setActiveValue] = useState(props.checkedValue);
 
-  const clickRadio = (name, index) => {
+  const clickRadio = (name, _) => {
     setActiveValue(name);
   };
 

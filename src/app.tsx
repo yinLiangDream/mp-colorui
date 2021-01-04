@@ -1,4 +1,5 @@
 import Taro, { Component, Config } from "@tarojs/taro";
+import React from 'react';
 import Index from "./pages/index/index.js";
 import "./app.scss";
 
@@ -128,4 +129,4 @@ class App extends Component {
   }
 }
 
-Taro.render(<App />, document.getElementById("app"));
+export default App;

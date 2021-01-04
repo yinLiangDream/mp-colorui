@@ -1,4 +1,5 @@
-import Taro, { pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React, { Component } from "react";
 import { View, Swiper, SwiperItem } from "@tarojs/components";
 import { IProps } from "../../../../@types/calendar";
 import dayjs from "dayjs";
@@ -46,7 +47,7 @@ function dealYearMonth(day) {
   return `${day.year()}年${day.month() + 1}月`;
 }
 
-export default class Calendar_h5 extends Taro.Component<IProps, IState> {
+export default class Calendar_h5 extends Component<IProps, IState> {
   static options = {
     addGlobalClass: true
   };

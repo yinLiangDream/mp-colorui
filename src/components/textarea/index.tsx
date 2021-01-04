@@ -1,4 +1,5 @@
-import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React, { useState, useEffect } from "react";
 import { Textarea, View } from "@tarojs/components";
 import { IProps } from "../../../@types/textarea";
 import ClFlex from "../../components/flex";

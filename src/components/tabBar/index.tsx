@@ -1,5 +1,5 @@
 import { View, Image } from "@tarojs/components";
-import Taro, { useState, useEffect } from "@tarojs/taro";
+import React, { useState, useEffect } from "react";
 import { classNames, isNumber } from "../../lib";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/tabBar";

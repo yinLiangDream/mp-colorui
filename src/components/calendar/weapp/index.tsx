@@ -1,5 +1,6 @@
-import Taro, { useState, useEffect, pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
 import { View, Swiper, SwiperItem } from "@tarojs/components";
+import React, { useState, useEffect } from "react";
 import { IProps } from "../../../../@types/calendar";
 import dayjs from "dayjs";
 import ClGrid from "../../grid";

@@ -1,4 +1,5 @@
-import Taro, { useState, useEffect } from "@tarojs/taro";
+import Taro from "@tarojs/taro";
+import React, { useState, useEffect } from "react";
 import { View } from "@tarojs/components";
 
 import { IProps } from "../../../@types/message";
@@ -17,15 +18,9 @@ export default function ClMessage(props: IProps) {
   const [showMessage, setShowMessage] = useState(show);
   const [contentHeight, setContentHeight] = useState(tempHeight);
   const [tempMessage, setTempMessage] = useState("");
-  const [tempType, setTempType] = useState();
+  const [tempType, setTempType] = useState<"success" | "error" | "warn" | "info" | "custom">("success");
   const durationTime = duration || 3;
-  const mapColor = {
-    success: "light-green",
-    error: "light-red",
-    warn: "light-yellow",
-    info: "light-grey",
-    custom: bgColor
-  };
+  const mapColor = new Map([["success", "light-green"], ["error", "light-red"],["warn", "light-yellow"],["info", "light-grey"],["custom", bgColor]]);
   const calculateHeight = () => {
     const view = Taro.createSelectorQuery().in(this.$scope);
     const query = view.select("#content");

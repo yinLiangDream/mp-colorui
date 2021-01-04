@@ -1,5 +1,6 @@
 import { Text } from "@tarojs/components";
-import Taro, { pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React from 'react'
 import { classNames, isNumber } from "../../lib";
 import { pxMap } from "../../lib/model";
 import { IProps } from "../../../@types/icon";

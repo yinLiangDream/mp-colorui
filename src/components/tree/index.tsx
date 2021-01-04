@@ -1,13 +1,12 @@
-import Taro, { pxTransform, Component } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
 import { View } from "@tarojs/components";
+import React, { Component } from "react";
 import { IProps } from "../../../@types/tree";
 import ClCheckbox from "../checkbox";
 import ClIcon from "../icon";
 import ClText from "../text";
 import ClFlex from "../flex";
 import { generateId } from "../../lib";
-
-import "./index.scss";
 
 interface IState {
   list: any[];

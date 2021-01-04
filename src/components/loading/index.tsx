@@ -1,5 +1,6 @@
 import { Image, Text, View } from "@tarojs/components";
-import Taro, { useEffect, useState, pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React, { useState, useEffect } from "react";
 import { BG_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/loading";
 import { classNames } from "../../lib";
@@ -35,7 +36,7 @@ export default function ClLoading(props: IProps) {
 
   const commonComponent = (
     <View style={Object.assign(contentViewStyle)}>
-      {this.props.children}
+      {props.children}
       <View
         className="cu-load load-image"
         style={Object.assign(contentLoadingStyle)}
@@ -91,7 +92,7 @@ export default function ClLoading(props: IProps) {
           }}
         />
       </View>
-      {this.props.children}
+      {props.children}
     </View>
   );
   const lineComponent = (
@@ -119,7 +120,7 @@ export default function ClLoading(props: IProps) {
         />
         <View className={`load-progress-spinner text-${props.bgColor}`} />
       </View>
-      {this.props.children}
+      {props.children}
     </View>
   );
 

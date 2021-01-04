@@ -1,5 +1,6 @@
 import { Button, Input, ScrollView, Text, View } from "@tarojs/components";
-import Taro, { Component, pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
+import React, { Component } from "react";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/searchBar";
 import ClCard from "../card";

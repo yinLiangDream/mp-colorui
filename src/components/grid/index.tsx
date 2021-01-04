@@ -1,5 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import React from 'react';
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/grid";
 
@@ -14,7 +14,7 @@ export default function ClGrid(props: IProps) {
       )}
       style={Object.assign({}, props.style)}
     >
-      {this.props.children}
+      {props.children}
     </View>
   );
   return gridComponent;

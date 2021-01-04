@@ -1,5 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro, { Component } from "@tarojs/taro";
+import React, { Component } from "react";
 import { BG_COLOR_LIST, SIZE } from "../../lib/model";
 import { IProps } from "../../../@types/progress";
 import { classNames } from "../../lib";

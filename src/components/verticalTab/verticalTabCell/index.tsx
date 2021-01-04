@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import React from 'react'
 import ClCard from "../../card";
 
 import {IProps} from '../../../../@types/verticalTabCell'
@@ -6,7 +6,7 @@ import {IProps} from '../../../../@types/verticalTabCell'
 export default function ClVerticalTabCell(props: IProps) {
   return (
     <ClCard>
-      {this.props.children}
+      {props.children}
     </ClCard>
   )
 }

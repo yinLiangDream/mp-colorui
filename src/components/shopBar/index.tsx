@@ -1,5 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro, { useState, useMemo } from "@tarojs/taro";
+import React, { useState, useMemo } from "react";
 import { classNames, generateId } from "../../lib";
 import { BG_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/shopBar";

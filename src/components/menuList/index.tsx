@@ -1,5 +1,5 @@
 import { Image, Text, View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import React from "react";
 import ClIcon from "../icon/index";
 import { TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/menuList";
