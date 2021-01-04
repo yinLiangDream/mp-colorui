@@ -1,5 +1,5 @@
 import Taro, { pxTransform } from "@tarojs/taro";
-import { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { View } from "@tarojs/components";
 import { IProps } from "../../../@types/swiperAction";
 
@@ -11,7 +11,7 @@ import ClLayout from "../layout";
 export default function ClSwiperAction(props: IProps) {
   const [initOptions, setInitOptions] = useState(props.options || []);
   const [contentId, setContentId] = useState(generateId());
-  const [actionWidth, setActionWidth] = useState();
+  const [actionWidth, setActionWidth] = useState<number>(0);
   const [lastPoint, setLastPoint] = useState(0);
   const [translateX, setTranslateX] = useState(0);
   const [lastTranslateX, setLastTranslateX] = useState(0);
@@ -164,7 +164,7 @@ export default function ClSwiperAction(props: IProps) {
           position: "relative"
         }}
       >
-        {this.props.children}
+        {props.children}
         {isH5 ? (
           <View
             className="cl-swiper-action__action"

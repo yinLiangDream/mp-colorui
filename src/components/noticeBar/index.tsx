@@ -1,5 +1,5 @@
 import Taro, { pxTransform } from "@tarojs/taro";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text } from "@tarojs/components";
 import { IProps } from "../../../@types/noticeBar";
 import ClText from "../text";

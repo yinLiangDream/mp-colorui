@@ -1,6 +1,5 @@
 import { Text, View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
-import { Component } from "react";
+import React, { Component } from "react";
 import { classNames } from "../../lib";
 import { TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/steps";

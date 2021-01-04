@@ -1,5 +1,5 @@
-import Taro from "@tarojs/taro";
 import { View } from "@tarojs/components";
+import React from "react";
 import { IProps } from "../../../@types/card.d";
 import { BG_COLOR_LIST } from "../../lib/model";
 import ClText from "../text";
@@ -36,8 +36,8 @@ export default function ClCard(props: IProps) {
         ) : (
           ""
         )}
-        {this.props.renderTitle}
-        <View className="padding">{this.props.children}</View>
+        {props.renderTitle}
+        <View className="padding">{props.children}</View>
       </View>
     </View>
   );

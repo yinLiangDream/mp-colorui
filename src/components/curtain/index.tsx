@@ -1,6 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { IProps } from "../../../@types/curtain";
 import ClIcon from "../icon";
 
@@ -31,7 +30,7 @@ export default function ClCurtain(props: IProps) {
           props.onClick && props.onClick();
         }}
       >
-        {this.props.children}
+        {props.children}
         <View
           className={closeBtnPosition}
           onClick={e => {

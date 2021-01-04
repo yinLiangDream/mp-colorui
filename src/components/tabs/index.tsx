@@ -1,6 +1,6 @@
 import { ScrollView, Text, View } from "@tarojs/components";
 import Taro, { pxTransform } from "@tarojs/taro";
-import { Component } from "react";
+import React, { Component } from "react";
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from "../../lib/model";
 import { IProps } from "../../../@types/tabs";
 
@@ -41,7 +41,7 @@ export default class ClTabs extends Component<IProps, IState> {
 
   componentWillReceiveProps(
     nextProps: Readonly<IProps>,
-    nextContext: any
+    // nextContext: any
   ): void {
     const nextActive = nextProps.active;
     const thisActive = this.props.active;
@@ -58,11 +58,11 @@ export default class ClTabs extends Component<IProps, IState> {
     const view0 = query.select(`#${id0}`);
     let left = 0;
     const promise = new Promise(resolve => {
-      new Promise(resolve1 => {
+      new Promise(resolve => {
         view0.boundingClientRect().exec(res => {
           const data = res[0];
           left = data.left;
-          resolve1();
+          resolve(null);
         });
       }).then(() => {
         view.boundingClientRect().exec(res => {
@@ -250,7 +250,7 @@ export default class ClTabs extends Component<IProps, IState> {
             onTouchEnd={e => {
               if (!this.props.touchMove) return;
               duration = 0.3;
-              move = e.changedTouches[0].pageX - move;
+              move = e.changedTouches[0].x - move;
               const maxIndex = this.props.tabs.length - 1;
               if (move < -50)
                 this.onClickTab(

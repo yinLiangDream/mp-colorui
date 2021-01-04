@@ -14,7 +14,7 @@ export interface IProps extends BaseComponent {
    *
    * 可选类型 `xsmall`, `small`, `normal`, `large`, `xlarge`, `xxlarge`, `slarge`, `xslarge` , 或者直接 Number 数值
    */
-  size?: extendSizeType | number;
+  size?: extendSizeType | number | "inherit";
   /**
    * 图标颜色，可选类型请查看 默认色-标准色
    */

@@ -1,5 +1,5 @@
 import { Checkbox, CheckboxGroup, Text, View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import React from "react";
 import { IProps } from "../../../@types/checkbox";
 import ClCheckboxH5 from "./h5";
 import { classNames, isWeApp } from "../../lib";

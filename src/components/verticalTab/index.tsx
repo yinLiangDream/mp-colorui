@@ -1,5 +1,5 @@
 import Taro, { pxTransform } from "@tarojs/taro";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ScrollView, View } from "@tarojs/components";
 import { IProps } from "../../../@types/verticalTab";
 import {
@@ -118,7 +118,7 @@ export default function ClVerticalTab(props: IProps) {
             const endTop = Math.abs(top - data.top);
             setScrollContent(endTop);
             scrollTab = false;
-            resolve();
+            resolve(null);
           }, 300);
         });
       });
@@ -128,7 +128,7 @@ export default function ClVerticalTab(props: IProps) {
     <ScrollView
       scrollY
       scrollWithAnimation
-      scrollAnimationDuration={200}
+      // scrollAnimationDuration={200}
       style={{
         height: props.height === "full" ? "100%" : pxTransform(props.height),
         maxHeight: "100vh",
@@ -139,14 +139,14 @@ export default function ClVerticalTab(props: IProps) {
       scrollTop={isAliPay ? undefined : scrollContent}
       enableBackToTop={props.backTop}
     >
-      {this.props.children}
+      {props.children}
     </ScrollView>
   );
   const h5Component = (
     <ScrollView
       scrollY
       scrollWithAnimation
-      scrollAnimationDuration={200}
+      // scrollAnimationDuration={200}
       style={{
         height: props.height === "full" ? "100%" : pxTransform(props.height),
         maxHeight: "100vh",
@@ -156,7 +156,7 @@ export default function ClVerticalTab(props: IProps) {
       scrollTop={scrollContent}
       enableBackToTop={props.backTop}
     >
-      {this.props.children}
+      {props.children}
     </ScrollView>
   );
   return (

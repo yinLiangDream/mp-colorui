@@ -1,5 +1,5 @@
 import Taro from "@tarojs/taro";
-import "./style/index.scss";
+// import "./style/index.scss";
 
 export { default as ClAvatar } from "./components/avatar";
 export { default as ClButton } from "./components/button";
@@ -49,4 +49,4 @@ export { default as ClCalendar } from "./components/calendar";
 export { default as ClTextarea } from "./components/textarea";
 export { default as ClTree } from "./components/tree";
 
-Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });
+// Taro.initPxTransform({ designWidth: 750, deviceRatio: {} });

@@ -1,6 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/drawer";
 
@@ -35,7 +34,7 @@ export default function ClDrawer(props: IProps) {
         }}
         style={{ height: "100vh" }}
       >
-        {this.props.children}
+        {props.children}
       </View>
     </View>
   );
@@ -58,7 +57,7 @@ export default function ClDrawer(props: IProps) {
         }}
         style={{ height: "100vh" }}
       >
-        {this.props.children}
+        {props.children}
       </View>
     </View>
   );
@@ -81,7 +80,7 @@ export default function ClDrawer(props: IProps) {
           e.stopPropagation();
         }}
       >
-        {this.props.children}
+        {props.children}
       </View>
     </View>
   );

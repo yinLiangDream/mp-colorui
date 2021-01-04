@@ -39,7 +39,7 @@ export interface IProps extends BaseComponent {
    *
    * 默认值 `none`
    */
-  align?: "left" | "right" | "center" | "none";
+  align?: TextAlignProperty;
   /**
    * 表现形式
    *

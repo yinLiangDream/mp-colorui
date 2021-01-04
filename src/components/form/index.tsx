@@ -1,5 +1,4 @@
-import Taro from "@tarojs/taro";
-import { Component, createContext } from "react";
+import React, { Component, createContext } from "react";
 import { View } from "@tarojs/components";
 import { classNames } from "../../lib";
 import { IProps } from "../../../@types/form";

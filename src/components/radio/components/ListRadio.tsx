@@ -1,5 +1,4 @@
-import Taro from "@tarojs/taro";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Text, View } from "@tarojs/components";
 import { TList } from "../../../../@types/radio";
 import { classNames, generateId } from "../../../lib";

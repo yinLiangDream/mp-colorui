@@ -1,6 +1,6 @@
-import Taro, { pxTransform } from "@tarojs/taro";
+import { pxTransform } from "@tarojs/taro";
 import classNames from "classnames";
-import { useState, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { IProps } from "../../../@types/actionSheet";
 import ClCard from "../card";
 import { generateId } from "../../lib";

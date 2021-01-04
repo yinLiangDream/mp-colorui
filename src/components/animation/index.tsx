@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import React from "react";
 import { View } from "@tarojs/components";
 import classNames from "classnames";
 import { IProps } from "../../../@types/animation";
@@ -23,7 +23,7 @@ export default function ClAnimation(props: IProps) {
         props.onAnimationEnd && props.onAnimationEnd(e);
       }}
     >
-      {this.props.children}
+      {props.children}
     </View>
   );
 }

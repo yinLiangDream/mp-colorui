@@ -1,6 +1,6 @@
 import { Text, View, Image } from "@tarojs/components";
 import Taro from "@tarojs/taro";
-import { Component, useState } from "react";
+import React, { Component } from "react";
 import { classNames } from "../../lib";
 import {
   IProps,
@@ -24,7 +24,7 @@ export default class ClImagePicker extends Component<IProps, IState> {
     addGlobalClass: true
   };
   static defaultProps: IProps = {
-    beforeDel: index => true,
+    beforeDel: () => true,
     max: 0
   };
 

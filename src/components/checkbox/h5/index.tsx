@@ -1,6 +1,6 @@
 import { View, Text } from "@tarojs/components";
-import Taro, { pxTransform } from "@tarojs/taro";
-import { Component } from "react";
+import { pxTransform } from "@tarojs/taro";
+import React, { Component } from "react";
 import { IProps } from "../../../../@types/checkbox";
 import { classNames } from "../../../lib";
 
@@ -22,8 +22,8 @@ class ClCheckboxH5 extends Component<IProps, IState> {
     title: ""
   };
 
-  constructor() {
-    super(...arguments);
+  constructor(props) {
+    super(props);
     this.state = {
       list: []
     } as IState;

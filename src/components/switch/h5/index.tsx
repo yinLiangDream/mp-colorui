@@ -1,6 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
-import { Component, useState } from "react";
+import React, { Component, useState } from "react";
 import { classNames } from "../../../lib";
 import { IProps } from "../../../../@types/switch";
 

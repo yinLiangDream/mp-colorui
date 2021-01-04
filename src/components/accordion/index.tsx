@@ -1,7 +1,7 @@
 import Taro, { pxTransform } from "@tarojs/taro";
 import { View, ScrollView } from "@tarojs/components";
 import classNames from "classnames";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import { IProps } from "../../../@types/accordion";
 import ClIcon from "../icon";
@@ -71,7 +71,7 @@ export default function ClAccordion(props: IProps) {
             height: props.height ? pxTransform(props.height) : "100%"
           }}
         >
-          {this.props.children}
+          {props.children}
         </ScrollView>
       </View>
     </View>

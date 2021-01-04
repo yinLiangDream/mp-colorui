@@ -1,6 +1,5 @@
 import { Picker, View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
-import { useState, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { classNames, getNowDate, isAliPay } from "../../lib";
 import { IProps } from "../../../@types/select";
 import { getAreaData } from "../../lib/area";

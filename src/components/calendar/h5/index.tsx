@@ -1,5 +1,5 @@
-import Taro, { pxTransform } from "@tarojs/taro";
-import { Component } from "react";
+import { pxTransform } from "@tarojs/taro";
+import React, { Component } from "react";
 import { View, Swiper, SwiperItem } from "@tarojs/components";
 import { IProps } from "../../../../@types/calendar";
 import dayjs from "dayjs";

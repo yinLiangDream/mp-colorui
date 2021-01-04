@@ -1,5 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import React from "react";
 import { classNames } from "../../lib";
 import { SIZE } from "../../lib/model";
 import { IProps } from "../../../@types/layout";
@@ -66,7 +66,7 @@ export default function ClLayout(props: IProps) {
       )}
       style={Object.assign({}, props.style)}
     >
-      {this.props.children}
+      {props.children}
     </View>
   );
   return normalComponent;

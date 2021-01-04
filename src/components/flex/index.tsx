@@ -1,5 +1,5 @@
 import { View } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+import React from "react";
 import { IProps } from "../../../@types/flex";
 import { classNames } from "../../lib";
 
@@ -23,7 +23,7 @@ export default function ClFlex(props: IProps) {
       )}
       style={Object.assign({}, props.style)}
     >
-      {this.props.children}
+      {props.children}
     </View>
   );
   return flexComponent;

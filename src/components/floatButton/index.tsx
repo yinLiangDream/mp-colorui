@@ -1,6 +1,6 @@
 import Taro, { pxTransform } from "@tarojs/taro";
 import { View } from "@tarojs/components";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import utils, { classNames, generateId } from "../../lib/index";
 import { IProps } from "../../../@types/floatButton";
 import ClIcon from "../icon";
@@ -16,7 +16,7 @@ let pageY = 100;
 export default function ClFloatButton(props: IProps) {
   const [show, setShow] = useState(false);
   const [rotate, setRotate] = useState(0);
-  const [animation, setAnimation] = useState({});
+  const [animation, setAnimation] = useState<any>({});
   const [actionListState, setActionListState] = useState(props.actionList);
   const {
     move,
