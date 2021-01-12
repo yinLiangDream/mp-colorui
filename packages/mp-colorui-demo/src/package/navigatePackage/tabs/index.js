@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from '@tarojs/components'
-import { ClCard, ClLayout, ClTabs, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClTabs, ClTitleBar } from '@/mp-colorui'
 
 function gen(item, index) {
   return {

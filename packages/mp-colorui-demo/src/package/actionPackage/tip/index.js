@@ -8,7 +8,7 @@ import {
   ClAccordion,
   ClCard,
   ClText,
-} from "mp-colorui";
+} from "@/mp-colorui";
 
 export default function Tip() {
   const renderMessage = (

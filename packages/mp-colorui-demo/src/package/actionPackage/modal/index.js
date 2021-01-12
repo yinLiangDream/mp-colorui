@@ -10,7 +10,7 @@ import {
   ClTitleBar,
   ClText,
   ClTimeline
-} from 'mp-colorui'
+} from '@/mp-colorui'
 
 export default function Modal() {
   const [normal, setNormal] = useState(false)

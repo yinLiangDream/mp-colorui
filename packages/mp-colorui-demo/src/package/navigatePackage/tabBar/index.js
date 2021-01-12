@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClCard, ClLayout, ClTabBar, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClTabBar, ClTitleBar } from '@/mp-colorui'
 
 const tabs = [
   {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClCard, ClAccordion, ClLayout, ClText, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClAccordion, ClLayout, ClText, ClTitleBar } from '@/mp-colorui'
 
 export default class Accordion extends React.Component {
   static config = {

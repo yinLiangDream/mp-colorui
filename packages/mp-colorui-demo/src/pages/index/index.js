@@ -13,7 +13,7 @@ import {
   ClText,
   ClAvatar,
   ClMenuList
-} from 'mp-colorui'
+} from '@/mp-colorui'
 
 import * as menu from '../../constant/menu.js'
 import './index.scss'

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { ClButton, ClCard, ClTitleBar, ClActionSheet, ClFlex } from 'mp-colorui'
+import { ClButton, ClCard, ClTitleBar, ClActionSheet, ClFlex } from '@/mp-colorui'
 
 const baselist = [
   {

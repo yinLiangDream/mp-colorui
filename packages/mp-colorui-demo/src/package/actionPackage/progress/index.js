@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClCard, ClLayout, ClProgress, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClProgress, ClTitleBar } from '@/mp-colorui'
 
 export default function Progress() {
   return (

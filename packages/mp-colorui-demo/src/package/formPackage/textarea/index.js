@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from '@tarojs/components'
-import { ClTitleBar, ClCard, ClTextarea } from 'mp-colorui'
+import { ClTitleBar, ClCard, ClTextarea } from '@/mp-colorui'
 
 export default function Textarea() {
   return (

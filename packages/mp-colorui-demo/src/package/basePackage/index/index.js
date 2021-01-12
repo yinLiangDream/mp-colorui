@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "@tarojs/components";
-import { ClLayout, ClTitleBar } from "mp-colorui";
+import { ClLayout, ClTitleBar } from "@/mp-colorui";
 import MenuNavigate from "../../../pages/components/menuNavigate";
 
 import { baseList } from "../../../constant/menu";

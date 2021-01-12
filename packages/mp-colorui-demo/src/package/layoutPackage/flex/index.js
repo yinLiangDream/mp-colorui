@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from '@tarojs/components'
-import { ClCard, ClFlex, ClLayout, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClFlex, ClLayout, ClTitleBar } from '@/mp-colorui'
 
 const size = ['xs', 'sm', 'df', 'lg', 'xl']
 

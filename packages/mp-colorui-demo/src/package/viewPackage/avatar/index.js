@@ -1,5 +1,6 @@
 import React from 'react'
-import { ClAvatar, ClCard, ClFlex, ClLayout, ClTitleBar } from 'mp-colorui'
+import Taro from "@tarojs/taro";
+import { ClAvatar, ClCard, ClFlex, ClLayout, ClTitleBar } from '@/mp-colorui'
 
 const headerArray = [
   {

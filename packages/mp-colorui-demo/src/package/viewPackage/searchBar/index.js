@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Taro from '@tarojs/taro'
 import PCAA from 'area-data/pcaa'
-import { ClCard, ClLayout, ClSearchBar, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClSearchBar, ClTitleBar } from '@/mp-colorui'
 
 let timer
 export default function SearchBar() {

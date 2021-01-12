@@ -1,7 +1,7 @@
 import React from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { ClTitleBar, ClCard, ClTree } from 'mp-colorui'
+import { ClTitleBar, ClCard, ClTree } from '@/mp-colorui'
 
 export default function Tree() {
   const data = [

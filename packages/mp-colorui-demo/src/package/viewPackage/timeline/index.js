@@ -1,6 +1,6 @@
 import React from 'react'
 import Taro from '@tarojs/taro'
-import { ClLayout, ClTimeline, ClTitleBar } from 'mp-colorui'
+import { ClLayout, ClTimeline, ClTitleBar } from '@/mp-colorui'
 
 export default class Timeline extends React.Component {
   config = {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View } from '@tarojs/components'
-import { ClButton, ClCard, ClLayout, ClScreenDrawer } from 'mp-colorui'
+import { ClButton, ClCard, ClLayout, ClScreenDrawer } from '@/mp-colorui'
 
 export default function ScreenDrawer() {
   const [show, setShow] = useState(false)

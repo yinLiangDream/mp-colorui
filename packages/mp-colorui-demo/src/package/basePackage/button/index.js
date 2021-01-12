@@ -10,14 +10,11 @@ import {
   ClSwitch,
   ClText,
   ClTitleBar,
-} from "mp-colorui";
+} from "@/mp-colorui";
 import colors from "../../../constant/color";
 import { convertLightColor } from "../../../utils";
 
 export default function ButtonView() {
-  this.config = {
-    navigationBarTitleText: "Button 按钮",
-  };
   const [showLines, setShowLines] = useState(false);
   const renderRight = (
     <ClFlex align="center" justify="center">
@@ -215,4 +212,7 @@ export default function ButtonView() {
       </ClCard>
     </ClLayout>
   );
+}
+ButtonView.config = {
+  navigationBarTitleText: "Button 按钮",
 }

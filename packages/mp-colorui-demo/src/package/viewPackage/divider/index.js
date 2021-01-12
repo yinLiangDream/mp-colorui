@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from '@tarojs/components'
-import { ClDivider, ClTitleBar } from 'mp-colorui'
+import { ClDivider, ClTitleBar } from '@/mp-colorui'
 
 export default function Divider() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from '@tarojs/components'
-import { ClVerticalTab, ClVerticalTabCell } from 'mp-colorui'
+import { ClVerticalTab, ClVerticalTabCell } from '@/mp-colorui'
 
 export default function VerticalTab() {
   const tabs = [...Array(50)].map((key, index) => ({

@@ -1,7 +1,7 @@
 import React from 'react'
 import { pxTransform } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { ClSwiper, ClTitleBar } from 'mp-colorui'
+import { ClSwiper, ClTitleBar } from '@/mp-colorui'
 
 export default function SwiperView() {
   const fileList = [

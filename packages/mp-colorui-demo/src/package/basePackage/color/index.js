@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Block, View } from '@tarojs/components'
-import { ClAnimation, ClCard, ClFlex, ClText, ClTitleBar } from 'mp-colorui'
+import { ClAnimation, ClCard, ClFlex, ClText, ClTitleBar } from '@/mp-colorui'
 
 import { convertLightColor } from '../../../utils'
 
 import colors from '../../../constant/color'
 
-export default function Color(props) {
+export default function ColorView(props) {
   const [showAnimation, setShowAnimation] = useState(false)
   useEffect(() => {
     let time = null
@@ -66,6 +66,6 @@ export default function Color(props) {
   )
 }
 
-Color.config = {
+ColorView.config = {
   navigationBarTitleText: 'Color 颜色'
 }

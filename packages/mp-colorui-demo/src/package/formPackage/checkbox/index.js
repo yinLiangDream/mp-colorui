@@ -1,5 +1,5 @@
 import React from "react";
-import { ClCard, ClCheckbox, ClLayout, ClTitleBar } from "mp-colorui";
+import { ClCard, ClCheckbox, ClLayout, ClTitleBar } from "@/mp-colorui";
 
 const checkboxGroup = [
   {

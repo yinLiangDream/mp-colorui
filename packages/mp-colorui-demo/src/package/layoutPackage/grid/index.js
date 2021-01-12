@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from '@tarojs/components'
-import { ClCard, ClGrid, ClLayout, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClGrid, ClLayout, ClTitleBar } from '@/mp-colorui'
 
 const generatorArr = num => {
   let i = 0

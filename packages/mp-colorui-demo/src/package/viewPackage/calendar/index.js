@@ -1,7 +1,7 @@
 import React from 'react'
 import { View } from '@tarojs/components'
 import dayjs from 'dayjs'
-import { ClCalendar, ClTitleBar } from 'mp-colorui'
+import { ClCalendar, ClTitleBar } from '@/mp-colorui'
 
 export default function Calendar() {
   return (

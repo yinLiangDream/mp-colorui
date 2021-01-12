@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Taro from '@tarojs/taro'
 import { Image, View } from '@tarojs/components'
-import { ClButton, ClTitleBar, ClCard, ClFlex, ClCurtain } from 'mp-colorui'
+import { ClButton, ClTitleBar, ClCard, ClFlex, ClCurtain } from '@/mp-colorui'
 
 export default function Curtain() {
   const [show, setShow] = useState(false)

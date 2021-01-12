@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ClCard, ClLayout, ClLoading, ClSwitch, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClLoading, ClSwitch, ClTitleBar } from '@/mp-colorui'
 
 export default function Loading() {
   const [barLoading, setBarLoading] = useState(false)

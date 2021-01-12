@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClLayout, ClMenuList, ClTitleBar } from 'mp-colorui'
+import { ClLayout, ClMenuList, ClTitleBar } from '@/mp-colorui'
 
 const typeMenu = [
   {

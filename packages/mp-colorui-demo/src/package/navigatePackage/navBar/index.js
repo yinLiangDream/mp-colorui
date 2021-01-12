@@ -1,6 +1,6 @@
 import React from 'react'
 import Taro from '@tarojs/taro'
-import { ClCard, ClLayout, ClNavBar, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClNavBar, ClTitleBar } from '@/mp-colorui'
 
 const leftIcon = [
   {

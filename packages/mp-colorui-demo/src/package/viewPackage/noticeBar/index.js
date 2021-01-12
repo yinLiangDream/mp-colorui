@@ -1,7 +1,7 @@
 import React from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { ClLayout, ClNoticeBar, ClTitleBar } from 'mp-colorui'
+import { ClLayout, ClNoticeBar, ClTitleBar } from '@/mp-colorui'
 
 export default function NoticeBar() {
   const shortText = '我是文字'

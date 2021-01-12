@@ -1,3 +1,5 @@
+const path = require("path");
+
 const config = {
   projectName: 'mp',
   date: '2020-7-19',
@@ -8,7 +10,11 @@ const config = {
     '828': 1.81 / 2
   },
   sourceRoot: 'src',
+  framework: 'react',
   outputRoot: 'dist',
+  alias: {
+    '@': path.join(__dirname, '..')
+  },
   babel: {
     sourceMap: true,
     presets: [

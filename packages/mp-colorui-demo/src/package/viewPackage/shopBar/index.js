@@ -1,6 +1,6 @@
 import React from 'react'
 import Taro from '@tarojs/taro'
-import { ClCard, ClLayout, ClShopBar, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClShopBar, ClTitleBar } from '@/mp-colorui'
 
 const tabs = [
   {

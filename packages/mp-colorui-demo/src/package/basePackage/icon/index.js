@@ -9,7 +9,7 @@ import {
   ClCard,
   ClSearchBar,
   ClAnimation,
-} from "mp-colorui";
+} from "@/mp-colorui";
 import icons from "../../../constant/icon";
 
 const title = "Icon 图标";

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ClCard, ClLayout, ClRadio, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClRadio, ClTitleBar } from '@/mp-colorui'
 
 const radioGroup = [
   {

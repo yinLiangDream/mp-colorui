@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClCard, ClLayout, ClText, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClText, ClTitleBar } from '@/mp-colorui'
 
 export default function Card() {
   return (

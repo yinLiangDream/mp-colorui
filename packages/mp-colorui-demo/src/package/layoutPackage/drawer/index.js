@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { pxTransform } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { ClButton, ClCard, ClDrawer, ClLayout, ClTitleBar } from 'mp-colorui'
+import { ClButton, ClCard, ClDrawer, ClLayout, ClTitleBar } from '@/mp-colorui'
 
 export default function Drawer() {
   const [left, setLeft] = useState(false)

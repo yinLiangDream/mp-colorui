@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "@tarojs/components";
-import { ClCard, ClFloatButton, ClText } from "mp-colorui";
+import { ClCard, ClFloatButton, ClText } from "@/mp-colorui";
 
 export default function FloatButton() {
   const text =

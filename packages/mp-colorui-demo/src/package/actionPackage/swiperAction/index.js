@@ -1,7 +1,7 @@
 import React from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { ClSwiperAction, ClCard, ClTitleBar } from 'mp-colorui'
+import { ClSwiperAction, ClCard, ClTitleBar } from '@/mp-colorui'
 
 export default function SwiperAction() {
   const list = [

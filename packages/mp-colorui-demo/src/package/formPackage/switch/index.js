@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClCard, ClLayout, ClSwitch, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClSwitch, ClTitleBar } from '@/mp-colorui'
 
 export default function Switch() {
   return (

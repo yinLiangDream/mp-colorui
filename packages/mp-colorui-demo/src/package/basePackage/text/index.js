@@ -1,7 +1,7 @@
 import React from 'react'
 import { pxTransform } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { ClTitleBar, ClText, ClLayout, ClFlex, ClCard } from 'mp-colorui'
+import { ClTitleBar, ClText, ClLayout, ClFlex, ClCard } from '@/mp-colorui'
 
 import size from '../../../constant/size'
 import color from '../../../constant/color'

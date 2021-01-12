@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="73229af2-3cfe-4bc9-b2f3-a4ebc94fe4ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/actionSheet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/actionSheet/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/animation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/animation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/loading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/loading/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/message/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/message/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/modal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/modal/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/progress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/progress/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/swiperAction/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/swiperAction/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/tip/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/actionPackage/tip/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/button/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/color/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/color/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/floatButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/floatButton/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/icon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/icon/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/text/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/basePackage/text/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/checkbox/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/checkbox/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/imagePicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/imagePicker/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/input/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/input/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/radio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/radio/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/select/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/select/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/switch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/switch/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/textarea/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/textarea/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/tree/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/formPackage/tree/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/accordion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/accordion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/drawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/drawer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/flex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/flex/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/grid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/grid/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/layout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/menuList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/menuList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/screenDrawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/layoutPackage/screenDrawer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/navBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/navBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/tabBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/tabBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/tabs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/tabs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/verticalTab/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/navigatePackage/verticalTab/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/avatar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/avatar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/calendar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/calendar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/curtain/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/curtain/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/divider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/divider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/noticeBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/noticeBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/searchBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/searchBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/shopBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/shopBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/steps/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/steps/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/swiper/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/swiper/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/tag/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/tag/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/timeline/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/timeline/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/titleBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/package/viewPackage/titleBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mp-colorui-demo/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mp-colorui-demo/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +127,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -63,8 +158,12 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="zhf8uuzc" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
+    <dismissed value="$PROJECT_DIR$/packages/mp-colorui/package.json" />
   </component>
   <component name="ProjectId" id="1OSt12FrZZifGIUiwjs9gKmYJfh" />
   <component name="ProjectViewState">
@@ -76,13 +175,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Vue" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.introduce.parameter.add.jsdoc" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/mp-colorui-demo/dist2" />
     <property name="list.type.of.created.stylesheet" value="Stylus" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -94,63 +195,64 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/mp-colorui-demo/dist2" />
+      <recent name="$PROJECT_DIR$/packages/mp-colorui" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/code" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/mp-colorui-demo" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/public" />
       <recent name="$PROJECT_DIR$/src/style/components" />
       <recent name="$PROJECT_DIR$/src/style/category" />
       <recent name="$PROJECT_DIR$/docs/.vuepress/public/code/button" />
-      <recent name="$PROJECT_DIR$/docs/.vuepress/public/scss" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build:h5">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+  <component name="RunManager" selected="npm.build:rollup">
+    <configuration name="build:rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/mp-colorui/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <package-manager value="npm" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="build:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build:h5" />
+        <script value="build:rollup" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="build:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="build:weapp (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/mp-colorui-demo/package.json" />
       <command value="run" />
       <scripts>
         <script value="build:weapp" />
       </scripts>
       <node-interpreter value="project" />
-      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/mp-colorui/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev:h5" />
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev:weapp (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/mp-colorui-demo/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:weapp" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -169,14 +271,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build:rollup" />
         <item itemvalue="npm.dev:weapp" />
-        <item itemvalue="npm.dev:h5" />
-        <item itemvalue="npm.build:weapp" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="npm.build:h5" />
+        <item itemvalue="npm.dev:weapp (1)" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build:weapp (1)" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -287,6 +390,9 @@
       <workItem from="1586165008855" duration="10772000" />
       <workItem from="1589336132183" duration="2254000" />
       <workItem from="1589428045636" duration="88000" />
+      <workItem from="1597721157397" duration="347000" />
+      <workItem from="1609852333558" duration="54508000" />
+      <workItem from="1610419873625" duration="6479000" />
     </task>
     <task id="LOCAL-00062" summary="feat ClImagePicker对图片数量限制的选择图片数量问题 #34">
       <created>1574780861378</created>
@@ -644,7 +750,7 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -714,126 +820,8 @@
     <MESSAGE value="fix: 关于ClTag 中 icon 使用问题 #78" />
     <option name="LAST_COMMIT_MESSAGE" value="fix: 关于ClTag 中 icon 使用问题 #78" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="429" y="155" key="#build" timestamp="1583908432638">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="429" y="155" key="#build/0.0.1440.900@0.0.1440.900" timestamp="1583908432638" />
-    <state x="429" y="155" key="#build:h5" timestamp="1583821352100">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="429" y="155" key="#build:h5/0.0.1440.900@0.0.1440.900" timestamp="1583821352100" />
-    <state x="429" y="155" key="#build:weapp" timestamp="1583823037822">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="429" y="155" key="#build:weapp/0.0.1440.900@0.0.1440.900" timestamp="1583823037822" />
-    <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582941864995">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="567" y="272" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582941864995" />
-    <state x="429" y="155" key="#dev:alipay" timestamp="1583817979829">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="429" y="155" key="#dev:alipay/0.0.1440.900@0.0.1440.900" timestamp="1583817979829" />
-    <state x="429" y="155" key="#dev:weapp" timestamp="1583819799771">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="429" y="155" key="#dev:weapp/0.0.1440.900@0.0.1440.900" timestamp="1583819799771" />
-    <state x="369" y="41" width="932" height="716" key="CommitChangelistDialog2" timestamp="1589338935785">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="431" y="123" key="CommitChangelistDialog2/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048604173" />
-    <state x="431" y="123" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581605810190" />
-    <state x="369" y="41" width="932" height="716" key="CommitChangelistDialog2/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338935785" />
-    <state x="369" y="105" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583821142484" />
-    <state x="431" y="123" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1582945288598" />
-    <state x="493" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1582020262127" />
-    <state x="493" y="127" width="839" height="859" key="CommitChangelistDialog2/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582192093096" />
-    <state x="492" y="49" key="CommitChangelistDialog2/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586188357177" />
-    <state x="192" y="97" width="1536" height="864" key="DiffContextDialog" timestamp="1582191305162">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="192" y="97" width="1536" height="864" key="DiffContextDialog/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582191305162" />
-    <state x="236" y="143" key="EditFileWatcherDialog" timestamp="1589336694026">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="236" y="143" key="EditFileWatcherDialog/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589336694026" />
-    <state width="1398" height="145" key="GridCell.Tab.0.bottom" timestamp="1589340784521">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="817" height="230" key="GridCell.Tab.0.bottom/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029786" />
-    <state width="819" height="272" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878457" />
-    <state width="1398" height="145" key="GridCell.Tab.0.bottom/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857583" />
-    <state width="1398" height="145" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589340784521" />
-    <state width="583" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812346" />
-    <state width="937" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
-    <state width="936" height="239" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486551" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899924" />
-    <state width="1398" height="145" key="GridCell.Tab.0.center" timestamp="1589340784519">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="817" height="230" key="GridCell.Tab.0.center/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029784" />
-    <state width="819" height="272" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878455" />
-    <state width="1398" height="145" key="GridCell.Tab.0.center/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857578" />
-    <state width="1398" height="145" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589340784519" />
-    <state width="583" height="239" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812345" />
-    <state width="937" height="272" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848412" />
-    <state width="936" height="239" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486550" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899922" />
-    <state width="1398" height="145" key="GridCell.Tab.0.left" timestamp="1589340784515">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="817" height="230" key="GridCell.Tab.0.left/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029783" />
-    <state width="819" height="272" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878455" />
-    <state width="1398" height="145" key="GridCell.Tab.0.left/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857577" />
-    <state width="1398" height="145" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589340784515" />
-    <state width="583" height="239" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812345" />
-    <state width="937" height="272" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848411" />
-    <state width="936" height="239" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486549" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899921" />
-    <state width="1398" height="145" key="GridCell.Tab.0.right" timestamp="1589340784520">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="817" height="230" key="GridCell.Tab.0.right/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583035029785" />
-    <state width="819" height="272" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581606878456" />
-    <state width="1398" height="145" key="GridCell.Tab.0.right/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338857582" />
-    <state width="1398" height="145" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589340784520" />
-    <state width="583" height="239" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582010812346" />
-    <state width="937" height="272" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1581750848413" />
-    <state width="936" height="239" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582195486550" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586187899923" />
-    <state x="499" y="207" key="RollbackChangesDialog" timestamp="1583823865867">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="582" y="242" key="RollbackChangesDialog/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1583048552593" />
-    <state x="499" y="207" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1583823865867" />
-    <state x="265" y="93" width="900" height="722" key="SettingsEditor" timestamp="1589336696453">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="309" y="109" width="1190" height="722" key="SettingsEditor/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581581365082" />
-    <state x="265" y="93" width="900" height="722" key="SettingsEditor/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589336696453" />
-    <state x="353" y="112" key="SettingsEditor/242.1080.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1586185497450" />
-    <state x="420" y="255" key="Vcs.Push.Dialog.v2" timestamp="1589338943897">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="420" y="255" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1120.-1440.2560.1440@0.0.1440.900" timestamp="1589338943897" />
-    <state x="420" y="255" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1583823909528" />
-    <state x="440" y="133" width="667" height="636" key="find.popup" timestamp="1583821259635">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="513" y="155" width="682" height="741" key="find.popup/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582970115828" />
-    <state x="440" y="133" width="667" height="636" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1583821259635" />
-    <state x="513" y="155" width="682" height="741" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582960248836" />
-    <state x="570" y="159" width="779" height="762" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582008295117" />
-    <state x="586" y="159" width="779" height="762" key="find.popup/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582196070913" />
-    <state x="629" y="418" width="710" height="525" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581581363102">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="629" y="418" width="710" height="525" key="org.intellij.images.editor.actions.BackgroundImageDialog/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1581581363102" />
-    <state x="503" y="231" width="672" height="680" key="search.everywhere.popup" timestamp="1582965480349">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="503" y="231" width="672" height="680" key="search.everywhere.popup/-117.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1582965480349" />
-    <state x="575" y="238" width="768" height="699" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582011839033" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

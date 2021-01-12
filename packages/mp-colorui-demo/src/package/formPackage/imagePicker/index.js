@@ -6,7 +6,7 @@ import {
   ClLayout,
   ClTitleBar,
   ClButton
-} from 'mp-colorui'
+} from '@/mp-colorui'
 
 export default function ImagePicker() {
   const [imgList, setImgList] = useState([])

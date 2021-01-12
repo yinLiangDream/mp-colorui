@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ClButton, ClLayout, ClTitleBar, ClAnimation } from 'mp-colorui'
+import { ClButton, ClLayout, ClTitleBar, ClAnimation } from '@/mp-colorui'
 
 export default function Animation() {
   const animationName = [

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ClButton, ClCard, ClLayout, ClStep, ClTitleBar } from 'mp-colorui'
+import { ClButton, ClCard, ClLayout, ClStep, ClTitleBar } from '@/mp-colorui'
 
 const steps = [
   {

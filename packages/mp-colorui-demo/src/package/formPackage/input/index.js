@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Taro from '@tarojs/taro'
-import { ClCard, ClInput, ClLayout, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClInput, ClLayout, ClTitleBar } from '@/mp-colorui'
 
 export default function Input() {
   const [showLoading, setLoading] = useState(true)

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ClCard, ClLayout, ClTitleBar } from 'mp-colorui'
+import { ClCard, ClLayout, ClTitleBar } from '@/mp-colorui'
 
 export default class TitleBar extends React.Component {
   config = {
