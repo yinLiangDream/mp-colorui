@@ -4,7 +4,6 @@ import { pxTransform } from '@tarojs/taro';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../../lib/model';
 import ClFlex from '../flex';
 import { classNames, generateId } from '../../lib';
-
 export default function ClTimeline(props) {
     const times = props.times || [];
     const iconColorClassName = color => (color ? TEXT_COLOR_LIST[color] : '');

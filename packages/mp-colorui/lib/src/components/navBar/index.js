@@ -2,7 +2,6 @@ import { Block, Text, View } from '@tarojs/components';
 import React from 'React';
 import { classNames } from '../../lib';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../../lib/model';
-
 export default class ClNavBar extends React.Component {
     onClickLeftIcon(index) {
         this.props.onClickLeftIcon && this.props.onClickLeftIcon(index);

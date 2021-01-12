@@ -1,5 +1,5 @@
-import React, { useEffect, useState} from "react";
-import { pxTransform } from "@tarojs/taro";
+import React, { useEffect, useState } from "react";
+import Taro, { pxTransform } from "@tarojs/taro";
 import { View, ScrollView } from "@tarojs/components";
 import classNames from "classnames";
 
@@ -11,12 +11,12 @@ export default function ClAccordion(props: IProps) {
   const { open, title, animation, onClick, card } = props;
   const [show, setShow] = useState(open);
   const [height, setHeight] = useState(0);
-  const id = `cl-accordion-content-${+new Date()}`;
+  const [id] = useState(`cl-accordion-content-${+new Date()}`);
   useEffect(() => {
     if (show) {
-      const query = Taro.createSelectorQuery().in(this.$scope);
+      const query = Taro.createSelectorQuery();
       const view = query.select(`#${id}`);
-      view.boundingClientRect().exec(res => {
+      view.boundingClientRect().exec((res) => {
         const data = res[0];
         setHeight(data.height);
       });
@@ -29,7 +29,7 @@ export default function ClAccordion(props: IProps) {
       className={classNames(
         "cu-list menu",
         {
-          "card-menu": card
+          "card-menu": card,
         },
         props.className
       )}
@@ -38,7 +38,7 @@ export default function ClAccordion(props: IProps) {
           overflow: "hidden",
           height: pxTransform(98 + height / screenPercent),
           transition: `all ${animation ? `${props.speed}s` : 0} linear`,
-          color: "black"
+          color: "black",
         },
         props.style
       )}
@@ -58,7 +58,7 @@ export default function ClAccordion(props: IProps) {
           <View
             style={{
               transition: `all ${props.speed}s linear`,
-              transform: `rotate(${show ? "90deg" : "0"})`
+              transform: `rotate(${show ? "90deg" : "0"})`,
             }}
           >
             <ClIcon iconName={"right"} size={"small"} />
@@ -69,7 +69,7 @@ export default function ClAccordion(props: IProps) {
         <ScrollView
           scrollY
           style={{
-            height: props.height ? pxTransform(props.height) : "100%"
+            height: props.height ? pxTransform(props.height) : "100%",
           }}
         >
           {props.children}
@@ -80,7 +80,7 @@ export default function ClAccordion(props: IProps) {
 }
 
 ClAccordion.options = {
-  addGlobalClass: true
+  addGlobalClass: true,
 };
 
 ClAccordion.defaultProps = {
@@ -90,5 +90,5 @@ ClAccordion.defaultProps = {
   onClick: () => {},
   card: false,
   speed: 0.15,
-  height: 0
+  height: 0,
 } as IProps;

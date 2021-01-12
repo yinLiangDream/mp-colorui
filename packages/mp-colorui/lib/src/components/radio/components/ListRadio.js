@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View } from '@tarojs/components';
 import { classNames, generateId } from '../../../lib';
-
 export default function ListRadio(props) {
     const [listState, setListState] = useState(props.list || []);
     useEffect(() => {

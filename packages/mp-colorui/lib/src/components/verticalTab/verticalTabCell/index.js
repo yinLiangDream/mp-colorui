@@ -1,6 +1,5 @@
 import React from 'react';
 import ClCard from '../../card';
-
 export default function ClVerticalTabCell(props) {
     return React.createElement(ClCard, null, props.children);
 }

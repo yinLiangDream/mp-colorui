@@ -3,7 +3,6 @@ import React from 'react';
 import { TEXT_COLOR_LIST, SIZE } from '../../lib/model';
 import ClLayout from '../layout';
 import { classNames } from '../../lib';
-
 export default function ClDivider(props) {
     const { color, size } = props;
     const colorClassName = TEXT_COLOR_LIST[color || 'grey'];

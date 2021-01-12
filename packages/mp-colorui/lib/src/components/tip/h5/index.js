@@ -5,7 +5,6 @@ import { screenPercent } from '../../../lib';
 import ClText from '../../text';
 import './index.scss';
 import { BG_COLOR_LIST } from '../../../lib/model';
-
 export default function ClTip_H5(props) {
     const [showTip, setShowTip] = useState(props.show);
     const [distance, setDistance] = useState({

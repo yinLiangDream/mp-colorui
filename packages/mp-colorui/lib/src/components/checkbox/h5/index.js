@@ -2,7 +2,6 @@ import { View, Text } from '@tarojs/components';
 import React, { Component } from 'react';
 import { pxTransform } from '@tarojs/taro';
 import { classNames } from '../../../lib';
-
 class ClCheckboxH5 extends Component {
     constructor(props) {
         super(props);

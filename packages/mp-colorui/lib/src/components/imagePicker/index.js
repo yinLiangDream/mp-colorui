@@ -4,7 +4,6 @@ import React from 'react';
 import { classNames } from '../../lib';
 import ClIcon from '../icon';
 import './index.scss';
-
 export default class ClImagePicker extends React.Component {
     constructor(props) {
         super(props);

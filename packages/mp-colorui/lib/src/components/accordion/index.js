@@ -4,7 +4,6 @@ import { View, ScrollView } from "@tarojs/components";
 import classNames from "classnames";
 import ClIcon from "../icon";
 import { screenPercent } from "../../lib";
-
 export default function ClAccordion(props) {
     const { open, title, animation, onClick, card } = props;
     const [show, setShow] = useState(open);

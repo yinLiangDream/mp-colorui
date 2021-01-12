@@ -7,7 +7,6 @@ import './index.scss';
 import { classNames, screenPercent } from '../../lib';
 import ClSearchResult from '../searchBar/searchResult/index';
 import ClCard from '../card';
-
 function ClInput(props) {
     const [focus, setFocus] = useState(false);
     const [normalType, setNormalType] = useState();

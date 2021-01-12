@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../../lib/model';
 import './index.scss';
 import { classNames, getRectNumber, isAliPay, screenPercent } from '../../lib';
-
 let move = 0;
 let scrollLeftContent = 0;
 let duration = 0.3;

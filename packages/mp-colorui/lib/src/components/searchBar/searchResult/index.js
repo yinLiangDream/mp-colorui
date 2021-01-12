@@ -6,7 +6,6 @@ import ClLayout from '../../layout';
 import ClIcon from '../../icon';
 import { classNames, generateId } from '../../../lib';
 import './index.scss';
-
 export default function ClSearchResult(props) {
     const [resultState, setResultState] = useState(props.result || []);
     useEffect(() => {

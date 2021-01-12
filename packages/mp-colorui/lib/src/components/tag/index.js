@@ -4,7 +4,6 @@ import { pxTransform } from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../../lib/model';
 import { classNames } from '../../lib';
 import ClIcon from '../icon';
-
 export default class ClTag extends Component {
     onClick(index) {
         this.props.onClick && this.props.onClick(index);

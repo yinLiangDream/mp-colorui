@@ -7,7 +7,6 @@ import ClText from '../text';
 import ClFlex from '../flex';
 import { generateId } from '../../lib';
 import './index.scss';
-
 export default class ClTree extends Component {
     constructor(props) {
         super(props);

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import H5Radio from './h5';
 import ListRadio from './components/ListRadio';
 import { classNames, isWeApp } from '../../lib';
-
 export default function ClRadio(props) {
     const type = props.type || 'normal';
     const shapeClassName = () => props.shape || 'normal';

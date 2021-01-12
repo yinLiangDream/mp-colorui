@@ -6,7 +6,6 @@ import ClText from '../text';
 import ClTip_H5 from './h5';
 import './index.scss';
 import { BG_COLOR_LIST } from '../../lib/model';
-
 export default function ClTip(props) {
     const [showTip, setShowTip] = useState(props.show);
     const [distance, setDistance] = useState({

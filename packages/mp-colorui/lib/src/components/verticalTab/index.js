@@ -3,8 +3,7 @@ import Taro, { pxTransform } from '@tarojs/taro';
 import { ScrollView, View } from '@tarojs/components';
 import { screenPercent, generateId, getRectNumber, isAliPay, classNames } from '../../lib';
 import './index.scss';
-
-let scrollTimer;
+let scrollTimer = undefined;
 export default function ClVerticalTab(props) {
     let scrollTab = false;
     let id = '';

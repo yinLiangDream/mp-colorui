@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from '@tarojs/components';
 import './timer.scss';
-
 export default class Timer extends Component {
     tick(diffTime) {
         if (diffTime < 1000) {

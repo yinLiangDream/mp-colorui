@@ -2,7 +2,6 @@ import { Button, Text, View } from "@tarojs/components";
 import React from "react";
 import { classNames } from "../../lib";
 import { BG_COLOR_LIST, SIZE } from "../../lib/model";
-
 export default function ClButton(props) {
     const onClick = (e) => {
         !props.disabled && props.onClick && props.onClick(e);

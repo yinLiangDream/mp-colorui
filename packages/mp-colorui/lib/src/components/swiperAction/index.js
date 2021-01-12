@@ -5,7 +5,6 @@ import './index.scss';
 import { BG_COLOR_LIST } from '../../lib/model';
 import { classNames, generateId, isH5, screenPercent } from '../../lib';
 import ClLayout from '../layout';
-
 export default function ClSwiperAction(props) {
     const [initOptions, setInitOptions] = useState(props.options || []);
     const [contentId] = useState(generateId());

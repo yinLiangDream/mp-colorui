@@ -1,7 +1,6 @@
 import React from "react";
 import { View } from "@tarojs/components";
 import classNames from "classnames";
-
 export default function ClAnimation(props) {
     const type = props.type;
     const reverse = props.reverse ? "animation-reverse" : "";

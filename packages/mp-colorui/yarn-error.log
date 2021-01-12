@@ -1,26 +1,20 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add rimraf --save
+  /usr/local/bin/node /usr/local/lib/node_modules/yarn/bin/yarn.js install
 
 PATH: 
-  /Users/jinbai/.just-installs/bin:/Users/jinbai/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/jinbai/.just-installs/bin:/Users/jinbai/.cargo/bin
+  /Users/jinbai/.just-installs/bin:/Users/jinbai/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 
 Yarn version: 
   1.22.4
 
 Node version: 
-  10.19.0
+  12.19.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  Invariant Violation: could not find a copy of rimraf to link in /Users/jinbai/Documents/develop/github/mp-colorui/node_modules/mp-colorui-demo/node_modules/mp-colorui/node_modules
-      at invariant (/usr/local/lib/node_modules/yarn/lib/cli.js:2314:15)
-      at PackageLinker.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:48716:7)
-      at Generator.next (<anonymous>)
-      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
-      at process._tickCallback (internal/process/next_tick.js:68:7)
+  Error: ENOENT: no such file or directory, lstat '/Users/jinbai/Documents/develop/github/mp-colorui/packages/mp-colorui-demo/node_modules/mp-colorui/node_modules/dayjs/locale.json'
 
 npm manifest: 
   {
@@ -40,7 +34,6 @@ npm manifest:
     "browser": "dist/index.umd.js",
     "module": "dist/index.esm.js",
     "main": "dist/index.js",
-    "main:h5": "dist/h5/index.js",
     "types": "./@types/index.d.ts",
     "repository": "https://github.com/yinLiangDream/mp-colorui",
     "homepage": "https://yinliangdream.github.io/mp-colorui-doc/",
@@ -71,9 +64,11 @@ npm manifest:
     "author": "liangyin",
     "license": "MIT",
     "dependencies": {
-      "rimraf": "^3.0.2",
+      "react": "^16.13.0",
+      "react-dom": "^16.13.0",
       "area-data": "^5.0.6",
-      "dayjs": "^1.8.17"
+      "dayjs": "^1.8.17",
+      "rimraf": "^3.0.2"
     },
     "devDependencies": {
       "@babel/core": "^7.8.0",
@@ -83,15 +78,15 @@ npm manifest:
       "@rollup/plugin-commonjs": "^11.0.2",
       "@rollup/plugin-json": "^4.0.2",
       "@rollup/plugin-node-resolve": "^7.1.1",
-      "@tarojs/components": "^3.0.6",
-      "@tarojs/react": "^3.0.6",
-      "@tarojs/taro": "^3.0.6",
+      "@tarojs/components": "^3.0.22",
+      "@tarojs/mini-runner": "^3.0.22",
+      "@tarojs/react": "^3.0.22",
+      "@tarojs/runtime": "^3.0.22",
+      "@tarojs/taro": "^3.0.22",
       "@types/classnames": "^2.2.9",
       "@types/node": "^13.11.1",
       "@types/react": "^16.9.23",
       "@types/react-dom": "^16.9.5",
-      "react": "^16.13.0",
-      "react-dom": "^16.13.0",
       "@types/sinon": "^5.0.7",
       "@types/webpack-env": "^1.13.9",
       "@vuepress/plugin-active-header-links": "^1.0.0-rc.1",

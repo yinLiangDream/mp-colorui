@@ -3,7 +3,6 @@ import { Text, View } from '@tarojs/components';
 import { pxTransform } from '@tarojs/taro';
 import { classNames } from '../../lib';
 import { BG_COLOR_LIST } from '../../lib/model';
-
 export default class ClTitleBar extends Component {
     render() {
         const textColorClassName = this.props.textColor

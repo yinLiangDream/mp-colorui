@@ -4,7 +4,6 @@ import { BG_COLOR_LIST } from '../../lib/model';
 import ClText from '../text';
 import { classNames } from '../../lib';
 import './index.scss';
-
 export default function ClCard(props) {
     const typeClassName = props.type === 'full' ? 'no-card' : '';
     const colorClassName = props.bgColor

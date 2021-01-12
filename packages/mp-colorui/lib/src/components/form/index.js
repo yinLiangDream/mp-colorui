@@ -3,7 +3,6 @@ import { View } from '@tarojs/components';
 import { classNames } from '../../lib';
 import defaultRules from '../../lib/rules';
 import context from './context';
-
 const date = {};
 export const FormContext = React.createContext(date);
 export default class ClForm extends React.Component {

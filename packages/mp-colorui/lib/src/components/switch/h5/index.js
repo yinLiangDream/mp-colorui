@@ -1,7 +1,6 @@
 import { View } from '@tarojs/components';
 import React, { Component } from 'react';
 import { classNames } from '../../../lib';
-
 export default class ClSwitch_h5 extends Component {
     constructor(props) {
         super(props);

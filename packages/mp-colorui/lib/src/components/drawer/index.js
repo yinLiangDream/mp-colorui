@@ -1,7 +1,6 @@
 import { View } from '@tarojs/components';
 import React, { useMemo, useState } from 'react';
 import { classNames } from '../../lib';
-
 export default function ClDrawer(props) {
     const [showModal, setShowModal] = useState(props.show);
     useMemo(() => {

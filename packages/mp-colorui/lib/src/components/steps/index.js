@@ -2,7 +2,6 @@ import { Text, View } from '@tarojs/components';
 import React from 'react';
 import { classNames } from '../../lib';
 import { TEXT_COLOR_LIST } from '../../lib/model';
-
 export default class ClStep extends React.Component {
     constructor() {
         super(...arguments);

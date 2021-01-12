@@ -10,7 +10,6 @@ import classnames from 'classnames';
 import ClLayout from '../layout';
 import '../text/index.scss';
 import './index.scss';
-
 export default function ClNoticeBar(props) {
     const { text, bgColor, single, marquee, speed, showMore, moreText, icon, close, onClose, onMore } = props;
     const [singleContentWidth, setSingleContentWidth] = useState('100%');

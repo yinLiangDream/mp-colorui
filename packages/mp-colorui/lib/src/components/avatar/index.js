@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { pxTransform } from "@tarojs/taro";
 import { isNumber, generateId, classNames } from "../../lib";
 import { BG_COLOR_LIST } from "../../lib/model";
-
 function ClAvatar(props) {
     const [headList, setHeadList] = useState(props.headerArray);
     useEffect(() => {

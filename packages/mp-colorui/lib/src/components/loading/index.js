@@ -4,7 +4,6 @@ import { pxTransform } from '@tarojs/taro';
 import { BG_COLOR_LIST } from '../../lib/model';
 import { classNames } from '../../lib';
 import ClText from '../../components/text';
-
 export default function ClLoading(props) {
     const [loadProgress, setLoadProgress] = useState(0);
     const loadProgressFn = () => {

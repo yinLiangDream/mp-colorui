@@ -3,7 +3,6 @@ import Taro from '@tarojs/taro';
 import React from 'react';
 import { classNames } from '../../lib';
 import ClSwitch_h5 from './h5';
-
 export default function ClSwitch(props) {
     const title = props.title;
     const color = props.color || 'green';

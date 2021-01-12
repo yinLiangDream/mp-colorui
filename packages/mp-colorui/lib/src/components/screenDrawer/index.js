@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView } from '@tarojs/components';
 import { classNames } from '../../lib';
-
 export default function ClScreenDrawer(props) {
     const hideModal = () => {
         props.onHide && props.onHide();

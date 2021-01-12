@@ -13,7 +13,6 @@ import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../../../lib/model';
 import ClButton from '../../button';
 import ClTip from '../../tip';
 import '../index.scss';
-
 const FORMAT_DATE = 'YYYY-MM-DD';
 const THIS_WEEK = 'thisWeek';
 const PRE_WEEK = 'preWeek';

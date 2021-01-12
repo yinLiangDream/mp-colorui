@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Image, Text } from '@tarojs/components';
 import { classNames, isNumber } from '../../lib';
 import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../../lib/model';
-
 export default class ClTabBar extends React.Component {
     constructor(props) {
         super(props);

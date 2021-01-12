@@ -1,7 +1,7 @@
-import { pxTransform } from '@tarojs/taro'
-import React, { useState, useEffect } from 'react'
-import { View, Swiper, SwiperItem } from '@tarojs/components'
-import { IProps } from '../../../../@types/calendar'
+import {pxTransform} from '@tarojs/taro'
+import React, {useEffect, useState} from 'react'
+import {Swiper, SwiperItem, View} from '@tarojs/components'
+import {IProps} from '../../../../@types/calendar'
 import dayjs from 'dayjs'
 import ClGrid from '../../grid'
 import ClText from '../../text'
@@ -9,8 +9,8 @@ import ClFlex from '../../flex'
 import ClLayout from '../../layout'
 import ClCard from '../../card'
 import ClIcon from '../../icon'
-import { classNames } from '../../../lib'
-import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../../../lib/model'
+import {classNames} from '../../../lib'
+import {BG_COLOR_LIST, TEXT_COLOR_LIST} from '../../../lib/model'
 import ClButton from '../../button'
 import ClTip from '../../tip'
 
@@ -57,8 +57,7 @@ export default function Calendar_weapp(props: IProps) {
   const [currentYear, setCurrentYear] = useState(dayjs().year())
 
   const selectDate = month => {
-    const year = currentYear
-    const date = `${year}-${month + 1}-01`
+    const date = `${currentYear}-${month + 1}-01`
     changeMonth(date)
     setShowMonths(false)
     setCurrentDate(dealYearMonth(dayjs(date)))
@@ -438,7 +437,7 @@ export default function Calendar_weapp(props: IProps) {
   const oldTextClassName = TEXT_COLOR_LIST['gray']
 
   const weeksComponent = [preWeek, thisWeek, nextWeek].map((week, index) => (
-    <SwiperItem key={week[3].date}>
+    <SwiperItem key={week[3]?.date}>
       <ClGrid col={7}>
         {week.map(item => (
           <View
@@ -527,7 +526,7 @@ export default function Calendar_weapp(props: IProps) {
 
   const monthsComponent = [preMonth, thisMonth, nextMonth].map(
     (month, index) => (
-      <SwiperItem key={month[3].date}>
+      <SwiperItem key={month[3]?.date}>
         <ClGrid col={7}>
           {month.map(item => (
             <View

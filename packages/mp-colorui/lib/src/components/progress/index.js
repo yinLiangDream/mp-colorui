@@ -2,7 +2,6 @@ import { View } from '@tarojs/components';
 import React, { Component } from 'react';
 import { BG_COLOR_LIST, SIZE } from '../../lib/model';
 import { classNames } from '../../lib';
-
 export default class ClProgress extends Component {
     render() {
         const shapeClassName = () => this.props.shape

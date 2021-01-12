@@ -1,5 +1,4 @@
 import './style/index.scss';
-
 export { default as ClAvatar } from "./components/avatar";
 export { default as ClButton } from "./components/button";
 export { default as ClCard } from "./components/card";

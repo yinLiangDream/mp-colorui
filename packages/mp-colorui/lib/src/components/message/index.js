@@ -7,7 +7,6 @@ import ClText from '../text';
 import ClIcon from '../icon';
 import './index.scss';
 import { classNames } from '../../lib';
-
 let timer;
 export default function ClMessage(props) {
     let tempHeight = 500;

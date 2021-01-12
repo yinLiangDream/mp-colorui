@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { pxTransform } from '@tarojs/taro'
+import Taro, { pxTransform } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 import utils, { classNames, generateId } from '../../lib/index'
 import { IProps } from '../../../@types/floatButton'

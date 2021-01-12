@@ -7,7 +7,6 @@ import ClLayout from '../../components/layout';
 import { classNames } from '../../lib';
 import './index.scss';
 import { BG_COLOR_LIST } from '../../lib/model';
-
 export default function ClTextarea(props) {
     const { value, autoFocus, focus, placeholder, maxLength, disabled, showConfirmBar, showLengthTip, bgColor, shadow, height, overMaxForbidden, onChange, onFocus, onBlur, onConfirm, onLineChange } = props;
     const [tempValue, setTempValue] = useState('');

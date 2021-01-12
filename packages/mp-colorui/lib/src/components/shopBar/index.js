@@ -4,7 +4,6 @@ import { classNames, generateId } from '../../lib';
 import { BG_COLOR_LIST } from '../../lib/model';
 import ClButton from '../button';
 import './index.scss';
-
 export default function ClShopBar(props) {
     const [tabs, setTabs] = useState(props.tabs || []);
     const [buttons, setButtons] = useState(props.buttons || []);

@@ -3,7 +3,6 @@ import React, { useMemo, useState } from 'react';
 import ClIcon from '../icon';
 import './index.scss';
 import { classNames } from '../../lib';
-
 export default function ClCurtain(props) {
     const { show, closeWithShadow, closeBtnPosition } = props;
     const [showImage, setShowImage] = useState(show);

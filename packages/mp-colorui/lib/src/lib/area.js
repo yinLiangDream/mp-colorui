@@ -1,5 +1,4 @@
 import PCAA from 'area-data/pcaa';
-
 export const provinceObj = PCAA['86'];
 export const provinceArr = Object.entries(provinceObj);
 export const getAreaData = (province, city) => {

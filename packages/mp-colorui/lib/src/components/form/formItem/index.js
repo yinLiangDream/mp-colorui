@@ -4,7 +4,6 @@ import { classNames } from '../../../lib';
 import defaultRules from '../../../lib/rules';
 import context from '../context';
 import './index.scss';
-
 export default function ClFormItem(props = {
     prop: '',
     required: false

@@ -2,7 +2,6 @@ import { Checkbox, CheckboxGroup, Text, View } from "@tarojs/components";
 import React from 'react';
 import ClCheckboxH5 from "./h5";
 import { classNames, isWeApp } from "../../lib";
-
 export default function ClCheckbox(props) {
     const colorClassName = props.color || "green";
     const type = props.type === "form" ? "form" : "";

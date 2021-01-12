@@ -8,7 +8,6 @@ import { View } from "@tarojs/components";
 import ClLayout from "../layout";
 import "./index.scss";
 import { BG_COLOR_LIST } from "../../lib/model";
-
 export default function ClActionSheet(props) {
     const { type, tip, isOpened, closeWithShadow, options, cancelText, showCancel, cancelBgColor, cancelFontColor, onClick, onCancel } = props;
     const [actionsArr, setActionsArr] = useState([]);

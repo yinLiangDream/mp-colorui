@@ -88,7 +88,7 @@ export const throttling = (func: Function, wait: number) => {
 /**
  * 按照 750 作为设计时的百分比
  */
-export const screenPercent = Taro.getSystemInfoSync().screenWidth / 750;
+export const screenPercent =  Taro.getSystemInfoSync().screenWidth / 750;
 
 /**
  * 随机生成 id

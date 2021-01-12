@@ -24,24 +24,22 @@ export default {
     {
       file: resolveFile(Package.main),
       format: 'cjs',
-      sourcemap: true
     },
     {
       file: resolveFile(Package.module),
       format: 'es',
-      sourcemap: true
     },
-    {
-      file: resolveFile(Package.browser),
-      format: 'umd',
-      name: 'mp-colorui',
-      sourcemap: true,
-      globals: {
-        react: 'React',
-        '@tarojs/components': 'components',
-        '@tarojs/taro': 'Taro'
-      }
-    }
+    // {
+    //   file: resolveFile(Package.browser),
+    //   format: 'umd',
+    //   name: 'mp-colorui',
+    //   sourcemap: true,
+    //   globals: {
+    //     react: 'React',
+    //     '@tarojs/components': 'components',
+    //     '@tarojs/taro': 'Taro'
+    //   }
+    // }
   ],
   external: externalPackages,
   plugins: [

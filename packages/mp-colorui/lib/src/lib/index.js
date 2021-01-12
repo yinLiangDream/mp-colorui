@@ -2,7 +2,6 @@ import Taro from "@tarojs/taro";
 import classnames from "classnames";
 import * as model from "./model";
 import rule from "./rules";
-
 export const classNames = classnames;
 const fullDate = (num) => {
     if (num < 10)

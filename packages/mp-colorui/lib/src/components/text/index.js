@@ -4,7 +4,6 @@ import { pxTransform } from '@tarojs/taro';
 import { BG_COLOR_LIST, pxMap, TEXT_COLOR_LIST } from '../../lib/model';
 import './index.scss';
 import { classNames, isNumber, screenPercent } from '../../lib';
-
 const SPECIAL_CLASS = {
     firstUpper: 'text-Abc',
     upper: 'text-ABC',

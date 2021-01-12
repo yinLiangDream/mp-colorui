@@ -3,7 +3,6 @@ import React from 'react';
 import { pxTransform } from '@tarojs/taro';
 import { classNames, isNumber } from '../../lib';
 import { pxMap } from '../../lib/model';
-
 export default function ClIcon(props) {
     const iconName = props.iconName || '';
     let iconNameClass = `cuIcon-${props.iconName}`;

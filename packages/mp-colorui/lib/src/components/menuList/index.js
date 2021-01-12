@@ -3,7 +3,6 @@ import React from 'react';
 import ClIcon from '../icon/index';
 import { TEXT_COLOR_LIST } from '../../lib/model';
 import { classNames } from '../../lib';
-
 export default function ClMenuList(props) {
     const shortLineClassName = props.shortBorder ? 'sm-border' : '';
     const cardClassName = props.card ? 'card-menu' : '';

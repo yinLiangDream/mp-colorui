@@ -1,7 +1,6 @@
 import { View } from '@tarojs/components';
 import React from 'react';
 import { classNames } from '../../lib';
-
 export default function ClGrid(props) {
     const colClassName = `col-${props.col}`;
     const squareClassName = props.mode === 'square' ? 'grid-square' : '';

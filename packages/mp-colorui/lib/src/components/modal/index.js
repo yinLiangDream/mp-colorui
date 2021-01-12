@@ -2,7 +2,6 @@ import { Text, View } from '@tarojs/components';
 import React, { Component } from 'react';
 import { BG_COLOR_LIST, SIZE, TEXT_COLOR_LIST } from '../../lib/model';
 import { classNames } from '../../lib';
-
 export default class ClModal extends Component {
     constructor() {
         super(...arguments);

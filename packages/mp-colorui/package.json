@@ -1,6 +1,6 @@
 {
   "name": "mp-colorui",
-  "version": "1.0.0-alpha.0.0.1",
+  "version": "1.0.0-beta.1",
   "description": "MP ColorUI 是一款基于 Taro 框架并且联合 Color-UI CSS 库开发的多端 UI 组件库（支持小程序端和H5端）",
   "keywords": [
     "taro",
@@ -12,10 +12,8 @@
     "*.scss",
     "*.css"
   ],
-  "browser": "dist/index.umd.js",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
-  "main:h5": "dist/h5/index.js",
   "types": "./@types/index.d.ts",
   "repository": "https://github.com/yinLiangDream/mp-colorui",
   "homepage": "https://yinliangdream.github.io/mp-colorui-doc/",
@@ -32,7 +30,7 @@
     "dev:lib": "tsc --project ./tsconfig.build.json --watch --incremental",
     "build": "npm run build:rollup && npm run build:lib",
     "build:lib": "tsc --project ./tsconfig.build.json",
-    "build:rollup": "rollup --config ./config/rollup.config.js",
+    "build:rollup": "rollup --config ./config/rollup.config.js && node ./config/copy.js",
     "prepublishOnly": "npm run clean && npm run build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "clean": "rimraf .temp dist lib coverage"
@@ -58,15 +56,15 @@
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
-    "@tarojs/components": "^3.0.6",
-    "@tarojs/react": "^3.0.6",
-    "@tarojs/taro": "^3.0.6",
+    "@tarojs/components": "^3.0.22",
+    "@tarojs/mini-runner": "^3.0.22",
+    "@tarojs/react": "^3.0.22",
+    "@tarojs/runtime": "^3.0.22",
+    "@tarojs/taro": "^3.0.22",
     "@types/classnames": "^2.2.9",
     "@types/node": "^13.11.1",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
     "@types/sinon": "^5.0.7",
     "@types/webpack-env": "^1.13.9",
     "@vuepress/plugin-active-header-links": "^1.0.0-rc.1",
@@ -121,7 +119,7 @@
     "taro_rich_text": "^1.1.3",
     "tslint": "^5.19.0",
     "typescript": "^3.8.3",
-    "vuepress": "^1.1.0"
+    "vuepress": "^1.8.0"
   },
   "peerDependencies": {
     "@tarojs/components": ">=3",

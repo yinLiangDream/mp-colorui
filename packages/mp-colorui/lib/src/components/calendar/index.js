@@ -3,7 +3,6 @@ import { View } from "@tarojs/components";
 import { isH5, isWeApp } from "../../lib";
 import Calendar_h5 from "./h5";
 import Calendar_weapp from "./weapp";
-
 export default function ClCalendar(props) {
     return (React.createElement(View, null,
         isWeApp ? React.createElement(Calendar_weapp, Object.assign({}, props)) : "",

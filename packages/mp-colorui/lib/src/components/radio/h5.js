@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Text, View } from '@tarojs/components';
 import ListRadio from './components/ListRadio';
 import { classNames } from '../../lib';
-
 export default function RadioH5(props) {
     const type = props.type || 'normal';
     const shapeClassName = props.shape || 'normal';

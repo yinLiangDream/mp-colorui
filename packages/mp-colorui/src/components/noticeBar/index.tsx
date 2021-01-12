@@ -6,7 +6,7 @@ import ClText from '../text'
 import ClIcon from '../icon/index'
 import ClFlex from '../flex'
 import { BG_COLOR_LIST } from '../../lib/model'
-import { generateId, isH5, screenPercent } from '../../lib'
+import { generateId, screenPercent } from '../../lib'
 import classnames from 'classnames'
 import ClLayout from '../layout'
 import '../text/index.scss'
@@ -44,10 +44,10 @@ export default function ClNoticeBar(props: IProps) {
       if (close) width += 50
       setSingleContentWidth(`calc(100vw - ${pxTransform(width)})`)
     }
-    const query = Taro.createSelectorQuery().in(this.$scope)
+    const query = Taro.createSelectorQuery()
     const promise = new Promise(resolve => {
       query
-        .select(isH5 ? contentId : '#contentId')
+        .select(`#${contentId}`)
         .boundingClientRect(content => {
           resolve(content)
         })
@@ -55,7 +55,7 @@ export default function ClNoticeBar(props: IProps) {
     })
     promise.then((content: any) => {
       query
-        .select(isH5 ? textId : '#textId')
+        .select(`#${textId}`)
         .boundingClientRect((res: any) => {
           if (res.width < content.width) {
             setMarqueeClass(false)
@@ -147,7 +147,7 @@ export default function ClNoticeBar(props: IProps) {
             </View>
           </ClLayout>
           <View
-            id={isH5 ? contentId : 'contentId'}
+            id={contentId}
             style={{
               flex: '1 1 auto',
               overflow: 'hidden',
@@ -172,7 +172,7 @@ export default function ClNoticeBar(props: IProps) {
               }}
             >
               <Text
-                id={isH5 ? textId : 'textId'}
+                id={textId}
                 className={classnames([
                   {
                     'cl-text__nowrap': single,

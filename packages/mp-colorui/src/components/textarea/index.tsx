@@ -1,56 +1,56 @@
-import React, { useState, useEffect } from 'react'
-import { pxTransform } from '@tarojs/taro'
-import { Textarea, View } from '@tarojs/components'
-import { IProps } from '../../../@types/textarea'
-import ClFlex from '../../components/flex'
-import ClText from '../../components/text'
-import ClLayout from '../../components/layout'
-import { classNames } from '../../lib'
+import React, { useState, useEffect } from "react";
+import { pxTransform } from "@tarojs/taro";
+import { Textarea, View } from "@tarojs/components";
+import { IProps } from "../../../@types/textarea";
+import ClFlex from "../../components/flex";
+import ClText from "../../components/text";
+import ClLayout from "../../components/layout";
+import { classNames } from "../../lib";
 
-import './index.scss'
-import { BG_COLOR_LIST } from '../../lib/model'
+import "./index.scss";
+import { BG_COLOR_LIST } from "../../lib/model";
 
 export default function ClTextarea(props: IProps) {
   const {
-    value,
-    autoFocus,
-    focus,
-    placeholder,
-    maxLength,
-    disabled,
-    showConfirmBar,
-    showLengthTip,
-    bgColor,
-    shadow,
-    height,
-    overMaxForbidden,
-    onChange,
-    onFocus,
-    onBlur,
-    onConfirm,
-    onLineChange
-  } = props
-  const [tempValue, setTempValue] = useState('')
+    value = "",
+    autoFocus = false,
+    focus = false,
+    placeholder = "",
+    maxLength = 0,
+    disabled = false,
+    showConfirmBar = false,
+    showLengthTip = false,
+    bgColor = "white",
+    shadow = false,
+    height = 0,
+    overMaxForbidden = false,
+    onChange = () => {},
+    onFocus = () => {},
+    onBlur = () => {},
+    onConfirm = () => {},
+    onLineChange = () => {},
+  } = props;
+  const [tempValue, setTempValue] = useState(value);
   const tip = (
-    <View className={'tip'}>
-      <ClLayout padding={'small'} paddingDirection={'right'}>
+    <View className={"tip"}>
+      <ClLayout padding={"small"} paddingDirection={"right"}>
         <ClFlex>
           <ClText
             text={`${tempValue.length}`}
-            size={'small'}
+            size={"small"}
             textColor={
               maxLength && !overMaxForbidden && maxLength < tempValue.length
-                ? 'red'
+                ? "red"
                 : undefined
             }
           />
           <View>
             <ClText
               text={`/${maxLength}`}
-              size={'small'}
+              size={"small"}
               textColor={
                 maxLength && !overMaxForbidden && maxLength < tempValue.length
-                  ? 'red'
+                  ? "red"
                   : undefined
               }
             />
@@ -58,76 +58,57 @@ export default function ClTextarea(props: IProps) {
         </ClFlex>
       </ClLayout>
     </View>
-  )
+  );
   useEffect(() => {
-    setTempValue(value || '')
-  }, [value])
+    setTempValue(value || "");
+  }, [value]);
   return (
-    <View className={classNames(['cu-textarea'])}>
+    <View className={classNames(["cu-textarea"])}>
       <View
         className={classNames([
-          'bg',
+          "bg",
           { shadow },
-          BG_COLOR_LIST[bgColor || 'white']
+          BG_COLOR_LIST[bgColor || "white"],
         ])}
       >
         <Textarea
           style={{
-            height: `${height ? pxTransform(height) : pxTransform(300)}`,
-            padding: `${pxTransform(10)} ${pxTransform(14)} ${pxTransform(40)}`,
-            width: '100%',
-            border: 'none'
+            ...{
+              height: `${height ? pxTransform(height) : pxTransform(300)}`,
+              padding: `${pxTransform(10)} ${pxTransform(14)} ${pxTransform(
+                40
+              )}`,
+              width: "100%",
+              border: "none",
+            },
           }}
-          className={classNames([BG_COLOR_LIST[bgColor || 'white']])}
-          value={value || ''}
+          className={classNames([BG_COLOR_LIST[bgColor || "white"]])}
+          value={tempValue || ""}
           autoFocus={autoFocus}
           focus={focus}
           placeholder={placeholder}
-          maxlength={overMaxForbidden ? maxLength : undefined}
+          maxlength={overMaxForbidden ? maxLength : -1}
           disabled={disabled}
           showConfirmBar={showConfirmBar}
-          onLineChange={e => {
-            onLineChange && onLineChange(e.detail)
+          onLineChange={(e) => {
+            onLineChange && onLineChange(e.detail);
           }}
-          onConfirm={e => {
-            onConfirm && onConfirm(e.detail.value)
+          onConfirm={(e) => {
+            onConfirm && onConfirm(e.detail.value);
           }}
-          onInput={e => {
-            setTempValue(e.detail.value)
-            onChange && onChange(e.detail.value)
+          onInput={(e) => {
+            setTempValue(e.detail.value);
+            onChange && onChange(e.detail.value);
           }}
-          onFocus={e => {
-            onFocus && onFocus(e.detail.value)
+          onFocus={(e) => {
+            onFocus && onFocus(e.detail.value);
           }}
-          onBlur={e => {
-            onBlur && onBlur(e.detail.value)
+          onBlur={(e) => {
+            onBlur && onBlur(e.detail.value);
           }}
         />
-        {showLengthTip ? tip : ''}
+        {showLengthTip ? tip : ""}
       </View>
     </View>
-  )
+  );
 }
-
-ClTextarea.options = {
-  addGlobalClass: true
-}
-ClTextarea.defaultProps = {
-  value: '',
-  autoFocus: false,
-  focus: false,
-  placeholder: '',
-  maxLength: 0,
-  disabled: false,
-  showConfirmBar: false,
-  showLengthTip: false,
-  height: 0,
-  overMaxForbidden: false,
-  bgColor: 'white',
-  shadow: false,
-  onChange: () => {},
-  onFocus: () => {},
-  onBlur: () => {},
-  onConfirm: () => {},
-  onLineChange: () => {}
-} as IProps

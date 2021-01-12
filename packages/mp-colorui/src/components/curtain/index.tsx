@@ -1,5 +1,5 @@
 import { View } from '@tarojs/components'
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IProps } from '../../../@types/curtain'
 import ClIcon from '../icon'
 
@@ -7,13 +7,13 @@ import './index.scss'
 import { classNames } from '../../lib'
 
 export default function ClCurtain(props: IProps) {
-  const { show, closeWithShadow, closeBtnPosition } = props
+  const { show = false, closeWithShadow = false, closeBtnPosition = 'bottom' } = props
   const [showImage, setShowImage] = useState(show)
-  useMemo(() => {
+  useEffect(() => {
     setShowImage(show)
   }, [show])
-  return showImage ? (
-    <View
+  const renderImage = () => {
+    const commonComponent = <View
       className={classNames('cu-load load-image', props.className)}
       style={Object.assign({}, props.style)}
       onClick={e => {
@@ -43,20 +43,7 @@ export default function ClCurtain(props: IProps) {
         </View>
       </View>
     </View>
-  ) : (
-    <View />
-  )
+    return showImage && commonComponent;
+  }
+  return renderImage()
 }
-
-ClCurtain.options = {
-  addGlobalClass: true
-}
-
-ClCurtain.defaultProps = {
-  show: false,
-  closeWithShadow: false,
-  closeBtnPosition: 'bottom',
-  onClose: () => {},
-  onClick: () => {},
-  imgUrl: ''
-} as IProps

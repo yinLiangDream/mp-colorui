@@ -4,7 +4,6 @@ import { classNames, getNowDate, isAliPay } from '../../lib';
 import { getAreaData } from '../../lib/area';
 import './index.scss';
 import AlipayMutiSelect from './components/alipay/mutiSelector';
-
 function ClSelect(props) {
     const selector = {
         range: (props.selector && props.selector.range) || [],

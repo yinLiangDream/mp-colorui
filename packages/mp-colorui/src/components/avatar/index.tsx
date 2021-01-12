@@ -1,12 +1,12 @@
-import { Text, View, Image } from "@tarojs/components";
 import React, { useEffect, useState } from "react";
 import { pxTransform } from "@tarojs/taro";
+import { Text, View, Image } from "@tarojs/components";
 import { isNumber, generateId, classNames } from "../../lib";
 import { BG_COLOR_LIST } from "../../lib/model";
 import { IProps, THeaderArray } from "../../../@types/avatar";
 
 function ClAvatar(props: IProps) {
-  const [headList, setHeadList] = useState(props.headerArray);
+  const [headList, setHeadList] = useState(props.headerArray || []);
   useEffect(() => {
     const list = props.headerArray || [];
     setHeadList(

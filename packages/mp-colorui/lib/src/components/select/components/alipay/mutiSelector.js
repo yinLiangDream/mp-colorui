@@ -5,7 +5,6 @@ import ClDrawer from '../../../../components/drawer';
 import ClLayout from '../../../../components/layout';
 import ClFlex from '../../../../components/flex';
 import ClText from '../../../../components/text';
-
 class AlipayMutiSelect extends Component {
     constructor(props) {
         super(props);

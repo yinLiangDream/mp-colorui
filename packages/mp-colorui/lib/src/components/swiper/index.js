@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { pxTransform } from '@tarojs/taro';
 import { classNames, generateId, isAliPay, screenPercent } from '../../lib';
 import './index.scss';
-
 export default function ClSwiper(props) {
     const [listState, setListState] = useState(props.list || []);
     useEffect(() => {

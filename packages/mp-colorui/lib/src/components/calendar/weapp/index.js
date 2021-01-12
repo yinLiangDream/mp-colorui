@@ -13,7 +13,6 @@ import { BG_COLOR_LIST, TEXT_COLOR_LIST } from '../../../lib/model';
 import ClButton from '../../button';
 import ClTip from '../../tip';
 import '../index.scss';
-
 export default function Calendar_weapp(props) {
     const { highlightWeekendColor, calendarType, showType, activeColor, tipDay, backToToday, disabledDay, badge, onChange, onClick, highlightWeekend, specialDay } = props;
     const FORMAT_DATE = 'YYYY-MM-DD';

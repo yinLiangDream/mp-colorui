@@ -6,7 +6,6 @@ import ClIcon from '../icon';
 import './index.scss';
 import ClAnimation from '../animation';
 import ClLayout from '../layout';
-
 let tempPageX = 0;
 let tempPageY = 0;
 let pageX = 25;
