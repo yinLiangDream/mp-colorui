@@ -105,7 +105,7 @@
     "husky": "^2.4.1",
     "jest": "^24.8.0",
     "lint-staged": "^8.0.3",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "nerv-devtools": "^1.5.6",
     "nerv-server": "^1.4.0",
     "nerv-test-utils": "^1.4.0",
